@@ -1,0 +1,98 @@
+{
+  "mpn": "ADS1201U-1/1K",
+  "generated_at": "2026-10-31T11:48:25+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "ADS1201U 16-Lead SOIC Delta-Sigma Modulator 130dB Texas Instruments",
+    "title_zh": "ADS1201U 16引脚SOIC Delta-Sigma调制器 130dB 德州仪器",
+    "meta_description_en": "Explore the ADS1201U, a precision 130dB delta-sigma modulator from Texas Instruments. Features fully differential inputs, 24-bit A/D conversion, and a two-wire interface for high-resolution measurement applications.",
+    "meta_description_zh": "探索德州仪器 ADS1201U，一款 130dB 精密 Delta-Sigma 调制器。具备全差分输入、24位 A/D 转换和两线接口，适用于高分辨率测量应用。",
+    "keywords": [
+      "ADS1201U",
+      "Delta-Sigma Modulator",
+      "Texas Instruments",
+      "130dB Dynamic Range",
+      "High Resolution ADC",
+      "SOIC-16"
+    ]
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 2,
+  "shared_by_applications": {
+    "app-industrial-automation.png": [
+      "Industrial process control",
+      "Smart transmitters"
+    ],
+    "app-test-measurement.png": [
+      "Instrumentation",
+      "Portable instruments"
+    ]
+  },
+  "distinct_images": [
+    "app-industrial-automation.png",
+    "app-test-measurement.png"
+  ],
+  "distinct_image_count": 2,
+  "images": [
+    {
+      "application": "Industrial process control",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ads1201u-1_1k-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "ADS1201U-1/1K Industrial process control application — Industrial Automation illustration",
+      "title": "ADS1201U-1/1K used in Industrial process control (Industrial Automati…",
+      "caption": "Industrial process control — a typical industrial automation application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Instrumentation",
+      "category": "Test & Measurement",
+      "image": "app-test-measurement.png",
+      "filename": "ads1201u-1_1k-test-measurement.png",
+      "asset": "/upload/img/app-test-measurement.png",
+      "alt": "ADS1201U-1/1K Instrumentation application — Test & Measurement illustration",
+      "title": "ADS1201U-1/1K used in Instrumentation (Test & Measurement)",
+      "caption": "Instrumentation — a typical test & measurement application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Smart transmitters",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ads1201u-1_1k-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "ADS1201U-1/1K Smart transmitters application — Industrial Automation illustration",
+      "title": "ADS1201U-1/1K used in Smart transmitters (Industrial Automation)",
+      "caption": "Smart transmitters — a typical industrial automation application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Portable instruments",
+      "category": "Test & Measurement",
+      "image": "app-test-measurement.png",
+      "filename": "ads1201u-1_1k-test-measurement.png",
+      "asset": "/upload/img/app-test-measurement.png",
+      "alt": "ADS1201U-1/1K Portable instruments application — Test & Measurement illustration",
+      "title": "ADS1201U-1/1K used in Portable instruments (Test & Measurement)",
+      "caption": "Portable instruments — a typical test & measurement application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ]
+}

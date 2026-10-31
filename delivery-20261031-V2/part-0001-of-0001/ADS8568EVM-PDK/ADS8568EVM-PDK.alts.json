@@ -1,0 +1,50 @@
+{
+  "mpn": "ADS8568EVM-PDK",
+  "manufacturer": "Texas Instruments",
+  "generated_at": "2026-10-31T11:46:36+0800",
+  "model": "qwen-flash",
+  "alternatives": [
+    {
+      "mpn": "ADS8568EVM",
+      "manufacturer": "Texas Instruments",
+      "type": "Evaluation Board / ADS8568 / 16-bit ADC",
+      "package": "",
+      "feature": "Same as original, pin-compatible with ADS8568, includes test points and support circuitry",
+      "similarity": 0.95,
+      "basis": "pin-compatible",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "ADS8568IPW",
+      "manufacturer": "Texas Instruments",
+      "type": "16-bit ADC / 200kSPS / 4.5V to 5.5V",
+      "package": "SOIC-28",
+      "feature": "Functionally equivalent ADC, requires separate evaluation board, wider temp range",
+      "similarity": 0.65,
+      "basis": "functional-equivalent",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "ADS8568IPW-EP",
+      "manufacturer": "Texas Instruments",
+      "type": "16-bit ADC / 200kSPS / 4.5V to 5.5V / Enhanced Package",
+      "package": "SOIC-28",
+      "feature": "Enhanced package version of ADS8568IPW, same function, better thermal performance",
+      "similarity": 0.6,
+      "basis": "functional-equivalent",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    }
+  ]
+}

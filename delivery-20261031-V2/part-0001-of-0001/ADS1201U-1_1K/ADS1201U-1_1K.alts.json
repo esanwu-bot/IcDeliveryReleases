@@ -1,0 +1,92 @@
+{
+  "mpn": "ADS1201U-1/1K",
+  "manufacturer": "Texas Instruments",
+  "generated_at": "2026-10-31T11:46:52+0800",
+  "model": "qwen-flash",
+  "alternatives": [
+    {
+      "mpn": "ADS1201U",
+      "manufacturer": "Texas Instruments",
+      "type": "Rails",
+      "package": "SOIC-16",
+      "feature": "Same datasheet order code, Rails",
+      "similarity": 0.99,
+      "basis": "same-family-datasheet",
+      "internal": true,
+      "match": "exact",
+      "url": "/products/detail/ads1201u-29460",
+      "catalog_mpn": "ADS1201U",
+      "verified": true
+    },
+    {
+      "mpn": "ADS1201U/1K",
+      "manufacturer": "Texas Instruments",
+      "type": "Tape and Reel",
+      "package": "SOIC-16",
+      "feature": "Same datasheet order code, Tape and Reel",
+      "similarity": 0.99,
+      "basis": "same-family-datasheet",
+      "internal": true,
+      "match": "exact",
+      "url": "/products/detail/ads1201u1k-30761",
+      "catalog_mpn": "ADS1201U/1K",
+      "verified": true
+    },
+    {
+      "mpn": "ADS1201UG4",
+      "manufacturer": "Texas Instruments",
+      "type": "Rails",
+      "package": "SOIC-16",
+      "feature": "Same datasheet order code, Rails",
+      "similarity": 0.99,
+      "basis": "same-family-datasheet",
+      "internal": true,
+      "match": "exact",
+      "url": "/products/detail/ads1201ug4-30461",
+      "catalog_mpn": "ADS1201UG4",
+      "verified": true
+    },
+    {
+      "mpn": "ADS1201U/1KG4",
+      "manufacturer": "Texas Instruments",
+      "type": "Tape and Reel",
+      "package": "SOIC-16",
+      "feature": "Same datasheet order code, Tape and Reel",
+      "similarity": 0.99,
+      "basis": "same-family-datasheet",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "ADS1201I-1/1K",
+      "manufacturer": "Texas Instruments",
+      "type": "Delta-Sigma Modulator / 130dB DR / 24-bit / 1.5kSPS",
+      "package": "SOIC-16",
+      "feature": "Industrial-grade -40°C to +105°C, same pinout and function",
+      "similarity": 0.9,
+      "basis": "pin-compatible",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "ADS1201Q-1/1K",
+      "manufacturer": "Texas Instruments",
+      "type": "Delta-Sigma Modulator / 130dB DR / 24-bit / 1.5kSPS",
+      "package": "SOIC-16",
+      "feature": "Qualified for automotive, -40°C to +105°C, pin-to-pin compatible",
+      "similarity": 0.88,
+      "basis": "pin-compatible",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    }
+  ]
+}

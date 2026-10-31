@@ -1,0 +1,50 @@
+{
+  "mpn": "BOOSTXL-C2KLED",
+  "manufacturer": "Texas Instruments",
+  "generated_at": "2026-10-31T11:46:43+0800",
+  "model": "qwen-flash",
+  "alternatives": [
+    {
+      "mpn": "BOOSTXL-LED1",
+      "manufacturer": "Texas Instruments",
+      "type": "Boost Converter / 24V Output / 6-20V Input",
+      "package": "",
+      "feature": "Same function, pin-compatible, 6-20V in, 24V out, eval board",
+      "similarity": 0.9,
+      "basis": "pin-compatible",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "BOOSTXL-LED2",
+      "manufacturer": "Texas Instruments",
+      "type": "Boost Converter / 24V Output / 6-20V Input",
+      "package": "",
+      "feature": "Same function, pin-compatible, 6-20V in, 24V out, eval board",
+      "similarity": 0.9,
+      "basis": "pin-compatible",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "TIDA-01378",
+      "manufacturer": "Texas Instruments",
+      "type": "LED Driver / 24V Output / 6-20V Input",
+      "package": "",
+      "feature": "Functional equivalent, same input/output range, requires minor layout change",
+      "similarity": 0.6,
+      "basis": "functional-equivalent",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    }
+  ]
+}

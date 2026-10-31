@@ -1,0 +1,50 @@
+{
+  "mpn": "ADC12DJ5200SE",
+  "manufacturer": "Texas Instruments",
+  "generated_at": "2026-10-31T11:46:46+0800",
+  "model": "qwen-flash",
+  "alternatives": [
+    {
+      "mpn": "ADC12DJ5200RF",
+      "manufacturer": "Texas Instruments",
+      "type": "12-bit / 10.4GSPS / RF-Sampling ADC",
+      "package": "FCBGA-144",
+      "feature": "Same family, pin-to-pin compatible, wider temperature range",
+      "similarity": 0.9,
+      "basis": "pin-compatible",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "AD9680-1000",
+      "manufacturer": "Analog Devices",
+      "type": "12-bit / 1000MSPS / RF-Sampling ADC",
+      "package": "LFBGA-144",
+      "feature": "Functionally equivalent but lower sample rate, different package",
+      "similarity": 0.6,
+      "basis": "functional-equivalent",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "ADS8V11",
+      "manufacturer": "Texas Instruments",
+      "type": "12-bit / 1.2GSPS / High-Speed ADC",
+      "package": "FCBGA-144",
+      "feature": "Same manufacturer, same package, lower sample rate, not direct replacement",
+      "similarity": 0.5,
+      "basis": "same-family",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    }
+  ]
+}

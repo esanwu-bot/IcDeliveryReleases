@@ -1,0 +1,64 @@
+{
+  "mpn": "BOOST-DRV8711",
+  "manufacturer": "Texas Instruments",
+  "generated_at": "2026-10-31T11:46:40+0800",
+  "model": "qwen-flash",
+  "alternatives": [
+    {
+      "mpn": "DRV8711EVM",
+      "manufacturer": "Texas Instruments",
+      "type": "Stepper Motor Driver / 52V / 4.5A",
+      "package": "Evaluation Board",
+      "feature": "Same family, pin-compatible evaluation board with identical specs",
+      "similarity": 0.9,
+      "basis": "same-family",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": true
+    },
+    {
+      "mpn": "DRV8711HVM",
+      "manufacturer": "Texas Instruments",
+      "type": "Stepper Motor Driver / 52V / 4.5A",
+      "package": "Evaluation Board",
+      "feature": "Higher temperature rating, same pinout and functionality",
+      "similarity": 0.85,
+      "basis": "same-family",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "DRV8711-SP-EVM",
+      "manufacturer": "Texas Instruments",
+      "type": "Stepper Motor Driver / 52V / 4.5A",
+      "package": "Evaluation Board",
+      "feature": "Single package version with same performance and pin compatibility",
+      "similarity": 0.8,
+      "basis": "same-family",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    },
+    {
+      "mpn": "TMC5161EVAL",
+      "manufacturer": "Trinamic",
+      "type": "Stepper Motor Driver / 45V / 3.5A",
+      "package": "Evaluation Board",
+      "feature": "Functionally equivalent driver with similar form factor and interface",
+      "similarity": 0.6,
+      "basis": "functional-equivalent",
+      "internal": false,
+      "match": "miss",
+      "url": "",
+      "catalog_mpn": "",
+      "verified": false
+    }
+  ]
+}
