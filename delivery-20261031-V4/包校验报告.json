@@ -1,0 +1,227 @@
+{
+  "generated_at": "2026-10-31T22:22:01+08:00",
+  "packaging_validation": "pass",
+  "engineering_validation": "not_approved",
+  "i18n_validation": "not_checked",
+  "mpn_count": 5,
+  "model_directories": [
+    "ADC12DJ5200SE",
+    "ADS1201U-1_1K",
+    "ADS8568EVM-PDK",
+    "BOOST-DRV8711",
+    "BOOSTXL-C2KLED"
+  ],
+  "model_artifact_count": 46,
+  "zip_member_count": 51,
+  "zip_crc": "pass",
+  "source_hashes_unchanged": true,
+  "zip_sha256": "0425e974799c85e95e3cc6d3f9ff791b0322136450a34024904705151d6353db",
+  "zip_size": 183761,
+  "hash_rule": "sha256(CRLF→LF normalized)；跨平台可复现，不以原始字节为准",
+  "verified_members": [
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.alts.json",
+      "sha256": "2e05dc1c0d5d3f2a24e9fd0caf356008740776cc05529231d1e74331e01933e2"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.de.html",
+      "sha256": "672af107874f754425c5f82976426d4eac85a3353aa60616577b1c5d1e9b7734"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.es.html",
+      "sha256": "5048b50e0aae9ec8d9c7612b0f803b940e8b9feecf308baeed94f6044dc85e7f"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.html",
+      "sha256": "aef7ec654279ae4eaed3abf051fd6c940c0a12ac6bfb7c2ba01a1b08e08c52af"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.ja.html",
+      "sha256": "99b9dd6f2612230fb63f17c13245c0c089cf463f8c8b9c0f4c5da2f7be392d55"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.json",
+      "sha256": "d81894a6a40280cf6a11d91793421bfff8d818b66043500e9c6e5c8ca2a2cd05"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.ko.html",
+      "sha256": "ff316aa3af8e3b44e40fe0795cbfe5a60e06dcd83a172787488e7f804ca8f187"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.seo.json",
+      "sha256": "213edd17d88606fe8080faee3b04f56e47af7af080d1b45a595d54fc6f2e0ac4"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.symbols.html",
+      "sha256": "7288464792a74b0f7d8627c74f733be99ce905109bc34acf7f5dbba928c87e42"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.alts.html",
+      "sha256": "bcb1e1895dba679345354d7bdd4b1358e65243ba56942953cbea1f442be3565c"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.alts.json",
+      "sha256": "1b3d1fce82b8586f9aff62dc8f644be5336e9a0f9ca96bc3d71e2ea7bb24e04b"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.de.html",
+      "sha256": "025cb681c757bb014ec5d0dabd666c9efe6e72f91a555ccfcdc6778ecb1f45f4"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.es.html",
+      "sha256": "1e98a4b4530692c9fcfca609fb998bb29de4feb3bb0c1ae916eead42d16bc5c6"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.html",
+      "sha256": "4aa22fefeaecdc85a08b72ee09464523e4b7b8e9194c7623c405c99f3969b5e5"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.ja.html",
+      "sha256": "8335afe92aa7a3a989350d5ee6669ba3ee5b4be25cfbf7317b1532220bfa2d8a"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.json",
+      "sha256": "1af872fbdd91bdab125142e2183f6e54ecde62dc804b110375e21aaebc2f0338"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.ko.html",
+      "sha256": "ecd832fda4ac0fef50d0cb1633fee8f0bace340fb1fd0ca8cc8ed74e66f9b639"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.seo.json",
+      "sha256": "c4f9709a0c33fd1be502e327f2b17447553eb066eba592b999c5afc7e1f68b66"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.symbols.html",
+      "sha256": "0997baa0ee763070bdd0567f23e50e4fa44c5816d39b1c7ebfa8c5fdebba236c"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.alts.json",
+      "sha256": "b198a539f62b016acd3869ebae54c7c8fe6437a8ed82bbfeea62ec2bc4980dde"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.de.html",
+      "sha256": "4017891513716a80749ee89747ffa734d0677e0c0edd36c778aecaeff05fd83f"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.es.html",
+      "sha256": "3890e269d9200abc6b452d4abec2b75de555abbf0ba25cfcb7517f079c447774"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.html",
+      "sha256": "6adcf35b83560bf24252b7a1c780d4c5026270de4dbc55fbfde1a6b13b26473c"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.ja.html",
+      "sha256": "62b7988352467ba2cd3a6db429fd01d52d3e5533529e178db775ba5e60cdc6ef"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.json",
+      "sha256": "3673d1e7c73bd289fd05a14bf09531ba352e0e3a9a9af61ee4d589934890d23f"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.ko.html",
+      "sha256": "788d5058002cde4ad3d69286463a7ebd71d88e3228eea396c0c464c9ccb53c6a"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.seo.json",
+      "sha256": "80ded9528a64ea6cf4132081e511fdea7e3d14eaef01aa39f9d705e335428f96"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.symbols.html",
+      "sha256": "a5a23e47a5aa667e1811fd181c154af78cc11623bbc2109743369b625e804c84"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.alts.json",
+      "sha256": "c6eab1e71f84591d5617d4b2d8cec9d52c2b3e5fd5f7d0d0577c400495060ce5"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.de.html",
+      "sha256": "6f522c4be3950ae4166f5d78cf5481d45890dc36557c75c025acdcc97add7673"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.es.html",
+      "sha256": "97984912e99c552756c0fd922a0d978d1b397e3a9cb4f31b233e379968f9eca5"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.html",
+      "sha256": "20e889a8d0b8663593049ae6e4f970b29836e20dfb9b5972e956a2068da75a5d"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.ja.html",
+      "sha256": "90aa4935a47d1ad41363ea64e0a8e8225319eaa2da6cefadc25462004406b457"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.json",
+      "sha256": "78a4cfc79d4083627be2fbdcbb6ad12782602937ae34a998efe8fb6adc0ea5be"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.ko.html",
+      "sha256": "87e43fe3b7cbd552001c2fc41c32ff4185edf52b02760d8cdf483af435b7d304"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.seo.json",
+      "sha256": "1ea8661d8c2c8a9c421f1a596e03e4036bd954d4fe99358524ee80252e40ff9a"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.symbols.html",
+      "sha256": "826a5968f8a1794ce9a7b30aadcee81a43089ac8279dc029f4f35533a7a97dc2"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.alts.json",
+      "sha256": "ceedf54e81cc44f65e15452b63e585984deb51d22e2cba9949d211495a6e82ed"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.de.html",
+      "sha256": "cbb73bf43a1243409c6ec79e2d79c39a9b936673242b63e28fae2a6c35780b1b"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.es.html",
+      "sha256": "515db552045647224ec997b937210109a9833081ead92d2c494e205ebde1f49e"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.html",
+      "sha256": "d79483d4e42eeea57438afc7c2a776717ae03a1a2048afece22e24b0c7c14ede"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.ja.html",
+      "sha256": "2fe24131b007f8da99733295f2813d35bd664f10638b4bf9784d421404599cb6"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.json",
+      "sha256": "e0ba5ec8936fbfdc31a5ad0e15d1f13ab76a4f6dd48d1746d77ea7bf93758838"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.ko.html",
+      "sha256": "8ca6eb3de7dd028650d3b750909fca9aab0da299af569ab78b1d788835f5d268"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.seo.json",
+      "sha256": "95b8cbcb51dd3de00065373193b82ca4887e21a4f6ecd602972aa23c21f21801"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.symbols.html",
+      "sha256": "0597b2e60a283e410939a21d678fff8b4d8073b01f5a4bdae72c780203dd55fa"
+    },
+    {
+      "member": "manifest.csv",
+      "sha256": "e41d13a6cb232a392654b26d44cfa9d212c25627efe57b32a144a3bc9b493533"
+    },
+    {
+      "member": "manifest.json",
+      "sha256": "38989a2b5f96b7db926fac6851418a243a274a848fa5db6e85002d1c950a7805"
+    },
+    {
+      "member": "README.md",
+      "sha256": "f15cfee5bf0d1cf119d86e2bb6dae3f2cede10b2b34c3aef474aa0c9824a0eeb"
+    },
+    {
+      "member": "V4_修复说明.md",
+      "sha256": "41596297bc484cd54898edf6ac8ba51ea63aa469b97953347774ffb810db78ae"
+    },
+    {
+      "member": "交付说明.md",
+      "sha256": "e832462f9476b56cb40761677444c0b8344260b21db29aa2459b55fdc434a664"
+    }
+  ]
+}

@@ -1,0 +1,1842 @@
+{
+  "basic_info": {
+    "mpn": "ADC12DJ5200SE",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Data Converters",
+    "description": "The ADC12DJ5200SE is a 12-bit, RF-sampling analog-to-digital converter with integrated baluns, supporting up to 10.4GSPS in single-channel mode or 5.2GSPS in dual-channel mode. It features a JESD204C interface with up to 17.16Gbps lane rate, optional digital down-converters (DDCs), programmable FIR filters, and noiseless aperture delay adjustment. Designed for high-performance applications in communications testers, electronic warfare, satellite communications, and SDR systems.",
+    "datasheet_url": "",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号不在订货表逐字列出，但是 `ADC12DJ5200SEAAV` 的包装/等级变体写法（订货表共 2 条）→ 同一颗芯片"
+    ]
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Resolution",
+        "value": "12",
+        "unit": "Bits",
+        "condition": ""
+      },
+      {
+        "name": "Sampling Rate - Single Channel Mode",
+        "value": "10.4",
+        "unit": "GSPS",
+        "condition": ""
+      },
+      {
+        "name": "Sampling Rate - Dual Channel Mode",
+        "value": "5.2",
+        "unit": "GSPS",
+        "condition": ""
+      },
+      {
+        "name": "Analog Input Frequency Range (-3dB)",
+        "value": "2 to 6.3",
+        "unit": "GHz",
+        "condition": ""
+      },
+      {
+        "name": "Full-Scale Input Power (4.5GHz)",
+        "value": "-1.25",
+        "unit": "dBm",
+        "condition": ""
+      },
+      {
+        "name": "Noise Floor - Dual-Channel Mode",
+        "value": "-149",
+        "unit": "dBFS/Hz",
+        "condition": "2.3GHz, –20dBFS, INPUTFS = 1.5dBm"
+      },
+      {
+        "name": "Noise Floor - Single-Channel Mode",
+        "value": "-151.5",
+        "unit": "dBFS/Hz",
+        "condition": "2.3GHz, –20dBFS, INPUTFS = 1.5dBm"
+      },
+      {
+        "name": "ENOB - Dual Channel Mode",
+        "value": "8.5",
+        "unit": "Bits",
+        "condition": "FIN = 2.3GHz"
+      },
+      {
+        "name": "Noiseless Aperture Delay Step",
+        "value": "19",
+        "unit": "fs",
+        "condition": ""
+      },
+      {
+        "name": "Maximum Lane Rate",
+        "value": "17.16",
+        "unit": "Gbps",
+        "condition": ""
+      },
+      {
+        "name": "Decimation Options",
+        "value": "4x, 8x, 16x and 32x complex decimation",
+        "unit": "",
+        "condition": ""
+      },
+      {
+        "name": "NCOs per DDC",
+        "value": "Four independent 32-Bit NCOs",
+        "unit": "",
+        "condition": ""
+      },
+      {
+        "name": "Peak RF Input Power",
+        "value": "26.25",
+        "unit": "dBm",
+        "condition": "ZS = 50 Ω, up to 21 days"
+      },
+      {
+        "name": "Power Consumption",
+        "value": "4",
+        "unit": "W",
+        "condition": ""
+      },
+      {
+        "name": "Supply Voltage - VA19",
+        "value": "1.8 to 2.0",
+        "unit": "V",
+        "condition": "analog 1.9-V supply"
+      },
+      {
+        "name": "Supply Voltage - VA11",
+        "value": "1.05 to 1.15",
+        "unit": "V",
+        "condition": "analog 1.1-V supply"
+      },
+      {
+        "name": "Supply Voltage - VD11",
+        "value": "1.05 to 1.15",
+        "unit": "V",
+        "condition": "digital 1.1-V supply"
+      },
+      {
+        "name": "Input Power for Fullscale at Minimum Balun Loss",
+        "value": "-1.5",
+        "unit": "dBm",
+        "condition": "fIN = 4.5GHz, FS_RANGE_A = FS_RANGE_B = 0xA000"
+      },
+      {
+        "name": "Temperature Diode Input Current",
+        "value": "100",
+        "unit": "µA",
+        "condition": "TDIODE+ to TDIODE–"
+      },
+      {
+        "name": "Input Common-Mode Voltage (CLK±)",
+        "value": "0 to 0.55",
+        "unit": "V",
+        "condition": "CLK+, CLK–, SYSREF+, SYSREF–(2) (4), CLK±",
+        "columns": {
+          "min": "0",
+          "typ": "0.3",
+          "max": "0.55"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "reason": "文本层逐格读取 MIN/NOM/MAX，未经模型"
+        }
+      },
+      {
+        "name": "Input Common-Mode Voltage (SYSREF±)",
+        "value": "0 to 0.55",
+        "unit": "V",
+        "condition": "CLK+, CLK–, SYSREF+, SYSREF–(2) (4), SYSREF±",
+        "columns": {
+          "min": "0",
+          "typ": "0.3",
+          "max": "0.55"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "reason": "文本层逐格读取 MIN/NOM/MAX，未经模型"
+        }
+      },
+      {
+        "name": "Input Common-Mode Voltage (TMSTP±)",
+        "value": "0 to 0.55",
+        "unit": "V",
+        "condition": "TMSTP+, TMSTP–(3) (5)",
+        "columns": {
+          "min": "0",
+          "typ": "0.3",
+          "max": "0.55"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "reason": "文本层逐格读取 MIN/NOM/MAX，未经模型"
+        }
+      },
+      {
+        "name": "Input Differential Voltage (CLK+ to CLK– SYSREF+ to SYSREF–)",
+        "value": "0.4 to 2.0",
+        "unit": "VPP-DIFF",
+        "condition": "CLK+ to CLK–, SYSREF+ to SYSREF–, TMSTP+ to TMSTP–",
+        "columns": {
+          "min": "0.4",
+          "typ": "1.0",
+          "max": "2.0"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "reason": "文本层逐格读取 MIN/NOM/MAX，未经模型"
+        }
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "Supply Voltage - VA19",
+        "value": "-0.3 to 2.35",
+        "unit": "V"
+      },
+      {
+        "name": "Supply Voltage - VA11",
+        "value": "-0.3 to 1.32",
+        "unit": "V"
+      },
+      {
+        "name": "Supply Voltage - VD11",
+        "value": "-0.3 to 1.32",
+        "unit": "V"
+      },
+      {
+        "name": "Voltage Between VD11 and VA11",
+        "value": "-1.32 to 1.32",
+        "unit": "V"
+      },
+      {
+        "name": "Voltage Between AGND and DGND",
+        "value": "-0.1 to 0.1",
+        "unit": "V"
+      },
+      {
+        "name": "Pin Voltage Range - DA[7:0]+, DA[7:0]–, DB[7:0]+, DB[7:0]–, TMSTP+, TMSTP–",
+        "value": "-0.5 to VD11 + 0.5",
+        "unit": "V"
+      },
+      {
+        "name": "Pin Voltage Range - CLK+, CLK–, SYSREF+, SYSREF–",
+        "value": "-0.5 to VA11 + 0.5",
+        "unit": "V"
+      },
+      {
+        "name": "Pin Voltage Range - BG, TDIODE+, TDIODE–",
+        "value": "-0.5 to VA19 + 0.5",
+        "unit": "V"
+      },
+      {
+        "name": "Pin Voltage Range - INA, INB",
+        "value": "-3 to 3",
+        "unit": "V"
+      },
+      {
+        "name": "Pin Voltage Range - CALSTAT, CALTRIG, NCOA0, NCOA1, NCOB0, NCOB1, ORA0, ORA1, ORB0, ORB1, PD, SCLK, SCS, SDI, SDO, SYNCSE",
+        "value": "-0.5 to VA19 + 0.5",
+        "unit": "V"
+      },
+      {
+        "name": "Peak Input Current (Any Input Except INA, INB)",
+        "value": "-25 to 25",
+        "unit": "mA"
+      },
+      {
+        "name": "Peak RF Input Power (INA, INB)",
+        "value": "26.25",
+        "unit": "dBm"
+      },
+      {
+        "name": "Peak Total Input Current",
+        "value": "100",
+        "unit": "mA"
+      },
+      {
+        "name": "Junction Temperature",
+        "value": "150",
+        "unit": "°C"
+      },
+      {
+        "name": "Storage Temperature",
+        "value": "-65 to 150",
+        "unit": "°C"
+      }
+    ],
+    "thermal": [
+      {
+        "name": "RθJA",
+        "value": "23.9",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "0.8",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJB",
+        "value": "8.4",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJT",
+        "value": "0.23",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJB",
+        "value": "8.4",
+        "unit": "°C/W"
+      }
+    ],
+    "esd": [
+      {
+        "name": "HBM",
+        "value": "±2000",
+        "unit": "V"
+      },
+      {
+        "name": "CDM",
+        "value": "±500",
+        "unit": "V"
+      }
+    ],
+    "package": {
+      "type": "FCBGA (144)",
+      "pins": 144,
+      "dimensions": "10mm x 10mm"
+    },
+    "temperature": {
+      "operating": "-40 to 85",
+      "storage": "-65 to 150"
+    },
+    "scope": "device"
+  },
+  "features": [
+    "12-bit resolution with up to 10.4GSPS sampling in single-channel mode",
+    "Up to 5.2GSPS in dual-channel mode with integrated input baluns",
+    "Flexible VCM: AC coupled with no DC path to GND or supply",
+    "Noise floor as low as -151.5 dBFS/Hz in single-channel mode",
+    "ENOB of 8.5 bits at 2.3GHz in dual-channel mode",
+    "Noiseless aperture delay adjustment with 19fs step precision",
+    "Automatic SYSREF timing calibration and timestamp sample marking",
+    "JESD204C serial interface with up to 17.16Gbps lane rate",
+    "Support for 64b/66b and 8b/10b encoding schemes",
+    "Optional digital down-converters (DDC) with 4x to 32x complex decimation",
+    "Four independent 32-bit NCOs per DDC for frequency control",
+    "Programmable FIR filter for on-chip equalization",
+    "Peak RF input power of +26.25dBm (560x full-scale power)",
+    "Power consumption of 4W typical",
+    "Dual supply voltages: 1.1V and 1.9V"
+  ],
+  "applications": [
+    "Communications testers (802.11ad, 5G)",
+    "Electronic warfare (SIGINT, ELINT)",
+    "Satellite communications (SATCOM)",
+    "RF-sampling software-defined radio (SDR)"
+  ],
+  "pin_configuration": [
+    {
+      "pin": "A1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B4",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L4",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C3",
+      "name": "BG",
+      "description": "Band-gap voltage output. This pin is capable of sourcing only small currents and driving limited capacitive loads, as specified in the Recommended Operating Conditions table. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F7",
+      "name": "CALSTAT",
+      "description": "Foreground calibration status output or device alarm output. Functionality is programmed through CAL_STATUS_SEL. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E7",
+      "name": "CALTRIG",
+      "description": "Foreground calibration trigger input. This pin is only used if hardware calibration triggering is selected in CAL_TRIG_EN, otherwise software triggering is performed using CAL_SOFT_TRIG. Tie this pin to GND if not used.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F1",
+      "name": "CLK+",
+      "description": "Device (sampling) clock positive input. The clock signal is strongly recommended to be AC- coupled to this input for best performance. In single-channel mode, the analog input signal is sampled on both the rising and falling edges. In dual-channel mode, the analog signal is sampled on the rising edge. This differential input has an internal untrimmed 100-Ω differential termination and is self-biased to the optimal input common-mode voltage as long as DEVCLK_LVPECL_EN is set to 0.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G1",
+      "name": "CLK–",
+      "description": "Device (sampling) clock negative input. TI strongly recommends using AC-coupling for best performance.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E12",
+      "name": "DA0+",
+      "description": "High-speed serialized data output for channel A, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F12",
+      "name": "DA0–",
+      "description": "High-speed serialized data output for channel A, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C12",
+      "name": "DA1+",
+      "description": "High-speed serialized data output for channel A, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D12",
+      "name": "DA1–",
+      "description": "High-speed serialized data output for channel A, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A10",
+      "name": "DA2+",
+      "description": "High-speed serialized-data output for channel A, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A11",
+      "name": "DA2–",
+      "description": "High-speed serialized-data output for channel A, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A8",
+      "name": "DA3+",
+      "description": "High-speed serialized-data output for channel A, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A9",
+      "name": "DA3–",
+      "description": "High-speed serialized-data output for channel A, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 4,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E11",
+      "name": "DA4+",
+      "description": "High-speed serialized data output for channel A, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F11",
+      "name": "DA4–",
+      "description": "High-speed serialized data output for channel A, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C11",
+      "name": "DA5+",
+      "description": "High-speed serialized data output for channel A, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D11",
+      "name": "DA5–",
+      "description": "High-speed serialized data output for channel A, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B10",
+      "name": "DA6+",
+      "description": "High-speed serialized data output for channel A, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B11",
+      "name": "DA6–",
+      "description": "High-speed serialized data output for channel A, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B8",
+      "name": "DA7+",
+      "description": "High-speed serialized data output for channel A, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B9",
+      "name": "DA7–",
+      "description": "High-speed serialized data output for channel A, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H12",
+      "name": "DB0+",
+      "description": "High-speed serialized data output for channel B, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G12",
+      "name": "DB0–",
+      "description": "High-speed serialized data output for channel B, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K12",
+      "name": "DB1+",
+      "description": "High-speed serialized data output for channel B, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J12",
+      "name": "DB1–",
+      "description": "High-speed serialized data output for channel B, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M10",
+      "name": "DB2+",
+      "description": "High-speed serialized data output for channel B, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M11",
+      "name": "DB2–",
+      "description": "High-speed serialized data output for channel B, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M8",
+      "name": "DB3+",
+      "description": "High-speed serialized data output for channel B, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M9",
+      "name": "DB3–",
+      "description": "High-speed serialized data output for channel B, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H11",
+      "name": "DB4+",
+      "description": "High-speed serialized data output for channel B, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 5,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G11",
+      "name": "DB4–",
+      "description": "High-speed serialized data output for channel B, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K11",
+      "name": "DB5+",
+      "description": "High-speed serialized data output for channel B, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J11",
+      "name": "DB5–",
+      "description": "High-speed serialized data output for channel B, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L10",
+      "name": "DB6+",
+      "description": "High-speed serialized data output for channel B, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L11",
+      "name": "DB6–",
+      "description": "High-speed serialized data output for channel B, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L8",
+      "name": "DB7+",
+      "description": "High-speed serialized data output for channel B, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L9",
+      "name": "DB7–",
+      "description": "High-speed serialized data output for channel B, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A12",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B12",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D9",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D10",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F9",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F10",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G9",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G10",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J9",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J10",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L12",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M12",
+      "name": "DGND",
+      "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "A4",
+      "name": "INA",
+      "description": "Channel A single ended analog input. INA is recommended for use in single channel mode for optimal performance. The full-scale input voltage swing is determined by the FS_RANGE_A register (see the Full-Scale Voltage (VFS) Adjustment section). This input is AC coupled with a nominal impedance of 50Ω. There is no DC connection to supply or ground. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "M4",
+      "name": "INB",
+      "description": "Channel B single ended analog input. INA is recommended for use in single channel mode for optimal performance. The full-scale input voltage swing is determined by the FS_RANGE_B register (see the Full-Scale Voltage (VFS) Adjustment section). This input is AC coupled with a nominal impedance of 50Ω. There is no DC connection to supply or ground. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C7",
+      "name": "NCOA0",
+      "description": "LSB of NCO selection control for DDC A. NCOA0 and NCOA1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOA0 and NCOA1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D7",
+      "name": "NCOA1",
+      "description": "MSB of NCO selection control for DDC A. Tie this pin to GND if not used.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K7",
+      "name": "NCOB0",
+      "description": "LSB of NCO selection control for DDC B. NCOB0 and NCOB1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOB0 and NCOB1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J7",
+      "name": "NCOB1",
+      "description": "MSB of NCO selection control for DDC B. Tie this pin to GND if not used.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C8",
+      "name": "ORA0",
+      "description": "Fast overrange detection status for channel A for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D8",
+      "name": "ORA1",
+      "description": "Fast overrange detection status for channel A for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K8",
+      "name": "ORB0",
+      "description": "Fast overrange detection status for channel B for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J8",
+      "name": "ORB1",
+      "description": "Fast overrange detection status for channel B for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K6",
+      "name": "PD",
+      "description": "This pin disables all analog circuits and serializer outputs when set high for temperature diode calibration or to reduce power consumption when the device is not being used. Tie this pin to GND if not used.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F8",
+      "name": "SCLK",
+      "description": "Serial interface clock. This pin functions as the serial-interface clock input that clocks the serial programming data in and out. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E8",
+      "name": "SCS",
+      "description": "Serial interface chip select active low input. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels. This pin has a 82-kΩ pullup resistor to VD11.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G8",
+      "name": "SDI",
+      "description": "Serial interface data input. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H8",
+      "name": "SDO",
+      "description": "Serial interface data output. The Using the Serial Interface section describes the serial interface in more detail. This pin is high impedance during normal device operation. This pin outputs 1.9-V CMOS levels during serial interface read operations. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C2",
+      "name": "SYNCSE",
+      "description": "Single-ended JESD204C SYNC signal. This input is an active low input that is used to initialize the JESD204C serial link in 8B/10B modes when SYNC_SEL is set to 0. The 64B/66B modes do not use the SYNC signal for initialization, however it may be used for NCO synchronization. When toggled low in 8B/10B modes this input initiates code group synchronization (see the Code Group Synchronization (CGS) section). After code group synchronization, this input must be toggled high to start the initial lane alignment sequence (see the Initial Lane Alignment Sequence (ILAS) section). A differential SYNC signal can be used instead by setting SYNC_SEL to 1 and using TMSTP± as a differential SYNC input. Tie this pin to GND if differential SYNC (TMSTP±) is used as the JESD204C SYNC signal.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K1",
+      "name": "SYSREF+",
+      "description": "The SYSREF positive input is used to achieve synchronization and deterministic latency across the JESD204C interface. This differential input (SYSREF+ to SYSREF–) has an internal untrimmed 100-Ω differential termination and can be AC-coupled when SYSREF_LVPECL_EN is set to 0. This input is self-biased when SYSREF_LVPECL_EN is set to 0. The termination changes to 50 Ω to ground on each input pin (SYSREF+ and SYSREF–) and can be DC-coupled when SYSREF_LVPECL_EN is set to 1. This input is not self-biased when SYSREF_LVPECL_EN is set to 1 and must be biased externally to the input common-mode voltage range provided in the Recommended Operating Conditions table.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "L1",
+      "name": "SYSREF–",
+      "description": "SYSREF negative input",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K2",
+      "name": "TDIODE+",
+      "description": "Temperature diode positive (anode) connection. An external temperature sensor can be connected to TDIODE+ and TDIODE– to monitor the junction temperature of the device. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K3",
+      "name": "TDIODE–",
+      "description": "Temperature diode negative (cathode) connection. This pin can be left disconnected if not used.",
+      "source": {
+        "page": 7,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "B1",
+      "name": "TMSTP+",
+      "description": "Timestamp input positive connection or differential JESD204C SYNC positive connection. This input is a timestamp input, used to mark a specific sample, when TIMESTAMP_EN is set to 1. This differential input is used as the JESD204C SYNC signal input when SYNC_SEL is set 1. This input can be used as both a timestamp and differential SYNC input at the same time, allowing feedback of the SYNC signal using the timestamp mechanism. TMSTP± uses active low signaling when used as a JESD204C SYNC. For additional usage information, see the Timestamp section. TMSTP_RECV_EN must be set to 1 to use this input. This differential input (TMSTP+ to TMSTP–) has an internal untrimmed 100-Ω differential termination and can be AC-coupled when TMSTP_LVPECL_EN is set to 0. The termination changes to 50 Ω to ground on each input pin (TMSTP+ and TMSTP–) and can be DC coupled when TMSTP_LVPECL_EN is set to 1. This pin is not self-biased and therefore must be externally biased for both AC- and DC-coupled configurations. The common-mode voltage must be within the range provided in the Recommended Operating Conditions table when both AC and DC coupled. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required.",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C1",
+      "name": "TMSTP–",
+      "description": "Timestamp input positive connection or differential JESD204C SYNC negative connection. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required.",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D2",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D3",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J2",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J3",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K5",
+      "name": "VA11",
+      "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "D4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E2",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E3",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "F4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H2",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H3",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "J4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K4",
+      "name": "VA19",
+      "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C9",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "C10",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E9",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "E10",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "G7",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H7",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H9",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "H10",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K9",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "K10",
+      "name": "VD11",
+      "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+      "source": {
+        "page": 8,
+        "method": "deterministic"
+      }
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "ADC12DJ5200SEAAV",
+      "package": "FCCSP (AAV)",
+      "marking": "ADC12DJ52SE",
+      "moq": 184,
+      "packaging": "JEDEC TRAY (5+1)"
+    },
+    {
+      "mpn": "ADC12DJ5200SEAAV.A",
+      "package": "FCCSP (AAV)",
+      "marking": "ADC12DJ52SE",
+      "moq": 184,
+      "packaging": "JEDEC TRAY (5+1)"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "ADC12DJ5200SE 12-bit 10.4GSPS RF Sampling ADC with JESD204C",
+    "title_zh": "ADC12DJ5200SE 12位10.4GSPS射频采样ADC，支持JESD204C",
+    "meta_description_en": "12-bit, 10.4GSPS RF-sampling ADC with integrated baluns. Supports dual-channel 5.2GSPS. Features JESD204C interface, DDC, and noiseless aperture delay. Ideal for 5G, SATCOM, and SDR.",
+    "meta_description_zh": "12位10.4GSPS射频采样ADC，集成巴伦。支持双通道5.2GSPS，具备JESD204C接口、DDC和无噪声采样延迟，适用于5G、卫星通信及软件定义无线电。",
+    "keywords": [
+      "ADC12DJ5200SE",
+      "12-bit ADC",
+      "RF sampling ADC",
+      "JESD204C",
+      "10.4GSPS",
+      "5.2GSPS",
+      "FCCSP",
+      "TI ADC"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "parse_timestamp": "2026-10-31T21:41:44+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "ADC12DJ5200SE",
+    "deterministic_extract": {
+      "pins": {
+        "from": 144,
+        "to": 144,
+        "method": "deterministic"
+      },
+      "thermal": {
+        "from": 5,
+        "to": 5,
+        "method": "deterministic"
+      },
+      "esd": {
+        "from": 2,
+        "to": 2,
+        "method": "deterministic"
+      },
+      "input_limits": {
+        "removed": 4,
+        "added": 4,
+        "method": "deterministic"
+      }
+    },
+    "core_validation": "pass",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "core_sha256": {
+      "pins": {
+        "count": 144,
+        "sha256": "eb2145b82eb596ee211f372de9d0e69e7a8eac58d12bae6a26f92c196bf23db9"
+      },
+      "thermal": {
+        "sha256": "4dd75f753101dc12556e3ab4d35d5074483eee80b191c826fd4576a6ece51231"
+      },
+      "esd": {
+        "sha256": "a594a1e8e76d13f9e12e9aa1cc6e545d1e013051952a3ce0b893d9c550d0fc69"
+      },
+      "vcmi_vid": {
+        "count": 4,
+        "sha256": "e9baa1ab6c95c68c706c87c7d08f98a56f676437fa2a3f040cdb3e1bb1851e9f"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/v4_stage.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点"
+  },
+  "pin_scope": "device",
+  "multi_language": {
+    "ja": {
+      "title": "ADC12DJ5200SE 12ビット 10.4GSPS RFサンプリングADC、JESD204C対応",
+      "description": "ADC12DJ5200SEは、統合バランを備えた12ビットRFサンプリングアナログ・デジタルコンバータであり、シングルチャネルモードでは最大10.4GSPS、デュアルチャネルモードでは最大5.2GSPSに対応します。JESD204Cインターフェース（最大17.16Gbpsのレーンレート）、オプションのデジタルダウンコンバーター（DDC）、プログラマブルFIRフィルター、ノイズレスのアペルチャー遅延調整を搭載。通信テスト機器、電子戦、衛星通信、SDRシステムなど高性能アプリケーション向けに設計されています。",
+      "meta": "12ビット、10.4GSPSのRFサンプリングADC。統合バラン付き。デュアルチャネルで最大5.2GSPS対応。JESD204Cインターフェース、DDC、ノイズレスのアペルチャー遅延を搭載。5G、SATCOM、SDR向けに最適。",
+      "features": [
+        "シングルチャネルモードで最大10.4GSPSのサンプリングに対応する12ビット解像度",
+        "デュアルチャネルモードで最大5.2GSPS、統合入力バラン付き",
+        "柔軟なVCM：ACカップリング、GNDまたは電源へのDCパスなし",
+        "シングルチャネルモードでのノイズフロア最低-151.5 dBFS/Hz",
+        "デュアルチャネルモードで2.3GHzにおけるENOB 8.5ビット",
+        "19fsステップ精度のノイズレスアペルチャー遅延調整",
+        "自動SYSREFタイミングキャリブレーションおよびタイムスタンプサンプルマーク",
+        "最大17.16GbpsレーンレートのJESD204Cシリアルインターフェース",
+        "64b/66bおよび8b/10bエンコーディング方式に対応",
+        "オプションのデジタルダウンコンバーター（DDC）：4x～32xの複素数デシメーション対応",
+        "各DDCに4つの独立した32ビットNCOを搭載し、周波数制御可能",
+        "オンチップ等化用のプログラマブルFIRフィルター",
+        "ピークRF入力電力+26.25dBm（フルスケール電力の560倍）",
+        "通常消費電力4W",
+        "デュアル電源電圧：1.1Vおよび1.9V"
+      ],
+      "applications": [
+        "通信テスト機器（802.11ad、5G）",
+        "電子戦（SIGINT、ELINT）",
+        "衛星通信（SATCOM）",
+        "RFサンプリングソフトウェア定義無線（SDR）"
+      ]
+    },
+    "ko": {
+      "title": "ADC12DJ5200SE 12비트 10.4GSPS RF 샘플링 ADC, JESD204C 지원",
+      "description": "ADC12DJ5200SE는 내장형 밸런스가 있는 12비트 RF 샘플링 아날로그-디지털 변환기로, 단일 채널 모드에서는 최대 10.4GSPS, 이중 채널 모드에서는 최대 5.2GSPS의 샘플링 속도를 지원합니다. JESD204C 인터페이스(최대 17.16Gbps 레인 속도), 선택적 디지털 다운컨버터(DDC), 프로그래머블 FIR 필터, 무소음 아포처 지연 조정 기능을 탑재했습니다. 통신 테스터, 전자전, 위성 통신, SDR 시스템 등 고성능 응용 분야에 적합하도록 설계되었습니다.",
+      "meta": "12비트, 10.4GSPS RF 샘플링 ADC로 내장형 밸런스가 장착되어 있습니다. 이중채널 5.2GSPS를 지원합니다. JESD204C 인터페이스, DDC 및 무소음 아포처 지연 기능을 갖추고 있어 5G, SATCOM, SDR에 적합합니다.",
+      "features": [
+        "단일 채널 모드에서 최대 10.4GSPS 샘플링과 12비트 해상도",
+        "이중 채널 모드에서 최대 5.2GSPS, 내장형 입력 밸런스 포함",
+        "유연한 VCM: AC 커플링으로 GND 또는 공급 전원에 DC 경로 없음",
+        "단일 채널 모드에서 최저 -151.5 dBFS/Hz의 노이즈 수준",
+        "이중 채널 모드에서 2.3GHz에서 ENOB 8.5비트",
+        "19fs 단계 정밀도로 무소음 아포처 지연 조정",
+        "자동 SYSREF 타이밍 보정 및 타임스탬프 샘플 마킹",
+        "최대 17.16Gbps 레인 속도를 지원하는 JESD204C 시리얼 인터페이스",
+        "64b/66b 및 8b/10b 인코딩 방식 지원",
+        "선택적 디지털 다운컨버터(DDC)로 복소수 감속 비율 4x~32x",
+        "각 DDC당 독립적인 4개의 32비트 NCO로 주파수 제어",
+        "칩 내부 균형화를 위한 프로그래머블 FIR 필터",
+        "피크 RF 입력 전력 +26.25dBm (560배 포화 전력)",
+        "전력 소모량 4W (평균)",
+        "이중 공급 전압: 1.1V 및 1.9V"
+      ],
+      "applications": [
+        "통신 테스터 (802.11ad, 5G)",
+        "전자전 (SIGINT, ELINT)",
+        "위성 통신 (SATCOM)",
+        "RF 샘플링 소프트웨어 정의 라디오 (SDR)"
+      ]
+    },
+    "de": {
+      "title": "ADC12DJ5200SE 12-Bit-10,4GSPS-RF-Sampling-ADC mit JESD204C",
+      "description": "Der ADC12DJ5200SE ist ein 12-Bit-RF-Sampling-Analog-Digital-Wandler mit integrierten Baluns, der bis zu 10,4GSPS im Einzelkanalmodus oder 5,2GSPS im Dual-Kanalmodus unterstützt. Er verfügt über eine JESD204C-Schnittstelle mit bis zu 17,16Gbps Kanalrate, optionale digitale Down-Converter (DDC), programmierbare FIR-Filter und rauschfreie Einstellung der Aperturverzögerung. Speziell für hochleistungsfähige Anwendungen in Kommunikationsprüfgeräten, elektronischer Kriegsführung, Satellitenkommunikation und SDR-Systemen konzipiert.",
+      "meta": "12-Bit-RF-Sampling-ADC mit integrierten Baluns. Unterstützt Dual-Channel-5,2GSPS. Verfügt über JESD204C-Schnittstelle, DDC und rauschfreie Aperturverzögerung. Ideal für 5G, SATCOM und SDR.",
+      "features": [
+        "12-Bit-Auflösung mit bis zu 10,4GSPS Abtastfrequenz im Einzelkanalmodus",
+        "Bis zu 5,2GSPS im Dual-Kanalmodus mit integrierten Eingangs-Baluns",
+        "Flexible VCM: Wechselstromgekoppelt ohne GND- oder Versorgungs-DC-Pfad",
+        "Rauschboden von bis zu -151,5 dBFS/Hz im Einzelkanalmodus",
+        "ENOB von 8,5 Bit bei 2,3 GHz im Dual-Kanalmodus",
+        "Rauschfreie Einstellung der Aperturverzögerung mit Schrittweite von 19 fs",
+        "Automatische SYSREF-Timing-Kalibrierung und Timestamp-Probenmarkierung",
+        "JESD204C-Serienschnittstelle mit bis zu 17,16Gbps Kanalrate",
+        "Unterstützung der Codierungsverfahren 64b/66b und 8b/10b",
+        "Optionale digitale Down-Converter (DDC) mit komplexer Dekodierung von 4x bis 32x",
+        "Vier unabhängige 32-Bit-NCOs pro DDC zur Frequenzsteuerung",
+        "Programmierbarer FIR-Filter für On-Chip-Gleichung",
+        "Spitzen-RF-Eingangssignal von +26,25 dBm (560-fache Vollskalenleistung)",
+        "Leistungsverbrauch typisch 4 W",
+        "Zwei Versorgungsspannungen: 1,1 V und 1,9 V"
+      ],
+      "applications": [
+        "Kommunikationsprüfgeräte (802.11ad, 5G)",
+        "Elektronische Kriegsführung (SIGINT, ELINT)",
+        "Satellitenkommunikation (SATCOM)",
+        "RF-Sampling-Software-Defined Radio (SDR)"
+      ]
+    },
+    "es": {
+      "title": "ADC12DJ5200SE ADC de muestreo de RF de 12 bits y 10,4 GSPS con JESD204C",
+      "description": "El ADC12DJ5200SE es un convertidor analógico-digital de muestreo de RF de 12 bits con baluns integrados, que soporta hasta 10,4 GSPS en modo de canal único o 5,2 GSPS en modo dual canal. Cuenta con interfaz JESD204C con velocidad de canal de hasta 17,16 Gbps, conversores digitales descendentes (DDC) opcionales, filtros FIR programables y ajuste de retardo de apertura sin ruido. Diseñado para aplicaciones de alto rendimiento en pruebas de comunicaciones, guerra electrónica, comunicaciones satelitales y sistemas SDR.",
+      "meta": "ADC de 12 bits y 10,4 GSPS con muestreo de RF y baluns integrados. Soporta modo dual canal a 5,2 GSPS. Características: interfaz JESD204C, DDC y retardo de apertura sin ruido. Ideal para 5G, SATCOM y SDR.",
+      "features": [
+        "Resolución de 12 bits con hasta 10,4 GSPS de muestreo en modo de canal único",
+        "Hasta 5,2 GSPS en modo dual canal con baluns de entrada integrados",
+        "VCM flexible: acoplado en corriente alterna sin ruta de corriente continua a tierra o suministro",
+        "Nivel de ruido tan bajo como -151,5 dBFS/Hz en modo de canal único",
+        "ENOB de 8,5 bits a 2,3 GHz en modo dual canal",
+        "Ajuste de retardo de apertura sin ruido con precisión de paso de 19 fs",
+        "Calibración automática de temporización SYSREF y marcado de muestra de tiempo",
+        "Interfaz serial JESD204C con velocidad de canal de hasta 17,16 Gbps",
+        "Soporte para esquemas de codificación 64b/66b y 8b/10b",
+        "Conversores digitales descendentes (DDC) opcionales con decimación compleja de 4x a 32x",
+        "Cuatro NCO independientes de 32 bits por DDC para control de frecuencia",
+        "Filtro FIR programable para equalización interna",
+        "Potencia de entrada de RF pico de +26,25 dBm (560 veces la potencia de plena escala)",
+        "Consumo de potencia típico de 4 W",
+        "Dos voltajes de alimentación: 1,1 V y 1,9 V"
+      ],
+      "applications": [
+        "Pruebas de comunicaciones (802.11ad, 5G)",
+        "Guerra electrónica (SIGINT, ELINT)",
+        "Comunicaciones satelitales (SATCOM)",
+        "Radio definida por software (SDR) con muestreo de RF"
+      ]
+    }
+  }
+}
