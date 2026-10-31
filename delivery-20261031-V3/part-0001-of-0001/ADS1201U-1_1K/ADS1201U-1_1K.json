@@ -1,0 +1,1006 @@
+{
+ "basic_info": {
+  "mpn": "ADS1201U-1/1K",
+  "manufacturer": "Texas Instruments",
+  "category": "Integrated Circuits (ICs) / Data Acquisition / ADCs / Delta-Sigma Modulators",
+  "subcategory": "Delta-Sigma Modulators",
+  "description": "The ADS1201 is a precision, 130dB dynamic range, delta-sigma modulator operating from a single +5V supply. It features fully differential inputs, a two-wire interface, and on-chip calibration switches. With an appropriate digital filter and modulator rate, it achieves 24-bit A/D conversion without missing codes. It is suitable for high-resolution measurement applications such as industrial process control, weigh scales, and smart transmitters. Available in a 16-lead SOIC package.",
+  "datasheet_url": "https://source.z2data.com/2020/10/21/10/5/40/945/ads1201.pdf",
+  "identity": "chip",
+  "identity_state": "IDENTITY_SUPPORTED",
+  "identity_rule": "",
+  "identity_confidence": "medium",
+  "identity_evidence": [
+   "请求料号不在订货表逐字列出，但是 `ADS1201U` 的包装/等级变体写法（订货表共 4 条）→ 同一颗芯片"
+  ]
+ },
+ "specs": {
+  "electrical": [
+   {
+    "name": "Absolute Input Voltage Range",
+    "value": "0 to +5",
+    "unit": "V",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "0 to 5",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "0",
+     "MAX": "+5"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range": {
+     "min": "0",
+     "max": "+5"
+    },
+    "range_origin": "pdf_columns",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 115.95,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Differential Input Voltage Range",
+    "value": "–5 to +5",
+    "unit": "V",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "-5 to 5",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "–5",
+     "MAX": "+5"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range": {
+     "min": "–5",
+     "max": "+5"
+    },
+    "range_origin": "pdf_columns",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 133.95,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Input Impedance",
+    "value": "250(4) TYP",
+    "unit": "kΩ",
+    "condition": "Note 4",
+    "value_history": [
+     {
+      "value": "250",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "TYP": "250(4)"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 151.95,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Input Capacitance",
+    "value": "8 TYP",
+    "unit": "pF",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "8",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "TYP": "8"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 160.95,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Dynamic Range",
+    "value": "130",
+    "unit": "dB",
+    "condition": "10Hz Bandwidth, 20 Log (full scale/rms noise)"
+   },
+   {
+    "name": "Integral Linearity Error",
+    "value": "±0.0015",
+    "unit": "%FSR",
+    "condition": "60Hz Bandwidth",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "60Hz Bandwidth",
+     "evidence": {
+      "value_nums": [
+       0.0015
+      ],
+      "row_nums": [
+       1.0,
+       2.0,
+       3.0,
+       5.0,
+       6.0,
+       7.0,
+       10.0,
+       15.0,
+       60.0,
+       80.0,
+       100.0,
+       115.0,
+       120.0,
+       130.0
+      ],
+      "row": "p2 t0 r3"
+     }
+    }
+   },
+   {
+    "name": "Offset Drift",
+    "value": "1",
+    "unit": "μV/°C",
+    "condition": "Re-calibration can reduce these errors"
+   },
+   {
+    "name": "Common-Mode Rejection",
+    "value": "80 MIN / 100 TYP",
+    "unit": "dB",
+    "condition": "At DC",
+    "value_history": [
+     {
+      "value": "80 to 100",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "80",
+     "TYP": "100"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 282.03,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Power Supply Rejection",
+    "value": "80 TYP",
+    "unit": "dB",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "80",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "TYP": "80"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 291.03,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Internal Reference (REF OUT)",
+    "value": "2.4 MIN / 2.5 TYP / 2.6 MAX",
+    "unit": "V",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "2.4 to 2.6",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "2.4",
+     "TYP": "2.5",
+     "MAX": "2.6"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 312.99,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "External Reference (REF IN)",
+    "value": "2.0 to 3.0",
+    "unit": "V",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "2.0 to 3.0",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "2.0",
+     "MAX": "3.0"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range": {
+     "min": "2.0",
+     "max": "3.0"
+    },
+    "range_origin": "pdf_columns",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 357.99,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "VBIAS Output",
+    "value": "3.15 MIN / 3.3 TYP / 3.45 MAX",
+    "unit": "V",
+    "condition": "Using Internal Reference",
+    "value_history": [
+     {
+      "value": "3.15 to 3.45",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "3.15",
+     "TYP": "3.3",
+     "MAX": "3.45"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 375.99,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "condition_unverified",
+     "method": "2026-10-30-page-evidence-v1",
+     "reason": "row_not_located"
+    }
+   },
+   {
+    "name": "VIH (MCLK)",
+    "value": "2.0 to DVDD +0.3",
+    "unit": "V",
+    "condition": "IIH = +5 μA",
+    "value_history": [
+     {
+      "value": "2.0 to 5.3",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "2.0",
+     "MAX": "DVDD +0.3"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range": {
+     "min": "2.0",
+     "max": "DVDD +0.3"
+    },
+    "range_origin": "pdf_columns",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 433.95,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "condition_unverified",
+     "method": "2026-10-30-page-evidence-v1",
+     "reason": "row_not_located"
+    }
+   },
+   {
+    "name": "VIL (MCLK)",
+    "value": "–0.3 to 0.8",
+    "unit": "V",
+    "condition": "IIL = +5 μA",
+    "value_history": [
+     {
+      "value": "-0.3 to 0.8",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "–0.3",
+     "MAX": "0.8"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range": {
+     "min": "–0.3",
+     "max": "0.8"
+    },
+    "range_origin": "pdf_columns",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 442.95,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "condition_unverified",
+     "method": "2026-10-30-page-evidence-v1",
+     "reason": "row_not_located"
+    }
+   },
+   {
+    "name": "MCLK Frequency",
+    "value": "0.02 to 1",
+    "unit": "MHz",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "0.02 to 1",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "0.02",
+     "MAX": "1"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range": {
+     "min": "0.02",
+     "max": "1"
+    },
+    "range_origin": "pdf_columns",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 469.95,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Power Supply Voltage",
+    "value": "4.75 to 5.25",
+    "unit": "V",
+    "condition": "Specified Performance",
+    "value_history": [
+     {
+      "value": "4.75 to 5.25",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "MIN": "4.75",
+     "MAX": "5.25"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range": {
+     "min": "4.75",
+     "max": "5.25"
+    },
+    "range_origin": "pdf_columns",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 491.91,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "condition_unverified",
+     "method": "2026-10-30-page-evidence-v1",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "Specified Performance",
+     "evidence": {
+      "value_nums": [
+       4.75,
+       5.25
+      ],
+      "row_nums": [
+       1.0,
+       4.0,
+       4.75,
+       16.0,
+       25.0,
+       40.0,
+       46.0,
+       525.0
+      ],
+      "row": "p2 t0 r7"
+     }
+    }
+   },
+   {
+    "name": "Analog Current",
+    "value": "4.6 TYP",
+    "unit": "mA",
+    "condition": "",
+    "value_history": [
+     {
+      "value": "4.6",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "TYP": "4.6"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 509.91,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "Total Power Dissipation",
+    "value": "25 TYP / 40 MAX",
+    "unit": "mW",
+    "condition": "REF OUT, VBIAS Disabled",
+    "value_history": [
+     {
+      "value": "25 to 40",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "columns_raw": {
+     "TYP": "25",
+     "MAX": "40"
+    },
+    "column_origin": "pdf_header_anchors",
+    "range_origin": "pdf_columns_with_role",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 2,
+     "page_base": 1,
+     "y": 554.91,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "header anchors MIN/TYP/MAX"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   }
+  ],
+  "absolute_max": [
+   {
+    "name": "Analog Input Voltage",
+    "value": "AGND -0.3 V to AVDD +0.3 V",
+    "unit": "V",
+    "value_history": [
+     {
+      "value": "-0.3 to 6",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "range": {
+     "min": "AGND -0.3 V",
+     "max": "AVDD +0.3 V"
+    },
+    "range_origin": "derived_from_value",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 70.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose; not the adjacent 6 V rail"
+    },
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    }
+   },
+   {
+    "name": "AVDD to DVDD",
+    "value": "-0.3 V to 6 V",
+    "unit": "V",
+    "value_history": [
+     {
+      "value": "-0.3 to 6",
+      "columns_raw": null,
+      "range": null
+     }
+    ],
+    "range": {
+     "min": "-0.3 V",
+     "max": "6 V"
+    },
+    "range_origin": "derived_from_value",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 79.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "supply difference, separate from analog input"
+    },
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    }
+   },
+   {
+    "name": "Internal Power Dissipation",
+    "value": "500",
+    "unit": "mW"
+   },
+   {
+    "name": "Analog Input Current",
+    "value": "±100 mA, momentary",
+    "unit": "",
+    "condition": "Absolute Maximum Ratings",
+    "range_origin": "pdf_prose_formula",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 52.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "AVDD to AGND",
+    "value": "-0.3 V to 6 V",
+    "unit": "",
+    "condition": "Absolute Maximum Ratings",
+    "range_origin": "derived_from_value",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 88.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose"
+    },
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "range": {
+     "min": "-0.3 V",
+     "max": "6 V"
+    }
+   },
+   {
+    "name": "DVDD to DGND",
+    "value": "-0.3 V to 6 V",
+    "unit": "",
+    "condition": "Absolute Maximum Ratings",
+    "range_origin": "derived_from_value",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 97.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose"
+    },
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "range": {
+     "min": "-0.3 V",
+     "max": "6 V"
+    }
+   },
+   {
+    "name": "AGND to DGND",
+    "value": "±0.3 V",
+    "unit": "",
+    "condition": "Absolute Maximum Ratings",
+    "range_origin": "pdf_prose_formula",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 106.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose"
+    },
+    "verification": {
+     "status": "audited",
+     "method": "2026-10-30-page-evidence-v1"
+    }
+   },
+   {
+    "name": "REFIN Voltage to AGND",
+    "value": "AGND -0.3 V to AVDD +0.3 V",
+    "unit": "",
+    "condition": "Absolute Maximum Ratings",
+    "range_origin": "derived_from_value",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 115.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose"
+    },
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "range": {
+     "min": "AGND -0.3 V",
+     "max": "AVDD +0.3 V"
+    }
+   },
+   {
+    "name": "Digital Input Voltage to DGND",
+    "value": "DGND -0.3 V to DVDD +0.3 V",
+    "unit": "",
+    "condition": "Absolute Maximum Ratings",
+    "range_origin": "derived_from_value",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 124.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose"
+    },
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "range": {
+     "min": "DGND -0.3 V",
+     "max": "DVDD +0.3 V"
+    }
+   },
+   {
+    "name": "Digital Output Voltage to DGND",
+    "value": "DGND -0.3 V to DVDD +0.3 V",
+    "unit": "",
+    "condition": "Absolute Maximum Ratings",
+    "range_origin": "derived_from_value",
+    "source": {
+     "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+     "page": 3,
+     "page_base": 1,
+     "y": 133.47,
+     "extractor": "pymupdf-words-v1",
+     "scope": "device",
+     "note": "absolute maximum prose"
+    },
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "range": {
+     "min": "DGND -0.3 V",
+     "max": "DVDD +0.3 V"
+    }
+   }
+  ],
+  "package": {
+   "type": "SOIC-16",
+   "pins": 16,
+   "dimensions": "3.9mm x 9.9mm"
+  },
+  "temperature": {
+   "operating": "-40°C to +85°C",
+   "storage": ""
+  },
+  "scope": "device"
+ },
+ "features": [
+  "130dB dynamic range",
+  "Fully differential input",
+  "Two-wire interface",
+  "Internal/external reference",
+  "On-chip switches for calibration applications"
+ ],
+ "applications": [
+  "Industrial process control",
+  "Instrumentation",
+  "Smart transmitters",
+  "Portable instruments",
+  "Weigh scales",
+  "Pressure transducers"
+ ],
+ "pin_configuration": [
+  {
+   "pin": 1,
+   "name": "AVDD",
+   "description": "Analog Supply, +5V nominal"
+  },
+  {
+   "pin": 2,
+   "name": "REFOUT",
+   "description": "Internal Reference Voltage Output: +2.5V nominal"
+  },
+  {
+   "pin": 3,
+   "name": "REFIN",
+   "description": "Reference Voltage Input"
+  },
+  {
+   "pin": 4,
+   "name": "NIC",
+   "description": "Not Internally Connected"
+  },
+  {
+   "pin": 5,
+   "name": "AINP",
+   "description": "Noninverting Input"
+  },
+  {
+   "pin": 6,
+   "name": "AINN",
+   "description": "Inverting Input"
+  },
+  {
+   "pin": 7,
+   "name": "AGND",
+   "description": "Analog Ground"
+  },
+  {
+   "pin": 8,
+   "name": "VBIAS",
+   "description": "Bias Voltage Output, nominally +3.3V (with +2.5V reference)"
+  },
+  {
+   "pin": 9,
+   "name": "BIASEN",
+   "description": "Bias Voltage Enable Input (HIGH = enabled, LOW = disabled)"
+  },
+  {
+   "pin": 10,
+   "name": "GAIN/OFFSET",
+   "description": "Gain/Offset Calibration Select Input"
+  },
+  {
+   "pin": 11,
+   "name": "CAL",
+   "description": "Calibration Control Input (HIGH = normal operation, LOW = gain or offset calibration)"
+  },
+  {
+   "pin": 12,
+   "name": "DGND",
+   "description": "Digital Ground"
+  },
+  {
+   "pin": 13,
+   "name": "DVDD",
+   "description": "Digital Supply, +5V nominal"
+  },
+  {
+   "pin": 14,
+   "name": "MCLK",
+   "description": "Modulator Clock Input. CMOS compatible."
+  },
+  {
+   "pin": 15,
+   "name": "MOUT",
+   "description": "Modulator Output"
+  },
+  {
+   "pin": 16,
+   "name": "REFEN",
+   "description": "REF OUT Voltage Enable Input (HIGH = enabled, LOW = disabled)"
+  }
+ ],
+ "ordering_info": [
+  {
+   "mpn": "ADS1201U",
+   "package": "SOIC-16",
+   "packaging": "Rails",
+   "moq": 40,
+   "marking": "ADS1201U"
+  },
+  {
+   "mpn": "ADS1201U/1K",
+   "package": "SOIC-16",
+   "packaging": "Tape and Reel",
+   "moq": 1000,
+   "marking": "ADS1201U"
+  },
+  {
+   "mpn": "ADS1201U/1KG4",
+   "package": "SOIC-16",
+   "packaging": "Tape and Reel",
+   "moq": 1000,
+   "marking": "ADS1201U"
+  },
+  {
+   "mpn": "ADS1201UG4",
+   "package": "SOIC-16",
+   "packaging": "Rails",
+   "moq": 40,
+   "marking": "ADS1201U"
+  }
+ ],
+ "alternatives": [],
+ "seo": {
+  "title_en": "ADS1201U 16-Lead SOIC Delta-Sigma Modulator 130dB Texas Instruments",
+  "title_zh": "ADS1201U 16引脚SOIC Delta-Sigma调制器 130dB 德州仪器",
+  "meta_description_en": "Explore the ADS1201U, a precision 130dB delta-sigma modulator from Texas Instruments. Features fully differential inputs, 24-bit A/D conversion, and a two-wire interface for high-resolution measurement applications.",
+  "meta_description_zh": "探索德州仪器 ADS1201U，一款 130dB 精密 Delta-Sigma 调制器。具备全差分输入、24位 A/D 转换和两线接口，适用于高分辨率测量应用。",
+  "keywords": [
+   "ADS1201U",
+   "Delta-Sigma Modulator",
+   "Texas Instruments",
+   "130dB Dynamic Range",
+   "High Resolution ADC",
+   "SOIC-16"
+  ]
+ },
+ "multi_language": {
+  "de": {
+   "title": "ADS1201U 16-Lead SOIC Delta-Sigma Modulator 130dB Texas Instruments",
+   "description": "Der ADS1201 ist ein präziser Delta-Sigma-Modulator mit 130dB dynamischem Bereich, der von einer einzelnen +5V-Stromversorgung betrieben wird. Er verfügt über ein völlig differentialer Eingang, eine Zwei-Draht-Schnittstelle und integrierte Kalibrierschalter. Mit dem richtigen digitalen Filter und Modulator-Takt werden 24-Bit-A/D-Conversion ohne fehlende Codes erreicht. Er ist für Hochauflösungsmessungen ausgelegt.",
+   "meta": "Entdecken Sie den ADS1201U, einen präzisen 130dB-Delta-Sigma-Modulator von Texas Instruments. Features umfasst völlig differentialer Eingang, 24-Bit-A/D-Conversion und Zwei-Draht-Schnittstelle für Hochauflösungsmessungen."
+  },
+  "es": {
+   "title": "ADS1201U 16-Lead SOIC Delta-Sigma Modulator 130dB Texas Instruments",
+   "description": "El ADS1201 es un modulador delta-sigma de precisión con 130dB de rango dinámico que funciona con una fuente de alimentación única de +5V. Cuentos con entradas totalmente diferenciales, una interfaz de dos alambres e interruptores de calibración en el chip. Con el filtro digital y la tasa de modulador adecuados, el dispositivo puede lograr una conversión A/D de 24 bits sin códigos ausentes.",
+   "meta": "Explore el ADS1201U, un modulador delta-sigma de precisión de 130dB de Texas Instruments. Cuentos con entradas totalmente diferenciales, conversión A/D de 24 bits y una interfaz de dos alambres para aplicaciones de medición de alta resolución."
+  },
+  "ja": {
+   "title": "ADS1201U 16-Lead SOIC Delta-Sigma Modulator 130dB Texas Instruments",
+   "description": "ADS1201は、単一+5V電源で動作する、130dBのダイナミックレンジを備えた精密なデルタシグマ（ΔΣ）変調器です。フルディフェレンシャル入力、2-wireインターフェース、およびオンチップ較正スイッチを特徴とします。適切なデジタルフィルタと変調率により、コード欠落なしの24ビットのA/D変換を実現できます。高解像度計測アプリケーション向けに設計されています。",
+   "meta": "130dBのダイナミックレンジを備えた德州儀器の精密なデルタシグマ変調器、ADS1201Uの詳細を探検してください。フルディフェレンシャル入力、24ビットのA/D変換、および2-wireインターフェースを特徴とします。"
+  },
+  "ko": {
+   "title": "ADS1201U 16-Lead SOIC Delta-Sigma Modulator 130dB Texas Instruments",
+   "description": "ADS1201은 단일 +5V 전원에서 동작하는 130dB 동적 범위를 갖춘 정밀 델타 시그마(ΔΣ) 변조기입니다. 전체 차등 입력, 2선 인터페이스 및 칩 내 보정 스위치를 특징으로 합니다. 적절한 디지털 필터 및 변조율을 사용하면 코드 누락 없이 24비트 A/D 변환을 달성할 수 있습니다. 높은 해상도 측정 애플리케이션을 위해 설계되었습니다.",
+   "meta": "텍사스 인스트루먼트의 정밀 130dB 델타 시그마 변조기인 ADS1201U를 살펴보세요. 전체 차등 입력, 24비트 A/D 변환 및 2선 인터페이스를 특징으로 합니다."
+  }
+ },
+ "metadata": {
+  "pdf_hash": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+  "parse_timestamp": "2026-10-22T14:08:01+08:00",
+  "model_version": "agnes-3.0-flash",
+  "confidence": 0.95,
+  "requested_mpn": "ADS1201U-1/1K",
+  "scope_contract_version": "1.0",
+  "scope_contract_findings": [],
+  "five_stage": "2026-10-30-page-evidence-v1"
+ },
+ "pin_scope": "device"
+}

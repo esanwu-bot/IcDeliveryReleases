@@ -1,0 +1,5857 @@
+{
+ "basic_info": {
+  "mpn": "ADC12DJ5200SE",
+  "manufacturer": "Texas Instruments",
+  "category": "Integrated Circuits (ICs) / Data Acquisition / Analog to Digital Converters (ADCs)",
+  "subcategory": "RF-Sampling ADCs",
+  "description": "The ADC12DJ5200SE is a 12-bit, RF-sampling analog-to-digital converter (ADC) with integrated baluns, offering up to 10.4GSPS in single-channel or 5.2GSPS in dual-channel mode. It features JESD204C interface, optional digital down-converters, and flexible synchronization capabilities for communications, defense, and satellite applications.",
+  "datasheet_url": "https://www.ti.com/lit/ds/symlink/adc12dj5200se.pdf",
+  "identity": "chip",
+  "identity_state": "IDENTITY_REVIEW",
+  "identity_rule": "",
+  "identity_confidence": "low",
+  "identity_evidence": [
+   "datasheet 未抽到有效订货表（0 条），且正文无订货表章节 → 仅提示"
+  ],
+  "document_scope": "device_datasheet",
+  "document_evidence": [
+   {
+    "kind": "cached_page",
+    "page": 1,
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "note": "第1页点名 ADC12DJ5200；订购表里的 EVM 已分离，不据此把器件判为未知"
+   }
+  ]
+ },
+ "specs": {
+  "electrical": [
+   {
+    "name": "Resolution",
+    "value": "12",
+    "unit": "bit",
+    "condition": "",
+    "verification": {
+     "status": "not_checked",
+     "reason": "device_datasheet_rows_not_rechecked_this_run"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Sample Rate (Single-Channel)",
+    "value": "10.4",
+    "unit": "GSPS",
+    "condition": "",
+    "verification": {
+     "status": "not_checked",
+     "reason": "device_datasheet_rows_not_rechecked_this_run"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Sample Rate (Dual-Channel)",
+    "value": "5.2",
+    "unit": "GSPS",
+    "condition": "",
+    "verification": {
+     "status": "not_checked",
+     "reason": "device_datasheet_rows_not_rechecked_this_run"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Analog Input Range (-3dB)",
+    "value": "2 to 6.3",
+    "unit": "GHz",
+    "condition": "",
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "2",
+     "max": "6.3"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "Full-scale input power",
+    "value": "-1.25",
+    "unit": "dBm",
+    "condition": "fIN = 4.5GHz, FS_RANGE = 0xA000",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "row_ambiguous"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Noise floor (Dual-channel)",
+    "value": "-149",
+    "unit": "dBFS/Hz",
+    "condition": "2.3GHz, -20dBFS, INPUTFS = 1.5dBm",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "2.3GHz, -20dBFS, INPUTFS = 1.5dBm",
+     "evidence": {
+      "value_nums": [
+       -149.0
+      ],
+      "row_nums": [
+       0.0,
+       1.0,
+       100.0
+      ],
+      "row": "p4 t0 r6"
+     }
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Noise floor (Single-channel)",
+    "value": "-151.5",
+    "unit": "dBFS/Hz",
+    "condition": "2.3GHz, -20dBFS, INPUTFS = 1.5dBm",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "2.3GHz, -20dBFS, INPUTFS = 1.5dBm",
+     "evidence": {
+      "value_nums": [
+       -151.5
+      ],
+      "row_nums": [
+       0.0,
+       1.0,
+       100.0
+      ],
+      "row": "p4 t0 r6"
+     }
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "ENOB (Dual channel)",
+    "value": "8.5",
+    "unit": "Bits",
+    "condition": "FIN = 2.3GHz",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "FIN = 2.3GHz",
+     "evidence": {
+      "value_nums": [
+       8.5
+      ],
+      "row_nums": [
+       0.0,
+       1.0,
+       100.0
+      ],
+      "row": "p4 t0 r6"
+     }
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Peak RF Input Power",
+    "value": "+26.25",
+    "unit": "dBm",
+    "condition": "",
+    "verification": {
+     "status": "not_checked",
+     "reason": "device_datasheet_rows_not_rechecked_this_run"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Power Consumption",
+    "value": "4",
+    "unit": "W",
+    "condition": "",
+    "verification": {
+     "status": "not_checked",
+     "reason": "device_datasheet_rows_not_rechecked_this_run"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Maximum lane rate",
+    "value": "17.16",
+    "unit": "Gbps",
+    "condition": "",
+    "verification": {
+     "status": "not_checked",
+     "reason": "device_datasheet_rows_not_rechecked_this_run"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "VA19, analog 1.9-V supply",
+    "value": "1.8 to 2.0",
+    "unit": "V",
+    "condition": "Recommended Operating Conditions",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "row_ambiguous",
+     "range_origin": "derived_from_value",
+     "secondary_reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "1.8",
+     "max": "2.0"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "VA11, analog 1.1-V supply",
+    "value": "1.05 to 1.15",
+    "unit": "V",
+    "condition": "Recommended Operating Conditions",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "row_ambiguous",
+     "range_origin": "derived_from_value",
+     "secondary_reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "1.05",
+     "max": "1.15"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "VD11, digital 1.1-V supply",
+    "value": "1.05 to 1.15",
+    "unit": "V",
+    "condition": "Recommended Operating Conditions",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "Recommended Operating Conditions",
+     "evidence": {
+      "value_nums": [
+       1.05,
+       1.15
+      ],
+      "row_nums": [
+       0.0,
+       1.0,
+       7.0,
+       9.0,
+       10.0,
+       11.0
+      ],
+      "row": "p8 t0 r6"
+     },
+     "range_origin": "derived_from_value",
+     "secondary_reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "1.05",
+     "max": "1.15"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "Input common-mode voltage (CLK, SYSREF, TMSTP)",
+    "value": "0.3 to 0.55",
+    "unit": "V",
+    "condition": "AC coupled",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "AC coupled",
+     "evidence": {
+      "value_nums": [
+       0.3,
+       0.55
+      ],
+      "row_nums": [
+       0.0,
+       1.0,
+       100.0
+      ],
+      "row": "p4 t0 r6"
+     },
+     "range_origin": "derived_from_value",
+     "secondary_reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "0.3",
+     "max": "0.55"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "Input voltage, peak-to-peak differential",
+    "value": "1.0 to 2.0",
+    "unit": "VPP-DIFF",
+    "condition": "CLK, SYSREF, TMSTP",
+    "verification": {
+     "status": "condition_unverified",
+     "reason": "condition_value_mismatch",
+     "condition_pending_drop": "CLK, SYSREF, TMSTP",
+     "evidence": {
+      "value_nums": [
+       1.0,
+       2.0
+      ],
+      "row_nums": [
+       0.0,
+       1.0,
+       100.0
+      ],
+      "row": "p4 t0 r6"
+     },
+     "range_origin": "derived_from_value",
+     "secondary_reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "1.0",
+     "max": "2.0"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "Operating free-air temperature",
+    "value": "-40 to 85",
+    "unit": "°C",
+    "condition": "",
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "-40",
+     "max": "85"
+    },
+    "range_origin": "derived_from_value"
+   }
+  ],
+  "absolute_max": [
+   {
+    "name": "VA19 Supply voltage range",
+    "value": "-0.3 to 2.35",
+    "unit": "V",
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "-0.3",
+     "max": "2.35"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "VA11 Supply voltage range",
+    "value": "-0.3 to 1.32",
+    "unit": "V",
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "-0.3",
+     "max": "1.32"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "VD11 Supply voltage range",
+    "value": "-0.3 to 1.32",
+    "unit": "V",
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "-0.3",
+     "max": "1.32"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "Voltage between VD11 and VA11",
+    "value": "-1.32 to 1.32",
+    "unit": "V",
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "-1.32",
+     "max": "1.32"
+    },
+    "range_origin": "derived_from_value"
+   },
+   {
+    "name": "Junction temperature (Tj)",
+    "value": "150",
+    "unit": "°C",
+    "verification": {
+     "status": "not_checked",
+     "reason": "device_datasheet_rows_not_rechecked_this_run"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE"
+   },
+   {
+    "name": "Storage temperature (Tstg)",
+    "value": "-65 to 150",
+    "unit": "°C",
+    "verification": {
+     "status": "unresolved",
+     "reason": "column_roles_not_verified"
+    },
+    "scope": "device",
+    "subject_mpn": "ADC12DJ5200SE",
+    "range": {
+     "min": "-65",
+     "max": "150"
+    },
+    "range_origin": "derived_from_value"
+   }
+  ],
+  "package": {
+   "type": "FCBGA (144)",
+   "pins": 144,
+   "dimensions": "10mm × 10mm"
+  },
+  "temperature": {
+   "operating": "-40°C to 85°C",
+   "storage": "-65°C to 150°C"
+  },
+  "scope": "device"
+ },
+ "features": [
+  "12-bit resolution",
+  "Up to 10.4GSPS in single-channel mode",
+  "Up to 5.2GSPS in dual-channel mode",
+  "Single Ended 50Ω Inputs",
+  "Analog input range (–3dB): 2 to 6.3GHz",
+  "Noise floor (dual-channel mode): –149dBFS/Hz",
+  "Noise floor (single-channel mode): –151.5dBFS/Hz",
+  "ENOB (dual channel, FIN = 2.3GHz): 8.5 Bits",
+  "Noiseless aperture delay (tAD) adjustment with 19fs Step",
+  "JESD204C serial data interface with maximum lane rate: 17.16Gbps",
+  "Support for 64b/66b and 8b/10b encoding",
+  "Optional digital down-converters (DDC) with 4x, 8x, 16x and 32x complex decimation",
+  "Programmable FIR filter for equalization",
+  "Power consumption: 4W",
+  "Power supplies: 1.1V, 1.9V"
+ ],
+ "applications": [
+  "Communications testers (802.11ad, 5G)",
+  "Electronic warfare (SIGINT, ELINT)",
+  "Satellite communications (SATCOM)",
+  "RF-sampling software-defined radio (SDR)"
+ ],
+ "pin_configuration": [
+  {
+   "pin": "A1",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A2",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A3",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A4",
+   "name": "INA",
+   "function": "I",
+   "description": "Channel A single ended analog input. INA is recommended for use in single channel mode for optimal performance. The full-scale input voltage swing is determined by the FS_RANGE_A register (see the Full-Scale Voltage (VFS) Adjustment section). This input is AC coupled with a nominal impedance of 50Ω. There is no DC connection to supply or ground. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 10,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     415.67498779296875,
+     553.7418997628348,
+     468.0249938964844
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A5",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A7",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A8",
+   "name": "DA3+",
+   "function": "O",
+   "description": "High-speed serialized-data output for channel A, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 14,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     634.675048828125,
+     553.6839328342014,
+     677.4249877929688
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A9",
+   "name": "DA3-",
+   "function": "O",
+   "description": "High-speed serialized-data output for channel A, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 15,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     677.4249877929688,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A10",
+   "name": "DA2+",
+   "function": "O",
+   "description": "High-speed serialized-data output for channel A, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 12,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     558.7750244140625,
+     553.6839328342014,
+     601.5250244140625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A11",
+   "name": "DA2-",
+   "function": "O",
+   "description": "High-speed serialized-data output for channel A, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 13,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     601.5250244140625,
+     553.6839328342014,
+     634.675048828125
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "A12",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B1",
+   "name": "TMSTP+",
+   "function": "I",
+   "description": "Timestamp input positive connection or differential JESD204C SYNC positive connection. This input is a timestamp input, used to mark a specific sample, when TIMESTAMP_EN is set to 1. This differential input is used as the JESD204C SYNC signal input when SYNC_SEL is set 1. This input can be used as both a timestamp and differential SYNC input at the same time, allowing feedback of the SYNC signal using the timestamp mechanism. TMSTP± uses active low signaling when used as a JESD204C SYNC. For additional usage information, see the Timestamp section. TMSTP_RECV_EN must be set to 1 to use this input. This differential input (TMSTP+ to TMSTP–) has an internal untrimmed 100-Ω differential termination and can be AC-coupled when TMSTP_LVPECL_EN is set to 0. The termination changes to 50 Ω to ground on each input pin (TMSTP+ and TMSTP–) and can be DC coupled when TMSTP_LVPECL_EN is set to 1. This pin is not self-biased and therefore must be externally biased for both AC- and DC-coupled configurations. The common-mode voltage must be within the range provided in the Recommended Operating Conditions table when both AC and DC coupled. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     112.30555640326605,
+     552.8723958333334,
+     260.9799865722656
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B2",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B3",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B4",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B5",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B7",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B8",
+   "name": "DA7+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 8,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     339.7750549316406,
+     555.3070068359375,
+     382.5250549316406
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B9",
+   "name": "DA7-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     382.5250549316406,
+     555.3070068359375,
+     415.675048828125
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B10",
+   "name": "DA6+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     263.87506103515625,
+     555.3070068359375,
+     306.62506103515625
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B11",
+   "name": "DA6-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 7,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     306.62506103515625,
+     555.3070068359375,
+     339.7750549316406
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "B12",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C1",
+   "name": "TMSTP-",
+   "function": "I",
+   "description": "Timestamp input positive connection or differential JESD204C SYNC negative connection. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 3,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     260.9799865722656,
+     552.8723958333334,
+     293.5749816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C2",
+   "name": "SYNCSE",
+   "function": "I",
+   "description": "Single-ended JESD204C SYNC signal. This input is an active low input that is used to initialize the JESD204C serial link in 8B/10B modes when SYNC_SEL is set to 0. The 64B/66B modes do not use the SYNC signal for initialization, however it may be used for NCO synchronization. When toggled low in 8B/10B modes this input initiates code group synchronization (see the Code Group Synchronization (CGS) section). After code group synchronization, this input must be toggled high to start the initial lane alignment sequence (see the Initial Lane Alignment Sequence (ILAS) section). A differential SYNC signal can be used instead by setting SYNC_SEL to 1 and using TMSTP± as a differential SYNC input. Tie this pin to GND if differential SYNC (TMSTP±) is used as the JESD204C SYNC signal.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 10,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     396.4750061035156,
+     555.3070068359375,
+     487.2250061035156
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C3",
+   "name": "BG",
+   "function": "O",
+   "description": "Band-gap voltage output. This pin is capable of sourcing only small currents and driving limited capacitive loads, as specified in the Recommended Operating Conditions table. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 3,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     231.625,
+     553.6839328342014,
+     264.7749938964844
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C7",
+   "name": "NCOA0",
+   "function": "I",
+   "description": "LSB of NCO selection control for DDC A. NCOA0 and NCOA1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOA0 and NCOA1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 12,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     520.375,
+     553.7418997628348,
+     582.3250122070312
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C8",
+   "name": "ORA0",
+   "function": "O",
+   "description": "Fast overrange detection status for channel A for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 16,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     672.1749877929688,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C9",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C10",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C11",
+   "name": "DA5+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     187.97506713867188,
+     555.3070068359375,
+     230.72506713867188
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "C12",
+   "name": "DA1+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 10,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     482.8750305175781,
+     553.6839328342014,
+     525.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D1",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D2",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D3",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D7",
+   "name": "NCOA1",
+   "function": "I",
+   "description": "MSB of NCO selection control for DDC A. Tie this pin to GND if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 13,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     582.3250122070312,
+     553.7418997628348,
+     596.2750244140625
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D8",
+   "name": "ORA1",
+   "function": "O",
+   "description": "Fast overrange detection status for channel A for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     111.98750114440918,
+     555.3070068359375,
+     154.8249969482422
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D9",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D10",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D11",
+   "name": "DA5-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     230.72506713867188,
+     555.3070068359375,
+     263.87506103515625
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "D12",
+   "name": "DA1-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 11,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     525.625,
+     553.6839328342014,
+     558.7750244140625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E1",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E2",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E3",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E7",
+   "name": "CALTRIG",
+   "function": "I",
+   "description": "Foreground calibration trigger input. This pin is only used if hardware calibration triggering is selected in CAL_TRIG_EN, otherwise software triggering is performed using CAL_SOFT_TRIG. Tie this pin to GND if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     288.3249816894531,
+     553.6839328342014,
+     321.4750061035156
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E8",
+   "name": "SCS",
+   "function": "I",
+   "description": "Serial interface chip select active low input. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels. This pin has a 82-kΩ pullup resistor to VD11.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 7,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     306.625,
+     555.3070068359375,
+     339.7749938964844
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E9",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E10",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E11",
+   "name": "DA4+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     111.98756217956543,
+     555.3070068359375,
+     154.82505798339844
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "E12",
+   "name": "DA0+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 8,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     406.9750061035156,
+     553.6839328342014,
+     449.72503662109375
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F1",
+   "name": "CLK+",
+   "function": "I",
+   "description": "Device (sampling) clock positive input. The clock signal is strongly recommended to be AC- coupled to this input for best performance. In single-channel mode, the analog input signal is sampled on both the rising and falling edges. In dual-channel mode, the analog signal is sampled on the rising edge. This differential input has an internal untrimmed 100-Ω differential termination and is self-biased to the optimal input common-mode voltage as long as DEVCLK_LVPECL_EN is set to 0.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     321.4750061035156,
+     553.6839328342014,
+     383.425048828125
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F2",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F3",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F7",
+   "name": "CALSTAT",
+   "function": "O",
+   "description": "Foreground calibration status output or device alarm output. Functionality is programmed through CAL_STATUS_SEL. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     264.7749938964844,
+     553.6839328342014,
+     288.3249816894531
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F8",
+   "name": "SCLK",
+   "function": "I",
+   "description": "Serial interface clock. This pin functions as the serial-interface clock input that clocks the serial programming data in and out. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     273.4750061035156,
+     555.3070068359375,
+     306.625
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F9",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F10",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F11",
+   "name": "DA4-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 3,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     154.82505798339844,
+     555.3070068359375,
+     187.97506713867188
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "F12",
+   "name": "DA0-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel A, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     449.72503662109375,
+     553.6839328342014,
+     482.8750305175781
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G1",
+   "name": "CLK-",
+   "function": "I",
+   "description": "Device (sampling) clock negative input. TI strongly recommends using AC-coupling for best performance.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 7,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     383.425048828125,
+     553.6839328342014,
+     406.9750061035156
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G2",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G3",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G7",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G8",
+   "name": "SDI",
+   "function": "I",
+   "description": "Serial interface data input. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 8,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     339.7749938964844,
+     555.3070068359375,
+     363.3249816894531
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G9",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G10",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G11",
+   "name": "DB4-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     111.98750114440918,
+     553.7418997628348,
+     145.22500610351562
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "G12",
+   "name": "DB0-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 11,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     448.8250427246094,
+     555.3070068359375,
+     481.9750671386719
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H1",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H2",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H3",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H7",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H8",
+   "name": "SDO",
+   "function": "O",
+   "description": "Serial interface data output. The Using the Serial Interface section describes the serial interface in more detail. This pin is high impedance during normal device operation. This pin outputs 1.9-V CMOS levels during serial interface read operations. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     363.3249816894531,
+     555.3070068359375,
+     396.4750061035156
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H9",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H10",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H11",
+   "name": "DB4+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 18,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     680.8750610351562,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "H12",
+   "name": "DB0+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 10,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     415.675048828125,
+     555.3070068359375,
+     448.8250427246094
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J1",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J2",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J3",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J7",
+   "name": "NCOB1",
+   "function": "I",
+   "description": "MSB of NCO selection control for DDC B. Tie this pin to GND if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 15,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     658.2250366210938,
+     553.7418997628348,
+     672.1749877929688
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J8",
+   "name": "ORB1",
+   "function": "O",
+   "description": "Fast overrange detection status for channel B for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     197.5749969482422,
+     555.3070068359375,
+     240.3249969482422
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J9",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J10",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J11",
+   "name": "DB5-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     187.97500610351562,
+     553.7418997628348,
+     221.125
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "J12",
+   "name": "DB1-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 13,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     515.1250610351562,
+     555.3070068359375,
+     548.2750854492188
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K1",
+   "name": "SYSREF+",
+   "function": "I",
+   "description": "The SYSREF positive input is used to achieve synchronization and deterministic latency across the JESD204C interface. This differential input (SYSREF+ to SYSREF–) has an internal untrimmed 100-Ω differential termination and can be AC-coupled when SYSREF_LVPECL_EN is set to 0. This input is self-biased when SYSREF_LVPECL_EN is set to 0. The termination changes to 50 Ω to ground on each input pin (SYSREF+ and SYSREF–) and can be DC-coupled when SYSREF_LVPECL_EN is set to 1. This input is not self-biased when SYSREF_LVPECL_EN is set to 1 and must be biased externally to the input common-mode voltage range provided in the Recommended Operating Conditions table.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 11,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     487.2250061035156,
+     555.3070068359375,
+     568.375
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K2",
+   "name": "TDIODE+",
+   "function": "I",
+   "description": "Temperature diode positive (anode) connection. An external temperature sensor can be connected to TDIODE+ and TDIODE– to monitor the junction temperature of the device. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 13,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     582.3250122070312,
+     555.3070068359375,
+     615.4750366210938
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K3",
+   "name": "TDIODE-",
+   "function": "I",
+   "description": "Temperature diode negative (cathode) connection. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 14,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     615.4750366210938,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K4",
+   "name": "VA19",
+   "function": "I",
+   "description": "1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     336.3249816894531,
+     552.8723958333334,
+     379.07501220703125
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K5",
+   "name": "VA11",
+   "function": "I",
+   "description": "1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 4,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     293.5749816894531,
+     552.8723958333334,
+     336.3249816894531
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K6",
+   "name": "PD",
+   "function": "I",
+   "description": "This pin disables all analog circuits and serializer outputs when set high for temperature diode calibration or to reduce power consumption when the device is not being used. Tie this pin to GND if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     240.3249969482422,
+     555.3070068359375,
+     273.4750061035156
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K7",
+   "name": "NCOB0",
+   "function": "I",
+   "description": "LSB of NCO selection control for DDC B. NCOB0 and NCOB1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOB0 and NCOB1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 14,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     596.2750244140625,
+     553.7418997628348,
+     658.2250366210938
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K8",
+   "name": "ORB0",
+   "function": "O",
+   "description": "Fast overrange detection status for channel B for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 3,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     154.8249969482422,
+     555.3070068359375,
+     197.5749969482422
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K9",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K10",
+   "name": "VD11",
+   "function": "I",
+   "description": "1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 8,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70890426635742,
+     379.07501220703125,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "table_bbox": [
+     56.70890426635742,
+     84.21875381469727,
+     552.8723958333334,
+     421.860009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K11",
+   "name": "DB5+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 3,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     145.22500610351562,
+     553.7418997628348,
+     187.97500610351562
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "K12",
+   "name": "DB1+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 12,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     481.9750671386719,
+     555.3070068359375,
+     515.1250610351562
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L1",
+   "name": "SYSREF-",
+   "function": "I",
+   "description": "SYSREF negative input",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 7,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 12,
+    "index_base": 0,
+    "bbox": [
+     56.72271310715448,
+     568.375,
+     555.3070068359375,
+     582.3250122070312
+    ],
+    "table_bbox": [
+     56.72271310715448,
+     84.21875381469727,
+     555.3070068359375,
+     629.4599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L2",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L3",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L4",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L5",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L7",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L8",
+   "name": "DB7+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 7,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     297.0249938964844,
+     553.7418997628348,
+     339.7749938964844
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L9",
+   "name": "DB7-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 8,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     339.7749938964844,
+     553.7418997628348,
+     372.92498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L10",
+   "name": "DB6+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 5,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     221.125,
+     553.7418997628348,
+     263.875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L11",
+   "name": "DB6-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 6,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     263.875,
+     553.7418997628348,
+     297.0249938964844
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "L12",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M1",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M2",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M3",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M4",
+   "name": "INB",
+   "function": "I",
+   "description": "Channel B single ended analog input. INA is recommended for use in single channel mode for optimal performance. The full-scale input voltage swing is determined by the FS_RANGE_B register (see the Full-Scale Voltage (VFS) Adjustment section). This input is AC coupled with a nominal impedance of 50Ω. There is no DC connection to supply or ground. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 11,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     468.0249938964844,
+     553.7418997628348,
+     520.375
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M5",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M6",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M7",
+   "name": "AGND",
+   "function": "—",
+   "description": "Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 4,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 2,
+    "index_base": 0,
+    "bbox": [
+     56.70174427032471,
+     111.98750114440918,
+     553.6839328342014,
+     231.625
+    ],
+    "table_bbox": [
+     56.70174427032471,
+     84.21875381469727,
+     553.6839328342014,
+     710.610009765625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M8",
+   "name": "DB3+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 16,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     614.5750732421875,
+     555.3070068359375,
+     647.72509765625
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M9",
+   "name": "DB3-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 17,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     647.72509765625,
+     555.3070068359375,
+     680.8750610351562
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M10",
+   "name": "DB2+",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 14,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     548.2750854492188,
+     555.3070068359375,
+     581.425048828125
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M11",
+   "name": "DB2-",
+   "function": "O",
+   "description": "High-speed serialized data output for channel B, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 5,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 15,
+    "index_base": 0,
+    "bbox": [
+     56.71795791625976,
+     581.425048828125,
+     555.3070068359375,
+     614.5750732421875
+    ],
+    "table_bbox": [
+     56.71795791625976,
+     84.21880722045898,
+     555.3070068359375,
+     723.66005859375
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  },
+  {
+   "pin": "M12",
+   "name": "DGND",
+   "function": "—",
+   "description": "Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.",
+   "source": {
+    "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "page": 6,
+    "page_base": 1,
+    "table": 0,
+    "table_index": 0,
+    "row": 9,
+    "index_base": 0,
+    "bbox": [
+     56.70132755097889,
+     372.92498779296875,
+     553.7418997628348,
+     415.67498779296875
+    ],
+    "table_bbox": [
+     56.70132755097889,
+     84.21875381469727,
+     553.7418997628348,
+     714.9599853515625
+    ],
+    "scope": "device",
+    "table_name": "Table 4-1",
+    "subject_mpn": "ADC12DJ5200SE",
+    "package_ball_count": 144
+   }
+  }
+ ],
+ "ordering_info": [],
+ "alternatives": [],
+ "seo": {
+  "title_en": "ADC12DJ5200SE 10.4GSPS 12-bit RF-Sampling ADC by TI",
+  "title_zh": "ADC12DJ5200SE 10.4GSPS 12位 RF采样模数转换器 TI",
+  "meta_description_en": "Explore the TI ADC12DJ5200SE, a 12-bit RF-sampling ADC with 10.4GSPS single-channel speed, JESD204C interface, and integrated DDC for 5G and defense applications.",
+  "meta_description_zh": "探索 TI ADC12DJ5200SE，一款 12 位 RF 采样模数转换器，单通道速率达 10.4GSPS，具备 JESD204C 接口和集成 DDC，适用于 5G 和国防应用。",
+  "keywords": [
+   "ADC12DJ5200SE",
+   "RF Sampling ADC",
+   "12-bit ADC",
+   "JESD204C",
+   "Texas Instruments",
+   "5G Testing",
+   "SDR",
+   "Analog to Digital Converter"
+  ]
+ },
+ "multi_language": {
+  "de": {
+   "title": "ADC12DJ5200SE 10,4GSPS 12-bit RF-Sampling-ADC (TI)",
+   "description": "Der ADC12DJ5200SE ist ein 12-Bit-RF-Sampling-Analog-Digital-Wandler (ADC) mit integrierten Baluns. Er erreicht bis zu 10,4 GSPS im Einzelkanal-Modus und 5,2 GSPS im Doppelkanal-Modus und unterstützt das JESD204C-Interface.",
+   "meta": "Der TI ADC12DJ5200SE ist ein 12-bit RF-Sampling-ADC mit 10,4GSPS im Einzelkanal-Modus, JESD204C-Unterstützung und integrierter DDC für 5G und Verteidigung."
+  },
+  "es": {
+   "title": "ADC12DJ5200SE 10,4GSPS ADC RF de 12 bits (TI)",
+   "description": "El ADC12DJ5200SE es un conversor analógico-digital (ADC) de muestreo RF de 12 bits con baluns integrados. Ofrece hasta 10,4 GSPS en modo de canal único y 5,2 GSPS en modo de canal doble, con interfaz JESD204C.",
+   "meta": "El TI ADC12DJ5200SE es un ADC de muestreo RF de 12 bits con 10,4GSPS en modo de canal único, interfaz JESD204C y DDC integrada para aplicaciones 5G y de defensa."
+  },
+  "ja": {
+   "title": "ADC12DJ5200SE 10.4GSPS 12ビットRFサンプリングADC (TI)",
+   "description": "ADC12DJ5200SE は、統合されたバランを備えた12ビットRFサンプリングアナログ・デジタル変換器（ADC）です。1チャンネルモードで最大10.4GSPS、2チャンネルモードで5.2GSPSに対応し、JESD204Cインターフェースを備えています。",
+   "meta": "TI製ADC12DJ5200SEは、12ビットRFサンプリングADCで、1チャンネル10.4GSPS、JESD204C対応。5Gテストや防衛向けSDRに最適です。"
+  },
+  "ko": {
+   "title": "ADC12DJ5200SE 10.4GSPS 12비트 RF 샘플링 ADC (TI)",
+   "description": "ADC12DJ5200SE는 통합 발룬을 갖춘 12비트 RF 샘플링 아날로그-디지털 변환기(ADC)입니다. 싱글 채널 모드에서 10.4GSPS, 듀얼 채널 모드에서 5.2GSPS를 지원하며 JESD204C 인터페이스를 제공합니다.",
+   "meta": "TI의 ADC12DJ5200SE는 12비트 RF 샘플링 ADC로, 싱글 채널 10.4GSPS, JESD204C 지원을 특징으로 하며 5G 테스트 및 방위 SDR에 적합합니다."
+  }
+ },
+ "metadata": {
+  "pdf_hash": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+  "parse_timestamp": "2026-10-22T14:08:04+08:00",
+  "model_version": "agnes-3.0-flash",
+  "confidence": 0.95,
+  "requested_mpn": "ADC12DJ5200SE",
+  "scope_contract_version": "1.0",
+  "five_stage": "2026-10-30-page-evidence-v1",
+  "pin_repair_history": [
+   {
+    "old_pin_configuration": [],
+    "old_pin_scope": "unresolved",
+    "old_package_pins": 144,
+    "old_pin_repair": null,
+    "old_pin_validation": null,
+    "input_validation": {
+     "status": "fail",
+     "count": 0,
+     "actual_balls": [],
+     "missing_balls": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "E10",
+      "E11",
+      "E12",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10",
+      "F11",
+      "F12",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "G10",
+      "G11",
+      "G12",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "J1",
+      "J2",
+      "J3",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J9",
+      "J10",
+      "J11",
+      "J12",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "K5",
+      "K6",
+      "K7",
+      "K8",
+      "K9",
+      "K10",
+      "K11",
+      "K12",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L7",
+      "L8",
+      "L9",
+      "L10",
+      "L11",
+      "L12",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "M10",
+      "M11",
+      "M12"
+     ],
+     "extra_balls": [],
+     "duplicate_balls": [],
+     "mapping_mismatches": [],
+     "source_unverified_count": 0
+    }
+   }
+  ],
+  "pin_repair": "PDF 原表逐球映射核验：144 球；名称、I/O、描述均取自原 PDF。",
+  "pin_validation": {
+   "action": "rebuilt",
+   "status": "pass",
+   "pins": 144,
+   "balls": 144,
+   "functions": 64,
+   "expected_count": 144,
+   "expected_origin": "verified_device_package",
+   "actual_count": 144,
+   "actual_entries": 144,
+   "covered_count": 144,
+   "expected_balls": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11",
+    "B12",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "D9",
+    "D10",
+    "D11",
+    "D12",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E10",
+    "E11",
+    "E12",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6",
+    "G7",
+    "G8",
+    "G9",
+    "G10",
+    "G11",
+    "G12",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "H9",
+    "H10",
+    "H11",
+    "H12",
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "J7",
+    "J8",
+    "J9",
+    "J10",
+    "J11",
+    "J12",
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7",
+    "K8",
+    "K9",
+    "K10",
+    "K11",
+    "K12",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8",
+    "M9",
+    "M10",
+    "M11",
+    "M12"
+   ],
+   "actual_balls": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11",
+    "B12",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "D9",
+    "D10",
+    "D11",
+    "D12",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E10",
+    "E11",
+    "E12",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6",
+    "G7",
+    "G8",
+    "G9",
+    "G10",
+    "G11",
+    "G12",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "H9",
+    "H10",
+    "H11",
+    "H12",
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "J7",
+    "J8",
+    "J9",
+    "J10",
+    "J11",
+    "J12",
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7",
+    "K8",
+    "K9",
+    "K10",
+    "K11",
+    "K12",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8",
+    "M9",
+    "M10",
+    "M11",
+    "M12"
+   ],
+   "covered_balls": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11",
+    "B12",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "D9",
+    "D10",
+    "D11",
+    "D12",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E10",
+    "E11",
+    "E12",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6",
+    "G7",
+    "G8",
+    "G9",
+    "G10",
+    "G11",
+    "G12",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "H9",
+    "H10",
+    "H11",
+    "H12",
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "J7",
+    "J8",
+    "J9",
+    "J10",
+    "J11",
+    "J12",
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7",
+    "K8",
+    "K9",
+    "K10",
+    "K11",
+    "K12",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8",
+    "M9",
+    "M10",
+    "M11",
+    "M12"
+   ],
+   "missing_balls": [],
+   "extra_balls": [],
+   "duplicate_balls": [],
+   "reasons": [],
+   "input_validation": {
+    "status": "fail",
+    "count": 0,
+    "actual_balls": [],
+    "missing_balls": [
+     "A1",
+     "A2",
+     "A3",
+     "A4",
+     "A5",
+     "A6",
+     "A7",
+     "A8",
+     "A9",
+     "A10",
+     "A11",
+     "A12",
+     "B1",
+     "B2",
+     "B3",
+     "B4",
+     "B5",
+     "B6",
+     "B7",
+     "B8",
+     "B9",
+     "B10",
+     "B11",
+     "B12",
+     "C1",
+     "C2",
+     "C3",
+     "C4",
+     "C5",
+     "C6",
+     "C7",
+     "C8",
+     "C9",
+     "C10",
+     "C11",
+     "C12",
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D5",
+     "D6",
+     "D7",
+     "D8",
+     "D9",
+     "D10",
+     "D11",
+     "D12",
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10",
+     "E11",
+     "E12",
+     "F1",
+     "F2",
+     "F3",
+     "F4",
+     "F5",
+     "F6",
+     "F7",
+     "F8",
+     "F9",
+     "F10",
+     "F11",
+     "F12",
+     "G1",
+     "G2",
+     "G3",
+     "G4",
+     "G5",
+     "G6",
+     "G7",
+     "G8",
+     "G9",
+     "G10",
+     "G11",
+     "G12",
+     "H1",
+     "H2",
+     "H3",
+     "H4",
+     "H5",
+     "H6",
+     "H7",
+     "H8",
+     "H9",
+     "H10",
+     "H11",
+     "H12",
+     "J1",
+     "J2",
+     "J3",
+     "J4",
+     "J5",
+     "J6",
+     "J7",
+     "J8",
+     "J9",
+     "J10",
+     "J11",
+     "J12",
+     "K1",
+     "K2",
+     "K3",
+     "K4",
+     "K5",
+     "K6",
+     "K7",
+     "K8",
+     "K9",
+     "K10",
+     "K11",
+     "K12",
+     "L1",
+     "L2",
+     "L3",
+     "L4",
+     "L5",
+     "L6",
+     "L7",
+     "L8",
+     "L9",
+     "L10",
+     "L11",
+     "L12",
+     "M1",
+     "M2",
+     "M3",
+     "M4",
+     "M5",
+     "M6",
+     "M7",
+     "M8",
+     "M9",
+     "M10",
+     "M11",
+     "M12"
+    ],
+    "extra_balls": [],
+    "duplicate_balls": [],
+    "mapping_mismatches": [],
+    "source_unverified_count": 0
+   },
+   "mapping_sha256": "3695a8e4314677bfcb921b473816640e772422a156df77bf3f3b2736761db5d3",
+   "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74"
+  },
+  "scope_contract_findings_previous": [
+   {
+    "path": "basic_info.identity",
+    "kind": "unknown_identity",
+    "message": "商品身份缺失或未知，禁止裸工程表和引脚"
+   },
+   {
+    "path": "specs.electrical",
+    "kind": "quarantined_residual",
+    "message": "17 项残留禁止作为主规格消费，保留到隔离区"
+   },
+   {
+    "path": "specs.absolute_max",
+    "kind": "quarantined_residual",
+    "message": "6 项残留禁止作为主规格消费，保留到隔离区"
+   },
+   {
+    "path": "specs.temperature",
+    "kind": "quarantined_residual",
+    "message": "2 项残留禁止作为主规格消费，保留到隔离区"
+   },
+   {
+    "path": "pin_configuration",
+    "kind": "pins_quarantined",
+    "message": "引脚不属于已确认的主器件，引脚事实保留但不发布"
+   }
+  ],
+  "scope_contract_findings_before_refresh": [
+   {
+    "path": "basic_info.identity",
+    "kind": "unknown_identity",
+    "message": "商品身份缺失或未知，禁止裸工程表和引脚"
+   },
+   {
+    "path": "specs.electrical",
+    "kind": "quarantined_residual",
+    "message": "17 项残留禁止作为主规格消费，保留到隔离区"
+   },
+   {
+    "path": "specs.absolute_max",
+    "kind": "quarantined_residual",
+    "message": "6 项残留禁止作为主规格消费，保留到隔离区"
+   },
+   {
+    "path": "specs.temperature",
+    "kind": "quarantined_residual",
+    "message": "2 项残留禁止作为主规格消费，保留到隔离区"
+   },
+   {
+    "path": "pin_configuration",
+    "kind": "pins_quarantined",
+    "message": "引脚不属于已确认的主器件，引脚事实保留但不发布"
+   }
+  ],
+  "scope_contract_findings": [],
+  "scope_contract_refresh": {
+   "method": "drop_replayed_findings_then_validate_contract",
+   "fresh_finding_count": 0,
+   "note": "旧 unknown_identity 只归档，不作为当前阻断；电气行 not_checked 不因此变成已审计"
+  }
+ },
+ "related_evaluation_boards": [
+  {
+   "mpn": "ADC12DJ5200SEEVM",
+   "moq": 0,
+   "marking": "ADC12DJ5200SE",
+   "original_ordering_row": {
+    "mpn": "ADC12DJ5200SEEVM",
+    "package": "FCBGA (144)",
+    "packaging": "Evaluation Module",
+    "moq": 0,
+    "marking": "ADC12DJ5200SE"
+   },
+   "scope": "board",
+   "subject_kind": "evaluation_board",
+   "scope_reason": "评估板订购对象不是芯片封装/包装变体；原订购行保留供核验",
+   "source": {
+    "field": "ordering_info",
+    "requested_mpn": "ADC12DJ5200SE",
+    "pdf_path": "E:\\workspace\\IcPdfParser\\data\\pdfs\\ADC12DJ5200SEAAV__adc12dj5200se.pdf"
+   }
+  }
+ ],
+ "pin_scope": "device"
+}
