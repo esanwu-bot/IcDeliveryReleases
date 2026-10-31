@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-10-30T17:27:15+08:00",
+  "packaging_validation": "pass",
+  "engineering_validation": "not_approved",
+  "i18n_validation": "not_checked",
+  "mpn_count": 5,
+  "model_directories": [
+    "ADC12DJ5200SE",
+    "ADS1201U-1_1K",
+    "ADS8568EVM-PDK",
+    "BOOST-DRV8711",
+    "BOOSTXL-C2KLED"
+  ],
+  "model_artifact_count": 15,
+  "zip_member_count": 19,
+  "zip_crc": "pass",
+  "source_hashes_unchanged": true,
+  "zip_sha256": "165577ac3b7a59fec3b4c9f6e55449707a5d94da4a627af255d1a8165c23d11e",
+  "zip_size": 74921,
+  "verified_members": [
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.html",
+      "sha256": "0c9f86dfe58edcba6080e1403c2ddc3e0b0d2033997d67bca09887e2bfc1661b"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.json",
+      "sha256": "3a4571a3ba4b65d836b1a30314c24765abae6b7fbc601733d4cae9f5cd9243f9"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.symbols.html",
+      "sha256": "2fb8a45bf58e29c382e9470b20278dd7ad1501f8bbd4e725573ded5853766aee"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.html",
+      "sha256": "d3c9881df7e613d31c1ab98fd6d38bd0c12f1f97aa98b2dd5f412b3e62d35e5b"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.json",
+      "sha256": "6a06b7120241d099e3c3f86b9df1142c7eba8558cb45a22bb8c30dcb6dd3b7d2"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.symbols.html",
+      "sha256": "84bdc512376f4d49b5b9ee62b4c1a91c587b5aa9c4fef12697c30062ad18dce2"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.html",
+      "sha256": "7afce22babc654aed83bc482837a7fe6af039673e3093475bd1678966885dddf"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.json",
+      "sha256": "b1ac54bd3cf3e2428823f14067a28f62abd97df0475999712a3b4f10873881bc"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.symbols.html",
+      "sha256": "47aecf8e6c75131bcbe6e639e2bc1da3b08d12b810453f9a03a2c621a8306c51"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.html",
+      "sha256": "83336b0fa52a2efdba8ca5df21066008055f9cc7b3ebbbea165fa83c9c73d753"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.json",
+      "sha256": "842c5b92fde355611c6c4a4edde641c59552f085999e75376d0d9d87cb115114"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.symbols.html",
+      "sha256": "8a21ee4eaf50b3186f9a96941ab6860b07d86eeeb15b0c2e479825450f91c949"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.html",
+      "sha256": "8928ec0b179b3eaada59163f73392824f0f099ab5aaf48354020a61896546651"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.json",
+      "sha256": "1c40fc465b861af7fc5186b1fa52e2f07550206afdfc430fcc3f7bb116fd438c"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.symbols.html",
+      "sha256": "757ec4c8cf80325eee333e4021e2fa130bc82a783745078f71c7f3152610796c"
+    },
+    {
+      "member": "manifest.csv",
+      "sha256": "457a3570affe239bd82861ef2bc226a9699a49d77900e6d40d5b59aceb55c109"
+    },
+    {
+      "member": "manifest.json",
+      "sha256": "d15ccbf4552d5c438b3158af2b665014be97d19655f36d8d3dce99624d1ec2f2"
+    },
+    {
+      "member": "README.md",
+      "sha256": "39d9d3757fec158e19acc964ebba63b93f797642f6e04e66266e932630482956"
+    },
+    {
+      "member": "修复方案.md",
+      "sha256": "9cf4251b7cf2869953a28e4660ede134bc4e8839e821c6004d1121f353498d89"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "basic_info": {
+    "mpn": "BOOSTXL-C2KLED",
+    "manufacturer": "Texas Instruments",
+    "category": "Evaluation Boards & Kits",
+    "subcategory": "Power Management Evaluation Kits",
+    "description": "The BOOSTXL-C2KLED is a C2000 LED BoosterPack designed for evaluating LED lighting systems. It features boost DC/DC stages that independently control output power to adjust the average current through LED strings, enabling brightness control. The kit supports DC input ranging from 6 V to 20 V and provides nominal 24 V output per boost stage. It integrates with C2000 LaunchPads to demonstrate PWM and ADC resource mapping for lighting control applications.",
+    "datasheet_url": "https://www.ti.com/lit/ug/spruhh9/spruhh9.pdf?ts=1792643889811",
+    "identity": "evaluation_board",
+    "identity_state": "BOARD_CONFIRMED",
+    "identity_rule": "TI_BOARD_PREFIX_BOOST",
+    "identity_confidence": "low",
+    "identity_evidence": [
+      "请求料号本身就在订货表内（共 1 条），且以 `BOOST` 结尾 → 这是可订购的板卡，不是裸芯片"
+    ],
+    "document_scope": "board_user_guide"
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Power Input Voltage Minimum",
+        "value": "6",
+        "unit": "V",
+        "condition": "@ 1.2A"
+      },
+      {
+        "name": "Power Input Voltage Maximum",
+        "value": "20",
+        "unit": "V",
+        "condition": "@ 360 mA"
+      },
+      {
+        "name": "Boost Stage Input Voltage Minimum",
+        "value": "6",
+        "unit": "V",
+        "condition": "@ 400 mA"
+      },
+      {
+        "name": "Boost Stage Input Voltage Maximum",
+        "value": "20",
+        "unit": "V",
+        "condition": "@ 120 mA"
+      },
+      {
+        "name": "Boost Stage Output Voltage",
+        "value": "24",
+        "unit": "V",
+        "condition": "Nominal @ 100 mA"
+      }
+    ],
+    "absolute_max": [],
+    "package": {
+      "type": "Evaluation Board",
+      "pins": 0,
+      "dimensions": ""
+    },
+    "temperature": {
+      "operating": "",
+      "storage": ""
+    },
+    "scope": "board"
+  },
+  "features": [
+    "Supports C2000 devices for controlling separate DC supply for each LED string",
+    "Brightness control accomplished by independently varying output power of each DC/DC stage",
+    "Controls average current passing through each LED string",
+    "Includes AC/DC Power Adapter (12 V 1A)",
+    "Includes Quick Start Guide"
+  ],
+  "applications": [
+    "LED Lighting Systems",
+    "Engineering Development",
+    "Feasibility Evaluation",
+    "Demonstration and Evaluation of C2000 Control Solutions"
+  ],
+  "pin_configuration": [],
+  "ordering_info": [
+    {
+      "mpn": "BOOSTXL-C2KLED",
+      "package": "BoosterPack Module",
+      "packaging": "Kit",
+      "moq": 0,
+      "marking": ""
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack Evaluation Kit",
+    "title_zh": "德州仪器 BOOSTXL-C2KLED C2000 LED BoosterPack 评估套件",
+    "meta_description_en": "The BOOSTXL-C2KLED is a C2000 LED BoosterPack for evaluating lighting systems. Features independent DC/DC boost stages, 24V nominal output, and integration with C2000 LaunchPads for PWM control. Includes 12V AC/DC adapter.",
+    "meta_description_zh": "BOOSTXL-C2KLED 是一款 C2000 LED BoosterPack，用于评估照明系统。具备独立 DC/DC 升压级，标称 24V 输出，并与 C2000 LaunchPad 集成以实现 PWM 控制。包含 12V AC/DC 适配器。",
+    "keywords": [
+      "BOOSTXL-C2KLED",
+      "Texas Instruments",
+      "C2000",
+      "LED BoosterPack",
+      "Evaluation Kit",
+      "LED Lighting Control",
+      "DC/DC Boost"
+    ]
+  },
+  "multi_language": {
+    "de": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack Bewertungskit",
+      "description": "Der BOOSTXL-C2KLED ist ein C2000 LED BoosterPack zur Bewertung von Beleuchtungssystemen. Er steuert die Ausgangsleistung jeder DC/DC-Stufe unabhängig, um die Helligkeit der LED-Zeilen zu regulieren. Er bietet eine nominale Ausgangsspannung von 24 V und lässt sich mit C2000 LaunchPads integrieren. Enthält ein 12V AC/DC-Netzteil.",
+      "meta": "Der BOOSTXL-C2KLED ist ein C2000 LED BoosterPack für die Bewertung von Beleuchtungssystemen. Er weist unabhängige DC/DC-Booststufen auf, eine nominale Ausgangsspannung von 24 V und eine Integration mit C2000 LaunchPads. Inklusive 12V AC/DC-Netzteil."
+    },
+    "es": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack Kit de Evaluación",
+      "description": "El BOOSTXL-C2KLED es un LED BoosterPack de C2000 para evaluar sistemas de iluminación. Controla la potencia de salida de cada etapa DC/DC de forma independiente para regular el brillo de las cadenas de LED. Ofrece una salida nominal de 24 V y se integra con LaunchPads de C2000. Incluye adaptador AC/DC de 12 V.",
+      "meta": "El BOOSTXL-C2KLED es un LED BoosterPack de C2000 para evaluar sistemas de iluminación. Caracterizado por etapas de boost DC/DC independientes, salida nominal de 24 V e integración con LaunchPads de C2000. Incluye adaptador AC/DC de 12 V."
+    },
+    "ja": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack評価キット",
+      "description": "BOOSTXL-C2KLEDは、照明システムを評価するためのC2000 LED BoosterPackです。各DC/DC段の出力電力を独立して変化させ、LEDストリングの明るさを制御します。24Vノミナル出力を備え、C2000 LaunchPadと統合可能です。12V AC/DCアダプタを含む。",
+      "meta": "BOOSTXL-C2KLEDは照明システム評価用のC2000 LED BoosterPackです。独立したDC/DCブースト段、24Vノミナル出力、C2000 LaunchPadとの統合を特徴とし、12V AC/DCアダプタが付属します。"
+    },
+    "ko": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack 평가 키트",
+      "description": "BOOSTXL-C2KLED는 조명 시스템을 평가하기 위한 C2000 LED BoosterPack입니다. 각 DC/DC 단의 출력 전력을 독립적으로 변화시켜 LED 스트링의 밝기를 제어합니다. 24V 명목 출력을 갖추고 있으며 C2000 LaunchPad와 통합 가능합니다. 12V AC/DC 어댑터가 포함됩니다.",
+      "meta": "BOOSTXL-C2KLED는 조명 시스템 평가를 위한 C2000 LED BoosterPack입니다. 독립적인 DC/DC 부스트 단계, 24V 명목 출력, C2000 LaunchPad 통합 기능이 특징이며 12V AC/DC 어댑터가 제공됩니다."
+    }
+  },
+  "metadata": {
+    "pdf_hash": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+    "parse_timestamp": "2026-10-22T14:10:40+08:00",
+    "model_version": "agnes-3.0-flash",
+    "confidence": 0.85
+  },
+  "pin_scope": "board_no_pins"
+}

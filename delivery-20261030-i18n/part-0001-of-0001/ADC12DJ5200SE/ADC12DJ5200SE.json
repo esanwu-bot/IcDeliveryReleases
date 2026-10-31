@@ -1,0 +1,1109 @@
+{
+  "basic_info": {
+    "mpn": "ADC12DJ5200SE",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs) / Data Acquisition / Analog to Digital Converters (ADCs)",
+    "subcategory": "RF-Sampling ADCs",
+    "description": "The ADC12DJ5200SE is a 12-bit, RF-sampling analog-to-digital converter (ADC) with integrated baluns, offering up to 10.4GSPS in single-channel or 5.2GSPS in dual-channel mode. It features JESD204C interface, optional digital down-converters, and flexible synchronization capabilities for communications, defense, and satellite applications.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/adc12dj5200se.pdf",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号不在订货表逐字列出，但是 `ADC12DJ5200SEEVM` 的包装/等级变体写法（订货表共 1 条）→ 同一颗芯片"
+    ]
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Resolution",
+        "value": "12",
+        "unit": "bit",
+        "condition": ""
+      },
+      {
+        "name": "Sample Rate (Single-Channel)",
+        "value": "10.4",
+        "unit": "GSPS",
+        "condition": ""
+      },
+      {
+        "name": "Sample Rate (Dual-Channel)",
+        "value": "5.2",
+        "unit": "GSPS",
+        "condition": ""
+      },
+      {
+        "name": "Analog Input Range (-3dB)",
+        "value": "2 to 6.3",
+        "unit": "GHz",
+        "condition": "",
+        "range": {
+          "min": "2",
+          "max": "6.3"
+        },
+        "columns_raw": {
+          "MIN": "2",
+          "MAX": "6.3"
+        },
+        "columns": {
+          "MIN": 2.0,
+          "MAX": 6.3
+        }
+      },
+      {
+        "name": "Full-scale input power",
+        "value": "-1.25",
+        "unit": "dBm",
+        "condition": "fIN = 4.5GHz, FS_RANGE = 0xA000"
+      },
+      {
+        "name": "Noise floor (Dual-channel)",
+        "value": "-149",
+        "unit": "dBFS/Hz",
+        "condition": "2.3GHz, -20dBFS, INPUTFS = 1.5dBm"
+      },
+      {
+        "name": "Noise floor (Single-channel)",
+        "value": "-151.5",
+        "unit": "dBFS/Hz",
+        "condition": "2.3GHz, -20dBFS, INPUTFS = 1.5dBm"
+      },
+      {
+        "name": "ENOB (Dual channel)",
+        "value": "8.5",
+        "unit": "Bits",
+        "condition": "FIN = 2.3GHz"
+      },
+      {
+        "name": "Peak RF Input Power",
+        "value": "+26.25",
+        "unit": "dBm",
+        "condition": ""
+      },
+      {
+        "name": "Power Consumption",
+        "value": "4",
+        "unit": "W",
+        "condition": ""
+      },
+      {
+        "name": "Maximum lane rate",
+        "value": "17.16",
+        "unit": "Gbps",
+        "condition": ""
+      },
+      {
+        "name": "VA19, analog 1.9-V supply",
+        "value": "1.8 to 2.0",
+        "unit": "V",
+        "condition": "Recommended Operating Conditions",
+        "range": {
+          "min": "1.8",
+          "max": "2.0"
+        },
+        "columns_raw": {
+          "MIN": "1.8",
+          "MAX": "2.0"
+        },
+        "columns": {
+          "MIN": 1.8,
+          "MAX": 2.0
+        }
+      },
+      {
+        "name": "VA11, analog 1.1-V supply",
+        "value": "1.05 to 1.15",
+        "unit": "V",
+        "condition": "Recommended Operating Conditions",
+        "range": {
+          "min": "1.05",
+          "max": "1.15"
+        },
+        "columns_raw": {
+          "MIN": "1.05",
+          "MAX": "1.15"
+        },
+        "columns": {
+          "MIN": 1.05,
+          "MAX": 1.15
+        }
+      },
+      {
+        "name": "VD11, digital 1.1-V supply",
+        "value": "1.05 to 1.15",
+        "unit": "V",
+        "condition": "Recommended Operating Conditions",
+        "range": {
+          "min": "1.05",
+          "max": "1.15"
+        },
+        "columns_raw": {
+          "MIN": "1.05",
+          "MAX": "1.15"
+        },
+        "columns": {
+          "MIN": 1.05,
+          "MAX": 1.15
+        }
+      },
+      {
+        "name": "Input common-mode voltage (CLK, SYSREF, TMSTP)",
+        "value": "0.3 to 0.55",
+        "unit": "V",
+        "condition": "AC coupled",
+        "range": {
+          "min": "0.3",
+          "max": "0.55"
+        },
+        "columns_raw": {
+          "MIN": "0.3",
+          "MAX": "0.55"
+        },
+        "columns": {
+          "MIN": 0.3,
+          "MAX": 0.55
+        }
+      },
+      {
+        "name": "Input voltage, peak-to-peak differential",
+        "value": "1.0 to 2.0",
+        "unit": "VPP-DIFF",
+        "condition": "CLK, SYSREF, TMSTP",
+        "range": {
+          "min": "1.0",
+          "max": "2.0"
+        },
+        "columns_raw": {
+          "MIN": "1.0",
+          "MAX": "2.0"
+        },
+        "columns": {
+          "MIN": 1.0,
+          "MAX": 2.0
+        }
+      },
+      {
+        "name": "Operating free-air temperature",
+        "value": "-40 to 85",
+        "unit": "°C",
+        "condition": "",
+        "range": {
+          "min": "-40",
+          "max": "85"
+        },
+        "columns_raw": {
+          "MIN": "-40",
+          "MAX": "85"
+        },
+        "columns": {
+          "MIN": -40.0,
+          "MAX": 85.0
+        }
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "VA19 Supply voltage range",
+        "value": "-0.3 to 2.35",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "2.35"
+        },
+        "columns_raw": {
+          "MIN": "-0.3",
+          "MAX": "2.35"
+        },
+        "columns": {
+          "MIN": -0.3,
+          "MAX": 2.35
+        }
+      },
+      {
+        "name": "VA11 Supply voltage range",
+        "value": "-0.3 to 1.32",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "1.32"
+        },
+        "columns_raw": {
+          "MIN": "-0.3",
+          "MAX": "1.32"
+        },
+        "columns": {
+          "MIN": -0.3,
+          "MAX": 1.32
+        }
+      },
+      {
+        "name": "VD11 Supply voltage range",
+        "value": "-0.3 to 1.32",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "1.32"
+        },
+        "columns_raw": {
+          "MIN": "-0.3",
+          "MAX": "1.32"
+        },
+        "columns": {
+          "MIN": -0.3,
+          "MAX": 1.32
+        }
+      },
+      {
+        "name": "Voltage between VD11 and VA11",
+        "value": "-1.32 to 1.32",
+        "unit": "V",
+        "range": {
+          "min": "-1.32",
+          "max": "1.32"
+        },
+        "columns_raw": {
+          "MIN": "-1.32",
+          "MAX": "1.32"
+        },
+        "columns": {
+          "MIN": -1.32,
+          "MAX": 1.32
+        }
+      },
+      {
+        "name": "Junction temperature (Tj)",
+        "value": "150",
+        "unit": "°C"
+      },
+      {
+        "name": "Storage temperature (Tstg)",
+        "value": "-65 to 150",
+        "unit": "°C",
+        "range": {
+          "min": "-65",
+          "max": "150"
+        },
+        "columns_raw": {
+          "MIN": "-65",
+          "MAX": "150"
+        },
+        "columns": {
+          "MIN": -65.0,
+          "MAX": 150.0
+        }
+      }
+    ],
+    "package": {
+      "type": "FCBGA (144)",
+      "pins": 144,
+      "dimensions": "10mm × 10mm"
+    },
+    "temperature": {
+      "operating": "-40°C to 85°C",
+      "storage": "-65°C to 150°C"
+    }
+  },
+  "features": [
+    "12-bit resolution",
+    "Up to 10.4GSPS in single-channel mode",
+    "Up to 5.2GSPS in dual-channel mode",
+    "Single Ended 50Ω Inputs",
+    "Analog input range (–3dB): 2 to 6.3GHz",
+    "Noise floor (dual-channel mode): –149dBFS/Hz",
+    "Noise floor (single-channel mode): –151.5dBFS/Hz",
+    "ENOB (dual channel, FIN = 2.3GHz): 8.5 Bits",
+    "Noiseless aperture delay (tAD) adjustment with 19fs Step",
+    "JESD204C serial data interface with maximum lane rate: 17.16Gbps",
+    "Support for 64b/66b and 8b/10b encoding",
+    "Optional digital down-converters (DDC) with 4x, 8x, 16x and 32x complex decimation",
+    "Programmable FIR filter for equalization",
+    "Power consumption: 4W",
+    "Power supplies: 1.1V, 1.9V"
+  ],
+  "applications": [
+    "Communications testers (802.11ad, 5G)",
+    "Electronic warfare (SIGINT, ELINT)",
+    "Satellite communications (SATCOM)",
+    "RF-sampling software-defined radio (SDR)"
+  ],
+  "pin_configuration": [
+    {
+      "pin": "A1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "A2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "A3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "A4",
+      "name": "INA",
+      "description": "Channel A single ended analog input."
+    },
+    {
+      "pin": "A5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "A6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "A7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "A8",
+      "name": "DA3+",
+      "description": "High-speed serialized-data output for channel A, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "A9",
+      "name": "DA3-",
+      "description": "High-speed serialized-data output for channel A, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "A10",
+      "name": "DA2+",
+      "description": "High-speed serialized-data output for channel A, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "A11",
+      "name": "DA2-",
+      "description": "High-speed serialized-data output for channel A, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "A12",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "B1",
+      "name": "TMSTP+",
+      "description": "Timestamp input positive connection or differential JESD204C SYNC positive connection. This input is a timestamp input, used to mark a specific sample, when TIMESTAMP_EN is set to 1. This differential input is used as the JESD204C SYNC signal input when SYNC_SEL is set 1. This input can be used as both a timestamp and differential SYNC input at the same time, allowing feedback of the SYNC signal using the timestamp mechanism. TMSTP± uses active low signaling when used as a JESD204C SYNC. For additional usage information, see the Timestamp section. TMSTP_RECV_EN must be set to 1 to use this input. This differential input (TMSTP+ to TMSTP–) has an internal untrimmed 100-Ω differential termination and can be AC-coupled when TMSTP_LVPECL_EN is set to 0. The termination changes to 50 Ω to ground on each input pin (TMSTP+ and TMSTP–) and can be DC coupled when TMSTP_LVPECL_EN is set to 1. This pin is not self-biased and therefore must be externally biased for both AC- and DC-coupled configurations. The common-mode voltage must be within the range provided in the Recommended Operating Conditions table when both AC and DC coupled. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required."
+    },
+    {
+      "pin": "B2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "B3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "B4",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "B5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "B6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "B7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "B8",
+      "name": "DA7+",
+      "description": "High-speed serialized data output for channel A, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "B9",
+      "name": "DA7-",
+      "description": "High-speed serialized data output for channel A, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "B10",
+      "name": "DA6+",
+      "description": "High-speed serialized data output for channel A, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "B11",
+      "name": "DA6-",
+      "description": "High-speed serialized data output for channel A, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "B12",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "C1",
+      "name": "TMSTP-",
+      "description": "Timestamp input positive connection or differential JESD204C SYNC negative connection. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required."
+    },
+    {
+      "pin": "C2",
+      "name": "SYNCSE",
+      "description": "Single-ended JESD204C SYNC signal. This input is an active low input that is used to initialize the JESD204C serial link in 8B/10B modes when SYNC_SEL is set to 0. The 64B/66B modes do not use the SYNC signal for initialization, however it may be used for NCO synchronization. When toggled low in 8B/10B modes this input initiates code group synchronization (see the Code Group Synchronization (CGS) section). After code group synchronization, this input must be toggled high to start the initial lane alignment sequence (see the Initial Lane Alignment Sequence (ILAS) section). A differential SYNC signal can be used instead by setting SYNC_SEL to 1 and using TMSTP± as a differential SYNC input. Tie this pin to GND if differential SYNC (TMSTP±) is used as the JESD204C SYNC signal."
+    },
+    {
+      "pin": "C3",
+      "name": "BG",
+      "description": "Band-gap voltage output. This pin is capable of sourcing only small currents and driving limited capacitive loads, as specified in the Recommended Operating Conditions table. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "C4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "C5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "C6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "C7",
+      "name": "NCOA0",
+      "description": "LSB of NCO selection control for DDC A. NCOA0 and NCOA1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOA0 and NCOA1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used."
+    },
+    {
+      "pin": "C8",
+      "name": "ORA0",
+      "description": "Fast overrange detection status for channel A for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "C9",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "C10",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "C11",
+      "name": "DA5+",
+      "description": "High-speed serialized data output for channel A, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "C12",
+      "name": "DA1+",
+      "description": "High-speed serialized data output for channel A, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "D1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "D2",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "D3",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "D4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "D5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "D6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "D7",
+      "name": "NCOA1",
+      "description": "MSB of NCO selection control for DDC A. Tie this pin to GND if not used."
+    },
+    {
+      "pin": "D8",
+      "name": "ORA1",
+      "description": "Fast overrange detection status for channel A for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "D9",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "D10",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "D11",
+      "name": "DA5-",
+      "description": "High-speed serialized data output for channel A, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "D12",
+      "name": "DA1-",
+      "description": "High-speed serialized data output for channel A, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "E1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "E2",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "E3",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "E4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "E5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "E6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "E7",
+      "name": "CALTRIG",
+      "description": "Foreground calibration trigger input. This pin is only used if hardware calibration triggering is selected in CAL_TRIG_EN, otherwise software triggering is performed using CAL_SOFT_TRIG. Tie this pin to GND if not used."
+    },
+    {
+      "pin": "E8",
+      "name": "SCS",
+      "description": "Serial interface chip select active low input."
+    },
+    {
+      "pin": "E9",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "E10",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "E11",
+      "name": "DA4+",
+      "description": "High-speed serialized data output for channel A, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "E12",
+      "name": "DA0+",
+      "description": "High-speed serialized data output for channel A, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "F1",
+      "name": "CLK+",
+      "description": "Device (sampling) clock positive input."
+    },
+    {
+      "pin": "F2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "F3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "F4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "F5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "F6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "F7",
+      "name": "CALSTAT",
+      "description": "Foreground calibration status output or device alarm output. Functionality is programmed through CAL_STATUS_SEL. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "F8",
+      "name": "SCLK",
+      "description": "Serial interface clock."
+    },
+    {
+      "pin": "F9",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "F10",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "F11",
+      "name": "DA4-",
+      "description": "High-speed serialized data output for channel A, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "F12",
+      "name": "DA0-",
+      "description": "High-speed serialized data output for channel A, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "G1",
+      "name": "CLK-",
+      "description": "Device (sampling) clock negative input."
+    },
+    {
+      "pin": "G2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "G3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "G4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "G5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "G6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "G7",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "G8",
+      "name": "SDI",
+      "description": "Serial interface data input."
+    },
+    {
+      "pin": "G9",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "G10",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "G11",
+      "name": "DB4-",
+      "description": "High-speed serialized data output for channel B, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "G12",
+      "name": "DB0-",
+      "description": "High-speed serialized data output for channel B, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "H1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "H2",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "H3",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "H4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "H5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "H6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "H7",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "H8",
+      "name": "SDO",
+      "description": "Serial interface data output."
+    },
+    {
+      "pin": "H9",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "H10",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "H11",
+      "name": "DB4+",
+      "description": "High-speed serialized data output for channel B, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "H12",
+      "name": "DB0+",
+      "description": "High-speed serialized data output for channel B, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "J1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "J2",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "J3",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "J4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "J5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "J6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "J7",
+      "name": "NCOB1",
+      "description": "MSB of NCO selection control for DDC B. Tie this pin to GND if not used."
+    },
+    {
+      "pin": "J8",
+      "name": "ORB1",
+      "description": "Fast overrange detection status for channel B for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "J9",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "J10",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "J11",
+      "name": "DB5-",
+      "description": "High-speed serialized data output for channel B, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "J12",
+      "name": "DB1-",
+      "description": "High-speed serialized data output for channel B, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "K1",
+      "name": "SYSREF+",
+      "description": "SYSREF positive input for synchronization."
+    },
+    {
+      "pin": "K2",
+      "name": "TDIODE+",
+      "description": "Temperature diode positive (anode) connection. An external temperature sensor can be connected to TDIODE+ and TDIODE– to monitor the junction temperature of the device. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "K3",
+      "name": "TDIODE-",
+      "description": "Temperature diode negative (cathode) connection. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "K4",
+      "name": "VA19",
+      "description": "1.9-V analog supply."
+    },
+    {
+      "pin": "K5",
+      "name": "VA11",
+      "description": "1.1-V analog supply."
+    },
+    {
+      "pin": "K6",
+      "name": "PD",
+      "description": "This pin disables all analog circuits and serializer outputs when set high for temperature diode calibration or to reduce power consumption when the device is not being used. Tie this pin to GND if not used."
+    },
+    {
+      "pin": "K7",
+      "name": "NCOB0",
+      "description": "LSB of NCO selection control for DDC B. NCOB0 and NCOB1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOB0 and NCOB1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used."
+    },
+    {
+      "pin": "K8",
+      "name": "ORB0",
+      "description": "Fast overrange detection status for channel B for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "K9",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "K10",
+      "name": "VD11",
+      "description": "1.1-V digital supply."
+    },
+    {
+      "pin": "K11",
+      "name": "DB5+",
+      "description": "High-speed serialized data output for channel B, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "K12",
+      "name": "DB1+",
+      "description": "High-speed serialized data output for channel B, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "L1",
+      "name": "SYSREF-",
+      "description": "SYSREF negative input."
+    },
+    {
+      "pin": "L2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "L3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "L4",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "L5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "L6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "L7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "L8",
+      "name": "DB7+",
+      "description": "High-speed serialized data output for channel B, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "L9",
+      "name": "DB7-",
+      "description": "High-speed serialized data output for channel B, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "L10",
+      "name": "DB6+",
+      "description": "High-speed serialized data output for channel B, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "L11",
+      "name": "DB6-",
+      "description": "High-speed serialized data output for channel B, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "L12",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    },
+    {
+      "pin": "M1",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "M2",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "M3",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "M4",
+      "name": "INB",
+      "description": "Channel B single ended analog input."
+    },
+    {
+      "pin": "M5",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "M6",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "M7",
+      "name": "AGND",
+      "description": "Analog supply ground. Tie AGND and DGND to a common ground plane."
+    },
+    {
+      "pin": "M8",
+      "name": "DB3+",
+      "description": "High-speed serialized data output for channel B, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "M9",
+      "name": "DB3-",
+      "description": "High-speed serialized data output for channel B, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "M10",
+      "name": "DB2+",
+      "description": "High-speed serialized data output for channel B, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used."
+    },
+    {
+      "pin": "M11",
+      "name": "DB2-",
+      "description": "High-speed serialized data output for channel B, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors."
+    },
+    {
+      "pin": "M12",
+      "name": "DGND",
+      "description": "Digital supply ground."
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "ADC12DJ5200SEEVM",
+      "package": "FCBGA (144)",
+      "packaging": "Evaluation Module",
+      "moq": 0,
+      "marking": "ADC12DJ5200SE"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "ADC12DJ5200SE 10.4GSPS 12-bit RF-Sampling ADC by TI",
+    "title_zh": "ADC12DJ5200SE 10.4GSPS 12位 RF采样模数转换器 TI",
+    "meta_description_en": "Explore the TI ADC12DJ5200SE, a 12-bit RF-sampling ADC with 10.4GSPS single-channel speed, JESD204C interface, and integrated DDC for 5G and defense applications.",
+    "meta_description_zh": "探索 TI ADC12DJ5200SE，一款 12 位 RF 采样模数转换器，单通道速率达 10.4GSPS，具备 JESD204C 接口和集成 DDC，适用于 5G 和国防应用。",
+    "keywords": [
+      "ADC12DJ5200SE",
+      "RF Sampling ADC",
+      "12-bit ADC",
+      "JESD204C",
+      "Texas Instruments",
+      "5G Testing",
+      "SDR",
+      "Analog to Digital Converter"
+    ]
+  },
+  "multi_language": {
+    "de": {
+      "title": "ADC12DJ5200SE 10,4GSPS 12-bit RF-Sampling-ADC (TI)",
+      "description": "Der ADC12DJ5200SE ist ein 12-Bit-RF-Sampling-Analog-Digital-Wandler (ADC) mit integrierten Baluns. Er erreicht bis zu 10,4 GSPS im Einzelkanal-Modus und 5,2 GSPS im Doppelkanal-Modus und unterstützt das JESD204C-Interface.",
+      "meta": "Der TI ADC12DJ5200SE ist ein 12-bit RF-Sampling-ADC mit 10,4GSPS im Einzelkanal-Modus, JESD204C-Unterstützung und integrierter DDC für 5G und Verteidigung."
+    },
+    "es": {
+      "title": "ADC12DJ5200SE 10,4GSPS ADC RF de 12 bits (TI)",
+      "description": "El ADC12DJ5200SE es un conversor analógico-digital (ADC) de muestreo RF de 12 bits con baluns integrados. Ofrece hasta 10,4 GSPS en modo de canal único y 5,2 GSPS en modo de canal doble, con interfaz JESD204C.",
+      "meta": "El TI ADC12DJ5200SE es un ADC de muestreo RF de 12 bits con 10,4GSPS en modo de canal único, interfaz JESD204C y DDC integrada para aplicaciones 5G y de defensa."
+    },
+    "ja": {
+      "title": "ADC12DJ5200SE 10.4GSPS 12ビットRFサンプリングADC (TI)",
+      "description": "ADC12DJ5200SE は、統合されたバランを備えた12ビットRFサンプリングアナログ・デジタル変換器（ADC）です。1チャンネルモードで最大10.4GSPS、2チャンネルモードで5.2GSPSに対応し、JESD204Cインターフェースを備えています。",
+      "meta": "TI製ADC12DJ5200SEは、12ビットRFサンプリングADCで、1チャンネル10.4GSPS、JESD204C対応。5Gテストや防衛向けSDRに最適です。"
+    },
+    "ko": {
+      "title": "ADC12DJ5200SE 10.4GSPS 12비트 RF 샘플링 ADC (TI)",
+      "description": "ADC12DJ5200SE는 통합 발룬을 갖춘 12비트 RF 샘플링 아날로그-디지털 변환기(ADC)입니다. 싱글 채널 모드에서 10.4GSPS, 듀얼 채널 모드에서 5.2GSPS를 지원하며 JESD204C 인터페이스를 제공합니다.",
+      "meta": "TI의 ADC12DJ5200SE는 12비트 RF 샘플링 ADC로, 싱글 채널 10.4GSPS, JESD204C 지원을 특징으로 하며 5G 테스트 및 방위 SDR에 적합합니다."
+    }
+  },
+  "metadata": {
+    "pdf_hash": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+    "parse_timestamp": "2026-10-22T14:08:04+08:00",
+    "model_version": "agnes-3.0-flash",
+    "confidence": 0.95,
+    "pin_repair": "BGA 球号按数据手册 Pin Functions 表重建：64 个引脚功能 / 144 个球（逐球展开），替换原伪脚号"
+  },
+  "pin_scope": "device"
+}

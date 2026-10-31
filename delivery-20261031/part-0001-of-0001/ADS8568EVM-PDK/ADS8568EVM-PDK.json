@@ -1,0 +1,699 @@
+{
+  "basic_info": {
+    "mpn": "ADS8568EVM-PDK",
+    "manufacturer": "Texas Instruments",
+    "category": "Evaluation Boards & Kits",
+    "subcategory": "Evaluation Boards",
+    "description": "ADS8568EVM-PDK is a Texas Instruments evaluation board assembled around the onboard ADS8568. It is intended for bench evaluation of that device; the board-level specifications are not stated in the source document, which describes the onboard device rather than the assembled board.",
+    "datasheet_url": "",
+    "identity": "evaluation_board",
+    "identity_state": "IDENTITY_REVIEW",
+    "identity_rule": "TI_BOARD_SUFFIX_EVM",
+    "identity_confidence": "high",
+    "identity_evidence": [
+      "料号主体以 `EVM` 结尾，命中规则 TI_BOARD_SUFFIX_EVM（候选身份 evaluation_board，置信度 high）",
+      "缺少原厂板卡证据（无 EVM 用户指南 / 产品页映射）→ 人工确认后再定身份"
+    ],
+    "device_mpn": "ADS8568",
+    "document_scope": "onboard_device_datasheet",
+    "document_evidence": [
+      {
+        "kind": "device_document",
+        "device_mpn": "ADS8568",
+        "excerpt": "--- page 1 ---\nSupport & Reference Order Tools & Product\nTechnical\nCommunity Design Software Folder Now\nDocuments\nADS8528, ADS8548, ADS8568\nSBAS543C –AUGUST 2011–REVISED FEBRUARY 2016\nADS85x8 12-, 14-, and 16-Bit, 8-Channel, Simultaneous Sampling ADCs\n1 Features 3 Description\nThe ADS85x8 contain eight low-power, 12-, 14-, or\n1• Family of 12-, 14-, and 16-Bit, Pin- and Software-\n16-bit, successive approximation register (SAR)-\nCompatible ADCs\nbased analog-to-digital converters (ADCs) with true\n• Maximum Data Rate per Channel:\nbipolar inputs. These channels are grouped in four\n– ADS8528: 650 kSP"
+      }
+    ],
+    "device_datasheet_url": "https://www.ti.com/lit/ds/sbas543c/sbas543c.pdf",
+    "device_category": "Integrated Circuits (ICs)",
+    "device_subcategory": "Data Acquisition Converters",
+    "device_description": "The ADS8568 is a 16-bit, 8-channel simultaneous sampling successive approximation register (SAR) analog-to-digital converter (ADC). It offers a maximum data rate of 510 kSPS in parallel mode and 400 kSPS in serial mode per channel. The device features excellent AC performance with 91.5 dB SNR and -94 dB THD, and supports input voltage ranges up to ±12 V using a programmable internal reference. Designed for industrial applications, the ADS8568 operates over an extended temperature range of -40°C to +125°C and is available in 64-pin VQFN and LQFP packages."
+  },
+  "specs": {
+    "electrical": [],
+    "absolute_max": [],
+    "package": {
+      "type": "Evaluation Board",
+      "pins": 0,
+      "dimensions": "",
+      "onboard_device": "ADS8568",
+      "onboard_package": "64-VQFN or 64-LQFP",
+      "onboard_dimensions": "9.00 mm x 9.00 mm (VQFN) or 10.00 mm x 10.00 mm (LQFP)",
+      "onboard_package_status": "not_confirmed_as_mounted",
+      "onboard_dimensions_status": "not_confirmed_as_mounted"
+    },
+    "temperature": {
+      "operating": "not_specified",
+      "storage": "not_specified"
+    },
+    "scope": "onboard_device",
+    "onboard_device_specs": {
+      "device_mpn": "ADS8568",
+      "scope": "onboard_device",
+      "source": "onboard_device_datasheet",
+      "electrical": [
+        {
+          "name": "Maximum Data Rate per Channel (PAR)",
+          "value": "510",
+          "unit": "kSPS",
+          "condition": "Parallel Interface"
+        },
+        {
+          "name": "Maximum Data Rate per Channel (SER)",
+          "value": "400",
+          "unit": "kSPS",
+          "condition": "Serial Interface"
+        },
+        {
+          "name": "Signal-to-Noise Ratio",
+          "value": "91.5",
+          "unit": "dB",
+          "condition": "Typical"
+        },
+        {
+          "name": "Total Harmonic Distortion",
+          "value": "-94",
+          "unit": "dB",
+          "condition": "Typical"
+        },
+        {
+          "name": "Analog Supply Voltage (AVDD)",
+          "value": "4.5 - 5.5",
+          "unit": "V",
+          "condition": "Recommended Operating"
+        },
+        {
+          "name": "Buffer I/O Supply Voltage (DVDD)",
+          "value": "2.7 - 5.5",
+          "unit": "V",
+          "condition": "Recommended Operating"
+        },
+        {
+          "name": "Input Positive Supply Voltage (HVDD)",
+          "value": "5.0 - 16.5",
+          "unit": "V",
+          "condition": "Recommended Operating"
+        },
+        {
+          "name": "Input Negative Supply Voltage (HVSS)",
+          "value": "-16.5 - -5.0",
+          "unit": "V",
+          "condition": "Recommended Operating"
+        },
+        {
+          "name": "Bipolar Full-Scale Range",
+          "value": "-4 VREF - 4 VREF",
+          "unit": "V",
+          "condition": "RANGE pin = 0"
+        },
+        {
+          "name": "Bipolar Full-Scale Range",
+          "value": "-2 VREF - 2 VREF",
+          "unit": "V",
+          "condition": "RANGE pin = 1"
+        },
+        {
+          "name": "Input Capacitance",
+          "value": "10",
+          "unit": "pF",
+          "condition": "Input range = ±4 VREF"
+        },
+        {
+          "name": "Input Capacitance",
+          "value": "20",
+          "unit": "pF",
+          "condition": "Input range = ±2 VREF"
+        },
+        {
+          "name": "Input Leakage Current",
+          "value": "-1 - 1",
+          "unit": "µA",
+          "condition": "No ongoing conversion"
+        },
+        {
+          "name": "Aperture Delay",
+          "value": "5",
+          "unit": "ns",
+          "condition": ""
+        },
+        {
+          "name": "Aperture Delay Matching",
+          "value": "100",
+          "unit": "ps",
+          "condition": "Common CONVST for all channels"
+        },
+        {
+          "name": "Aperture Jitter",
+          "value": "50",
+          "unit": "ps",
+          "condition": ""
+        },
+        {
+          "name": "Power Supply Rejection Ratio",
+          "value": "-78",
+          "unit": "dB",
+          "condition": "At output code FFFFh, related to HVDD and HVSS"
+        },
+        {
+          "name": "Reference Voltage (2.5-V op)",
+          "value": "2.485 - 2.515",
+          "unit": "V",
+          "condition": "REFDAC = 3FFh"
+        },
+        {
+          "name": "Reference Voltage Drift",
+          "value": "±10",
+          "unit": "ppm/°C",
+          "condition": ""
+        },
+        {
+          "name": "Analog Supply Current (ADS8568)",
+          "value": "36.6 - 48.4",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Buffer I/O Supply Current",
+          "value": "0.5 - 2.0",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Input Positive Supply Current (ADS8568)",
+          "value": "2.3 - 3.2",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Input Negative Supply Current (ADS8568)",
+          "value": "2.7 - 3.6",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Power Dissipation (ADS8568)",
+          "value": "259.7 - 389.4",
+          "unit": "mW",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Operating Temperature Range",
+          "value": "-40 - 125",
+          "unit": "°C",
+          "condition": "Ambient"
+        }
+      ],
+      "absolute_max": [
+        {
+          "name": "HVDD to AGND",
+          "value": "-0.3 - 18",
+          "unit": "V"
+        },
+        {
+          "name": "HVSS to AGND",
+          "value": "-18 - 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "AVDD to AGND",
+          "value": "-0.3 - 6",
+          "unit": "V"
+        },
+        {
+          "name": "DVDD to DGND",
+          "value": "-0.3 - 6",
+          "unit": "V"
+        },
+        {
+          "name": "Analog input voltage",
+          "value": "HVSS - 0.3 - HVDD + 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Reference input voltage",
+          "value": "AGND - 0.3 - AVDD + 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Digital input voltage",
+          "value": "DGND - 0.3 - DVDD + 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Ground voltage difference",
+          "value": "±0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Input current to all pins",
+          "value": "±10",
+          "unit": "mA"
+        },
+        {
+          "name": "Maximum virtual junction temperature",
+          "value": "150",
+          "unit": "°C"
+        },
+        {
+          "name": "Storage temperature",
+          "value": "-65 - 150",
+          "unit": "°C"
+        }
+      ],
+      "temperature": {
+        "operating": "-40°C to 125°C",
+        "storage": "-65°C to 150°C"
+      },
+      "package": "64-VQFN or 64-LQFP",
+      "package_status": "not_confirmed_as_mounted",
+      "dimensions": "9.00 mm x 9.00 mm (VQFN) or 10.00 mm x 10.00 mm (LQFP)",
+      "dimensions_status": "not_confirmed_as_mounted",
+      "pin_configuration": [
+        {
+          "pin": 1,
+          "name": "HVSS",
+          "description": "Negative supply voltage for the analog inputs"
+        },
+        {
+          "pin": 2,
+          "name": "CH_D1",
+          "description": "Analog input of channel D1"
+        },
+        {
+          "pin": 3,
+          "name": "REFDN",
+          "description": "Decoupling capacitor input for reference of channel pair D"
+        },
+        {
+          "pin": 4,
+          "name": "AVDD",
+          "description": "Analog power supply"
+        },
+        {
+          "pin": 5,
+          "name": "AGND",
+          "description": "Analog ground"
+        },
+        {
+          "pin": 6,
+          "name": "REFDP",
+          "description": "Decoupling capacitor input for the channel pair D reference"
+        },
+        {
+          "pin": 7,
+          "name": "CH_D0",
+          "description": "Analog input of channel D0"
+        },
+        {
+          "pin": 8,
+          "name": "PAR/SER",
+          "description": "Interface mode selection input"
+        },
+        {
+          "pin": 9,
+          "name": "STBY",
+          "description": "Standby mode input"
+        },
+        {
+          "pin": 10,
+          "name": "RESET",
+          "description": "Reset input, active high"
+        },
+        {
+          "pin": 11,
+          "name": "REFEN/WR",
+          "description": "Internal reference enable input or Write input"
+        },
+        {
+          "pin": 12,
+          "name": "RD",
+          "description": "Read data input"
+        },
+        {
+          "pin": 13,
+          "name": "CS/FS",
+          "description": "Chip-select input or Frame synchronization"
+        },
+        {
+          "pin": 14,
+          "name": "AVDD",
+          "description": "Analog power supply"
+        },
+        {
+          "pin": 15,
+          "name": "AGND",
+          "description": "Analog ground"
+        },
+        {
+          "pin": 16,
+          "name": "DB15/SDO_D",
+          "description": "Data bit 15 input/output or Data output for channel pair D"
+        },
+        {
+          "pin": 17,
+          "name": "DB14/SDO_C",
+          "description": "Data bit 14 input/output or Data output for channel pair C"
+        },
+        {
+          "pin": 18,
+          "name": "DB13/SDO_B",
+          "description": "Data bit 13 input/output or Data output for channel pair B"
+        },
+        {
+          "pin": 19,
+          "name": "DB12/SDO_A",
+          "description": "Data bit 12 input/output or Data output for channel pair A"
+        },
+        {
+          "pin": 20,
+          "name": "DB11/REFBUFEN",
+          "description": "Data bit 11 input/output or Reference buffer enable input"
+        },
+        {
+          "pin": 21,
+          "name": "DB10/SCLK",
+          "description": "Data bit 10 input/output or Serial interface clock input"
+        },
+        {
+          "pin": 22,
+          "name": "DB9/SDI",
+          "description": "Data bit 9 input/output or Serial data input"
+        },
+        {
+          "pin": 23,
+          "name": "DB8/DCEN",
+          "description": "Data bit 8 input/output or Daisy-chain enable input"
+        },
+        {
+          "pin": 24,
+          "name": "DGND",
+          "description": "Buffer I/O ground"
+        },
+        {
+          "pin": 25,
+          "name": "DVDD",
+          "description": "Buffer I/O supply"
+        },
+        {
+          "pin": 26,
+          "name": "DB7",
+          "description": "Data bit 7 input/output"
+        },
+        {
+          "pin": 27,
+          "name": "DB6/SEL_B",
+          "description": "Data bit 6 input/output or Select SDO_B input"
+        },
+        {
+          "pin": 28,
+          "name": "DB5/SEL_CD",
+          "description": "Data bit 5 input/output or Select SDO_C and SDO_D input"
+        },
+        {
+          "pin": 29,
+          "name": "DB4",
+          "description": "Data bit 4 input/output"
+        },
+        {
+          "pin": 30,
+          "name": "DB3/DCIN_A",
+          "description": "Data bit 3 input/output or Daisy-chain data input for SDO_A"
+        },
+        {
+          "pin": 31,
+          "name": "DB2/DCIN_B",
+          "description": "Data bit 2 input/output or Daisy-chain data input for SDO_B"
+        },
+        {
+          "pin": 32,
+          "name": "DB1/DCIN_C",
+          "description": "Data bit 1 input/output or Daisy-chain data input for SDO_C"
+        },
+        {
+          "pin": 33,
+          "name": "DB0/DCIN_D",
+          "description": "Data bit 0 input/output or Daisy-chain data input for SDO_D"
+        },
+        {
+          "pin": 34,
+          "name": "RANGE/XCLK",
+          "description": "Analog input voltage range select input or External conversion clock input"
+        },
+        {
+          "pin": 35,
+          "name": "BUSY/INT",
+          "description": "Converter busy status output or Interrupt output"
+        },
+        {
+          "pin": 36,
+          "name": "ASLEEP",
+          "description": "Auto-sleep enable input"
+        },
+        {
+          "pin": 37,
+          "name": "CONVST_A",
+          "description": "Conversion start of channel pair A"
+        },
+        {
+          "pin": 38,
+          "name": "CONVST_B",
+          "description": "Conversion start of channel pair B"
+        },
+        {
+          "pin": 39,
+          "name": "CONVST_C",
+          "description": "Conversion start of channel pair C"
+        },
+        {
+          "pin": 40,
+          "name": "CONVST_D",
+          "description": "Conversion start of channel pair D"
+        },
+        {
+          "pin": 41,
+          "name": "HW/SW",
+          "description": "Mode selection input"
+        },
+        {
+          "pin": 42,
+          "name": "CH_A0",
+          "description": "Analog input of channel A0"
+        },
+        {
+          "pin": 43,
+          "name": "REFAP",
+          "description": "Decoupling capacitor input for reference of channel pair A"
+        },
+        {
+          "pin": 44,
+          "name": "AGND",
+          "description": "Analog ground"
+        },
+        {
+          "pin": 45,
+          "name": "AVDD",
+          "description": "Analog power supply"
+        },
+        {
+          "pin": 46,
+          "name": "REFAN",
+          "description": "Decoupling capacitor input for reference of channel pair A"
+        },
+        {
+          "pin": 47,
+          "name": "CH_A1",
+          "description": "Analog input of channel A1"
+        },
+        {
+          "pin": 48,
+          "name": "HVDD",
+          "description": "Positive supply voltage for the analog inputs"
+        },
+        {
+          "pin": 49,
+          "name": "CH_B0",
+          "description": "Analog input of channel B0"
+        },
+        {
+          "pin": 50,
+          "name": "REFBP",
+          "description": "Decoupling capacitor input for reference of channel pair B"
+        },
+        {
+          "pin": 51,
+          "name": "AGND",
+          "description": "Analog ground"
+        },
+        {
+          "pin": 52,
+          "name": "AVDD",
+          "description": "Analog power supply"
+        },
+        {
+          "pin": 53,
+          "name": "REFBN",
+          "description": "Decoupling capacitor input for reference of channel pair B"
+        },
+        {
+          "pin": 54,
+          "name": "CH_B1",
+          "description": "Analog input of channel B1"
+        },
+        {
+          "pin": 55,
+          "name": "REFN",
+          "description": "Negative reference input/output pin"
+        },
+        {
+          "pin": 56,
+          "name": "REFIO",
+          "description": "Reference voltage input/output"
+        },
+        {
+          "pin": 57,
+          "name": "AVDD",
+          "description": "Analog power supply"
+        },
+        {
+          "pin": 58,
+          "name": "AGND",
+          "description": "Analog ground"
+        },
+        {
+          "pin": 59,
+          "name": "CH_C1",
+          "description": "Analog input of channel C1"
+        },
+        {
+          "pin": 60,
+          "name": "REFCN",
+          "description": "Decoupling capacitor input for reference of channel pair C"
+        },
+        {
+          "pin": 61,
+          "name": "AVDD",
+          "description": "Analog power supply"
+        },
+        {
+          "pin": 62,
+          "name": "AGND",
+          "description": "Analog ground"
+        },
+        {
+          "pin": 63,
+          "name": "REFCP",
+          "description": "Decoupling capacitor input for reference of channel pair C"
+        },
+        {
+          "pin": 64,
+          "name": "CH_C0",
+          "description": "Analog input of channel C0"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Evaluation board for ADS8568"
+  ],
+  "applications": [
+    "Device evaluation"
+  ],
+  "pin_configuration": [],
+  "ordering_info": [],
+  "alternatives": [],
+  "seo": {
+    "title_en": "ADS8568EVM-PDK Evaluation Board | ADS8568",
+    "title_zh": "ADS8568EVM-PDK 评估板 | ADS8568",
+    "meta_description_en": "ADS8568EVM-PDK is a Texas Instruments evaluation board built around the onboard ADS8568. Board-level specifications are not stated in the source document; refer to the evaluation board user guide.",
+    "meta_description_zh": "ADS8568EVM-PDK 是 Texas Instruments 的评估板，板上搭载 ADS8568。板级规格请以评估板用户指南为准。",
+    "keywords": [
+      "ADS8568EVM-PDK",
+      "Texas Instruments",
+      "Evaluation Board",
+      "ADS8568"
+    ]
+  },
+  "multi_language": {
+    "de": {},
+    "es": {},
+    "ja": {},
+    "ko": {}
+  },
+  "metadata": {
+    "pdf_hash": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+    "parse_timestamp": "2026-10-22T14:11:01+08:00",
+    "model_version": "agnes-3.0-flash",
+    "confidence": 0.95,
+    "requested_mpn": "ADS8568EVM-PDK",
+    "board_scope_reason": "缺少与请求号绑定的板卡用户指南标题证据；电气/温区/卖点/替代料/SEO 保留在隔离区，主字段标记为板级未规定",
+    "pin_scope_reason": "板卡页不发布引脚表：引脚属于板载器件，不属于组装后的评估板；请以原厂用户指南/原理图为准",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "five_stage": "2026-10-30-page-evidence-v1"
+  },
+  "onboard_device_features": [
+    "Family of 12-, 14-, and 16-Bit, Pin- and Software-Compatible ADCs",
+    "Maximum Data Rate per Channel: 510 kSPS (PAR) or 400 kSPS (SER)",
+    "Signal-to-Noise Ratio: 91.5 dB",
+    "Total Harmonic Distortion: -94 dB",
+    "Programmable, Buffered Internal Reference: 0.5 V–2.5 V or 0.5 V–3.0 V Supports Input Voltage Ranges up to ±12 V",
+    "Selectable Parallel or Serial Interface",
+    "Scalable Low-Power Operation Using Auto-Sleep Mode: Only 32 mW at 10 kSPS",
+    "Fully Specified Over Extended Industrial Temperature Range"
+  ],
+  "onboard_device_applications": [
+    "Protection Relays",
+    "Power Quality Measurement",
+    "Multi-Axis Motor Controls",
+    "Programmable Logic Controllers",
+    "Industrial Data Acquisition"
+  ],
+  "onboard_device_alternatives": [
+    {
+      "mpn": "ADS8528",
+      "manufacturer": "Texas Instruments",
+      "reason": "Pin- and software-compatible 12-bit version"
+    },
+    {
+      "mpn": "ADS8548",
+      "manufacturer": "Texas Instruments",
+      "reason": "Pin- and software-compatible 14-bit version"
+    }
+  ],
+  "onboard_device_seo": {
+    "title_en": "Texas Instruments ADS8568 16-bit 8-Channel Simultaneous Sampling SAR ADC Datasheet",
+    "title_zh": "Texas Instruments ADS8568 16位 8通道同时采样 SAR ADC 数据手册",
+    "meta_description_en": "Explore the TI ADS8568 16-bit, 8-channel SAR ADC with 510 kSPS parallel rate, ±12V input range, and industrial temperature support for precision data acquisition.",
+    "meta_description_zh": "了解 TI ADS8568 16位、8通道 SAR ADC，具有 510 kSPS 并行速率、±12V 输入范围和工业温度支持，适用于精密数据采集。",
+    "keywords": [
+      "ADS8568",
+      "16-bit ADC",
+      "SAR ADC",
+      "8-channel simultaneous sampling",
+      "Texas Instruments",
+      "industrial data acquisition"
+    ]
+  },
+  "onboard_device_multi_language": {
+    "de": {
+      "title": "Texas Instruments ADS8568 16-Bit 8-Kanal Gleichzeitige Stichproben SAR ADC",
+      "description": "Der ADS8568 ist ein 16-Bit-SAR-ADC mit 8-Kanal-Gleichzeitiger-Stichprobenentnahme. Er bietet eine maximale Datenrate von 510 kSPS (Parallelmmodus), einen Eingangsbereich von ±12 V und einen industriellen Temperaturbereich.",
+      "meta": "TI ADS8568 16-Bit 8-Kanal SAR ADC. 510 kSPS, ±12V Eingang, Industrie-Temperatur-Unterstützung. Für präzise Datenerfassung."
+    },
+    "es": {
+      "title": "Texas Instruments ADS8568 ADC SAR de 16 bits 8 canales Muestreo Simultáneo",
+      "description": "El ADS8568 es un ADC SAR de 16 bits con muestreo simultáneo de 8 canales. Ofrece una tasa de datos máxima de 510 kSPS (modo paralelo), un rango de entrada de ±12 V y un rango de temperatura industrial.",
+      "meta": "TI ADS8568 ADC SAR de 16 bits 8 canales. 510 kSPS, entrada ±12V, soporte de temperatura industrial. Para adquisición de datos precisa."
+    },
+    "ja": {
+      "title": "Texas Instruments ADS8568 16ビット 8チャネル 同時サンプリング SAR ADC",
+      "description": "ADS8568は、8チャネル同時サンプリングの16ビットSARアナログ・デジタル変換器です。最大510 kSPS(並列モード)のデータレート、±12 Vの入力範囲、および工業温度範囲での動作を特徴としています。",
+      "meta": "TI ADS8568 16ビット 8チャネルSAR ADC。510 kSPS、±12V入力、工業温度サポート。精密データ取得向け。"
+    },
+    "ko": {
+      "title": "Texas Instruments ADS8568 16bit 8채널 동시 샘플링 SAR ADC",
+      "description": "ADS8568는 8채널 동시 샘플링 16비트 SAR 아날로그-디지털 변환기입니다. 최대 510 kSPS(병렬 모드) 데이터 속도, ±12V 입력 범위 및 산업 온도 범위 내 작동을 특징으로 합니다.",
+      "meta": "TI ADS8568 16bit 8채널 SAR ADC. 510 kSPS, ±12V 입력, 산업 온도 지원. 정밀 데이터 수집용."
+    }
+  },
+  "pin_scope": "board"
+}

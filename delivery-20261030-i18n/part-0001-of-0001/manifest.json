@@ -1,0 +1,324 @@
+{
+  "schema_version": "acceptance-delivery/v1",
+  "generated_at": "2026-10-30T17:27:15+08:00",
+  "packager_sha256": "a8c81ea8b8ad6b0a7781e509624c369948da2d2030390e47a2cbc3c889f8e126",
+  "source_root": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030",
+  "output_root": "E:\\workspace\\IcPdfParser\\data\\delivery-20261030-i18n",
+  "mode": "existing_artifacts_repackage_only",
+  "status": "review_candidate",
+  "release_status": "not_approved",
+  "mpn_count": 5,
+  "shard": "part-0001-of-0001.zip",
+  "records": [
+    {
+      "requested_mpn": "ADS8568EVM-PDK",
+      "safe_name": "ADS8568EVM-PDK",
+      "brand": "Texas Instruments",
+      "identity": "evaluation_board",
+      "identity_state": "IDENTITY_REVIEW",
+      "scope": "onboard_device",
+      "pdf_sha256_recorded": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+      "pdf_included": false,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "3/6",
+      "present": [
+        "json",
+        "html",
+        "symbol"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html",
+        "seo"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "i18n_complete": "not_checked",
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "BOOST-DRV8711",
+      "safe_name": "BOOST-DRV8711",
+      "brand": "Texas Instruments",
+      "identity": "evaluation_board",
+      "identity_state": "BOARD_CONFIRMED",
+      "scope": "board",
+      "pdf_sha256_recorded": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+      "pdf_included": false,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "3/6",
+      "present": [
+        "json",
+        "html",
+        "symbol"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html",
+        "seo"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [
+        "de",
+        "es",
+        "ja",
+        "ko"
+      ],
+      "i18n_complete": "not_checked",
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "BOOSTXL-C2KLED",
+      "safe_name": "BOOSTXL-C2KLED",
+      "brand": "Texas Instruments",
+      "identity": "evaluation_board",
+      "identity_state": "BOARD_CONFIRMED",
+      "scope": "board",
+      "pdf_sha256_recorded": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+      "pdf_included": false,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "3/6",
+      "present": [
+        "json",
+        "html",
+        "symbol"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html",
+        "seo"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [
+        "de",
+        "es",
+        "ja",
+        "ko"
+      ],
+      "i18n_complete": "not_checked",
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "ADC12DJ5200SE",
+      "safe_name": "ADC12DJ5200SE",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": null,
+      "pdf_sha256_recorded": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+      "pdf_included": false,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "3/6",
+      "present": [
+        "json",
+        "html",
+        "symbol"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html",
+        "seo"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [
+        "de",
+        "es",
+        "ja",
+        "ko"
+      ],
+      "i18n_complete": "not_checked",
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "ADS1201U-1/1K",
+      "safe_name": "ADS1201U-1_1K",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": null,
+      "pdf_sha256_recorded": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+      "pdf_included": false,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "3/6",
+      "present": [
+        "json",
+        "html",
+        "symbol"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html",
+        "seo"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [
+        "de",
+        "es",
+        "ja",
+        "ko"
+      ],
+      "i18n_complete": "not_checked",
+      "engineering_validation": "not_approved"
+    }
+  ],
+  "members": [
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.json",
+      "key": "json",
+      "size": 18988,
+      "sha256": "b1ac54bd3cf3e2428823f14067a28f62abd97df0475999712a3b4f10873881bc",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\parsed\\ADS8568EVM-PDK.json"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.html",
+      "key": "html",
+      "size": 7438,
+      "sha256": "7afce22babc654aed83bc482837a7fe6af039673e3093475bd1678966885dddf",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\txt\\ADS8568EVM-PDK.txt"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.symbols.html",
+      "key": "symbol",
+      "size": 1335,
+      "sha256": "47aecf8e6c75131bcbe6e639e2bc1da3b08d12b810453f9a03a2c621a8306c51",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\symbols\\ADS8568EVM-PDK.html"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.json",
+      "key": "json",
+      "size": 7905,
+      "sha256": "842c5b92fde355611c6c4a4edde641c59552f085999e75376d0d9d87cb115114",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\parsed\\BOOST-DRV8711.json"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.html",
+      "key": "html",
+      "size": 11296,
+      "sha256": "83336b0fa52a2efdba8ca5df21066008055f9cc7b3ebbbea165fa83c9c73d753",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\txt\\BOOST-DRV8711.txt"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.symbols.html",
+      "key": "symbol",
+      "size": 1310,
+      "sha256": "8a21ee4eaf50b3186f9a96941ab6860b07d86eeeb15b0c2e479825450f91c949",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\symbols\\BOOST-DRV8711.html"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.json",
+      "key": "json",
+      "size": 6919,
+      "sha256": "1c40fc465b861af7fc5186b1fa52e2f07550206afdfc430fcc3f7bb116fd438c",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\parsed\\BOOSTXL-C2KLED.json"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.html",
+      "key": "html",
+      "size": 13429,
+      "sha256": "8928ec0b179b3eaada59163f73392824f0f099ab5aaf48354020a61896546651",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\txt\\BOOSTXL-C2KLED.txt"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.symbols.html",
+      "key": "symbol",
+      "size": 1287,
+      "sha256": "757ec4c8cf80325eee333e4021e2fa130bc82a783745078f71c7f3152610796c",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\symbols\\BOOSTXL-C2KLED.html"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.json",
+      "key": "json",
+      "size": 42734,
+      "sha256": "3a4571a3ba4b65d836b1a30314c24765abae6b7fbc601733d4cae9f5cd9243f9",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\parsed\\ADC12DJ5200SE.json"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.html",
+      "key": "html",
+      "size": 37105,
+      "sha256": "0c9f86dfe58edcba6080e1403c2ddc3e0b0d2033997d67bca09887e2bfc1661b",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\txt\\ADC12DJ5200SE.txt"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.symbols.html",
+      "key": "symbol",
+      "size": 59144,
+      "sha256": "2fb8a45bf58e29c382e9470b20278dd7ad1501f8bbd4e725573ded5853766aee",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\symbols\\ADC12DJ5200SE.html"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.json",
+      "key": "json",
+      "size": 14955,
+      "sha256": "6a06b7120241d099e3c3f86b9df1142c7eba8558cb45a22bb8c30dcb6dd3b7d2",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\parsed\\ADS1201U-1_1K.json"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.html",
+      "key": "html",
+      "size": 19324,
+      "sha256": "d3c9881df7e613d31c1ab98fd6d38bd0c12f1f97aa98b2dd5f412b3e62d35e5b",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\txt\\ADS1201U-1_1K.txt"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.symbols.html",
+      "key": "symbol",
+      "size": 8397,
+      "sha256": "84bdc512376f4d49b5b9ee62b4c1a91c587b5aa9c4fef12697c30062ad18dce2",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\symbols\\ADS1201U-1_1K.html"
+    },
+    {
+      "member": "修复方案.md",
+      "key": "supporting_document",
+      "size": 37587,
+      "sha256": "9cf4251b7cf2869953a28e4660ede134bc4e8839e821c6004d1121f353498d89",
+      "source": "E:\\workspace\\IcPdfParser\\data\\acceptance_20261030\\修复方案.md"
+    }
+  ],
+  "validation_scope": "Allowlist, source hashes, ZIP paths and CRC only; not engineering acceptance"
+}

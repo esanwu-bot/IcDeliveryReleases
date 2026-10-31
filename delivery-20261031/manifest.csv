@@ -1,0 +1,6 @@
+﻿mpn,safe_name,brand,status,release_status,identity,identity_state,scope,artifacts,missing,html_languages,missing_html_languages,i18n_complete,pdf_sha256_recorded,pdf_included
+ADS8568EVM-PDK,ADS8568EVM-PDK,Texas Instruments,review_candidate,not_approved,evaluation_board,IDENTITY_REVIEW,onboard_device,3/6,alt_json;alt_html;seo,en;ja;ko;de;es,,not_checked,79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76,False
+BOOST-DRV8711,BOOST-DRV8711,Texas Instruments,review_candidate,not_approved,evaluation_board,BOARD_CONFIRMED,board,3/6,alt_json;alt_html;seo,en;ja;ko;de;es,,not_checked,49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316,False
+BOOSTXL-C2KLED,BOOSTXL-C2KLED,Texas Instruments,review_candidate,not_approved,evaluation_board,BOARD_CONFIRMED,board,3/6,alt_json;alt_html;seo,en;ja;ko;de;es,,not_checked,82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34,False
+ADC12DJ5200SE,ADC12DJ5200SE,Texas Instruments,review_candidate,not_approved,chip,IDENTITY_REVIEW,device,3/6,alt_json;alt_html;seo,en;ja;ko;de;es,,not_checked,398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74,False
+ADS1201U-1/1K,ADS1201U-1_1K,Texas Instruments,review_candidate,not_approved,chip,IDENTITY_SUPPORTED,device,3/6,alt_json;alt_html;seo,en;ja;ko;de;es,,not_checked,0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec,False
