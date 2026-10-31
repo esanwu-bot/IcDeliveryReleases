@@ -1,0 +1,97 @@
+{
+  "mpn": "ADC12DJ5200SE",
+  "generated_at": "2026-11-01T06:31:35+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "ADC12DJ5200SE 12-bit 10.4GSPS RF Sampling ADC with JESD204C",
+    "title_zh": "ADC12DJ5200SE 12位10.4GSPS射频采样ADC，支持JESD204C",
+    "meta_description_en": "12-bit, 10.4GSPS RF-sampling ADC with integrated baluns. Supports dual-channel 5.2GSPS. Features JESD204C interface, DDC, and noiseless aperture delay. Ideal for 5G, SATCOM, and SDR.",
+    "meta_description_zh": "12位10.4GSPS射频采样ADC，集成巴伦。支持双通道5.2GSPS，具备JESD204C接口、DDC和无噪声采样延迟，适用于5G、卫星通信及软件定义无线电。",
+    "keywords": [
+      "ADC12DJ5200SE",
+      "12-bit ADC",
+      "RF sampling ADC",
+      "JESD204C",
+      "10.4GSPS",
+      "5.2GSPS",
+      "FCCSP",
+      "TI ADC"
+    ]
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 1,
+  "shared_by_applications": {
+    "app-communications-networking.png": [
+      "Communications testers (802.11ad, 5G)",
+      "Satellite communications (SATCOM)",
+      "RF-sampling software-defined radio (SDR)"
+    ]
+  },
+  "distinct_images": [
+    "app-aerospace-defense.png",
+    "app-communications-networking.png"
+  ],
+  "distinct_image_count": 2,
+  "images": [
+    {
+      "application": "Communications testers (802.11ad, 5G)",
+      "category": "Communications & Networking",
+      "image": "app-communications-networking.png",
+      "filename": "adc12dj5200se-communications-networking.png",
+      "asset": "/upload/img/app-communications-networking.png",
+      "alt": "ADC12DJ5200SE Communications testers (802.11ad, 5G) application — Communications & Networking illustration",
+      "title": "ADC12DJ5200SE used in Communications testers (802.11ad, 5G) (Communic…",
+      "caption": "Communications testers (802.11ad, 5G) — a typical communications & networking application of ADC12DJ5200SE.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Electronic warfare (SIGINT, ELINT)",
+      "category": "Aerospace & Defense",
+      "image": "app-aerospace-defense.png",
+      "filename": "adc12dj5200se-aerospace-defense.png",
+      "asset": "/upload/img/app-aerospace-defense.png",
+      "alt": "ADC12DJ5200SE Electronic warfare (SIGINT, ELINT) application — Aerospace & Defense illustration",
+      "title": "ADC12DJ5200SE used in Electronic warfare (SIGINT, ELINT) (Aerospace &…",
+      "caption": "Electronic warfare (SIGINT, ELINT) — a typical aerospace & defense application of ADC12DJ5200SE.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Satellite communications (SATCOM)",
+      "category": "Communications & Networking",
+      "image": "app-communications-networking.png",
+      "filename": "adc12dj5200se-communications-networking.png",
+      "asset": "/upload/img/app-communications-networking.png",
+      "alt": "ADC12DJ5200SE Satellite communications (SATCOM) application — Communications & Networking illustration",
+      "title": "ADC12DJ5200SE used in Satellite communications (SATCOM) (Communicatio…",
+      "caption": "Satellite communications (SATCOM) — a typical communications & networking application of ADC12DJ5200SE.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "RF-sampling software-defined radio (SDR)",
+      "category": "Communications & Networking",
+      "image": "app-communications-networking.png",
+      "filename": "adc12dj5200se-communications-networking.png",
+      "asset": "/upload/img/app-communications-networking.png",
+      "alt": "ADC12DJ5200SE RF-sampling software-defined radio (SDR) application — Communications & Networking illustration",
+      "title": "ADC12DJ5200SE used in RF-sampling software-defined radio (SDR) (Commu…",
+      "caption": "RF-sampling software-defined radio (SDR) — a typical communications & networking application of ADC12DJ5200SE.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ]
+}

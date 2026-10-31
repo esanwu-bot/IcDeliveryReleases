@@ -1,0 +1,307 @@
+<div class="pd-wrap" lang="ja">
+<header class="pd-hero">
+	<div class="pd-hero-inner">
+		<h1 class="pd-hero-title">
+			TI BOOST-DRV8711 ステッパーモーター BoosterPack | DRV8711 評価ボード
+		</h1>
+		<p class="pd-hero-desc">
+			BOOST-DRV8711 は、DRV8711 ステップモーターコントローラーと CSD88537ND デュアル 60V N チャネル MOSFET を基盤とするステッパーモーターBoosterPack です。8.2〜52V、各 H-Bridge で最大 4.5A の連続動作をサポートし、完全な保護機能を備えています。MSP-EXP430G2 LaunchPad 向けに最適化されています。
+		</p>
+	</div>
+</header>
+<section class="pd-sec" id="product-introduction">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			BOOST-DRV8711 の概要
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>BOOST-DRV8711</strong> は、DRV8711 ステップモーターコントローラーと CSD88537ND デュアル 60V N チャネル MOSFET を基盤とするステッパーモーターBoosterPack です。8.2〜52V、各 H-Bridge で最大 4.5A の連続動作をサポートし、完全な保護機能を備えています。MSP-EXP430G2 LaunchPad 向けに最適化されています。
+		</p>
+		<p>
+			BOOST-DRV8711 は印刷基板として実装された評価モジュールです.
+		</p>
+		<p>
+			本ページの基板仕様は評価基板のユーザーガイドに基づきます。.
+		</p>
+		<div class="pd-expert-insight">
+			<h3>
+				技術的インサイト
+			</h3>
+			<p>
+				<strong>BOOST-DRV8711 を使った設計で確認すべき点は？</strong>
+			</p>
+			<ul>
+				<li>
+					<strong>Verify the Board Power Rails and Jumper Settings:</strong> This evaluation board is built around the onboard DRV8711. Confirm the rail selection, the current limit and the jumper positions against the board user guide before connecting any signal source; a wrong jumper is the most common cause of a board that appears dead.
+				</li>
+				<li>
+					<strong>Check the Motor Outputs and Current Setting:</strong> Verify the phase outputs, the current-setting network and the bulk supply capacitance before a motor is connected. A current limit that is set too high is the fastest way to damage the driver stage on the first spin, and an unloaded supply will show a much lower current than the application needs.
+				</li>
+				<li>
+					<strong>Review the Thermal Relief and Grounding:</strong> At maximum output load it is the board, not the device, that sets the thermal limit. Provide adequate airflow and confirm the ground reference at the connector shields before trusting any measured performance figure.
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="key-benefits">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			K
+		</div>
+		<h2 class="pd-sec-title">
+			主な特長
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-grid2">
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Complete stepper motor drive stage in a small form factor (1.75 in × 2.00 in)
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Supports 8.2–52 V and
+				</div>
+				<p class="pd-card-desc">
+					up to 4.5 A continuous for each H-Bridge.
+				</p>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>4x CSD88537ND Dual 60-V N-Channel NexFET Power MOSFETs (12.5 mΩ)
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Motor stall and device fault LED indicators
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="specifications">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			S
+		</div>
+		<h2 class="pd-sec-title">
+			電気仕様
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<em class="pd-verify-note" style="display:block;border-left:3px solid #c98a00;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">下記 2 件のうち 2 件に未検証の印（†）を付けています。値は抽出結果のまま保持していますが、言語モデルによる抽出であり、試験条件または列の役割をデータシートの行に照合できていません。設計に使用する前に原典のデータシートで確認してください。</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						パラメータ
+					</th>
+					<th>
+						値
+					</th>
+					<th>
+						条件・補足
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Voltage Range
+					</td>
+					<td>
+						8.2 to 52 V †
+					</td>
+					<td>
+						External power supply input
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Continuous Current per H-Bridge
+					</td>
+					<td>
+						4.5 A †
+					</td>
+					<td>
+						Max continuous
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<section class="pd-sec" id="package">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			パッケージ
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>BOOST-DRV8711</strong> は実装済み評価ボード（PCB）であり、パッケージ IC ではありません。
+		</p>
+		<p>
+			本基板は DRV8711 を使用します。実装パッケージは元資料で確認されていません。
+		</p>
+		<p>
+			基板外形は約 1.75 in × 2.00 in です。パネルや筐体の設計前に、評価ボードユーザーガイドの機械図面とコネクタ配置を確認してください。
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="manufacturer-information">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			M
+		</div>
+		<h2 class="pd-sec-title">
+			メーカー
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>Texas Instruments</strong> は、オンボード DRV8711 を中核とする評価プラットフォームとして BOOST-DRV8711 を提供しています。
+		</p>
+		<p>
+			技術的な一次情報はメーカーのデータシートで、次のリンクから参照できます： <a href="https://www.ti.com/lit/ug/slvu967a/slvu967a.pdf?ts=1792574725276&amp;ref_url=https%253A%252F%252Fwww.ti.com" rel="nofollow">このリンク</a>. リリース前に最新リビジョン、ライフサイクル状況、電気的制限、ピン割り当て、パッケージ図面を確認してください。
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="application">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			A
+		</div>
+		<h2 class="pd-sec-title">
+			アプリケーション
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-appgrid">
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="BOOST-DRV8711 Stepper motor drive stage evaluation application — Industrial Automation illustration" title="BOOST-DRV8711 used in Stepper motor drive stage evaluation (Industria…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Stepper motor drive stage evaluation
+					</div>
+					<div class="pd-app-example">
+						<strong>典型的な使用例：</strong> BOOST-DRV8711 評価基板は Stepper motor drive stage evaluation に使用されます。接続前にユーザーガイドで電源、ジャンパー、コネクタ設定を確認してください。
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="BOOST-DRV8711 Motor applications development application — Industrial Automation illustration" title="BOOST-DRV8711 used in Motor applications development (Industrial Auto…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Motor applications development
+					</div>
+					<div class="pd-app-example">
+						<strong>典型的な使用例：</strong> BOOST-DRV8711 評価基板は Motor applications development に使用されます。接続前にユーザーガイドで電源、ジャンパー、コネクタ設定を確認してください。
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="BOOST-DRV8711 Complete stepper motor drive and control platform with TI LaunchPad kits application — Industrial Automation i…" title="BOOST-DRV8711 used in Complete stepper motor drive and control platfo…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Complete stepper motor drive and control platform with TI LaunchPad kits
+					</div>
+					<div class="pd-app-example">
+						<strong>典型的な使用例：</strong> BOOST-DRV8711 評価基板は Complete stepper motor drive and control platform with TI LaunchPad kits に使用されます。接続前にユーザーガイドで電源、ジャンパー、コネクタ設定を確認してください。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="faq">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			Q
+		</div>
+		<h2 class="pd-sec-title">
+			よくある質問
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-faq-list">
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					Which electrical limits matter most for BOOST-DRV8711?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							The headline specifications are Voltage Range = 8.2 to 52 V; Continuous Current per H-Bridge = 4.5 A. Always read them together with the stated test conditions.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					このページに BOOST-DRV8711 の基板仕様は掲載されていますか？
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							はい。掲載した基板仕様はユーザーガイドに基づきます。電源および試験条件を守ってください。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What is BOOST-DRV8711 typically used for?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Typical applications include Stepper motor drive stage evaluation, Motor applications development, Complete stepper motor drive and control platform with TI LaunchPad kits.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="disclaimer">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			D
+		</div>
+		<h2 class="pd-sec-title">
+			重要な注意事項
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-alert">
+			<p>
+				<strong>工学利用：</strong> 本ページの技術値は Texas Instruments の BOOST-DRV8711 データシートに基づきます (parsed 2026-10-22). 最終システムではレール、温度制限、タイミング、ボードのインターフェースを検証してください。
+			</p>
+			<p>
+				<strong>注文コード管理：</strong> 他の発注可能品および評価ボードは比較検討用の参考情報です。代替・購入の前に完全な型番、パッケージ、温度範囲、梱包、マーキング、ライフサイクルを確認してください。
+			</p>
+		</div>
+	</div>
+</section>
+</div>
+<div class="sr-only">
+	BOOST-DRV8711 の概要：特長、技術的インサイト、オンボードデバイスの仕様、ボードの詳細、アプリケーション、発注可能な品目、よくある質問。
+</div>

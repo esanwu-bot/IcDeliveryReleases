@@ -1,0 +1,15 @@
+{
+  "mpn": "ADS8568EVM-PDK",
+  "manufacturer": "Texas Instruments",
+  "generated_at": "2026-10-31T11:46:36+0800",
+  "model": "qwen-flash",
+  "alternatives": [],
+  "gate": {
+    "rule": "orderable_part_number_exact_match",
+    "applied_at": "2026-10-31T19:34:01+0800",
+    "input": 3,
+    "kept": 0,
+    "rejected": 3,
+    "note": "只保留在 products.sqlite3 精确命中的完整可订购号；其余进 _rejected 审计，不进交付"
+  }
+}

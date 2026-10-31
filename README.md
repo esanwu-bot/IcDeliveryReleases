@@ -19,9 +19,30 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261031-V2` | 2026-10-31 V2 | 5 | **6/6**（alts / seo 已实跑生成） | en + ja/ko/de/es（**叙述段英文回退**） | review_candidate / not_approved |
 | `delivery-20261031-V3` | 2026-10-31 V3 | 5 | 5/6 ×4 + **6/6** ×1（4 件替代料门禁归零，`alt_html` 不落盘） | en + ja/ko/de/es（**叙述段英文回退**） | review_candidate / not_approved；`ADC12DJ5200SE` **BLOCKED** |
 | `delivery-20261031-V4` | 2026-10-31 V4 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；核心字段**可复现** |
+| `delivery-20261101` | 2026-11-01 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；三个 P0 **已收口**（`gate`: 2×PATCHED / 3×CLEAN） |
 
-**推荐以 `delivery-20261031-V4` 为准**（最新）：V3 复审的四条验收点在 **JSON 与页面两侧同时成立**，
-且核心字段**三次独立解析逐字节一致**。
+**推荐以 `delivery-20261101` 为准**（最新）：V4 复审的三个 P0 全部收口，
+核心数据仍是 V4 那套（复审已用 TI 手册逐条核过）。
+
+- **新-1 源 PDF 链接恢复**：`datasheet_url` 查表键取了会变的前缀
+  （`ADC12DJ5200SEAAV` vs manifest 的 `ADC12DJ5200SEEVM`）导致静默落空。
+  现按 PDF 本体名 + TI 文档号两级解析，并**写进核心断言**：为空直接判失败。
+  ADC 页 `ti.com` 链接 0 → **2**。
+- **新-2 符号页恢复**：确定性抽取覆盖了 `pin_repair` 的成果，`source` 只剩
+  `{page, method}`，符号页 fail-closed 退化成"待核"占位页。
+  现 BGA 球位只由 `pin_repair` 负责，符号页换行归一后 **sha256 与 V3 完全相同**
+  （`06ad6466…`），144 个 `<circle>`。
+- **新-3 核验状态恢复**：电气 4/23 + 绝对最大 0/15 → **22/22 + 15/15**，
+  页面 `†` 0 → **35**。新增 `model_unverified`（只陈述来源，不主张值错）。
+- **指纹**：`pins 3695a8e4…`（与 V3 一致）/ `thermal 4dd75f75…` /
+  `esd a594a1e8…` / `vcmi_vid e9baa1ab…`（与 V4 一致）。
+- **manifest 补回 `gate` / `gate_reasons`**（V4 掉了这列，"是否已解 BLOCKED"无从判断）。
+- **仍缺**：AC 性能（SNR/SFDR/NSD/IMD3）、模型行可复现性（`drift=24`）、
+  ko 页 5/16 长段英文（渲染器拼的叙述句没有五语模板）、分类粒度、修订号标注。
+  详见包内《1101_修复说明.md》§6。
+
+> V4 的定位不变：它是**第一次真正改对数据**的版本，四验收点（VCMI / VID / 热阻 /
+> ESD / amax 15 条）经复审逐条核过全部正确。1101 只补它丢掉的溯源、球图、披露。
 
 - **确定性抽取**：pins / 热阻 / ESD / VCMI / VID 不再由模型输出，改由
   `qc/deterministic_extract.py` 从 PDF 文本层强制抽取。四个指纹三次全等：
