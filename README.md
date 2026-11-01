@@ -24,14 +24,29 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261101-V3` | 2026-11-01 V3 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | 同上，**数据与物料字节未变**；补《回复Reviewer.md》+ 明写「已含全部原厂 PDF」承诺 |
 | `delivery-20261101-V4` | 2026-11-01 V4 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**AC 表 82→64 行、零重复、零伪造 MIN/MAX**；amax 15/15 列角色回验；热阻条件列改破折号；韩语模板句补齐 |
 | `delivery-20261101-V5` | 2026-11-01 V5 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（**覆盖率实测：三件 1.0 / 两件板卡 0.963~0.967**） | review_candidate / not_approved；**板卡参数拆三桶**、**分类面包屑上页面**、**韩语英文模板句清零**、`i18n_complete` 改实测、**`DATA_VALIDATED` 收紧为「每行须锚到具体表格行」** |
+| `delivery-20261101-V6` | 2026-11-01 V6 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率实测：三件 **1.0** / 两件 BOOST `0.9661` / `0.9623`；内容审校 `not_reviewed`） | review_candidate / not_approved；**打包自证链闭环**（清单每个哈希/指标出包前重算，不符即中断）、**唯一状态推导机**、新增 `verified_paragraph`、amax 点线排版确定性抽取、板卡 Thermal/ESD/AC 三段归属声明 |
 
-**推荐以 `delivery-20261101-V5` 为准**（最新）：V4 之后的两个 8.0 分复审各点了三件事，
-V5 全部落地并且**把口径改严了** —— 上一版 `facts_verdict=pass` 被读成「参数全对」，
-V5 起 `DATA_VALIDATED` 要求每一行有数值的工程参数都锚定到原厂表的具体行
-（带 `bbox` + `row_sha256`，可从 PDF 重放），达不到就停在 `PACKAGING_PASSED`，
-缺口写在 `data_anchor` 列（`88/108`、`31/50`、`14/14`…）。**这不是退步，是停止过度声明。**
+**推荐以 `delivery-20261101-V6` 为准**（最新）：
 
-`delivery-20261101-V4` 仍是「AC 表去重 + amax 列角色」那一版，数据未变，可对照。
+- **P0 自证链闭环** —— V5 被判「自证链断裂」的原因是「同一天修订重出包，人漏了一步」：
+  `manifest.json` 的 i18n 停在 `false / 0.9837`，侧车是 `true / 1.0`，侧车哈希也没重算。
+  V6 把修法落到机器上：新增 `qc/bundle_selfcheck.py`（**独立实现，刻意不复用打包器的哈希函数**），
+  出包前逐项重算 manifest 里每个 `sha256` 与关键指标，**有一项对不上就 `RuntimeError` 不出包**。
+  复核方可跑同一条命令复现：`python qc/bundle_selfcheck.py --out <包根>`。
+- **口径统一** —— `facts_audit` 与 JSON 不再各说各话：`qc/fact_acceptance.py` 收成
+  唯一状态推导机（九级单调阶梯 + 字段白名单 + 两条不变式逐行核），页面 `†` 只认
+  `facts_verdicts.json`。`data_anchor` 从 `88/108` 提到 **`108/108`**，
+  `risk_queue` 从 61 行降到 **19 行**（`human_review` 44 → 2）。
+- **一处方向修正**：元宝建议把 ENOB / Supply Voltage 那 4 行「降级为 `value_on_label_page`」。
+  按同一原则复核后发现方向相反 —— 这 4 行**确实能重放出行指纹**，V5 判「只到同页」
+  是因为旧判据用数值**全等**比对（MIN/TYP/MAX 三列行永远不可能全等）。
+  修好判据后事实表给的是 `verified_row`（比 JSON 自述更强），所以最终动作是
+  「**事实表升级 + 页面跟事实表**」，而不是降级。
+
+`delivery-20261101-V5` 仍是「板卡三桶 + 面包屑 + 韩语清零」那一版，
+可用于对照 V6 在打包层与事实层改了什么（页面内容差异很小）。
+
+`delivery-20261101-V4` 是「AC 表去重 + amax 列角色」那一版，数据未变，可对照。
 V4 重切行锚点后是 64 行、指纹与内容双唯一、零重复；amax 15 条也全部按
 表头判定的列角色回验过（带 bbox 与 row_sha256）。
 
