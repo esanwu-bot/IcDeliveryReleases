@@ -45,8 +45,11 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261101-V7` | 2026-11-01 V7 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率：三件 **1.0** / BOOST `0.9661` / `0.9630`；内容审校 `not_reviewed`） | review_candidate / not_approved；**废止 `data_anchor`**，拆成 `row_anchor`/`paragraph_anchor`/`coord_no_fingerprint`/`container_verified` 四列 + `anchor_gate` 总闸；**分母补回隔离桶**（`ADS8568EVM-PDK` 14→49 行，闸门 `blocked`，`release_state` 退回 `PACKAGING_PASSED`）；**文档主体隔离**（`document_subject` / `subject_match`）；自证结论 38 项落盘；JSON 状态与事实表同步；`paragraph_sha256` 归一化口径文档化 |
 | `delivery-20261101-V8` | 2026-11-01 V8 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（同 V7：三件 **1.0** / BOOST `0.9661` / `0.9630`；内容审校仍 `not_reviewed`） | review_candidate / not_approved；**《交付说明.md》改为打包时按本包 manifest 渲染 + 自检逐格硬拦**（自检 38 → **39** 项）；`anchor_gate` 语义限定到「证据载体达门槛」，README 与包内说明各加**六级证据层级表**；页面五语种提示条补限定；`not_found` 全包 **1 → 0**；`ADS8568` `row_anchor` **19 → 28**、`weak` **28 → 20**；`ADS1201U` 缺列主动降级 → `anchor_gate` 由 pass 变 **blocked** |
 | `delivery-20261101-V9` | 2026-11-01 V9 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（同 V8，未重跑语言侧车） | review_candidate / not_approved；**三视图出图**（BGA 2D 球阵 + 3D 等轴测按原厂机械图绘制，共享封装图**内联**消除裂图）；**ADS8568EVM 补渲染 24 行板载电气**（页面 25 行/4 表 → **49 行/5 表**，13 条弱证据逐条带 `†`，分母与页面首次对齐）；`facts_verdict` 新增 **`partial_pass`**（`pass` + `blocked` 不再并存）；正向提示条改**按容器全页汇总**（37/108 → **108/108**）；`range` 结构**投毒收口**（`qc/range_guard.py`，全包抹除 1 条，顺带修掉 ADC 页 `to 26.25 dBm` 残句）；`BOOST-DRV8711` 卖点拆板级/器件两句；SEO 侧车注入 `data_subject` + `attribution`；自检 39 → **41** 项 |
+| `delivery-20261101-V10` | 2026-11-01 V10 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（同 V9，未重跑语言侧车） | review_candidate / not_approved；**板卡首屏身份与溯源**（`ADS8568EVM-PDK` 首屏补「TI 评估板 / 板载 `ADS8568`」 + 原厂手册直链，`ti.com` 链接 **1 → 2**，身份句从页脚提到首屏）；**板卡 AC 列角色闸门恢复执行**（`check_core()` 板卡分支提前执行 `check_ac_integrity()`，新增数值格判据 `_ac_num_cell()`；`metadata.core_validation` 由 `"pass"` 变 **6 条列角色错位报错**，数据本身未修、闸门已亮灯）；测试去粉饰（`test_check_core_skips_board_pages` 从 `== []` 改为脏 AC 双断言，另补 2 条新用例）；ESD `±` 全库复扫 **40/40** 未复现丢失；容器内挂真实数据全量 **1387 passed / 21 skipped / 0 failed**；自检 **41/41** |
 
-**推荐以 `delivery-20261101-V9` 为准**（最新）。V9 处理 V8 全量复核
+**推荐以 `delivery-20261101-V10` 为准**（最新）。V10 处理元宝 V9 终审的 4 项（2 项 P0）：**板卡首屏身份与溯源**、**板卡 AC 列角色闸门恢复执行**（闸门早就写好但从未跑过，测试还是绿的），以及 ESD `±` 全库复扫（未复现）。不重解 PDF、不改数据层，只修闸门与渲染。
+
+上一版 V9 处理 V8 全量复核
 （工程质量体系 **9.4/10 / Not Approved**）指出的 5 条新发现，并给出「新-1 隐形 24 行」的定性。
 
 **结论：新-1 是渲染层漏了，不是刻意不渲染。** `ADS8568EVM-PDK` 的 24 条板载电气行
