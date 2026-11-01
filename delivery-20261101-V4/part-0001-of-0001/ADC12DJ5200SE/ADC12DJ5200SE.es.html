@@ -1,0 +1,2448 @@
+<div class="pd-wrap" lang="es">
+<header class="pd-hero">
+	<div class="pd-hero-inner">
+		<h1 class="pd-hero-title">
+			ADC12DJ5200SE ADC de muestreo de RF de 12 bits y 10,4 GSPS con JESD204C
+		</h1>
+		<p class="pd-hero-desc">
+			El ADC12DJ5200SE es un convertidor analógico-digital de muestreo de RF de 12 bits con baluns integrados, que soporta hasta 10,4 GSPS en modo de canal único o 5,2 GSPS en modo dual canal.
+		</p>
+	</div>
+</header>
+<section class="pd-sec" id="product-introduction">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Descripción general de ADC12DJ5200SE
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			Cuenta con interfaz JESD204C con velocidad de canal de hasta 17,16 Gbps, conversores digitales descendentes (DDC) opcionales, filtros FIR programables y ajuste de retardo de apertura sin ruido. Diseñado para aplicaciones de alto rendimiento en pruebas de comunicaciones, guerra electrónica, comunicaciones satelitales y sistemas SDR.
+		</p>
+		<p>
+			Las capacidades clave incluyen Resolución de 12 bits con hasta 10,4 GSPS de muestreo en modo de canal único, Hasta 5,2 GSPS en modo dual canal con baluns de entrada integrados, VCM flexible: acoplado en corriente alterna sin ruta de corriente continua a tierra o suministro.
+		</p>
+		<p>
+			Se utiliza en Pruebas de comunicaciones (802.11ad, 5G), Guerra electrónica (SIGINT, ELINT), Comunicaciones satelitales (SATCOM), Radio definida por software (SDR) con muestreo de RF.
+		</p>
+		<p>
+			ADC12DJ5200SE is supplied in the FCBGA (144) package with 144 pins, an operating range of -40°C to 85°C, and 2 documented orderable options.
+		</p>
+		<p>
+			Los valores de esta página provienen de la hoja de datos de Texas Instruments (<a href="https://www.ti.com/lit/ds/symlink/adc12dj5200se.pdf" rel="nofollow">PDF de origen</a>).
+		</p>
+		<div class="pd-expert-insight">
+			<h3>
+				Análisis técnico
+			</h3>
+			<p>
+				<strong>¿Qué debe verificarse al diseñar con ADC12DJ5200SE?</strong>
+			</p>
+			<ul>
+				<li>
+					<strong>Respete los raíles de máximos absolutos:</strong> Los máximos absolutos limitan Supply Voltage - VA19 to -0.3 to 2.35 V; Supply Voltage - VA11 to -0.3 to 1.32 V. Diseñe la secuencia de alimentación y los transitorios dentro de estos límites antes de elegir los componentes del entorno.
+				</li>
+				<li>
+					<strong>Reserve margen térmico:</strong> La temperatura de funcionamiento es -40°C to 85°C, storage -65°C to 150°C. El derating, el autocalentamiento y el flujo de aire deben verificarse en la temperatura ambiente más desfavorable del recinto.
+				</li>
+				<li>
+					<strong>Fije pronto el encapsulado y el pinout:</strong> FCBGA (144) (144 pins), 10mm x 10mm define el footprint, la ruta térmica y la asignación de pines; confírmelo con la revisión vigente antes del layout.
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="key-benefits">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			K
+		</div>
+		<h2 class="pd-sec-title">
+			Ventajas principales
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-grid2">
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Resolución de 12 bits con hasta 10,4 GSPS de muestreo en modo de canal único
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Hasta 5,2 GSPS en modo dual canal con baluns de entrada integrados
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>VCM flexible
+				</div>
+				<p class="pd-card-desc">
+					acoplado en corriente alterna sin ruta de corriente continua a tierra o suministro.
+				</p>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Nivel de ruido tan bajo como -151,5 dBFS/Hz en modo de canal único
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="specifications">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			S
+		</div>
+		<h2 class="pd-sec-title">
+			Especificaciones eléctricas
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<em class="pd-verify-note" style="display:block;border-left:3px solid #c98a00;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">18 de 22 entradas a continuación están marcadas como no verificadas (†). El valor se mantuvo tal como se extrajo, pero proviene del modelo de lenguaje y no de una extracción determinista; su condición de prueba o el rol de la columna no se pudo cotejar con una fila de la hoja de datos. Confirme en la hoja de datos original antes de usarlo en el diseño.</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parámetro
+					</th>
+					<th>
+						Valor
+					</th>
+					<th>
+						Condiciones y contexto
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Resolution
+					</td>
+					<td>
+						12 Bits †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Sampling Rate - Single Channel Mode
+					</td>
+					<td>
+						10.4 GSPS †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Sampling Rate - Dual Channel Mode
+					</td>
+					<td>
+						5.2 GSPS †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Analog Input Frequency Range (-3dB)
+					</td>
+					<td>
+						2 to 6.3 GHz †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Full-Scale Input Power (4.5GHz)
+					</td>
+					<td>
+						-1.25 dBm †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Noise Floor - Dual-Channel Mode
+					</td>
+					<td>
+						-149 dBFS/Hz †
+					</td>
+					<td>
+						2.3GHz, –20dBFS, INPUTFS = 1.5dBm
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Noise Floor - Single-Channel Mode
+					</td>
+					<td>
+						-151.5 dBFS/Hz †
+					</td>
+					<td>
+						2.3GHz, –20dBFS, INPUTFS = 1.5dBm
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ENOB - Dual Channel Mode
+					</td>
+					<td>
+						8.5 Bits †
+					</td>
+					<td>
+						FIN = 2.3GHz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Noiseless Aperture Delay Step
+					</td>
+					<td>
+						19 fs †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Maximum Lane Rate
+					</td>
+					<td>
+						17.16 Gbps †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Decimation Options
+					</td>
+					<td>
+						4x, 8x, 16x and 32x complex decimation †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						NCOs per DDC
+					</td>
+					<td>
+						Four independent 32-Bit NCOs †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Power Consumption
+					</td>
+					<td>
+						4 W †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Supply Voltage - VA19
+					</td>
+					<td>
+						1.8 to 2.0 V †
+					</td>
+					<td>
+						analog 1.9-V supply
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Supply Voltage - VA11
+					</td>
+					<td>
+						1.05 to 1.15 V †
+					</td>
+					<td>
+						analog 1.1-V supply
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Supply Voltage - VD11
+					</td>
+					<td>
+						1.05 to 1.15 V †
+					</td>
+					<td>
+						digital 1.1-V supply
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input Power for Fullscale at Minimum Balun Loss
+					</td>
+					<td>
+						-1.5 dBm †
+					</td>
+					<td>
+						fIN = 4.5GHz, FS_RANGE_A = FS_RANGE_B = 0xA000
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Temperature Diode Input Current
+					</td>
+					<td>
+						100 µA †
+					</td>
+					<td>
+						TDIODE+ to TDIODE–
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input Common-Mode Voltage (CLK±)
+					</td>
+					<td>
+						0 to 0.55 V
+					</td>
+					<td>
+						CLK+, CLK–, SYSREF+, SYSREF–(2) (4), CLK±
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input Common-Mode Voltage (SYSREF±)
+					</td>
+					<td>
+						0 to 0.55 V
+					</td>
+					<td>
+						CLK+, CLK–, SYSREF+, SYSREF–(2) (4), SYSREF±
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input Common-Mode Voltage (TMSTP±)
+					</td>
+					<td>
+						0 to 0.55 V
+					</td>
+					<td>
+						TMSTP+, TMSTP–(3) (5)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input Differential Voltage (CLK+ to CLK– SYSREF+ to SYSREF–)
+					</td>
+					<td>
+						0.4 to 2.0 VPP-DIFF
+					</td>
+					<td>
+						CLK+ to CLK–, SYSREF+ to SYSREF–, TMSTP+ to TMSTP–
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			10 de las entradas anteriores no tienen condición de ensayo extraída; el valor solo es válido en las condiciones de la tabla correspondiente del documento original, compruébelo allí antes de usarlo en diseño.
+		</p>
+		<p>
+			<strong>Valores máximos absolutos</strong>: nunca opere a ni más allá de estos límites.
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parámetro
+					</th>
+					<th>
+						Límite
+					</th>
+					<th>
+						Notas
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Supply Voltage - VA19
+					</td>
+					<td>
+						-0.3 to 2.35 V
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Supply Voltage - VA11
+					</td>
+					<td>
+						-0.3 to 1.32 V
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Supply Voltage - VD11
+					</td>
+					<td>
+						-0.3 to 1.32 V
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Voltage Between VD11 and VA11
+					</td>
+					<td>
+						-1.32 to 1.32 V
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Voltage Between AGND and DGND
+					</td>
+					<td>
+						-0.1 to 0.1 V
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Pin Voltage Range - DA[7:0]+, DA[7:0]–, DB[7:0]+, DB[7:0]–, TMSTP+, TMSTP–
+					</td>
+					<td>
+						-0.5 to VD11 + 0.5
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Pin Voltage Range - CLK+, CLK–, SYSREF+, SYSREF–
+					</td>
+					<td>
+						-0.5 to VA11 + 0.5
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Pin Voltage Range - BG, TDIODE+, TDIODE–
+					</td>
+					<td>
+						-0.5 to VA19 + 0.5
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Pin Voltage Range - INA, INB
+					</td>
+					<td>
+						-3 to 3 V
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Pin Voltage Range - CALSTAT, CALTRIG, NCOA0, NCOA1, NCOB0, NCOB1, ORA0, ORA1, ORB0, ORB1, PD, SCLK, SCS, SDI, SDO, SYNCSE
+					</td>
+					<td>
+						-0.5 to VA19 + 0.5
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Peak Input Current (Any Input Except INA, INB)
+					</td>
+					<td>
+						-25 to 25 mA
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Peak RF Input Power (INA, INB)
+					</td>
+					<td>
+						to 26.25 dBm
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Peak Total Input Current
+					</td>
+					<td>
+						to 100 mA
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Junction Temperature
+					</td>
+					<td>
+						to 150 °C
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Storage Temperature
+					</td>
+					<td>
+						-65 to 150 °C
+					</td>
+					<td>
+						Valor máximo absoluto.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.05em;">
+			Resistencia térmica
+		</h3>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parámetro
+					</th>
+					<th>
+						Valor
+					</th>
+					<th>
+						Condiciones y contexto
+					</th>
+				</tr>
+				<tr>
+					<td>
+						RθJA
+					</td>
+					<td>
+						23.9 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RθJC(top)
+					</td>
+					<td>
+						0.8 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RθJB
+					</td>
+					<td>
+						8.4 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ψJT
+					</td>
+					<td>
+						0.23 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ψJB
+					</td>
+					<td>
+						8.4 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			5 de las entradas anteriores no tienen condición de ensayo extraída; el valor solo es válido en las condiciones de la tabla correspondiente del documento original, compruébelo allí antes de usarlo en diseño.
+		</p>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.05em;">
+			Valores ESD
+		</h3>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parámetro
+					</th>
+					<th>
+						Valor
+					</th>
+					<th>
+						Condiciones y contexto
+					</th>
+				</tr>
+				<tr>
+					<td>
+						HBM
+					</td>
+					<td>
+						±2000 V
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						CDM
+					</td>
+					<td>
+						±500 V
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			2 de las entradas anteriores no tienen condición de ensayo extraída; el valor solo es válido en las condiciones de la tabla correspondiente del documento original, compruébelo allí antes de usarlo en diseño.
+		</p>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.05em;">
+			Prestaciones en CA
+		</h3>
+		<p>
+			Extraído de forma determinista de la tabla de características en CA del datasheet original, conservando las condiciones de ensayo que seleccionan cada fila. Las filas difieren en frecuencia de entrada, amplitud de entrada y modo de canal: compare solo condiciones equivalentes.
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:14%;" /><col style="width:40%;" /><col style="width:10%;" /><col style="width:10%;" /><col style="width:10%;" /><col style="width:12%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						SYMBOL
+					</th>
+					<th>
+						Condiciones y contexto
+					</th>
+					<th>
+						MIN
+					</th>
+					<th>
+						TYP
+					</th>
+					<th>
+						MAX
+					</th>
+					<th>
+						UNIT
+					</th>
+				</tr>
+				<tr>
+					<td>
+						NSD
+					</td>
+					<td>
+						Maximum full-scale voltage (FS_RANGE_A = FS_RANGE_B = 0xFFFF), AIN = –20 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-150.6
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS/Hz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						NSD
+					</td>
+					<td>
+						Default full-scale voltage (FS_RANGE_A = FS_RANGE_B = 0xA000), AIN = –20 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-149.0
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS/Hz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+						50
+					</td>
+					<td>
+						53.5
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						53.9
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54.8
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS, FS_RANGE_A = FS_RANGE_B = 0xFFFF
+					</td>
+					<td>
+
+					</td>
+					<td>
+						55.1
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						52.0
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						53.0
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54.7
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						50.5
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						51.7
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54.4
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+						53
+					</td>
+					<td>
+						65
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						67
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						73
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS, FS_RANGE_A = FS_RANGE_B = 0xFFFF
+					</td>
+					<td>
+
+					</td>
+					<td>
+						67
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						60
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						64
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						71
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						53
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						61
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						70
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –7 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-72
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –9 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-77
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –18 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-89
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –9 dBFS per tone, FS_RANGE_A = FS_RANGE_B = 0xFFFF
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-74
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 4193 MHz, f2 = 4203 MHz; AIN = –7 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-70
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 4193 MHz, f2 = 4203 MHz; AIN = –9 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-76
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 4193 MHz, f2 = 4203 MHz; AIN = –18 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-81
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 5993 MHz, f2 = 6003 MHz; AIN = –7 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-55
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 5993 MHz, f2 = 6003 MHz; AIN = –9 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-61
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 5993 MHz, f2 = 6003 MHz; AIN = –18 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-84
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						NSD
+					</td>
+					<td>
+						Maximum full-scale voltage (FS_RANGE_A = 0xFFFF), AIN = –20 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-153.1
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS/Hz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						NSD
+					</td>
+					<td>
+						Default full-scale voltage (FS_RANGE_A = 0xA000), AIN = –20 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-151.5
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS/Hz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+						50
+					</td>
+					<td>
+						53.5
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54.7
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS, FS_RANGE_A = 0xFFFF
+					</td>
+					<td>
+
+					</td>
+					<td>
+						55.1
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						52.1
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						53.0
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54.6
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						50.6
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						51.8
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SNR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54.4
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						56
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						59
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						68
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 2397 MHz; AIN = –3 dBFS, FS_RANGE_A = 0xFFFF
+					</td>
+					<td>
+
+					</td>
+					<td>
+						59
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						54
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						57
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 4197 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						66
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –1 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						53
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –3 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						57
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SFDR
+					</td>
+					<td>
+						fIN = 5997 MHz; AIN = –12 dBFS
+					</td>
+					<td>
+
+					</td>
+					<td>
+						66
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –7 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-73
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –9 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-78
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –18 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-92
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 2393 MHz, f2 = 2403 MHz; AIN = –9 dBFS per tone, FS_RANGE_A = 0xFFFF
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-75
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 4193 MHz, f2 = 4203 MHz; AIN = –7 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-70
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 4193 MHz, f2 = 4203 MHz; AIN = –9 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-77
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 4193 MHz, f2 = 4203 MHz; AIN = –18 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-81
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 5993 MHz, f2 = 6003 MHz; AIN = –7 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-57
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 5993 MHz, f2 = 6003 MHz; AIN = –9 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-64
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IMD3
+					</td>
+					<td>
+						f1 = 5993 MHz, f2 = 6003 MHz; AIN = –18 dBFS per tone
+					</td>
+					<td>
+
+					</td>
+					<td>
+						-84
+					</td>
+					<td>
+
+					</td>
+					<td>
+						dBFS
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<section class="pd-sec" id="package">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Paquete
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>ADC12DJ5200SE</strong> uses the <strong>FCBGA (144)</strong> package with 144 pins.
+		</p>
+		<p>
+			The device is specified with body dimensions of 10mm x 10mm, an operating temperature range of -40°C to 85°C, a storage range of -65°C to 150°C. Confirm the mechanical drawing in the current datasheet revision before release to production.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="pinout">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Asignación de pines
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			La asignación de pines de FCBGA (144) agrupa 64 funciones de pin únicas en 144 terminales.
+		</p>
+		<ul class="pd-list">
+			<li>
+				<strong>A1, A2, A3, A5, A6, A7, B2, B3, B4, B5, B6, B7, C6, D1, D6, E1, E6, F2, F3, F6, G2, G3, G6, H1, H6, J1, J6, L2, L3, L4, L5, L6, L7, M1, M2, M3, M5, M6, M7 - AGND:</strong> Analog supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.
+			</li>
+			<li>
+				<strong>A4 - INA:</strong> Channel A single ended analog input. INA is recommended for use in single channel mode for optimal performance. The full-scale input voltage swing is determined by the FS_RANGE_A register (see the Full-Scale Voltage (VFS) Adjustment section). This input is AC coupled with a nominal impedance of 50Ω. There is no DC connection to supply or ground. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>A8 - DA3+:</strong> High-speed serialized-data output for channel A, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>A9 - DA3-:</strong> High-speed serialized-data output for channel A, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>A10 - DA2+:</strong> High-speed serialized-data output for channel A, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>A11 - DA2-:</strong> High-speed serialized-data output for channel A, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>A12, B12, D9, D10, F9, F10, G9, G10, J9, J10, L12, M12 - DGND:</strong> Digital supply ground. Tie AGND and DGND to a common ground plane (GND) on the circuit board.
+			</li>
+			<li>
+				<strong>B1 - TMSTP+:</strong> Timestamp input positive connection or differential JESD204C SYNC positive connection. This input is a timestamp input, used to mark a specific sample, when TIMESTAMP_EN is set to 1. This differential input is used as the JESD204C SYNC signal input when SYNC_SEL is set 1. This input can be used as both a timestamp and differential SYNC input at the same time, allowing feedback of the SYNC signal using the timestamp mechanism. TMSTP± uses active low signaling when used as a JESD204C SYNC. For additional usage information, see the Timestamp section. TMSTP_RECV_EN must be set to 1 to use this input. This differential input (TMSTP+ to TMSTP–) has an internal untrimmed 100-Ω differential termination and can be AC-coupled when TMSTP_LVPECL_EN is set to 0. The termination changes to 50 Ω to ground on each input pin (TMSTP+ and TMSTP–) and can be DC coupled when TMSTP_LVPECL_EN is set to 1. This pin is not self-biased and therefore must be externally biased for both AC- and DC-coupled configurations. The common-mode voltage must be within the range provided in the Recommended Operating Conditions table when both AC and DC coupled. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required.
+			</li>
+			<li>
+				<strong>B8 - DA7+:</strong> High-speed serialized data output for channel A, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>B9 - DA7-:</strong> High-speed serialized data output for channel A, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>B10 - DA6+:</strong> High-speed serialized data output for channel A, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>B11 - DA6-:</strong> High-speed serialized data output for channel A, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>C1 - TMSTP-:</strong> Timestamp input positive connection or differential JESD204C SYNC negative connection. This pin can be left disconnected and disabled (TMSTP_RECV_EN = 0) if SYNCSE is used for JESD204C SYNC and timestamp is not required.
+			</li>
+			<li>
+				<strong>C2 - SYNCSE:</strong> Single-ended JESD204C SYNC signal. This input is an active low input that is used to initialize the JESD204C serial link in 8B/10B modes when SYNC_SEL is set to 0. The 64B/66B modes do not use the SYNC signal for initialization, however it may be used for NCO synchronization. When toggled low in 8B/10B modes this input initiates code group synchronization (see the Code Group Synchronization (CGS) section). After code group synchronization, this input must be toggled high to start the initial lane alignment sequence (see the Initial Lane Alignment Sequence (ILAS) section). A differential SYNC signal can be used instead by setting SYNC_SEL to 1 and using TMSTP± as a differential SYNC input. Tie this pin to GND if differential SYNC (TMSTP±) is used as the JESD204C SYNC signal.
+			</li>
+			<li>
+				<strong>C3 - BG:</strong> Band-gap voltage output. This pin is capable of sourcing only small currents and driving limited capacitive loads, as specified in the Recommended Operating Conditions table. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>C4, D4, E2, E3, E4, F4, G4, H2, H3, H4, J4, K4 - VA19:</strong> 1.9-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).
+			</li>
+			<li>
+				<strong>C5, D2, D3, D5, E5, F5, G5, H5, J2, J3, J5, K5 - VA11:</strong> 1.1-V analog supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).
+			</li>
+			<li>
+				<strong>C7 - NCOA0:</strong> LSB of NCO selection control for DDC A. NCOA0 and NCOA1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOA0 and NCOA1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used.
+			</li>
+			<li>
+				<strong>C8 - ORA0:</strong> Fast overrange detection status for channel A for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>C9, C10, E9, E10, G7, H7, H9, H10, K9, K10 - VD11:</strong> 1.1-V digital supply. Decouple with at least one 0.1 μF capacitor per ball as close to the ball as possible (this may be on the backside of the board connecting to the vias if the board is not too thick).
+			</li>
+			<li>
+				<strong>C11 - DA5+:</strong> High-speed serialized data output for channel A, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>C12 - DA1+:</strong> High-speed serialized data output for channel A, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>D7 - NCOA1:</strong> MSB of NCO selection control for DDC A. Tie this pin to GND if not used.
+			</li>
+			<li>
+				<strong>D8 - ORA1:</strong> Fast overrange detection status for channel A for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>D11 - DA5-:</strong> High-speed serialized data output for channel A, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>D12 - DA1-:</strong> High-speed serialized data output for channel A, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>E7 - CALTRIG:</strong> Foreground calibration trigger input. This pin is only used if hardware calibration triggering is selected in CAL_TRIG_EN, otherwise software triggering is performed using CAL_SOFT_TRIG. Tie this pin to GND if not used.
+			</li>
+			<li>
+				<strong>E8 - SCS:</strong> Serial interface chip select active low input. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels. This pin has a 82-kΩ pullup resistor to VD11.
+			</li>
+			<li>
+				<strong>E11 - DA4+:</strong> High-speed serialized data output for channel A, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>E12 - DA0+:</strong> High-speed serialized data output for channel A, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>F1 - CLK+:</strong> Device (sampling) clock positive input. The clock signal is strongly recommended to be AC- coupled to this input for best performance. In single-channel mode, the analog input signal is sampled on both the rising and falling edges. In dual-channel mode, the analog signal is sampled on the rising edge. This differential input has an internal untrimmed 100-Ω differential termination and is self-biased to the optimal input common-mode voltage as long as DEVCLK_LVPECL_EN is set to 0.
+			</li>
+			<li>
+				<strong>F7 - CALSTAT:</strong> Foreground calibration status output or device alarm output. Functionality is programmed through CAL_STATUS_SEL. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>F8 - SCLK:</strong> Serial interface clock. This pin functions as the serial-interface clock input that clocks the serial programming data in and out. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels.
+			</li>
+			<li>
+				<strong>F11 - DA4-:</strong> High-speed serialized data output for channel A, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>F12 - DA0-:</strong> High-speed serialized data output for channel A, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>G1 - CLK-:</strong> Device (sampling) clock negative input. TI strongly recommends using AC-coupling for best performance.
+			</li>
+			<li>
+				<strong>G8 - SDI:</strong> Serial interface data input. The Using the Serial Interface section describes the serial interface in more detail. Supports 1.1-V and 1.8-V CMOS levels.
+			</li>
+			<li>
+				<strong>G11 - DB4-:</strong> High-speed serialized data output for channel B, lane 4, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>G12 - DB0-:</strong> High-speed serialized data output for channel B, lane 0, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>H8 - SDO:</strong> Serial interface data output. The Using the Serial Interface section describes the serial interface in more detail. This pin is high impedance during normal device operation. This pin outputs 1.9-V CMOS levels during serial interface read operations. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>H11 - DB4+:</strong> High-speed serialized data output for channel B, lane 4, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>H12 - DB0+:</strong> High-speed serialized data output for channel B, lane 0, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>J7 - NCOB1:</strong> MSB of NCO selection control for DDC B. Tie this pin to GND if not used.
+			</li>
+			<li>
+				<strong>J8 - ORB1:</strong> Fast overrange detection status for channel B for the OVR_T1 threshold. When the analog input exceeds the threshold programmed into OVR_T1, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>J11 - DB5-:</strong> High-speed serialized data output for channel B, lane 5, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>J12 - DB1-:</strong> High-speed serialized data output for channel B, lane 1, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>K1 - SYSREF+:</strong> The SYSREF positive input is used to achieve synchronization and deterministic latency across the JESD204C interface. This differential input (SYSREF+ to SYSREF–) has an internal untrimmed 100-Ω differential termination and can be AC-coupled when SYSREF_LVPECL_EN is set to 0. This input is self-biased when SYSREF_LVPECL_EN is set to 0. The termination changes to 50 Ω to ground on each input pin (SYSREF+ and SYSREF–) and can be DC-coupled when SYSREF_LVPECL_EN is set to 1. This input is not self-biased when SYSREF_LVPECL_EN is set to 1 and must be biased externally to the input common-mode voltage range provided in the Recommended Operating Conditions table.
+			</li>
+			<li>
+				<strong>K2 - TDIODE+:</strong> Temperature diode positive (anode) connection. An external temperature sensor can be connected to TDIODE+ and TDIODE– to monitor the junction temperature of the device. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>K3 - TDIODE-:</strong> Temperature diode negative (cathode) connection. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>K6 - PD:</strong> This pin disables all analog circuits and serializer outputs when set high for temperature diode calibration or to reduce power consumption when the device is not being used. Tie this pin to GND if not used.
+			</li>
+			<li>
+				<strong>K7 - NCOB0:</strong> LSB of NCO selection control for DDC B. NCOB0 and NCOB1 select which NCO, of a possible four NCOs, is used for digital mixing when using a complex output JMODE. The remaining unselected NCOs continue to run to maintain phase coherency and can be swapped in by changing the values of NCOB0 and NCOB1 (when CMODE = 1). This pin is an asynchronous input. See the NCO Fast Frequency Hopping (FFH) and NCO Selection sections for more information. Tie this pin to GND if not used.
+			</li>
+			<li>
+				<strong>K8 - ORB0:</strong> Fast overrange detection status for channel B for the OVR_T0 threshold. When the analog input exceeds the threshold programmed into OVR_T0, this status indicator goes high. The minimum pulse duration is set by OVR_N. See the ADC Overrange Detection section for more information. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>K11 - DB5+:</strong> High-speed serialized data output for channel B, lane 5, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>K12 - DB1+:</strong> High-speed serialized data output for channel B, lane 1, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>L1 - SYSREF-:</strong> SYSREF negative input
+			</li>
+			<li>
+				<strong>L8 - DB7+:</strong> High-speed serialized data output for channel B, lane 7, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>L9 - DB7-:</strong> High-speed serialized data output for channel B, lane 7, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>L10 - DB6+:</strong> High-speed serialized data output for channel B, lane 6, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>L11 - DB6-:</strong> High-speed serialized data output for channel B, lane 6, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>M4 - INB:</strong> Channel B single ended analog input. INA is recommended for use in single channel mode for optimal performance. The full-scale input voltage swing is determined by the FS_RANGE_B register (see the Full-Scale Voltage (VFS) Adjustment section). This input is AC coupled with a nominal impedance of 50Ω. There is no DC connection to supply or ground. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>M8 - DB3+:</strong> High-speed serialized data output for channel B, lane 3, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>M9 - DB3-:</strong> High-speed serialized data output for channel B, lane 3, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+			<li>
+				<strong>M10 - DB2+:</strong> High-speed serialized data output for channel B, lane 2, positive connection. This differential output must be AC-coupled and must always be terminated with a 100-Ω differential termination at the receiver. This pin can be left disconnected if not used.
+			</li>
+			<li>
+				<strong>M11 - DB2-:</strong> High-speed serialized data output for channel B, lane 2, negative connection. This pin can be left disconnected if not used, or connected to any voltage level between GND (0V) and VD11 (1.1V) using 0 OHM to 1MOHM resistors.
+			</li>
+		</ul>
+	</div>
+</section>
+<section class="pd-sec" id="equivalent">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			E
+		</div>
+		<h2 class="pd-sec-title">
+			Opciones pedibles y alternativas de diseño
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p class="pd-note pd-compat-note">
+			<strong>Comprobación de código de pedido:</strong> Estas entradas están documentadas en la información de pedidos de Texas Instruments para ADC12DJ5200SE, pero ninguna es un sustituto automático. Verifique el código de pedido completo, el paquete, el rango de temperatura, el embalaje, el marcado, el ciclo de vida y la documentación actual del fabricante antes de un cambio de diseño o compra.
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:32%;" /><col style="width:14%;" /><col style="width:24%;" /><col style="width:30%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Opción de pedido
+					</th>
+					<th>
+						Diferencia de código de pedido
+					</th>
+					<th>
+						Embalaje o paquete
+					</th>
+					<th>
+						Comprobación de selección
+					</th>
+				</tr>
+				<tr>
+					<td>
+						ADC12DJ5200SEAAV
+					</td>
+					<td>
+						Opción pedible documentada
+					</td>
+					<td>
+						FCCSP (AAV), JEDEC TRAY (5+1)
+					</td>
+					<td>
+						ADC12DJ52SE
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ADC12DJ5200SEAAV.A
+					</td>
+					<td>
+						Opción pedible documentada
+					</td>
+					<td>
+						FCCSP (AAV), JEDEC TRAY (5+1)
+					</td>
+					<td>
+						ADC12DJ52SE
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<section class="pd-sec" id="manufacturer-information">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			M
+		</div>
+		<h2 class="pd-sec-title">
+			Fabricante
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>Texas Instruments</strong> fabrica ADC12DJ5200SE como Data Converters.
+		</p>
+		<p>
+			El registro técnico de referencia es la hoja de datos del fabricante, disponible en <a href="https://www.ti.com/lit/ds/symlink/adc12dj5200se.pdf" rel="nofollow">este enlace</a>. Confirme la última revisión, el estado del ciclo de vida, los límites eléctricos, la asignación de pines y el dibujo del paquete antes de la liberación.
+		</p>
+		<p>
+			Revisión del documento: SLVSGH5C (Rev. C), revisado en APRIL 2025.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="application">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			A
+		</div>
+		<h2 class="pd-sec-title">
+			Aplicaciones
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-appgrid">
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-communications-networking.png" width="64" height="64" alt="ADC12DJ5200SE Communications testers (802.11ad, 5G) application — Communications &amp; Networking illustration" title="ADC12DJ5200SE used in Communications testers (802.11ad, 5G) (Communic…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Pruebas de comunicaciones (802.11ad, 5G)
+					</div>
+					<div class="pd-app-example">
+						<strong>Caso típico:</strong> Un diseño para Pruebas de comunicaciones (802.11ad, 5G) puede usar ADC12DJ5200SE después de verificar los rieles de alimentación, la temperatura de operación (-40°C to 85°C), el tiempo de la interfaz y la ruta térmica del paquete para el sistema de destino.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-aerospace-defense.png" width="64" height="64" alt="ADC12DJ5200SE Electronic warfare (SIGINT, ELINT) application — Aerospace &amp; Defense illustration" title="ADC12DJ5200SE used in Electronic warfare (SIGINT, ELINT) (Aerospace &amp;…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Guerra electrónica (SIGINT, ELINT)
+					</div>
+					<div class="pd-app-example">
+						<strong>Caso típico:</strong> Un diseño para Guerra electrónica (SIGINT, ELINT) puede usar ADC12DJ5200SE después de verificar los rieles de alimentación, la temperatura de operación (-40°C to 85°C), el tiempo de la interfaz y la ruta térmica del paquete para el sistema de destino.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-communications-networking.png" width="64" height="64" alt="ADC12DJ5200SE Satellite communications (SATCOM) application — Communications &amp; Networking illustration" title="ADC12DJ5200SE used in Satellite communications (SATCOM) (Communicatio…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Comunicaciones satelitales (SATCOM)
+					</div>
+					<div class="pd-app-example">
+						<strong>Caso típico:</strong> Un diseño para Comunicaciones satelitales (SATCOM) puede usar ADC12DJ5200SE después de verificar los rieles de alimentación, la temperatura de operación (-40°C to 85°C), el tiempo de la interfaz y la ruta térmica del paquete para el sistema de destino.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-communications-networking.png" width="64" height="64" alt="ADC12DJ5200SE RF-sampling software-defined radio (SDR) application — Communications &amp; Networking illustration" title="ADC12DJ5200SE used in RF-sampling software-defined radio (SDR) (Commu…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Radio definida por software (SDR) con muestreo de RF
+					</div>
+					<div class="pd-app-example">
+						<strong>Caso típico:</strong> Un diseño para Radio definida por software (SDR) con muestreo de RF puede usar ADC12DJ5200SE después de verificar los rieles de alimentación, la temperatura de operación (-40°C to 85°C), el tiempo de la interfaz y la ruta térmica del paquete para el sistema de destino.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="faq">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			Q
+		</div>
+		<h2 class="pd-sec-title">
+			Preguntas frecuentes
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-faq-list">
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What distinguishes ADC12DJ5200SE from the other orderables?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							ADC12DJ5200SE is the option documented on this page in the FCBGA (144) package. Related order codes listed by the manufacturer include ADC12DJ5200SEAAV, ADC12DJ5200SEAAV.A; each differs in packing, temperature grade or package option.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					Which electrical limits matter most for ADC12DJ5200SE?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							The headline specifications are Resolution = 12 Bits; Sampling Rate - Single Channel Mode = 10.4 GSPS; Sampling Rate - Dual Channel Mode = 5.2 GSPS; Analog Input Frequency Range (-3dB) = 2 to 6.3 GHz. Always read them together with the stated test conditions.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What must be checked before laying out ADC12DJ5200SE?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Use the current FCBGA (144) drawing and pin assignment (144 pins), keep the operating range (-40°C to 85°C) inside the enclosure budget, and verify the supply rails against the absolute maximum ratings.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What is ADC12DJ5200SE typically used for?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Typical applications include Pruebas de comunicaciones (802.11ad, 5G), Guerra electrónica (SIGINT, ELINT), Comunicaciones satelitales (SATCOM), Radio definida por software (SDR) con muestreo de RF.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="disclaimer">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			D
+		</div>
+		<h2 class="pd-sec-title">
+			Aviso importante
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-alert">
+			<p>
+				<strong>Uso de ingeniería:</strong> Los valores técnicos de esta página están vinculados a la hoja de datos de Texas Instruments para ADC12DJ5200SE (parsed 2026-10-31). Verifique rieles, límites de temperatura, temporización, asignación de pines y paquete en el sistema final.
+			</p>
+			<p>
+				<strong>Control de código de pedido:</strong> Otras opciones pedibles y placas de evaluación son solo rutas de comparación. Verifique el modelo completo, el paquete, el rango de temperatura, el embalaje, el marcado y el ciclo de vida antes de sustituir o comprar.
+			</p>
+		</div>
+	</div>
+</section>
+</div>
+<div class="sr-only">
+	Descripción general de ADC12DJ5200SE con ventajas, análisis técnico, especificaciones eléctricas, detalles de FCBGA (144), asignación de pines, aplicaciones, alternativas pedibles y preguntas frecuentes.
+</div>

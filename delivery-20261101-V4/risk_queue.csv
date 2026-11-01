@@ -1,0 +1,86 @@
+﻿mpn,container,label,value,unit,source,verdict,suggested_action,note
+ADC12DJ5200SE,electrical,Resolution,12,Bits,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 11, 39, 47, 48, 49, 56, 73, 142, 156, 160] 页）"
+ADC12DJ5200SE,electrical,Sampling Rate - Single Channel Mode,10.4,GSPS,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 37, 39] 页）"
+ADC12DJ5200SE,electrical,Sampling Rate - Dual Channel Mode,5.2,GSPS,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 37, 39] 页）"
+ADC12DJ5200SE,electrical,Analog Input Frequency Range (-3dB),2 / 6.3,GHz,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 14, 17, 20, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 44, 47, 48, 52, 53, 54, 56, 64, 70, 71, 96, 99, 108, 130, 131, 132, 133, 134, 135, 136, 137, 138, 163, 165, 167] 页）"
+ADC12DJ5200SE,electrical,Full-Scale Input Power (4.5GHz),-1.25,dBm,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [14, 17] 页）"
+ADC12DJ5200SE,electrical,Noise Floor - Dual-Channel Mode,-149,dBFS/Hz,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [1] 页）
+ADC12DJ5200SE,electrical,Noise Floor - Single-Channel Mode,-151.5,dBFS/Hz,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 17] 页）"
+ADC12DJ5200SE,electrical,ENOB - Dual Channel Mode,8.5,Bits,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 2, 15] 页）"
+ADC12DJ5200SE,electrical,Noiseless Aperture Delay Step,19,fs,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [1] 页）
+ADC12DJ5200SE,electrical,Maximum Lane Rate,17.16,Gbps,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 22, 37, 39] 页）"
+ADC12DJ5200SE,electrical,Decimation Options,4 / 8 / 16 / 32,,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 13, 21, 37, 39, 41, 42, 43, 50, 56, 57, 58, 59, 60, 62, 72, 77, 86] 页）"
+ADC12DJ5200SE,electrical,NCOs per DDC,32,,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 52, 53, 54, 56] 页）"
+ADC12DJ5200SE,electrical,Power Consumption,4,W,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 2, 7, 13] 页）"
+ADC12DJ5200SE,electrical,Supply Voltage - VA19,1.8 / 2.0,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [7, 10, 14, 17] 页）"
+ADC12DJ5200SE,electrical,Supply Voltage - VA11,1.05 / 1.15,V,unresolved,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [10] 页）
+ADC12DJ5200SE,electrical,Supply Voltage - VD11,1.05 / 1.15,V,unresolved,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [10] 页）
+ADC12DJ5200SE,electrical,Input Power for Fullscale at Minimum Balun Loss,-1.5,dBm,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [10] 页）
+ADC12DJ5200SE,electrical,Temperature Diode Input Current,100,µA,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [7, 9, 10, 11, 12, 41] 页）"
+ADC12DJ5200SE,thermal,RθJA,23.9,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADC12DJ5200SE,thermal,RθJC(top),0.8,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADC12DJ5200SE,thermal,RθJB,8.4,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADC12DJ5200SE,thermal,ψJT,0.23,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADC12DJ5200SE,thermal,ψJB,8.4,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADC12DJ5200SE,esd,HBM,2000,V,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADC12DJ5200SE,esd,CDM,500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS1201U-1_1K,electrical,Absolute Input Voltage Range,0 / +5,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3] 页）"
+ADS1201U-1_1K,electrical,Differential Input Voltage Range,-5 / +5,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 2, 5, 9] 页）"
+ADS1201U-1_1K,electrical,Input Impedance,250,kΩ,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Input Capacitance,8,pF,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Input Leakage Current,5 / 50,pA,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 6] 页）"
+ADS1201U-1_1K,electrical,Dynamic Range,130,dB,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 2, 5] 页）"
+ADS1201U-1_1K,electrical,Dynamic Range,115 / 120,dB,unresolved,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Dynamic Range,115,dB,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Integral Linearity Error,0.0015,%FSR,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Integral Linearity Error,0.0015,%FSR,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Offset Error,,µV,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打
+ADS1201U-1_1K,electrical,Offset Drift,1,µV/°C,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [1, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13] 页）"
+ADS1201U-1_1K,electrical,Gain Error,,ppm,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打
+ADS1201U-1_1K,electrical,Gain Error Drift,1,µV/°C,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Common-Mode Rejection,80 / 100,dB,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 6] 页）"
+ADS1201U-1_1K,electrical,Power Supply Rejection,80,dB,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Internal Reference (REFOUT),2.4 / 2.6,V,unresolved,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Drift,25,ppm/°C,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Noise,50,µVp-p,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 7] 页）"
+ADS1201U-1_1K,electrical,Load Current,-1 / 1,mA,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3, 4, 6, 8, 9, 10, 11, 12, 14] 页）"
+ADS1201U-1_1K,electrical,Output Impedance,2,Ω,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 6, 7, 8, 9] 页）"
+ADS1201U-1_1K,electrical,External Reference (REFIN),2.0 / 3.0,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 4, 5] 页）"
+ADS1201U-1_1K,electrical,Load Current,2.5,µA,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3, 4, 8, 9] 页）"
+ADS1201U-1_1K,electrical,VBIAS Output,3.15 / 3.45,V,unresolved,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Drift,50,ppm/°C,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Load Current,10,mA,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3, 4, 6, 8, 9, 10, 11, 12] 页）"
+ADS1201U-1_1K,electrical,Logic Levels: VIH (MCLK),2.0 / +0.3,V,unresolved,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Logic Levels: VIL (MCLK),-0.3 / 0.8,V,unresolved,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,VOH (MOUT),2.4,V,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,VOL (MOUT),0.4,V,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,MCLK Frequency,0.02 / 1,MHz,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 4, 6, 7, 9, 10] 页）"
+ADS1201U-1_1K,electrical,Power Supply Voltage,4.75 / 5.25,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 6] 页）"
+ADS1201U-1_1K,electrical,Supply Current: Analog Current,4.6,mA,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Supply Current: Digital Current,0.4,mA,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 4] 页）"
+ADS1201U-1_1K,electrical,Additional Analog Current: REFOUT Enabled,1.6,mA,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [2] 页）
+ADS1201U-1_1K,electrical,Additional Analog Current: VBIAS Enabled,1,mA,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 14] 页）"
+ADS1201U-1_1K,electrical,Total Power Dissipation,25 / 40,mW,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3] 页）"
+ADS1201U-1_1K,absolute_max,Analog Input: Current,100 / 10,mA,model_unverified,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3, 4, 6, 8, 9, 10, 11, 12] 页）"
+ADS1201U-1_1K,absolute_max,Analog Input: Voltage,-0.3 / +0.3,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3] 页）"
+ADS1201U-1_1K,absolute_max,AVDD to DVDD,-0.3 / 6,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3, 5, 6, 7, 8, 11, 12, 13] 页）"
+ADS1201U-1_1K,absolute_max,AVDD to AGND,-0.3 / 6,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3, 5, 6, 7, 8, 11, 12, 13] 页）"
+ADS1201U-1_1K,absolute_max,DVDD to DGND,-0.3 / 6,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3, 5, 7, 8, 11, 12, 13] 页）"
+ADS1201U-1_1K,absolute_max,AGND to DGND,0.3,V,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [3] 页）
+ADS1201U-1_1K,absolute_max,REFIN Voltage to AGND,-0.3 / +0.3,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3] 页）"
+ADS1201U-1_1K,absolute_max,Digital Input Voltage to DGND,-0.3 / +0.3,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3] 页）"
+ADS1201U-1_1K,absolute_max,Digital Output Voltage to DGND,-0.3 / +0.3,V,unresolved,value_on_label_page,promote_to_deterministic,"数值与参数名同页（第 [2, 3] 页）"
+ADS1201U-1_1K,absolute_max,"Lead Temperature (soldering, 10s)",300,°C,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [3] 页）
+ADS1201U-1_1K,absolute_max,Internal Power Dissipation,500,mW,model_unverified,value_on_label_page,promote_to_deterministic,数值与参数名同页（第 [3] 页）
+ADS8568EVM-PDK,thermal,RθJA,22,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS8568EVM-PDK,thermal,RθJC(top),9.0,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS8568EVM-PDK,thermal,RθJB,3.6,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS8568EVM-PDK,thermal,ψJT,0.1,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS8568EVM-PDK,thermal,ψJB,2.9,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS8568EVM-PDK,thermal,RθJC(bot),0.3,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS8568EVM-PDK,esd,HBM,2500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现
+ADS8568EVM-PDK,esd,CDM,500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现
+BOOST-DRV8711,electrical,Voltage Range,8.2 / 52,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证
+BOOSTXL-C2KLED,electrical,Power Input Voltage Maximum,20,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证
+BOOSTXL-C2KLED,electrical,Boost Stage Input Voltage Maximum,20,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证
+BOOSTXL-C2KLED,electrical,Boost Stage Output Voltage,24,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证

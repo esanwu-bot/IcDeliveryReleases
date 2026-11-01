@@ -1,0 +1,76 @@
+{
+  "schema": "facts-audit/v1",
+  "note": "逐行回打原厂 PDF；verified=确定性复现，value_on_label_page=数值与参数名同页，value_in_pdf=只在别处出现（归属未证），partial/not_found=需人工，unchecked=无可回打数值",
+  "mpns": {
+    "ADC12DJ5200SE": {
+      "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+      "n_rows": 108,
+      "counts": {
+        "verified": 16,
+        "value_on_label_page": 92,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "pdf": "data\\pdfs\\ADC12DJ5200SEAAV__adc12dj5200se.pdf"
+    },
+    "ADS1201U-1_1K": {
+      "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+      "n_rows": 48,
+      "counts": {
+        "verified": 0,
+        "value_on_label_page": 46,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "pdf": "data\\pdfs\\ADS1201U-1_1K__ads1201.pdf"
+    },
+    "ADS8568EVM-PDK": {
+      "pdf_sha256": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+      "n_rows": 14,
+      "counts": {
+        "verified": 10,
+        "value_on_label_page": 4,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "pdf": "data\\pdfs\\ADS8568EVM-PDK__sbas543c.pdf"
+    },
+    "BOOST-DRV8711": {
+      "pdf_sha256": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+      "n_rows": 2,
+      "counts": {
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 1,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "partial",
+      "pdf": "data\\pdfs\\BOOST-DRV8711__slvu967.pdf"
+    },
+    "BOOSTXL-C2KLED": {
+      "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+      "n_rows": 5,
+      "counts": {
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "partial",
+      "pdf": "data\\pdfs\\BOOSTXL-C2KLED__spruhh9.pdf"
+    }
+  }
+}
