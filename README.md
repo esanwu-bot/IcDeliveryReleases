@@ -25,8 +25,55 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261101-V4` | 2026-11-01 V4 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**AC 表 82→64 行、零重复、零伪造 MIN/MAX**；amax 15/15 列角色回验；热阻条件列改破折号；韩语模板句补齐 |
 | `delivery-20261101-V5` | 2026-11-01 V5 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（**覆盖率实测：三件 1.0 / 两件板卡 0.963~0.967**） | review_candidate / not_approved；**板卡参数拆三桶**、**分类面包屑上页面**、**韩语英文模板句清零**、`i18n_complete` 改实测、**`DATA_VALIDATED` 收紧为「每行须锚到具体表格行」** |
 | `delivery-20261101-V6` | 2026-11-01 V6 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率实测：三件 **1.0** / 两件 BOOST `0.9661` / `0.9623`；内容审校 `not_reviewed`） | review_candidate / not_approved；**打包自证链闭环**（清单每个哈希/指标出包前重算，不符即中断）、**唯一状态推导机**、新增 `verified_paragraph`、amax 点线排版确定性抽取、板卡 Thermal/ESD/AC 三段归属声明 |
+| `delivery-20261101-V7` | 2026-11-01 V7 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率：三件 **1.0** / BOOST `0.9661` / `0.9630`；内容审校 `not_reviewed`） | review_candidate / not_approved；**废止 `data_anchor`**，拆成 `row_anchor`/`paragraph_anchor`/`coord_no_fingerprint`/`container_verified` 四列 + `anchor_gate` 总闸；**分母补回隔离桶**（`ADS8568EVM-PDK` 14→49 行，闸门 `blocked`，`release_state` 退回 `PACKAGING_PASSED`）；**文档主体隔离**（`document_subject` / `subject_match`）；自证结论 38 项落盘；JSON 状态与事实表同步；`paragraph_sha256` 归一化口径文档化 |
 
-**推荐以 `delivery-20261101-V6` 为准**（最新）：
+**推荐以 `delivery-20261101-V7` 为准**（最新）：
+
+- **P0 `data_anchor` 口径作废** —— V6 的 `data_anchor` 把 `verified`（容器级复现、**无坐标**）
+  也算作"锚定"，于是 `ADS8568EVM-PDK` 在零坐标证据下拉出 `14/14` 并进 `DATA_VALIDATED`。
+  V7 拆成四级阶梯，**不是同一件事就不许并进一列**：
+  `row_anchor`（行指纹：页 + 表标题 + 左上坐标 + 符号 + min/typ/max + 单位）
+  > `paragraph_anchor`（段落指纹）
+  > `coord_no_fingerprint`（有坐标无指纹）
+  > `container_verified`（只在容器里重现，无坐标）。
+  再加**载体分流门槛**：表格参数须 `row_anchor`，正文参数须 `paragraph_anchor`；
+  `DATA_VALIDATED` 判据从 `anchored_all is True` 改成 `anchor_gate == "pass"`。
+- **更深的洞：分母漏了隔离桶** —— 复审只看到"14/14 太漂亮"，追下去发现
+  `onboard_device_specs` / `unresolved_specs` 两个隔离桶的行**根本没进分母**。
+  补上后 `ADS8568EVM-PDK` 分母 14 → **49**，实测 19 行级 + 2 段落级，闸门 `blocked`。
+  **这条是本版最重要的结论：不是把数字改小，是把分母改对。**
+- **文档主体隔离（P0-2）** —— `ADS8568EVM-PDK` 的 PDF 讲的是板载 `ADS8568`，
+  清单新增 `document_subject` / `data_subject` / `document_scope` / `subject_match`，
+  该型号 `subject_match=false`；BOOST 板走 `device_mpn` 兜底，不误判。
+- **自证结论落盘（P1-1）** —— V6 README 说"脚本就在包里"，但包内 62 个成员没有一个 `.py`。
+  V7 改为把**逐项结论**写进 `包校验报告.json::selfcheck`：
+  38 条 `{item, expected, actual, ok}` + `passed: true`，复核方不必跑代码也能看结论。
+- **JSON 与事实表同步（P1-2）** —— 新增 `qc/fact_status_sync.py`，**只升不降**，
+  `model_unverified` / `unresolved` 永不升级；`status_prev` 保留原值原样（空串不写占位符）。
+  ADC 升级 29 行、ADS8568 8 行、ADS1201U 6 行，2 行保持模型抽取。
+- **热阻/ESD 迁入行级锚定（P2-3）** —— 新增 `_raw_lines()`（不设长度阈值，
+  修掉 `RθJA` / `23.9` 这类短行被丢弃）与 `_band_row()`（按**几何**找同行数值格：
+  同一 y 带 ±6pt + 位于名称右侧 + 纯数值格 + 数值集合非段落超集，不依赖 PDF 阅读顺序）。
+  ADC 99 + 9 = **108/108** 全坐标，`ADS8568EVM-PDK` 14/14 全坐标。
+
+实测（`manifest.csv`，2026-11-01 16:30 打包）：
+
+| 型号 | 行数 | `row_anchor` | `paragraph_anchor` | `anchor_gate` | `release_state` |
+|---|---|---|---|---|---|
+| `ADC12DJ5200SE` | 108 | 99 | 9 | pass | IDENTITY_APPROVED |
+| `ADS1201U-1/1K` | 50 | 37 | 11 | pass | IDENTITY_APPROVED |
+| `ADS8568EVM-PDK` | **49** | 19 | 2 | **blocked** | **PACKAGING_PASSED** |
+| `BOOST-DRV8711` | 2 | 0 | 2 | pass | IDENTITY_APPROVED |
+| `BOOSTXL-C2KLED` | 5 | 0 | 5 | pass | IDENTITY_APPROVED |
+
+> 文本物料的 `sha256` 按 **CRLF→LF 归一后**计算（PDF / ZIP 按原始字节）。
+> 这条口径由打包器与 `qc/bundle_selfcheck.py` 共用，也与 git 的换行归一一致 ——
+> 从 GitHub 直接下载散装文件算出来的哈希与清单记录**一致**；拿 ZIP 更不会有歧义。
+
+`delivery-20261101-V6` 仍是「自证链闭环 + 唯一状态推导机」那一版，可对照 V7 在锚定层改了什么
+（页面内容差异很小，主要差异在事实层与清单列）。
+
+**V6 相对 V5 的要点（保留以备追溯）**：
 
 - **P0 自证链闭环** —— V5 被判「自证链断裂」的原因是「同一天修订重出包，人漏了一步」：
   `manifest.json` 的 i18n 停在 `false / 0.9837`，侧车是 `true / 1.0`，侧车哈希也没重算。
