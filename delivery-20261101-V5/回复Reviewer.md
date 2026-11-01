@@ -73,10 +73,11 @@ V4 说明里写「本件数据行 33 处」。**这个数从来没被测过。**
 
 1. **SINAD / ENOB / NF 没进 AC 表**。`_AC_SYMBOLS` 是白名单，加符号会连带引入
    未经验收的行；ENOB 8.5 目前只在 Features 里出现。
-2. **`technical_insight` / `faq` 只有英文**。这两块是**生成式内容**，不是硬编码模板，
-   要走 `multi_language` 补齐。它们目前**整段不渲染**（不是渲染成英文），
-   所以页面没有英文残留；但也不算已本地化，`i18n_complete` 因此是 `false`。
-   实测覆盖率 0.9794~0.9837。
+2. **两件板卡件的 `features` / `applications` 没有对应语种块**，页面回退英文原文
+   （`BOOST-DRV8711` 韩语页实测 1 段纯英文 `up to 4.5 A continuous for each H-Bridge.`）。
+   覆盖率 0.9672 / 0.9630，`i18n_complete=false`。
+   补法是给 `multi_language` 补这两块 —— 渲染层已经把能翻的都翻了，
+   三件芯片/整板件实测覆盖率是 **1.0**。
 3. **ADC 20 行仍是 `value_on_label_page`**。锚不到具体表格行的，已进
    `risk_queue.csv` 的 `human_review` 队列。不猜、不硬凑。
 4. **BOOST 两件有 `value_in_pdf`**（1 / 3 行）。板卡件本来就没有器件级参数表，
@@ -173,9 +174,16 @@ On-board device parameters
 实测：`ADC12DJ5200SE` 渲染后正则提取所有 `>40` 字符的 `<p>`，检测韩文字符 ——
 **V4 是 6 段，V5 是 0 段**；静态词条 `key_fallbacks = 0`（109 个词条全部命中）。
 
-**但覆盖率不是 100%，如实写**：`i18n_coverage = 0.9794~0.9837`，
-缺口是 `technical_insight` 与 `faq` 两个生成式叙述块（只有英文，整段不渲染）。
-所以 `i18n_complete = false`。这是实测，不是失败。
+**覆盖率如实写**：`ADC12DJ5200SE` / `ADS1201U-1/1K` / `ADS8568EVM-PDK` 实测 **1.0**
+（118 / 92 / 66 个可本地化单元全部落地），`i18n_complete = true`；
+`BOOST-DRV8711` **0.9672**、`BOOSTXL-C2KLED` **0.9630**，缺口是 `features` /
+`applications` 没有对应语种块，页面回退英文原文 —— 韩语页实测确有 1 段纯英文
+`up to 4.5 A continuous for each H-Bridge.`，`i18n_complete = false`。
+
+> 顺带更正我们自己一个**度量错误**：V5 初稿把 `technical_insight` 与 `faq` 也判成
+> 英文回退（因为它们不在 `multi_language` 里），覆盖率被压到 0.9794。实际这两块
+> 由 `STATIC_I18N` + `_SENTENCE_I18N` 拼出来，页面上是完整的韩语。
+> 指标算错了比没有指标更糟，所以这条改掉了。
 
 ### 6.4 「63 个英文 `<li>` 是管脚描述」—— 判断为不该翻，加豁免声明
 

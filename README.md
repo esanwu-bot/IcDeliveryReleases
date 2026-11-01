@@ -23,7 +23,7 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261101-V2` | 2026-11-01 V2 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**原厂 PDF 随包** + 逐行事实表 + 身份硬门禁（`release_state` 最高 `IDENTITY_APPROVED`） |
 | `delivery-20261101-V3` | 2026-11-01 V3 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | 同上，**数据与物料字节未变**；补《回复Reviewer.md》+ 明写「已含全部原厂 PDF」承诺 |
 | `delivery-20261101-V4` | 2026-11-01 V4 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**AC 表 82→64 行、零重复、零伪造 MIN/MAX**；amax 15/15 列角色回验；热阻条件列改破折号；韩语模板句补齐 |
-| `delivery-20261101-V5` | 2026-11-01 V5 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（**覆盖率实测 0.9455~0.9857**） | review_candidate / not_approved；**板卡参数拆三桶**、**分类面包屑上页面**、**韩语英文模板句清零**、`i18n_complete` 改实测、**`DATA_VALIDATED` 收紧为「每行须锚到具体表格行」** |
+| `delivery-20261101-V5` | 2026-11-01 V5 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（**覆盖率实测：三件 1.0 / 两件板卡 0.963~0.967**） | review_candidate / not_approved；**板卡参数拆三桶**、**分类面包屑上页面**、**韩语英文模板句清零**、`i18n_complete` 改实测、**`DATA_VALIDATED` 收紧为「每行须锚到具体表格行」** |
 
 **推荐以 `delivery-20261101-V5` 为准**（最新）：V4 之后的两个 8.0 分复审各点了三件事，
 V5 全部落地并且**把口径改严了** —— 上一版 `facts_verdict=pass` 被读成「参数全对」，
@@ -60,8 +60,13 @@ V4 重切行锚点后是 64 行、指纹与内容双唯一、零重复；amax 15
   实测纯英文段落 **6 → 0**，静态词条 `key_fallbacks = 0`（109 个词条全命中）。
 - **`i18n_complete` 改实测口径**：V4 是写死的 `not_checked` 占位符。V5 由渲染层落盘
   侧车 `<型号>.i18n.json`（随包），清单取**所有语言里最低**的比率。
-  实测 0.9455~0.9857，缺口是 `technical_insight` / `faq` 两个生成式叙述块
-  （只有英文、整段不渲染），所以 `i18n_complete=false` —— 这是实测，不是失败。
+  实测：`ADC12DJ5200SE` / `ADS1201U-1/1K` / `ADS8568EVM-PDK` **1.0**（`i18n_complete=true`），
+  `BOOST-DRV8711` **0.9672** / `BOOSTXL-C2KLED` **0.9630**（缺口是 features / applications
+  没有对应语种块，页面回退英文原文）。
+  > **同日修订**：V5 初版把 `technical_insight` / `faq` 也判成英文回退（因为它们不在
+  > `multi_language` 里），覆盖率被误压到 0.9455~0.9857、`i18n_complete` 全 false。
+  > 实际这两块由 `STATIC_I18N` + `_SENTENCE_I18N` 拼出来，页面上是完整的目标语言。
+  > 口径已改，包已按新口径重出 —— **指标算错比没有指标更糟**。
 - **管脚描述豁免**：`pin_configuration` 的描述是管脚功能名，按 IEEE 器件手册惯例
   保留英文原文，不算未翻译残留。清单加 `pin_desc_exempt` 列，页面加一行小字。
   **豁免仅限引脚表**；features / applications / description / FAQ 不豁免。

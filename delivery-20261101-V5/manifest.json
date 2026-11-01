@@ -1,9 +1,9 @@
 {
   "schema_version": "acceptance-delivery/v1",
-  "generated_at": "2026-11-01T11:42:35+08:00",
+  "generated_at": "2026-11-01T13:06:41+08:00",
   "packager_sha256": "035672ccc62ab9d8409650854c8897bf510c64e1e75e158a3d68c9a07321d209",
   "source_root": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5",
-  "output_root": "E:\\workspace\\IcPdfParser\\data\\delivery-20261101-V5",
+  "output_root": "E:\\workspace\\IcPdfParser\\data\\delivery-20261101-V5.tmp",
   "mode": "existing_artifacts_repackage_only",
   "status": "review_candidate",
   "release_status": "not_approved",
@@ -18,8 +18,8 @@
       "release_state": "PACKAGING_PASSED",
       "facts_verdict": "pass",
       "data_anchor": "88/108",
-      "i18n_complete": "false",
-      "i18n_coverage": "0.9837",
+      "i18n_complete": "true",
+      "i18n_coverage": "1.0000",
       "pin_desc_exempt": "true",
       "brand": "Texas Instruments",
       "identity": "chip",
@@ -68,8 +68,8 @@
       "release_state": "PACKAGING_PASSED",
       "facts_verdict": "pass",
       "data_anchor": "31/50",
-      "i18n_complete": "false",
-      "i18n_coverage": "0.9794",
+      "i18n_complete": "true",
+      "i18n_coverage": "1.0000",
       "pin_desc_exempt": "true",
       "brand": "Texas Instruments",
       "identity": "chip",
@@ -117,8 +117,8 @@
       "release_state": "DATA_VALIDATED",
       "facts_verdict": "pass",
       "data_anchor": "14/14",
-      "i18n_complete": "false",
-      "i18n_coverage": "0.9857",
+      "i18n_complete": "true",
+      "i18n_coverage": "1.0000",
       "pin_desc_exempt": "",
       "brand": "Texas Instruments",
       "identity": "evaluation_board",
@@ -168,7 +168,7 @@
       "facts_verdict": "partial",
       "data_anchor": "0/2",
       "i18n_complete": "false",
-      "i18n_coverage": "0.9516",
+      "i18n_coverage": "0.9672",
       "pin_desc_exempt": "",
       "brand": "Texas Instruments",
       "identity": "evaluation_board",
@@ -218,7 +218,7 @@
       "facts_verdict": "partial",
       "data_anchor": "0/5",
       "i18n_complete": "false",
-      "i18n_coverage": "0.9455",
+      "i18n_coverage": "0.9630",
       "pin_desc_exempt": "",
       "brand": "Texas Instruments",
       "identity": "evaluation_board",
@@ -306,8 +306,8 @@
     {
       "member": "ADC12DJ5200SE/ADC12DJ5200SE.i18n.json",
       "key": "i18n",
-      "size": 1438,
-      "sha256": "024d88dc1008c705315409cb65744d29a40b01c105816056b17f4624d2f4174f",
+      "size": 1422,
+      "sha256": "2fc5dbcf1ea53eca8967493471f4e81da849cd108afaf4182c49a2b9429a9ddc",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\txt\\ADC12DJ5200SE.i18n.json"
     },
     {
@@ -390,8 +390,8 @@
     {
       "member": "ADS1201U-1_1K/ADS1201U-1_1K.i18n.json",
       "key": "i18n",
-      "size": 1434,
-      "sha256": "42da92b877b54d2ee22a4b39408a2fc21ad3282f5b91c94a2d2905fd4e36cfaa",
+      "size": 1418,
+      "sha256": "d891e7b553b1ed8d52a4ec41d0455a37a57fd2548be174c55400e568219594c3",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\txt\\ADS1201U-1_1K.i18n.json"
     },
     {
@@ -467,8 +467,8 @@
     {
       "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.i18n.json",
       "key": "i18n",
-      "size": 1436,
-      "sha256": "c1f7dc862d0afea9e735b8a2ef59c37e9332bb5cd42bd09e7f8589d9a5c1b20e",
+      "size": 1420,
+      "sha256": "6a1c0c50d40ffde744a3aa59207f4db50caa500c90567f094848fe4af4450c92",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\txt\\ADS8568EVM-PDK.i18n.json"
     },
     {
@@ -545,7 +545,7 @@
       "member": "BOOST-DRV8711/BOOST-DRV8711.i18n.json",
       "key": "i18n",
       "size": 1435,
-      "sha256": "c572b06299aedb44598475714676925f4ec7906ccdc4463e0bfd62e92af0e0cf",
+      "sha256": "687463f0e83650cc52dd11fec6e1e48e3f83588b0eea1ed3375ad8e6a0a2dbba",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\txt\\BOOST-DRV8711.i18n.json"
     },
     {
@@ -621,8 +621,8 @@
     {
       "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.i18n.json",
       "key": "i18n",
-      "size": 1436,
-      "sha256": "5be17702590c5a07a1f48309d530df1040f4479f6726ff3209b47c3c2e639879",
+      "size": 1432,
+      "sha256": "f716e27c4f238c34009a8551018445e3d5be0ab568a0e7ae8f2f3ed9de8ccbbe",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\txt\\BOOSTXL-C2KLED.i18n.json"
     },
     {
@@ -656,22 +656,22 @@
     {
       "member": "交付说明.md",
       "key": "supporting_document",
-      "size": 5018,
-      "sha256": "c540729caf5bc262c4bafb8af55e7374373949ee75a9be9bee15d97bd2bc3436",
+      "size": 5153,
+      "sha256": "04254a1b1c9e7ad6d237c21e4ba04d291ec11f6b640247bd7ba6d1b963aae06e",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\交付说明.md"
     },
     {
       "member": "1101-V5_修复说明.md",
       "key": "supporting_document",
-      "size": 14219,
-      "sha256": "4449ffbb13aa6cf7b6c81d749cf1be98615b9c12ccbc5c595266be408c3f16d7",
+      "size": 15288,
+      "sha256": "c55756f98dcdc892cca9bb66574a26c22246b1426832a0cc3687308f04106394",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\1101-V5_修复说明.md"
     },
     {
       "member": "回复Reviewer.md",
       "key": "supporting_document",
-      "size": 11854,
-      "sha256": "35729336e26acd1308998c3d8dc73a67b7640c3eda868b83378400a952d7dddb",
+      "size": 12708,
+      "sha256": "72d21bc461fc3749c844c53b5ad98206bf71c7ea08a80ef7b0b2957993394c10",
       "source": "E:\\workspace\\IcPdfParser\\data\\staging_20261101_v5\\回复Reviewer.md"
     },
     {

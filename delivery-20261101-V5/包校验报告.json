@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T11:42:35+08:00",
+  "generated_at": "2026-11-01T13:06:41+08:00",
   "packaging_validation": "pass",
   "engineering_validation": "not_approved",
   "i18n_validation": "not_checked",
@@ -15,13 +15,13 @@
   "zip_member_count": 65,
   "zip_crc": "pass",
   "source_hashes_unchanged": true,
-  "zip_sha256": "96ae703aee1be39d9412de0a263c1f4e2cb153132c822c7e8d79e1cc3edd22d0",
-  "zip_size": 12102078,
+  "zip_sha256": "7c5df5c37036dc77af9283060f7cbec999ac2276ca4f42c3d1494f9151cfc43b",
+  "zip_size": 12102672,
   "hash_rule": "文本物料 sha256(CRLF→LF normalized)；PDF 与 ZIP 按原始字节 sha256，二进制不做归一（归一一次哈希就变了，复核方用 sha256sum 永远对不上）",
   "verified_members": [
     {
       "member": "1101-V5_修复说明.md",
-      "sha256": "4449ffbb13aa6cf7b6c81d749cf1be98615b9c12ccbc5c595266be408c3f16d7"
+      "sha256": "c55756f98dcdc892cca9bb66574a26c22246b1426832a0cc3687308f04106394"
     },
     {
       "member": "ADC12DJ5200SE/ADC12DJ5200SE.alts.json",
@@ -41,7 +41,7 @@
     },
     {
       "member": "ADC12DJ5200SE/ADC12DJ5200SE.i18n.json",
-      "sha256": "024d88dc1008c705315409cb65744d29a40b01c105816056b17f4624d2f4174f"
+      "sha256": "2fc5dbcf1ea53eca8967493471f4e81da849cd108afaf4182c49a2b9429a9ddc"
     },
     {
       "member": "ADC12DJ5200SE/ADC12DJ5200SE.ja.html",
@@ -89,7 +89,7 @@
     },
     {
       "member": "ADS1201U-1_1K/ADS1201U-1_1K.i18n.json",
-      "sha256": "42da92b877b54d2ee22a4b39408a2fc21ad3282f5b91c94a2d2905fd4e36cfaa"
+      "sha256": "d891e7b553b1ed8d52a4ec41d0455a37a57fd2548be174c55400e568219594c3"
     },
     {
       "member": "ADS1201U-1_1K/ADS1201U-1_1K.ja.html",
@@ -133,7 +133,7 @@
     },
     {
       "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.i18n.json",
-      "sha256": "c1f7dc862d0afea9e735b8a2ef59c37e9332bb5cd42bd09e7f8589d9a5c1b20e"
+      "sha256": "6a1c0c50d40ffde744a3aa59207f4db50caa500c90567f094848fe4af4450c92"
     },
     {
       "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.ja.html",
@@ -177,7 +177,7 @@
     },
     {
       "member": "BOOST-DRV8711/BOOST-DRV8711.i18n.json",
-      "sha256": "c572b06299aedb44598475714676925f4ec7906ccdc4463e0bfd62e92af0e0cf"
+      "sha256": "687463f0e83650cc52dd11fec6e1e48e3f83588b0eea1ed3375ad8e6a0a2dbba"
     },
     {
       "member": "BOOST-DRV8711/BOOST-DRV8711.ja.html",
@@ -221,7 +221,7 @@
     },
     {
       "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.i18n.json",
-      "sha256": "5be17702590c5a07a1f48309d530df1040f4479f6726ff3209b47c3c2e639879"
+      "sha256": "f716e27c4f238c34009a8551018445e3d5be0ab568a0e7ae8f2f3ed9de8ccbbe"
     },
     {
       "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.ja.html",
@@ -257,11 +257,11 @@
     },
     {
       "member": "manifest.csv",
-      "sha256": "e6986a36e4860755cc91fac883673d0fd85b5fa1fdb75fd30946453c81beba4b"
+      "sha256": "51aa9c3555e78616323b7edd3c1919e2d1ec08b8da00bd01991829ba314bb83b"
     },
     {
       "member": "manifest.json",
-      "sha256": "d5c11f417ac87d6f3054b5509281dd44616124dfb5e8acd82d090e9024ba6748"
+      "sha256": "32af2d2c97c78979af090c522f5416753196eecd9b94db55373488359edb4858"
     },
     {
       "member": "README.md",
@@ -273,11 +273,11 @@
     },
     {
       "member": "交付说明.md",
-      "sha256": "c540729caf5bc262c4bafb8af55e7374373949ee75a9be9bee15d97bd2bc3436"
+      "sha256": "04254a1b1c9e7ad6d237c21e4ba04d291ec11f6b640247bd7ba6d1b963aae06e"
     },
     {
       "member": "回复Reviewer.md",
-      "sha256": "35729336e26acd1308998c3d8dc73a67b7640c3eda868b83378400a952d7dddb"
+      "sha256": "72d21bc461fc3749c844c53b5ad98206bf71c7ea08a80ef7b0b2957993394c10"
     }
   ]
 }

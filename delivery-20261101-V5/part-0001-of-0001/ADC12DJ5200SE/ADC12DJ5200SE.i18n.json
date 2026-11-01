@@ -8,48 +8,48 @@
       "fallback_events": 0
     },
     "ja": {
-      "i18n_complete": false,
+      "i18n_complete": true,
       "i18n_coverage": {
         "keys_used": 118,
         "key_fallbacks": 0,
-        "narrative_blocks": 5,
-        "narrative_fallbacks": 2,
-        "ratio": 0.9837
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
       },
-      "fallback_events": 2
+      "fallback_events": 0
     },
     "ko": {
-      "i18n_complete": false,
+      "i18n_complete": true,
       "i18n_coverage": {
         "keys_used": 118,
         "key_fallbacks": 0,
-        "narrative_blocks": 5,
-        "narrative_fallbacks": 2,
-        "ratio": 0.9837
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
       },
-      "fallback_events": 2
+      "fallback_events": 0
     },
     "de": {
-      "i18n_complete": false,
+      "i18n_complete": true,
       "i18n_coverage": {
         "keys_used": 118,
         "key_fallbacks": 0,
-        "narrative_blocks": 5,
-        "narrative_fallbacks": 2,
-        "ratio": 0.9837
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
       },
-      "fallback_events": 2
+      "fallback_events": 0
     },
     "es": {
-      "i18n_complete": false,
+      "i18n_complete": true,
       "i18n_coverage": {
         "keys_used": 118,
         "key_fallbacks": 0,
-        "narrative_blocks": 5,
-        "narrative_fallbacks": 2,
-        "ratio": 0.9837
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
       },
-      "fallback_events": 2
+      "fallback_events": 0
     }
   },
   "pin_desc_exempt": true,
