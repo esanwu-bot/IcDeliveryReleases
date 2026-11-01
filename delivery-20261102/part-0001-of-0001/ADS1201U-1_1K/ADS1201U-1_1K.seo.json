@@ -1,0 +1,105 @@
+{
+  "mpn": "ADS1201U-1/1K",
+  "generated_at": "2026-11-02T05:56:30+08:00",
+  "table": {
+    "source": "",
+    "imported_at": "",
+    "categories": 0
+  },
+  "page": {
+    "title_en": "ADS1201U-1/1K Delta-Sigma Modulator, 130dB Dynamic Range, SOIC-16",
+    "title_zh": "ADS1201U-1/1K 130dB动态范围Delta-Sigma调制器，SOIC-16封装",
+    "meta_description_en": "ADS1201U-1/1K: Precision 130dB dynamic range delta-sigma modulator with fully differential inputs, two-wire interface, and on-chip calibration. Ideal for industrial process control, smart transmitters, and portable instrumentation. SOIC-16 package.",
+    "meta_description_zh": "ADS1201U-1/1K：精密130dB动态范围Delta-Sigma调制器，全差分输入，两线接口，片上校准。适用于工业过程控制、智能变送器和便携式仪器。SOIC-16封装。",
+    "keywords": [
+      "ADS1201U-1/1K",
+      "delta-sigma modulator",
+      "130dB dynamic range",
+      "SOIC-16",
+      "analog-to-digital converter",
+      "high resolution measurement"
+    ],
+    "data_subject": "ADS1201U-1/1K",
+    "attribution": "device"
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 2,
+  "shared_by_applications": {
+    "app-industrial-automation.png": [
+      "INDUSTRIAL PROCESS CONTROL",
+      "SMART TRANSMITTERS"
+    ],
+    "app-test-measurement.png": [
+      "INSTRUMENTATION",
+      "PORTABLE INSTRUMENTS"
+    ]
+  },
+  "distinct_images": [
+    "app-industrial-automation.png",
+    "app-test-measurement.png"
+  ],
+  "distinct_image_count": 2,
+  "images": [
+    {
+      "application": "INDUSTRIAL PROCESS CONTROL",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ads1201u-1_1k-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "ADS1201U-1/1K INDUSTRIAL PROCESS CONTROL application — Industrial Automation illustration",
+      "title": "ADS1201U-1/1K used in INDUSTRIAL PROCESS CONTROL (Industrial Automati…",
+      "caption": "INDUSTRIAL PROCESS CONTROL — a typical industrial automation application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "INSTRUMENTATION",
+      "category": "Test & Measurement",
+      "image": "app-test-measurement.png",
+      "filename": "ads1201u-1_1k-test-measurement.png",
+      "asset": "/upload/img/app-test-measurement.png",
+      "alt": "ADS1201U-1/1K INSTRUMENTATION application — Test & Measurement illustration",
+      "title": "ADS1201U-1/1K used in INSTRUMENTATION (Test & Measurement)",
+      "caption": "INSTRUMENTATION — a typical test & measurement application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "SMART TRANSMITTERS",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ads1201u-1_1k-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "ADS1201U-1/1K SMART TRANSMITTERS application — Industrial Automation illustration",
+      "title": "ADS1201U-1/1K used in SMART TRANSMITTERS (Industrial Automation)",
+      "caption": "SMART TRANSMITTERS — a typical industrial automation application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "PORTABLE INSTRUMENTS",
+      "category": "Test & Measurement",
+      "image": "app-test-measurement.png",
+      "filename": "ads1201u-1_1k-test-measurement.png",
+      "asset": "/upload/img/app-test-measurement.png",
+      "alt": "ADS1201U-1/1K PORTABLE INSTRUMENTS application — Test & Measurement illustration",
+      "title": "ADS1201U-1/1K used in PORTABLE INSTRUMENTS (Test & Measurement)",
+      "caption": "PORTABLE INSTRUMENTS — a typical test & measurement application of ADS1201U-1/1K.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "ADS1201U-1/1K",
+    "attribution": "device",
+    "subject_note": ""
+  }
+}

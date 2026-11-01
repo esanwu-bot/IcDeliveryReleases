@@ -1,0 +1,1947 @@
+{
+  "basic_info": {
+    "mpn": "ADS1201U-1/1K",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Data Converters",
+    "description": "The ADS1201 is a precision, 130dB dynamic range delta-sigma modulator operating from a single +5V supply. It features fully differential inputs, a two-wire interface, internal/external reference support, and on-chip calibration switches. Ideal for high-resolution measurement applications such as smart transmitters, industrial process control, weigh scales, chromatography, and portable instrumentation.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/ads1201.pdf",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号不在订货表逐字列出，但是 `ADS1201U` 的包装/等级变体写法（订货表共 4 条）→ 同一颗芯片"
+    ],
+    "datasheet_url_source": "mpn_rule_override",
+    "doc_type": "datasheet",
+    "category_path": [
+      "Integrated Circuits (ICs)",
+      "Data Acquisition",
+      "ADCs"
+    ],
+    "category_leaf": "ADCs"
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Absolute Input Voltage Range",
+        "value": "0 to +5",
+        "unit": "V",
+        "condition": "",
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            115.8,
+            540.8,
+            125.8
+          ],
+          "row_sha256": "a0823bd7246e403fe0ed9759baecec46b801e58d05c8791ce52d139f1759d5bd",
+          "quote": "Absolute Input Voltage Range | 0 | +5 | V"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "page": 2,
+          "bbox": [
+            36.7,
+            115.8,
+            540.8,
+            125.8
+          ]
+        },
+        "range": {
+          "min": "0",
+          "max": "+5"
+        },
+        "range_origin": "column_roles_verified"
+      },
+      {
+        "name": "Absolute Input Voltage Range",
+        "value": "-10 to +10",
+        "unit": "V",
+        "condition": "With VBIAS(1)",
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            124.8,
+            540.8,
+            134.8
+          ],
+          "row_sha256": "b7e26b8ff87fda9e468dfccbee06a8ae06b83faddfa1a51229191d42079952f5",
+          "quote": "Absolute Input Voltage Range | With VBIAS(1) | -10 | +10 | V"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "page": 2,
+          "bbox": [
+            36.7,
+            124.8,
+            540.8,
+            134.8
+          ]
+        },
+        "range": {
+          "min": "-10",
+          "max": "+10"
+        },
+        "range_origin": "column_roles_verified"
+      },
+      {
+        "name": "Differential Input Voltage Range",
+        "value": "-5 to +5",
+        "unit": "V",
+        "condition": "",
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            133.8,
+            540.8,
+            143.8
+          ],
+          "row_sha256": "7a9913bb941b19a7d5f3f8ee3a414b7902a1af26b0da7a23147bd71faa3c2a94",
+          "quote": "Differential Input Voltage Range | -5 | +5 | V"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "page": 2,
+          "bbox": [
+            36.7,
+            133.8,
+            540.8,
+            143.8
+          ]
+        },
+        "range": {
+          "min": "-5",
+          "max": "+5"
+        },
+        "range_origin": "column_roles_verified"
+      },
+      {
+        "name": "Differential Input Voltage Range",
+        "value": "-20 to +20",
+        "unit": "V",
+        "condition": "With VBIAS(1)",
+        "typ": "See Note 2",
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            142.8,
+            540.8,
+            152.8
+          ],
+          "row_sha256": "959ed04e48f167fcae9a02f78e11c94564257b00e00f722e03758c6cf7df0282",
+          "quote": "Differential Input Voltage Range | With VBIAS(1) | -20 | See Note 2 | +20 | V"
+        },
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "page": 2,
+          "bbox": [
+            36.7,
+            142.8,
+            540.8,
+            152.8
+          ]
+        },
+        "range_origin": "column_roles_unverified",
+        "range_note": "TYP 列是脚注/文字，MIN/MAX 列角色未独立核验；不给 range 结构，避免下游当已核验区间读",
+        "unverified_range_candidate": {
+          "min": "-20",
+          "max": "+20"
+        }
+      },
+      {
+        "name": "Input Impedance",
+        "value": "250",
+        "unit": "kΩ",
+        "condition": "4",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            151.8,
+            540.8,
+            161.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            151.8,
+            540.8,
+            161.8
+          ],
+          "row_sha256": "4abb4c88a834f1397b167d18700b9375efb6bd21b83961f242a798e43272fd48",
+          "quote": "Input Impedance | 250(4) | kΩ"
+        }
+      },
+      {
+        "name": "Input Capacitance",
+        "value": "8",
+        "unit": "pF",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            160.8,
+            540.8,
+            170.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            160.8,
+            540.8,
+            170.8
+          ],
+          "row_sha256": "cb1b456c3d0544b276b5950310cbe15e8d8c757a5985082745efed84400066bf",
+          "quote": "Input Capacitance | 8 | pF"
+        }
+      },
+      {
+        "name": "Input Leakage Current",
+        "value": "5 to 50",
+        "unit": "pA",
+        "condition": "At TMIN to TMAX",
+        "range": {
+          "min": "5",
+          "max": "50"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            169.8,
+            540.8,
+            179.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            169.8,
+            540.8,
+            179.8
+          ],
+          "row_sha256": "35543bf0a37549bab047ab301f1946b0df8601e76cae8a5212b6ea6a341a1e60",
+          "quote": "Input Leakage Current | 5 | 50 | pA"
+        }
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "130",
+        "unit": "dB",
+        "condition": "10Hz Bandwidth(5)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            200.8,
+            540.8,
+            210.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            200.8,
+            540.8,
+            210.8
+          ],
+          "row_sha256": "c19e814044f842ef1398bbc551a4d268671cf2a1ffea1adfe9f4a9bc4b082444",
+          "quote": "Dynamic Range | 10Hz Bandwidth(5) | 130(6) | dB"
+        }
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "115 to 120",
+        "unit": "dB",
+        "condition": "60Hz Bandwidth(5)",
+        "range": {
+          "min": "115",
+          "max": "120"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            209.8,
+            540.8,
+            219.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            209.8,
+            540.8,
+            219.8
+          ],
+          "row_sha256": "38fc20091918bde6c6a353e77761e1630bd79100f3d1cd33e72339e4fdcb6a7e",
+          "quote": "Dynamic Range | 60Hz Bandwidth(5) | 115(6) | 120(6) | dB"
+        }
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "115",
+        "unit": "dB",
+        "condition": "1kHz Bandwidth(5)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            218.8,
+            540.8,
+            228.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            218.8,
+            540.8,
+            228.8
+          ],
+          "row_sha256": "a6c89e7cdb93d2ba064186f39fa05dd7a3c66e0c0a26dadb80dc20c053053baa",
+          "quote": "Dynamic Range | 1kHz Bandwidth(5) | 115(6) | dB"
+        }
+      },
+      {
+        "name": "Integral Linearity Error",
+        "value": "±0.0015",
+        "unit": "%FSR",
+        "condition": "60Hz Bandwidth(5)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            227.8,
+            540.8,
+            237.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            227.8,
+            540.8,
+            237.8
+          ],
+          "row_sha256": "839517d7273b89d5e65d9cc3873a44c2309a48f77d3e38b78ce63fe87aae878e",
+          "quote": "Integral Linearity Error | 60Hz Bandwidth(5) | ±0.0015 | %FSR"
+        }
+      },
+      {
+        "name": "Integral Linearity Error",
+        "value": "±0.0015",
+        "unit": "%FSR",
+        "condition": "1kHz Bandwidth(5)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            236.8,
+            540.8,
+            246.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            236.8,
+            540.8,
+            246.8
+          ],
+          "row_sha256": "ba4446f30ac481dd62d118cb3c7c0f471d72228a1ff28a722b0a68de526c227b",
+          "quote": "Integral Linearity Error | 1kHz Bandwidth(5) | ±0.0015 | %FSR"
+        }
+      },
+      {
+        "name": "Offset Error",
+        "value": "not_specified",
+        "unit": "µV",
+        "condition": "See Note 7",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "fact_verdict": "unchecked",
+          "fact_source": "facts_audit/v4"
+        }
+      },
+      {
+        "name": "Offset Drift",
+        "value": "1",
+        "unit": "µV/°C",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            254.8,
+            540.8,
+            264.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            254.8,
+            540.8,
+            264.8
+          ],
+          "row_sha256": "7bae6d2b9f3549a36fea618bda26115ec3cbca7b187ca60ac40837a0c21861e9",
+          "quote": "Offset Drift(3) | 1 | µV/°C"
+        }
+      },
+      {
+        "name": "Gain Error",
+        "value": "not_specified",
+        "unit": "ppm",
+        "condition": "See Note 7",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "fact_verdict": "unchecked",
+          "fact_source": "facts_audit/v4"
+        }
+      },
+      {
+        "name": "Gain Error Drift",
+        "value": "1",
+        "unit": "µV/°C",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            272.8,
+            540.8,
+            282.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            272.8,
+            540.8,
+            282.8
+          ],
+          "row_sha256": "7f0409689918dcc5e83319c16ad9034404ff19add883d4908b1ffdf897dd3aaf",
+          "quote": "Gain Error Drift(3) | 1 | µV/°C"
+        }
+      },
+      {
+        "name": "Common-Mode Rejection",
+        "value": "80 to 100",
+        "unit": "dB",
+        "condition": "At DC",
+        "range": {
+          "min": "80",
+          "max": "100"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            281.8,
+            540.8,
+            291.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            281.8,
+            540.8,
+            291.8
+          ],
+          "row_sha256": "589a965bf2b29ee26f776659eefb2c024000954bc215ede0dc860eb785d4cd50",
+          "quote": "Common-Mode Rejection | At DC | 80 | 100 | dB"
+        }
+      },
+      {
+        "name": "Power Supply Rejection",
+        "value": "80",
+        "unit": "dB",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            290.8,
+            540.8,
+            300.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            290.8,
+            540.8,
+            300.8
+          ],
+          "row_sha256": "347b7632c6b274cc3344da07ecdd17ce3643e03e325976789d357a3d9d834dc4",
+          "quote": "Power Supply Rejection | 80 | dB"
+        }
+      },
+      {
+        "name": "Internal Reference (REFOUT)",
+        "value": "2.4 to 2.6",
+        "unit": "V",
+        "condition": "",
+        "range": {
+          "min": "2.4",
+          "max": "2.6"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            312.8,
+            540.8,
+            322.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            312.8,
+            540.8,
+            322.8
+          ],
+          "row_sha256": "19fb413f4e72b7274b8b8976005647c601b4250d66a5c1f0b9dee00b15a80540",
+          "quote": "Internal Reference (REFOUT) | 2.4 | 2.5 | 2.6 | V"
+        }
+      },
+      {
+        "name": "Drift",
+        "value": "25",
+        "unit": "ppm/°C",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            321.8,
+            540.8,
+            331.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            321.8,
+            540.8,
+            331.8
+          ],
+          "row_sha256": "ed136e7c08a99f3c00086046b1a09f1005e18c3ed76638d802f4b96923a7a51a",
+          "quote": "Drift | 25 | ppm/°C"
+        }
+      },
+      {
+        "name": "Noise",
+        "value": "50",
+        "unit": "µVp-p",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            330.8,
+            540.8,
+            340.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            330.8,
+            540.8,
+            340.8
+          ],
+          "row_sha256": "31f4d9a23cdfb7f96f2b5db40bee14e8209748713da95a232496a9afdc980f56",
+          "quote": "Noise | 50 | µVp-p"
+        }
+      },
+      {
+        "name": "Load Current",
+        "value": "-1 to 1",
+        "unit": "mA",
+        "condition": "Source or Sink",
+        "range": {
+          "min": "-1",
+          "max": "1"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            339.8,
+            540.8,
+            349.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            339.8,
+            540.8,
+            349.8
+          ],
+          "row_sha256": "9600b38393a67a73e487e5820c94098bf46ebb995eeea64603f550f1ad9678c8",
+          "quote": "Load Current | Source or Sink | -1 | 1 | mA"
+        }
+      },
+      {
+        "name": "Output Impedance",
+        "value": "2",
+        "unit": "Ω",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            348.8,
+            540.8,
+            358.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            348.8,
+            540.8,
+            358.8
+          ],
+          "row_sha256": "e642a86ae1e89363258207b9beace8263c07a988c5a1d09550f09d47653400a1",
+          "quote": "Output Impedance | 2 | Ω"
+        }
+      },
+      {
+        "name": "External Reference (REFIN)",
+        "value": "2.0 to 3.0",
+        "unit": "V",
+        "condition": "",
+        "range": {
+          "min": "2.0",
+          "max": "3.0"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            357.8,
+            540.8,
+            367.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            357.8,
+            540.8,
+            367.8
+          ],
+          "row_sha256": "51704bf949b965e9e7e749796871ce648f2abb3c8265f953651dcfce5c059928",
+          "quote": "External Reference (REFIN) | 2.0 | 3.0 | V"
+        }
+      },
+      {
+        "name": "Load Current",
+        "value": "2.5",
+        "unit": "µA",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            366.8,
+            540.8,
+            376.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            366.8,
+            540.8,
+            376.8
+          ],
+          "row_sha256": "8cbedea2d997806179957f383f9bf96daf79fc9361761e009816a2ab5e8e9f9d",
+          "quote": "Load Current | 2.5 | µA"
+        }
+      },
+      {
+        "name": "VBIAS Output",
+        "value": "3.15 to 3.45",
+        "unit": "V",
+        "condition": "Using Internal Reference",
+        "range": {
+          "min": "3.15",
+          "max": "3.45"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            375.8,
+            540.8,
+            385.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            375.8,
+            540.8,
+            385.8
+          ],
+          "row_sha256": "47dda30c473a72983d7b76e597d26aff190ec457312c2aa8feec98120a105009",
+          "quote": "VBIAS Output | Using Internal Reference | 3.15 | 3.3 | 3.45 | V"
+        }
+      },
+      {
+        "name": "Drift",
+        "value": "50",
+        "unit": "ppm/°C",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            384.8,
+            540.8,
+            394.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            384.8,
+            540.8,
+            394.8
+          ],
+          "row_sha256": "fbb170485a8ddd53637d324dbfee91873fa3ba8f83a8d2e32df58eca82d29f21",
+          "quote": "Drift | 50 | ppm/°C"
+        }
+      },
+      {
+        "name": "Load Current",
+        "value": "10",
+        "unit": "mA",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            393.8,
+            540.8,
+            403.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            393.8,
+            540.8,
+            403.8
+          ],
+          "row_sha256": "0201f441861ea04e2100ead38e4700083a898b5251c695e79f7bc90ff589b6a3",
+          "quote": "Load Current | 10 | mA"
+        }
+      },
+      {
+        "name": "Logic Levels: VIH (MCLK)",
+        "value": "2.0 to DVDD +0.3",
+        "unit": "V",
+        "condition": "IIH = +5µA",
+        "range": {
+          "min": "2.0",
+          "max": "DVDD +0.3"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            433.8,
+            540.8,
+            444.3
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            433.8,
+            540.8,
+            444.3
+          ],
+          "row_sha256": "ee0ba34c3d2a77354eff3f40066c2d28221946e16c0cacdb754475fcff3a2bc1",
+          "quote": "VIH (MCLK) | IIH = +5µA | 2.0 | DVDD +0.3 | V"
+        }
+      },
+      {
+        "name": "Logic Levels: VIL (MCLK)",
+        "value": "-0.3 to 0.8",
+        "unit": "V",
+        "condition": "IIL = +5µA",
+        "range": {
+          "min": "-0.3",
+          "max": "0.8"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            442.8,
+            540.8,
+            452.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            442.8,
+            540.8,
+            452.8
+          ],
+          "row_sha256": "29b367e0953fb27f519753a5ab56a00b8c8978589d7774fa42baf244d2b6bb61",
+          "quote": "VIL (MCLK) | IIL = +5µA | -0.3 | 0.8 | V"
+        }
+      },
+      {
+        "name": "VOH (MOUT)",
+        "value": "2.4",
+        "unit": "V",
+        "condition": "IOH = 2 TTL Loads",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            451.8,
+            540.8,
+            461.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            451.8,
+            540.8,
+            461.8
+          ],
+          "row_sha256": "610d2658b7bc5658554ec94e33d05a8ca2da063f16e5e5084274891f55e98f70",
+          "quote": "VOH (MOUT) | IOH = 2 TTL Loads | 2.4 | V"
+        }
+      },
+      {
+        "name": "VOL (MOUT)",
+        "value": "0.4",
+        "unit": "V",
+        "condition": "IOL = 2 TTL Loads",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            460.8,
+            540.8,
+            470.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            460.8,
+            540.8,
+            470.8
+          ],
+          "row_sha256": "1c8174f3e30057b5c58ee39e300916cf5c1c87c38eeb34b9aea5605695ef616e",
+          "quote": "VOL (MOUT) | IOL = 2 TTL Loads | 0.4 | V"
+        }
+      },
+      {
+        "name": "MCLK Frequency",
+        "value": "0.02 to 1",
+        "unit": "MHz",
+        "condition": "",
+        "range": {
+          "min": "0.02",
+          "max": "1"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            469.8,
+            540.8,
+            479.8
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            469.8,
+            540.8,
+            479.8
+          ],
+          "row_sha256": "e5680a754313e1ce5a2070b8c101c1577f80cdeb92b597fe88c5001f80c27b6a",
+          "quote": "MCLK Frequency | 0.02 | 1 | MHz"
+        }
+      },
+      {
+        "name": "Power Supply Voltage",
+        "value": "4.75 to 5.25",
+        "unit": "V",
+        "condition": "Specified Performance",
+        "range": {
+          "min": "4.75",
+          "max": "5.25"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            491.7,
+            540.8,
+            501.7
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            491.7,
+            540.8,
+            501.7
+          ],
+          "row_sha256": "d2e9bb6a077eea93f76449226af26f7a2e2a31423cd8fd360db9b86f2b11a48e",
+          "quote": "Power Supply Voltage | Specified Performance | 4.75 | 5.25 | V"
+        }
+      },
+      {
+        "name": "Supply Current: Analog Current",
+        "value": "4.6",
+        "unit": "mA",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            509.7,
+            540.8,
+            519.7
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            509.7,
+            540.8,
+            519.7
+          ],
+          "row_sha256": "dccf05069eb5c59b36a9fe6cc5398b7281e88f9df1787f42126c8b3077bab29f",
+          "quote": "Analog Current | 4.6 | mA"
+        }
+      },
+      {
+        "name": "Supply Current: Digital Current",
+        "value": "0.4",
+        "unit": "mA",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            518.7,
+            540.8,
+            528.7
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            518.7,
+            540.8,
+            528.7
+          ],
+          "row_sha256": "3b4a01483a77963fcdfa3e1ba0c32fe06becb946f827d862164e2e523081e60a",
+          "quote": "Digital Current | 0.4 | mA"
+        }
+      },
+      {
+        "name": "Additional Analog Current: REFOUT Enabled",
+        "value": "1.6",
+        "unit": "mA",
+        "condition": "No Load",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            536.7,
+            540.8,
+            546.7
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            536.7,
+            540.8,
+            546.7
+          ],
+          "row_sha256": "460cf367cb781ab79a9d5906517846d0f1f499be379a9a8f173cfb585cdda53a",
+          "quote": "REFOUT Enabled | No Load | 1.6 | mA"
+        }
+      },
+      {
+        "name": "Additional Analog Current: VBIAS Enabled",
+        "value": "1",
+        "unit": "mA",
+        "condition": "No Load",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            545.7,
+            540.8,
+            555.7
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            545.7,
+            540.8,
+            555.7
+          ],
+          "row_sha256": "7a874f827f18fd33ae97cb1052855397e8a67625dad8c82865195a71ff563e80",
+          "quote": "VBIAS Enabled | No Load | 1 | mA"
+        }
+      },
+      {
+        "name": "Total Power Dissipation",
+        "value": "25 to 40",
+        "unit": "mW",
+        "condition": "REFOUT, VBIAS Disabled",
+        "range": {
+          "min": "25",
+          "max": "40"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 2,
+          "method": "spec_row",
+          "bbox": [
+            36.7,
+            554.7,
+            540.8,
+            564.7
+          ],
+          "matched_by": "name+value(spec_row)",
+          "fact_verdict": "verified_row",
+          "fact_source": "facts_audit/v4",
+          "fact_grade": "verified_row"
+        },
+        "source": {
+          "page": 2,
+          "bbox": [
+            36.7,
+            554.7,
+            540.8,
+            564.7
+          ],
+          "row_sha256": "882a5acc1e054be0d8c358822d254ef072829313238eba13b415a6a97dc412e5",
+          "quote": "Total Power Dissipation | REFOUT, VBIAS Disabled | 25 | 40 | mW"
+        }
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "Analog Input: Current",
+        "value": "±100, Momentary; ±10, Continuous",
+        "unit": "mA",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "fact_verdict": "verified_paragraph",
+          "fact_source": "facts_audit/v4"
+        }
+      },
+      {
+        "name": "Analog Input: Voltage",
+        "value": "AGND –0.3V to AVDD +0.3V",
+        "unit": "V",
+        "range_origin": "column_roles_unverified",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "fact_verdict": "verified_paragraph",
+          "fact_source": "facts_audit/v4"
+        },
+        "unverified_range_candidate": {
+          "min": "AGND –0.3V",
+          "max": "AVDD +0.3V"
+        },
+        "range_note": "verification.status=unresolved，列角色未独立核验；原 `range` 结构已抹除，候选见 `unverified_range_candidate`，勿当 MIN/MAX 读"
+      },
+      {
+        "name": "AVDD to DVDD",
+        "value": "-0.3 to 6",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "6"
+        },
+        "range_origin": "column_roles_verified",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 3,
+          "bbox": [
+            78.0,
+            79.5,
+            305.9,
+            90.8
+          ]
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            79.5,
+            305.9,
+            90.8
+          ],
+          "quote": "AVDD to DVDD ...........................................................................-0.3V to 6V"
+        }
+      },
+      {
+        "name": "AVDD to AGND",
+        "value": "-0.3 to 6",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "6"
+        },
+        "range_origin": "column_roles_verified",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 3,
+          "bbox": [
+            78.0,
+            88.5,
+            306.0,
+            99.2
+          ]
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            88.5,
+            306.0,
+            99.2
+          ],
+          "quote": "AVDD to AGND .........................................................................-0.3V to 6V"
+        }
+      },
+      {
+        "name": "DVDD to DGND",
+        "value": "-0.3 to 6",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "6"
+        },
+        "range_origin": "column_roles_verified",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 3,
+          "bbox": [
+            78.0,
+            97.5,
+            305.9,
+            108.2
+          ]
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            97.5,
+            305.9,
+            108.2
+          ],
+          "quote": "DVDD to DGND .........................................................................-0.3V to 6V"
+        }
+      },
+      {
+        "name": "AGND to DGND",
+        "value": "±0.3",
+        "unit": "V",
+        "verification": {
+          "status": "audited_paragraph",
+          "method": "dot_leader_verbatim",
+          "page": 3,
+          "bbox": [
+            78.0,
+            106.5,
+            306.0,
+            116.1
+          ],
+          "note": "原文逐字一致；值为符号量，MIN/MAX 列角色未解析"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            106.5,
+            306.0,
+            116.1
+          ],
+          "quote": "AGND to DGND ................................................................................ ±0.3V"
+        }
+      },
+      {
+        "name": "REFIN Voltage to AGND",
+        "value": "-0.3 to AVDD +0.3V",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "AVDD +0.3V"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_paragraph",
+          "method": "dot_leader_verbatim",
+          "page": 3,
+          "bbox": [
+            78.0,
+            115.5,
+            306.0,
+            126.2
+          ],
+          "note": "原文逐字一致；值为符号量，MIN/MAX 列角色未解析"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            115.5,
+            306.0,
+            126.2
+          ],
+          "quote": "REFIN Voltage to AGND ............................................ -0.3V to AVDD +0.3V"
+        }
+      },
+      {
+        "name": "Digital Input Voltage to DGND",
+        "value": "-0.3 to DVDD +0.3V",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "DVDD +0.3V"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_paragraph",
+          "method": "dot_leader_verbatim",
+          "page": 3,
+          "bbox": [
+            78.0,
+            124.5,
+            306.0,
+            135.2
+          ],
+          "note": "原文逐字一致；值为符号量，MIN/MAX 列角色未解析"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            124.5,
+            306.0,
+            135.2
+          ],
+          "quote": "Digital Input Voltage to DGND .................................. -0.3V to DVDD +0.3V"
+        }
+      },
+      {
+        "name": "Digital Output Voltage to DGND",
+        "value": "-0.3 to DVDD +0.3V",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "DVDD +0.3V"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "audited_paragraph",
+          "method": "dot_leader_verbatim",
+          "page": 3,
+          "bbox": [
+            78.0,
+            133.5,
+            306.0,
+            144.2
+          ],
+          "note": "原文逐字一致；值为符号量，MIN/MAX 列角色未解析"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            133.5,
+            306.0,
+            144.2
+          ],
+          "quote": "Digital Output Voltage to DGND ............................... -0.3V to DVDD +0.3V"
+        }
+      },
+      {
+        "name": "Lead Temperature (soldering, 10s)",
+        "value": "300",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_paragraph",
+          "method": "dot_leader_verbatim",
+          "page": 3,
+          "bbox": [
+            78.0,
+            142.5,
+            306.0,
+            152.1
+          ],
+          "note": "原文逐字一致；值为符号量，MIN/MAX 列角色未解析"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            142.5,
+            306.0,
+            152.1
+          ],
+          "quote": "Lead Temperature (soldering, 10s) .............................................. +300°C"
+        }
+      },
+      {
+        "name": "Internal Power Dissipation",
+        "value": "500",
+        "unit": "mW",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 3,
+          "bbox": [
+            78.0,
+            151.5,
+            306.0,
+            161.1
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "500"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 3,
+          "bbox": [
+            78.0,
+            151.5,
+            306.0,
+            161.1
+          ],
+          "quote": "Internal Power Dissipation ............................................................. 500mW"
+        }
+      }
+    ],
+    "thermal": [],
+    "esd": [],
+    "package": {
+      "type": "SOIC",
+      "pins": 16,
+      "dimensions": ""
+    },
+    "temperature": {
+      "operating": "-40°C to +85°C",
+      "storage": "not_specified"
+    },
+    "scope": "device"
+  },
+  "features": [
+    "130dB DYNAMIC RANGE",
+    "FULLY DIFFERENTIAL INPUT",
+    "TWO-WIRE INTERFACE",
+    "INTERNAL/EXTERNAL REFERENCE",
+    "ON-CHIP SWITCHES FOR CALIBRATION"
+  ],
+  "applications": [
+    "INDUSTRIAL PROCESS CONTROL",
+    "INSTRUMENTATION",
+    "SMART TRANSMITTERS",
+    "PORTABLE INSTRUMENTS",
+    "WEIGH SCALES",
+    "PRESSURE TRANSDUCERS"
+  ],
+  "pin_configuration": [
+    {
+      "pin": 1,
+      "name": "AVDD",
+      "description": "Analog Supply, +5V nominal."
+    },
+    {
+      "pin": 2,
+      "name": "REFOUT",
+      "description": "Internal Reference Voltage Output: +2.5V nominal."
+    },
+    {
+      "pin": 3,
+      "name": "REFIN",
+      "description": "Reference Voltage Input."
+    },
+    {
+      "pin": 4,
+      "name": "NIC",
+      "description": "Not Internally Connected."
+    },
+    {
+      "pin": 5,
+      "name": "AINP",
+      "description": "Noninverting Input."
+    },
+    {
+      "pin": 6,
+      "name": "AINN",
+      "description": "Inverting Input."
+    },
+    {
+      "pin": 7,
+      "name": "AGND",
+      "description": "Analog Ground."
+    },
+    {
+      "pin": 8,
+      "name": "VBIAS",
+      "description": "Bias Voltage Output, nominally +3.3V (with +2.5V reference)."
+    },
+    {
+      "pin": 9,
+      "name": "BIASEN",
+      "description": "Bias Voltage Enable Input (HIGH = enabled, LOW = disabled)."
+    },
+    {
+      "pin": 10,
+      "name": "GAIN/OFFSET",
+      "description": "Gain/Offset Calibration Select Input (with CAL LOW; HIGH = gain configuration, LOW = offset configuration)."
+    },
+    {
+      "pin": 11,
+      "name": "CAL",
+      "description": "Calibration Control Input (HIGH = normal operation, LOW = gain or offset calibration configuration)."
+    },
+    {
+      "pin": 12,
+      "name": "DGND",
+      "description": "Digital Ground."
+    },
+    {
+      "pin": 13,
+      "name": "DVDD",
+      "description": "Digital Supply, +5V nominal."
+    },
+    {
+      "pin": 14,
+      "name": "MCLK",
+      "description": "Modulator Clock Input. CMOS compatible."
+    },
+    {
+      "pin": 15,
+      "name": "MOUT",
+      "description": "Modulator Output."
+    },
+    {
+      "pin": 16,
+      "name": "REFEN",
+      "description": "REFOUT Voltage Enable Input (HIGH = enabled, LOW = disabled)."
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "ADS1201U",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 40,
+      "packaging": "Rails"
+    },
+    {
+      "mpn": "ADS1201U/1K",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 1000,
+      "packaging": "Tape and Reel"
+    },
+    {
+      "mpn": "ADS1201U/1KG4",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 1000,
+      "packaging": "Tape and Reel"
+    },
+    {
+      "mpn": "ADS1201UG4",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 40,
+      "packaging": "Rails"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "ADS1201U-1/1K Delta-Sigma Modulator, 130dB Dynamic Range, SOIC-16",
+    "title_zh": "ADS1201U-1/1K 130dB动态范围Delta-Sigma调制器，SOIC-16封装",
+    "meta_description_en": "ADS1201U-1/1K: Precision 130dB dynamic range delta-sigma modulator with fully differential inputs, two-wire interface, and on-chip calibration. Ideal for industrial process control, smart transmitters, and portable instrumentation. SOIC-16 package.",
+    "meta_description_zh": "ADS1201U-1/1K：精密130dB动态范围Delta-Sigma调制器，全差分输入，两线接口，片上校准。适用于工业过程控制、智能变送器和便携式仪器。SOIC-16封装。",
+    "keywords": [
+      "ADS1201U-1/1K",
+      "delta-sigma modulator",
+      "130dB dynamic range",
+      "SOIC-16",
+      "analog-to-digital converter",
+      "high resolution measurement"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+    "parse_timestamp": "2026-10-31T21:39:32+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.9,
+    "prompt_version": "v3",
+    "requested_mpn": "ADS1201U-1/1K",
+    "deterministic_extract": {},
+    "core_validation": "pass",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "normalize": {
+      "datasheet_url": {
+        "action": "kept",
+        "url": "https://www.ti.com/lit/ds/symlink/ads1201.pdf"
+      },
+      "doc_type": {
+        "changed": false,
+        "doc_type": "datasheet"
+      },
+      "temperature": {
+        "changed": false,
+        "operating": "-40°C to +85°C"
+      },
+      "ac_quarantine": {
+        "schema": "ac-quarantine/v1",
+        "n_quarantined": 0,
+        "quarantined": []
+      },
+      "input_ranges": {
+        "replaced": 4,
+        "added": [],
+        "rows": 4,
+        "params": [
+          "Absolute Input Voltage Range",
+          "Differential Input Voltage Range"
+        ]
+      },
+      "absolute_max_roles": {
+        "checked": 11,
+        "upgraded": 4,
+        "replaced": 0,
+        "unmatched": [
+          "Analog Input: Current",
+          "Analog Input: Voltage",
+          "AGND to DGND",
+          "REFIN Voltage to AGND",
+          "Digital Input Voltage to DGND",
+          "Digital Output Voltage to DGND",
+          "Lead Temperature (soldering, 10s)"
+        ]
+      },
+      "row_anchors": {
+        "pages": [
+          2,
+          14
+        ],
+        "candidates": 46,
+        "anchored": 37,
+        "ambiguous": 0,
+        "same_page": 0,
+        "ambiguous_rows": [],
+        "rows": 39
+      },
+      "ranges_normalized": 1,
+      "range_stripped": 1,
+      "verification": {
+        "stamped": 0
+      },
+      "category_path": {
+        "category_path": [
+          "Integrated Circuits (ICs)",
+          "Data Acquisition",
+          "ADCs"
+        ],
+        "changed": false
+      },
+      "pdf": "/app/data/pdfs/ADS1201U-1_1K__ads1201.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 16,
+        "sha256": "63c6c643ce02908454f33b91313e55d77595f3cdedc691a4b0dd8fb14c45595e"
+      },
+      "thermal": {
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "esd": {
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "vcmi_vid": {
+        "count": 2,
+        "sha256": "03d1f6d8ff312a5584eecb8bcd7e99bf91010c2ee8249be555cb5b809f60ce47"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点"
+  },
+  "pin_scope": "device",
+  "multi_language": {
+    "ja": {
+      "title": "ADS1201U-1/1K デルタシグマ変調器、130dBダイナミックレンジ、SOIC-16",
+      "description": "ADS1201は、単一+5V電源で動作する高精度130dBダイナミックレンジのデルタシグマ変調器です。完全差動入力、2線式インターフェース、内部/外部リファレンス対応、オンチップキャリブレーションスイッチを備えています。スマートトランシーダー、産業プロセス制御、重量計、クロマトグラフィー、ポータブル計測機器など、高分解能測定アプリケーションに最適です。",
+      "meta": "ADS1201U-1/1K：高精度130dBダイナミックレンジのデルタシグマ変調器。完全差動入力、2線式インターフェース、オンチップキャリブレーションを搭載。産業プロセス制御、スマートトランシーダー、ポータブル計測機器に最適。SOIC-16パッケージ。",
+      "features": [
+        "130dB ダイナミックレンジ",
+        "完全差動入力",
+        "2線式インターフェース",
+        "内部/外部リファレンス",
+        "キャリブレーション用オンチップスイッチ"
+      ],
+      "applications": [
+        "産業プロセス制御",
+        "計測機器",
+        "スマートトランシーダー",
+        "ポータブル機器",
+        "重量計",
+        "圧力センサ"
+      ]
+    },
+    "ko": {
+      "title": "ADS1201U-1/1K 델타-시그마 모듈레이터, 130dB 동적 범위, SOIC-16",
+      "description": "ADS1201은 단일 +5V 전원에서 작동하는 정밀도 130dB 동적 범위 델타-시그마 모듈레이터입니다. 완전 차동 입력, 두 개의 선 인터페이스, 내부/외부 기준 지원 및 내장 캘리브레이션 스위치를 특징으로 합니다. 스마트 트랜스미터, 산업 공정 제어, 체중계, 크로마토그래피, 휴대용 계측기 등 고해상도 측정 응용 분야에 이상적입니다.",
+      "meta": "ADS1201U-1/1K: 정밀도 130dB 동적 범위 델타-시그마 모듈레이터로 완전 차동 입력, 두 개의 선 인터페이스, 내장 캘리브레이션을 갖추고 있습니다. 산업 공정 제어, 스마트 트랜스미터, 휴대용 계측기 등에 적합합니다. SOIC-16 패키지.",
+      "features": [
+        "130dB 동적 범위",
+        "완전 차동 입력",
+        "두 개의 선 인터페이스",
+        "내부/외부 기준",
+        "캘리브레이션을 위한 내장 스위치"
+      ],
+      "applications": [
+        "산업 공정 제어",
+        "계측기",
+        "스마트 트랜스미터",
+        "휴대용 장비",
+        "체중계",
+        "압력 변환기"
+      ]
+    },
+    "de": {
+      "title": "ADS1201U-1/1K Delta-Sigma-Modulator, 130dB Dynamikbereich, SOIC-16",
+      "description": "Der ADS1201 ist ein präziser Delta-Sigma-Modulator mit 130dB Dynamikbereich, der von einer einzigen +5V-Versorgungsspannung betrieben wird. Er verfügt über vollständig differenzielle Eingänge, eine Zweidraht-Schnittstelle, Unterstützung für interne/externe Referenzspannungen sowie On-Chip-Kalibrierschalter. Ideal für hochauflösende Messanwendungen wie intelligente Transmitter, industrielle Prozesssteuerung, Waagen, Chromatographie und tragbare Instrumente.",
+      "meta": "ADS1201U-1/1K: Präzisions-Delta-Sigma-Modulator mit 130dB Dynamikbereich, vollständig differenziellen Eingängen, Zweidraht-Schnittstelle und On-Chip-Kalibrierung. Ideal für industrielle Prozesssteuerung, intelligente Transmitter und tragbare Instrumente. Gehäuse SOIC-16.",
+      "features": [
+        "130dB DYNAMIKBEREICH",
+        "VOLLSTÄNDIG DIFFERENZIELLE EINGÄNGE",
+        "ZWEIDRAHT-SCHNITTSTELLE",
+        "INTERNE/EXTERNE REFERENZ",
+        "ON-CHIP-SCHALTER FÜR KALIBRIERUNG"
+      ],
+      "applications": [
+        "INDUSTRIELLE PROZESSSTEUEURUNG",
+        "INSTRUMENTIERUNG",
+        "INTELLIGENTE TRANSMITTER",
+        "TRAGBARE INSTRUMENTE",
+        "WAAGEN",
+        "DRUCKSINNSORE"
+      ]
+    },
+    "es": {
+      "title": "Modulador delta-sigma ADS1201U-1/1K, rango dinámico de 130dB, SOIC-16",
+      "description": "El ADS1201 es un modulador delta-sigma de alta precisión con rango dinámico de 130dB que opera con una única fuente de alimentación de +5V. Cuenta con entradas totalmente diferenciales, interfaz de dos hilos, soporte para referencia interna o externa y interruptores integrados para calibración. Ideal para aplicaciones de medición de alta resolución como transmisores inteligentes, control de procesos industriales, balanzas, cromatografía y equipos de instrumentación portátiles.",
+      "meta": "ADS1201U-1/1K: Modulador delta-sigma de rango dinámico de 130dB con entradas totalmente diferenciales, interfaz de dos hilos y calibración integrada. Ideal para control de procesos industriales, transmisores inteligentes y equipos de instrumentación portátil. Paquete SOIC-16.",
+      "features": [
+        "RANGO DINÁMICO DE 130dB",
+        "ENTRADAS TOTALMENTE DIFERENCIALES",
+        "INTERFAZ DE DOS HILOS",
+        "REFERENCIA INTERNA/EXTERNA",
+        "INTERRUPTORES INTEGRADOS PARA CALIBRACIÓN"
+      ],
+      "applications": [
+        "CONTROL DE PROCESOS INDUSTRIALES",
+        "INSTRUMENTACIÓN",
+        "TRANSMISORES INTELIGENTES",
+        "INSTRUMENTOS PORTÁTILES",
+        "BALANZAS",
+        "TRANSDUCTORES DE PRESIÓN"
+      ]
+    }
+  }
+}
