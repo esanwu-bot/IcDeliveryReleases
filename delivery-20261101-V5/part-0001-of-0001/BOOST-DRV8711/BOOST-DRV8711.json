@@ -1,0 +1,271 @@
+{
+  "basic_info": {
+    "mpn": "BOOST-DRV8711",
+    "manufacturer": "Texas Instruments",
+    "category": "Boards & Development Tools",
+    "subcategory": "Development Boards / Evaluation Boards",
+    "description": "The BOOST-DRV8711 is a stepper motor BoosterPack based on the DRV8711 Stepper Motor Controller and CSD88537ND Dual 60-V N-Channel NexFET Power MOSFETs. It provides a complete stepper motor drive stage in a small form factor (1.75 in x 2.00 in) supporting 8.2-52 V and up to 4.5 A continuous for each H-Bridge. It features full protection including overcurrent, overtemperature, undervoltage, and motor stall detection. Optimized for TI LaunchPad kits, specifically the MSP-EXP430G2, it allows for rapid evaluation of motor applications with a user-friendly application to spin motors in minutes.",
+    "datasheet_url": "https://www.ti.com/lit/ug/slvu967a/slvu967a.pdf?ts=1792574725276&ref_url=https%253A%252F%252Fwww.ti.com",
+    "identity": "evaluation_board",
+    "identity_state": "BOARD_CONFIRMED",
+    "identity_rule": "TI_BOARD_PREFIX_BOOST",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "料号主体以 `BOOST` 结尾，命中规则 TI_BOARD_PREFIX_BOOST（候选身份 evaluation_board，置信度 medium）",
+      "datasheet 有板卡表述：--- page 1 --- User's Guide SLVU967A–May 2014–Revised June 2019 BOOST-DRV8711 This docu"
+    ],
+    "device_mpn": "DRV8711",
+    "document_scope": "board_user_guide",
+    "document_evidence": [
+      {
+        "kind": "board_guide_title",
+        "requested_mpn": "BOOST-DRV8711",
+        "title": "User's Guide",
+        "excerpt": "--- page 1 ---\nUser's Guide\nSLVU967A–May 2014–Revised June 2019\nBOOST-DRV8711\nThis document is provided with the BOOST-DRV8711 Stepper Motor BoosterPack as a supplement to the\nDRV8711 datasheet and CSD88537ND datasheet to detail the hardware setup and operation of the\nBoosterPack.\nContents\n......................................................................................",
+        "start": 0,
+        "end": 377
+      }
+    ],
+    "doc_type": "user_guide",
+    "doc_revision": {
+      "doc_number": "SLVU967",
+      "revision": "A",
+      "doc_id": "SLVU967A",
+      "issued": "May 2014",
+      "revised": "",
+      "page": 1
+    }
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Voltage Range",
+        "value": "8.2 to 52",
+        "unit": "V",
+        "condition": "External power supply input",
+        "scope": "board",
+        "subject_mpn": "BOOST-DRV8711",
+        "subject_kind": "board",
+        "source": {
+          "pdf_sha256": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+          "page": 3,
+          "page_base": 1,
+          "y": 172.02,
+          "extractor": "pymupdf-words-v1",
+          "scope": "board",
+          "note": "guide bullet: Supports 8.2–52 V"
+        },
+        "verification": {
+          "status": "condition_unverified",
+          "method": "2026-10-30-page-evidence-v1",
+          "reason": "row_not_located",
+          "range_origin": "derived_from_value",
+          "secondary_reason": "column_roles_not_verified"
+        },
+        "range": {
+          "min": "8.2",
+          "max": "52"
+        },
+        "range_origin": "derived_from_value",
+        "attribution": "board_level"
+      },
+      {
+        "name": "Continuous Current per H-Bridge",
+        "value": "4.5",
+        "unit": "A",
+        "condition": "Max continuous",
+        "scope": "board",
+        "subject_mpn": "BOOST-DRV8711",
+        "subject_kind": "board",
+        "source": {
+          "pdf_sha256": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+          "page": 3,
+          "page_base": 1,
+          "y": 172.02,
+          "extractor": "pymupdf-words-v1",
+          "scope": "board",
+          "note": "guide bullet: 4.5 A continuous each H-Bridge"
+        },
+        "verification": {
+          "status": "condition_unverified",
+          "method": "2026-10-30-page-evidence-v1",
+          "reason": "row_not_located"
+        },
+        "attribution": "onboard_device"
+      }
+    ],
+    "absolute_max": [],
+    "package": {
+      "type": "Evaluation Board",
+      "pins": 0,
+      "dimensions": "1.75 in × 2.00 in",
+      "onboard_device": "DRV8711"
+    },
+    "temperature": {
+      "operating": "not_specified",
+      "storage": "not_specified"
+    },
+    "scope": "board",
+    "onboard_device_specs": {
+      "devices": {
+        "CSD88537ND": {
+          "device_mpn": "CSD88537ND",
+          "scope": "onboard_device",
+          "electrical": [
+            {
+              "name": "MOSFET On-Resistance",
+              "value": "12.5",
+              "unit": "mΩ",
+              "condition": "CSD88537ND Dual 60-V N-Channel NexFET",
+              "subject_mpn": "CSD88537ND",
+              "subject_kind": "device"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "features": [
+    "Complete stepper motor drive stage in a small form factor (1.75 in × 2.00 in)",
+    "Supports 8.2–52 V and up to 4.5 A continuous for each H-Bridge",
+    "4x CSD88537ND Dual 60-V N-Channel NexFET Power MOSFETs (12.5 mΩ)",
+    "Motor stall and device fault LED indicators",
+    "Fully protected drive stage including overcurrent, overtemperature, undervoltage, and motor stall detect",
+    "Combine with TI LaunchPad kits to create a complete stepper motor drive and control platform",
+    "Optimized for the MSP-EXP430G2 LaunchPad with a user-friendly application to get your motor spinning in minutes",
+    "Powered by an external power supply (8.2–52 V) that can be connected to the terminal block header (J6)",
+    "4-pin terminal block header (J5) for connecting a bipolar stepper motor",
+    "Fault and motor status reporting through the nFAULT and nSTALL signals",
+    "SPI interface to set device configuration, operating parameters, and read out diagnostic information",
+    "Built-in microstepping indexer through a STEP/DIR interface or H-Bridge control through an IN/IN interface",
+    "Onboard potentiometer for creating your own, easy-to-use, demo application"
+  ],
+  "applications": [
+    "Stepper motor drive stage evaluation",
+    "Motor applications development",
+    "Complete stepper motor drive and control platform with TI LaunchPad kits"
+  ],
+  "pin_configuration": [],
+  "ordering_info": [],
+  "alternatives": [],
+  "seo": {
+    "title_en": "TI BOOST-DRV8711 Stepper Motor BoosterPack | DRV8711 Evaluation Board",
+    "title_zh": "TI BOOST-DRV8711 步进电机 BoosterPack | DRV8711 评估板",
+    "meta_description_en": "Evaluate stepper motors with the TI BOOST-DRV8711 BoosterPack. Features DRV8711 controller, 8.2-52V input, 4.5A continuous H-Bridge, and full protection. Optimized for MSP-EXP430G2 LaunchPad.",
+    "meta_description_zh": "使用 TI BOOST-DRV8711 BoosterPack 评估步进电机。具备 DRV8711 控制器、8.2-52V 输入、4.5A 连续 H-Bridge 及完整保护。针对 MSP-EXP430G2 LaunchPad 优化。",
+    "keywords": [
+      "BOOST-DRV8711",
+      "Texas Instruments",
+      "Stepper Motor BoosterPack",
+      "DRV8711",
+      "CSD88537ND",
+      "MSP-EXP430G2",
+      "Evaluation Board"
+    ]
+  },
+  "multi_language": {
+    "de": {
+      "title": "TI BOOST-DRV8711 Schrittmotor-BoosterPack | DRV8711 Evaluationsplatine",
+      "description": "Der BOOST-DRV8711 ist ein Schrittmotor-BoosterPack basierend auf dem DRV8711 Schrittmotor-Controller und CSD88537ND Dual-60-V-N-Channel-MOSFETs. Er unterstützt 8,2–52 V und bis zu 4,5 A Dauerstrom pro H-Bridge und ist für die MSP-EXP430G2 LaunchPad optimiert.",
+      "meta": "Bewerten Sie Schrittmotoren mit dem TI BOOST-DRV8711 BoosterPack. Mit DRV8711-Controller, 8,2-52V-Eingang, 4,5A kontinuierlicher H-Bridge und vollständiger Schutzfunktion. Optimiert für MSP-EXP430G2."
+    },
+    "es": {
+      "title": "TI BOOST-DRV8711 BoosterPack de Motor Paso a Paso | Placa de Evaluación DRV8711",
+      "description": "El BOOST-DRV8711 es un BoosterPack de motor paso a paso basado en el controlador DRV8711 y MOSFET NexFET CSD88537ND. Soporta 8.2-52 V y hasta 4.5 A continuos por H-Bridge. Está optimizado para el kit de lanzamiento MSP-EXP430G2.",
+      "meta": "Evalué motores paso a paso con el BoosterPack TI BOOST-DRV8711. Caracteriza controlador DRV8711, entrada de 8.2-52V, H-Bridge continua de 4.5A y protección total. Optimizado para MSP-EXP430G2."
+    },
+    "ja": {
+      "title": "TI BOOST-DRV8711 ステッパーモーター BoosterPack | DRV8711 評価ボード",
+      "description": "BOOST-DRV8711 は、DRV8711 ステップモーターコントローラーと CSD88537ND デュアル 60V N チャネル MOSFET を基盤とするステッパーモーターBoosterPack です。8.2〜52V、各 H-Bridge で最大 4.5A の連続動作をサポートし、完全な保護機能を備えています。MSP-EXP430G2 LaunchPad 向けに最適化されています。",
+      "meta": "TI BOOST-DRV8711 BoosterPack を使ってステッパーモーターを評価しましょう。DRV8711 コントローラー、8.2-52V 入力、4.5A 連続 H-Bridge、完全保護を特徴とし、MSP-EXP430G2 向けに最適化されています。"
+    },
+    "ko": {
+      "title": "TI BOOST-DRV8711 스테퍼 모터 BoosterPack | DRV8711 평가 보드",
+      "description": "BOOST-DRV8711은 DRV8711 스테퍼 모터 컨트롤러와 CSD88537ND 듀얼 60V N-채널 MOSFET을 기반으로 하는 스테퍼 모터 BoosterPack입니다. 8.2~52V 입력을 지원하며, 각 H-Bridge당 4.5A의 연속 동작을 처리할 수 있습니다. MSP-EXP430G2 LaunchPad에 최적화되어 있습니다.",
+      "meta": "TI BOOST-DRV8711 BoosterPack을 사용하여 스테퍼 모터를 평가하세요. DRV8711 컨트롤러, 8.2-52V 입력, 4.5A 연속 H-Bridge 및 완전한 보호 기능을 갖추고 있으며 MSP-EXP430G2에 최적화되었습니다."
+    }
+  },
+  "metadata": {
+    "pdf_hash": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+    "parse_timestamp": "2026-10-22T14:10:02+08:00",
+    "model_version": "agnes-3.0-flash",
+    "confidence": 0.9,
+    "requested_mpn": "BOOST-DRV8711",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [
+      {
+        "path": "specs.electrical[2]",
+        "kind": "row_quarantined",
+        "message": "非整板参数进入具名器件或待核隔离区"
+      }
+    ],
+    "five_stage": "2026-10-30-page-evidence-v1",
+    "normalize": {
+      "datasheet_url": {
+        "action": "skipped_board",
+        "device_datasheet_url": ""
+      },
+      "doc_type": {
+        "changed": false,
+        "doc_type": "user_guide"
+      },
+      "doc_revision": {
+        "changed": false,
+        "doc_revision": {
+          "doc_number": "SLVU967",
+          "revision": "A",
+          "doc_id": "SLVU967A",
+          "issued": "May 2014",
+          "revised": "",
+          "page": 1
+        }
+      },
+      "verification": {
+        "stamped": 0
+      },
+      "board_scope": {
+        "device_datasheet": false,
+        "counts": {
+          "board_level": 1,
+          "onboard_device": 1,
+          "unresolved": 0
+        }
+      },
+      "pdf": "data\\staging_20261101_v4\\pdfs\\BOOST-DRV8711.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "thermal": {
+        "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      },
+      "esd": {
+        "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点",
+    "board_attribution": {
+      "identity": "evaluation_board",
+      "source_doc_type": "user_guide",
+      "rule": "board_interface_vocabulary",
+      "note": "attribution=unresolved 表示「整板还是板载器件」未能从源文档判定，不是数值有问题；与 verification.status=unresolved（列角色未核）是两件事。",
+      "board_level": [
+        "electrical:Voltage Range"
+      ],
+      "onboard_device": [
+        "electrical:Continuous Current per H-Bridge"
+      ],
+      "unresolved": []
+    }
+  },
+  "pin_scope": "board"
+}

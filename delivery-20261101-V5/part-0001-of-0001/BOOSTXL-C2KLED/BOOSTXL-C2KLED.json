@@ -1,0 +1,328 @@
+{
+  "basic_info": {
+    "mpn": "BOOSTXL-C2KLED",
+    "manufacturer": "Texas Instruments",
+    "category": "Evaluation Boards & Kits",
+    "subcategory": "Power Management Evaluation Kits",
+    "description": "BOOSTXL-C2KLED is a Texas Instruments evaluation board. It is intended for bench evaluation of the devices assembled on it; refer to the board user guide for the schematic, the connector layout and the jumper defaults.",
+    "datasheet_url": "",
+    "identity": "evaluation_board",
+    "identity_state": "BOARD_CONFIRMED",
+    "identity_rule": "TI_BOARD_PREFIX_BOOST",
+    "identity_confidence": "low",
+    "identity_evidence": [
+      "请求料号本身就在订货表内（共 1 条），且以 `BOOST` 结尾 → 这是可订购的板卡，不是裸芯片"
+    ],
+    "document_scope": "board_user_guide",
+    "document_evidence": [
+      {
+        "kind": "cached_specified_pages",
+        "pages": [
+          1,
+          3,
+          5
+        ],
+        "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+        "note": "第1页 User's Guide；第3页目录点名 BOOSTXL-C2KLED；第5页 Kit Specifications 与五行一致"
+      }
+    ],
+    "device_datasheet_url": "https://www.ti.com/lit/ug/spruhh9/spruhh9.pdf?ts=1792643889811",
+    "device_description": "The BOOSTXL-C2KLED is a C2000 LED BoosterPack designed for evaluating LED lighting systems. It features boost DC/DC stages that independently control output power to adjust the average current through LED strings, enabling brightness control. The kit supports DC input ranging from 6 V to 20 V and provides nominal 24 V output per boost stage. It integrates with C2000 LaunchPads to demonstrate PWM and ADC resource mapping for lighting control applications.",
+    "doc_type": "user_guide",
+    "doc_revision": {
+      "doc_number": "SPRUHH9",
+      "revision": "",
+      "doc_id": "SPRUHH9",
+      "issued": "July 2012",
+      "revised": "",
+      "page": 2
+    }
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Power Input Voltage Minimum",
+        "value": "6",
+        "unit": "V",
+        "condition": "@ 1.2A",
+        "scope": "board",
+        "subject_mpn": "BOOSTXL-C2KLED",
+        "subject_kind": "board",
+        "source": {
+          "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+          "page": 5,
+          "page_base": 1,
+          "y": 233.3,
+          "extractor": "pymupdf-words-v1",
+          "scope": "board",
+          "note": "6 V minimum @ 1.2A"
+        },
+        "verification": {
+          "status": "condition_unverified",
+          "method": "cached-pages-1-3-5",
+          "reason": "row_not_located"
+        },
+        "attribution": "board_level"
+      },
+      {
+        "name": "Power Input Voltage Maximum",
+        "value": "20",
+        "unit": "V",
+        "condition": "@ 360 mA",
+        "scope": "board",
+        "subject_mpn": "BOOSTXL-C2KLED",
+        "subject_kind": "board",
+        "source": {
+          "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+          "page": 5,
+          "page_base": 1,
+          "y": 247.9,
+          "extractor": "pymupdf-words-v1",
+          "scope": "board",
+          "note": "20 V maximum @ 360 mA"
+        },
+        "verification": {
+          "status": "condition_unverified",
+          "method": "cached-pages-1-3-5",
+          "reason": "row_not_located"
+        },
+        "attribution": "board_level"
+      },
+      {
+        "name": "Boost Stage Input Voltage Minimum",
+        "value": "6",
+        "unit": "V",
+        "condition": "@ 400 mA",
+        "scope": "board",
+        "subject_mpn": "BOOSTXL-C2KLED",
+        "subject_kind": "board",
+        "source": {
+          "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+          "page": 5,
+          "page_base": 1,
+          "y": 291.8,
+          "extractor": "pymupdf-words-v1",
+          "scope": "board",
+          "note": "6 V minimum @ 400 mA"
+        },
+        "verification": {
+          "status": "condition_unverified",
+          "method": "cached-pages-1-3-5",
+          "reason": "row_not_located"
+        },
+        "attribution": "board_level"
+      },
+      {
+        "name": "Boost Stage Input Voltage Maximum",
+        "value": "20",
+        "unit": "V",
+        "condition": "@ 120 mA",
+        "scope": "board",
+        "subject_mpn": "BOOSTXL-C2KLED",
+        "subject_kind": "board",
+        "source": {
+          "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+          "page": 5,
+          "page_base": 1,
+          "y": 306.4,
+          "extractor": "pymupdf-words-v1",
+          "scope": "board",
+          "note": "20 V maximum @ 120 mA"
+        },
+        "verification": {
+          "status": "condition_unverified",
+          "method": "cached-pages-1-3-5",
+          "reason": "row_not_located"
+        },
+        "attribution": "board_level"
+      },
+      {
+        "name": "Boost Stage Output Voltage",
+        "value": "24",
+        "unit": "V",
+        "condition": "Nominal @ 100 mA",
+        "scope": "board",
+        "subject_mpn": "BOOSTXL-C2KLED",
+        "subject_kind": "board",
+        "source": {
+          "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+          "page": 5,
+          "page_base": 1,
+          "y": 335.6,
+          "extractor": "pymupdf-words-v1",
+          "scope": "board",
+          "note": "24 V nominal @ 100 mA"
+        },
+        "verification": {
+          "status": "condition_unverified",
+          "method": "cached-pages-1-3-5",
+          "reason": "row_not_located"
+        },
+        "attribution": "board_level"
+      }
+    ],
+    "absolute_max": [],
+    "package": {
+      "type": "Evaluation Board",
+      "pins": 0,
+      "dimensions": ""
+    },
+    "temperature": {
+      "operating": "not_specified",
+      "storage": "not_specified"
+    },
+    "scope": "board",
+    "unresolved_specs": {
+      "device_mpn": "",
+      "scope": "unresolved",
+      "source": "unresolved",
+      "temperature": {
+        "operating": "",
+        "storage": ""
+      }
+    }
+  },
+  "features": [
+    "Evaluation board"
+  ],
+  "applications": [
+    "Board evaluation"
+  ],
+  "pin_configuration": [],
+  "ordering_info": [
+    {
+      "mpn": "BOOSTXL-C2KLED",
+      "package": "BoosterPack Module",
+      "packaging": "Kit",
+      "moq": 0,
+      "marking": ""
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "BOOSTXL-C2KLED Evaluation Board",
+    "title_zh": "BOOSTXL-C2KLED 评估板",
+    "meta_description_en": "BOOSTXL-C2KLED is a Texas Instruments evaluation board. Board-level specifications are not stated in the source document; refer to the evaluation board user guide.",
+    "meta_description_zh": "BOOSTXL-C2KLED 是 Texas Instruments 的评估板。板级规格请以评估板用户指南为准。",
+    "keywords": [
+      "BOOSTXL-C2KLED",
+      "Texas Instruments",
+      "Evaluation Board"
+    ]
+  },
+  "multi_language": {
+    "de": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack Bewertungskit",
+      "description": "Der BOOSTXL-C2KLED ist ein C2000 LED BoosterPack zur Bewertung von Beleuchtungssystemen. Er steuert die Ausgangsleistung jeder DC/DC-Stufe unabhängig, um die Helligkeit der LED-Zeilen zu regulieren. Er bietet eine nominale Ausgangsspannung von 24 V und lässt sich mit C2000 LaunchPads integrieren. Enthält ein 12V AC/DC-Netzteil.",
+      "meta": "Der BOOSTXL-C2KLED ist ein C2000 LED BoosterPack für die Bewertung von Beleuchtungssystemen. Er weist unabhängige DC/DC-Booststufen auf, eine nominale Ausgangsspannung von 24 V und eine Integration mit C2000 LaunchPads. Inklusive 12V AC/DC-Netzteil."
+    },
+    "es": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack Kit de Evaluación",
+      "description": "El BOOSTXL-C2KLED es un LED BoosterPack de C2000 para evaluar sistemas de iluminación. Controla la potencia de salida de cada etapa DC/DC de forma independiente para regular el brillo de las cadenas de LED. Ofrece una salida nominal de 24 V y se integra con LaunchPads de C2000. Incluye adaptador AC/DC de 12 V.",
+      "meta": "El BOOSTXL-C2KLED es un LED BoosterPack de C2000 para evaluar sistemas de iluminación. Caracterizado por etapas de boost DC/DC independientes, salida nominal de 24 V e integración con LaunchPads de C2000. Incluye adaptador AC/DC de 12 V."
+    },
+    "ja": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack評価キット",
+      "description": "BOOSTXL-C2KLEDは、照明システムを評価するためのC2000 LED BoosterPackです。各DC/DC段の出力電力を独立して変化させ、LEDストリングの明るさを制御します。24Vノミナル出力を備え、C2000 LaunchPadと統合可能です。12V AC/DCアダプタを含む。",
+      "meta": "BOOSTXL-C2KLEDは照明システム評価用のC2000 LED BoosterPackです。独立したDC/DCブースト段、24Vノミナル出力、C2000 LaunchPadとの統合を特徴とし、12V AC/DCアダプタが付属します。"
+    },
+    "ko": {
+      "title": "Texas Instruments BOOSTXL-C2KLED C2000 LED BoosterPack 평가 키트",
+      "description": "BOOSTXL-C2KLED는 조명 시스템을 평가하기 위한 C2000 LED BoosterPack입니다. 각 DC/DC 단의 출력 전력을 독립적으로 변화시켜 LED 스트링의 밝기를 제어합니다. 24V 명목 출력을 갖추고 있으며 C2000 LaunchPad와 통합 가능합니다. 12V AC/DC 어댑터가 포함됩니다.",
+      "meta": "BOOSTXL-C2KLED는 조명 시스템 평가를 위한 C2000 LED BoosterPack입니다. 독립적인 DC/DC 부스트 단계, 24V 명목 출력, C2000 LaunchPad 통합 기능이 특징이며 12V AC/DC 어댑터가 제공됩니다."
+    }
+  },
+  "metadata": {
+    "pdf_hash": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+    "parse_timestamp": "2026-10-22T14:10:40+08:00",
+    "model_version": "agnes-3.0-flash",
+    "confidence": 0.85,
+    "requested_mpn": "BOOSTXL-C2KLED",
+    "board_scope_reason": "缺少与请求号绑定的板卡用户指南标题证据；电气/温区/卖点/替代料/SEO 保留在隔离区，主字段标记为板级未规定",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "five_stage": "2026-10-30-page-evidence-v1",
+    "normalize": {
+      "datasheet_url": {
+        "action": "skipped_board",
+        "device_datasheet_url": "https://www.ti.com/lit/ug/spruhh9/spruhh9.pdf?ts=1792643889811"
+      },
+      "doc_type": {
+        "changed": false,
+        "doc_type": "user_guide"
+      },
+      "doc_revision": {
+        "changed": false,
+        "doc_revision": {
+          "doc_number": "SPRUHH9",
+          "revision": "",
+          "doc_id": "SPRUHH9",
+          "issued": "July 2012",
+          "revised": "",
+          "page": 2
+        }
+      },
+      "verification": {
+        "stamped": 0
+      },
+      "board_scope": {
+        "device_datasheet": false,
+        "counts": {
+          "board_level": 5,
+          "onboard_device": 0,
+          "unresolved": 0
+        }
+      },
+      "pdf": "data\\staging_20261101_v4\\pdfs\\BOOSTXL-C2KLED.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "thermal": {
+        "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      },
+      "esd": {
+        "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点",
+    "board_attribution": {
+      "identity": "evaluation_board",
+      "source_doc_type": "user_guide",
+      "rule": "board_interface_vocabulary",
+      "note": "attribution=unresolved 表示「整板还是板载器件」未能从源文档判定，不是数值有问题；与 verification.status=unresolved（列角色未核）是两件事。",
+      "board_level": [
+        "electrical:Power Input Voltage Minimum",
+        "electrical:Power Input Voltage Maximum",
+        "electrical:Boost Stage Input Voltage Minimum",
+        "electrical:Boost Stage Input Voltage Maximum",
+        "electrical:Boost Stage Output Voltage"
+      ],
+      "onboard_device": [],
+      "unresolved": []
+    }
+  },
+  "onboard_device_features": [
+    "Supports C2000 devices for controlling separate DC supply for each LED string",
+    "Brightness control accomplished by independently varying output power of each DC/DC stage",
+    "Controls average current passing through each LED string",
+    "Includes AC/DC Power Adapter (12 V 1A)",
+    "Includes Quick Start Guide"
+  ],
+  "onboard_device_applications": [
+    "LED Lighting Systems",
+    "Engineering Development",
+    "Feasibility Evaluation",
+    "Demonstration and Evaluation of C2000 Control Solutions"
+  ],
+  "pin_scope": "board"
+}

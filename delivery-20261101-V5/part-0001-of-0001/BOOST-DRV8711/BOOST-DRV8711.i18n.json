@@ -1,0 +1,57 @@
+{
+  "schema": "i18n-coverage/v1",
+  "mpn": "BOOST-DRV8711",
+  "languages": {
+    "en": {
+      "i18n_complete": true,
+      "i18n_coverage": null,
+      "fallback_events": 0
+    },
+    "ja": {
+      "i18n_complete": false,
+      "i18n_coverage": {
+        "keys_used": 58,
+        "key_fallbacks": 0,
+        "narrative_blocks": 4,
+        "narrative_fallbacks": 3,
+        "ratio": 0.9516
+      },
+      "fallback_events": 3
+    },
+    "ko": {
+      "i18n_complete": false,
+      "i18n_coverage": {
+        "keys_used": 58,
+        "key_fallbacks": 0,
+        "narrative_blocks": 4,
+        "narrative_fallbacks": 3,
+        "ratio": 0.9516
+      },
+      "fallback_events": 3
+    },
+    "de": {
+      "i18n_complete": false,
+      "i18n_coverage": {
+        "keys_used": 58,
+        "key_fallbacks": 0,
+        "narrative_blocks": 4,
+        "narrative_fallbacks": 3,
+        "ratio": 0.9516
+      },
+      "fallback_events": 3
+    },
+    "es": {
+      "i18n_complete": false,
+      "i18n_coverage": {
+        "keys_used": 58,
+        "key_fallbacks": 0,
+        "narrative_blocks": 4,
+        "narrative_fallbacks": 3,
+        "ratio": 0.9516
+      },
+      "fallback_events": 3
+    }
+  },
+  "pin_desc_exempt": false,
+  "pin_desc_exempt_reason": "pin_configuration descriptions are kept in the source language (IEEE device-datasheet convention); not an untranslated residue"
+}

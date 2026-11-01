@@ -23,16 +23,56 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261101-V2` | 2026-11-01 V2 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**原厂 PDF 随包** + 逐行事实表 + 身份硬门禁（`release_state` 最高 `IDENTITY_APPROVED`） |
 | `delivery-20261101-V3` | 2026-11-01 V3 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | 同上，**数据与物料字节未变**；补《回复Reviewer.md》+ 明写「已含全部原厂 PDF」承诺 |
 | `delivery-20261101-V4` | 2026-11-01 V4 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**AC 表 82→64 行、零重复、零伪造 MIN/MAX**；amax 15/15 列角色回验；热阻条件列改破折号；韩语模板句补齐 |
+| `delivery-20261101-V5` | 2026-11-01 V5 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（**覆盖率实测 0.9455~0.9857**） | review_candidate / not_approved；**板卡参数拆三桶**、**分类面包屑上页面**、**韩语英文模板句清零**、`i18n_complete` 改实测、**`DATA_VALIDATED` 收紧为「每行须锚到具体表格行」** |
 
-**推荐以 `delivery-20261101-V4` 为准**（最新）：包内自带原件、把「怎么核」写成成文答复，
-并且修掉了 V3 里那个**新引入的数据缺陷** —— AC 表 82 行里 48 行
-`min == typ == max`（TYP 被横向复制进 MIN/MAX）、18 行逐字节重复。
+**推荐以 `delivery-20261101-V5` 为准**（最新）：V4 之后的两个 8.0 分复审各点了三件事，
+V5 全部落地并且**把口径改严了** —— 上一版 `facts_verdict=pass` 被读成「参数全对」，
+V5 起 `DATA_VALIDATED` 要求每一行有数值的工程参数都锚定到原厂表的具体行
+（带 `bbox` + `row_sha256`，可从 PDF 重放），达不到就停在 `PACKAGING_PASSED`，
+缺口写在 `data_anchor` 列（`88/108`、`31/50`、`14/14`…）。**这不是退步，是停止过度声明。**
+
+`delivery-20261101-V4` 仍是「AC 表去重 + amax 列角色」那一版，数据未变，可对照。
 V4 重切行锚点后是 64 行、指纹与内容双唯一、零重复；amax 15 条也全部按
 表头判定的列角色回验过（带 bbox 与 row_sha256）。
 
 > **目录命名更正**：V2/V3 曾叫 `delivery-20261102` / `delivery-20261102-V2`。
 > 按 AGENT.md §16.1，目录日期必须是打包当天，同一天迭代只递增 `-Vn` ——
 > 1101 当天就该是 `-V2` / `-V3`。已改正，并加了 `check_delivery_name()` 硬拦未来日期。
+
+### V5 相对 V4 的变化（两份 8.0 分复审的施工单）
+
+- **板卡参数拆三桶**：`specs.scope` 只有一个值，盖不住「用户指南里整板参数与板载器件
+  参数同时存在」。新增 `qc/board_scope.py`，按行打 `attribution`
+  （`board_level` / `onboard_device` / `unresolved`），页面分表渲染。
+  `BOOST-DRV8711` 现在出两张表：`Voltage Range 8.2 to 52 V`（整板）与
+  `Continuous Current per H-Bridge 4.5 A`（板载 DRV8711）不再混在一起。
+  `ADS8568EVM-PDK` 挂的是 **ADS8568 器件手册（SBAS543C）**，整板规格源文档里根本没有，
+  14 行全归 `onboard_device`，页面段首明写这一点 —— **不假装有整板参数**。
+  > 踩坑记录：第一版把 `board_level` 写进 `row["scope"]`，而 `scope` 是合同层
+  > 已占用的键（词表只有 `device`/`board`/`onboard_device`/`unresolved`），
+  > `normalize_scope()` 不认识 → 归一成 `unresolved` → 行被搬进隔离桶，
+  > 唯一一条真整板参数从页面消失且不报错。改键名为 `attribution` 并加回归测试锁死。
+- **分类粒度真正上页面**：`category_path` 在 V4 只进了 JSON，页面 0 命中。
+  V5 加面包屑，实测 `Integrated Circuits (ICs) › Data Acquisition › ADCs`。
+- **韩语页英文模板句清零**：根因不是翻译失败，是渲染器拼接句硬编码英文
+  （技术洞察 9 组检查点、封装叙述句、4 组 FAQ 问答）。新增 `_SENTENCE_I18N`
+  （五语 22 键）与 `_LIST_JOIN`（德语 `und` / 西语 `y` 不照搬英文逗号）。
+  实测纯英文段落 **6 → 0**，静态词条 `key_fallbacks = 0`（109 个词条全命中）。
+- **`i18n_complete` 改实测口径**：V4 是写死的 `not_checked` 占位符。V5 由渲染层落盘
+  侧车 `<型号>.i18n.json`（随包），清单取**所有语言里最低**的比率。
+  实测 0.9455~0.9857，缺口是 `technical_insight` / `faq` 两个生成式叙述块
+  （只有英文、整段不渲染），所以 `i18n_complete=false` —— 这是实测，不是失败。
+- **管脚描述豁免**：`pin_configuration` 的描述是管脚功能名，按 IEEE 器件手册惯例
+  保留英文原文，不算未翻译残留。清单加 `pin_desc_exempt` 列，页面加一行小字。
+  **豁免仅限引脚表**；features / applications / description / FAQ 不豁免。
+- **`release_state` 收紧**：见上文 `data_anchor`。
+- **ADS1201 输入范围根因**：V4 里 0 verified 当时归因为「表格太乱」，实际是一个
+  `NameError` —— `_SRC_SPLIT_RE` / `_SRC_NUM_RE` 只写了用法没写定义，
+  而 `normalize()` 是整段 try，一个拼写错误把后面 3 个确定性步骤全跳过了。
+  补定义 + 加 `_step()` 步骤隔离（失败只影响自己，错误写进 JSON 不再静默吞掉）。
+  现为 4 条子行、每条带真实 `bbox` + `row_sha256`，电气行 33 `audited_row_anchored`。
+- **`†` 计数更正**：V4 说明写的「33 处」从来没被测过，是估的。实测 V4 为
+  19 处（18 行 + 1 条提示），V5 为 **10 处（9 行 + 1 条提示）**。
 
 ### V2 相对 V1 的变化（评审回应）
 
@@ -62,9 +102,9 @@ ChatGPT 给 1101 打 6.5/10，核心指控是「**这个包不能视为重新核
   修订号 `SLVSGH5C (Rev. C), revised APRIL 2025` 上页面；双句点收口；
   条件占位 17 处由 `unknown` 改破折号 + 一条汇总提示。
 - **ADS1201U 链接改回原厂**：第三方镜像 → `ti.com` 直链（`ads1201.pdf`）。
-- **仍没做**：amax 列角色（p8 表 `find_tables` 识别不出，表头在 p9 续页，
-  跨页拼接风险大于收益）、ko 页 5/16 长段英文（渲染器拼的叙述句缺五语模板）。
-  详见包内《1101-V4_修复说明.md》§十。
+- **仍没做**：ko 页 `technical_insight` / `faq` 两个生成式叙述块只有英文
+  （整段不渲染，所以页面无英文残留，但也不算已本地化）、
+  SINAD / ENOB / NF 未进 AC 表。详见包内《1101-V4_修复说明.md》§十。
 
 - **新-1 源 PDF 链接恢复**：`datasheet_url` 查表键取了会变的前缀
   （`ADC12DJ5200SEAAV` vs manifest 的 `ADC12DJ5200SEEVM`）导致静默落空。

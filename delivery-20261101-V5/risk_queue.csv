@@ -1,0 +1,62 @@
+﻿mpn,container,label,value,unit,source,verdict,suggested_action,note,page
+ADC12DJ5200SE,electrical,Sampling Rate - Single Channel Mode,10.4,GSPS,label_value_same_page,value_on_label_page,human_review,"数值与参数名同页（第 [1, 37, 39] 页），但行/列对应关系未证 —— 需人工确认",1
+ADC12DJ5200SE,electrical,Sampling Rate - Dual Channel Mode,5.2,GSPS,label_value_same_page,value_on_label_page,human_review,"数值与参数名同页（第 [1, 37, 39] 页），但行/列对应关系未证 —— 需人工确认",1
+ADC12DJ5200SE,electrical,Noise Floor - Dual-Channel Mode,-149,dBFS/Hz,label_value_same_page,value_on_label_page,human_review,数值与参数名同页（第 [1] 页），但行/列对应关系未证 —— 需人工确认,1
+ADC12DJ5200SE,electrical,Noise Floor - Single-Channel Mode,-151.5,dBFS/Hz,label_value_same_page,value_on_label_page,human_review,"数值与参数名同页（第 [1, 17] 页），但行/列对应关系未证 —— 需人工确认",1
+ADC12DJ5200SE,electrical,ENOB - Dual Channel Mode,8.5,Bits,audited_row_anchored,value_on_label_page,human_review,"数值与参数名同页（第 [1, 2, 15] 页），但行/列对应关系未证 —— 需人工确认",15
+ADC12DJ5200SE,electrical,Noiseless Aperture Delay Step,19,fs,label_value_same_page,value_on_label_page,human_review,数值与参数名同页（第 [1] 页），但行/列对应关系未证 —— 需人工确认,1
+ADC12DJ5200SE,electrical,Maximum Lane Rate,17.16,Gbps,label_value_same_page,value_on_label_page,human_review,"数值与参数名同页（第 [1, 22, 37, 39] 页），但行/列对应关系未证 —— 需人工确认",1
+ADC12DJ5200SE,electrical,Decimation Options,4 / 8 / 16 / 32,,label_value_same_page,value_on_label_page,human_review,"数值与参数名同页（第 [1, 13, 21, 37, 39, 41, 42, 43, 50, 56, 57, 58, 59, 60, 62, 72, 77, 86] 页），但行/列对应关系未证 —— 需人工确认",1
+ADC12DJ5200SE,electrical,NCOs per DDC,32,,label_value_same_page,value_on_label_page,human_review,"数值与参数名同页（第 [1, 52, 53, 54, 56] 页），但行/列对应关系未证 —— 需人工确认",1
+ADC12DJ5200SE,electrical,Power Consumption,4,W,label_value_same_page,value_on_label_page,human_review,"数值与参数名同页（第 [1, 2, 7, 13] 页），但行/列对应关系未证 —— 需人工确认",1
+ADC12DJ5200SE,electrical,Supply Voltage - VA19,1.8 / 2.0,V,audited_row_anchored,value_on_label_page,human_review,"数值与参数名同页（第 [7, 10, 14, 17] 页），但行/列对应关系未证 —— 需人工确认",10
+ADC12DJ5200SE,electrical,Supply Voltage - VA11,1.05 / 1.15,V,audited_row_anchored,value_on_label_page,human_review,数值与参数名同页（第 [10] 页），但行/列对应关系未证 —— 需人工确认,10
+ADC12DJ5200SE,electrical,Supply Voltage - VD11,1.05 / 1.15,V,audited_row_anchored,value_on_label_page,human_review,数值与参数名同页（第 [10] 页），但行/列对应关系未证 —— 需人工确认,10
+ADC12DJ5200SE,electrical,Input Common-Mode Voltage (CLK±),0 / 0.55,V,audited_deterministic,value_on_label_page,human_review,"数值与参数名同页（第 [4, 7, 8, 10, 12] 页），但行/列对应关系未证 —— 需人工确认",10
+ADC12DJ5200SE,electrical,Input Common-Mode Voltage (SYSREF±),0 / 0.55,V,audited_deterministic,value_on_label_page,human_review,"数值与参数名同页（第 [4, 7, 8, 10, 12] 页），但行/列对应关系未证 —— 需人工确认",10
+ADC12DJ5200SE,electrical,Input Common-Mode Voltage (TMSTP±),0 / 0.55,V,audited_deterministic,value_on_label_page,human_review,"数值与参数名同页（第 [4, 7, 8, 10, 12] 页），但行/列对应关系未证 —— 需人工确认",10
+ADC12DJ5200SE,absolute_max,"Pin Voltage Range - DA[7:0]+, DA[7:0]–, DB[7:0]+, DB[7:0]–, TMSTP+, TMSTP–",-0.5 / 11 / 0.5,V,audited_deterministic,value_on_label_page,human_review,"数值与参数名同页（第 [4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 105, 107, 167, 168] 页），但行/列对应关系未证 —— 需人工确认",9
+ADC12DJ5200SE,absolute_max,"Pin Voltage Range - CLK+, CLK–, SYSREF+, SYSREF–",-0.5 / 11 / 0.5,V,audited_deterministic,value_on_label_page,human_review,"数值与参数名同页（第 [4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 105, 107, 167, 168] 页），但行/列对应关系未证 —— 需人工确认",9
+ADC12DJ5200SE,absolute_max,"Pin Voltage Range - BG, TDIODE+, TDIODE–",-0.5 / 19 / 0.5,V,audited_deterministic,value_on_label_page,human_review,"数值与参数名同页（第 [1, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 167, 168] 页），但行/列对应关系未证 —— 需人工确认",9
+ADC12DJ5200SE,absolute_max,"Pin Voltage Range - CALSTAT, CALTRIG, NCOA0, NCOA1, NCOB0, NCOB1, ORA0, ORA1, ORB0, ORB1, PD, SCLK, SCS, SDI, SDO, SYNCSE",-0.5 / 19 / 0.5,V,audited_deterministic,value_on_label_page,human_review,"数值与参数名同页（第 [1, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 167, 168] 页），但行/列对应关系未证 —— 需人工确认",9
+ADC12DJ5200SE,thermal,RθJA,23.9,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADC12DJ5200SE,thermal,RθJC(top),0.8,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADC12DJ5200SE,thermal,RθJB,8.4,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADC12DJ5200SE,thermal,ψJT,0.23,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADC12DJ5200SE,thermal,ψJB,8.4,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADC12DJ5200SE,esd,HBM,2000,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADC12DJ5200SE,esd,CDM,500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS1201U-1_1K,electrical,Input Impedance,250,kΩ,audited_row_anchored,value_on_label_page,human_review,数值与参数名同页（第 [2] 页），但行/列对应关系未证 —— 需人工确认,2
+ADS1201U-1_1K,electrical,Dynamic Range,130,dB,audited_row_anchored,value_on_label_page,human_review,"数值与参数名同页（第 [1, 2, 5] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,electrical,Dynamic Range,115 / 120,dB,audited_row_anchored,value_on_label_page,human_review,数值与参数名同页（第 [2] 页），但行/列对应关系未证 —— 需人工确认,2
+ADS1201U-1_1K,electrical,Dynamic Range,115,dB,audited_row_anchored,value_on_label_page,human_review,数值与参数名同页（第 [2] 页），但行/列对应关系未证 —— 需人工确认,2
+ADS1201U-1_1K,electrical,Offset Error,,µV,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS1201U-1_1K,electrical,Gain Error,,ppm,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS1201U-1_1K,electrical,Internal Reference (REFOUT),2.4 / 2.6,V,audited_row_anchored,value_on_label_page,human_review,数值与参数名同页（第 [2] 页），但行/列对应关系未证 —— 需人工确认,2
+ADS1201U-1_1K,electrical,VBIAS Output,3.15 / 3.45,V,audited_row_anchored,value_on_label_page,human_review,数值与参数名同页（第 [2] 页），但行/列对应关系未证 —— 需人工确认,2
+ADS1201U-1_1K,absolute_max,Analog Input: Current,100 / 10,mA,model_unverified,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3, 4, 6, 8, 9, 10, 11, 12] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,Analog Input: Voltage,-0.3 / +0.3,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,AVDD to DVDD,-0.3 / 6,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3, 5, 6, 7, 8, 11, 12, 13] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,AVDD to AGND,-0.3 / 6,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3, 5, 6, 7, 8, 11, 12, 13] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,DVDD to DGND,-0.3 / 6,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3, 5, 7, 8, 11, 12, 13] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,AGND to DGND,0.3,V,model_unverified,value_on_label_page,human_review,数值与参数名同页（第 [3] 页），但行/列对应关系未证 —— 需人工确认,3
+ADS1201U-1_1K,absolute_max,REFIN Voltage to AGND,-0.3 / +0.3,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,Digital Input Voltage to DGND,-0.3 / +0.3,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,Digital Output Voltage to DGND,-0.3 / +0.3,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,"Lead Temperature (soldering, 10s)",300,°C,model_unverified,value_on_label_page,human_review,数值与参数名同页（第 [3] 页），但行/列对应关系未证 —— 需人工确认,3
+ADS1201U-1_1K,absolute_max,Internal Power Dissipation,500,mW,model_unverified,value_on_label_page,human_review,数值与参数名同页（第 [3] 页），但行/列对应关系未证 —— 需人工确认,3
+ADS8568EVM-PDK,thermal,RθJA,22,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS8568EVM-PDK,thermal,RθJC(top),9.0,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS8568EVM-PDK,thermal,RθJB,3.6,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS8568EVM-PDK,thermal,ψJT,0.1,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS8568EVM-PDK,thermal,ψJB,2.9,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS8568EVM-PDK,thermal,RθJC(bot),0.3,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS8568EVM-PDK,esd,HBM,2500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+ADS8568EVM-PDK,esd,CDM,500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,
+BOOST-DRV8711,electrical,Voltage Range,8.2 / 52,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证,3
+BOOST-DRV8711,electrical,Continuous Current per H-Bridge,4.5,A,condition_unverified,value_on_label_page,human_review,"数值与参数名同页（第 [3, 7] 页），但行/列对应关系未证 —— 需人工确认",3
+BOOSTXL-C2KLED,electrical,Power Input Voltage Minimum,6,V,condition_unverified,value_on_label_page,human_review,"数值与参数名同页（第 [6, 12] 页），但行/列对应关系未证 —— 需人工确认",5
+BOOSTXL-C2KLED,electrical,Power Input Voltage Maximum,20,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证,5
+BOOSTXL-C2KLED,electrical,Boost Stage Input Voltage Minimum,6,V,condition_unverified,value_on_label_page,human_review,"数值与参数名同页（第 [6, 12] 页），但行/列对应关系未证 —— 需人工确认",5
+BOOSTXL-C2KLED,electrical,Boost Stage Input Voltage Maximum,20,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证,5
+BOOSTXL-C2KLED,electrical,Boost Stage Output Voltage,24,V,condition_unverified,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证,5
