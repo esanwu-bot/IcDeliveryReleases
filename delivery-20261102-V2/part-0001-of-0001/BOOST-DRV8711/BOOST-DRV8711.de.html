@@ -1,0 +1,344 @@
+<div class="pd-wrap" lang="de">
+<header class="pd-hero">
+	<div class="pd-hero-inner">
+		<nav class="pd-crumb" aria-label="category" style="font-size:.82em;letter-spacing:.02em;opacity:.72;margin:0 0 8px;line-height:1.5;">
+			Boards &amp; Development Tools › Development Boards / Evaluation Boards
+		</nav>
+		<h1 class="pd-hero-title">
+			TI BOOST-DRV8711 Schrittmotor-BoosterPack | DRV8711 Evaluationsplatine
+		</h1>
+		<p class="pd-hero-desc">
+			Der BOOST-DRV8711 ist ein Schrittmotor-BoosterPack basierend auf dem DRV8711 Schrittmotor-Controller und CSD88537ND Dual-60-V-N-Channel-MOSFETs.
+		</p>
+	</div>
+</header>
+<section class="pd-sec" id="product-introduction">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Überblick: BOOST-DRV8711
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			Die Eingangsspannung der Baugruppe beträgt 8,2–52 V; die Treiberfähigkeit des bestückten DRV8711 liegt bei bis zu 4,5 A pro H-Bridge (abhängig von den thermischen Bedingungen). Er ist für die MSP-EXP430G2 LaunchPad optimiert.
+		</p>
+		<p>
+			BOOST-DRV8711 ist ein als Leiterplatte aufgebautes Evaluationsmodul.
+		</p>
+		<p>
+			Die Board-Werte auf dieser Seite stammen aus dem Benutzerhandbuch der Evaluationsplatine.
+		</p>
+		<p>
+			<strong>Texas Instruments</strong> bietet BOOST-DRV8711 als Evaluationsplattform um den Onboard-Baustein DRV8711 an.
+		</p>
+		<p>
+			Die maßgebliche technische Referenz ist das Hersteller-Benutzerhandbuch, verfügbar unter <a href="https://www.ti.com/lit/ug/slvu967a/slvu967a.pdf?ts=1792574725276&amp;ref_url=https%253A%252F%252Fwww.ti.com" rel="nofollow">diesem Link</a>. Bestätigen Sie vor der Freigabe die neueste Revision, den Lebenszyklusstatus, die elektrischen Grenzwerte, die Pin-Belegung und die Gehäusezeichnung.
+		</p>
+		<div class="pd-expert-insight">
+			<h3>
+				Technische Insights
+			</h3>
+			<p>
+				<strong>Woran sollte beim Design mit BOOST-DRV8711 gedacht werden?</strong>
+			</p>
+			<ul>
+				<li>
+					<strong>Versorgungsrails und Jumperstellung der Platine prüfen:</strong> Dieses Evaluierungsboard ist um das onboard verbaute DRV8711 aufgebaut. Vor dem Anschluss einer Signalquelle Rail-Auswahl, Strombegrenzung und Jumperstellungen gegen das Board-Handbuch prüfen; ein falscher Jumper ist die häufigste Ursache für ein scheinbar totes Board.
+				</li>
+				<li>
+					<strong>Motorausgänge und Stromeinstellung prüfen:</strong> Vor dem Anschluss eines Motors Phasenausgänge, Stromeinstellnetzwerk und Zwischenkreiskapazität prüfen. Eine zu hoch gesetzte Strombegrenzung beschädigt die Treiberstufe beim ersten Lauf am schnellsten, und eine unbelastete Versorgung zeigt einen viel geringeren Strom als die Anwendung benötigt.
+				</li>
+				<li>
+					<strong>Wärmeableitung und Masseführung prüfen:</strong> Bei maximaler Ausgangslast bestimmt die Platine und nicht das Bauteil die thermische Grenze. Für ausreichende Luftführung sorgen und den Massebezug an den Steckerschirmen prüfen, bevor Messwerten vertraut wird.
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="key-benefits">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			K
+		</div>
+		<h2 class="pd-sec-title">
+			Wichtigste Vorteile
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-grid2">
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Complete stepper motor drive stage in a small form factor (1.75 in × 2.00 in)
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Board input voltage range
+				</div>
+				<p class="pd-card-desc">
+					8.2–52 V.
+				</p>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Onboard DRV8711 driver capability
+				</div>
+				<p class="pd-card-desc">
+					up to 4.5 A per H-Bridge (subject to thermal conditions).
+				</p>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>4x CSD88537ND Dual 60-V N-Channel NexFET Power MOSFETs (12.5 mΩ)
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="specifications">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			S
+		</div>
+		<h2 class="pd-sec-title">
+			Elektrische Spezifikationen
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<em class="pd-verify-ok" style="display:block;border-left:3px solid #1f7a3f;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">Alle 2 Einträge dieser Seite sind an das Quell-PDF angebunden (elektrisch 2). Die Anbindung belegt, dass jeder Wert an eine bestimmte Tabellenzeile oder Textstelle gebunden ist; sie belegt nicht, dass Spaltenrollen (MIN/TYP/MAX), Prüfbedingungen oder Fußnoten geprüft wurden.</em>
+		</p>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.02em;">
+			Parameter der Baugruppe
+		</h3>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Wert
+					</th>
+					<th>
+						Bedingungen und Kontext
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Voltage Range
+					</td>
+					<td>
+						8.2 to 52 V
+					</td>
+					<td>
+						External power supply input
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.02em;">
+			Parameter des bestückten Bauteils
+		</h3>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Wert
+					</th>
+					<th>
+						Bedingungen und Kontext
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Continuous Current per H-Bridge
+					</td>
+					<td>
+						4.5 A
+					</td>
+					<td>
+						Max continuous
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<section class="pd-sec" id="package">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Gehäuse
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>BOOST-DRV8711</strong> ist ein bestücktes Evaluationsboard (PCB), kein gehäuster IC.
+		</p>
+		<p>
+			Das Board verwendet DRV8711; das tatsächlich bestückte Gehäuse ist in der Quelle nicht verifiziert.
+		</p>
+		<p>
+			Die Platine ist etwa 1.75 in × 2.00 in groß; bestätigen Sie die mechanische Zeichnung und die Steckerplatzierung im Benutzerhandbuch des Evaluationsboards vor dem Panel- oder Gehäusedesign.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="manufacturer-information">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			M
+		</div>
+		<h2 class="pd-sec-title">
+			Hersteller
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>Texas Instruments</strong> bietet BOOST-DRV8711 als Evaluationsplattform um den Onboard-Baustein DRV8711 an.
+		</p>
+		<p>
+			Die maßgebliche technische Referenz ist das Hersteller-Benutzerhandbuch, verfügbar unter <a href="https://www.ti.com/lit/ug/slvu967a/slvu967a.pdf?ts=1792574725276&amp;ref_url=https%253A%252F%252Fwww.ti.com" rel="nofollow">diesem Link</a>. Bestätigen Sie vor der Freigabe die neueste Revision, den Lebenszyklusstatus, die elektrischen Grenzwerte, die Pin-Belegung und die Gehäusezeichnung.
+		</p>
+		<p>
+			Dokumentrevision: SLVU967A (Rev. A), überarbeitet May 2014.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="application">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			A
+		</div>
+		<h2 class="pd-sec-title">
+			Anwendungen
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-appgrid">
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="BOOST-DRV8711 Stepper motor drive stage evaluation application — Industrial Automation illustration" title="BOOST-DRV8711 used in Stepper motor drive stage evaluation (Industria…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Stepper motor drive stage evaluation
+					</div>
+					<div class="pd-app-example">
+						<strong>Typischer Anwendungsfall:</strong> Das Evaluationsboard BOOST-DRV8711 dient Stepper motor drive stage evaluation; prüfen Sie vor dem Anschluss Spannungen, Jumper und Steckverbinder im Board-Handbuch.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="BOOST-DRV8711 Motor applications development application — Industrial Automation illustration" title="BOOST-DRV8711 used in Motor applications development (Industrial Auto…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Motor applications development
+					</div>
+					<div class="pd-app-example">
+						<strong>Typischer Anwendungsfall:</strong> Das Evaluationsboard BOOST-DRV8711 dient Motor applications development; prüfen Sie vor dem Anschluss Spannungen, Jumper und Steckverbinder im Board-Handbuch.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="BOOST-DRV8711 Complete stepper motor drive and control platform with TI LaunchPad kits application — Industrial Automation i…" title="BOOST-DRV8711 used in Complete stepper motor drive and control platfo…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Complete stepper motor drive and control platform with TI LaunchPad kits
+					</div>
+					<div class="pd-app-example">
+						<strong>Typischer Anwendungsfall:</strong> Das Evaluationsboard BOOST-DRV8711 dient Complete stepper motor drive and control platform with TI LaunchPad kits; prüfen Sie vor dem Anschluss Spannungen, Jumper und Steckverbinder im Board-Handbuch.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="faq">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			Q
+		</div>
+		<h2 class="pd-sec-title">
+			Häufig gestellte Fragen
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-faq-list">
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					Welche elektrischen Grenzwerte sind für BOOST-DRV8711 am wichtigsten?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Die maßgeblichen Spezifikationen sind Voltage Range = 8.2 to 52 V und Continuous Current per H-Bridge = 4.5 A. Lesen Sie sie stets zusammen mit den angegebenen Testbedingungen.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					Enthält diese Seite Board-Spezifikationen für BOOST-DRV8711?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Ja. Die Board-Werte stammen aus dem Benutzerhandbuch; beachten Sie die angegebenen Spannungs- und Prüfbedingungen.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					Wofür wird BOOST-DRV8711 typischerweise verwendet?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Typische Anwendungen sind Stepper motor drive stage evaluation, Motor applications development und Complete stepper motor drive and control platform with TI LaunchPad kits.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="disclaimer">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			D
+		</div>
+		<h2 class="pd-sec-title">
+			Wichtiger Hinweis
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-alert">
+			<p>
+				<strong>Technische Nutzung:</strong> Die technischen Werte auf dieser Seite basieren auf dem Texas Instruments-Datenblatt für BOOST-DRV8711 (parsed 2026-10-22). Überprüfen Sie im finalen System Spannungen, Temperaturgrenzen, Timing und die Board-Schnittstellen.
+			</p>
+			<p>
+				<strong>Bestellcode-Kontrolle:</strong> Andere bestellbare Optionen und Evaluationsboards sind nur Vergleichswege. Überprüfen Sie vor Substitution oder Kauf das vollständige Modell, Gehäuse, Temperaturbereich, Verpackung, Markierung und den Lebenszyklus.
+			</p>
+		</div>
+	</div>
+</section>
+</div>
+<div class="sr-only">
+	BOOST-DRV8711-Überblick mit Vorteilen, technischen Insights, Spezifikationen des Onboard-Bausteins, Board-Details, Anwendungen, bestellbaren Optionen und FAQs.
+</div>

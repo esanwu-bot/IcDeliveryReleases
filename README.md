@@ -365,7 +365,7 @@ V3 起这些未命中候选**不再进包**（`ADC12DJ5200SE` 的 `AD9680-1000` 
 | 包内容提交 | `aa80c77`（`release(V11) 2/3`） |
 | 自检命令 | `python qc/bundle_selfcheck.py --out <clone>/delivery-20261102` |
 | 自检结论 | **自证链自检通过** |
-| 分卷 ZIP | `part-0001-of-0001.zip`，12,123,616 B |
+| 分卷 ZIP | `part-0001-of-0001.zip`，12,124,048 B |
 | 分卷 sha256 | `f353513df3a3c147a4b958ac291774cedecb84a6897a1796edb93813dc3050f0` |
 
 > **复核方请用 raw 源或 commit 固定 URL 取文件，不要用 CDN 缓存路径。**
