@@ -300,3 +300,7 @@ V3 起这些未命中候选**不再进包**（`ADC12DJ5200SE` 的 `AD9680-1000` 
 
 源码与全部审计记录在主仓库（Codeup）的 `HANDOFF.md`；本仓库每个包内的
 `manifest.json` / `包校验报告.json` 记录逐成员 SHA-256 与最终 ZIP/RAR 哈希。
+
+## Automation Verified
+
+本节用于确认自动化流水线能端到端完成一次真实的改动：提交、推送分支、创建 Pull Request。
