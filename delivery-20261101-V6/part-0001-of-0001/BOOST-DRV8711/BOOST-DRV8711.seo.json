@@ -1,0 +1,81 @@
+{
+  "mpn": "BOOST-DRV8711",
+  "generated_at": "2026-11-01T15:07:19+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "TI BOOST-DRV8711 Stepper Motor BoosterPack | DRV8711 Evaluation Board",
+    "title_zh": "TI BOOST-DRV8711 步进电机 BoosterPack | DRV8711 评估板",
+    "meta_description_en": "Evaluate stepper motors with the TI BOOST-DRV8711 BoosterPack. Features DRV8711 controller, 8.2-52V input, 4.5A continuous H-Bridge, and full protection. Optimized for MSP-EXP430G2 LaunchPad.",
+    "meta_description_zh": "使用 TI BOOST-DRV8711 BoosterPack 评估步进电机。具备 DRV8711 控制器、8.2-52V 输入、4.5A 连续 H-Bridge 及完整保护。针对 MSP-EXP430G2 LaunchPad 优化。",
+    "keywords": [
+      "BOOST-DRV8711",
+      "Texas Instruments",
+      "Stepper Motor BoosterPack",
+      "DRV8711",
+      "CSD88537ND",
+      "MSP-EXP430G2",
+      "Evaluation Board"
+    ]
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 1,
+  "shared_by_applications": {
+    "app-industrial-automation.png": [
+      "Stepper motor drive stage evaluation",
+      "Motor applications development",
+      "Complete stepper motor drive and control platform with TI LaunchPad kits"
+    ]
+  },
+  "distinct_images": [
+    "app-industrial-automation.png"
+  ],
+  "distinct_image_count": 1,
+  "images": [
+    {
+      "application": "Stepper motor drive stage evaluation",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "boost-drv8711-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "BOOST-DRV8711 Stepper motor drive stage evaluation application — Industrial Automation illustration",
+      "title": "BOOST-DRV8711 used in Stepper motor drive stage evaluation (Industria…",
+      "caption": "Stepper motor drive stage evaluation — a typical industrial automation application of BOOST-DRV8711.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Motor applications development",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "boost-drv8711-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "BOOST-DRV8711 Motor applications development application — Industrial Automation illustration",
+      "title": "BOOST-DRV8711 used in Motor applications development (Industrial Auto…",
+      "caption": "Motor applications development — a typical industrial automation application of BOOST-DRV8711.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Complete stepper motor drive and control platform with TI LaunchPad kits",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "boost-drv8711-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "BOOST-DRV8711 Complete stepper motor drive and control platform with TI LaunchPad kits application — Industrial Automation i…",
+      "title": "BOOST-DRV8711 used in Complete stepper motor drive and control platfo…",
+      "caption": "Complete stepper motor drive and control platform with TI LaunchPad kits — a typical industrial automation application of BOOST-DRV8711.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ]
+}

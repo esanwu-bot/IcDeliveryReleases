@@ -1,0 +1,20 @@
+﻿mpn,container,label,value,unit,source,verdict,suggested_action,note,page
+ADC12DJ5200SE,thermal,RθJA,23.9,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,10
+ADC12DJ5200SE,thermal,RθJC(top),0.8,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,10
+ADC12DJ5200SE,thermal,RθJB,8.4,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,2
+ADC12DJ5200SE,thermal,ψJT,0.23,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,10
+ADC12DJ5200SE,thermal,ψJB,8.4,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,2
+ADC12DJ5200SE,esd,HBM,2000,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
+ADC12DJ5200SE,esd,CDM,500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
+ADS1201U-1_1K,electrical,Offset Error,,µV,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS1201U-1_1K,electrical,Gain Error,,ppm,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS1201U-1_1K,absolute_max,Analog Input: Current,100 / 10,mA,model_unverified,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3, 4, 6, 8, 9, 10, 11, 12] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS1201U-1_1K,absolute_max,Analog Input: Voltage,-0.3 / +0.3,V,unresolved,value_on_label_page,human_review,"数值与参数名同页（第 [2, 3] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS8568EVM-PDK,thermal,RθJA,22,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,4
+ADS8568EVM-PDK,thermal,RθJC(top),9.0,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,2
+ADS8568EVM-PDK,thermal,RθJB,3.6,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
+ADS8568EVM-PDK,thermal,ψJT,0.1,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
+ADS8568EVM-PDK,thermal,ψJB,2.9,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
+ADS8568EVM-PDK,thermal,RθJC(bot),0.3,°C/W,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
+ADS8568EVM-PDK,esd,HBM,2500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
+ADS8568EVM-PDK,esd,CDM,500,V,,verified,promote_to_deterministic,确定性抽取器逐字复现（容器级，无行坐标）,9
