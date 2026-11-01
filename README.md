@@ -2,6 +2,23 @@
 
 IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的交付包，不放源码、不放运行时数据。
 
+> ## ⚠️ 复核前必读：CDN 有缓存，请用 raw 或固定 commit
+>
+> **GitHub CDN（`cdn.jsdelivr.net`、`raw.githack.com` 等）存在缓存，可能返回旧版本。**
+> 复核时请务必使用 `raw.githubusercontent.com`，或直接固定 commit SHA 拉取：
+>
+> ```
+> # 推荐：固定 commit（永不会被缓存改写）
+> https://raw.githubusercontent.com/esanwu-bot/IcDeliveryReleases/<commit-sha>/delivery-YYYYMMDD-Vx/manifest.csv
+>
+> # 次选：raw + 分支（仍有边缘缓存，必要时加 ?t=$(date +%s)）
+> https://raw.githubusercontent.com/esanwu-bot/IcDeliveryReleases/main/...
+> ```
+>
+> 实测教训：V8 复核期间 `cdn.jsdelivr.net` 返回的根 README 是 **16872 字节的 V6 版**，
+> 而 raw 源是 **26028 字节的 V8 版**。同一路径、两个内容 —— 复核方按 CDN 读会把
+> 已经修好的问题重新提一遍。**不要用 `jsdelivr` 判定本仓库内容。**
+
 ## 目录命名规则
 
 `delivery-YYYYMMDD`（当日首版）→ 同日再打包递增 `delivery-YYYYMMDD-V2` / `-V3` …
@@ -27,8 +44,33 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261101-V6` | 2026-11-01 V6 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率实测：三件 **1.0** / 两件 BOOST `0.9661` / `0.9623`；内容审校 `not_reviewed`） | review_candidate / not_approved；**打包自证链闭环**（清单每个哈希/指标出包前重算，不符即中断）、**唯一状态推导机**、新增 `verified_paragraph`、amax 点线排版确定性抽取、板卡 Thermal/ESD/AC 三段归属声明 |
 | `delivery-20261101-V7` | 2026-11-01 V7 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率：三件 **1.0** / BOOST `0.9661` / `0.9630`；内容审校 `not_reviewed`） | review_candidate / not_approved；**废止 `data_anchor`**，拆成 `row_anchor`/`paragraph_anchor`/`coord_no_fingerprint`/`container_verified` 四列 + `anchor_gate` 总闸；**分母补回隔离桶**（`ADS8568EVM-PDK` 14→49 行，闸门 `blocked`，`release_state` 退回 `PACKAGING_PASSED`）；**文档主体隔离**（`document_subject` / `subject_match`）；自证结论 38 项落盘；JSON 状态与事实表同步；`paragraph_sha256` 归一化口径文档化 |
 | `delivery-20261101-V8` | 2026-11-01 V8 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（同 V7：三件 **1.0** / BOOST `0.9661` / `0.9630`；内容审校仍 `not_reviewed`） | review_candidate / not_approved；**《交付说明.md》改为打包时按本包 manifest 渲染 + 自检逐格硬拦**（自检 38 → **39** 项）；`anchor_gate` 语义限定到「证据载体达门槛」，README 与包内说明各加**六级证据层级表**；页面五语种提示条补限定；`not_found` 全包 **1 → 0**；`ADS8568` `row_anchor` **19 → 28**、`weak` **28 → 20**；`ADS1201U` 缺列主动降级 → `anchor_gate` 由 pass 变 **blocked** |
+| `delivery-20261101-V9` | 2026-11-01 V9 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（同 V8，未重跑语言侧车） | review_candidate / not_approved；**三视图出图**（BGA 2D 球阵 + 3D 等轴测按原厂机械图绘制，共享封装图**内联**消除裂图）；**ADS8568EVM 补渲染 24 行板载电气**（页面 25 行/4 表 → **49 行/5 表**，13 条弱证据逐条带 `†`，分母与页面首次对齐）；`facts_verdict` 新增 **`partial_pass`**（`pass` + `blocked` 不再并存）；正向提示条改**按容器全页汇总**（37/108 → **108/108**）；`range` 结构**投毒收口**（`qc/range_guard.py`，全包抹除 1 条，顺带修掉 ADC 页 `to 26.25 dBm` 残句）；`BOOST-DRV8711` 卖点拆板级/器件两句；SEO 侧车注入 `data_subject` + `attribution`；自检 39 → **41** 项 |
 
-**推荐以 `delivery-20261101-V8` 为准**（最新）。V8 是**收尾版**：不扩张功能，
+**推荐以 `delivery-20261101-V9` 为准**（最新）。V9 处理 V8 全量复核
+（工程质量体系 **9.4/10 / Not Approved**）指出的 5 条新发现，并给出「新-1 隐形 24 行」的定性。
+
+**结论：新-1 是渲染层漏了，不是刻意不渲染。** `ADS8568EVM-PDK` 的 24 条板载电气行
+以前**一条都没上页面**：表体走合并入口（主表 + 隔离桶），而「要不要渲染」的判断
+用的是未合并的主表（该型号主表 0 条）—— `if elec:` 判空，整张表被跳过；
+同一个隔离桶里的 `absolute_max` 走的是合并入口，照常印了 11 条。于是变成
+**「审了、算进分母、卡住闸门，但读者看不见」**。V9 把两侧统一到同一个入口，
+并加显式小节名 `On-board Device Electrical Specifications (ADS8568)`。
+
+| 项 | V8 | V9 |
+|---|---|---|
+| ADS8568EVM 页面表数 / 行数 | 4 表 / 25 行 | **5 表 / 49 行** |
+| 板载电气行 | **0**（JSON 有 24） | **24**（13 条带 `†`） |
+| 分母 vs 页面 | 49 vs 25 | **49 vs 49** |
+| `259.7` / `36.6` / `IAVDD` / `Isolation` | 0 命中 | **全部命中** |
+| ADC 页正向提示覆盖 | 37/108 | **108/108**（含 64 条 AC） |
+| ADC 页 `to 26.25 dBm` 残句 | 有 | 无 |
+| 自检项 | 39 | **41**（新增事实表/风险队列行数） |
+
+其余四条：`facts_verdict` 新增 `partial_pass`（不再出现 pass + blocked 并存）；
+正向提示条按容器全页汇总；`BOOST-DRV8711` 卖点把板级供电与器件能力拆成两句；
+SEO 侧车注入 `data_subject` / `attribution`；根 README 顶部加 **CDN 缓存警告**。
+
+`delivery-20261101-V8` 是上一版**收尾版**：不扩张功能，
 把 V7 复审（工程质量体系 **9.2/10 / Not Approved**）列的问题做实。
 
 - **P0-1 交付说明与清单割裂 —— 改成生成式 + 硬拦**。V7 包根那份《交付说明.md》

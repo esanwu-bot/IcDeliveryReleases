@@ -1,0 +1,546 @@
+{
+  "generated_at": "2026-11-01T19:45:43+08:00",
+  "packaging_validation": "pass",
+  "engineering_validation": "not_approved",
+  "i18n_coverage": "measured",
+  "i18n_content_review": "not_reviewed",
+  "mpn_count": 5,
+  "model_directories": [
+    "ADC12DJ5200SE",
+    "ADS1201U-1_1K",
+    "ADS8568EVM-PDK",
+    "BOOST-DRV8711",
+    "BOOSTXL-C2KLED"
+  ],
+  "model_artifact_count": 56,
+  "zip_member_count": 66,
+  "zip_crc": "pass",
+  "source_hashes_unchanged": true,
+  "zip_sha256": "0884ce047a2a9d019dfef1f89d933294c091e34426798353fa9ab80bd8d064e7",
+  "zip_size": 12130705,
+  "hash_rule": "文本物料 sha256(CRLF→LF normalized)；PDF 与 ZIP 按原始字节 sha256，二进制不做归一（归一一次哈希就变了，复核方用 sha256sum 永远对不上）",
+  "verified_members": [
+    {
+      "member": "1101-V8_修复说明.md",
+      "sha256": "68c26cccbfc39105653e3331ce099b5e22011a6129f432193118424ed451c7bc"
+    },
+    {
+      "member": "1101-V9_修复说明.md",
+      "sha256": "e71a577bfc48a1354573d8695f1f7d6585637b845f848cef63b01707bf9fbbec"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.alts.json",
+      "sha256": "2e05dc1c0d5d3f2a24e9fd0caf356008740776cc05529231d1e74331e01933e2"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.de.html",
+      "sha256": "b144052ab3db9b19dd0e0af90b5b9fac510f261e2df820270bf7d307d6c6d29e"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.es.html",
+      "sha256": "0624ade16f5d9a33fc24af00e8a1b0f71167a1eab668c805dcf6bd9220fe8ee8"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.html",
+      "sha256": "8c205d7bdfaa9da26c1fe172434708b4f288ff3817039ea934cd5b2e27755561"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.i18n.json",
+      "sha256": "4d75c3c08da7da827314b0db35645e4f788d0a3a7c54cfc1aeed5227efdba40f"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.ja.html",
+      "sha256": "44f5dcf39debf783ed27b11a360ab08d90f040b8355cd40a3b2528b8bba40ccf"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.json",
+      "sha256": "2a0ba54ca053a83f86b405ce1cbd03636645a64d5bf4271b1b4d87f7df62d198"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.ko.html",
+      "sha256": "72698b0c16d8782f881f1985bdc48e1bf3459d9e385505a6d89ac85d10278c29"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.pdf",
+      "sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.seo.json",
+      "sha256": "d7b4c069663564e9523d87228d8a89d80f4736497185775603aefd2b1118ea8c"
+    },
+    {
+      "member": "ADC12DJ5200SE/ADC12DJ5200SE.symbols.html",
+      "sha256": "bd047a3ec7697c00de622ca86c95bca7c3aa50184a28e430089cf9c4c88e3ad9"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.alts.html",
+      "sha256": "bcb1e1895dba679345354d7bdd4b1358e65243ba56942953cbea1f442be3565c"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.alts.json",
+      "sha256": "1b3d1fce82b8586f9aff62dc8f644be5336e9a0f9ca96bc3d71e2ea7bb24e04b"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.de.html",
+      "sha256": "81fb4a9adf6aad5101bed8ccb4446dc89d116e21607a878be26cbc1268cb0dd0"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.es.html",
+      "sha256": "f0bcecf10f6e223e19c7b94fbd6ec57bc6bc9a9f05bebbd10d2cb1374651145c"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.html",
+      "sha256": "2b6ef11aab0917c9a57c9dc71c5d5e914fad424e4390f291651a6b2db2bc9c93"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.i18n.json",
+      "sha256": "d891e7b553b1ed8d52a4ec41d0455a37a57fd2548be174c55400e568219594c3"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.ja.html",
+      "sha256": "74f48921d92716e2a7917536cf0624f69a7b3123386f0d1da9577eb22f02b62d"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.json",
+      "sha256": "d14888576adc7c4bed0c9087088b9cae42017f384d30eaaf57e8738c6d7431d0"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.ko.html",
+      "sha256": "31573e07bf4910c7adc0f22c8dbe9d71a4b26234bb074b0efee54117b656db98"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.pdf",
+      "sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.seo.json",
+      "sha256": "491b3b2569ea9a7d40662494e70a54fbcdf94e8c0689fc677e09fa81f809fa9b"
+    },
+    {
+      "member": "ADS1201U-1_1K/ADS1201U-1_1K.symbols.html",
+      "sha256": "f10691be41915e366ea442b63239c0c317952fe22fd1acab9fcc5da5b1f577c7"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.alts.json",
+      "sha256": "b198a539f62b016acd3869ebae54c7c8fe6437a8ed82bbfeea62ec2bc4980dde"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.de.html",
+      "sha256": "124aaf52f19d4b16054bee9f38ee6719785faaacb76f209c78488b8ed5033de7"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.es.html",
+      "sha256": "78d0aeb23c91944926c6601bec2b72cc81f22f037d8b264175b5589216a0ff66"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.html",
+      "sha256": "dde12474c07059ad324546d86f3332b8de65621080174e5a7a70bdf417860d48"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.i18n.json",
+      "sha256": "0426dadb512ae8bb79d941cc2a3ab2164f81ba44eb3b4fdf74c718f438f93cd9"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.ja.html",
+      "sha256": "8b613a9c502763188c93db0499290df40633041bdec057d067141eab0c19ff3d"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.json",
+      "sha256": "a9cc6c942941b32d1a850faaedcc6afb8f773fa6d71a992f1d7bffe218592dab"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.ko.html",
+      "sha256": "610e073ca6c40698876a501facabe96c7a53676ff25b535d66eb33b5ed28a911"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.pdf",
+      "sha256": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.seo.json",
+      "sha256": "c7b2b7c9d935c3d900e3c0dc9a729f587702a04c9a9e76b2eec993e3c9f00a0b"
+    },
+    {
+      "member": "ADS8568EVM-PDK/ADS8568EVM-PDK.symbols.html",
+      "sha256": "a5a23e47a5aa667e1811fd181c154af78cc11623bbc2109743369b625e804c84"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.alts.json",
+      "sha256": "c6eab1e71f84591d5617d4b2d8cec9d52c2b3e5fd5f7d0d0577c400495060ce5"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.de.html",
+      "sha256": "b22c1b507c2e2ad187f4d9683d5567bd312869b5c6e7af49c27c1d1f55fd200c"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.es.html",
+      "sha256": "bb2912ec288584b38f81f14165b102603930a0d18bc6f3ca87849391e7df266a"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.html",
+      "sha256": "3bb2945292d2cbd9ca2269b0141e9d837663c48d28131b49a22c91c02152a3be"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.i18n.json",
+      "sha256": "687463f0e83650cc52dd11fec6e1e48e3f83588b0eea1ed3375ad8e6a0a2dbba"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.ja.html",
+      "sha256": "a7125184097a469f61a5b899d9ecf069748093112683e0817087d1639bc4988e"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.json",
+      "sha256": "71ca9d6866a56de480c17c78811b2e05dd9927f383640a66d4a5c43c681e0d95"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.ko.html",
+      "sha256": "14d940aecc9a7483be66a2fca8c50dbbcf03b0c9efc476f1657b6250ff59b0de"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.pdf",
+      "sha256": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.seo.json",
+      "sha256": "90d95ac724a37c646a21bb41f7d43bfb5c489176839b182759781cf99b7d29e0"
+    },
+    {
+      "member": "BOOST-DRV8711/BOOST-DRV8711.symbols.html",
+      "sha256": "826a5968f8a1794ce9a7b30aadcee81a43089ac8279dc029f4f35533a7a97dc2"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.alts.json",
+      "sha256": "ceedf54e81cc44f65e15452b63e585984deb51d22e2cba9949d211495a6e82ed"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.de.html",
+      "sha256": "f259644d178cb031cc39d4bb82a7504dd5f3ed970c07164e3c1e913baf4f211b"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.es.html",
+      "sha256": "b9999c070230d18b73dce19a06e68dd486c10d57f123928be7ba9d291f5df10e"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.html",
+      "sha256": "95902c7d5d0b699a2af1ff6a7dd1eec9d11d4c725e6b75657da77c49be3b6a6c"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.i18n.json",
+      "sha256": "2a62cf13319e770f842b4377fd20a4db1fc671dca6543b08664b18efeb38f98e"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.ja.html",
+      "sha256": "699599dcb28a7446d40cbb279781b9ec5716edc8059cdea75f243d16a9344ced"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.json",
+      "sha256": "29b8fec12b57811965dbe5ff6ab0fc5a0953ae23fd8979fbc375a3b0a211ec29"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.ko.html",
+      "sha256": "e3605d90b485949aa574812c0f0cfa4331bb56082393b029f5ed89a473b6865d"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.pdf",
+      "sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.seo.json",
+      "sha256": "2c11d47b8ee84789c8db1046801001c2285a261957228453b4eec43dd7c2e2bd"
+    },
+    {
+      "member": "BOOSTXL-C2KLED/BOOSTXL-C2KLED.symbols.html",
+      "sha256": "0597b2e60a283e410939a21d678fff8b4d8073b01f5a4bdae72c780203dd55fa"
+    },
+    {
+      "member": "facts_audit.csv",
+      "sha256": "42d34e029d1187fe62b4208bc07ccb67994dae599e59a2788f9f860409c30de9"
+    },
+    {
+      "member": "facts_audit.json",
+      "sha256": "b0753d18a36056b6e081e9dee558044378a43ba5685e38a8881d9cbb80338bbb"
+    },
+    {
+      "member": "manifest.csv",
+      "sha256": "7d00376d3114bdbf9a3d62c677fd183b3b797d4fb9b43f2718394ab5deffd0e7"
+    },
+    {
+      "member": "manifest.json",
+      "sha256": "92818171013b051a99c95447c9b2480ebedb3d981d552862517f9a77c776b178"
+    },
+    {
+      "member": "README.md",
+      "sha256": "784fb3517dd00f2fe901c605f4e8d2451cb465c8b58641fe7641055b178a99db"
+    },
+    {
+      "member": "risk_queue.csv",
+      "sha256": "6b5072e3fdc8df1e60a2536dad62d4250a5d3a1f2eafeceadd548d6d4d679521"
+    },
+    {
+      "member": "交付说明.md",
+      "sha256": "f8c84063ed123dafb486520bf97e4831ecb1e6f4ebbc52c46fcbf00fdfad69b1"
+    },
+    {
+      "member": "回复Reviewer.md",
+      "sha256": "d02bf4c61d0a00e0475aebc5d2f30613b09a2eceec2e4190cd33e5b43b790a81"
+    }
+  ],
+  "selfcheck": {
+    "schema": "bundle-selfcheck/v1",
+    "script": "qc/bundle_selfcheck.py（不复用打包器的哈希函数）",
+    "scope": "成员哈希 / 每条记录的锚定列与 i18n / 随包 PDF 哈希 / ZIP CRC / 交付说明与 manifest 一致性 / 事实表与风险队列行数",
+    "passed": true,
+    "n_items": 41,
+    "n_failed": 0,
+    "items": [
+      {
+        "item": "members.sha256",
+        "expected": 63,
+        "actual": 63,
+        "ok": true
+      },
+      {
+        "item": "record[ADC12DJ5200SE].row_anchor",
+        "expected": "99/108",
+        "actual": "99/108",
+        "ok": true
+      },
+      {
+        "item": "record[ADC12DJ5200SE].paragraph_anchor",
+        "expected": "9/108",
+        "actual": "9/108",
+        "ok": true
+      },
+      {
+        "item": "record[ADC12DJ5200SE].container_verified",
+        "expected": "0/108",
+        "actual": "0/108",
+        "ok": true
+      },
+      {
+        "item": "record[ADC12DJ5200SE].coord_anchor",
+        "expected": "108/108",
+        "actual": "108/108",
+        "ok": true
+      },
+      {
+        "item": "record[ADC12DJ5200SE].anchor_gate",
+        "expected": "pass",
+        "actual": "pass",
+        "ok": true
+      },
+      {
+        "item": "record[ADC12DJ5200SE].i18n",
+        "expected": "true/1.0000",
+        "actual": "true/1.0000",
+        "ok": true
+      },
+      {
+        "item": "record[ADC12DJ5200SE].pdf_sha256",
+        "expected": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+        "actual": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1201U-1_1K].row_anchor",
+        "expected": "36/50",
+        "actual": "36/50",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1201U-1_1K].paragraph_anchor",
+        "expected": "11/50",
+        "actual": "11/50",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1201U-1_1K].container_verified",
+        "expected": "0/50",
+        "actual": "0/50",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1201U-1_1K].coord_anchor",
+        "expected": "48/50",
+        "actual": "48/50",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1201U-1_1K].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1201U-1_1K].i18n",
+        "expected": "true/1.0000",
+        "actual": "true/1.0000",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1201U-1_1K].pdf_sha256",
+        "expected": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+        "actual": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+        "ok": true
+      },
+      {
+        "item": "record[ADS8568EVM-PDK].row_anchor",
+        "expected": "28/49",
+        "actual": "28/49",
+        "ok": true
+      },
+      {
+        "item": "record[ADS8568EVM-PDK].paragraph_anchor",
+        "expected": "1/49",
+        "actual": "1/49",
+        "ok": true
+      },
+      {
+        "item": "record[ADS8568EVM-PDK].container_verified",
+        "expected": "0/49",
+        "actual": "0/49",
+        "ok": true
+      },
+      {
+        "item": "record[ADS8568EVM-PDK].coord_anchor",
+        "expected": "29/49",
+        "actual": "29/49",
+        "ok": true
+      },
+      {
+        "item": "record[ADS8568EVM-PDK].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[ADS8568EVM-PDK].i18n",
+        "expected": "true/1.0000",
+        "actual": "true/1.0000",
+        "ok": true
+      },
+      {
+        "item": "record[ADS8568EVM-PDK].pdf_sha256",
+        "expected": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+        "actual": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+        "ok": true
+      },
+      {
+        "item": "record[BOOST-DRV8711].row_anchor",
+        "expected": "0/2",
+        "actual": "0/2",
+        "ok": true
+      },
+      {
+        "item": "record[BOOST-DRV8711].paragraph_anchor",
+        "expected": "2/2",
+        "actual": "2/2",
+        "ok": true
+      },
+      {
+        "item": "record[BOOST-DRV8711].container_verified",
+        "expected": "0/2",
+        "actual": "0/2",
+        "ok": true
+      },
+      {
+        "item": "record[BOOST-DRV8711].coord_anchor",
+        "expected": "2/2",
+        "actual": "2/2",
+        "ok": true
+      },
+      {
+        "item": "record[BOOST-DRV8711].anchor_gate",
+        "expected": "pass",
+        "actual": "pass",
+        "ok": true
+      },
+      {
+        "item": "record[BOOST-DRV8711].i18n",
+        "expected": "false/0.9672",
+        "actual": "false/0.9672",
+        "ok": true
+      },
+      {
+        "item": "record[BOOST-DRV8711].pdf_sha256",
+        "expected": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+        "actual": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+        "ok": true
+      },
+      {
+        "item": "record[BOOSTXL-C2KLED].row_anchor",
+        "expected": "0/5",
+        "actual": "0/5",
+        "ok": true
+      },
+      {
+        "item": "record[BOOSTXL-C2KLED].paragraph_anchor",
+        "expected": "5/5",
+        "actual": "5/5",
+        "ok": true
+      },
+      {
+        "item": "record[BOOSTXL-C2KLED].container_verified",
+        "expected": "0/5",
+        "actual": "0/5",
+        "ok": true
+      },
+      {
+        "item": "record[BOOSTXL-C2KLED].coord_anchor",
+        "expected": "5/5",
+        "actual": "5/5",
+        "ok": true
+      },
+      {
+        "item": "record[BOOSTXL-C2KLED].anchor_gate",
+        "expected": "pass",
+        "actual": "pass",
+        "ok": true
+      },
+      {
+        "item": "record[BOOSTXL-C2KLED].i18n",
+        "expected": "false/0.9636",
+        "actual": "false/0.9636",
+        "ok": true
+      },
+      {
+        "item": "record[BOOSTXL-C2KLED].pdf_sha256",
+        "expected": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+        "actual": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+        "ok": true
+      },
+      {
+        "item": "zip.sha256",
+        "expected": "0884ce047a2a9d019dfef1f89d933294c091e34426798353fa9ab80bd8d064e7",
+        "actual": "0884ce047a2a9d019dfef1f89d933294c091e34426798353fa9ab80bd8d064e7",
+        "ok": true
+      },
+      {
+        "item": "zip.crc",
+        "expected": "ok",
+        "actual": "ok",
+        "ok": true
+      },
+      {
+        "item": "delivery_note.consistency",
+        "expected": "逐型号与 manifest 一致且含本包实测表",
+        "actual": "一致",
+        "ok": true
+      },
+      {
+        "item": "facts_summary.facts_audit_rows",
+        "expected": 214,
+        "actual": 214,
+        "ok": true
+      },
+      {
+        "item": "facts_summary.risk_queue_rows",
+        "expected": 55,
+        "actual": 55,
+        "ok": true
+      }
+    ]
+  },
+  "self_check": "pass",
+  "self_check_items": "members / records(锚定列+i18n+PDF哈希) / zip / 校验报告 四组，均由 qc/bundle_selfcheck.py 从包内文件独立重算；逐项见 `selfcheck.items`"
+}
