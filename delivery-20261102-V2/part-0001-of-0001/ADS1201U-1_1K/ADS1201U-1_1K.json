@@ -1,0 +1,1105 @@
+{
+  "basic_info": {
+    "mpn": "ADS1201U-1/1K",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Data Converters",
+    "description": "The ADS1201 is a precision, 130dB dynamic range delta-sigma modulator operating from a single +5V supply. It features fully differential inputs, a two-wire interface, internal/external reference support, and on-chip calibration switches. Ideal for high-resolution measurement applications such as smart transmitters, industrial process control, weigh scales, chromatography, and portable instrumentation.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/ads1201.pdf",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号不在订货表逐字列出，但是 `ADS1201U` 的包装/等级变体写法（订货表共 4 条）→ 同一颗芯片"
+    ],
+    "datasheet_url_source": "mpn_rule_override",
+    "doc_type": "datasheet"
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Absolute Input Voltage Range",
+        "value": "0 to +5",
+        "unit": "V",
+        "condition": "With VBIAS(1)",
+        "range": {
+          "min": "0",
+          "max": "+5"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "ICATIONS ADS1201U PARAMETER CONDITIONS MIN TYP MAX UNITS ANALOG INPUT Absolute Input Voltage Range 0 +5 V With VBIAS(1) -10 +10 V Differential Input Voltage Range -5 +5 V With VBIAS(1) -20",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Differential Input Voltage Range",
+        "value": "-5 to +5",
+        "unit": "V",
+        "condition": "",
+        "range": {
+          "min": "-5",
+          "max": "+5"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "LOG INPUT Absolute Input Voltage Range 0 +5 V With VBIAS(1) -10 +10 V Differential Input Voltage Range -5 +5 V With VBIAS(1) -20 See Note 2 +20 V Input Impedance 250(4) kΩ Input Capacitance 8",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Input Impedance",
+        "value": "250",
+        "unit": "kΩ",
+        "condition": "4",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "Input Voltage Range -5 +5 V With VBIAS(1) -20 See Note 2 +20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynami",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Input Capacitance",
+        "value": "8",
+        "unit": "pF",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "V With VBIAS(1) -20 See Note 2 +20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 13",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Input Leakage Current",
+        "value": "5 to 50",
+        "unit": "pA",
+        "condition": "At TMIN to TMAX",
+        "range": {
+          "min": "5",
+          "max": "50"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "e Note 2 +20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwi",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "130",
+        "unit": "dB",
+        "condition": "10Hz Bandwidth(5)",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 1
+        },
+        "source": {
+          "page": 1,
+          "quote": "1 • FAX: (520) 889-1510 • Immediate Product Info: (800) 548-6132 High Dynamic Range DELTA-SIGMA MODULATOR ADS1201 +2.5V Reference Bias Generator Second-Order ∆Σ Modulator AVDD AGND REF OU",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "115 to 120",
+        "unit": "dB",
+        "condition": "60Hz Bandwidth(5)",
+        "range": {
+          "min": "115",
+          "max": "120"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwidth(5) 115(6) 120(6) dB 1kHz Bandwidth(5) 115(6) dB Integral Lin",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "115",
+        "unit": "dB",
+        "condition": "1kHz Bandwidth(5)",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwidth(5) 115(6) 120(6) dB 1kHz Bandwidth(5) 115(6) dB Integral Lin",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Integral Linearity Error",
+        "value": "±0.0015",
+        "unit": "%FSR",
+        "condition": "60Hz Bandwidth(5)",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "Hz Bandwidth(5) 115(6) 120(6) dB 1kHz Bandwidth(5) 115(6) dB Integral Linearity Error 60Hz Bandwidth(5) ±0.0015 %FSR 1kHz Bandwidth(5) ±0.0015 %FSR Offset Error(2) See Note 7 µV Offset Drif",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Integral Linearity Error",
+        "value": "±0.0015",
+        "unit": "%FSR",
+        "condition": "1kHz Bandwidth(5)",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "Hz Bandwidth(5) 115(6) 120(6) dB 1kHz Bandwidth(5) 115(6) dB Integral Linearity Error 60Hz Bandwidth(5) ±0.0015 %FSR 1kHz Bandwidth(5) ±0.0015 %FSR Offset Error(2) See Note 7 µV Offset Drif",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Offset Error",
+        "value": "not_specified",
+        "unit": "µV",
+        "condition": "See Note 7",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Offset Drift",
+        "value": "1",
+        "unit": "µV/°C",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 1
+        },
+        "source": {
+          "page": 1,
+          "quote": "tor Second-Order ∆Σ Modulator AVDD AGND REF OUT REF IN VBIAS CAL GAIN/OFFSET DGND DVDD AINP AINN MOUT BIASEN REFEN MCLK DESCRIPTION The ADS1201 is a precision, 130dB dynamic range, delta",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Gain Error",
+        "value": "not_specified",
+        "unit": "ppm",
+        "condition": "See Note 7",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Gain Error Drift",
+        "value": "1",
+        "unit": "µV/°C",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "th(5) 115(6) 120(6) dB 1kHz Bandwidth(5) 115(6) dB Integral Linearity Error 60Hz Bandwidth(5) ±0.0015 %FSR 1kHz Bandwidth(5) ±0.0015 %FSR Offset Error(2) See Note 7 µV Offset Drift(3) 1",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Common-Mode Rejection",
+        "value": "80 to 100",
+        "unit": "dB",
+        "condition": "At DC",
+        "range": {
+          "min": "80",
+          "max": "100"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "t(3) 1 µV/°C Gain Error(2) See Note 7 ppm Gain Error Drift(3) 1 µV/°C Common-Mode Rejection At DC 80 100 dB Power Supply Rejection 80 dB REFERENCE Internal Reference (REFOUT) 2.4 2.5 2.6 V Dr",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Power Supply Rejection",
+        "value": "80",
+        "unit": "dB",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "Gain Error(2) See Note 7 ppm Gain Error Drift(3) 1 µV/°C Common-Mode Rejection At DC 80 100 dB Power Supply Rejection 80 dB REFERENCE Internal Reference (REFOUT) 2.4 2.5 2.6 V Drift 25 ppm",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Internal Reference (REFOUT)",
+        "value": "2.4 to 2.6",
+        "unit": "V",
+        "condition": "",
+        "range": {
+          "min": "2.4",
+          "max": "2.6"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "DVDD = +5V, MCLK = 320kHz, REFEN LOW, BIASEN LOW, and external +2.5V reference, unless otherwise specified. The information provided herein is believed to be reliable; however, BURR-BROWN",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Drift",
+        "value": "25",
+        "unit": "ppm/°C",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "R 1kHz Bandwidth(5) ±0.0015 %FSR Offset Error(2) See Note 7 µV Offset Drift(3) 1 µV/°C Gain Error(2) See Note 7 ppm Gain Error Drift(3) 1 µV/°C Common-Mode Rejection At DC 80 100 dB Pow",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Noise",
+        "value": "50",
+        "unit": "µVp-p",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "B REFERENCE Internal Reference (REFOUT) 2.4 2.5 2.6 V Drift 25 ppm/°C Noise 50 µVp-p Load Current Source or Sink -1 1 mA Output Impedance 2 Ω External Reference (REFIN) 2.0 3.0 V Load C",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Load Current",
+        "value": "-1 to 1",
+        "unit": "mA",
+        "condition": "Source or Sink",
+        "range": {
+          "min": "-1",
+          "max": "1"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "+20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwidth(5) 1",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Output Impedance",
+        "value": "2",
+        "unit": "Ω",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "Input Voltage Range -5 +5 V With VBIAS(1) -20 See Note 2 +20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynami",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "External Reference (REFIN)",
+        "value": "2.0 to 3.0",
+        "unit": "V",
+        "condition": "",
+        "range": {
+          "min": "2.0",
+          "max": "3.0"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "DVDD = +5V, MCLK = 320kHz, REFEN LOW, BIASEN LOW, and external +2.5V reference, unless otherwise specified. The information provided herein is believed to be reliable; however, BURR-BROWN",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Load Current",
+        "value": "2.5",
+        "unit": "µA",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "+20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwidth(5) 1",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "VBIAS Output",
+        "value": "3.15 to 3.45",
+        "unit": "V",
+        "condition": "Using Internal Reference",
+        "range": {
+          "min": "3.15",
+          "max": "3.45"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "V Drift 25 ppm/°C Noise 50 µVp-p Load Current Source or Sink -1 1 mA Output Impedance 2 Ω External Reference (REFIN) 2.0 3.0 V Load Current 2.5 µA VBIAS Output Using Internal Reference",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Drift",
+        "value": "50",
+        "unit": "ppm/°C",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "R 1kHz Bandwidth(5) ±0.0015 %FSR Offset Error(2) See Note 7 µV Offset Drift(3) 1 µV/°C Gain Error(2) See Note 7 ppm Gain Error Drift(3) 1 µV/°C Common-Mode Rejection At DC 80 100 dB Pow",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Load Current",
+        "value": "10",
+        "unit": "mA",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "+20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwidth(5) 1",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Logic Levels: VIH (MCLK)",
+        "value": "2.0 to DVDD +0.3",
+        "unit": "V",
+        "condition": "IIH = +5µA",
+        "range": {
+          "min": "2.0",
+          "max": "DVDD +0.3"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "ent 10 mA DIGITAL INPUT/OUTPUT Logic Family TTL Compatible CMOS Logic Levels: VIH (MCLK) IIH = +5µA 2.0 DVDD +0.3 V VIL (MCLK) IIL = +5µA -0.3 0.8 V VOH (MOUT) IOH = 2 TTL Loads 2.4 V VO",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Logic Levels: VIL (MCLK)",
+        "value": "-0.3 to 0.8",
+        "unit": "V",
+        "condition": "IIL = +5µA",
+        "range": {
+          "min": "-0.3",
+          "max": "0.8"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "ent 10 mA DIGITAL INPUT/OUTPUT Logic Family TTL Compatible CMOS Logic Levels: VIH (MCLK) IIH = +5µA 2.0 DVDD +0.3 V VIL (MCLK) IIL = +5µA -0.3 0.8 V VOH (MOUT) IOH = 2 TTL Loads 2.4 V VO",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "VOH (MOUT)",
+        "value": "2.4",
+        "unit": "V",
+        "condition": "IOH = 2 TTL Loads",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "CLK) IIH = +5µA 2.0 DVDD +0.3 V VIL (MCLK) IIL = +5µA -0.3 0.8 V VOH (MOUT) IOH = 2 TTL Loads 2.4 V VOL (MOUT) IOL = 2 TTL Loads 0.4 V MCLK Frequency 0.02 1 MHz POWER SUPPLY REQUIREMEN",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "VOL (MOUT)",
+        "value": "0.4",
+        "unit": "V",
+        "condition": "IOL = 2 TTL Loads",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "CLK) IIH = +5µA 2.0 DVDD +0.3 V VIL (MCLK) IIL = +5µA -0.3 0.8 V VOH (MOUT) IOH = 2 TTL Loads 2.4 V VOL (MOUT) IOL = 2 TTL Loads 0.4 V MCLK Frequency 0.02 1 MHz POWER SUPPLY REQUIREMEN",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "MCLK Frequency",
+        "value": "0.02 to 1",
+        "unit": "MHz",
+        "condition": "",
+        "range": {
+          "min": "0.02",
+          "max": "1"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "MOUT) IOH = 2 TTL Loads 2.4 V VOL (MOUT) IOL = 2 TTL Loads 0.4 V MCLK Frequency 0.02 1 MHz POWER SUPPLY REQUIREMENTS Power Supply Voltage Specified Performance 4.75 5.25 V Supply Current An",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Power Supply Voltage",
+        "value": "4.75 to 5.25",
+        "unit": "V",
+        "condition": "Specified Performance",
+        "range": {
+          "min": "4.75",
+          "max": "5.25"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "1U PARAMETER CONDITIONS MIN TYP MAX UNITS ANALOG INPUT Absolute Input Voltage Range 0 +5 V With VBIAS(1) -10 +10 V Differential Input Voltage Range -5 +5 V With VBIAS(1) -20 See Note 2 +2",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Supply Current: Analog Current",
+        "value": "4.6",
+        "unit": "mA",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "+20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwidth(5) 1",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Supply Current: Digital Current",
+        "value": "0.4",
+        "unit": "mA",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "+20 V Input Impedance 250(4) kΩ Input Capacitance 8 pF Input Leakage Current 5 50 pA At TMIN to TMAX 1 nA SYSTEM PERFORMANCE Dynamic Range 10Hz Bandwidth(5) 130(6) dB 60Hz Bandwidth(5) 1",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Additional Analog Current: REFOUT Enabled",
+        "value": "1.6",
+        "unit": "mA",
+        "condition": "No Load",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "75 5.25 V Supply Current Analog Current 4.6 mA Digital Current 0.4 mA Additional Analog Current REFOUT Enabled No Load 1.6 mA VBIAS Enabled No Load 1 mA Total Power Dissipation REFOUT, VBIAS",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Additional Analog Current: VBIAS Enabled",
+        "value": "1",
+        "unit": "mA",
+        "condition": "No Load",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "75 5.25 V Supply Current Analog Current 4.6 mA Digital Current 0.4 mA Additional Analog Current REFOUT Enabled No Load 1.6 mA VBIAS Enabled No Load 1 mA Total Power Dissipation REFOUT, VBIAS",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Total Power Dissipation",
+        "value": "25 to 40",
+        "unit": "mW",
+        "condition": "REFOUT, VBIAS Disabled",
+        "range": {
+          "min": "25",
+          "max": "40"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "REFOUT Enabled No Load 1.6 mA VBIAS Enabled No Load 1 mA Total Power Dissipation REFOUT, VBIAS Disabled 25 40 mW TEMPERATURE RANGE Specified Performance -40 +85 °C NOTES: (1) This range is s",
+          "method": "label_value_colocation"
+        }
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "Analog Input: Current",
+        "value": "±100, Momentary; ±10, Continuous",
+        "unit": "mA",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Analog Input: Voltage",
+        "value": "AGND –0.3V to AVDD +0.3V",
+        "unit": "V",
+        "range": {
+          "min": "AGND –0.3V",
+          "max": "AVDD +0.3V"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        }
+      },
+      {
+        "name": "AVDD to DVDD",
+        "value": "-0.3 to 6",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "6"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        }
+      },
+      {
+        "name": "AVDD to AGND",
+        "value": "-0.3 to 6",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "6"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        }
+      },
+      {
+        "name": "DVDD to DGND",
+        "value": "-0.3 to 6",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "6"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        }
+      },
+      {
+        "name": "AGND to DGND",
+        "value": "±0.3",
+        "unit": "V",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "REFIN Voltage to AGND",
+        "value": "-0.3 to AVDD +0.3V",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "AVDD +0.3V"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        }
+      },
+      {
+        "name": "Digital Input Voltage to DGND",
+        "value": "-0.3 to DVDD +0.3V",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "DVDD +0.3V"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        }
+      },
+      {
+        "name": "Digital Output Voltage to DGND",
+        "value": "-0.3 to DVDD +0.3V",
+        "unit": "V",
+        "range": {
+          "min": "-0.3",
+          "max": "DVDD +0.3V"
+        },
+        "range_origin": "derived_from_value",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        }
+      },
+      {
+        "name": "Lead Temperature (soldering, 10s)",
+        "value": "300",
+        "unit": "°C",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Internal Power Dissipation",
+        "value": "500",
+        "unit": "mW",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      }
+    ],
+    "thermal": [],
+    "esd": [],
+    "package": {
+      "type": "SOIC",
+      "pins": 16,
+      "dimensions": ""
+    },
+    "temperature": {
+      "operating": "-40°C to +85°C",
+      "storage": "not_specified"
+    },
+    "scope": "device"
+  },
+  "features": [
+    "130dB DYNAMIC RANGE",
+    "FULLY DIFFERENTIAL INPUT",
+    "TWO-WIRE INTERFACE",
+    "INTERNAL/EXTERNAL REFERENCE",
+    "ON-CHIP SWITCHES FOR CALIBRATION"
+  ],
+  "applications": [
+    "INDUSTRIAL PROCESS CONTROL",
+    "INSTRUMENTATION",
+    "SMART TRANSMITTERS",
+    "PORTABLE INSTRUMENTS",
+    "WEIGH SCALES",
+    "PRESSURE TRANSDUCERS"
+  ],
+  "pin_configuration": [
+    {
+      "pin": 1,
+      "name": "AVDD",
+      "description": "Analog Supply, +5V nominal."
+    },
+    {
+      "pin": 2,
+      "name": "REFOUT",
+      "description": "Internal Reference Voltage Output: +2.5V nominal."
+    },
+    {
+      "pin": 3,
+      "name": "REFIN",
+      "description": "Reference Voltage Input."
+    },
+    {
+      "pin": 4,
+      "name": "NIC",
+      "description": "Not Internally Connected."
+    },
+    {
+      "pin": 5,
+      "name": "AINP",
+      "description": "Noninverting Input."
+    },
+    {
+      "pin": 6,
+      "name": "AINN",
+      "description": "Inverting Input."
+    },
+    {
+      "pin": 7,
+      "name": "AGND",
+      "description": "Analog Ground."
+    },
+    {
+      "pin": 8,
+      "name": "VBIAS",
+      "description": "Bias Voltage Output, nominally +3.3V (with +2.5V reference)."
+    },
+    {
+      "pin": 9,
+      "name": "BIASEN",
+      "description": "Bias Voltage Enable Input (HIGH = enabled, LOW = disabled)."
+    },
+    {
+      "pin": 10,
+      "name": "GAIN/OFFSET",
+      "description": "Gain/Offset Calibration Select Input (with CAL LOW; HIGH = gain configuration, LOW = offset configuration)."
+    },
+    {
+      "pin": 11,
+      "name": "CAL",
+      "description": "Calibration Control Input (HIGH = normal operation, LOW = gain or offset calibration configuration)."
+    },
+    {
+      "pin": 12,
+      "name": "DGND",
+      "description": "Digital Ground."
+    },
+    {
+      "pin": 13,
+      "name": "DVDD",
+      "description": "Digital Supply, +5V nominal."
+    },
+    {
+      "pin": 14,
+      "name": "MCLK",
+      "description": "Modulator Clock Input. CMOS compatible."
+    },
+    {
+      "pin": 15,
+      "name": "MOUT",
+      "description": "Modulator Output."
+    },
+    {
+      "pin": 16,
+      "name": "REFEN",
+      "description": "REFOUT Voltage Enable Input (HIGH = enabled, LOW = disabled)."
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "ADS1201U",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 40,
+      "packaging": "Rails"
+    },
+    {
+      "mpn": "ADS1201U/1K",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 1000,
+      "packaging": "Tape and Reel"
+    },
+    {
+      "mpn": "ADS1201U/1KG4",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 1000,
+      "packaging": "Tape and Reel"
+    },
+    {
+      "mpn": "ADS1201UG4",
+      "package": "SOIC",
+      "marking": "ADS1201U",
+      "moq": 40,
+      "packaging": "Rails"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "ADS1201U-1/1K Delta-Sigma Modulator, 130dB Dynamic Range, SOIC-16",
+    "title_zh": "ADS1201U-1/1K 130dB动态范围Delta-Sigma调制器，SOIC-16封装",
+    "meta_description_en": "ADS1201U-1/1K: Precision 130dB dynamic range delta-sigma modulator with fully differential inputs, two-wire interface, and on-chip calibration. Ideal for industrial process control, smart transmitters, and portable instrumentation. SOIC-16 package.",
+    "meta_description_zh": "ADS1201U-1/1K：精密130dB动态范围Delta-Sigma调制器，全差分输入，两线接口，片上校准。适用于工业过程控制、智能变送器和便携式仪器。SOIC-16封装。",
+    "keywords": [
+      "ADS1201U-1/1K",
+      "delta-sigma modulator",
+      "130dB dynamic range",
+      "SOIC-16",
+      "analog-to-digital converter",
+      "high resolution measurement"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+    "parse_timestamp": "2026-10-31T21:39:32+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.9,
+    "prompt_version": "v3",
+    "requested_mpn": "ADS1201U-1/1K",
+    "deterministic_extract": {},
+    "core_validation": "pass",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "normalize": {
+      "datasheet_url": {
+        "action": "overridden",
+        "from": "https://source.z2data.com/2020/10/21/10/5/40/945/ads1201.pdf",
+        "to": "https://www.ti.com/lit/ds/symlink/ads1201.pdf",
+        "source": "mpn_rule_override"
+      },
+      "doc_type": {
+        "changed": true,
+        "from": null,
+        "to": "datasheet"
+      },
+      "temperature": {
+        "changed": false,
+        "operating": "-40°C to +85°C"
+      },
+      "row_sources": {
+        "added": 35,
+        "rows": 37
+      },
+      "temperature_blank_filled": [
+        "storage"
+      ],
+      "verification": {
+        "stamped": 0
+      },
+      "pdf": "data\\pdfs\\ADS1201U-1_1K__ads1201.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 16,
+        "sha256": "63c6c643ce02908454f33b91313e55d77595f3cdedc691a4b0dd8fb14c45595e"
+      },
+      "thermal": {
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "esd": {
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "vcmi_vid": {
+        "count": 1,
+        "sha256": "e5bceafecf470d392629f33cc07b3951e7e8b24bc31b73aea9ed57bcbd33eec5"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点"
+  },
+  "pin_scope": "device",
+  "multi_language": {
+    "ja": {
+      "title": "ADS1201U-1/1K デルタシグマ変調器、130dBダイナミックレンジ、SOIC-16",
+      "description": "ADS1201は、単一+5V電源で動作する高精度130dBダイナミックレンジのデルタシグマ変調器です。完全差動入力、2線式インターフェース、内部/外部リファレンス対応、オンチップキャリブレーションスイッチを備えています。スマートトランシーダー、産業プロセス制御、重量計、クロマトグラフィー、ポータブル計測機器など、高分解能測定アプリケーションに最適です。",
+      "meta": "ADS1201U-1/1K：高精度130dBダイナミックレンジのデルタシグマ変調器。完全差動入力、2線式インターフェース、オンチップキャリブレーションを搭載。産業プロセス制御、スマートトランシーダー、ポータブル計測機器に最適。SOIC-16パッケージ。",
+      "features": [
+        "130dB ダイナミックレンジ",
+        "完全差動入力",
+        "2線式インターフェース",
+        "内部/外部リファレンス",
+        "キャリブレーション用オンチップスイッチ"
+      ],
+      "applications": [
+        "産業プロセス制御",
+        "計測機器",
+        "スマートトランシーダー",
+        "ポータブル機器",
+        "重量計",
+        "圧力センサ"
+      ]
+    },
+    "ko": {
+      "title": "ADS1201U-1/1K 델타-시그마 모듈레이터, 130dB 동적 범위, SOIC-16",
+      "description": "ADS1201은 단일 +5V 전원에서 작동하는 정밀도 130dB 동적 범위 델타-시그마 모듈레이터입니다. 완전 차동 입력, 두 개의 선 인터페이스, 내부/외부 기준 지원 및 내장 캘리브레이션 스위치를 특징으로 합니다. 스마트 트랜스미터, 산업 공정 제어, 체중계, 크로마토그래피, 휴대용 계측기 등 고해상도 측정 응용 분야에 이상적입니다.",
+      "meta": "ADS1201U-1/1K: 정밀도 130dB 동적 범위 델타-시그마 모듈레이터로 완전 차동 입력, 두 개의 선 인터페이스, 내장 캘리브레이션을 갖추고 있습니다. 산업 공정 제어, 스마트 트랜스미터, 휴대용 계측기 등에 적합합니다. SOIC-16 패키지.",
+      "features": [
+        "130dB 동적 범위",
+        "완전 차동 입력",
+        "두 개의 선 인터페이스",
+        "내부/외부 기준",
+        "캘리브레이션을 위한 내장 스위치"
+      ],
+      "applications": [
+        "산업 공정 제어",
+        "계측기",
+        "스마트 트랜스미터",
+        "휴대용 장비",
+        "체중계",
+        "압력 변환기"
+      ]
+    },
+    "de": {
+      "title": "ADS1201U-1/1K Delta-Sigma-Modulator, 130dB Dynamikbereich, SOIC-16",
+      "description": "Der ADS1201 ist ein präziser Delta-Sigma-Modulator mit 130dB Dynamikbereich, der von einer einzigen +5V-Versorgungsspannung betrieben wird. Er verfügt über vollständig differenzielle Eingänge, eine Zweidraht-Schnittstelle, Unterstützung für interne/externe Referenzspannungen sowie On-Chip-Kalibrierschalter. Ideal für hochauflösende Messanwendungen wie intelligente Transmitter, industrielle Prozesssteuerung, Waagen, Chromatographie und tragbare Instrumente.",
+      "meta": "ADS1201U-1/1K: Präzisions-Delta-Sigma-Modulator mit 130dB Dynamikbereich, vollständig differenziellen Eingängen, Zweidraht-Schnittstelle und On-Chip-Kalibrierung. Ideal für industrielle Prozesssteuerung, intelligente Transmitter und tragbare Instrumente. Gehäuse SOIC-16.",
+      "features": [
+        "130dB DYNAMIKBEREICH",
+        "VOLLSTÄNDIG DIFFERENZIELLE EINGÄNGE",
+        "ZWEIDRAHT-SCHNITTSTELLE",
+        "INTERNE/EXTERNE REFERENZ",
+        "ON-CHIP-SCHALTER FÜR KALIBRIERUNG"
+      ],
+      "applications": [
+        "INDUSTRIELLE PROZESSSTEUEURUNG",
+        "INSTRUMENTIERUNG",
+        "INTELLIGENTE TRANSMITTER",
+        "TRAGBARE INSTRUMENTE",
+        "WAAGEN",
+        "DRUCKSINNSORE"
+      ]
+    },
+    "es": {
+      "title": "Modulador delta-sigma ADS1201U-1/1K, rango dinámico de 130dB, SOIC-16",
+      "description": "El ADS1201 es un modulador delta-sigma de alta precisión con rango dinámico de 130dB que opera con una única fuente de alimentación de +5V. Cuenta con entradas totalmente diferenciales, interfaz de dos hilos, soporte para referencia interna o externa y interruptores integrados para calibración. Ideal para aplicaciones de medición de alta resolución como transmisores inteligentes, control de procesos industriales, balanzas, cromatografía y equipos de instrumentación portátiles.",
+      "meta": "ADS1201U-1/1K: Modulador delta-sigma de rango dinámico de 130dB con entradas totalmente diferenciales, interfaz de dos hilos y calibración integrada. Ideal para control de procesos industriales, transmisores inteligentes y equipos de instrumentación portátil. Paquete SOIC-16.",
+      "features": [
+        "RANGO DINÁMICO DE 130dB",
+        "ENTRADAS TOTALMENTE DIFERENCIALES",
+        "INTERFAZ DE DOS HILOS",
+        "REFERENCIA INTERNA/EXTERNA",
+        "INTERRUPTORES INTEGRADOS PARA CALIBRACIÓN"
+      ],
+      "applications": [
+        "CONTROL DE PROCESOS INDUSTRIALES",
+        "INSTRUMENTACIÓN",
+        "TRANSMISORES INTELIGENTES",
+        "INSTRUMENTOS PORTÁTILES",
+        "BALANZAS",
+        "TRANSDUCTORES DE PRESIÓN"
+      ]
+    }
+  }
+}

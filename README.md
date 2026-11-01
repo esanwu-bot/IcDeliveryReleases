@@ -21,9 +21,11 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261031-V4` | 2026-10-31 V4 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；核心字段**可复现** |
 | `delivery-20261101` | 2026-11-01 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；三个 P0 **已收口**（`gate`: 2×PATCHED / 3×CLEAN） |
 | `delivery-20261102` | 2026-11-02 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**原厂 PDF 随包** + 逐行事实表 + 身份硬门禁（`release_state` 最高 `IDENTITY_APPROVED`） |
+| `delivery-20261102-V2` | 2026-11-02 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | 同上，**数据与物料字节未变**；补《回复Reviewer.md》+ 明写「已含全部原厂 PDF」承诺 |
 
-**推荐以 `delivery-20261102` 为准**（最新）：唯一一版**包内自带原件**的交付，
-复核方可独立重算哈希、可逐行翻页对照，不再依赖发布说明。
+**推荐以 `delivery-20261102-V2` 为准**（最新）：唯一一版**包内自带原件**、
+且把「怎么核」写成成文答复的交付。复核方可独立重算哈希、可逐行翻页对照，
+不再依赖发布说明。V2 与 1102 的差异**只有文档**，已核过的数据不必重核。
 
 ### 1102 相对 1101 的变化（评审回应）
 

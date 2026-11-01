@@ -1,0 +1,1239 @@
+{
+  "basic_info": {
+    "mpn": "ADS8568EVM-PDK",
+    "manufacturer": "Texas Instruments",
+    "category": "Evaluation Boards & Kits",
+    "subcategory": "Evaluation Boards",
+    "description": "ADS8568EVM-PDK is a Texas Instruments evaluation board assembled around the onboard ADS8568. It is intended for bench evaluation of that device; the board-level specifications are not stated in the source document, which describes the onboard device rather than the assembled board.",
+    "datasheet_url": "",
+    "identity": "evaluation_board",
+    "identity_state": "IDENTITY_REVIEW",
+    "identity_rule": "TI_BOARD_SUFFIX_EVM",
+    "identity_confidence": "high",
+    "identity_evidence": [
+      "料号主体以 `EVM` 结尾，命中规则 TI_BOARD_SUFFIX_EVM（候选身份 evaluation_board，置信度 high）",
+      "请求料号不在 datasheet 订货表内（共 10 条）",
+      "缺少原厂板卡证据（无 EVM 用户指南 / 产品页映射）→ 人工确认后再定身份"
+    ],
+    "device_mpn": "ADS8568",
+    "document_scope": "onboard_device_datasheet",
+    "document_evidence": [
+      {
+        "kind": "device_document",
+        "device_mpn": "ADS8568",
+        "excerpt": "\n--- Page 1 ---\n70\n72\n74\n76\n78\n80\n82\n84\n86\n88\n90\n92\n94\n−40 −25 −10\n5\n20\n35\n50\n65\n80\n95\n110 125\nTemperature (°C)\nSignal-to-Noise Ratio (dB)\nADS8568\nADS8548\nADS8528\nG016 \nSAR ADC\nControl\nLogic\nConfig\nRegister\nI/O\nSAR ADC\nSAR ADC\nSAR ADC\nSAR ADC\nSAR ADC\nSAR ADC\nSAR ADC\nString DAC\nCH_A0\nCH_A1\nCH_B0\nCH_B1\nCH_C0\nCH_C1\nCH_D0\nCH_D1\nREFIO\nParallel\nor Serial\nData Bus\nControl\nSignal\nBus\nClock\nGenerator\n2.5-V, 3-V\nReference\nProduct\nFolder\nOrder\nNow\nTechnical\nDocuments\nTools &\nSoftware\nSupport &\nCommunity\nReference\nDesign\nAn IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, c"
+      }
+    ],
+    "device_datasheet_url": "https://www.ti.com/lit/ds/sbas543c/sbas543c.pdf",
+    "device_category": "Integrated Circuits (ICs)",
+    "device_subcategory": "Data Acquisition - ADCs",
+    "device_description": "The ADS8568 is a 16-bit, 8-channel, simultaneous sampling analog-to-digital converter with excellent AC performance, featuring a signal-to-noise ratio of 91.5 dB and total harmonic distortion of –94 dB. It supports selectable parallel or serial interface, programmable internal reference from 0.5 V to 3.0 V, and operates over an extended industrial temperature range of –40°C to +125°C. Available in 64-pin VQFN and LQFP packages.",
+    "doc_type": "datasheet",
+    "doc_revision": {
+      "doc_number": "SBAS543",
+      "revision": "C",
+      "doc_id": "SBAS543C",
+      "issued": "AUGUST 2011",
+      "revised": "FEBRUARY 2016",
+      "page": 1
+    }
+  },
+  "specs": {
+    "electrical": [],
+    "absolute_max": [],
+    "thermal": [
+      {
+        "name": "RθJA",
+        "value": "22",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "9.0",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJB",
+        "value": "3.6",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJT",
+        "value": "0.1",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJB",
+        "value": "2.9",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(bot)",
+        "value": "0.3",
+        "unit": "°C/W"
+      }
+    ],
+    "esd": [
+      {
+        "name": "HBM",
+        "value": "±2500",
+        "unit": "V"
+      },
+      {
+        "name": "CDM",
+        "value": "±500",
+        "unit": "V"
+      }
+    ],
+    "package": {
+      "type": "Evaluation Board",
+      "pins": 0,
+      "dimensions": "",
+      "onboard_device": "ADS8568",
+      "onboard_package": "64-Pin VQFN",
+      "onboard_dimensions": "7.3-mm x 7.3-mm",
+      "onboard_package_status": "not_confirmed_as_mounted",
+      "onboard_dimensions_status": "not_confirmed_as_mounted"
+    },
+    "temperature": {
+      "operating": "not_specified",
+      "storage": "not_specified"
+    },
+    "scope": "onboard_device",
+    "onboard_device_specs": {
+      "device_mpn": "ADS8568",
+      "scope": "onboard_device",
+      "source": "onboard_device_datasheet",
+      "electrical": [
+        {
+          "name": "Resolution",
+          "value": "16",
+          "unit": "Bits",
+          "condition": ""
+        },
+        {
+          "name": "Maximum Data Rate per Channel: Parallel Interface",
+          "value": "510",
+          "unit": "kSPS",
+          "condition": ""
+        },
+        {
+          "name": "Maximum Data Rate per Channel: Serial Interface",
+          "value": "400",
+          "unit": "kSPS",
+          "condition": ""
+        },
+        {
+          "name": "Signal-to-Noise Ratio (SNR)",
+          "value": "91.5",
+          "unit": "dB",
+          "condition": "At fIN = 10 kHz"
+        },
+        {
+          "name": "Total Harmonic Distortion (THD)",
+          "value": "-94",
+          "unit": "dB",
+          "condition": "At fIN = 10 kHz"
+        },
+        {
+          "name": "Spurious-Free Dynamic Range (SFDR)",
+          "value": "92",
+          "unit": "dB",
+          "condition": "At fIN = 10 kHz"
+        },
+        {
+          "name": "Channel-to-Channel Isolation",
+          "value": "120",
+          "unit": "dB",
+          "condition": "At fIN = 10 kHz"
+        },
+        {
+          "name": "Analog Supply Voltage (AVDD)",
+          "value": "4.5 to 5.5",
+          "unit": "V",
+          "condition": ""
+        },
+        {
+          "name": "Digital I/O Supply Voltage (DVDD)",
+          "value": "2.7 to 5.5",
+          "unit": "V",
+          "condition": ""
+        },
+        {
+          "name": "Input Positive Supply Voltage (HVDD)",
+          "value": "5.0 to 16.5",
+          "unit": "V",
+          "condition": ""
+        },
+        {
+          "name": "Input Negative Supply Voltage (HVSS)",
+          "value": "-16.5 to -5.0",
+          "unit": "V",
+          "condition": ""
+        },
+        {
+          "name": "Analog Supply Current (IAVDD)",
+          "value": "36.6 to 48.4",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Buffer I/O Supply Current (IDVDD)",
+          "value": "0.5 to 2.0",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Input Positive Supply Current (IHVDD)",
+          "value": "2.3 to 3.2",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Input Negative Supply Current (IHVSS)",
+          "value": "2.7 to 3.6",
+          "unit": "mA",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Power Dissipation",
+          "value": "259.7 to 389.4",
+          "unit": "mW",
+          "condition": "fDATA = maximum"
+        },
+        {
+          "name": "Conversion Time",
+          "value": "1.7",
+          "unit": "μs",
+          "condition": "CLKSEL = 0"
+        },
+        {
+          "name": "Clock Cycles per Conversion",
+          "value": "19 to 20",
+          "unit": "Cycles",
+          "condition": "ADS85x8, tCCLK or tXCLK"
+        },
+        {
+          "name": "Acquisition Time",
+          "value": "280",
+          "unit": "ns",
+          "condition": ""
+        },
+        {
+          "name": "BUSY low to CS low time",
+          "value": "86",
+          "unit": "ns",
+          "condition": "ADS8568, CLKSEL = 0"
+        },
+        {
+          "name": "RD pulse duration",
+          "value": "20",
+          "unit": "ns",
+          "condition": ""
+        },
+        {
+          "name": "Output data to RD or CS rising edge hold time",
+          "value": "5",
+          "unit": "ns",
+          "condition": ""
+        },
+        {
+          "name": "Input Common-Mode Voltage (RANGE bit=0)",
+          "value": "-4 VREF to 4 VREF",
+          "unit": "",
+          "condition": "RANGE pin, RANGE bit = 0"
+        },
+        {
+          "name": "Input Common-Mode Voltage (RANGE bit=1)",
+          "value": "-2 VREF to 2 VREF",
+          "unit": "",
+          "condition": "RANGE pin, RANGE bit = 1"
+        }
+      ],
+      "absolute_max": [
+        {
+          "name": "Supply Voltage (HVDD to AGND)",
+          "value": "-0.3 to 18",
+          "unit": "V"
+        },
+        {
+          "name": "Supply Voltage (HVSS to AGND)",
+          "value": "-18 to 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Supply Voltage (AVDD to AGND)",
+          "value": "-0.3 to 6",
+          "unit": "V"
+        },
+        {
+          "name": "Supply Voltage (DVDD to DGND)",
+          "value": "-0.3 to 6",
+          "unit": "V"
+        },
+        {
+          "name": "Analog Input Voltage",
+          "value": "HVSS – 0.3 to HVDD + 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Reference Input Voltage",
+          "value": "AGND – 0.3 to AVDD + 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Digital Input Voltage",
+          "value": "DGND – 0.3 to DVDD + 0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Ground Voltage Difference (AGND to DGND)",
+          "value": "±0.3",
+          "unit": "V"
+        },
+        {
+          "name": "Input Current to All Pins Except Supply",
+          "value": "±10",
+          "unit": "mA"
+        },
+        {
+          "name": "Maximum Virtual Junction Temperature (TJ)",
+          "value": "150",
+          "unit": "°C"
+        },
+        {
+          "name": "Storage Temperature (Tstg)",
+          "value": "-65 to 150",
+          "unit": "°C"
+        }
+      ],
+      "temperature": {
+        "operating": "-40 to 125",
+        "storage": "-65 to 150"
+      },
+      "package": "64-Pin VQFN",
+      "package_status": "not_confirmed_as_mounted",
+      "dimensions": "7.3-mm x 7.3-mm",
+      "dimensions_status": "not_confirmed_as_mounted",
+      "pin_configuration": [
+        {
+          "pin": 5,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 15,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 44,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 51,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 58,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 62,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 36,
+          "name": "ASLEEP",
+          "description": "Auto-sleep enable input. When low, the device operates in normal mode. When high, the device functions in auto-sleep mode where the hold mode and the actual conversion is activated six conversion clock (tCCLK) cycles after issuing a conversion start using a CONVST_x."
+        },
+        {
+          "pin": 4,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 14,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 45,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 52,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 57,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 61,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 35,
+          "name": "BUSY/INT",
+          "description": "When CONFIG bit C27 = 0 (BUSY/INT), this pin is a converter busy status output. When bit C27 = 1 (BUSY/INT in CONFIG), this pin is an interrupt output."
+        },
+        {
+          "pin": 42,
+          "name": "CH_A0",
+          "description": "Analog input of channel A0; channel A is the master channel pair that is always active. The input voltage range is controlled by the RANGE pin in hardware mode or by Configuration register (CONFIG) bit C24 (RANGE_A) in software mode."
+        },
+        {
+          "pin": 47,
+          "name": "CH_A1",
+          "description": "Analog input of channel A1; channel A is the master channel pair that is always active. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C24 (RANGE_A) in software mode."
+        },
+        {
+          "pin": 49,
+          "name": "CH_B0",
+          "description": "Analog input of channel B0. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C23 (RANGE_B) in software mode."
+        },
+        {
+          "pin": 54,
+          "name": "CH_B1",
+          "description": "Analog input of channel B1. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C23 (RANGE_B) in software mode."
+        },
+        {
+          "pin": 64,
+          "name": "CH_C0",
+          "description": "Analog input of channel C0. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C21 (RANGE_C) in software mode."
+        },
+        {
+          "pin": 59,
+          "name": "CH_C1",
+          "description": "Analog input of channel C1. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C21 (RANGE_C) in software mode."
+        },
+        {
+          "pin": 7,
+          "name": "CH_D0",
+          "description": "Analog input of channel D0. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C19 (RANGE_D) in software mode. This pin can be powered down using CONFIG bit C18 (PD_D) in software mode."
+        },
+        {
+          "pin": 2,
+          "name": "CH_D1",
+          "description": "Analog input of channel D1. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C19 (RANGE_D) in software mode. This pin can be powered down using CONFIG bit C18 (PD_D) in software mode."
+        },
+        {
+          "pin": 37,
+          "name": "CONVST_A",
+          "description": "Conversion start of channel pair A. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_A[1:0]."
+        },
+        {
+          "pin": 38,
+          "name": "CONVST_B",
+          "description": "Conversion start of channel pair B. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_B[1:0]."
+        },
+        {
+          "pin": 39,
+          "name": "CONVST_C",
+          "description": "Conversion start of channel pair C. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_C[1:0]."
+        },
+        {
+          "pin": 40,
+          "name": "CONVST_D",
+          "description": "Conversion start of channel pair D. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_D[1:0]."
+        },
+        {
+          "pin": 13,
+          "name": "CS/FS",
+          "description": "Chip-select input. When low, the parallel interface is enabled. When high, the interface is disabled. Frame synchronization. The FS falling edge controls the frame transfer."
+        },
+        {
+          "pin": 33,
+          "name": "DB0/DCIN_D",
+          "description": "Data bit 0 (LSB) input/output. When DCEN = 1 and SEL_CD = 1, this pin is the daisy-chain data input for SDO_D of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 32,
+          "name": "DB1/DCIN_C",
+          "description": "Data bit 1 input/output. When DCEN = 1 and SEL_CD = 1, this pin is the daisy-chain data input for SDO_C of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 31,
+          "name": "DB2/DCIN_B",
+          "description": "Data bit 2 input/output. When DCEN = 1 and SEL_B = 1, this pin is the daisy-chain data input for SDO_B of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 30,
+          "name": "DB3/DCIN_A",
+          "description": "Data bit 3 input/output. When DCEN = 1, this pin is the daisy-chain data input for SDO_A of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 12,
+          "name": "DB4",
+          "description": "Data bit 4 input/output"
+        },
+        {
+          "pin": 11,
+          "name": "DB5/SEL_CD",
+          "description": "Data bit 5 input/output. When DCEN = 1 and SEL_CD = 1, this pin is the daisy-chain data input for SDO_C of the previous device in the chain."
+        },
+        {
+          "pin": 10,
+          "name": "DB6/SEL_B",
+          "description": "Data bit 6 input/output. When DCEN = 1 and SEL_B = 1, this pin is the daisy-chain data input for SDO_B of the previous device in the chain."
+        },
+        {
+          "pin": 9,
+          "name": "DB7",
+          "description": "Data bit 7 input/output"
+        },
+        {
+          "pin": 8,
+          "name": "DB8/DCEN",
+          "description": "Data bit 8 input/output. When DCEN = 1, this pin enables daisy-chain mode for SDO_A, SDO_B, and SDO_C."
+        },
+        {
+          "pin": 6,
+          "name": "DGND",
+          "description": "Digital ground; connect to the digital ground plane."
+        },
+        {
+          "pin": 5,
+          "name": "DVDD",
+          "description": "Digital power supply."
+        },
+        {
+          "pin": 15,
+          "name": "DVDD",
+          "description": "Digital power supply."
+        },
+        {
+          "pin": 44,
+          "name": "DVDD",
+          "description": "Digital power supply."
+        },
+        {
+          "pin": 51,
+          "name": "DVDD",
+          "description": "Digital power supply."
+        },
+        {
+          "pin": 58,
+          "name": "DVDD",
+          "description": "Digital power supply."
+        },
+        {
+          "pin": 62,
+          "name": "DVDD",
+          "description": "Digital power supply."
+        },
+        {
+          "pin": 34,
+          "name": "HVDD",
+          "description": "Input positive supply voltage."
+        },
+        {
+          "pin": 3,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 1,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 63,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 60,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 55,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 48,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 41,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 43,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 53,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 56,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 50,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 46,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 35,
+          "name": "BUSY/INT",
+          "description": "When CONFIG bit C27 = 0 (BUSY/INT), this pin is a converter busy status output. When bit C27 = 1 (BUSY/INT in CONFIG), this pin is an interrupt output."
+        },
+        {
+          "pin": 16,
+          "name": "RANGE/XCLK",
+          "description": "Range control input. When low, the input range is ±4 VREF. When high, the input range is ±2 VREF. When used as XCLK, this pin is the external conversion clock input."
+        },
+        {
+          "pin": 17,
+          "name": "DB9/SDI",
+          "description": "Data bit 9 input/output. When DCEN = 1, this pin is the daisy-chain data input for SDO_A of the previous device in the chain."
+        },
+        {
+          "pin": 18,
+          "name": "DB10/SCLK",
+          "description": "Data bit 10 input/output. When DCEN = 1, this pin is the daisy-chain data input for SDO_A of the previous device in the chain."
+        },
+        {
+          "pin": 19,
+          "name": "DB11",
+          "description": "Data bit 11 input/output"
+        },
+        {
+          "pin": 20,
+          "name": "DB12/SDO_A",
+          "description": "Data bit 12 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_A of the previous device in the chain."
+        },
+        {
+          "pin": 21,
+          "name": "DB13/SDO_B",
+          "description": "Data bit 13 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_B of the previous device in the chain."
+        },
+        {
+          "pin": 22,
+          "name": "DB14/SDO_C",
+          "description": "Data bit 14 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_C of the previous device in the chain."
+        },
+        {
+          "pin": 23,
+          "name": "DB15/SDO_D",
+          "description": "Data bit 15 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_D of the previous device in the chain."
+        },
+        {
+          "pin": 24,
+          "name": "STBY",
+          "description": "Standby mode input. When low, the device is in standby mode. When high, the device is in normal operation."
+        },
+        {
+          "pin": 25,
+          "name": "RD",
+          "description": "Read access control input. When low, the device is in read mode."
+        },
+        {
+          "pin": 26,
+          "name": "CS",
+          "description": "Chip-select input. When low, the parallel interface is enabled. When high, the interface is disabled."
+        },
+        {
+          "pin": 27,
+          "name": "PAR",
+          "description": "Parallel interface select. When low, the device operates in parallel mode. When high, the device operates in serial mode."
+        },
+        {
+          "pin": 28,
+          "name": "WR",
+          "description": "Write access control input. When low, the device is in write mode."
+        },
+        {
+          "pin": 29,
+          "name": "FS",
+          "description": "Frame synchronization. The FS falling edge controls the frame transfer."
+        },
+        {
+          "pin": 1,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 2,
+          "name": "CH_D1",
+          "description": "Analog input of channel D1. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C19 (RANGE_D) in software mode. This pin can be powered down using CONFIG bit C18 (PD_D) in software mode."
+        },
+        {
+          "pin": 3,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 4,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 5,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 6,
+          "name": "DGND",
+          "description": "Digital ground; connect to the digital ground plane."
+        },
+        {
+          "pin": 7,
+          "name": "CH_D0",
+          "description": "Analog input of channel D0. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C19 (RANGE_D) in software mode. This pin can be powered down using CONFIG bit C18 (PD_D) in software mode."
+        },
+        {
+          "pin": 8,
+          "name": "DB8/DCEN",
+          "description": "Data bit 8 input/output. When DCEN = 1, this pin enables daisy-chain mode for SDO_A, SDO_B, and SDO_C."
+        },
+        {
+          "pin": 9,
+          "name": "DB7",
+          "description": "Data bit 7 input/output"
+        },
+        {
+          "pin": 10,
+          "name": "DB6/SEL_B",
+          "description": "Data bit 6 input/output. When DCEN = 1 and SEL_B = 1, this pin is the daisy-chain data input for SDO_B of the previous device in the chain."
+        },
+        {
+          "pin": 11,
+          "name": "DB5/SEL_CD",
+          "description": "Data bit 5 input/output. When DCEN = 1 and SEL_CD = 1, this pin is the daisy-chain data input for SDO_C of the previous device in the chain."
+        },
+        {
+          "pin": 12,
+          "name": "DB4",
+          "description": "Data bit 4 input/output"
+        },
+        {
+          "pin": 13,
+          "name": "CS/FS",
+          "description": "Chip-select input. When low, the parallel interface is enabled. When high, the interface is disabled. Frame synchronization. The FS falling edge controls the frame transfer."
+        },
+        {
+          "pin": 14,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 15,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 16,
+          "name": "RANGE/XCLK",
+          "description": "Range control input. When low, the input range is ±4 VREF. When high, the input range is ±2 VREF. When used as XCLK, this pin is the external conversion clock input."
+        },
+        {
+          "pin": 17,
+          "name": "DB9/SDI",
+          "description": "Data bit 9 input/output. When DCEN = 1, this pin is the daisy-chain data input for SDO_A of the previous device in the chain."
+        },
+        {
+          "pin": 18,
+          "name": "DB10/SCLK",
+          "description": "Data bit 10 input/output. When DCEN = 1, this pin is the daisy-chain data input for SDO_A of the previous device in the chain."
+        },
+        {
+          "pin": 19,
+          "name": "DB11",
+          "description": "Data bit 11 input/output"
+        },
+        {
+          "pin": 20,
+          "name": "DB12/SDO_A",
+          "description": "Data bit 12 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_A of the previous device in the chain."
+        },
+        {
+          "pin": 21,
+          "name": "DB13/SDO_B",
+          "description": "Data bit 13 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_B of the previous device in the chain."
+        },
+        {
+          "pin": 22,
+          "name": "DB14/SDO_C",
+          "description": "Data bit 14 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_C of the previous device in the chain."
+        },
+        {
+          "pin": 23,
+          "name": "DB15/SDO_D",
+          "description": "Data bit 15 output. When DCEN = 1, this pin is the daisy-chain data output for SDO_D of the previous device in the chain."
+        },
+        {
+          "pin": 24,
+          "name": "STBY",
+          "description": "Standby mode input. When low, the device is in standby mode. When high, the device is in normal operation."
+        },
+        {
+          "pin": 25,
+          "name": "RD",
+          "description": "Read access control input. When low, the device is in read mode."
+        },
+        {
+          "pin": 26,
+          "name": "CS",
+          "description": "Chip-select input. When low, the parallel interface is enabled. When high, the interface is disabled."
+        },
+        {
+          "pin": 27,
+          "name": "PAR",
+          "description": "Parallel interface select. When low, the device operates in parallel mode. When high, the device operates in serial mode."
+        },
+        {
+          "pin": 28,
+          "name": "WR",
+          "description": "Write access control input. When low, the device is in write mode."
+        },
+        {
+          "pin": 29,
+          "name": "FS",
+          "description": "Frame synchronization. The FS falling edge controls the frame transfer."
+        },
+        {
+          "pin": 30,
+          "name": "DB3/DCIN_A",
+          "description": "Data bit 3 input/output. When DCEN = 1, this pin is the daisy-chain data input for SDO_A of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 31,
+          "name": "DB2/DCIN_B",
+          "description": "Data bit 2 input/output. When DCEN = 1 and SEL_B = 1, this pin is the daisy-chain data input for SDO_B of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 32,
+          "name": "DB1/DCIN_C",
+          "description": "Data bit 1 input/output. When DCEN = 1 and SEL_CD = 1, this pin is the daisy-chain data input for SDO_C of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 33,
+          "name": "DB0/DCIN_D",
+          "description": "Data bit 0 (LSB) input/output. When DCEN = 1 and SEL_CD = 1, this pin is the daisy-chain data input for SDO_D of the previous device in the chain. When DCEN = 0, connect to DGND."
+        },
+        {
+          "pin": 34,
+          "name": "HVDD",
+          "description": "Input positive supply voltage."
+        },
+        {
+          "pin": 35,
+          "name": "BUSY/INT",
+          "description": "When CONFIG bit C27 = 0 (BUSY/INT), this pin is a converter busy status output. This pin transitions high when a conversion is started and transitions low for a single conversion clock cycle (tCCLK) whenever a channel pair conversion is completed and stays low when the conversion of the last channel pair completes. When bit C27 = 1 (BUSY/INT in CONFIG), this pin is an interrupt output. This pin transitions high after a conversion completes and remains high until the next read access."
+        },
+        {
+          "pin": 36,
+          "name": "ASLEEP",
+          "description": "Auto-sleep enable input. When low, the device operates in normal mode. When high, the device functions in auto-sleep mode where the hold mode and the actual conversion is activated six conversion clock (tCCLK) cycles after issuing a conversion start using a CONVST_x. This mode is recommended to save power if the device runs at a lower data rate; see the Reset and Power-Down Modes section for more details."
+        },
+        {
+          "pin": 37,
+          "name": "CONVST_A",
+          "description": "Conversion start of channel pair A. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_A[1:0]. This signal resets the internal channel state machine that causes the data output to start with conversion results of channel A0 with the next read access."
+        },
+        {
+          "pin": 38,
+          "name": "CONVST_B",
+          "description": "Conversion start of channel pair B. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_B[1:0]."
+        },
+        {
+          "pin": 39,
+          "name": "CONVST_C",
+          "description": "Conversion start of channel pair C. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_C[1:0]."
+        },
+        {
+          "pin": 40,
+          "name": "CONVST_D",
+          "description": "Conversion start of channel pair D. The rising edge of this signal initiates simultaneous conversion of analog signals at inputs CH_D[1:0]."
+        },
+        {
+          "pin": 41,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 42,
+          "name": "CH_A0",
+          "description": "Analog input of channel A0; channel A is the master channel pair that is always active. The input voltage range is controlled by the RANGE pin in hardware mode or by Configuration register (CONFIG) bit C24 (RANGE_A) in software mode. In cases where channel pairs of the device are used at different data rates, channel pair A must always run at the highest data rate."
+        },
+        {
+          "pin": 43,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 44,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 45,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 46,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 47,
+          "name": "CH_A1",
+          "description": "Analog input of channel A1; channel A is the master channel pair that is always active. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C24 (RANGE_A) in software mode. In cases where channel pairs of the device are used at different data rates, channel pair A must always run at the highest data rate."
+        },
+        {
+          "pin": 48,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 49,
+          "name": "CH_B0",
+          "description": "Analog input of channel B0. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C23 (RANGE_B) in software mode."
+        },
+        {
+          "pin": 50,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 51,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 52,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 53,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 54,
+          "name": "CH_B1",
+          "description": "Analog input of channel B1. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C23 (RANGE_B) in software mode."
+        },
+        {
+          "pin": 55,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 56,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 57,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 58,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 59,
+          "name": "CH_C1",
+          "description": "Analog input of channel C1. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C21 (RANGE_C) in software mode."
+        },
+        {
+          "pin": 60,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 61,
+          "name": "AVDD",
+          "description": "Analog power supply. Decouple according to the Power Supply Recommendations section."
+        },
+        {
+          "pin": 62,
+          "name": "AGND",
+          "description": "Analog ground; connect to the analog ground plane."
+        },
+        {
+          "pin": 63,
+          "name": "HVSS",
+          "description": "Input negative supply voltage."
+        },
+        {
+          "pin": 64,
+          "name": "CH_C0",
+          "description": "Analog input of channel C0. The input voltage range is controlled by the RANGE pin in hardware mode or by CONFIG bit C21 (RANGE_C) in software mode."
+        }
+      ]
+    }
+  },
+  "features": [
+    "Evaluation board for ADS8568"
+  ],
+  "applications": [
+    "Device evaluation"
+  ],
+  "pin_configuration": [],
+  "ordering_info": [],
+  "alternatives": [],
+  "seo": {
+    "title_en": "ADS8568EVM-PDK Evaluation Board | ADS8568",
+    "title_zh": "ADS8568EVM-PDK 评估板 | ADS8568",
+    "meta_description_en": "ADS8568EVM-PDK is a Texas Instruments evaluation board built around the onboard ADS8568. Board-level specifications are not stated in the source document; refer to the evaluation board user guide.",
+    "meta_description_zh": "ADS8568EVM-PDK 是 Texas Instruments 的评估板，板上搭载 ADS8568。板级规格请以评估板用户指南为准。",
+    "keywords": [
+      "ADS8568EVM-PDK",
+      "Texas Instruments",
+      "Evaluation Board",
+      "ADS8568"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+    "parse_timestamp": "2026-10-31T21:41:34+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "ADS8568EVM-PDK",
+    "deterministic_extract": {
+      "thermal": {
+        "from": 5,
+        "to": 6,
+        "method": "deterministic"
+      },
+      "esd": {
+        "from": 2,
+        "to": 2,
+        "method": "deterministic"
+      }
+    },
+    "core_validation": "pass",
+    "board_scope_reason": "缺少与请求号绑定的板卡用户指南标题证据；电气/温区/卖点/替代料/SEO 保留在隔离区，主字段标记为板级未规定",
+    "pin_scope_reason": "板卡页不发布引脚表：引脚属于板载器件，不属于组装后的评估板；请以原厂用户指南/原理图为准",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "normalize": {
+      "datasheet_url": {
+        "action": "skipped_board",
+        "device_datasheet_url": "https://www.ti.com/lit/ds/sbas543c/sbas543c.pdf"
+      },
+      "doc_type": {
+        "changed": true,
+        "from": null,
+        "to": "datasheet"
+      },
+      "doc_revision": {
+        "changed": true,
+        "from": null,
+        "to": {
+          "doc_number": "SBAS543",
+          "revision": "C",
+          "doc_id": "SBAS543C",
+          "issued": "AUGUST 2011",
+          "revised": "FEBRUARY 2016",
+          "page": 1
+        }
+      },
+      "verification": {
+        "stamped": 0
+      },
+      "pdf": "data\\pdfs\\ADS8568EVM-PDK__sbas543c.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "thermal": {
+        "sha256": "9fc5993135149a19378f7d7ca3932876f85f5e51620b9e24aeab78574912e56d"
+      },
+      "esd": {
+        "sha256": "841bc6b5e0cc55ef031b92fe0c39b99d6bb0dc1f786d7ce3f9a613e2cbf37b74"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点"
+  },
+  "onboard_device_features": [
+    "Family of 12-, 14-, and 16-Bit, Pin- and Software-Compatible ADCs",
+    "Maximum Data Rate per Channel: ADS8568: 510 kSPS (PAR) or 400 kSPS (SER)",
+    "Excellent AC Performance: Signal-to-Noise Ratio: 91.5 dB, Total Harmonic Distortion: –94 dB",
+    "Programmable, Buffered Internal Reference: 0.5 V–2.5 V or 0.5 V–3.0 V Supports Input Voltage Ranges up to ±12 V",
+    "Selectable Parallel or Serial Interface",
+    "Scalable Low-Power Operation Using Auto-Sleep Mode: Only 32 mW at 10 kSPS",
+    "Fully Specified Over Extended Industrial Temperature Range"
+  ],
+  "onboard_device_applications": [
+    "Protection Relays",
+    "Power Quality Measurement",
+    "Multi-Axis Motor Controls",
+    "Programmable Logic Controllers",
+    "Industrial Data Acquisition"
+  ],
+  "onboard_device_seo": {
+    "title_en": "ADS8568 16-Bit 8-Channel Simultaneous Sampling ADC - TI",
+    "title_zh": "ADS8568 16位8通道同步采样ADC - 德州仪器",
+    "meta_description_en": "ADS8568 16-bit 8-channel simultaneous sampling ADC with 91.5 dB SNR, 400 kSPS serial interface, and ±12V input range. Available in 64-pin VQFN/LQFP packages. Industrial temperature range -40°C to +125°C.",
+    "meta_description_zh": "ADS8568 16位8通道同步采样ADC，信噪比91.5dB，400kSPS串行接口，±12V输入范围。提供64引脚VQFN/LQFP封装，工业温度范围-40°C至+125°C。",
+    "keywords": [
+      "ADS8568",
+      "16-bit ADC",
+      "simultaneous sampling",
+      "8-channel",
+      "analog-to-digital converter",
+      "TI",
+      "Texas Instruments"
+    ]
+  },
+  "onboard_ordering_info": [
+    {
+      "mpn": "ADS8568SPM",
+      "package": "LQFP (PM) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "160 | JEDEC TRAY (10+1)"
+    },
+    {
+      "mpn": "ADS8568SPM.A",
+      "package": "LQFP (PM) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "160 | JEDEC TRAY (10+1)"
+    },
+    {
+      "mpn": "ADS8568SPMR",
+      "package": "LQFP (PM) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "1000 | LARGE T&R"
+    },
+    {
+      "mpn": "ADS8568SPMR.A",
+      "package": "LQFP (PM) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "1000 | LARGE T&R"
+    },
+    {
+      "mpn": "ADS8568SRGCR",
+      "package": "VQFN (RGC) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "2000 | LARGE T&R"
+    },
+    {
+      "mpn": "ADS8568SRGCR.A",
+      "package": "VQFN (RGC) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "2000 | LARGE T&R"
+    },
+    {
+      "mpn": "ADS8568SRGCT",
+      "package": "VQFN (RGC) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "250 | SMALL T&R"
+    },
+    {
+      "mpn": "ADS8568SRGCT.A",
+      "package": "VQFN (RGC) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "250 | SMALL T&R"
+    },
+    {
+      "mpn": "ADS8568SRGCTG4",
+      "package": "VQFN (RGC) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "250 | SMALL T&R"
+    },
+    {
+      "mpn": "ADS8568SRGCTG4.A",
+      "package": "VQFN (RGC) | 64",
+      "marking": "ADS8568",
+      "moq": 0,
+      "packaging": "250 | SMALL T&R"
+    }
+  ],
+  "pin_scope": "board",
+  "multi_language": {
+    "ja": {
+      "title": "ADS8568EVM-PDK評価基板 | ADS8568",
+      "description": "ADS8568EVM-PDKはTexas Instruments社のADS8568を搭載した評価基板です。このデバイスのベンチ評価を目的としています。基板レベルの仕様は本資料に記載されておらず、記載内容は搭載されたデバイスに関するものであり、組み立てられた基板に関するものではありません。",
+      "meta": "ADS8568EVM-PDKはTexas Instruments社のADS8568を搭載した評価基板です。本資料には基板レベルの仕様は記載されていません。評価基板のユーザーガイドをご参照ください。",
+      "features": [
+        "ADS8568用評価基板"
+      ],
+      "applications": [
+        "デバイス評価"
+      ]
+    },
+    "ko": {
+      "title": "ADS8568EVM-PDK 평가 보드 | ADS8568",
+      "description": "ADS8568EVM-PDK는 Texas Instruments에서 제작한 내장형 ADS8568을 기반으로 조립된 평가 보드입니다. 해당 장치의 벤치 평가를 위한 목적으로 설계되었으며, 보드 수준의 사양은 원본 문서에 명시되어 있지 않습니다. 문서는 조립된 보드가 아닌 내장형 장치에 대해 설명하고 있습니다.",
+      "meta": "ADS8568EVM-PDK는 Texas Instruments의 내장형 ADS8568을 기반으로 제작된 평가 보드입니다. 보드 수준의 사양은 원본 문서에 명시되어 있지 않으며, 평가 보드 사용자 가이드를 참조하시기 바랍니다.",
+      "features": [
+        "ADS8568용 평가 보드"
+      ],
+      "applications": [
+        "장치 평가"
+      ]
+    },
+    "de": {
+      "title": "ADS8568EVM-PDK-Evaluationsboard | ADS8568",
+      "description": "ADS8568EVM-PDK ist eine Evaluationsplatine von Texas Instruments, die um den integrierten ADS8568 herum aufgebaut ist. Sie dient der Bench-Evaluation dieses Geräts; die Spezifikationen der Platine sind im Quelldokument nicht angegeben, da das Dokument das integrierte Gerät und nicht die zusammengebaute Platine beschreibt.",
+      "meta": "ADS8568EVM-PDK ist eine Evaluationsplatine von Texas Instruments, die um den integrierten ADS8568 herum aufgebaut ist. Die Platine-Spezifikationen sind im Quelldokument nicht angegeben; siehe die Benutzeranleitung für die Evaluationsplatine.",
+      "features": [
+        "Evaluationsboard für ADS8568"
+      ],
+      "applications": [
+        "Geräteevaluation"
+      ]
+    },
+    "es": {
+      "title": "Placa de evaluación ADS8568EVM-PDK | ADS8568",
+      "description": "La ADS8568EVM-PDK es una placa de evaluación de Texas Instruments ensamblada alrededor del ADS8568 integrado. Está destinada a la evaluación en banco de ese dispositivo; las especificaciones a nivel de placa no se indican en el documento fuente, que describe el dispositivo integrado en lugar de la placa ensamblada.",
+      "meta": "La ADS8568EVM-PDK es una placa de evaluación de Texas Instruments construida alrededor del ADS8568 integrado. Las especificaciones a nivel de placa no se indican en el documento fuente; consulte la guía del usuario de la placa de evaluación.",
+      "features": [
+        "Placa de evaluación para ADS8568"
+      ],
+      "applications": [
+        "Evaluación de dispositivos"
+      ]
+    }
+  }
+}
