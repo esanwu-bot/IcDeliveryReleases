@@ -1,0 +1,56 @@
+﻿mpn,container,label,value,unit,source,verdict,suggested_action,note,page
+ADC12DJ5200SE,thermal,RθJA,23.9,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,RθJC(top),0.8,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,RθJB,8.4,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,ψJT,0.23,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,ψJB,8.4,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,esd,HBM,2000,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADC12DJ5200SE,esd,CDM,500,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS1201U-1_1K,electrical,Differential Input Voltage Range,2 / -20 / +20,V,audited_deterministic,verified_value,fill_missing_columns,原表列位未定（缺 min/max 列），指纹只能证明整行文本一致、不能证明值落在哪一列；降为坐标级，待人工定列,2
+ADS1201U-1_1K,electrical,Offset Error,,µV,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS1201U-1_1K,electrical,Gain Error,,ppm,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS1201U-1_1K,absolute_max,Analog Input: Current,100 / 10,mA,model_unverified,verified_paragraph,promote_to_deterministic,正文条目级锚定（坐标 + 条目指纹），非表格行,3
+ADS1201U-1_1K,absolute_max,Analog Input: Voltage,-0.3 / +0.3,V,unresolved,verified_paragraph,promote_to_deterministic,正文条目级锚定（坐标 + 条目指纹），非表格行,3
+ADS8568EVM-PDK,thermal,RθJA,22,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,RθJC(top),9.0,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,RθJB,3.6,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,ψJT,0.1,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,ψJB,2.9,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,RθJC(bot),0.3,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,esd,HBM,2500,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,esd,CDM,500,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,electrical,Resolution,16,Bits,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,15
+ADS8568EVM-PDK,electrical,Maximum Data Rate per Channel: Parallel Interface,510,kSPS,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,15
+ADS8568EVM-PDK,electrical,Maximum Data Rate per Channel: Serial Interface,400,kSPS,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,15
+ADS8568EVM-PDK,electrical,Signal-to-Noise Ratio (SNR),91.5,dB,,verified_paragraph,promote_to_deterministic,正文条目级锚定（坐标 + 条目指纹），非表格行,1
+ADS8568EVM-PDK,electrical,Total Harmonic Distortion (THD),-94,dB,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,15
+ADS8568EVM-PDK,electrical,Spurious-Free Dynamic Range (SFDR),92,dB,,value_on_label_page,human_review,"数值与参数名同页（第 [13, 14, 23] 页），但行/列对应关系未证 —— 需人工确认",13
+ADS8568EVM-PDK,electrical,Channel-to-Channel Isolation,120,dB,,value_on_label_page,human_review,"数值与参数名同页（第 [13, 14, 15, 23] 页），但行/列对应关系未证 —— 需人工确认",13
+ADS8568EVM-PDK,electrical,Analog Supply Voltage (AVDD),4.5 / 5.5,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,electrical,Digital I/O Supply Voltage (DVDD),2.7 / 5.5,V,,value_on_label_page,human_review,"数值与参数名同页（第 [9, 28] 页），但行/列对应关系未证 —— 需人工确认",9
+ADS8568EVM-PDK,electrical,Input Positive Supply Voltage (HVDD),5.0 / 16.5,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,electrical,Input Negative Supply Voltage (HVSS),-16.5 / -5.0,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,electrical,Analog Supply Current (IAVDD),36.6 / 48.4,mA,,value_on_label_page,human_review,数值与参数名同页（第 [11] 页），但行/列对应关系未证 —— 需人工确认,11
+ADS8568EVM-PDK,electrical,Buffer I/O Supply Current (IDVDD),0.5 / 2.0,mA,,value_on_label_page,human_review,"数值与参数名同页（第 [2, 9, 10, 11, 24, 25, 28, 42, 43, 44, 48] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS8568EVM-PDK,electrical,Input Positive Supply Current (IHVDD),2.3 / 3.2,mA,,value_on_label_page,human_review,数值与参数名同页（第 [11] 页），但行/列对应关系未证 —— 需人工确认,11
+ADS8568EVM-PDK,electrical,Input Negative Supply Current (IHVSS),2.7 / 3.6,mA,,value_on_label_page,human_review,"数值与参数名同页（第 [9, 11, 12] 页），但行/列对应关系未证 —— 需人工确认",9
+ADS8568EVM-PDK,electrical,Power Dissipation,259.7 / 389.4,mW,,value_on_label_page,human_review,数值与参数名同页（第 [12] 页），但行/列对应关系未证 —— 需人工确认,12
+ADS8568EVM-PDK,electrical,Conversion Time,1.7,μs,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,15
+ADS8568EVM-PDK,electrical,Clock Cycles per Conversion,19 / 20,Cycles,,value_on_label_page,human_review,"数值与参数名同页（第 [2, 6, 7, 10, 16, 17, 22, 26, 28, 29, 30, 33, 34, 37, 39] 页），但行/列对应关系未证 —— 需人工确认",2
+ADS8568EVM-PDK,electrical,Acquisition Time,280,ns,,value_on_label_page,human_review,"数值与参数名同页（第 [16, 17, 28] 页），但行/列对应关系未证 —— 需人工确认",16
+ADS8568EVM-PDK,electrical,BUSY low to CS low time,86,ns,,value_on_label_page,human_review,"数值与参数名同页（第 [16, 17, 30] 页），但行/列对应关系未证 —— 需人工确认",16
+ADS8568EVM-PDK,electrical,RD pulse duration,20,ns,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,17
+ADS8568EVM-PDK,electrical,Output data to RD or CS rising edge hold time,5,ns,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,17
+ADS8568EVM-PDK,electrical,Input Common-Mode Voltage (RANGE bit=0),-4 / 4,,,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证,2
+ADS8568EVM-PDK,electrical,Input Common-Mode Voltage (RANGE bit=1),-2 / 2,,,value_in_pdf,human_review,数值在原文出现，但不在参数名所在页 —— 归属未证,1
+ADS8568EVM-PDK,absolute_max,Supply Voltage (HVDD to AGND),-0.3 / 18,V,,value_on_label_page,human_review,"数值与参数名同页（第 [6, 7, 9, 10, 24, 32, 34, 40] 页），但行/列对应关系未证 —— 需人工确认",6
+ADS8568EVM-PDK,absolute_max,Supply Voltage (HVSS to AGND),-18 / 0.3,V,,value_on_label_page,human_review,"数值与参数名同页（第 [9, 10] 页），但行/列对应关系未证 —— 需人工确认",9
+ADS8568EVM-PDK,absolute_max,Supply Voltage (AVDD to AGND),-0.3 / 6,V,,value_on_label_page,human_review,"数值与参数名同页（第 [6, 7, 8, 9, 10, 13, 14, 15, 16, 24, 28, 32] 页），但行/列对应关系未证 —— 需人工确认",6
+ADS8568EVM-PDK,absolute_max,Supply Voltage (DVDD to DGND),-0.3 / 6,V,,value_on_label_page,human_review,"数值与参数名同页（第 [6, 7, 8, 9, 10, 13, 14, 15, 16, 24, 28, 32] 页），但行/列对应关系未证 —— 需人工确认",6
+ADS8568EVM-PDK,absolute_max,Analog Input Voltage,0.3,V,,value_on_label_page,human_review,"数值与参数名同页（第 [9, 10] 页），但行/列对应关系未证 —— 需人工确认",9
+ADS8568EVM-PDK,absolute_max,Reference Input Voltage,0.3,V,,value_on_label_page,human_review,"数值与参数名同页（第 [9, 10, 59] 页），但行/列对应关系未证 —— 需人工确认",9
+ADS8568EVM-PDK,absolute_max,Digital Input Voltage,0.3,V,,value_on_label_page,human_review,"数值与参数名同页（第 [9, 10] 页），但行/列对应关系未证 —— 需人工确认",9
+ADS8568EVM-PDK,absolute_max,Ground Voltage Difference (AGND to DGND),0.3,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,absolute_max,Input Current to All Pins Except Supply,10,mA,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,absolute_max,Maximum Virtual Junction Temperature (TJ),150,°C,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,absolute_max,Storage Temperature (Tstg),-65 / 150,°C,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9

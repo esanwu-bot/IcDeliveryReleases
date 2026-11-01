@@ -1,0 +1,241 @@
+{
+  "schema": "facts-audit/v4",
+  "derivation": "qc/fact_acceptance.py::_derive —— 结论只由证据字段推导，输出字段只由结论发放（_emit_fields）；row_sha256 非空 <=> verified_row，bbox 非空 <=> 坐标级结论。",
+  "note": "逐行回打原厂 PDF。verified_row=坐标 + 行指纹（row_sha256）能从 PDF 重算且数值一致（最强）；verified_paragraph=坐标 + 正文条目指纹（paragraph_sha256），表格之外的参数只能到这一级；verified_value=有坐标但该行没有可重放的指纹；verified=容器级确定性复现（按参数名+数值，无行坐标）；value_on_label_page=数值与参数名同页但行/列对应未证（弱证据，进风险队列，页面打带说明的 †）；value_in_pdf=只在别处出现（归属未证）；partial/not_found=需人工；unchecked=无可回打数值。注意：facts_verdict=pass 只表示「没有编造的数值」，不表示「参数全对」——核心工程参数要 reach verified_row 才谈得上已验证。",
+  "grade_note": "V7 起 `data_anchor` 废止，改为四个互不冒充的计数：row_anchor（坐标+可重放行指纹）/ paragraph_anchor（坐标+正文条目指纹）/ container_verified（名字+数值可复现但无坐标）/ weak（弱证据）。达标门槛按载体分流：表格参数须 row_anchor，正文参数须 paragraph_anchor（qc/fact_acceptance.py::REQUIREMENT）。anchor_gate=blocked 表示存在未达门槛的行，此时 release_state 不得进入 DATA_VALIDATED。",
+  "sha_scheme": "row=表格行指纹（page|表标题|左上坐标|符号|min|typ|max|unit）；band=行带指纹（page|名称格归一化文本|数值格归一化文本）；paragraph=正文条目指纹（page|归一化行文本）。归一化 = 破折号统一 + 空白折叠 + 小写，详见包内 README。",
+  "coord_verified": 192,
+  "total_rows": 214,
+  "anchor_gate": "blocked",
+  "mpns": {
+    "ADC12DJ5200SE": {
+      "pdf_sha256": "398fd1f1adc1957236ec95b65b8a2ea0cebbedeb95327ba37261e1f9f5857a74",
+      "n_rows": 108,
+      "counts": {
+        "verified_row": 99,
+        "verified_paragraph": 9,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 108,
+      "pdf": "data\\pdfs\\ADC12DJ5200SEAAV__adc12dj5200se.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 99,
+        "paragraph_anchor": 9,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 108,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 95,
+          "total": 95
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 13,
+          "total": 13
+        }
+      },
+      "blocked": []
+    },
+    "ADS1201U-1_1K": {
+      "pdf_sha256": "0805d18743ce9c51721783c2d9083654570b5ed3fbbf1181cf410597ba64d1ec",
+      "n_rows": 50,
+      "counts": {
+        "verified_row": 36,
+        "verified_paragraph": 11,
+        "verified_value": 1,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 48,
+      "pdf": "data\\pdfs\\ADS1201U-1_1K__ads1201.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 36,
+        "paragraph_anchor": 11,
+        "coord_no_fingerprint": 1,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 2
+      },
+      "grades_denominator": 48,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 36,
+          "total": 37
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 11,
+          "total": 11
+        }
+      },
+      "blocked": [
+        "Differential Input Voltage Range (have=coord_no_fingerprint, need=row_anchor)"
+      ]
+    },
+    "ADS8568EVM-PDK": {
+      "pdf_sha256": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+      "n_rows": 49,
+      "counts": {
+        "verified_row": 28,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 18,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "partial",
+      "coord": 29,
+      "pdf": "data\\pdfs\\ADS8568EVM-PDK__sbas543c.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 28,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 20,
+        "no_value": 0
+      },
+      "grades_denominator": 49,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 28,
+          "total": 49
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "Signal-to-Noise Ratio (SNR) (have=paragraph_anchor, need=row_anchor)",
+        "Spurious-Free Dynamic Range (SFDR) (have=weak, need=row_anchor)",
+        "Channel-to-Channel Isolation (have=weak, need=row_anchor)",
+        "Digital I/O Supply Voltage (DVDD) (have=weak, need=row_anchor)",
+        "Analog Supply Current (IAVDD) (have=weak, need=row_anchor)",
+        "Buffer I/O Supply Current (IDVDD) (have=weak, need=row_anchor)",
+        "Input Positive Supply Current (IHVDD) (have=weak, need=row_anchor)",
+        "Input Negative Supply Current (IHVSS) (have=weak, need=row_anchor)",
+        "Power Dissipation (have=weak, need=row_anchor)",
+        "Clock Cycles per Conversion (have=weak, need=row_anchor)",
+        "Acquisition Time (have=weak, need=row_anchor)",
+        "BUSY low to CS low time (have=weak, need=row_anchor)",
+        "Input Common-Mode Voltage (RANGE bit=0) (have=weak, need=row_anchor)",
+        "Input Common-Mode Voltage (RANGE bit=1) (have=weak, need=row_anchor)",
+        "Supply Voltage (HVDD to AGND) (have=weak, need=row_anchor)",
+        "Supply Voltage (HVSS to AGND) (have=weak, need=row_anchor)",
+        "Supply Voltage (AVDD to AGND) (have=weak, need=row_anchor)",
+        "Supply Voltage (DVDD to DGND) (have=weak, need=row_anchor)",
+        "Analog Input Voltage (have=weak, need=row_anchor)",
+        "Reference Input Voltage (have=weak, need=row_anchor)",
+        "Digital Input Voltage (have=weak, need=row_anchor)"
+      ]
+    },
+    "BOOST-DRV8711": {
+      "pdf_sha256": "49a8b3f7cc56ca03902b45e982a52e2a2d0b2a67186e6096f52d6224adb8d316",
+      "n_rows": 2,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 2,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 2,
+      "pdf": "data\\pdfs\\BOOST-DRV8711__slvu967.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 2,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 2,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 0
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 2
+        }
+      },
+      "blocked": []
+    },
+    "BOOSTXL-C2KLED": {
+      "pdf_sha256": "82e79558ba39601757986551b166020740c56990e9984807320d6b2bafd38f34",
+      "n_rows": 5,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 5,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 5,
+      "pdf": "data\\pdfs\\BOOSTXL-C2KLED__spruhh9.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 5,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 5,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 0
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 5,
+          "total": 5
+        }
+      },
+      "blocked": []
+    }
+  }
+}
