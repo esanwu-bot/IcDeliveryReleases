@@ -20,9 +20,42 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261031-V3` | 2026-10-31 V3 | 5 | 5/6 ×4 + **6/6** ×1（4 件替代料门禁归零，`alt_html` 不落盘） | en + ja/ko/de/es（**叙述段英文回退**） | review_candidate / not_approved；`ADC12DJ5200SE` **BLOCKED** |
 | `delivery-20261031-V4` | 2026-10-31 V4 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；核心字段**可复现** |
 | `delivery-20261101` | 2026-11-01 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；三个 P0 **已收口**（`gate`: 2×PATCHED / 3×CLEAN） |
+| `delivery-20261102` | 2026-11-02 | 5 | 5/6 ×4 + **6/6** ×1 | en + ja/ko/de/es | review_candidate / not_approved；**原厂 PDF 随包** + 逐行事实表 + 身份硬门禁（`release_state` 最高 `IDENTITY_APPROVED`） |
 
-**推荐以 `delivery-20261101` 为准**（最新）：V4 复审的三个 P0 全部收口，
-核心数据仍是 V4 那套（复审已用 TI 手册逐条核过）。
+**推荐以 `delivery-20261102` 为准**（最新）：唯一一版**包内自带原件**的交付，
+复核方可独立重算哈希、可逐行翻页对照，不再依赖发布说明。
+
+### 1102 相对 1101 的变化（评审回应）
+
+ChatGPT 给 1101 打 6.5/10，核心指控是「**这个包不能视为重新核验**」——
+包内没有原件，只能相信 `pdf_sha256_recorded`。1102 就是针对这一条做的。
+
+- **原厂 PDF 随包**：每个型号目录带 `<型号>/<型号>.pdf`，manifest 给三个字段
+  `pdf_included` / `pdf_sha256_recorded` / `pdf_sha256_packaged` + `pdf_hash_match`。
+  五件全部 `match=true`。PDF 与 ZIP 用**原始字节哈希**（`sha256sum` 可直接复核），
+  文本物料仍用 `sha256(CRLF→LF)` —— 二进制归一一次哈希就变了，那会让复核方
+  永远对不上报告。`zip_sha256` 记的就是 ZIP 文件的原始字节哈希。
+  缺件直接不出包（`bundle_acceptance` 抛错），不是「尽量带上」。
+  PDF 版权归原厂，仅供本批验收复核，不得单独再分发。
+- **逐行事实验收表**（`facts_audit.csv` / `facts_audit.json` / `risk_queue.csv`）：
+  把 JSON 里每个数值回打原厂 PDF，分 `verified` / `value_on_label_page`（值与参数名同页）/
+  `value_in_pdf`（只在别处出现，归属未证）/ `partial` / `not_found`。
+  **五件零 `not_found`**；ADC 126 行、ADS1201 48 行、ADS8568 8 行。
+  BOOST 两件标 `partial` —— 板卡件本来就没有器件级参数，不装作有。
+- **身份审核成为硬门禁**：1101 的 `ADS8568EVM-PDK` 带着 `identity_state=IDENTITY_REVIEW`
+  落了 `CLEAN`，根因是 `_gate()` 根本没读身份字段。现已改：未达
+  `{IDENTITY_SUPPORTED, BOARD_CONFIRMED}` 一律 `UNRESOLVED`。该件本版从 `CLEAN` → `UNRESOLVED`。
+- **发布状态阶梯**：新增 `release_state`（五级），前三级自动，后两级只读 `signoff.json`。
+  `gate` 说「有没有硬伤」，`release_state` 说「走到哪一级」，两者别混读。
+- **AC 性能补上**：SNR 24 / SFDR 23 / NSD 7 / IMD3 28（此前页面 0 命中），
+  每条带 `fIN` / `AIN` / 模式等测试条件，逐条与 p14 原文核对一致。
+- **页面事实一致性**：文档类型（datasheet vs user guide）按 URL 路径判定并落页面；
+  修订号 `SLVSGH5C (Rev. C), revised APRIL 2025` 上页面；双句点收口；
+  条件占位 17 处由 `unknown` 改破折号 + 一条汇总提示。
+- **ADS1201U 链接改回原厂**：第三方镜像 → `ti.com` 直链（`ads1201.pdf`）。
+- **仍没做**：amax 列角色（p8 表 `find_tables` 识别不出，表头在 p9 续页，
+  跨页拼接风险大于收益）、ko 页 5/16 长段英文（渲染器拼的叙述句缺五语模板）。
+  详见包内《1102_修复说明.md》§十。
 
 - **新-1 源 PDF 链接恢复**：`datasheet_url` 查表键取了会变的前缀
   （`ADC12DJ5200SEAAV` vs manifest 的 `ADC12DJ5200SEEVM`）导致静默落空。
@@ -81,7 +114,13 @@ V3 起这些未命中候选**不再进包**（`ADC12DJ5200SE` 的 `AD9680-1000` 
 
 **打包校验通过 ≠ 工程验收通过。** 全部包均为 `release_status = not_approved`，
 **不得直接上线、不得用于电路设计**。`approved` 属人工专属签核，机器不得写入。
-包内不含 PDF 原件；`pdf_sha256_recorded` 仅沿用源 JSON 记录，不代表本包对 PDF 重新取证。
+
+**PDF 随包的版本边界**：`delivery-20261102` 起包内自带原厂 PDF，
+`pdf_sha256_packaged` 是对**包内实际文件**重算的哈希，可独立复核；
+更早的包（含 1101 及以前）**不含 PDF 原件**，其中的 `pdf_sha256_recorded`
+仅沿用源 JSON 记录，不代表该包对 PDF 重新取证。读旧包时不要拿它当证据。
+随包 PDF 版权归原厂，仅供本批验收复核使用，**不得单独再分发**。
+
 四语变体均已生成，但**叙述段存在英文回退**（V2 的 `ADC12DJ5200SE` 88 长段中 73 段仍为英文），
 `i18n_complete = not_checked`，**未通过本地化验收**。
 

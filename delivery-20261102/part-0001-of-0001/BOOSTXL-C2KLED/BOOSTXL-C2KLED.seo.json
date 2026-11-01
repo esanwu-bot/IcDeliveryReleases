@@ -1,0 +1,43 @@
+{
+  "mpn": "BOOSTXL-C2KLED",
+  "generated_at": "2026-11-01T07:38:46+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "BOOSTXL-C2KLED Evaluation Board",
+    "title_zh": "BOOSTXL-C2KLED 评估板",
+    "meta_description_en": "BOOSTXL-C2KLED is a Texas Instruments evaluation board. Board-level specifications are not stated in the source document; refer to the evaluation board user guide.",
+    "meta_description_zh": "BOOSTXL-C2KLED 是 Texas Instruments 的评估板。板级规格请以评估板用户指南为准。",
+    "keywords": [
+      "BOOSTXL-C2KLED",
+      "Texas Instruments",
+      "Evaluation Board"
+    ]
+  },
+  "shared_category_icon": false,
+  "shared_icon_count": 0,
+  "shared_by_applications": {},
+  "distinct_images": [
+    "app-industrial-automation.png"
+  ],
+  "distinct_image_count": 1,
+  "images": [
+    {
+      "application": "Board evaluation",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "boostxl-c2kled-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "BOOSTXL-C2KLED Board evaluation application — Industrial Automation illustration",
+      "title": "BOOSTXL-C2KLED used in Board evaluation (Industrial Automation)",
+      "caption": "Board evaluation — a typical industrial automation application of BOOSTXL-C2KLED.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ]
+}
