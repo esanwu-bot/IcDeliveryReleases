@@ -66,9 +66,12 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `BOOST-DRV8711` | 2 | 0 | 2 | pass | IDENTITY_APPROVED |
 | `BOOSTXL-C2KLED` | 5 | 0 | 5 | pass | IDENTITY_APPROVED |
 
-> 文本物料的 `sha256` 按 **CRLF→LF 归一后**计算（PDF / ZIP 按原始字节）。
-> 这条口径由打包器与 `qc/bundle_selfcheck.py` 共用，也与 git 的换行归一一致 ——
-> 从 GitHub 直接下载散装文件算出来的哈希与清单记录**一致**；拿 ZIP 更不会有歧义。
+> 文本物料的 `sha256` **与 `manifest.json::members[].size`** 都按 **CRLF→LF 归一后**计算
+> （PDF / ZIP 按原始字节）。这条口径由打包器与 `qc/bundle_selfcheck.py` 共用，
+> 仓库根另有 `.gitattributes`（`* text=auto eol=lf`）让检出不再写回 CRLF ——
+> 从 GitHub clone 或直接下载散装文件，算出来的哈希与字节数都与清单**一致**；拿 ZIP 更不会有歧义。
+> （V7 首版发布后实测：`core.autocrlf=true` 的 Windows clone 会让三个 `.md` 从 11653 变 11856，
+> 哈希对得上、大小对不上 —— 已按上述口径重出清单与 ZIP，包内 HTML/JSON/SEO/PDF 一字未改。）
 
 `delivery-20261101-V6` 仍是「自证链闭环 + 唯一状态推导机」那一版，可对照 V7 在锚定层改了什么
 （页面内容差异很小，主要差异在事实层与清单列）。
