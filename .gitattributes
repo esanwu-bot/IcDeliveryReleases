@@ -1,0 +1,5 @@
+# 交付包里的文本物料按 LF 入库与检出：
+# manifest 里记录的 size / sha256 都按 CRLF→LF 归一后计算，
+# 若允许 git 在检出时写回 CRLF，复核方用 ls -l 看到的字节数会对不上清单。
+# PDF 由 text=auto 自动识别为二进制，不受影响。
+* text=auto eol=lf

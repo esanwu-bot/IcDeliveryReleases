@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T16:30:43+08:00",
+  "generated_at": "2026-11-01T17:07:51+08:00",
   "packaging_validation": "pass",
   "engineering_validation": "not_approved",
   "i18n_coverage": "measured",
@@ -16,8 +16,8 @@
   "zip_member_count": 66,
   "zip_crc": "pass",
   "source_hashes_unchanged": true,
-  "zip_sha256": "ea8e1eba9789e51f180481fa80d192fc616b61de33a9c1f1dafa1b7be45869e6",
-  "zip_size": 12120392,
+  "zip_sha256": "3f469202fe47754e64dece91f79a0648019b47187cb24ca88501db2608ecdd82",
+  "zip_size": 12120565,
   "hash_rule": "文本物料 sha256(CRLF→LF normalized)；PDF 与 ZIP 按原始字节 sha256，二进制不做归一（归一一次哈希就变了，复核方用 sha256sum 永远对不上）",
   "verified_members": [
     {
@@ -266,11 +266,11 @@
     },
     {
       "member": "manifest.json",
-      "sha256": "365facd953d8a8974a7738bf41c3fa90e37ab95c503cff131551ae18ed4dacb1"
+      "sha256": "93ffeaf36a041f6803d12e58300015534e89c5628d548e71d8d0944a3e6cc097"
     },
     {
       "member": "README.md",
-      "sha256": "517dfd34bb09526828724c22de2c5aee1320cff16adf068a53a1ea6529717ea9"
+      "sha256": "07aa72d6c406dca25b02486bc83072b09769e37d002c5f800e01e7c1f7ab6f04"
     },
     {
       "member": "risk_queue.csv",
@@ -511,8 +511,8 @@
       },
       {
         "item": "zip.sha256",
-        "expected": "ea8e1eba9789e51f180481fa80d192fc616b61de33a9c1f1dafa1b7be45869e6",
-        "actual": "ea8e1eba9789e51f180481fa80d192fc616b61de33a9c1f1dafa1b7be45869e6",
+        "expected": "3f469202fe47754e64dece91f79a0648019b47187cb24ca88501db2608ecdd82",
+        "actual": "3f469202fe47754e64dece91f79a0648019b47187cb24ca88501db2608ecdd82",
         "ok": true
       },
       {
