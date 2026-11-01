@@ -26,8 +26,61 @@ IcPdfParser 项目的**交付产物发布仓库**。这里只放打包完成的�
 | `delivery-20261101-V5` | 2026-11-01 V5 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（**覆盖率实测：三件 1.0 / 两件板卡 0.963~0.967**） | review_candidate / not_approved；**板卡参数拆三桶**、**分类面包屑上页面**、**韩语英文模板句清零**、`i18n_complete` 改实测、**`DATA_VALIDATED` 收紧为「每行须锚到具体表格行」** |
 | `delivery-20261101-V6` | 2026-11-01 V6 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率实测：三件 **1.0** / 两件 BOOST `0.9661` / `0.9623`；内容审校 `not_reviewed`） | review_candidate / not_approved；**打包自证链闭环**（清单每个哈希/指标出包前重算，不符即中断）、**唯一状态推导机**、新增 `verified_paragraph`、amax 点线排版确定性抽取、板卡 Thermal/ESD/AC 三段归属声明 |
 | `delivery-20261101-V7` | 2026-11-01 V7 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（覆盖率：三件 **1.0** / BOOST `0.9661` / `0.9630`；内容审校 `not_reviewed`） | review_candidate / not_approved；**废止 `data_anchor`**，拆成 `row_anchor`/`paragraph_anchor`/`coord_no_fingerprint`/`container_verified` 四列 + `anchor_gate` 总闸；**分母补回隔离桶**（`ADS8568EVM-PDK` 14→49 行，闸门 `blocked`，`release_state` 退回 `PACKAGING_PASSED`）；**文档主体隔离**（`document_subject` / `subject_match`）；自证结论 38 项落盘；JSON 状态与事实表同步；`paragraph_sha256` 归一化口径文档化 |
+| `delivery-20261101-V8` | 2026-11-01 V8 | 5 | 7/8 ×4 + **8/8** ×1 | en + ja/ko/de/es（同 V7：三件 **1.0** / BOOST `0.9661` / `0.9630`；内容审校仍 `not_reviewed`） | review_candidate / not_approved；**《交付说明.md》改为打包时按本包 manifest 渲染 + 自检逐格硬拦**（自检 38 → **39** 项）；`anchor_gate` 语义限定到「证据载体达门槛」，README 与包内说明各加**六级证据层级表**；页面五语种提示条补限定；`not_found` 全包 **1 → 0**；`ADS8568` `row_anchor` **19 → 28**、`weak` **28 → 20**；`ADS1201U` 缺列主动降级 → `anchor_gate` 由 pass 变 **blocked** |
 
-**推荐以 `delivery-20261101-V7` 为准**（最新）：
+**推荐以 `delivery-20261101-V8` 为准**（最新）。V8 是**收尾版**：不扩张功能，
+把 V7 复审（工程质量体系 **9.2/10 / Not Approved**）列的问题做实。
+
+- **P0-1 交付说明与清单割裂 —— 改成生成式 + 硬拦**。V7 包根那份《交付说明.md》
+  还是 V6 模板：标题写 `delivery-20261101-V6`、正文写 `ADS8568EVM-PDK 14/14 / DATA_VALIDATED`、
+  仍在讲已废止的 `data_anchor`、还把 `ADS1201U` 写成停在 `PACKAGING_PASSED`。
+  根因不是"忘了改"，而是它一直**从验收根原样复制** —— 手写文档靠"下次记得改"，
+  就一定会有忘的那一次。V8 改两条：
+  `delivery_bundle.render_delivery_note()` 使全文由本包 `manifest` + `facts_audit`
+  实测值渲染；`qc/bundle_selfcheck.py::_check_delivery_note()` **硬拦** ——
+  标题须含本包名、禁止 `data_anchor`、表格逐型号比对 `n_rows` / `row_anchor` /
+  `paragraph_anchor` / `weak` / `anchor_gate` / `release_state` 六列，任一项不符即不出包。
+  表头抽成 `NOTE_TABLE_HEAD` 常量，生成侧与校验侧同源。
+- **P0-2 `anchor_gate=pass` 被读大** —— 新规则明确规定：**`anchor_gate=pass` 只表示
+  「证据载体达到门槛」，不等于参数事实已完全正确**。README 与包内说明各加一张
+  **六级证据层级表**（坐标定位 → 行/段落指纹 → 列语义核验 → 条件核验 →
+  身份与范围核验 → 人工签核），每级写明「证明了什么 / 不证明什么」。
+  BOOST 两件的 `paragraph_anchor` 只说明正文段落对得上，
+  **不**代表板卡参数的测试条件、供电配置、适用场景已逐条核过。
+  页面正向提示条（五语种）同步补限定。
+- **P1 弱证据一条都没升级** —— `ADS8568EVM-PDK` 保持 `blocked` / `PACKAGING_PASSED`。
+  `row_anchor` 19 → 28 的 9 行是**新拿到坐标**（几何行带锚定），不是放宽门槛：
+  每行都按 bbox 回读原文核过，标签与数值同格同值。剩余 20 条弱证据逐条留在 `risk_queue.csv`。
+- **一处反向收紧** —— `ADS1201U` 的 `Differential Input Voltage Range` 因
+  `missing_cols=min,max` 主动**降级** `verified_row → verified_value`，
+  于是该型号 `anchor_gate` 由 `pass` 变 **`blocked`**、`release_state` 退回 `PACKAGING_PASSED`。
+  原因：该行 JSON 的 `2 / -20 / +20` 里，`2` 是脚注「See Note 2」的编号被当成了 MIN。
+  **指纹一致只能证明整行文本对得上，不能证明值落在哪一列。**
+- **自证侧新增**：`facts_audit.csv` 补 `cond` 列（同步键 `(label, cond)` 此前永远对不上，
+  ADC 74 行永不同步），升级 78 行；新增 `sha_input` 列，`sha256(sha_input)` 即该行指纹。
+
+> 反向验证：用 V8 的 `qc/bundle_selfcheck.py` 去打 V7 的包，正好红出上述 3 条 ——
+> 标题版本号不符 / 仍引用 `data_anchor` / 缺本包实测表。规则确实能拦住这类复发。
+
+实测（`manifest.csv`，2026-11-01 17:36 打包）：
+
+| 型号 | 行数 | `row_anchor` | `paragraph_anchor` | `weak` | `anchor_gate` | `release_state` |
+|---|---|---|---|---|---|---|
+| `ADC12DJ5200SE` | 108 | 99 | 9 | 0 | pass | IDENTITY_APPROVED |
+| `ADS1201U-1/1K` | 50 | 36 | 11 | 0 | **blocked** | **PACKAGING_PASSED** |
+| `ADS8568EVM-PDK` | 49 | **28** | 1 | **20** | **blocked** | **PACKAGING_PASSED** |
+| `BOOST-DRV8711` | 2 | 0 | 2 | 0 | pass | IDENTITY_APPROVED |
+| `BOOSTXL-C2KLED` | 5 | 0 | 5 | 0 | pass | IDENTITY_APPROVED |
+
+`selfcheck passed=true / n_items=39 / n_failed=0`，
+`zip_sha256 = 84fcf25109aa5baf7bfd290d3579cc7a67e625883dd73e6a52dd1652be6cea0b`。
+
+**V8 明确没做的事**：五型号人工内容签核（`CONTENT_APPROVED` / `RELEASE_APPROVED`）——
+代码不代签；五语种人工语言审校（`i18n_content_review` 仍 `not_reviewed`）；
+`ADS8568EVM-PDK` 的 `subject_match=false` 身份问题（缺评估板用户指南，
+页面已明写只提供板载 `ADS8568` 芯片数据，**不制造整板参数**）。
+
+### V7 相对 V6 的变化（保留以备追溯）
 
 - **P0 `data_anchor` 口径作废** —— V6 的 `data_anchor` 把 `verified`（容器级复现、**无坐标**）
   也算作"锚定"，于是 `ADS8568EVM-PDK` 在零坐标证据下拉出 `14/14` 并进 `DATA_VALIDATED`。
