@@ -1,0 +1,51 @@
+{
+  "mpn": "ADS8568EVM-PDK",
+  "generated_at": "2026-11-02T11:49:02+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "ADS8568EVM-PDK Evaluation Board | ADS8568",
+    "title_zh": "ADS8568EVM-PDK 评估板 | ADS8568",
+    "meta_description_en": "ADS8568EVM-PDK is a Texas Instruments evaluation board built around the onboard ADS8568. Board-level specifications are not stated in the source document; refer to the evaluation board user guide.",
+    "meta_description_zh": "ADS8568EVM-PDK 是 Texas Instruments 的评估板，板上搭载 ADS8568。板级规格请以评估板用户指南为准。",
+    "keywords": [
+      "ADS8568EVM-PDK",
+      "Texas Instruments",
+      "Evaluation Board",
+      "ADS8568"
+    ],
+    "data_subject": "ADS8568",
+    "attribution": "onboard_device"
+  },
+  "shared_category_icon": false,
+  "shared_icon_count": 0,
+  "shared_by_applications": {},
+  "distinct_images": [
+    "app-industrial-automation.png"
+  ],
+  "distinct_image_count": 1,
+  "images": [
+    {
+      "application": "Device evaluation",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ads8568evm-pdk-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "ADS8568EVM-PDK Device evaluation application — Industrial Automation illustration",
+      "title": "ADS8568EVM-PDK used in Device evaluation (Industrial Automation)",
+      "caption": "Device evaluation — a typical industrial automation application of ADS8568EVM-PDK.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "ADS8568",
+    "attribution": "onboard_device",
+    "subject_note": "Parameter values on this page describe the onboard ADS8568; they are not limits of the assembled board."
+  }
+}

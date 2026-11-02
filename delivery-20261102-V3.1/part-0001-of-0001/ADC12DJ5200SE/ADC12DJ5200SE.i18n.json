@@ -1,0 +1,57 @@
+{
+  "schema": "i18n-coverage/v1",
+  "mpn": "ADC12DJ5200SE",
+  "languages": {
+    "en": {
+      "i18n_complete": true,
+      "i18n_coverage": null,
+      "fallback_events": 0
+    },
+    "ja": {
+      "i18n_complete": true,
+      "i18n_coverage": {
+        "keys_used": 114,
+        "key_fallbacks": 0,
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
+      },
+      "fallback_events": 0
+    },
+    "ko": {
+      "i18n_complete": true,
+      "i18n_coverage": {
+        "keys_used": 114,
+        "key_fallbacks": 0,
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
+      },
+      "fallback_events": 0
+    },
+    "de": {
+      "i18n_complete": true,
+      "i18n_coverage": {
+        "keys_used": 114,
+        "key_fallbacks": 0,
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
+      },
+      "fallback_events": 0
+    },
+    "es": {
+      "i18n_complete": true,
+      "i18n_coverage": {
+        "keys_used": 114,
+        "key_fallbacks": 0,
+        "narrative_blocks": 3,
+        "narrative_fallbacks": 0,
+        "ratio": 1.0
+      },
+      "fallback_events": 0
+    }
+  },
+  "pin_desc_exempt": true,
+  "pin_desc_exempt_reason": "pin_configuration descriptions are kept in the source language (IEEE device-datasheet convention); not an untranslated residue"
+}

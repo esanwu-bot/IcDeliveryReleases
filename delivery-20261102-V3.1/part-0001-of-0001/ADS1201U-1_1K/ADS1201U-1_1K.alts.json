@@ -1,0 +1,58 @@
+{
+  "mpn": "ADS1201U-1/1K",
+  "manufacturer": "Texas Instruments",
+  "generated_at": "2026-10-31T11:46:52+0800",
+  "model": "qwen-flash",
+  "alternatives": [
+    {
+      "mpn": "ADS1201U",
+      "manufacturer": "Texas Instruments",
+      "type": "Rails",
+      "package": "SOIC-16",
+      "feature": "Same datasheet order code, Rails",
+      "similarity": 0.99,
+      "basis": "same-family-datasheet",
+      "internal": true,
+      "match": "exact",
+      "url": "/products/detail/ads1201u-29460",
+      "catalog_mpn": "ADS1201U",
+      "verified": true
+    },
+    {
+      "mpn": "ADS1201U/1K",
+      "manufacturer": "Texas Instruments",
+      "type": "Tape and Reel",
+      "package": "SOIC-16",
+      "feature": "Same datasheet order code, Tape and Reel",
+      "similarity": 0.99,
+      "basis": "same-family-datasheet",
+      "internal": true,
+      "match": "exact",
+      "url": "/products/detail/ads1201u1k-30761",
+      "catalog_mpn": "ADS1201U/1K",
+      "verified": true
+    },
+    {
+      "mpn": "ADS1201UG4",
+      "manufacturer": "Texas Instruments",
+      "type": "Rails",
+      "package": "SOIC-16",
+      "feature": "Same datasheet order code, Rails",
+      "similarity": 0.99,
+      "basis": "same-family-datasheet",
+      "internal": true,
+      "match": "exact",
+      "url": "/products/detail/ads1201ug4-30461",
+      "catalog_mpn": "ADS1201UG4",
+      "verified": true
+    }
+  ],
+  "gate": {
+    "rule": "orderable_part_number_exact_match",
+    "applied_at": "2026-10-31T19:34:00+0800",
+    "input": 6,
+    "kept": 3,
+    "rejected": 3,
+    "note": "只保留在 products.sqlite3 精确命中的完整可订购号；其余进 _rejected 审计，不进交付"
+  }
+}
