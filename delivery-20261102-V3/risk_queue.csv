@@ -1,0 +1,19 @@
+﻿mpn,container,label,value,unit,source,verdict,suggested_action,note,page
+ADC12DJ5200SE,thermal,RθJA,23.9,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,RθJC(top),0.8,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,RθJB,8.4,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,ψJT,0.23,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,thermal,ψJB,8.4,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,10
+ADC12DJ5200SE,esd,HBM,2000,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADC12DJ5200SE,esd,CDM,500,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS1201U-1_1K,electrical,Offset Error,,µV,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS1201U-1_1K,electrical,Gain Error,,ppm,model_unverified,unchecked,promote_to_deterministic,行内无数值，无可回打,
+ADS8568EVM-PDK,thermal,RθJA,22,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,RθJC(top),9.0,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,RθJB,3.6,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,ψJT,0.1,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,ψJB,2.9,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,thermal,RθJC(bot),0.3,°C/W,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,esd,HBM,2500,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,esd,CDM,500,V,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,9
+ADS8568EVM-PDK,electrical,Conversion Time,1.7,μs,,verified_row,promote_to_deterministic,行带指纹可从 PDF 重算（名称格 + 数值格，同页同一 y 带）,15
