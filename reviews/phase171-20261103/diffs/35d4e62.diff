@@ -1,0 +1,193 @@
+commit 35d4e62a2a0d7cb60e42075616ca16e3e911d22a
+Author:     esan <esan.wu@gmail.com>
+AuthorDate: Tue Nov 3 18:23:10 2026 +0800
+Commit:     esan <esan.wu@gmail.com>
+CommitDate: Tue Nov 3 18:23:10 2026 +0800
+
+    feat(identity): D3 板卡 thermal/esd 字段级主体归属（不搬容器、判不出即 ambiguous）
+
+diff --git a/qc/identity_scope.py b/qc/identity_scope.py
+index a94d801..78185f6 100644
+--- a/qc/identity_scope.py
++++ b/qc/identity_scope.py
+@@ -226,6 +226,43 @@ def _strip_device_semantics(doc: dict, bi: dict, specs: dict, mpn: str,
+     return n
+ 
+ 
++def _stamp_row_subjects(doc: dict, document_scope: str) -> int:
++    """给板卡 doc 的 `thermal` / `esd` 每一行标主体（**不搬容器**）。
++
++    证据口径（与裁决表一致，只认能落到这一行来源的事实）：
++
++    | 来源证据 | 主体 |
++    |---|---|
++    | `onboard_device_datasheet`（这份 PDF 是器件手册）| `onboard_device` |
++    | `board_user_guide`（与请求号绑定的板卡 UG）| `board` |
++    | 无法确认 | `ambiguous`（保留行、标待人工，**不自动归属**）|
++
++    为什么不按参数名猜：`RθJA` 在板卡 UG 里也可能引用器件值，
++    `HBM` 也可能指整板接口保护 —— 单看名字无法区分主体。一个 item 只有一份
++    PDF，所以「这份文档是什么」才是可复算的证据。
++    """
++    scope = str(document_scope or "")
++    subject = ("onboard_device" if scope == "onboard_device_datasheet"
++               else "board" if scope == "board_user_guide"
++               else "ambiguous")
++    counts: dict[str, dict[str, int]] = {}
++    for key in ("thermal", "esd"):
++        rows = (doc.get("specs") or {}).get(key) or []
++        per = counts.setdefault(key, {})
++        for row in rows:
++            if not isinstance(row, dict):
++                continue
++            # 上游显式给过主体就尊重它（同一份 doc 幂等重跑不会翻转）
++            row.setdefault("subject", subject)
++            row.setdefault("subject_source", scope or "unresolved")
++            if row["subject"] == "ambiguous":
++                row.setdefault("subject_review", "needs_human")
++            per[row["subject"]] = per.get(row["subject"], 0) + 1
++    if counts:
++        doc.setdefault("specs", {})["subject_summary"] = counts
++    return sum(sum(v.values()) for v in counts.values())
++
++
+ def _document_evidence(mpn: str, text: str, device: str) -> tuple[str, list[dict]]:
+     """只接受首页标题附近的请求号，不把订货匹配或引用指南当作指南证据。"""
+     head = (text or "")[:4000]
+@@ -370,6 +407,14 @@ def apply(doc: dict, mpn: str, pdf_text: str = "",
+     if not guide:
+         stripped = _strip_device_semantics(doc, bi, specs, mpn, mfr, device, pkg, rep)
+         rep["semantic_stripped"] = stripped
++    # ---- 3a-2. 字段级主体归属（Phase 1.7.1 D3）
++    #
++    # 只搬 `electrical / absolute_max` 是不够的：`thermal` / `esd` 仍留在主容器，
++    # 消费者没法只凭容器位置判断一行属于板卡还是板载芯片。这里**不搬容器**，
++    # 给每一行补最小的 provenance —— 主体 + 证据来源；判不出的标 ambiguous，
++    # 保留行并交人工，绝不按参数名或数值猜。
++    stamped = _stamp_row_subjects(doc, document_scope)
++    rep["subject_stamped"] = stamped
+ 
+     # ---- 3b. 分类归一：板卡不能挂在 IC 分类下
+     cat = _clean(bi.get("category"))
+diff --git a/tests/test_phase171_d3_subject.py b/tests/test_phase171_d3_subject.py
+new file mode 100644
+index 0000000..4a178b0
+--- /dev/null
++++ b/tests/test_phase171_d3_subject.py
+@@ -0,0 +1,116 @@
++#!/usr/bin/env python3
++# -*- coding: utf-8 -*-
++"""Phase 1.7.1 · D3：板卡 `thermal` / `esd` 的字段级主体归属。
++
++Phase 1.7 灰度暴露的问题：板卡分支只搬 `electrical / absolute_max`，
++`thermal`（11 行）/ `esd`（2 行）仍留在主容器，仅靠 `specs.scope=onboard_device`
++做整体标记 —— 消费者无法仅凭容器位置判断一行属于板卡还是板载芯片。
++
++裁决要求：
++* **不整体搬容器**（不能把所有 thermal/ESD 一律搬进板卡容器）；
++* 每一行要有**可复算的来源证据** → `subject` + `subject_source`；
++* 判不出主体的行保留并标 `ambiguous`，交人工，**不自动归属**。
++"""
++from __future__ import annotations
++
++import copy
++import sys
++from pathlib import Path
++
++import pytest
++
++ROOT = Path(__file__).resolve().parent.parent
++if str(ROOT) not in sys.path:
++    sys.path.insert(0, str(ROOT))
++
++from qc import identity_scope as IS                             # noqa: E402
++
++THERMAL = [
++    {"name": "RθJA", "value": "42.9", "unit": "°C/W", "condition": "64-Pin VQFN"},
++    {"name": "RθJC(top)", "value": "18.2", "unit": "°C/W", "condition": "64-Pin VQFN"},
++    {"name": "ψJT", "value": "9.1", "unit": "°C/W", "condition": "64-Pin VQFN"},
++]
++ESD = [
++    {"name": "HBM", "value": "±2500", "unit": "V"},
++    {"name": "CDM", "value": "±500", "unit": "V"},
++]
++
++
++def _board_doc() -> dict:
++    return {
++        "basic_info": {"mpn": "ADS8568EVM-PDK", "manufacturer": "Texas Instruments"},
++        "specs": {
++            "electrical": [{"name": "Resolution", "value": "16", "unit": "Bits"}],
++            "absolute_max": [{"name": "Supply Voltage", "value": "-0.3 to 18", "unit": "V"}],
++            "thermal": copy.deepcopy(THERMAL),
++            "esd": copy.deepcopy(ESD),
++            "package": {"type": "64-Pin VQFN", "pins": 64, "onboard_device": "ADS8568"},
++            "temperature": {"operating": "-40°C to 125°C", "storage": "-65°C to 150°C"},
++        },
++        "ordering_info": [], "metadata": {},
++    }
++
++
++def test_device_datasheet_rows_are_marked_onboard_device():
++    """器件手册来源：thermal/esd 每一行都是 onboard_device，且**没有被搬走**。"""
++    doc = _board_doc()
++    rec = IS.apply(doc, "ADS8568EVM-PDK",
++                   pdf_text=("ADS8568EVM-PDK Evaluation Module\n"
++                             "The ADS8568 is an 8-channel, 16-bit simultaneous-sampling ADC."),
++                   pdf_path="data/pdfs/ADS8568EVM-PDK__sbas543c.pdf")
++    assert rec["identity"] == "evaluation_board", rec
++    assert doc["basic_info"]["document_scope"] == "onboard_device_datasheet", rec
++    assert len(doc["specs"]["thermal"]) == len(THERMAL), "D3 不允许整体搬容器"
++    assert len(doc["specs"]["esd"]) == len(ESD)
++    for row in doc["specs"]["thermal"] + doc["specs"]["esd"]:
++        assert row["subject"] == "onboard_device", row
++        assert row["subject_source"] == "onboard_device_datasheet", row
++        assert "subject_review" not in row
++    assert doc["specs"]["subject_summary"]["thermal"]["onboard_device"] == len(THERMAL)
++    assert doc["specs"]["subject_summary"]["esd"]["onboard_device"] == len(ESD)
++    # 电气/绝对最大值仍按原逻辑搬进隔离区（D3 不改这部分）
++    assert doc["specs"]["electrical"] == []
++    assert doc["specs"]["absolute_max"] == []
++
++
++def test_board_guide_rows_are_marked_board():
++    """与请求号绑定的板卡 UG：行主体是 board。"""
++    doc = _board_doc()
++    assert IS._stamp_row_subjects(doc, "board_user_guide") == len(THERMAL) + len(ESD)
++    for row in doc["specs"]["thermal"] + doc["specs"]["esd"]:
++        assert row["subject"] == "board"
++        assert row["subject_source"] == "board_user_guide"
++
++
++def test_unresolved_rows_are_ambiguous_and_keep_human_review():
++    """主体判不出 → ambiguous + needs_human，行必须保留（不得猜、不得删）。"""
++    doc = _board_doc()
++    assert IS._stamp_row_subjects(doc, "") == len(THERMAL) + len(ESD)
++    for row in doc["specs"]["thermal"] + doc["specs"]["esd"]:
++        assert row["subject"] == "ambiguous"
++        assert row["subject_source"] == "unresolved"
++        assert row["subject_review"] == "needs_human"
++
++
++def test_subject_stamping_is_idempotent():
++    """同一份 doc 跑两次，主体不翻转（幂等）。"""
++    doc = _board_doc()
++    IS._stamp_row_subjects(doc, "onboard_device_datasheet")
++    before = copy.deepcopy(doc["specs"]["thermal"])
++    IS._stamp_row_subjects(doc, "board_user_guide")     # 第二次给了不同证据
++    assert doc["specs"]["thermal"] == before, "已标过的行不许被第二次覆盖"
++
++
++def test_chip_docs_are_not_stamped():
++    """芯片 doc 没有板卡主体问题，不许无端加 subject 字段。"""
++    doc = {
++        "basic_info": {"mpn": "LM317", "manufacturer": "Texas Instruments"},
++        "specs": {"thermal": copy.deepcopy(THERMAL), "esd": copy.deepcopy(ESD),
++                  "package": {"type": "SOT-223", "pins": 4}},
++        "ordering_info": [{"mpn": "LM317DCYR", "package": "SOT-223"}],
++    }
++    rec = IS.apply(doc, "LM317", pdf_text="LM317 3-Pin Adjustable Regulator",
++                   pdf_path="data/pdfs/LM317__lm317.pdf")
++    assert rec["identity"] == "chip", rec
++    assert "subject" not in doc["specs"]["thermal"][0]
++    assert "subject_summary" not in doc["specs"]

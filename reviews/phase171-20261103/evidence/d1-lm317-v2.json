@@ -1,0 +1,248 @@
+{
+  "probe": "V2 parse_pdf on frozen LM317 PDF with canned model output",
+  "mpn": "LM317",
+  "pdf_sha256": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+  "status": "ok",
+  "thermal_rows": 34,
+  "placeholder_rows": [],
+  "thermal": [
+    {
+      "name": "RθJA",
+      "value": "66.8",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "RθJA",
+      "value": "23.5",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCS (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJA",
+      "value": "37.9",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCT (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJA",
+      "value": "38.0",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "RθJC(top)",
+      "value": "43.2",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "RθJC(top)",
+      "value": "15.9",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCS (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJC(top)",
+      "value": "51.1",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCT (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJC(top)",
+      "value": "36.5",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "RθJB",
+      "value": "16.9",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "RθJB",
+      "value": "7.9",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCS (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJB",
+      "value": "23.2",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCT (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJB",
+      "value": "18.9",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "ψJT",
+      "value": "3.6",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "ψJT",
+      "value": "3.0",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCS (TO-220) 3 PINS"
+    },
+    {
+      "name": "ψJT",
+      "value": "13.0",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCT (TO-220) 3 PINS"
+    },
+    {
+      "name": "ψJT",
+      "value": "6.9",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "ψJB",
+      "value": "16.8",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "ψJB",
+      "value": "7.8",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCS (TO-220) 3 PINS"
+    },
+    {
+      "name": "ψJB",
+      "value": "22.8",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCT (TO-220) 3 PINS"
+    },
+    {
+      "name": "ψJB",
+      "value": "17.9",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "RθJC(bot)",
+      "value": "0.1",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCS (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJC(bot)",
+      "value": "4.2",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KCT (TO-220) 3 PINS"
+    },
+    {
+      "name": "RθJC(bot)",
+      "value": "1.1",
+      "unit": "°C/W",
+      "condition": "Legacy Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "RθJA",
+      "value": "59.6",
+      "unit": "°C/W",
+      "condition": "New Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "RθJA",
+      "value": "41.0",
+      "unit": "°C/W",
+      "condition": "New Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "RθJC(top)",
+      "value": "39.3",
+      "unit": "°C/W",
+      "condition": "New Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "RθJC(top)",
+      "value": "43.6",
+      "unit": "°C/W",
+      "condition": "New Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "RθJB",
+      "value": "8.4",
+      "unit": "°C/W",
+      "condition": "New Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "RθJB",
+      "value": "23.6",
+      "unit": "°C/W",
+      "condition": "New Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "ψJT",
+      "value": "1.8",
+      "unit": "°C/W",
+      "condition": "New Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "ψJT",
+      "value": "10.4",
+      "unit": "°C/W",
+      "condition": "New Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "ψJB",
+      "value": "8.3",
+      "unit": "°C/W",
+      "condition": "New Chip; DCY (SOT-223) 4 PINS"
+    },
+    {
+      "name": "ψJB",
+      "value": "22.6",
+      "unit": "°C/W",
+      "condition": "New Chip; KTT (TO-263) 3 PINS"
+    },
+    {
+      "name": "RθJC(bot)",
+      "value": "0.9",
+      "unit": "°C/W",
+      "condition": "New Chip; KTT (TO-263) 3 PINS"
+    }
+  ],
+  "metadata.deterministic_extract": {
+    "thermal": {
+      "from": 7,
+      "to": 34,
+      "method": "deterministic"
+    },
+    "esd": {
+      "from": 0,
+      "to": 2,
+      "method": "deterministic"
+    },
+    "model_unverified": {
+      "stamped": 3
+    }
+  },
+  "metadata.core_validation": "pass",
+  "llm_calls": [
+    {
+      "stage": "parse",
+      "model": "qwen-flash-stub",
+      "provider": "stub.local",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 50,
+        "total_tokens": 150,
+        "_model": "qwen-flash-stub",
+        "_base": "https://stub.local/v1"
+      },
+      "latency_ms": 0,
+      "ok": true,
+      "error": "",
+      "attempt": 1
+    }
+  ]
+}

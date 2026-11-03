@@ -1,0 +1,36 @@
+{
+  "probe": "V2 parse_pdf real LLM on frozen LM317 at 35d4e62 (before metadata retry fix)",
+  "repo": "main@35d4e62",
+  "observed_defect": "repair retry replaced doc; stale meta handle dropped pdf_hash/deterministic_extract/core_validation",
+  "sample": {
+    "mpn": "LM317",
+    "pdf": "LM317__lm317.pdf",
+    "url": "https://www.ti.com.cn/lit/ds/symlink/lm317.pdf",
+    "sha_expected": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+    "pdf_sha_actual": "",
+    "slice": {
+      "chars": 27999,
+      "pages_used": 16,
+      "pages_total": 45,
+      "is_datasheet": true,
+      "reused": false
+    },
+    "status": "ok",
+    "error": "",
+    "ms": 121844,
+    "llm_calls": 2,
+    "tokens": 36512,
+    "thermal_rows": 34,
+    "esd_rows": 2,
+    "electrical_rows": 22,
+    "identity": "chip",
+    "document_scope": null,
+    "specs_scope": "device",
+    "pin_scope": "device",
+    "subject_summary": null,
+    "det": null,
+    "core": null,
+    "json_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\p171_e2e\\parsed\\LM317_1646fb2e.json",
+    "elapsed_s": 127.8
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "probe": "V2 preprocess+parse_pdf after 88d023e",
+  "samples": [
+    {
+      "mpn": "ADS8568EVM-PDK",
+      "pdf": "ADS8568EVM-PDK__sbas543c.pdf",
+      "url": "https://www.ti.com/lit/ds/sbas543c/sbas543c.pdf",
+      "slice": {
+        "chars": 41893,
+        "pages_used": 16,
+        "pages_total": 62,
+        "is_datasheet": true
+      },
+      "status": "ok",
+      "error": "",
+      "ms": 195701,
+      "llm_calls": 1,
+      "tokens": 27379,
+      "pdf_sha": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+      "thermal_rows": 11,
+      "esd_rows": 2,
+      "electrical_rows": 0,
+      "absolute_max_rows": 0,
+      "identity": "evaluation_board",
+      "document_scope": "onboard_device_datasheet",
+      "specs_scope": "onboard_device",
+      "pin_scope": "board",
+      "subject_summary": {
+        "thermal": {
+          "onboard_device": 11
+        },
+        "esd": {
+          "onboard_device": 2
+        }
+      },
+      "det": {
+        "thermal": {
+          "from": 11,
+          "to": 11,
+          "method": "deterministic"
+        },
+        "esd": {
+          "from": 2,
+          "to": 2,
+          "method": "deterministic"
+        },
+        "role_split": 30,
+        "role_split_rows": 153,
+        "role_labeled": 55,
+        "model_unverified": {
+          "stamped": 164
+        }
+      },
+      "core": "pass",
+      "json_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\p171_ads\\parsed\\ADS8568EVM-PDK_79c02991.json",
+      "elapsed_s": 200.6
+    },
+    {
+      "mpn": "DAC8568EVM",
+      "pdf": "DAC8568EVM__slau301.pdf",
+      "url": "https://www.ti.com/lit/ug/slau301/slau301.pdf",
+      "slice": {
+        "chars": 28074,
+        "pages_used": 10,
+        "pages_total": 10,
+        "is_datasheet": false
+      },
+      "status": "skipped",
+      "error": "NOT_A_DATASHEET: 无参数表特征词（User Guide / Quick Start），跳过 LLM",
+      "ms": 0,
+      "llm_calls": 0,
+      "tokens": 0,
+      "pdf_sha": null,
+      "thermal_rows": 0,
+      "esd_rows": 0,
+      "electrical_rows": 0,
+      "absolute_max_rows": 0,
+      "identity": null,
+      "document_scope": null,
+      "specs_scope": null,
+      "pin_scope": null,
+      "subject_summary": null,
+      "det": null,
+      "core": null,
+      "json_path": "",
+      "elapsed_s": 0.2
+    }
+  ]
+}

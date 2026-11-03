@@ -1,0 +1,37 @@
+{
+  "sample": "s3",
+  "mpn": "DAC8568EVM",
+  "pdf": "DAC8568EVM__slau301.pdf",
+  "pages": 10,
+  "is_datasheet": false,
+  "status": "skipped",
+  "error": "NOT_A_DATASHEET: 无参数表特征词（User Guide / Quick Start），跳过 LLM",
+  "llm_calls": 0,
+  "json_written": false,
+  "expect_skipped": true,
+  "expect_no_llm": true,
+  "expect_no_json": true,
+  "passed": true,
+  "production_guard": {
+    "before": {
+      "files": 8992,
+      "bytes": 129255042,
+      "newest_mtime": "2026-11-03 14:06:59",
+      "digest": "9a089c9c73d3aae61e7855c77924c3ed4c15a90618a6333fdb88ed67aefb3738"
+    },
+    "after": {
+      "files": 8992,
+      "bytes": 129255042,
+      "newest_mtime": "2026-11-03 14:06:59",
+      "digest": "9a089c9c73d3aae61e7855c77924c3ed4c15a90618a6333fdb88ed67aefb3738"
+    },
+    "unchanged": {
+      "files": true,
+      "bytes": true,
+      "newest_mtime": true,
+      "digest": true
+    },
+    "clean": true
+  },
+  "isolated_out_dir": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\p171_s3__mefe06h"
+}

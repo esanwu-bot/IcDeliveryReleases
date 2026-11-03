@@ -1,0 +1,30 @@
+{
+  "probe": "json_to_txt.render on real s2 doc (board w/ chip datasheet)",
+  "render_calls_canonical_view": true,
+  "doc_main_thermal": 0,
+  "doc_main_esd": 0,
+  "view_main_thermal": 0,
+  "view_main_esd": 0,
+  "view_onboard_thermal": 11,
+  "view_onboard_esd": 2,
+  "html_len": 26837,
+  "html_view_len": 26837,
+  "banner": "not limits for the assembled board",
+  "thermal_block": {
+    "section_found": true,
+    "banner_in_section": true,
+    "names_outside": [],
+    "ok": true,
+    "section_start": 18735,
+    "section_end": 21326
+  },
+  "esd_block": {
+    "section_found": true,
+    "banner_in_section": true,
+    "names_outside": [],
+    "ok": true,
+    "section_start": 21326,
+    "section_end": 25239
+  },
+  "passed": true
+}

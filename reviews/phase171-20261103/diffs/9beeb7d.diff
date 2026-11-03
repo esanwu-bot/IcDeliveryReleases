@@ -1,0 +1,229 @@
+commit 9beeb7d082095fa1adc438701d2f4b5580c32897
+Author:     esan <esan.wu@gmail.com>
+AuthorDate: Tue Nov 3 19:12:30 2026 +0800
+Commit:     esan <esan.wu@gmail.com>
+CommitDate: Tue Nov 3 19:12:30 2026 +0800
+
+    fix(identity): D3 发布视图按行级 subject 隔离 thermal/esd（消费端闭环）
+    
+    Phase 1.7.1 验收发现：`identity_scope` 给 board 件的 thermal/esd 标了
+    `subject`/`subject_source`，但 `canonical_view` 的契约只认 `scope`/`device_scope`，
+    且分桶只处理 electrical/absolute_max —— 标注**没有下游消费者**，渲染层照旧把
+    芯片热阻当板级规格印在板卡页上。
+    
+    - `qc/scope_contract.py`：`_row_scope()` 把行级 `subject` 计入 scope 证据
+      （`ambiguous` 经 normalize 落 unresolved）；`canonical_view()` 的按行分桶
+      扩到 `thermal` / `esd`，与 `electrical` / `absolute_max` 同口径。
+      只搬**证据指向 onboard_device** 的行；`subject=board` 的整板参数保留主容器；
+      判不出主体的行进 `unresolved_specs` 等人工，不做自动归属。
+    - 测试：D3 的 `test_device_datasheet_rows_...` 口径修正为「标 onboard_device
+      **且**归入隔离桶」；新增发布视图三向用例（板载隔离 / 整板保留 / ambiguous 归档）。
+    - D1 补一条五阶段链路证明：`stage_llm` 不传 `llm_fn` 时走默认
+      `PLATFORM.parse_pdf`，落盘 JSON 必带 `metadata.deterministic_extract`（34 行）。
+    
+    回归：pipeline_stages + phase171 D1/D2/D3 + board/identity/scope + thermal
+    夹具 **205 passed**；`tests/test_scope_contract.py` **36 passed**。
+
+diff --git a/qc/scope_contract.py b/qc/scope_contract.py
+index b472ab6..b0ca827 100644
+--- a/qc/scope_contract.py
++++ b/qc/scope_contract.py
+@@ -72,6 +72,13 @@ def _row_scope(row: dict, default: str, requested: str) -> tuple[str, str, bool]
+     scopes = [row[k] for k in ("scope", "device_scope") if k in row]
+     if "scope" in source:
+         scopes.append(source["scope"])
++    # Phase 1.7.1 D3：`identity_scope` 给 thermal/esd 行标的 `subject` 是**行级
++    # 主体证据**（onboard_device / board / ambiguous）。契约必须认它 —— 否则
++    # 标注只写进 JSON、发布视图照样把芯片热阻当板级规格渲染（consumers 读的是
++    # canonical_view，不是原 doc）。`ambiguous` 经 normalize_scope 落 unresolved。
++    subj = str(row.get("subject") or "").strip()
++    if subj:
++        scopes.append(subj)
+     normalized = {normalize_scope(v) for v in scopes}
+     conflict = len(normalized) > 1
+     scope = next(iter(normalized)) if len(normalized) == 1 else (
+@@ -240,7 +247,9 @@ def canonical_view(doc: dict) -> dict:
+         merge_quarantined(target, key, value)
+ 
+     main_allowed = known and ((identity in BOARD_TYPES and scope == "board") or (identity in ("chip", "device") and scope == "device"))
+-    for key in ("electrical", "absolute_max"):
++    # `thermal` / `esd` 与 `electrical` / `absolute_max` 同口径：板卡件里
++    # 判成 onboard_device 的行不能留在主容器（Phase 1.7.1 D3 的消费端闭环）。
++    for key in ("electrical", "absolute_max", "thermal", "esd"):
+         rows = specs.get(key) or []
+         keep = []
+         if not isinstance(rows, list):
+diff --git a/tests/test_phase171_d1_deterministic.py b/tests/test_phase171_d1_deterministic.py
+index e9e0d87..bcf490e 100644
+--- a/tests/test_phase171_d1_deterministic.py
++++ b/tests/test_phase171_d1_deterministic.py
+@@ -118,10 +118,9 @@ def _pin_key(rows):
+ def test_v2_parse_pdf_applies_deterministic(monkeypatch, tmp_path):
+     """V2 落盘后：热阻 34 行、占位符不落行（否则就是 Phase 1.7 的 D1）。
+ 
+-    **引脚不在此断言**：LM317 的引脚表是 `PIN | FUNCTION` 两列，不在
+-    `extract_pins` 认的 `NAME | NO.` 布局里（实测 `extract_pins=0`），
+-    所以「3 vs 4」是模型方差，不是确定性差异。引脚一致性由下面
+-    `test_v2_and_legacy_deterministic_agree` 用同一份模型输出验证。
++    引脚：D4 之前 `extract_pins` 不认 LM317 的 `PIN | FUNCTION` 布局，模型给
++    4 条会原样保留；D4 之后确定性层把它改成 3 条（ADJUST/INPUT/OUTPUT）。
++    本用例同时守住这条覆盖关系：`deterministic_extract.pins` 必须是 4→3。
+     """
+     rec = _v2_run(monkeypatch, tmp_path)
+     assert rec["status"] == "ok", rec.get("error")
+@@ -130,11 +129,12 @@ def test_v2_parse_pdf_applies_deterministic(monkeypatch, tmp_path):
+     assert len(thermal) == 34, f"实得 {len(thermal)} 行（模型原样是 36）"
+     assert not [r for r in thermal
+                 if str(r.get("value")).strip().upper() in DE._PLACEHOLDERS]
++    assert len(doc["pin_configuration"]) == 3
+     # 记录可审计：走了哪条确定性路径、从多少行改到多少行
+     det = (doc.get("metadata") or {}).get("deterministic_extract") or {}
+     assert det.get("thermal", {}).get("to") == 34, det
+     assert det.get("thermal", {}).get("from") == 7, det
+-    assert "pins" not in det, "LM317 的引脚表不在 extract_pins 覆盖范围，不该有 deterministic 改写"
++    assert det.get("pins") == {"from": 4, "to": 3, "method": "deterministic"}, det
+ 
+ 
+ def test_repair_retry_keeps_deterministic_metadata(monkeypatch, tmp_path):
+@@ -188,6 +188,32 @@ def test_apply_deterministic_is_idempotent():
+     assert len(doc["specs"]["thermal"]) == 34
+ 
+ 
++def test_stage_llm_default_path_lands_deterministic(tmp_path, monkeypatch):
++    """五阶段路径的补证：`stage_llm` **不传 llm_fn** 时走默认 `PLATFORM.parse_pdf`。
++
++    D1 的验收第 5 条要求「证明五阶段实际调用了该函数，而不只是单测直调」：
++    这里从阶段层进入（`Ctx` + 真实切片），让默认实现自己跑，落盘 JSON 必须带
++    `metadata.deterministic_extract`（thermal 从模型原样 7 行改成 34 行）。
++    """
++    from app.pipeline import preprocess as PP
++    from app.pipeline import stages as S
++    from app.pipeline.stage_state import StageStateStore
++    import parse_datasheets as pd
++
++    slc, _ = PP.load_or_build(PDF, "LM317", root=tmp_path / "slices", pd_module=pd)
++    _stub_chat(monkeypatch)
++    with StageStateStore(tmp_path / "s.sqlite3") as st:
++        ctx = S.Ctx(mpn="LM317", mpn_key="lm317", pdf_path=PDF,
++                    pdf_sha256=slc.pdf_sha256, slice=slc,
++                    out_dir=tmp_path / "out", state=st)
++        r = S.stage_llm(ctx, pd_module=pd)          # 不给 llm_fn → 默认 parse_pdf
++    assert r.status == "ok", (r.status, r.error)
++    doc = json.loads(Path(r.artifact).read_text(encoding="utf-8"))
++    assert len(doc["specs"]["thermal"]) == 34
++    det = (doc.get("metadata") or {}).get("deterministic_extract") or {}
++    assert det.get("thermal", {}).get("to") == 34, det
++
++
+ def test_placeholder_edges_are_consistent():
+     """`NA`/`—` 不落行；KCS 的 0.1 不许冒充 DCY。
+ 
+diff --git a/tests/test_phase171_d3_subject.py b/tests/test_phase171_d3_subject.py
+index 4a178b0..a923d03 100644
+--- a/tests/test_phase171_d3_subject.py
++++ b/tests/test_phase171_d3_subject.py
+@@ -24,6 +24,7 @@ if str(ROOT) not in sys.path:
+     sys.path.insert(0, str(ROOT))
+ 
+ from qc import identity_scope as IS                             # noqa: E402
++from qc import scope_contract as SC                             # noqa: E402
+ 
+ THERMAL = [
+     {"name": "RθJA", "value": "42.9", "unit": "°C/W", "condition": "64-Pin VQFN"},
+@@ -52,7 +53,13 @@ def _board_doc() -> dict:
+ 
+ 
+ def test_device_datasheet_rows_are_marked_onboard_device():
+-    """器件手册来源：thermal/esd 每一行都是 onboard_device，且**没有被搬走**。"""
++    """器件手册来源：thermal/esd 每一行标 onboard_device，并归入隔离桶。
++
++    2026-11-03 验收口径修正：原用例断言「不搬容器」只覆盖标注层，会让芯片热阻
++    继续留在板卡主容器（渲染层读 `canonical_view`，照样当板级规格印出去）。
++    正确契约是**按行证据搬**：`subject=onboard_device` → `onboard_device_specs`；
++    `subject=board` 的整板参数仍留在主容器（见发布视图用例）。
++    """
+     doc = _board_doc()
+     rec = IS.apply(doc, "ADS8568EVM-PDK",
+                    pdf_text=("ADS8568EVM-PDK Evaluation Module\n"
+@@ -60,9 +67,12 @@ def test_device_datasheet_rows_are_marked_onboard_device():
+                    pdf_path="data/pdfs/ADS8568EVM-PDK__sbas543c.pdf")
+     assert rec["identity"] == "evaluation_board", rec
+     assert doc["basic_info"]["document_scope"] == "onboard_device_datasheet", rec
+-    assert len(doc["specs"]["thermal"]) == len(THERMAL), "D3 不允许整体搬容器"
+-    assert len(doc["specs"]["esd"]) == len(ESD)
+-    for row in doc["specs"]["thermal"] + doc["specs"]["esd"]:
++    assert doc["specs"]["thermal"] == [], "芯片热阻不许留在板卡主容器"
++    assert doc["specs"]["esd"] == []
++    ods = doc["specs"]["onboard_device_specs"]
++    assert len(ods["thermal"]) == len(THERMAL), "芯片热阻必须归入 onboard_device"
++    assert len(ods["esd"]) == len(ESD)
++    for row in ods["thermal"] + ods["esd"]:
+         assert row["subject"] == "onboard_device", row
+         assert row["subject_source"] == "onboard_device_datasheet", row
+         assert "subject_review" not in row
+@@ -114,3 +124,65 @@ def test_chip_docs_are_not_stamped():
+     assert rec["identity"] == "chip", rec
+     assert "subject" not in doc["specs"]["thermal"][0]
+     assert "subject_summary" not in doc["specs"]
++
++
++# ---------------------------------------------------------------- 发布视图闭环
++def _board_view_doc(scope: str, subject: str) -> dict:
++    """最小板卡 doc：主容器直接放 thermal/esd，行级 `subject` 是唯一证据。"""
++    rows = copy.deepcopy(THERMAL)
++    esd = copy.deepcopy(ESD)
++    for r in rows + esd:
++        r["subject"] = subject
++        r["subject_source"] = "board_user_guide" if subject == "board" else scope
++    return {
++        "basic_info": {"mpn": "ADS8568EVM-PDK", "manufacturer": "Texas Instruments",
++                       "identity": "evaluation_board", "device_mpn": "ADS8568"},
++        "specs": {
++            "scope": scope,
++            "electrical": [], "absolute_max": [],
++            "thermal": rows, "esd": esd,
++            "package": {"type": "Evaluation Board", "pins": 0,
++                        "onboard_device": "ADS8568"},
++            "temperature": {"operating": "not_specified", "storage": "not_specified"},
++        },
++        "pin_configuration": [], "ordering_info": [], "metadata": {},
++    }
++
++
++def test_publication_view_isolates_onboard_thermal_esd():
++    """发布视图必须把 `subject=onboard_device` 的 thermal/esd 搬出主容器。
++
++    这是 Phase 1.7.1 D3 的**消费端**验收：只标注不搬，板卡页仍会把芯片热阻
++    当板级规格渲染（渲染层读的是 `canonical_view`，不是原 doc）。
++    """
++    doc = _board_doc()
++    IS.apply(doc, "ADS8568EVM-PDK",
++             pdf_text=("ADS8568EVM-PDK Evaluation Module\n"
++                       "The ADS8568 is an 8-channel, 16-bit simultaneous-sampling ADC."),
++             pdf_path="data/pdfs/ADS8568EVM-PDK__sbas543c.pdf")
++    view = SC.canonical_view(doc)
++    assert view["specs"]["thermal"] == [], "芯片热阻仍留在板卡主容器"
++    assert view["specs"]["esd"] == []
++    ods = view["specs"]["onboard_device_specs"]
++    assert len(ods["thermal"]) == len(THERMAL)
++    assert len(ods["esd"]) == len(ESD)
++    assert {r["subject"] for r in ods["thermal"]} == {"onboard_device"}
++    assert ods["device_mpn"] == "ADS8568"
++
++
++def test_publication_view_keeps_board_level_thermal():
++    """`subject=board` 的整板参数必须留在主容器 —— 不许一刀切搬走。"""
++    doc = _board_view_doc("board", "board")
++    view = SC.canonical_view(doc)
++    assert len(view["specs"]["thermal"]) == len(THERMAL)
++    assert len(view["specs"]["esd"]) == len(ESD)
++
++
++def test_publication_view_archives_ambiguous_rows():
++    """主体判不出的行进 `unresolved_specs`（待人工），不许当成板级规格发布。"""
++    doc = _board_view_doc("board", "ambiguous")
++    view = SC.canonical_view(doc)
++    assert view["specs"]["thermal"] == []
++    unresolved = view["specs"]["unresolved_specs"]
++    assert len(unresolved["thermal"]) == len(THERMAL)
++    assert unresolved["scope"] == "unresolved"

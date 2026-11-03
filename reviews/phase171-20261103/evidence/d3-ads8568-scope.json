@@ -1,0 +1,98 @@
+{
+  "probe": "V2 parse_pdf real LLM on frozen ADS8568EVM-PDK (main@88d023e)",
+  "mpn": "ADS8568EVM-PDK",
+  "pdf_sha256": "79c029913ea9ce5ce0cae2fb12cd22e2598088ed5a58a6c6567062ffb7d9bb76",
+  "identity": "evaluation_board",
+  "document_scope": "onboard_device_datasheet",
+  "specs_scope": "onboard_device",
+  "pin_scope": "board",
+  "thermal_rows": 11,
+  "esd_rows": 2,
+  "electrical_rows": 0,
+  "absolute_max_rows": 0,
+  "onboard_device_specs_counts": {
+    "device_mpn": "ADS8568",
+    "scope": "onboard_device",
+    "source": "onboard_device_datasheet",
+    "electrical": 153,
+    "absolute_max": 11,
+    "temperature": {
+      "operating": "-40°C to 125°C",
+      "storage": "-65°C to 150°C"
+    },
+    "package": "64-Pin VQFN",
+    "package_status": "not_confirmed_as_mounted",
+    "dimensions": "9.00 mm × 9.00 mm",
+    "dimensions_status": "not_confirmed_as_mounted",
+    "pin_configuration": 40
+  },
+  "subject_summary": {
+    "thermal": {
+      "onboard_device": 11
+    },
+    "esd": {
+      "onboard_device": 2
+    }
+  },
+  "thermal_sample": [
+    {
+      "name": "RθJA",
+      "value": "22",
+      "unit": "°C/W",
+      "condition": "RGC (VQFN) 64 PINS",
+      "subject": "onboard_device",
+      "subject_source": "onboard_device_datasheet"
+    },
+    {
+      "name": "RθJA",
+      "value": "48.5",
+      "unit": "°C/W",
+      "condition": "PM (LQFP) 64 PINS",
+      "subject": "onboard_device",
+      "subject_source": "onboard_device_datasheet"
+    },
+    {
+      "name": "RθJC(top)",
+      "value": "9.0",
+      "unit": "°C/W",
+      "condition": "RGC (VQFN) 64 PINS",
+      "subject": "onboard_device",
+      "subject_source": "onboard_device_datasheet"
+    }
+  ],
+  "esd_sample": [
+    {
+      "name": "HBM",
+      "value": "±2500",
+      "unit": "V",
+      "subject": "onboard_device",
+      "subject_source": "onboard_device_datasheet"
+    },
+    {
+      "name": "CDM",
+      "value": "±500",
+      "unit": "V",
+      "subject": "onboard_device",
+      "subject_source": "onboard_device_datasheet"
+    }
+  ],
+  "deterministic_extract": {
+    "thermal": {
+      "from": 11,
+      "to": 11,
+      "method": "deterministic"
+    },
+    "esd": {
+      "from": 2,
+      "to": 2,
+      "method": "deterministic"
+    },
+    "role_split": 30,
+    "role_split_rows": 153,
+    "role_labeled": 55,
+    "model_unverified": {
+      "stamped": 164
+    }
+  },
+  "core_validation": "pass"
+}

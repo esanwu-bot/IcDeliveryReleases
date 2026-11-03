@@ -1,0 +1,32 @@
+{
+  "probe": "V2 parse_pdf real LLM after 88d023e (metadata retry fix)",
+  "mpn": "LM317",
+  "status": "ok",
+  "error": "",
+  "elapsed_s": 60.5,
+  "llm_calls": 1,
+  "tokens": 16903,
+  "pdf_sha": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+  "thermal_rows": 34,
+  "esd_rows": 2,
+  "identity": "chip",
+  "specs_scope": "device",
+  "pin_scope": "device",
+  "deterministic_extract": {
+    "thermal": {
+      "from": 36,
+      "to": 34,
+      "method": "deterministic"
+    },
+    "esd": {
+      "from": 4,
+      "to": 2,
+      "method": "deterministic"
+    },
+    "model_unverified": {
+      "stamped": 26
+    }
+  },
+  "core_validation": "pass",
+  "json_path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\p171_fix_5prpxt1e\\parsed\\LM317_1646fb2e.json"
+}

@@ -1,0 +1,98 @@
+commit 88d023e9994bb830e89832fbc9930291b624a8e9
+Author:     esan <esan.wu@gmail.com>
+AuthorDate: Tue Nov 3 18:34:28 2026 +0800
+Commit:     esan <esan.wu@gmail.com>
+CommitDate: Tue Nov 3 18:34:28 2026 +0800
+
+    fix(pipeline): D1 复核修正 —— 早落 datasheet_url、重试后重取 metadata（避免白烧一次修复调用）
+
+diff --git a/app/services/pipeline.py b/app/services/pipeline.py
+index 16de4aa..84e4211 100644
+--- a/app/services/pipeline.py
++++ b/app/services/pipeline.py
+@@ -174,6 +174,12 @@ def parse_pdf(pdf: Path, mpn: str, datasheet_url: str = "", *,
+         meta = doc.setdefault("metadata", {})
+         if errs:
+             meta["quality_warning"] = "; ".join(errs)
++        # 溯源链先落库：`check_core` 的第一条就是 datasheet_url。V2 的 URL 是
++        # fetch/调用方给的，等到后面再 setdefault 会让核心校验必然报一条
++        # 「URL 为空」→ 白触发一次修复重试（实测多烧 23k tokens）。
++        bi = doc.setdefault("basic_info", {})
++        if datasheet_url and not str(bi.get("datasheet_url") or "").strip():
++            bi["datasheet_url"] = datasheet_url
+ 
+         # ---- 确定性抽取：与 parse_datasheets.parse_one **同一份实现** ----
+         # Phase 1.7 D1（2026-11-03）：V2 曾漏掉这一步 —— 同一份 LM317 PDF，
+@@ -209,6 +215,9 @@ def parse_pdf(pdf: Path, mpn: str, datasheet_url: str = "", *,
+             content = call(messages, "repair", 3, temperature=0.0,
+                            enable_thinking=True, max_tokens=pd.RETRY_MAX_TOKENS)
+             doc, _clean_stats = pd.parse_doc_clean(content)
++            # 重试稿替换了 doc：`meta` 还指向上一个 doc 的 metadata，不重取的话
++            # 后面所有 meta.update 都写进孤儿对象（Legacy 同款坑）。
++            meta = doc.setdefault("metadata", {})
+             _apply_deterministic()
+             core_errs = DE.check_core(doc, det_rep) + DE.check_acceptance(doc, mpn)
+ 
+@@ -227,10 +236,6 @@ def parse_pdf(pdf: Path, mpn: str, datasheet_url: str = "", *,
+             "confidence": round(max(0.0, min(1.0, conf)), 2),
+             "requested_mpn": mpn,
+         })
+-        # 确定性处理的改动摘要 + 核心字段校验：与 Legacy 同名字段，下游能用
+-        # 同一套审计脚本回答「这条链到底跑没跑确定性抽取」。
+-        meta["deterministic_extract"] = det_rep
+-        meta["core_validation"] = _CV.stamp(meta, doc, core_errs or _CV.PASS)
+         bi = doc.setdefault("basic_info", {})
+         if not bi.get("datasheet_url"):
+             bi["datasheet_url"] = datasheet_url
+@@ -244,6 +249,15 @@ def parse_pdf(pdf: Path, mpn: str, datasheet_url: str = "", *,
+         except Exception as e:                                     # noqa: BLE001
+             meta["identity_scope_error"] = f"{type(e).__name__}: {e}"[:200]
+ 
++        # 确定性处理的改动摘要 + 核心字段校验：与 Legacy 同名字段，下游能用
++        # 同一套审计脚本回答「这条链到底跑没跑确定性抽取」。
++        # **必须在 `IS.apply` 之后重取 metadata**：它会 `doc["metadata"] = …`
++        # 换成新 dict，上面那个 `meta` 变量已指向旧对象（Legacy 同款坑，
++        # 实测导致 deterministic_extract / core_validation 两个字段丢失）。
++        meta = doc["metadata"] = pd._as_dict(doc.get("metadata"))
++        meta["deterministic_extract"] = det_rep
++        meta["core_validation"] = _CV.stamp(meta, doc, core_errs or _CV.PASS)
++
+         config.PARSED.mkdir(parents=True, exist_ok=True)
+         _out_dir = Path(out_dir) if out_dir else config.PARSED
+         _out_dir.mkdir(parents=True, exist_ok=True)
+diff --git a/tests/test_phase171_d1_deterministic.py b/tests/test_phase171_d1_deterministic.py
+index 01297f3..e9e0d87 100644
+--- a/tests/test_phase171_d1_deterministic.py
++++ b/tests/test_phase171_d1_deterministic.py
+@@ -137,6 +137,31 @@ def test_v2_parse_pdf_applies_deterministic(monkeypatch, tmp_path):
+     assert "pins" not in det, "LM317 的引脚表不在 extract_pins 覆盖范围，不该有 deterministic 改写"
+ 
+ 
++def test_repair_retry_keeps_deterministic_metadata(monkeypatch, tmp_path):
++    """核心校验触发修复重试时，确定性摘要也不许丢（metadata 被换对象的坑）。
++
++    V2 的 URL 由 fetch 传入；这里故意**不传** URL，强制走 `check_core` 失败 →
++    修复重试路径。重试稿替换 doc 后，`meta` 若不重取，会把
++    `deterministic_extract` 写进孤儿 metadata（灰度实测丢失）。
++    """
++    _stub_chat(monkeypatch)
++    # CANNED 本身带 datasheet_url；这里要构造「模型没写 URL、调用方也没传」的形态。
++    no_url = copy.deepcopy(CANNED)
++    no_url["basic_info"].pop("datasheet_url", None)
++    monkeypatch.setattr(pd, "chat", lambda messages, **kw: (
++        json.dumps(no_url, ensure_ascii=False),
++        {"prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150,
++         "_model": "qwen-flash-stub", "_base": "https://stub.local/v1"}))
++    rec = P.parse_pdf(PDF, "LM317", "", out_dir=tmp_path)
++    assert rec["status"] == "ok", rec.get("error")
++    doc = rec["doc"]
++    assert len(doc["specs"]["thermal"]) == 34
++    det = (doc.get("metadata") or {}).get("deterministic_extract") or {}
++    assert det.get("thermal", {}).get("to") == 34, det
++    assert (doc.get("metadata") or {}).get("core_validation") is not None
++    assert len(rec["llm_calls"]) == 2, "没传 URL 应触发一次修复重试"
++
++
+ def test_v2_and_legacy_deterministic_agree(monkeypatch, tmp_path):
+     """同一冻结 PDF、同一份模型输出：V2 与 Legacy 的确定性结果必须逐条一致。"""
+     v2 = _v2_run(monkeypatch, tmp_path / "v2")

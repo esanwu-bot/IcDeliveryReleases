@@ -1,0 +1,63 @@
+{
+  "sample": "s1",
+  "mpn": "LM317",
+  "pdf": "LM317__lm317.pdf",
+  "pdf_sha256": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+  "status": "ok",
+  "error": "",
+  "elapsed_s": 51.5,
+  "thermal_rows": 34,
+  "thermal_names": [
+    "RθJA",
+    "RθJB",
+    "RθJC(bot)",
+    "RθJC(top)",
+    "ψJB",
+    "ψJT"
+  ],
+  "placeholder_rows": 0,
+  "pins": 3,
+  "deterministic_extract": {
+    "thermal": {
+      "from": 36,
+      "to": 34,
+      "method": "deterministic"
+    },
+    "esd": {
+      "from": 2,
+      "to": 2,
+      "method": "deterministic"
+    },
+    "model_unverified": {
+      "stamped": 26
+    }
+  },
+  "llm_calls": 1,
+  "expect_thermal_34": true,
+  "expect_no_placeholder": true,
+  "expect_det_to_34": true,
+  "passed": true,
+  "out_json": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\p171_s1_qbszzg3k\\LM317_1646fb2e.json",
+  "production_guard": {
+    "before": {
+      "files": 8992,
+      "bytes": 129255042,
+      "newest_mtime": "2026-11-03 14:06:59",
+      "digest": "9a089c9c73d3aae61e7855c77924c3ed4c15a90618a6333fdb88ed67aefb3738"
+    },
+    "after": {
+      "files": 8992,
+      "bytes": 129255042,
+      "newest_mtime": "2026-11-03 14:06:59",
+      "digest": "9a089c9c73d3aae61e7855c77924c3ed4c15a90618a6333fdb88ed67aefb3738"
+    },
+    "unchanged": {
+      "files": true,
+      "bytes": true,
+      "newest_mtime": true,
+      "digest": true
+    },
+    "clean": true
+  },
+  "isolated_out_dir": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\p171_s1_qbszzg3k"
+}

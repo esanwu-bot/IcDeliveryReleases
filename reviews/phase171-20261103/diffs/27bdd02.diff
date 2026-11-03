@@ -1,0 +1,253 @@
+commit 27bdd02dd8a0ab9e8f3cddf8a0e63d8400594079
+Author:     esan <esan.wu@gmail.com>
+AuthorDate: Tue Nov 3 18:23:08 2026 +0800
+Commit:     esan <esan.wu@gmail.com>
+CommitDate: Tue Nov 3 18:23:08 2026 +0800
+
+    fix(pipeline): D1 parse_pdf 接入确定性后处理（复用 apply_deterministic）
+
+diff --git a/app/services/pipeline.py b/app/services/pipeline.py
+index b6a79db..16de4aa 100644
+--- a/app/services/pipeline.py
++++ b/app/services/pipeline.py
+@@ -174,6 +174,44 @@ def parse_pdf(pdf: Path, mpn: str, datasheet_url: str = "", *,
+         meta = doc.setdefault("metadata", {})
+         if errs:
+             meta["quality_warning"] = "; ".join(errs)
++
++        # ---- 确定性抽取：与 parse_datasheets.parse_one **同一份实现** ----
++        # Phase 1.7 D1（2026-11-03）：V2 曾漏掉这一步 —— 同一份 LM317 PDF，
++        # Legacy 热阻 34 行、V2 却是模型原样的 36 行（含 `NA`/`—`）。根因不是
++        # 模型方差，是链路没执行相同的确定性后处理。这里**只调用** qc 的同一份
++        # `apply_deterministic`，不复制任何判据；调用时机与 Legacy 一致：
++        # 模型输出校验通过 → 确定性覆盖 → 核心字段校验 → 不达标时一次修复重试后
++        # **再覆盖一次**（避免拿模型的脏行去覆盖重试稿）。
++        from qc import core_validation as _CV                    # noqa: PLC0415
++        from qc import deterministic_extract as DE                # noqa: PLC0415
++
++        det_rep: dict = {}
++
++        def _apply_deterministic() -> None:
++            nonlocal det_rep
++            try:
++                import pymupdf as _fitz                          # noqa: PLC0415
++                with _fitz.open(str(pdf)) as _fd:
++                    det_rep = DE.apply_deterministic(doc, _fd)
++            except ImportError:
++                det_rep = {"skipped": "pymupdf 不可用，确定性抽取未执行"}
++            except Exception as e:                              # noqa: BLE001
++                det_rep = {"error": f"{type(e).__name__}: {e}"[:200]}
++
++        _apply_deterministic()
++        core_errs = DE.check_core(doc, det_rep) + DE.check_acceptance(doc, mpn)
++        if core_errs:
++            messages += [
++                {"role": "assistant", "content": content[:6000]},
++                {"role": "user", "content": "核心字段不达标：" + "；".join(core_errs) +
++                 "。请修正并重新输出完整 JSON（只输出 JSON，保持全部 key）。"},
++            ]
++            content = call(messages, "repair", 3, temperature=0.0,
++                           enable_thinking=True, max_tokens=pd.RETRY_MAX_TOKENS)
++            doc, _clean_stats = pd.parse_doc_clean(content)
++            _apply_deterministic()
++            core_errs = DE.check_core(doc, det_rep) + DE.check_acceptance(doc, mpn)
++
+         try:
+             conf = float(meta.get("confidence") or 0)
+         except (TypeError, ValueError):
+@@ -189,6 +227,10 @@ def parse_pdf(pdf: Path, mpn: str, datasheet_url: str = "", *,
+             "confidence": round(max(0.0, min(1.0, conf)), 2),
+             "requested_mpn": mpn,
+         })
++        # 确定性处理的改动摘要 + 核心字段校验：与 Legacy 同名字段，下游能用
++        # 同一套审计脚本回答「这条链到底跑没跑确定性抽取」。
++        meta["deterministic_extract"] = det_rep
++        meta["core_validation"] = _CV.stamp(meta, doc, core_errs or _CV.PASS)
+         bi = doc.setdefault("basic_info", {})
+         if not bi.get("datasheet_url"):
+             bi["datasheet_url"] = datasheet_url
+diff --git a/tests/test_phase171_d1_deterministic.py b/tests/test_phase171_d1_deterministic.py
+new file mode 100644
+index 0000000..01297f3
+--- /dev/null
++++ b/tests/test_phase171_d1_deterministic.py
+@@ -0,0 +1,179 @@
++#!/usr/bin/env python3
++# -*- coding: utf-8 -*-
++"""Phase 1.7.1 · D1：V2 的 `parse_pdf` 必须复用 Legacy 的确定性后处理。
++
++背景（Phase 1.7 灰度，样本 1）：
++同一份 LM317 PDF（SHA `1646fb2e…`）——
++* Legacy（`parse_datasheets.parse_one`）→ thermal **34** 行 / 引脚 **3** 条；
++* V2（`app/services/pipeline.parse_pdf`）→ thermal **36** 行（含 `NA`/`—`）/ 引脚 **4** 条（重复 OUTPUT）。
++
++根因不是模型方差：V2 的 `parse_pdf` **没有调用** `apply_deterministic`。
++本文件先把这条差异写成会失败的用例，再要求实现复用**同一份**函数（不许复制判据）。
++"""
++from __future__ import annotations
++
++import copy
++import json
++import sys
++from pathlib import Path
++
++import pytest
++
++ROOT = Path(__file__).resolve().parent.parent
++if str(ROOT) not in sys.path:
++    sys.path.insert(0, str(ROOT))
++
++import parse_datasheets as pd                                   # noqa: E402
++from app.services import pipeline as P                          # noqa: E402
++from qc import deterministic_extract as DE                      # noqa: E402
++
++PDF = ROOT / "data" / "pdfs" / "LM317__lm317.pdf"
++pytestmark = pytest.mark.skipif(not PDF.exists(), reason="缺少 LM317 标尺 PDF")
++
++#: 模型在一次真实运行中给出的形态：按封装分组、占位符照样落行、引脚多一条重复。
++CANNED = {
++    "basic_info": {"mpn": "LM317", "manufacturer": "Texas Instruments",
++                   "identity": "chip",
++                   "datasheet_url": "https://www.ti.com.cn/lit/ds/symlink/lm317.pdf",
++                   "description": "3-Pin Adjustable Regulator"},
++    "specs": {
++        "electrical": [
++            {"name": "Reference voltage", "value": "1.25", "unit": "V", "condition": ""},
++            {"name": "Line regulation", "value": "0.01", "unit": "%/V", "condition": ""},
++            {"name": "Load regulation", "value": "0.1", "unit": "%VO", "condition": ""},
++        ],
++        "absolute_max": [],
++        "thermal": [
++            {"name": "RθJA", "value": "66.8", "unit": "°C/W",
++             "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"},
++            {"name": "RθJC(top)", "value": "43.2", "unit": "°C/W",
++             "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"},
++            {"name": "RθJC(bot)", "value": "NA", "unit": "°C/W",
++             "condition": "Legacy Chip; DCY (SOT-223) 4 PINS"},
++            {"name": "RθJA", "value": "23.5", "unit": "°C/W",
++             "condition": "Legacy Chip; KCS (TO-220) 3 PINS"},
++            {"name": "RθJC(bot)", "value": "0.1", "unit": "°C/W",
++             "condition": "Legacy Chip; KCS (TO-220) 3 PINS"},
++            {"name": "RθJC(bot)", "value": "—", "unit": "°C/W",
++             "condition": "New Chip; DCY (SOT-223) 4 PINS"},
++            {"name": "RθJC(top)", "value": "43.6", "unit": "°C/W",
++             "condition": "New Chip; KTT (TO-263) 3 PINS"},
++        ],
++        "esd": [],
++        "package": {"type": "SOT-223", "pins": 4, "dimensions": ""},
++        "temperature": {"operating": "-40°C to 125°C", "storage": "-65°C to 150°C"},
++    },
++    "pin_configuration": [
++        {"pin": "1", "name": "ADJUST", "description": "Output voltage adjustment pin."},
++        {"pin": "2", "name": "OUTPUT", "description": "Output voltage pin."},
++        {"pin": "3", "name": "INPUT", "description": "Input voltage pin."},
++        {"pin": "4", "name": "OUTPUT", "description": "Output voltage pin."},
++    ],
++    "features": [], "applications": [],
++    "ordering_info": [{"mpn": "LM317DCYR", "package": "SOT-223", "pins": 4,
++                       "status": "Active"}],
++    "alternatives": [], "seo": {}, "metadata": {"confidence": 0.95},
++}
++
++
++def _stub_chat(monkeypatch):
++    """模型调用固定返回同一份 CANNED（不碰网络、不引入模型方差）。"""
++    def fake_chat(messages, **kw):
++        return json.dumps(CANNED, ensure_ascii=False), {
++            "prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150,
++            "_model": "qwen-flash-stub", "_base": "https://stub.local/v1"}
++    monkeypatch.setattr(pd, "chat", fake_chat)
++
++
++def _v2_run(monkeypatch, tmp_path: Path) -> dict:
++    _stub_chat(monkeypatch)
++    return P.parse_pdf(PDF, "LM317", "https://www.ti.com.cn/lit/ds/symlink/lm317.pdf",
++                       out_dir=tmp_path)
++
++
++def _legacy_run(monkeypatch, tmp_path: Path) -> dict:
++    _stub_chat(monkeypatch)
++    tmp_path.mkdir(parents=True, exist_ok=True)
++    monkeypatch.setattr(pd, "OUT_DIR", tmp_path)
++    # parse_one 末尾用 `out.relative_to(ROOT)` 生成 rec["out"]；测试的临时目录
++    # 在仓库外，不一起改 ROOT 会抛 ValueError。
++    monkeypatch.setattr(pd, "ROOT", tmp_path)
++    rec = pd.parse_one(PDF, {})
++    if rec.get("status") == "ok" and rec.get("out"):
++        # Legacy 的 rec 不带 doc，落盘文件才是它的最终产物（含 identity_scope 改写）
++        rec["doc"] = json.loads((tmp_path / rec["out"]).read_text(encoding="utf-8"))
++    return rec
++
++
++def _thermal_key(rows):
++    return sorted((r.get("name"), str(r.get("value")),
++                   str(r.get("condition") or "")) for r in rows)
++
++
++def _pin_key(rows):
++    return sorted((str(r.get("pin")), str(r.get("name"))) for r in rows)
++
++
++# ---------------------------------------------------------------- D1 红先测试
++def test_v2_parse_pdf_applies_deterministic(monkeypatch, tmp_path):
++    """V2 落盘后：热阻 34 行、占位符不落行（否则就是 Phase 1.7 的 D1）。
++
++    **引脚不在此断言**：LM317 的引脚表是 `PIN | FUNCTION` 两列，不在
++    `extract_pins` 认的 `NAME | NO.` 布局里（实测 `extract_pins=0`），
++    所以「3 vs 4」是模型方差，不是确定性差异。引脚一致性由下面
++    `test_v2_and_legacy_deterministic_agree` 用同一份模型输出验证。
++    """
++    rec = _v2_run(monkeypatch, tmp_path)
++    assert rec["status"] == "ok", rec.get("error")
++    doc = rec["doc"]
++    thermal = doc["specs"]["thermal"]
++    assert len(thermal) == 34, f"实得 {len(thermal)} 行（模型原样是 36）"
++    assert not [r for r in thermal
++                if str(r.get("value")).strip().upper() in DE._PLACEHOLDERS]
++    # 记录可审计：走了哪条确定性路径、从多少行改到多少行
++    det = (doc.get("metadata") or {}).get("deterministic_extract") or {}
++    assert det.get("thermal", {}).get("to") == 34, det
++    assert det.get("thermal", {}).get("from") == 7, det
++    assert "pins" not in det, "LM317 的引脚表不在 extract_pins 覆盖范围，不该有 deterministic 改写"
++
++
++def test_v2_and_legacy_deterministic_agree(monkeypatch, tmp_path):
++    """同一冻结 PDF、同一份模型输出：V2 与 Legacy 的确定性结果必须逐条一致。"""
++    v2 = _v2_run(monkeypatch, tmp_path / "v2")
++    legacy = _legacy_run(monkeypatch, tmp_path / "legacy")
++    assert legacy["status"] == "ok", legacy.get("error")
++    # V2 的 doc 来自 rec；Legacy 的 doc 就是模型 + 确定性后的同一对象
++    v2_doc = v2["doc"]
++    legacy_doc = legacy["doc"]
++    assert _thermal_key(v2_doc["specs"]["thermal"]) == _thermal_key(legacy_doc["specs"]["thermal"])
++    assert _pin_key(v2_doc["pin_configuration"]) == _pin_key(legacy_doc["pin_configuration"])
++
++
++def test_apply_deterministic_is_idempotent():
++    """重复调用不得二次清洗 / 数据损坏（D1 验收第 3 条）。"""
++    import pymupdf
++    doc = copy.deepcopy(CANNED)
++    with pymupdf.open(str(PDF)) as fd:
++        DE.apply_deterministic(doc, fd)
++        once_th = copy.deepcopy(doc["specs"]["thermal"])
++        once_pins = copy.deepcopy(doc["pin_configuration"])
++        DE.apply_deterministic(doc, fd)
++    assert doc["specs"]["thermal"] == once_th
++    assert doc["pin_configuration"] == once_pins
++    assert len(doc["specs"]["thermal"]) == 34
++
++
++def test_placeholder_edges_are_consistent():
++    """`NA`/`—` 不落行；KCS 的 0.1 不许冒充 DCY。
++
++    引脚不在本用例断言范围（见上一条：LM317 的引脚布局不在 `extract_pins`
++    覆盖范围，确定性层对它没有改写权，Legacy/V2 都保留模型的引脚）。
++    """
++    import pymupdf
++    doc = copy.deepcopy(CANNED)
++    with pymupdf.open(str(PDF)) as fd:
++        DE.apply_deterministic(doc, fd)
++    bot = [r for r in doc["specs"]["thermal"] if r["name"] == "RθJC(bot)"]
++    assert not any("DCY" in r["condition"] and "Legacy" in r["condition"] for r in bot)
++    assert any(r["value"] == "0.1" and "KCS" in r["condition"] for r in bot)
++    assert all(str(r["value"]) not in ("NA", "N/A", "—") for r in bot)

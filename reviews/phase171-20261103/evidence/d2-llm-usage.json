@@ -1,0 +1,62 @@
+{
+  "probe": "stage_llm on frozen LM317 slice with real _log_calls -> isolated sqlite llm_usage",
+  "db_path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\p171d2_q_tm5m4z\\workbench.sqlite3",
+  "r1": {
+    "stage": "llm",
+    "status": "ok",
+    "idem_key": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3:llm:1:4a7cd656d2b8b3f48da954a05160c04a7d4431d616791cb5ee16f9b417401752:qwen-flash:a88e6e80318e323411f197af3325452572d96a1db832707e30365af2316333d9",
+    "artifact": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\p171d2_q_tm5m4z\\out\\LM317_d2stub.json",
+    "error": "",
+    "ms": 21000,
+    "detail": {
+      "model": "qwen-flash",
+      "prompt_sha256": "4a7cd656d2b8b3f48da954a05160c04a7d4431d616791cb5ee16f9b417401752",
+      "confidence": 0.9,
+      "electrical_rows": 1,
+      "pins": 0,
+      "llm_calls": 2
+    }
+  },
+  "r2": {
+    "stage": "llm",
+    "status": "cached",
+    "idem_key": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3:llm:1:4a7cd656d2b8b3f48da954a05160c04a7d4431d616791cb5ee16f9b417401752:qwen-flash:a88e6e80318e323411f197af3325452572d96a1db832707e30365af2316333d9",
+    "artifact": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\p171d2_q_tm5m4z\\out\\LM317_d2stub.json",
+    "error": "",
+    "ms": 3,
+    "detail": {
+      "model": "qwen-flash",
+      "prompt_sha256": "4a7cd656d2b8b3f48da954a05160c04a7d4431d616791cb5ee16f9b417401752"
+    }
+  },
+  "llm_usage_rows": [
+    {
+      "item_id": 42,
+      "mpn_key": "lm317",
+      "stage": "parse",
+      "model": "qwen-flash",
+      "provider": "dashscope.aliyuncs.com",
+      "prompt_tokens": 900,
+      "completion_tokens": 400,
+      "total_tokens": 1300,
+      "latency_ms": 12000,
+      "attempt": 1,
+      "ok": 1,
+      "error": ""
+    },
+    {
+      "item_id": 42,
+      "mpn_key": "lm317",
+      "stage": "repair",
+      "model": "qwen-flash",
+      "provider": "dashscope.aliyuncs.com",
+      "prompt_tokens": 1100,
+      "completion_tokens": 500,
+      "total_tokens": 1600,
+      "latency_ms": 9000,
+      "attempt": 2,
+      "ok": 0,
+      "error": "JSONDecodeError: truncated"
+    }
+  ]
+}
