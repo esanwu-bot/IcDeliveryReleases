@@ -1,0 +1,2 @@
+mpn,disposition,reason_code,reason_zh,pdf_sha256,log_evidence
+CDC6CE025000ADLYR,not_produced,PARSE_EMPTY_ALL_CONTAINERS,解析轮次内四容器全空；本轮用 HEAD 948c2c2 独立重解析 2 次仍为 0 行（electrical/thermal/esd/absolute_max），按不用空 JSON 冒充通过的口径不入包,6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404,.sandbox/adlyr_reparse.log + .sandbox/adlyr_retry.log（两次 status=ok 但 rows=0）

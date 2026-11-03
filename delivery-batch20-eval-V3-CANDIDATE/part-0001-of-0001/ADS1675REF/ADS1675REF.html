@@ -1,0 +1,1623 @@
+<div class="pd-wrap">
+<header class="pd-hero">
+	<div class="pd-hero-inner">
+		<nav class="pd-crumb" aria-label="category" style="font-size:.82em;letter-spacing:.02em;opacity:.72;margin:0 0 8px;line-height:1.5;">
+			Integrated Circuits (ICs) › Analog-to-Digital Converters (ADCs)
+		</nav>
+		<h1 class="pd-hero-title">
+			ADS1675REF 24-Bit ADC, 4MSPS, TQFP-64
+		</h1>
+		<p class="pd-hero-desc">
+			The ADS1675 is a high-speed, high-precision 24-bit analog-to-digital converter with 103dB dynamic range at 4MSPS and 111dB at 125kSPS.
+		</p>
+	</div>
+</header>
+<section class="pd-sec" id="product-introduction">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			ADS1675REF Overview
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			ADS1675REF features a dual-path programmable digital filter with selectable Low-Latency or Wide-Bandwidth paths, operates from +5V analog and +3V digital supplies, and supports both CMOS and LVDS serial interfaces. Designed for automated test equipment, medical imaging, and scientific instrumentation.
+		</p>
+		<p>
+			Key capabilities include 4MSPS, 24-bit analog-to-digital converter with 103dB dynamic range at 4MSPS and 111dB at 125kSPS; dual-path programmable digital filter with selectable Low-Latency or Wide-Bandwidth paths; low-Latency filter settles in as fast as 2.65ms.
+		</p>
+		<p>
+			It is used in Automated Test Equipment, Medical Imaging, Scientific Instrumentation, Test and Measurement.
+		</p>
+		<p>
+			ADS1675REF is supplied in the TQFP-64 package with 64 pins, an operating range of -40°C to +85°C, and 6 documented orderable options.
+		</p>
+		<p>
+			The values on this page come from the Texas Instruments datasheet (<a href="https://www.ti.com/lit/ds/symlink/ads1675.pdf" rel="nofollow">source PDF</a>).
+		</p>
+		<div class="pd-expert-insight">
+			<h3>
+				Technical Insight
+			</h3>
+			<p>
+				<strong>What should be checked when designing with ADS1675REF?</strong>
+			</p>
+			<ul>
+				<li>
+					<strong>Respect the Absolute Maximum Rails:</strong> Absolute maximum ratings limit AVDD to AGND to -0.3 to +5.5 V; DVDD to DGND to -0.3 to +3.6 V. Design the supply sequence and transients inside these limits before selecting surrounding components.
+				</li>
+				<li>
+					<strong>Budget the Thermal Headroom:</strong> Operating temperature is -40°C to +85°C, storage -60°C to +150°C. Derating, self-heating and airflow must be verified at the worst-case ambient of the enclosure.
+				</li>
+				<li>
+					<strong>Lock the Package and Pinout Early:</strong> The TQFP-64 (64 pins), 10mm x 10mm defines the footprint, thermal path and pin assignment; confirm it against the current revision before layout.
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="key-benefits">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			K
+		</div>
+		<h2 class="pd-sec-title">
+			Key Benefits
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-grid2">
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>4MSPS, 24-bit analog-to-digital converter
+				</div>
+				<p class="pd-card-desc">
+					with 103dB dynamic range at 4MSPS and 111dB at 125kSPS.
+				</p>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Dual-path programmable digital filter
+				</div>
+				<p class="pd-card-desc">
+					with selectable Low-Latency or Wide-Bandwidth paths.
+				</p>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Low-Latency filter settles in as fast as 2.65ms
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Wide-Bandwidth path provides 1.7MHz bandwidth
+				</div>
+				<p class="pd-card-desc">
+					with flat passband ripple (&lt; ±0.00002dB) and 86dB stopband attenuation.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="specifications">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			S
+		</div>
+		<h2 class="pd-sec-title">
+			Electrical Specifications
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<em class="pd-verify-note" style="display:block;border-left:3px solid #c98a00;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">14 of 78 entries below are marked unverified (†) — the value was kept as extracted, but it came from the language model rather than deterministic parsing, or its test condition / column roles could not be matched back to a datasheet row. Confirm against the original datasheet before design use.</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Value
+					</th>
+					<th>
+						Conditions and Context
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Full-scale input voltage
+					</td>
+					<td>
+						±VREF †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Common-mode input voltage
+					</td>
+					<td>
+						2.5 V
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dynamic range
+					</td>
+					<td>
+						100 dB
+					</td>
+					<td>
+						Inputs shorted together, Low-Latency path, fDATA = 4MSPS; MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dynamic range
+					</td>
+					<td>
+						103 dB
+					</td>
+					<td>
+						Inputs shorted together, Low-Latency path, fDATA = 4MSPS; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dynamic range
+					</td>
+					<td>
+						100.5 dB
+					</td>
+					<td>
+						Inputs shorted together, Low-Latency path, fDATA = 2MSPS; MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dynamic range
+					</td>
+					<td>
+						103.5 dB
+					</td>
+					<td>
+						Inputs shorted together, Low-Latency path, fDATA = 2MSPS; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dynamic range
+					</td>
+					<td>
+						108 dB
+					</td>
+					<td>
+						Inputs shorted together, Low-Latency path, fDATA = 125kSPS; MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dynamic range
+					</td>
+					<td>
+						111 dB
+					</td>
+					<td>
+						Inputs shorted together, Low-Latency path, fDATA = 125kSPS; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Signal-to-noise ratio (SNR)
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">92 to 97 dB †</span>
+					</td>
+					<td>
+						fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Signal-to-noise ratio (SNR)
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">97 to 107 dB †</span>
+					</td>
+					<td>
+						fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 2MSPS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Signal-to-noise ratio (SNR)
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">107 to 120 dB †</span>
+					</td>
+					<td>
+						fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Total harmonic distortion (THD)
+					</td>
+					<td>
+						-103 dB
+					</td>
+					<td>
+						fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Total harmonic distortion (THD)
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-103 to -107 dB †</span>
+					</td>
+					<td>
+						fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 2MSPS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Total harmonic distortion (THD)
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-107 to -120 dB †</span>
+					</td>
+					<td>
+						fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Spurious-free dynamic range (SFDR)
+					</td>
+					<td>
+						120 dB
+					</td>
+					<td>
+						fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS, signal harmonics excluded; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Resolution
+					</td>
+					<td>
+						24 Bits
+					</td>
+					<td>
+						Low-speed mode (DRATE = 000 to 011); MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Resolution
+					</td>
+					<td>
+						23 Bits
+					</td>
+					<td>
+						High-speed mode (DRATE = 100, 101); MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Differential nonlinearity
+					</td>
+					<td>
+						<span title="This parameter label and its value appear on the same page, but the row/column correspondence has not been established — confirm manually against the source PDF." style="border-bottom:1px dotted #c98a00;cursor:help;">24 Bits (monotonic) †</span>
+					</td>
+					<td>
+						Low-speed mode (DRATE = 000 to 011)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Differential nonlinearity
+					</td>
+					<td>
+						<span title="This parameter label and its value appear on the same page, but the row/column correspondence has not been established — confirm manually against the source PDF." style="border-bottom:1px dotted #c98a00;cursor:help;">23 Bits (monotonic) †</span>
+					</td>
+					<td>
+						High-speed mode (DRATE = 100, 101)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Integral nonlinearity
+					</td>
+					<td>
+						3 ppm of FSR
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Integral nonlinearity
+					</td>
+					<td>
+						15 ppm of FSR
+					</td>
+					<td>
+						MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Offset error
+					</td>
+					<td>
+						-5 mV
+					</td>
+					<td>
+						TA = +25°C; MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Offset error
+					</td>
+					<td>
+						5 mV
+					</td>
+					<td>
+						TA = +25°C; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Offset error drift
+					</td>
+					<td>
+						4 mV/°C
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Gain error
+					</td>
+					<td>
+						1 %
+					</td>
+					<td>
+						TA = +25°C; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Gain error drift
+					</td>
+					<td>
+						4 ppm/°C
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Noise
+					</td>
+					<td>
+						not_specified †
+					</td>
+					<td>
+						See Noise Performance table (Table 1)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Common-mode rejection
+					</td>
+					<td>
+						71 dB
+					</td>
+					<td>
+						At dc; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Passband
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">0 to 0.424fDATA Hz †</span>
+					</td>
+					<td>
+						Wide-Bandwidth path
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Passband ripple
+					</td>
+					<td>
+						±0.00002 dB
+					</td>
+					<td>
+						Wide-Bandwidth path
+					</td>
+				</tr>
+				<tr>
+					<td>
+						–0.1dB attenuation
+					</td>
+					<td>
+						0.432fDATA Hz
+					</td>
+					<td>
+						Wide-Bandwidth path
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Passband transition –3dB attenuation
+					</td>
+					<td>
+						0.488fDATA Hz
+					</td>
+					<td>
+						Wide-Bandwidth path
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Stop band
+					</td>
+					<td>
+						0.576fDATA to fCLK – 0.576fDATA Hz
+					</td>
+					<td>
+						Wide-Bandwidth path
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Stop band attenuation
+					</td>
+					<td>
+						86 dB
+					</td>
+					<td>
+						Wide-Bandwidth path; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Group delay
+					</td>
+					<td>
+						28 tDRDY
+					</td>
+					<td>
+						Wide-Bandwidth path; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Settling time
+					</td>
+					<td>
+						not_specified †
+					</td>
+					<td>
+						See the Wide-Bandwidth Filter section
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Bandwidth –3dB attenuation
+					</td>
+					<td>
+						not_specified †
+					</td>
+					<td>
+						Low-Latency path
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Settling time
+					</td>
+					<td>
+						not_specified †
+					</td>
+					<td>
+						Complete settling, See Table 5
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Reference input voltage (VREF)
+					</td>
+					<td>
+						2.75 V
+					</td>
+					<td>
+						MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Reference input voltage (VREF)
+					</td>
+					<td>
+						3 V
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Reference input voltage (VREF)
+					</td>
+					<td>
+						3.5 V
+					</td>
+					<td>
+						MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VREFP
+					</td>
+					<td>
+						2.75 V
+					</td>
+					<td>
+						MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VREFP
+					</td>
+					<td>
+						3 V
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VREFP
+					</td>
+					<td>
+						3.5 V
+					</td>
+					<td>
+						MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VREFN
+					</td>
+					<td>
+						Short to AGND V †
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VIH
+					</td>
+					<td>
+						0.7AVDD to AVDD
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VIL
+					</td>
+					<td>
+						AGND to 0.3AVDD
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VIH
+					</td>
+					<td>
+						0.7DVDD to DVDD
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VIL
+					</td>
+					<td>
+						DGND to 0.3DVDD
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input leakage
+					</td>
+					<td>
+						±10 mA
+					</td>
+					<td>
+						DGND &lt; VIN &lt; DVDD; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VOH
+					</td>
+					<td>
+						0.8DVDD
+					</td>
+					<td>
+						IOH = –2mA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VOL
+					</td>
+					<td>
+						0.2DVDD
+					</td>
+					<td>
+						IOL = 2mA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						|VOD(SS)|
+					</td>
+					<td>
+						340 mV
+					</td>
+					<td>
+						Steady-state differential output voltage magnitude; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Δ|VOD(SS)|
+					</td>
+					<td>
+						±50 mV
+					</td>
+					<td>
+						Change in steady-state differential output voltage magnitude between logic states; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VOC(SS)
+					</td>
+					<td>
+						1.2 V
+					</td>
+					<td>
+						Steady-state common-mode voltage output; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Δ|VOC(SS)|
+					</td>
+					<td>
+						±50 mV
+					</td>
+					<td>
+						Change in steady-state common-mode output voltage between logic states; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VOC(pp)
+					</td>
+					<td>
+						50 mV
+					</td>
+					<td>
+						Peak-to-peak change in common-mode output voltage, VOY or VOZ = 0V; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						VOC(pp)
+					</td>
+					<td>
+						150 mV
+					</td>
+					<td>
+						Peak-to-peak change in common-mode output voltage, VOY or VOZ = 0V; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Short-circuit output current (IOS)
+					</td>
+					<td>
+						3 mA
+					</td>
+					<td>
+						VOD = 0V; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						High-impedance output current (IOZ)
+					</td>
+					<td>
+						±5 mA
+					</td>
+					<td>
+						VO = 0V or +DVDD; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Load
+					</td>
+					<td>
+						5 pF
+					</td>
+					<td>
+						MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						AVDD
+					</td>
+					<td>
+						4.75 V
+					</td>
+					<td>
+						MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						AVDD
+					</td>
+					<td>
+						5 V
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						AVDD
+					</td>
+					<td>
+						5.25 V
+					</td>
+					<td>
+						MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD
+					</td>
+					<td>
+						2.85 V
+					</td>
+					<td>
+						MIN
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD
+					</td>
+					<td>
+						3 V
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD
+					</td>
+					<td>
+						3.15 V
+					</td>
+					<td>
+						MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						AVDD current
+					</td>
+					<td>
+						70 mA
+					</td>
+					<td>
+						CMOS outputs, DVDD = 3V, DRATE = 011; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						AVDD current
+					</td>
+					<td>
+						74 mA
+					</td>
+					<td>
+						CMOS outputs, DVDD = 3V, DRATE = 011; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD current
+					</td>
+					<td>
+						53 mA
+					</td>
+					<td>
+						CMOS outputs, DRATE = 011; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD current
+					</td>
+					<td>
+						59 mA
+					</td>
+					<td>
+						CMOS outputs, DRATE = 011; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD current
+					</td>
+					<td>
+						70 mA
+					</td>
+					<td>
+						LVDS outputs, DVDD = 3V, DRATE = 101; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD current
+					</td>
+					<td>
+						74 mA
+					</td>
+					<td>
+						LVDS outputs, DVDD = 3V, DRATE = 101; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Power dissipation
+					</td>
+					<td>
+						510 mW
+					</td>
+					<td>
+						CMOS outputs, DRATE = 011, AVDD = 5V, DVDD = 3V; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Power dissipation
+					</td>
+					<td>
+						545 mW
+					</td>
+					<td>
+						CMOS outputs, DRATE = 011, AVDD = 5V, DVDD = 3V; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Power dissipation
+					</td>
+					<td>
+						575 mW
+					</td>
+					<td>
+						LVDS outputs, DRATE = 101, AVDD = 5V, DVDD = 3V; TYP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Power dissipation
+					</td>
+					<td>
+						600 mW
+					</td>
+					<td>
+						LVDS outputs, DRATE = 101, AVDD = 5V, DVDD = 3V; MAX
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Power-down
+					</td>
+					<td>
+						5 mW
+					</td>
+					<td>
+						TYP
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			6 entries above carry no extracted test condition — the value is only valid under the conditions of the corresponding table in the source document; confirm them there before design use.
+		</p>
+		<p>
+			<strong>Absolute maximum ratings</strong> — never operate at or beyond these limits.
+		</p>
+		<p>
+			<em class="pd-verify-note" style="display:block;border-left:3px solid #c98a00;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">10 of 10 absolute-maximum entries are marked unverified (†).</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Limit
+					</th>
+					<th>
+						Notes
+					</th>
+				</tr>
+				<tr>
+					<td>
+						AVDD to AGND
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-0.3 to +5.5 V †</span>
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DVDD to DGND
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-0.3 to +3.6 V †</span>
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						AGND to DGND
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-0.3 to +0.3 V †</span>
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Momentary input current
+					</td>
+					<td>
+						100 mA †
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Continuous input current
+					</td>
+					<td>
+						10 mA †
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Analog I/O to AGND
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-0.3 to AVDD +0.3 †</span>
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Digital I/O to DGND
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-0.3 to DVDD +0.3 †</span>
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Maximum junction temperature
+					</td>
+					<td>
+						+150 °C †
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Operating temperature range
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-40 to +85 °C †</span>
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Storage temperature range
+					</td>
+					<td>
+						<span class="pd-verify-flag pd-verify-unresolved" data-verify-status="unresolved" title="This row is marked unresolved by the extraction pipeline: the value was kept for traceability, but the row was not audited. Do not rely on it without checking the source PDF." style="color:#b3261e;font-weight:600;border-bottom:1px dotted #b3261e;cursor:help;">-60 to +150 °C †</span>
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.05em;">
+			Thermal resistance
+		</h3>
+		<p>
+			<em class="pd-verify-ok" style="display:block;border-left:3px solid #1f7a3f;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">All 1 entries below are anchored to the source PDF — each value was replayed against a specific table row or text entry (page + bounding box + reproducible fingerprint). Anchoring proves the value is bound to that row; it does not by itself prove that column roles (MIN/TYP/MAX), test conditions or footnotes have been reviewed.</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Value
+					</th>
+					<th>
+						Conditions and Context
+					</th>
+				</tr>
+				<tr>
+					<td>
+						RθJA
+					</td>
+					<td>
+						60 °C/W
+					</td>
+					<td>
+						TQFP-64; 64 PINS
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.05em;">
+			ESD ratings
+		</h3>
+		<p>
+			<em class="pd-verify-ok" style="display:block;border-left:3px solid #1f7a3f;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">All 2 entries below are anchored to the source PDF — each value was replayed against a specific table row or text entry (page + bounding box + reproducible fingerprint). Anchoring proves the value is bound to that row; it does not by itself prove that column roles (MIN/TYP/MAX), test conditions or footnotes have been reviewed.</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Value
+					</th>
+					<th>
+						Conditions and Context
+					</th>
+				</tr>
+				<tr>
+					<td>
+						HBM
+					</td>
+					<td>
+						±2000 V
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						CDM
+					</td>
+					<td>
+						±1000 V
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			2 entries above carry no extracted test condition — the value is only valid under the conditions of the corresponding table in the source document; confirm them there before design use.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="package">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Package
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>ADS1675REF</strong> uses the <strong>TQFP-64</strong> package with 64 pins.
+		</p>
+		<p>
+			The device is specified with body dimensions of 10mm x 10mm, an operating temperature range of -40°C to +85°C, and a storage range of -60°C to +150°C. Confirm the mechanical drawing in the current datasheet revision before release to production.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="pinout">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Pinout
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			The TQFP-64 pin assignment groups 30 unique pin functions across 64 terminals.
+		</p>
+		<ul class="pd-list">
+			<li>
+				<strong>1, 7, 11, 12, 58 - AVDD:</strong> Analog supply
+			</li>
+			<li>
+				<strong>2, 3, 6, 9, 10, 54, 56, 57 - AGND:</strong> Analog ground
+			</li>
+			<li>
+				<strong>4 - AINN:</strong> Negative analog input
+			</li>
+			<li>
+				<strong>5 - AINP:</strong> Positive analog input
+			</li>
+			<li>
+				<strong>8 - RBIAS:</strong> Analog bias setting resistor
+			</li>
+			<li>
+				<strong>13 - VCM:</strong> Terminal for external bypass capacitor connection to internal common-mode voltage
+			</li>
+			<li>
+				<strong>14, 15, 16, 17, 18, 19, 20, 25, 26, 31, 50, 51 - DGND:</strong> Digital ground
+			</li>
+			<li>
+				<strong>21 - RSV2:</strong> Reserved, short pin to digital ground
+			</li>
+			<li>
+				<strong>22 - RSV1:</strong> Reserved, short pin to digital supply
+			</li>
+			<li>
+				<strong>23, 24, 27, 47, 48, 49, 52, 53 - DVDD:</strong> Digital supply
+			</li>
+			<li>
+				<strong>28 - PDWN:</strong> Power-down control, active low
+			</li>
+			<li>
+				<strong>29 - SCLK_SEL:</strong> Shift-clock source select. If SCLK_SEL = '0', then SCLK is internally generated. If SCLK_SEL = '1', then SCLK must be externally generated.
+			</li>
+			<li>
+				<strong>30 - LVDS:</strong> Serial interface select. If LVDS = '0', then interface is LVDS-compatible. If LVDS = '1', then interface is CMOS-compatible.
+			</li>
+			<li>
+				<strong>32 - LL_CONFIG:</strong> Configure Low-Latency digital filter. If LL_CONFIG = '0', then single-cycle settling is selected. If LL_CONFIG = '1', then fast-response is selected.
+			</li>
+			<li>
+				<strong>33 - FPATH:</strong> Digital filter path selection. If FPATH = '0', then path is Wide-Bandwidth. If FPATH = '1', then path is Low-Latency.
+			</li>
+			<li>
+				<strong>34 - DRATE[2]:</strong> Data rate selection
+			</li>
+			<li>
+				<strong>35 - DRATE[1]:</strong> Data rate selection
+			</li>
+			<li>
+				<strong>36 - DRATE[0]:</strong> Data rate selection
+			</li>
+			<li>
+				<strong>37 - START:</strong> Start convert, reset, and synchronization control input
+			</li>
+			<li>
+				<strong>38 - CS:</strong> Chip select; active low
+			</li>
+			<li>
+				<strong>39 - OTRD:</strong> Digital filter out-of-range indicator
+			</li>
+			<li>
+				<strong>40 - OTRA:</strong> Analog input out-of-range indicator
+			</li>
+			<li>
+				<strong>41, 42 - SCLK:</strong> Negative shift clock output. If SCLK_SEL = '0', then SCLK is the complementary shift clock output. If SCLK_SEL = '1', then SCLK always output is 3-state.
+			</li>
+			<li>
+				<strong>43, 44 - DOUT:</strong> Negative LVDS serial data output
+			</li>
+			<li>
+				<strong>45, 46 - DRDY:</strong> Negative data ready output
+			</li>
+			<li>
+				<strong>55 - CLK:</strong> Master clock input
+			</li>
+			<li>
+				<strong>59 - CAP1:</strong> Terminal for 1µF external bypass capacitor
+			</li>
+			<li>
+				<strong>60, 61 - VREFN:</strong> Negative reference voltage. Short to analog ground
+			</li>
+			<li>
+				<strong>62 - CAP2:</strong> Terminal for 1µF external bypass capacitor
+			</li>
+			<li>
+				<strong>63, 64 - VREFP:</strong> Positive reference voltage
+			</li>
+		</ul>
+	</div>
+</section>
+<section class="pd-sec" id="equivalent">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			E
+		</div>
+		<h2 class="pd-sec-title">
+			Orderable and Design Alternatives
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p class="pd-note pd-compat-note">
+			<strong>Order-code check:</strong> These entries are documented in the Texas Instruments ordering information for ADS1675REF, but none is an automatic substitute. Recheck the complete order code, package, temperature range, packing, marking, lifecycle and current manufacturer documentation before a design or purchasing change.
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:32%;" /><col style="width:14%;" /><col style="width:24%;" /><col style="width:30%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Orderable Option
+					</th>
+					<th>
+						Order-Code Difference
+					</th>
+					<th>
+						Packing or Package
+					</th>
+					<th>
+						Selection Check
+					</th>
+				</tr>
+				<tr>
+					<td>
+						ADS1675IPAG
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						TQFP (PAG) | 64, JEDEC TRAY (10+1)
+					</td>
+					<td>
+						ADS1675I
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ADS1675IPAG.A
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						TQFP (PAG) | 64, JEDEC TRAY (10+1)
+					</td>
+					<td>
+						ADS1675I
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ADS1675IPAGG4
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						TQFP (PAG) | 64, JEDEC TRAY (10+1)
+					</td>
+					<td>
+						ADS1675I
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ADS1675IPAGG4.A
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						TQFP (PAG) | 64, JEDEC TRAY (10+1)
+					</td>
+					<td>
+						ADS1675I
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ADS1675IPAGR
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						TQFP (PAG) | 64, LARGE T&amp;R
+					</td>
+					<td>
+						ADS1675I
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ADS1675IPAGR.A
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						TQFP (PAG) | 64, LARGE T&amp;R
+					</td>
+					<td>
+						ADS1675I
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<section class="pd-sec" id="manufacturer-information">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			M
+		</div>
+		<h2 class="pd-sec-title">
+			Manufacturer
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>Texas Instruments</strong> manufactures ADS1675REF as a Analog-to-Digital Converters (ADCs).
+		</p>
+		<p>
+			The controlling technical record is the manufacturer datasheet, available at <a href="https://www.ti.com/lit/ds/symlink/ads1675.pdf" rel="nofollow">this link</a>. Confirm the latest revision, lifecycle status, electrical limits, pin assignment and package drawing before release.
+		</p>
+		<p>
+			Document revision: SBAS416D (Rev. D), revised AUGUST 2010.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="application">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			A
+		</div>
+		<h2 class="pd-sec-title">
+			Applications
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-appgrid">
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-test-measurement.png" width="64" height="64" alt="ADS1675REF Automated Test Equipment application — Test &amp; Measurement illustration" title="ADS1675REF used in Automated Test Equipment (Test &amp; Measurement)" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Automated Test Equipment
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Automated Test Equipment can use ADS1675REF after the supply rails, operating temperature (-40°C to +85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-medical-electronics.png" width="64" height="64" alt="ADS1675REF Medical Imaging application — Medical Electronics illustration" title="ADS1675REF used in Medical Imaging (Medical Electronics)" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Medical Imaging
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Medical Imaging can use ADS1675REF after the supply rails, operating temperature (-40°C to +85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-test-measurement.png" width="64" height="64" alt="ADS1675REF Scientific Instrumentation application — Test &amp; Measurement illustration" title="ADS1675REF used in Scientific Instrumentation (Test &amp; Measurement)" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Scientific Instrumentation
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Scientific Instrumentation can use ADS1675REF after the supply rails, operating temperature (-40°C to +85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-test-measurement.png" width="64" height="64" alt="ADS1675REF Test and Measurement application — Test &amp; Measurement illustration" title="ADS1675REF used in Test and Measurement (Test &amp; Measurement)" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Test and Measurement
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Test and Measurement can use ADS1675REF after the supply rails, operating temperature (-40°C to +85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="faq">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			Q
+		</div>
+		<h2 class="pd-sec-title">
+			Frequently Asked Questions
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-faq-list">
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What distinguishes ADS1675REF from the other orderables?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							ADS1675REF is the option documented on this page in the TQFP-64 package. Related order codes listed by the manufacturer include ADS1675IPAG, ADS1675IPAG.A, ADS1675IPAGG4, ADS1675IPAGG4.A; each differs in packing, temperature grade or package option.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					Which electrical limits matter most for ADS1675REF?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							The headline specifications are Full-scale input voltage = ±VREF, Common-mode input voltage = 2.5 V, Dynamic range = 100 dB, and Dynamic range = 103 dB. Always read them together with the stated test conditions.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What must be checked before laying out ADS1675REF?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Use the current TQFP-64 drawing and pin assignment (64 pins), keep the operating range (-40°C to +85°C) inside the enclosure budget, and verify the supply rails against the absolute maximum ratings.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What is ADS1675REF typically used for?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Typical applications include Automated Test Equipment, Medical Imaging, Scientific Instrumentation, and Test and Measurement.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="disclaimer">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			D
+		</div>
+		<h2 class="pd-sec-title">
+			Important Notice
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-alert">
+			<p>
+				<strong>Engineering use:</strong> Technical values on this page are tied to the Texas Instruments datasheet for ADS1675REF (parsed 2026-11-03). Verify rails, temperature limits, timing, pinout and package in the final system.
+			</p>
+			<p>
+				<strong>Order-code control:</strong> Other orderables and evaluation boards are comparison paths only. Verify the complete model, package, temperature range, packing, marking and lifecycle before substitution or purchase.
+			</p>
+		</div>
+	</div>
+</section>
+</div>
+<div class="sr-only">
+	ADS1675REF overview with benefits, technical insight, electrical specifications, TQFP-64 details, pinout, applications, orderable alternatives and FAQs.
+</div>

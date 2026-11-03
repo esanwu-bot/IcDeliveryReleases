@@ -1,0 +1,3336 @@
+{
+  "basic_info": {
+    "mpn": "CDC6CE025000ADLFR",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Oscillators",
+    "description": "Texas Instruments' CDC6CE025000ADLFR is a low-power, LVCMOS output BAW oscillator with frequency range from 250kHz to 200MHz. It features ±25ppm total frequency stability, supply voltage from 1.8V to 3.3V, and ultra-low standby current of 1.5µA. Designed for industrial, telecom, data center, and IoT applications, it supports 25MHz output with <1ps RMS jitter and offers multiple slow-mode options for EMI reduction.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/cdc6c.pdf?ts=1742823412336",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "high",
+    "identity_evidence": [
+      "请求料号在 datasheet 订货表内（共 2 条）→ 芯片，有原厂证据"
+    ],
+    "datasheet_url_source": "prefilled",
+    "doc_type": "datasheet",
+    "doc_revision": {
+      "doc_number": "SNAS843",
+      "revision": "D",
+      "doc_id": "SNAS843D",
+      "issued": "DECEMBER 2024",
+      "revised": "JANUARY 2026",
+      "page": 1
+    }
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "IDD",
+        "value": "4.22",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 20 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "6.7",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 20 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.41",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 20 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "6.7",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 20 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.22",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 20 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            344.5,
+            554.5,
+            358.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            344.5,
+            554.5,
+            358.4
+          ],
+          "row_sha256": "89c13b7194cf5a7b7384b5fbd589d059864e4fc7adb5b4332af952a9d539fc8a",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 20 MHz, Vdd = 1.8V±10% | 4.22 | 7.3 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.3",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 20 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.41",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 20 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            358.4,
+            554.5,
+            372.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            358.4,
+            554.5,
+            372.4
+          ],
+          "row_sha256": "94200d75f93c696806abcf2f2814cb45be754b2de0a9a5c8c0be8205377753f9",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 20 MHz, Vdd = 3.3V±10% | 4.41 | 7.3 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.3",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 20 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.32",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "6.8",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            372.4,
+            554.5,
+            386.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            372.4,
+            554.5,
+            386.3
+          ],
+          "row_sha256": "58c1a2869736a4b37bafe303578f79a83e0e95d727b227707e8f6709bce72a03",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10% | 4.32 | 6.8 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.57",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "6.9",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            386.3,
+            554.5,
+            400.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            386.3,
+            554.5,
+            400.3
+          ],
+          "row_sha256": "1fd6f8b8278d5604d3bab8df416ec540bb1468a457769579df3f57deef438301",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 25 MHz, Vdd = 3.3V±10% | 4.57 | 6.9 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.32",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            400.3,
+            554.5,
+            414.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            400.3,
+            554.5,
+            414.2
+          ],
+          "row_sha256": "3e558b1e02c84323da3fe5bccbe27d3ea58e6b4099b221eaf2658c9eb067d837",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10% | 4.32 | 7.4 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.4",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            400.3,
+            554.5,
+            414.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            400.3,
+            554.5,
+            414.2
+          ],
+          "row_sha256": "3e558b1e02c84323da3fe5bccbe27d3ea58e6b4099b221eaf2658c9eb067d837",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10% | 4.32 | 7.4 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.57",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            414.2,
+            554.5,
+            428.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            414.2,
+            554.5,
+            428.2
+          ],
+          "row_sha256": "78d092117487407e4b7745d21b5c109ad18b6df82b557f1f8d8328c81023eab4",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10% | 4.57 | 7.5 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.5",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            414.2,
+            554.5,
+            428.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            414.2,
+            554.5,
+            428.2
+          ],
+          "row_sha256": "78d092117487407e4b7745d21b5c109ad18b6df82b557f1f8d8328c81023eab4",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10% | 4.57 | 7.5 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.84",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 50 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.1",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 50 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "5.33",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 50 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.2",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 50 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            442.1,
+            554.5,
+            456.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            442.1,
+            554.5,
+            456.1
+          ],
+          "row_sha256": "684fada35be6f9cd5b8cfd439a1c18c4b6edc736b4aafe4cf099340f0d01b274",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 50 MHz, Vdd = 3.3V±10% | 5.33 | 7.2 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "4.84",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 50 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            456.1,
+            554.5,
+            470.0
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            456.1,
+            554.5,
+            470.0
+          ],
+          "row_sha256": "8bfd5d0b1b3877b5f11fddcdb1b67d00a3bc94430a265c7ee13b6129f4dce471",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 50 MHz, Vdd = 1.8V±10% | 4.84 | 7.6 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.6",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 50 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            456.1,
+            554.5,
+            470.0
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            456.1,
+            554.5,
+            470.0
+          ],
+          "row_sha256": "8bfd5d0b1b3877b5f11fddcdb1b67d00a3bc94430a265c7ee13b6129f4dce471",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 50 MHz, Vdd = 1.8V±10% | 4.84 | 7.6 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "5.33",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 50 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            470.0,
+            554.5,
+            484.0
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            470.0,
+            554.5,
+            484.0
+          ],
+          "row_sha256": "1905a81e3dcb96fd350258ae1e02328134b3c0a928ec16307ae525aeb5a47498",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 50 MHz, Vdd = 3.3V±10% | 5.33 | 7.8 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.8",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 50 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            470.0,
+            554.5,
+            484.0
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            470.0,
+            554.5,
+            484.0
+          ],
+          "row_sha256": "1905a81e3dcb96fd350258ae1e02328134b3c0a928ec16307ae525aeb5a47498",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 50 MHz, Vdd = 3.3V±10% | 5.33 | 7.8 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "5.86",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 100 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.6",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 100 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            484.0,
+            554.5,
+            497.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            484.0,
+            554.5,
+            497.9
+          ],
+          "row_sha256": "048070f425c90c103ea2622ad72a71b1ab00daf4625601e44ad9e69c89b39bfe",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 100 MHz, Vdd = 1.8V±10% | 5.86 | 7.6 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "6.77",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 100 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            497.9,
+            554.5,
+            511.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            497.9,
+            554.5,
+            511.9
+          ],
+          "row_sha256": "66abdb0303aba47944f90ee6ae8c4068055d0a8a95c177caefdeb5eb5596f333",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 100 MHz, Vdd = 3.3V±10% | 6.77 | 9.0 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "9.0",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 100 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            497.9,
+            554.5,
+            511.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            497.9,
+            554.5,
+            511.9
+          ],
+          "row_sha256": "66abdb0303aba47944f90ee6ae8c4068055d0a8a95c177caefdeb5eb5596f333",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 100 MHz, Vdd = 3.3V±10% | 6.77 | 9.0 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "5.86",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 100 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            511.9,
+            554.5,
+            525.8
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            511.9,
+            554.5,
+            525.8
+          ],
+          "row_sha256": "4f210e8c6cc81ffcaa54771bc5e155bc1702232a3b6780b1aa6a507ab199ed22",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 100 MHz, Vdd = 1.8V±10% | 5.86 | 8.2 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "8.2",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 100 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            511.9,
+            554.5,
+            525.8
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            511.9,
+            554.5,
+            525.8
+          ],
+          "row_sha256": "4f210e8c6cc81ffcaa54771bc5e155bc1702232a3b6780b1aa6a507ab199ed22",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 100 MHz, Vdd = 1.8V±10% | 5.86 | 8.2 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "6.77",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 100 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            525.8,
+            554.5,
+            539.8
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            525.8,
+            554.5,
+            539.8
+          ],
+          "row_sha256": "3273cb24a9a007f975424b5b47d57dca989fab3131d80f8bc8f0803f17b36ece",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 100 MHz, Vdd = 3.3V±10% | 6.77 | 9.0 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "9.0",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 100 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            525.8,
+            554.5,
+            539.8
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            525.8,
+            554.5,
+            539.8
+          ],
+          "row_sha256": "3273cb24a9a007f975424b5b47d57dca989fab3131d80f8bc8f0803f17b36ece",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 100 MHz, Vdd = 3.3V±10% | 6.77 | 9.0 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.14",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 150 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            539.8,
+            554.5,
+            553.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            539.8,
+            554.5,
+            553.7
+          ],
+          "row_sha256": "48eb3851926d102412872ca55b0a64a86554864bea9b58f3c6eaf2e57dffcc87",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 150 MHz, Vdd = 1.8V±10% | 7.14 | 9.5 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "9.5",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 150 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            539.8,
+            554.5,
+            553.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            539.8,
+            554.5,
+            553.7
+          ],
+          "row_sha256": "48eb3851926d102412872ca55b0a64a86554864bea9b58f3c6eaf2e57dffcc87",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 150 MHz, Vdd = 1.8V±10% | 7.14 | 9.5 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "8.72",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 150 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            553.7,
+            554.5,
+            567.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            553.7,
+            554.5,
+            567.7
+          ],
+          "row_sha256": "0e8053325dd708e05646293fae95375683972db53d6bde096bb16651f451dc6c",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 150 MHz, Vdd = 3.3V±10% | 8.72 | 11.0 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "11.0",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 150 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            553.7,
+            554.5,
+            567.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            553.7,
+            554.5,
+            567.7
+          ],
+          "row_sha256": "0e8053325dd708e05646293fae95375683972db53d6bde096bb16651f451dc6c",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 85℃, Fout = 150 MHz, Vdd = 3.3V±10% | 8.72 | 11.0 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "7.14",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 150 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            567.7,
+            554.5,
+            581.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            567.7,
+            554.5,
+            581.6
+          ],
+          "row_sha256": "39ad277234ec4a0babd2eb7783656510f4f2f90b8ab428e4eb11f2291716562f",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 150 MHz, Vdd = 1.8V±10% | 7.14 | 9.5 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "9.5",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 150 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            567.7,
+            554.5,
+            581.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            567.7,
+            554.5,
+            581.6
+          ],
+          "row_sha256": "39ad277234ec4a0babd2eb7783656510f4f2f90b8ab428e4eb11f2291716562f",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 150 MHz, Vdd = 1.8V±10% | 7.14 | 9.5 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "8.72",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 150 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            581.6,
+            554.5,
+            595.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            581.6,
+            554.5,
+            595.6
+          ],
+          "row_sha256": "84ec32ab8119d441f81f45b5d9dc815fba2ae2b9feacea2f341299adc1ed8085",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 150 MHz, Vdd = 3.3V±10% | 8.72 | 11.0 | mA"
+        }
+      },
+      {
+        "name": "IDD",
+        "value": "11.0",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 150 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 6,
+          "bbox": [
+            56.6,
+            581.6,
+            554.5,
+            595.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            581.6,
+            554.5,
+            595.6
+          ],
+          "row_sha256": "84ec32ab8119d441f81f45b5d9dc815fba2ae2b9feacea2f341299adc1ed8085",
+          "quote": "Device current consumption (excluding load current) | –40℃ to 105℃, Fout = 150 MHz, Vdd = 3.3V±10% | 8.72 | 11.0 | mA"
+        }
+      },
+      {
+        "name": "IDD_stdby",
+        "value": "1.5",
+        "unit": "µA",
+        "condition": "–40℃ to 85℃, ST = GND, Vdd=1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            595.6,
+            554.5,
+            609.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            595.6,
+            554.5,
+            609.5
+          ],
+          "row_sha256": "1514b3436b960588b58175616d1521380ac4c8585b23e9d636ebe79b7554d12b",
+          "quote": "Device standby current | –40℃ to 85℃, ST = GND, Vdd=1.8V±10% | 1.5 | µA"
+        }
+      },
+      {
+        "name": "IDD_stdby",
+        "value": "2",
+        "unit": "µA",
+        "condition": "–40℃ to 85℃, ST = GND, Vdd=2.5V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            609.5,
+            554.5,
+            623.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            609.5,
+            554.5,
+            623.5
+          ],
+          "row_sha256": "e58d45bc97977ebcb9f318035b8c705d272a6202444573d023478271a3294779",
+          "quote": "Device standby current | –40℃ to 85℃, ST = GND, Vdd=2.5V±10% | 2 | µA"
+        }
+      },
+      {
+        "name": "IDD_stdby",
+        "value": "2.7",
+        "unit": "µA",
+        "condition": "–40℃ to 85℃, ST = GND, Vdd=3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            623.5,
+            554.5,
+            637.4
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            623.5,
+            554.5,
+            637.4
+          ],
+          "row_sha256": "f7518f3202e5c943966945f5556c1e2fc5c6a298830c6a8d7d1d86e7ad230922",
+          "quote": "Device standby current | –40℃ to 85℃, ST = GND, Vdd=3.3V±10% | 2.7 | µA"
+        }
+      },
+      {
+        "name": "IDD_stdby",
+        "value": "1.5",
+        "unit": "µA",
+        "condition": "–40℃ to 105℃, ST = GND, Vdd=1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            637.4,
+            554.5,
+            651.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            637.4,
+            554.5,
+            651.4
+          ],
+          "row_sha256": "a59c80a9ab69a7c5579000ce8adb3c65a9e7db31df9c47b420b95b877e0d9e73",
+          "quote": "Device standby current | –40℃ to 105℃, ST = GND, Vdd=1.8V±10% | 1.5 | µA"
+        }
+      },
+      {
+        "name": "IDD_stdby",
+        "value": "2",
+        "unit": "µA",
+        "condition": "–40℃ to 105℃, ST = GND, Vdd=2.5V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            651.4,
+            554.5,
+            665.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            651.4,
+            554.5,
+            665.3
+          ],
+          "row_sha256": "5858de3875d20b9940e228c4b727e3bae1c010aecee5f8960e2b9a691b81537e",
+          "quote": "Device standby current | –40℃ to 105℃, ST = GND, Vdd=2.5V±10% | 2 | µA"
+        }
+      },
+      {
+        "name": "IDD_stdby",
+        "value": "2.7",
+        "unit": "µA",
+        "condition": "–40℃ to 105℃, ST = GND, Vdd=3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            665.3,
+            554.5,
+            679.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            665.3,
+            554.5,
+            679.3
+          ],
+          "row_sha256": "b3b28a5d875b387cc090d10c0066c22af9deb8526fdde070614ac27d6a79848d",
+          "quote": "Device standby current | –40℃ to 105℃, ST = GND, Vdd=3.3V±10% | 2.7 | µA"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "3.75",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 6
+        },
+        "source": {
+          "page": 6,
+          "quote": "= GND, Vdd=2.5V±10% 2 µA -40℃ to 105℃, ST = GND, Vdd=3.3V±10% 2.7 µA IDD-OD Device current with output disabled -40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10% 3.75 6.4 mA -40℃ to 85℃, Fout",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "6.4",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            679.3,
+            554.5,
+            693.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            679.3,
+            554.5,
+            693.2
+          ],
+          "row_sha256": "993c44cb39eb8b5ed34c8a6ac09bf713c2bc6006ce30df933105019bc19175ae",
+          "quote": "Device current with output disabled | –40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10% | 3.75 | 6.4 | mA"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "3.76",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 6
+        },
+        "source": {
+          "page": 6,
+          "quote": "= GND, Vdd=2.5V±10% 2 µA -40℃ to 105℃, ST = GND, Vdd=3.3V±10% 2.7 µA IDD-OD Device current with output disabled -40℃ to 85℃, Fout = 25 MHz, Vdd = 1.8V±10% 3.75 6.4 mA -40℃ to 85℃, Fout",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "6.5",
+        "unit": "mA",
+        "condition": "–40℃ to 85℃, Fout = 25 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            693.2,
+            554.5,
+            707.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            693.2,
+            554.5,
+            707.2
+          ],
+          "row_sha256": "d0970be1fe75ca2061dce204cc095e5ef40d62586431a4c25f9fae80873bb1b6",
+          "quote": "Device current with output disabled | –40℃ to 85℃, Fout = 25 MHz, Vdd = 3.3V±10% | 3.76 | 6.5 | mA"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "3.75",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            707.2,
+            554.5,
+            721.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            707.2,
+            554.5,
+            721.1
+          ],
+          "row_sha256": "842d666c270decc8ee91518ad384d7aea56861a6ff886bfb5c7258ececf82c5a",
+          "quote": "Device current with output disabled | –40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10% | 3.75 | 7 | mA"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "7",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            707.2,
+            554.5,
+            721.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            707.2,
+            554.5,
+            721.1
+          ],
+          "row_sha256": "842d666c270decc8ee91518ad384d7aea56861a6ff886bfb5c7258ececf82c5a",
+          "quote": "Device current with output disabled | –40℃ to 105℃, Fout = 25 MHz, Vdd = 1.8V±10% | 3.75 | 7 | mA"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "3.76",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10%",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            721.1,
+            554.5,
+            735.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            721.1,
+            554.5,
+            735.1
+          ],
+          "row_sha256": "c8d8bc7cb5c5725e03a1bc3208b2f5ef86bccb3b2133e098c1fc91dd8b990247",
+          "quote": "Device current with output disabled | –40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10% | 3.76 | 7.1 | mA"
+        }
+      },
+      {
+        "name": "IDD-OD",
+        "value": "7.1",
+        "unit": "mA",
+        "condition": "–40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10%; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.6,
+            721.1,
+            554.5,
+            735.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.6,
+            721.1,
+            554.5,
+            735.1
+          ],
+          "row_sha256": "c8d8bc7cb5c5725e03a1bc3208b2f5ef86bccb3b2133e098c1fc91dd8b990247",
+          "quote": "Device current with output disabled | –40℃ to 105℃, Fout = 25 MHz, Vdd = 3.3V±10% | 3.76 | 7.1 | mA"
+        }
+      },
+      {
+        "name": "Fout",
+        "value": "0.25",
+        "unit": "MHz",
+        "condition": "Output frequency",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 7,
+          "method": "spec_row",
+          "bbox": [
+            56.8,
+            141.9,
+            555.3,
+            155.8
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            141.9,
+            555.3,
+            155.8
+          ],
+          "row_sha256": "aae019e75d6318f0387a16b721432e9a605276c86ac656477bf166519e513afb",
+          "quote": "Output frequency | 0.25 | 200 | MHz"
+        }
+      },
+      {
+        "name": "Fout",
+        "value": "200",
+        "unit": "MHz",
+        "condition": "Output frequency",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 7,
+          "method": "spec_row",
+          "bbox": [
+            56.8,
+            141.9,
+            555.3,
+            155.8
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            141.9,
+            555.3,
+            155.8
+          ],
+          "row_sha256": "aae019e75d6318f0387a16b721432e9a605276c86ac656477bf166519e513afb",
+          "quote": "Output frequency | 0.25 | 200 | MHz"
+        }
+      },
+      {
+        "name": "VOL",
+        "value": "0.36",
+        "unit": "V",
+        "condition": "IOL = 3.6mA, VDD = 1.8V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            155.8,
+            555.3,
+            169.8
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            155.8,
+            555.3,
+            169.8
+          ],
+          "row_sha256": "2ba289325f827c729173f58004b09a100188095b8278c384593e9d979b2ac42a",
+          "quote": "Output low voltage | IOL = 3.6mA, VDD = 1.8V | 0.36 | V"
+        }
+      },
+      {
+        "name": "VOL",
+        "value": "0.5",
+        "unit": "V",
+        "condition": "IOL = 5.0mA, VDD = 2.5V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            169.8,
+            555.3,
+            183.7
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            169.8,
+            555.3,
+            183.7
+          ],
+          "row_sha256": "9e9399b59acbc37ad8f339bc3ecd90ca39d099125351796adf7c22fb0bdd7c06",
+          "quote": "Output low voltage | IOL = 5.0mA, VDD = 2.5V | 0.5 | V"
+        }
+      },
+      {
+        "name": "VOL",
+        "value": "0.66",
+        "unit": "V",
+        "condition": "IOL = 6.6mA, VDD = 3.3V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            183.7,
+            555.3,
+            197.7
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            183.7,
+            555.3,
+            197.7
+          ],
+          "row_sha256": "a567a6aca0bdc426ce419e3df75f42c817b7e1c2934445e42f549e875e07c2eb",
+          "quote": "Output low voltage | IOL = 6.6mA, VDD = 3.3V | 0.66 | V"
+        }
+      },
+      {
+        "name": "VOH",
+        "value": "VDD × 0.88",
+        "unit": "V",
+        "condition": "IOH = 3.6mA, VDD = 1.8V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            197.7,
+            555.3,
+            221.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            197.7,
+            555.3,
+            221.2
+          ],
+          "row_sha256": "bfb791a7a4f8ffb0faefdb6ffb88c232e6760aecef3bd6d338fe561c87851869",
+          "quote": "Output high voltage | IOH = 3.6mA, VDD = 1.8V | VDD × 0.88 | V"
+        }
+      },
+      {
+        "name": "VOH",
+        "value": "VDD × 0.85",
+        "unit": "V",
+        "condition": "IOH = 5.0mA, VDD = 2.5V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            221.2,
+            555.3,
+            244.8
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            221.2,
+            555.3,
+            244.8
+          ],
+          "row_sha256": "3b56bc6985b3024e048afd039a9e44603b3337c9342e1b7140aff0ffa1d9421a",
+          "quote": "Output high voltage | IOH = 5.0mA, VDD = 2.5V | VDD × 0.85 | V"
+        }
+      },
+      {
+        "name": "VOH",
+        "value": "VDD × 0.85",
+        "unit": "V",
+        "condition": "IOH = 6.6mA, VDD = 3.3V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            244.8,
+            555.3,
+            268.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            244.8,
+            555.3,
+            268.3
+          ],
+          "row_sha256": "cfc74518d58ea52c5af27a9276ea871787813158da6a58845755f56c248014d2",
+          "quote": "Output high voltage | IOH = 6.6mA, VDD = 3.3V | VDD × 0.85 | V"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.28",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.65",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.42",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 2pF, slow mode 1, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.75",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 2pF, slow mode 1, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.33",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 5pF, normal mode, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.8",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 5pF, normal mode, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "1.11",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 5pF, slow mode 2, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "2.0",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 5pF, slow mode 2, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.44",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 10pF, normal mode, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "1.7",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 10pF, normal mode, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "1.85",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 10pF, slow mode 3, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "3.1",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 10pF, slow mode 3, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.87",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 15pF, normal mode, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "2.2",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 15pF, normal mode, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "2.7",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 15pF, slow mode 4, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "4.0",
+        "unit": "ns",
+        "condition": "20% to 80% of VOH - VOL, CL = 15pF, slow mode 4, Fout = 25MHz; TYP",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "0.42",
+        "unit": "ns",
+        "condition": "10% to 90% of VOH-VOL, no load, normal mode, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "2.05",
+        "unit": "ns",
+        "condition": "10% to 90% of VOH - VOL, CL = 15pF, normal mode, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "tR/tF",
+        "value": "3.81",
+        "unit": "ns",
+        "condition": "10% to 90% of VOH - VOL, CL = 15pF, slow mode 4, Fout = 25MHz",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 7
+        },
+        "source": {
+          "page": 7,
+          "quote": "= 5.0mA, VDD = 2.5V VDD × 0.85 V IOH = 6.6mA, VDD = 3.3V VDD × 0.85 V tR/tF Output rise/fall time 20% to 80% of VOH - VOL, CL = 2pF, normal mode, Fout = 25MHz 0.28 0.65 ns tR/tF Output",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "ODC",
+        "value": "45",
+        "unit": "%",
+        "condition": "Output duty cycle",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            527.4,
+            555.3,
+            541.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            527.4,
+            555.3,
+            541.3
+          ],
+          "row_sha256": "6b91f1b61239abc753a9dad9946dd053c9abb7ef6f44f6ebb1d18e508fb52da6",
+          "quote": "Output duty cycle | 45 | 50 | 55 | %"
+        }
+      },
+      {
+        "name": "ODC",
+        "value": "50",
+        "unit": "%",
+        "condition": "Output duty cycle; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            527.4,
+            555.3,
+            541.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            527.4,
+            555.3,
+            541.3
+          ],
+          "row_sha256": "6b91f1b61239abc753a9dad9946dd053c9abb7ef6f44f6ebb1d18e508fb52da6",
+          "quote": "Output duty cycle | 45 | 50 | 55 | %"
+        }
+      },
+      {
+        "name": "ODC",
+        "value": "55",
+        "unit": "%",
+        "condition": "Output duty cycle",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            527.4,
+            555.3,
+            541.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            527.4,
+            555.3,
+            541.3
+          ],
+          "row_sha256": "6b91f1b61239abc753a9dad9946dd053c9abb7ef6f44f6ebb1d18e508fb52da6",
+          "quote": "Output duty cycle | 45 | 50 | 55 | %"
+        }
+      },
+      {
+        "name": "PN-Floor",
+        "value": "-155",
+        "unit": "dBc/Hz",
+        "condition": "Output phase noise floor (fOFFSET > 10MHz), Fout = 50MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 7,
+          "method": "spec_row",
+          "bbox": [
+            56.8,
+            541.3,
+            555.3,
+            564.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            541.3,
+            555.3,
+            564.9
+          ],
+          "row_sha256": "23b4d6da59d8dd4ba76f42f429962d2b9ff0bf2d1ce6c1bf68b3be8857a14bab",
+          "quote": "Output phase noise floor (fOFFSET > 10MHz) | Fout = 50MHz | -155 | dBc/Hz"
+        }
+      },
+      {
+        "name": "CL",
+        "value": "30",
+        "unit": "pF",
+        "condition": "Maximum capacitive load, Fout < 50MHz",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "CL",
+        "value": "15",
+        "unit": "pF",
+        "condition": "Maximum capacitive load, Fout > 50MHz",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Rout-high",
+        "value": "50",
+        "unit": "Ω",
+        "condition": "Output impedance",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 7,
+          "method": "spec_row",
+          "bbox": [
+            56.8,
+            592.8,
+            555.3,
+            606.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            592.8,
+            555.3,
+            606.7
+          ],
+          "row_sha256": "0dde788d2e918dda8f58aa3f62bd7a7b32062c4802c63389c5189f1178944194",
+          "quote": "Output impedance | 50 | Ω"
+        }
+      },
+      {
+        "name": "VIL",
+        "value": "0.45",
+        "unit": "V",
+        "condition": "VDD = 1.8V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            620.7,
+            555.3,
+            634.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            620.7,
+            555.3,
+            634.6
+          ],
+          "row_sha256": "090407fca4a043ffe8a0297c4ca981e29c3f1e48cb9419c823b2f71c185e51c7",
+          "quote": "Input low voltage | VDD = 1.8V | 0.45 | V"
+        }
+      },
+      {
+        "name": "VIL",
+        "value": "0.475",
+        "unit": "V",
+        "condition": "VDD = 2.5V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            634.6,
+            555.3,
+            648.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            634.6,
+            555.3,
+            648.6
+          ],
+          "row_sha256": "4b5b96c1d73a29e1f0b3c0e3cfee873ca7e6897bc4c8b6dff53fdf1dcd5c11cb",
+          "quote": "Input low voltage | VDD = 2.5V | 0.475 | V"
+        }
+      },
+      {
+        "name": "VIL",
+        "value": "0.5",
+        "unit": "V",
+        "condition": "VDD = 3.3V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            648.6,
+            555.3,
+            662.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            648.6,
+            555.3,
+            662.5
+          ],
+          "row_sha256": "1742dbbc9358589ad7e6f47e486ac4577b7c5ed54185ffb11c466ca9b0005951",
+          "quote": "Input low voltage | VDD = 3.3V | 0.5 | V"
+        }
+      },
+      {
+        "name": "VIH",
+        "value": "1.3",
+        "unit": "V",
+        "condition": "Input high voltage",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            662.5,
+            555.3,
+            676.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            662.5,
+            555.3,
+            676.5
+          ],
+          "row_sha256": "fce8766bd714a0c8bc302a10e150cdc081ce687af9a24189b938f33cce1bab98",
+          "quote": "Input high voltage | 1.3 | V"
+        }
+      },
+      {
+        "name": "IIL",
+        "value": "-70",
+        "unit": "µA",
+        "condition": "Input low current, EN = GND",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            676.5,
+            555.3,
+            690.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            676.5,
+            555.3,
+            690.4
+          ],
+          "row_sha256": "7b0025e9605ff0a04f3f0cac533057e57733d525427eca169e7ba36835a90007",
+          "quote": "Input low current | EN = GND | -70 | µA"
+        }
+      },
+      {
+        "name": "IIH",
+        "value": "40",
+        "unit": "µA",
+        "condition": "Input high current, EN = VDD",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            690.4,
+            555.3,
+            704.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            690.4,
+            555.3,
+            704.4
+          ],
+          "row_sha256": "d761d9c7a2141f07f2b2548bb2828d67b1cfbf31fda9d0df7df6076dee349086",
+          "quote": "Input high current | EN = VDD | 40 | µA"
+        }
+      },
+      {
+        "name": "CIN",
+        "value": "2",
+        "unit": "pF",
+        "condition": "Input capacitance; proven by design, not characterised",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 7,
+          "bbox": [
+            56.8,
+            704.4,
+            555.3,
+            718.3
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            56.8,
+            704.4,
+            555.3,
+            718.3
+          ],
+          "row_sha256": "b3c1528fa40cd009d4130648be2a726f44cf55e3ccef17d8e130ae7f99ee80aa",
+          "quote": "Input capacitance(1) | 2 | pF"
+        }
+      },
+      {
+        "name": "FT",
+        "value": "±25",
+        "unit": "ppm",
+        "condition": "Total frequency stability inclusive of: solder shift, initial tolerance, variation over –40℃ to 105℃, variation over supply voltage range, and 10 years aging at 25℃",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "FT",
+        "value": "±20",
+        "unit": "ppm",
+        "condition": "Total frequency stability inclusive of: solder shift, initial tolerance, variation over –40℃ to 105℃, variation over supply voltage range, and 1st year aging at 25℃",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "FT",
+        "value": "±25",
+        "unit": "ppm",
+        "condition": "Total frequency stability inclusive of: solder shift, initial tolerance, variation over –40℃ to 85℃, variation over supply voltage range, and 10 years aging at 25℃",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "FT",
+        "value": "±20",
+        "unit": "ppm",
+        "condition": "Total frequency stability inclusive of: solder shift, initial tolerance, variation over –40℃ to 85℃, variation over supply voltage range, and 1st year aging at 25℃",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "PSRR",
+        "value": "-80",
+        "unit": "dBc",
+        "condition": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/3.3V, no power supply decoupling capacitor; Sine wave at 50kHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            274.5,
+            554.0,
+            288.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            274.5,
+            554.0,
+            288.4
+          ],
+          "row_sha256": "198353f3703766c2cd92dc4527c64a4c46797d070c782889a84ace475197f419",
+          "quote": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/ 3.3V, no power supply decoupling capacitor | Sine wave at 50kHz | -80 | dBc"
+        }
+      },
+      {
+        "name": "PSRR",
+        "value": "-75",
+        "unit": "dBc",
+        "condition": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/3.3V, no power supply decoupling capacitor; Sine wave at 100kHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            288.4,
+            554.0,
+            302.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            288.4,
+            554.0,
+            302.4
+          ],
+          "row_sha256": "3e2386b22bd56ecbc8172465f8ba14a4e17fe0c25c6bed513ddedf23e4a08e76",
+          "quote": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/ 3.3V, no power supply decoupling capacitor | Sine wave at 100kHz | -75 | dBc"
+        }
+      },
+      {
+        "name": "PSRR",
+        "value": "-63",
+        "unit": "dBc",
+        "condition": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/3.3V, no power supply decoupling capacitor; Sine wave at 500kHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            302.4,
+            554.0,
+            316.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            302.4,
+            554.0,
+            316.3
+          ],
+          "row_sha256": "87818be32db25bb6031ebf87d84a0ea13b9891e08a3646716c44e28ad6491628",
+          "quote": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/ 3.3V, no power supply decoupling capacitor | Sine wave at 500kHz | -63 | dBc"
+        }
+      },
+      {
+        "name": "PSRR",
+        "value": "-59",
+        "unit": "dBc",
+        "condition": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/3.3V, no power supply decoupling capacitor; Sine wave at 1MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            316.3,
+            554.0,
+            330.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            316.3,
+            554.0,
+            330.3
+          ],
+          "row_sha256": "7713d08f68cadac4ce0941d3eb899e8da49745ef0e51f01704711fd6e304b941",
+          "quote": "Spur induced by 50mV power supply ripple at 50MHz output, VDD = 2.5V/ 3.3V, no power supply decoupling capacitor | Sine wave at 1MHz | -59 | dBc"
+        }
+      },
+      {
+        "name": "tSTART_UP",
+        "value": "1.5",
+        "unit": "ms",
+        "condition": "Start-up time; Time elapsed from 0.95 × VDD until output is enabled and output is within specification. OE / ST = High; Tested with a power supply ramp time of 200µs",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            344.2,
+            554.0,
+            377.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            344.2,
+            554.0,
+            377.4
+          ],
+          "row_sha256": "1ba9c93d7de5a6b53ce0c09863268087f2b1cd9ed9c86a9396c61beb1838b790",
+          "quote": "Start-up time | Time elapsed from 0.95 × VDD until output is enabled and output is within specification. OE / ST = High; Tested with a power supply ramp time of 200µs | 1.5 | 3 | ms"
+        }
+      },
+      {
+        "name": "tSTART_UP",
+        "value": "3",
+        "unit": "ms",
+        "condition": "Start-up time; Time elapsed from 0.95 × VDD until output is enabled and output is within specification. OE / ST = High; Tested with a power supply ramp time of 200µs; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            344.2,
+            554.0,
+            377.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            344.2,
+            554.0,
+            377.4
+          ],
+          "row_sha256": "1ba9c93d7de5a6b53ce0c09863268087f2b1cd9ed9c86a9396c61beb1838b790",
+          "quote": "Start-up time | Time elapsed from 0.95 × VDD until output is enabled and output is within specification. OE / ST = High; Tested with a power supply ramp time of 200µs | 1.5 | 3 | ms"
+        }
+      },
+      {
+        "name": "tST-EN",
+        "value": "3",
+        "unit": "ms",
+        "condition": "Chip enable time; Time elapsed from standby (ST = VIH) until output is enabled and output is within specification",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            377.4,
+            554.0,
+            400.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            377.4,
+            554.0,
+            400.9
+          ],
+          "row_sha256": "8259548b743cc5ebb1defec0d8889b21bbb9535cbeede70aaa7b95487f114bf0",
+          "quote": "Chip enable time | Time elapsed from standby (ST = VIH) until output is enabled and output is within specification | 3 | ms"
+        }
+      },
+      {
+        "name": "tST-DIS",
+        "value": "250",
+        "unit": "ns",
+        "condition": "Chip disable time; Time elapsed from standby (ST = VIL) until chip is in standby mode",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            400.9,
+            554.0,
+            424.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            400.9,
+            554.0,
+            424.5
+          ],
+          "row_sha256": "e9771d98fe9671954a5e67ed5bd943df1fb75259a46459a3d4277909d08ce67e",
+          "quote": "Chip disable time | Time elapsed from standby (ST = VIL) until chip is in standby mode | 250 | ns"
+        }
+      },
+      {
+        "name": "tOE-EN",
+        "value": "250",
+        "unit": "ns",
+        "condition": "Output enable time; Time elapsed from OE = VIH until output is enabled and output is within specification",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            424.5,
+            554.0,
+            448.0
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            424.5,
+            554.0,
+            448.0
+          ],
+          "row_sha256": "852ac9a16695b4987a46345cb76aef9310844e6937589f6ca11cfabf3dcb9c86",
+          "quote": "Output enable time | Time elapsed from OE = VIH until output is enabled and output is within specification | 250 | ns"
+        }
+      },
+      {
+        "name": "tOE-DIS",
+        "value": "250",
+        "unit": "ns",
+        "condition": "Output disable Time; Time elapsed from OE = VIL until output is disabled",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            448.0,
+            554.0,
+            462.0
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            448.0,
+            554.0,
+            462.0
+          ],
+          "row_sha256": "125390bbb016e4c6ea4bc5cc0a130ba1bb55be80170392ac3367b9a953dce88b",
+          "quote": "Output disable Time | Time elapsed from OE = VIL until output is disabled | 250 | ns"
+        }
+      },
+      {
+        "name": "RJ",
+        "value": "400",
+        "unit": "fs",
+        "condition": "Random phase jitter; 10MHz ≤ Fout ≤ 40MHz (except 25MHz), integration BW: 12kHz to 5MHz, maximum temperature = 105°C",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "RJ",
+        "value": "1000",
+        "unit": "fs",
+        "condition": "Random phase jitter; 10MHz ≤ Fout ≤ 40MHz (except 25MHz), integration BW: 12kHz to 5MHz, maximum temperature = 105°C; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "RJ",
+        "value": "400",
+        "unit": "fs",
+        "condition": "Random phase jitter; Fout = 25MHz, integration BW: 12kHz to 20MHz, maximum temperature = 105°C",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "RJ",
+        "value": "1000",
+        "unit": "fs",
+        "condition": "Random phase jitter; Fout = 25MHz, integration BW: 12kHz to 20MHz, maximum temperature = 105°C; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "RJ",
+        "value": "400",
+        "unit": "fs",
+        "condition": "Random phase jitter; 40MHz < Fout ≤ 200MHz, integration BW: 12kHz to 20MHz, maximum temperature = 105°C",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "RJ",
+        "value": "1000",
+        "unit": "fs",
+        "condition": "Random phase jitter; 40MHz < Fout ≤ 200MHz, integration BW: 12kHz to 20MHz, maximum temperature = 105°C; TYP",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "SPN100k",
+        "value": "-86",
+        "unit": "dBc/Hz",
+        "condition": "Spot phase noise at 1kHz offset; Fout = 100MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            546.6,
+            554.0,
+            560.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            546.6,
+            554.0,
+            560.5
+          ],
+          "row_sha256": "0d51974753bcefa860d04a0b3cace6c4b2f90c22b7539d166a2e6bbd5af277a9",
+          "quote": "Spot phase noise at 1kHz offset | Fout = 100MHz | -86 | dBc/Hz"
+        }
+      },
+      {
+        "name": "SPN100k",
+        "value": "-120",
+        "unit": "dBc/Hz",
+        "condition": "Spot phase noise at 10kHz offset; Fout = 100MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            560.5,
+            554.0,
+            574.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            560.5,
+            554.0,
+            574.5
+          ],
+          "row_sha256": "f99b78317ab77273102d2fa9e9d67817944c40503671c071d79ff008c5cac870",
+          "quote": "Spot phase noise at 10kHz offset | Fout = 100MHz | -120 | dBc/Hz"
+        }
+      },
+      {
+        "name": "SPN100k",
+        "value": "-138",
+        "unit": "dBc/Hz",
+        "condition": "Spot phase noise at 100kHz offset; Fout = 100MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            574.5,
+            554.0,
+            588.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            574.5,
+            554.0,
+            588.4
+          ],
+          "row_sha256": "fa372d086d3281d70127f726fbfaf9380d5372d91568376942682192358ec7d7",
+          "quote": "Spot phase noise at 100kHz offset | Fout = 100MHz | -138 | dBc/Hz"
+        }
+      },
+      {
+        "name": "SPN1M",
+        "value": "-143",
+        "unit": "dBc/Hz",
+        "condition": "Spot phase noise at 1MHz offset; Fout = 100MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            588.4,
+            554.0,
+            602.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            588.4,
+            554.0,
+            602.4
+          ],
+          "row_sha256": "54380fe66be419dbfb69fccd12dfec26518a038ebd9f49b6d4ddf57e811a4d9d",
+          "quote": "Spot phase noise at 1MHz offset | Fout = 100MHz | -143 | dBc/Hz"
+        }
+      },
+      {
+        "name": "RJITT,RMS",
+        "value": "3",
+        "unit": "ps",
+        "condition": "RMS period jitter; Fout ≥ 25MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            602.4,
+            554.0,
+            616.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            602.4,
+            554.0,
+            616.3
+          ],
+          "row_sha256": "dd24f095324df7c8d5fb6339530f425269d7837582128fa4c696935c0f90cc7a",
+          "quote": "RMS period jitter | Fout ≥ 25MHz | 3 | ps"
+        }
+      },
+      {
+        "name": "RJITT,PK",
+        "value": "26",
+        "unit": "ps",
+        "condition": "Peak-peak period jitter; Fout ≥ 25MHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            616.3,
+            554.0,
+            630.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            616.3,
+            554.0,
+            630.3
+          ],
+          "row_sha256": "d17ebc255a2c83a7e2af9a51261506c4bd64a5dcc931d411520481b188fd23da",
+          "quote": "Peak-peak period jitter | Fout ≥ 25MHz | 26 | ps"
+        }
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "VDD",
+        "value": "-0.3 to 3.63",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 5,
+          "bbox": [
+            56.8,
+            134.4,
+            555.3,
+            148.5
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "3.63"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.8,
+            134.4,
+            555.3,
+            148.5
+          ],
+          "quote": "VDD | Device supply voltage(2) | -0.3 | 3.63 | V",
+          "row_sha256": "43c00fbfea4cbcfdf8a680ff0623e40c831c90328594fe0cdeb9efcc7c4469d6"
+        }
+      },
+      {
+        "name": "EN",
+        "value": "-0.3 to 3.63",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 5,
+          "bbox": [
+            56.8,
+            148.5,
+            555.3,
+            162.4
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "3.63"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.8,
+            148.5,
+            555.3,
+            162.4
+          ],
+          "quote": "EN | Logic input voltage | -0.3 | 3.63 | V",
+          "row_sha256": "99318aa8eef4265c4adb79267bfad05b71453c65d63809ee9bfeca54aeb8beb2"
+        }
+      },
+      {
+        "name": "CLK",
+        "value": "-0.3 to 3.63",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 5,
+          "bbox": [
+            56.8,
+            162.4,
+            555.3,
+            176.4
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "3.63"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.8,
+            162.4,
+            555.3,
+            176.4
+          ],
+          "quote": "CLK | Clock output voltage | -0.3 | 3.63 | V",
+          "row_sha256": "a75a2c90c97c25c7604d9aaf351f3100b97745e3edcdef197c044aec356e5125"
+        }
+      },
+      {
+        "name": "TJ",
+        "value": "130",
+        "unit": "℃",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 5,
+          "bbox": [
+            56.8,
+            176.4,
+            555.3,
+            190.3
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "130"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.8,
+            176.4,
+            555.3,
+            190.3
+          ],
+          "quote": "TJ | Junction temperature | 130 | ℃",
+          "row_sha256": "1446e6c5268ab8e46525fbbbbfe9ea3d22d72ecf6d219bc42efeb18b17a41981"
+        }
+      },
+      {
+        "name": "TSTG",
+        "value": "-65 to 150",
+        "unit": "℃",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 5,
+          "bbox": [
+            56.8,
+            190.3,
+            555.3,
+            204.3
+          ]
+        },
+        "range": {
+          "min": "-65",
+          "max": "150"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.8,
+            190.3,
+            555.3,
+            204.3
+          ],
+          "quote": "TSTG | Storage temperature | -65 | 150 | ℃",
+          "row_sha256": "d82dfb5aa284360322bc6ca931cd82522170fca2b9144774bf13fb415c69e9b4"
+        }
+      }
+    ],
+    "thermal": [
+      {
+        "name": "RθJA",
+        "value": "151.8",
+        "unit": "°C/W",
+        "condition": "DLE 4 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "151.7",
+        "unit": "°C/W",
+        "condition": "DLF 4 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "180.3",
+        "unit": "°C/W",
+        "condition": "DLX 4 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "189.1",
+        "unit": "°C/W",
+        "condition": "DLY 4 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "89.5",
+        "unit": "°C/W",
+        "condition": "DLE 4 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "99.3",
+        "unit": "°C/W",
+        "condition": "DLF 4 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "116.2",
+        "unit": "°C/W",
+        "condition": "DLX 4 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "137.3",
+        "unit": "°C/W",
+        "condition": "DLY 4 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "72.2",
+        "unit": "°C/W",
+        "condition": "DLE 4 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "64.4",
+        "unit": "°C/W",
+        "condition": "DLF 4 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "85.5",
+        "unit": "°C/W",
+        "condition": "DLX 4 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "85",
+        "unit": "°C/W",
+        "condition": "DLY 4 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "11.1",
+        "unit": "°C/W",
+        "condition": "DLE 4 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "9.2",
+        "unit": "°C/W",
+        "condition": "DLF 4 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "8.5",
+        "unit": "°C/W",
+        "condition": "DLX 4 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "6.2",
+        "unit": "°C/W",
+        "condition": "DLY 4 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "71.2",
+        "unit": "°C/W",
+        "condition": "DLE 4 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "63.5",
+        "unit": "°C/W",
+        "condition": "DLF 4 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "83.7",
+        "unit": "°C/W",
+        "condition": "DLX 4 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "83.2",
+        "unit": "°C/W",
+        "condition": "DLY 4 PINS"
+      }
+    ],
+    "esd": [
+      {
+        "name": "HBM",
+        "value": "±2000",
+        "unit": "V"
+      },
+      {
+        "name": "CDM",
+        "value": "±750",
+        "unit": "V"
+      }
+    ],
+    "package": {
+      "type": "VSON (DLF-4)",
+      "pins": 4,
+      "dimensions": "2.50mm × 2.00mm"
+    },
+    "temperature": {
+      "operating": "-40°C to 105°C",
+      "storage": "-65°C to 150°C"
+    },
+    "scope": "device"
+  },
+  "features": [
+    "LVCMOS output oscillator supporting frequency range from 250kHz to 200MHz",
+    "±25ppm total frequency stability inclusive of all factors and including 10 years aging",
+    "Supply voltage supports 1.8V to 3.3V ±10%",
+    "Very low power consumption: 4.32mA typical and 7.4mA maximum for 25MHz at 1.8V",
+    "Stand by current 1.5µA typical at 1.8V helps for battery powered applications",
+    "Low jitter: < 1ps RMS jitter for Fout ≥ 10MHz",
+    "Smallest industry standard package: 1.60mm × 1.2mm (DLY), 2.00mm × 1.60mm (DLX), 2.50mm × 2.00mm (DLF), 3.20mm × 2.5mm (DLE)",
+    "Universal land pattern footprint under Mechanical, Packaging, and Orderable Information",
+    "Integrated LDO for robust supply noise immunity",
+    "Start-up time < 3ms",
+    "Orderable options for slow rise and fall time for EMI reduction",
+    "Supported frequencies include 25MHz, 50MHz, 100MHz, 150MHz, and more"
+  ],
+  "applications": [
+    "Crystal oscillator replacement",
+    "Data centers, Server, Storage",
+    "Ethernet, SAS, SATA, USB, WIFI",
+    "Wireless Communication",
+    "Professional audio/video",
+    "Factory Automation and Control",
+    "Personal Electronics, Wearable devices, IoT",
+    "FPGA, MCU, Processor and ASIC clocking"
+  ],
+  "pin_configuration": [
+    {
+      "pin": 1,
+      "name": "OE / ST / NC",
+      "description": "Output Enable (OE) or Stand By (ST) pin on No Connect (NC). See the Function Pin Descriptions for more details."
+    },
+    {
+      "pin": 2,
+      "name": "GND",
+      "description": "Device ground"
+    },
+    {
+      "pin": 3,
+      "name": "CLK",
+      "description": "LVCMOS output clock"
+    },
+    {
+      "pin": 4,
+      "name": "VDD",
+      "description": "Device power supply"
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "CDC6CA025000ADLFR",
+      "package": "VSON (DLF) | 4",
+      "marking": "AB",
+      "moq": 0,
+      "packaging": "3000 | LARGE T&R"
+    },
+    {
+      "mpn": "CDC6CE025000ADLFR",
+      "package": "VSON (DLF) | 4",
+      "marking": "AB",
+      "moq": 0,
+      "packaging": "3000 | LARGE T&R"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "CDC6CE025000ADLFR Oscillator 25MHz 1.8V-3.3V LVCMOS",
+    "title_zh": "CDC6CE025000ADLFR 晶振 25MHz 1.8V-3.3V LVCMOS",
+    "meta_description_en": "Texas Instruments CDC6CE025000ADLFR is a low-power, LVCMOS output BAW oscillator with 25MHz frequency, 1.8V-3.3V supply, ±25ppm stability, and <1ps RMS jitter. Ideal for IoT, wearables, and industrial applications.",
+    "meta_description_zh": "德州仪器 CDC6CE025000ADLFR 是一款低功耗 LVCMOS 输出 BAW 晶振，频率 25MHz，供电 1.8V-3.3V，稳定性 ±25ppm，抖动小于 1ps RMS。适用于物联网、可穿戴设备及工业领域。",
+    "keywords": [
+      "CDC6CE025000ADLFR",
+      "BAW oscillator",
+      "LVCMOS",
+      "25MHz",
+      "low power",
+      "IoT",
+      "wearable",
+      "industrial",
+      "oscillator"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+    "parse_timestamp": "2026-11-03T20:13:13+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "CDC6CE025000ADLFR",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "deterministic_extract": {
+      "thermal": {
+        "from": 20,
+        "to": 20,
+        "method": "deterministic"
+      },
+      "esd": {
+        "from": 2,
+        "to": 2,
+        "method": "deterministic"
+      },
+      "model_unverified": {
+        "stamped": 126
+      }
+    },
+    "core_validation": "pass",
+    "pipeline_stage": {
+      "pipeline": "v2-five-stage",
+      "stage": "llm",
+      "code_commit": "e23751b",
+      "stage_version": "1",
+      "extractor_version": "extract_pdf_text/v1",
+      "slice_schema_version": 1,
+      "idem_key": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404:llm:1:cad3da411ea6eb7dda484a19cc34a3cea8e56a92bfd81a56c022d0f2da93e63f:qwen-flash:a88e6e80318e323411f197af3325452572d96a1db832707e30365af2316333d9",
+      "prompt_sha256": "cad3da411ea6eb7dda484a19cc34a3cea8e56a92bfd81a56c022d0f2da93e63f",
+      "model": "qwen-flash",
+      "prompt_version": "v3",
+      "attempts": 1,
+      "accepted_on_attempt": 1,
+      "status": "ok",
+      "ms": 110469,
+      "recorded_at": "2026-11-03T20:13:13+08:00"
+    },
+    "formal_container_integrity": "pass",
+    "ac_data_state": "not_withheld",
+    "normalize": {
+      "datasheet_url": {
+        "action": "kept",
+        "url": "https://www.ti.com/lit/ds/symlink/cdc6c.pdf?ts=1742823412336"
+      },
+      "doc_type": {
+        "changed": true,
+        "from": null,
+        "to": "datasheet"
+      },
+      "doc_revision": {
+        "changed": true,
+        "from": null,
+        "to": {
+          "doc_number": "SNAS843",
+          "revision": "D",
+          "doc_id": "SNAS843D",
+          "issued": "DECEMBER 2024",
+          "revised": "JANUARY 2026",
+          "page": 1
+        }
+      },
+      "ac_quarantine": {
+        "schema": "ac-quarantine/v2",
+        "n_quarantined": 0,
+        "n_restored": 0,
+        "restored": [],
+        "quarantined": [],
+        "formal_container_integrity": "pass",
+        "ac_data_state": "not_withheld"
+      },
+      "row_sources": {
+        "added": 53,
+        "rows": 121
+      },
+      "absolute_max_roles": {
+        "checked": 5,
+        "upgraded": 5,
+        "replaced": 0,
+        "unmatched": []
+      },
+      "row_anchors": {
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "candidates": 119,
+        "anchored": 81,
+        "ambiguous": 14,
+        "same_page": 19,
+        "ambiguous_rows": [
+          "IDD",
+          "IDD",
+          "IDD",
+          "IDD",
+          "IDD",
+          "IDD",
+          "IDD",
+          "IDD"
+        ],
+        "rows": 126
+      },
+      "verification": {
+        "stamped": 0
+      },
+      "pdf": "data\\pdfs\\CDC6CE025000ADLFR__cdc6c.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 4,
+        "sha256": "1706807cb33c9f3e542d0574d18316cd16f682d2b0b298513d93e00054040627"
+      },
+      "thermal": {
+        "sha256": "2343e43b7440800d64b16e541b277e7400d2218a00f8b0a2a2ff6db0e248d840"
+      },
+      "esd": {
+        "sha256": "aaf93eda6ec786bccdf16830d594a9373b6453d58ef74c4b888607b648033e29"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点；有 unresolved_ac_rows 时记 pass_with_quarantine（数据被隔离，不是没有数据）"
+  },
+  "pin_scope": "device"
+}

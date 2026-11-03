@@ -1,0 +1,2390 @@
+{
+  "basic_info": {
+    "mpn": "LM358",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Amplifiers",
+    "description": "The LM358 is a dual operational amplifier with a wide supply range of 3V to 36V, low quiescent current of 300µA per channel, and unity-gain bandwidth of 1.2MHz. It features input offset voltage up to 3mV (max), common-mode input range including ground, and high ESD tolerance (2kV HBM). Suitable for cost-sensitive applications in power supplies, motor control, and industrial systems.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm358.pdf",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "high",
+    "identity_evidence": [
+      "请求料号在 datasheet 订货表内（共 24 条）→ 芯片，有原厂证据"
+    ],
+    "datasheet_url_source": "prefilled",
+    "doc_type": "datasheet",
+    "category_path": [
+      "Integrated Circuits (ICs)",
+      "Amplifiers"
+    ],
+    "category_leaf": "Amplifiers"
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Input offset voltage",
+        "value": "±3.0",
+        "unit": "mV",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            168.7,
+            554.5,
+            180.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            168.7,
+            554.5,
+            180.3
+          ],
+          "row_sha256": "ed72512f8ac8b71acbd8c0c5fcdf5cdc3a9f545b6d0242fa35973565787123dc",
+          "quote": "Input offset voltage | ±3.0 | mV"
+        }
+      },
+      {
+        "name": "Input offset voltage",
+        "value": "±4",
+        "unit": "mV",
+        "condition": "VS = 5 V – 36 V; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            154.6,
+            554.5,
+            166.2
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            154.6,
+            554.5,
+            166.2
+          ],
+          "row_sha256": "18f21d2f60f70d029b46dbcb7428818b713110783fb2b1b7f6f4c940ceedeccc",
+          "quote": "Input offset voltage | ±4 | mV"
+        }
+      },
+      {
+        "name": "Input offset voltage drift",
+        "value": "±3.5",
+        "unit": "µV/°C",
+        "condition": "TA = –40°C to +85°C",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）",
+          "page": 6
+        },
+        "source": {
+          "page": 6,
+          "quote": "ss otherwise noted) PARAMETER TEST CONDITIONS MIN TYP MAX UNIT OFFSET VOLTAGE VOS Input offset voltage LM358B ±0.3 ±3.0 mV TA = -40°C to +85°C ±4 mV LM358BA ±2.0 mV TA = -40°C to +85°C ±2",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Power supply rejection ratio",
+        "value": "±2",
+        "unit": "µV/V",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            200.8,
+            554.5,
+            212.4
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            200.8,
+            554.5,
+            212.4
+          ],
+          "row_sha256": "d23fe82e2b3064663e3c568767f4798eccba26b177f26c9c352f50782abe16a4",
+          "quote": "Power supply rejection ratio | ±2 | 15 | µV/V"
+        }
+      },
+      {
+        "name": "Channel separation, dc",
+        "value": "±1",
+        "unit": "µV/V",
+        "condition": "f = 1 kHz to 20 kHz; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            212.4,
+            554.5,
+            223.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            212.4,
+            554.5,
+            223.9
+          ],
+          "row_sha256": "03ed732811143e580fc157319f80d40052c2d3546fb5b873ad83dc6daea8c6f0",
+          "quote": "Channel separation, dc | ±1 | µV/V"
+        }
+      },
+      {
+        "name": "Common-mode voltage range",
+        "value": "V– to (V+) – 1.5",
+        "unit": "V",
+        "condition": "VS = 3 V to 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            235.5,
+            554.5,
+            247.0
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            235.5,
+            554.5,
+            247.0
+          ],
+          "row_sha256": "62dcf987e9b06a1e92282d69f405aedd7c9c78e058cf58183fb67bf543fb9a40",
+          "quote": "Common-mode voltage range | (V-) | (V+) - 1.5 | V"
+        }
+      },
+      {
+        "name": "Common-mode voltage range",
+        "value": "V– to (V+) – 2",
+        "unit": "V",
+        "condition": "VS = 5 V to 36 V; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            247.0,
+            554.5,
+            258.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            247.0,
+            554.5,
+            258.6
+          ],
+          "row_sha256": "580adabbba72580706713c6eab340f1c8d6168b06f78928042a182c9b645f44a",
+          "quote": "Common-mode voltage range | (V-) | (V+) - 2 | V"
+        }
+      },
+      {
+        "name": "Common-mode rejection ratio",
+        "value": "20",
+        "unit": "µV/V",
+        "condition": "(V–) ≤ VCM ≤ (V+) – 1.5 V; VS = 3 V to 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            258.6,
+            554.5,
+            270.1
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            258.6,
+            554.5,
+            270.1
+          ],
+          "row_sha256": "f32c5c7f406e33f9a887489035e1a595c86a4bf37117b08f0dfba27324d28bb2",
+          "quote": "Common-mode rejection ratio | VS = 3 V to 36 V | 20 | 100 | µV/V"
+        }
+      },
+      {
+        "name": "Common-mode rejection ratio",
+        "value": "25",
+        "unit": "µV/V",
+        "condition": "(V–) ≤ VCM ≤ (V+) – 2.0 V; VS = 5 V to 36 V; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            270.1,
+            554.5,
+            281.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            270.1,
+            554.5,
+            281.7
+          ],
+          "row_sha256": "1094c9b6852d470b2d520555a9ef557a27f30abd7411d27e942f0d598b3a5729",
+          "quote": "Common-mode rejection ratio | VS = 5 V to 36 V | 25 | 316 | µV/V"
+        }
+      },
+      {
+        "name": "Input bias current",
+        "value": "-10",
+        "unit": "nA",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            293.2,
+            554.5,
+            304.8
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            293.2,
+            554.5,
+            304.8
+          ],
+          "row_sha256": "29d35e50fe3bc4b1ee9c5742d157eec8653f8e4233a9635edee3c5c09208990d",
+          "quote": "Input bias current | -10 | -35 | nA"
+        }
+      },
+      {
+        "name": "Input bias current",
+        "value": "-35",
+        "unit": "nA",
+        "condition": "VS = 5 V – 36 V; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            293.2,
+            554.5,
+            304.8
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            293.2,
+            554.5,
+            304.8
+          ],
+          "row_sha256": "29d35e50fe3bc4b1ee9c5742d157eec8653f8e4233a9635edee3c5c09208990d",
+          "quote": "Input bias current | -10 | -35 | nA"
+        }
+      },
+      {
+        "name": "Input offset current",
+        "value": "0.5",
+        "unit": "nA",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            316.3,
+            554.5,
+            327.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            316.3,
+            554.5,
+            327.9
+          ],
+          "row_sha256": "98e6f35e82719f7294d9e9bc306c5ec275a31b6bc5fafd84fa04df12a5fa6c6b",
+          "quote": "Input offset current | 0.5 | 4 | nA"
+        }
+      },
+      {
+        "name": "Input offset current",
+        "value": "4",
+        "unit": "nA",
+        "condition": "VS = 5 V – 36 V; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            316.3,
+            554.5,
+            327.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            316.3,
+            554.5,
+            327.9
+          ],
+          "row_sha256": "98e6f35e82719f7294d9e9bc306c5ec275a31b6bc5fafd84fa04df12a5fa6c6b",
+          "quote": "Input offset current | 0.5 | 4 | nA"
+        }
+      },
+      {
+        "name": "Input offset current drift",
+        "value": "10",
+        "unit": "pA/℃",
+        "condition": "TA = –40°C to +85°C",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            339.4,
+            554.5,
+            351.0
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            339.4,
+            554.5,
+            351.0
+          ],
+          "row_sha256": "9a62af43659be6535d6374b79590013a94eee1123b9f72c38a95950f69cc12af",
+          "quote": "Input offset current drift | 10 | pA/℃"
+        }
+      },
+      {
+        "name": "Input voltage noise",
+        "value": "3",
+        "unit": "µVPP",
+        "condition": "f = 0.1 to 10 Hz; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            362.5,
+            554.5,
+            374.1
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            362.5,
+            554.5,
+            374.1
+          ],
+          "row_sha256": "a5d543e3135c5e04ce2c1bb4b11997a4f07d33349379721fc53dae8efe55e6d2",
+          "quote": "Input voltage noise | 3 | µVPP"
+        }
+      },
+      {
+        "name": "Input voltage noise density",
+        "value": "40",
+        "unit": "nV/√/Hz",
+        "condition": "f = 1 kHz; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            374.1,
+            554.5,
+            385.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            374.1,
+            554.5,
+            385.6
+          ],
+          "row_sha256": "bfddba45176b8e49652725226a38bff57980ca4878bb597c1ea82892e50981c1",
+          "quote": "Input voltage noise density | 40 | nV/√/Hz"
+        }
+      },
+      {
+        "name": "Differential input impedance",
+        "value": "10 || 0.1",
+        "unit": "MΩ|| pF",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 6
+        },
+        "source": {
+          "page": 6,
+          "quote": "Input voltage noise density f = 1 kHz 40 nV/√/Hz INPUT IMPEDANCE ZID Differential 10 || 0.1 MΩ|| pF ZIC Common-mode 4 || 1.5 GΩ|| pF OPEN-LOOP GAIN AOL Open-loop voltage gain VS = 15 V; VO =",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Common-mode input impedance",
+        "value": "4 || 1.5",
+        "unit": "GΩ|| pF",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            408.7,
+            554.5,
+            420.3
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            408.7,
+            554.5,
+            420.3
+          ],
+          "row_sha256": "775780996b668f50926bf2d1e956b1978ef3092ec49fde4085d1d2ed2042f807",
+          "quote": "Common-mode | 4 || 1.5 | GΩ||pF"
+        }
+      },
+      {
+        "name": "Open-loop voltage gain",
+        "value": "70",
+        "unit": "V/mV",
+        "condition": "VS = 15 V; VO = 1 V to 11 V; RL ≥ 10 kΩ, connected to (V–); TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            431.8,
+            554.5,
+            443.4
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            431.8,
+            554.5,
+            443.4
+          ],
+          "row_sha256": "e1da85e56a7e10743733cd115a69003b6d83d0d1ca9bb7746fabd69f36a81797",
+          "quote": "Open-loop voltage gain | V; RL ≥ 10 kΩ, connected to (V–) | 70 | 140 | V/mV"
+        }
+      },
+      {
+        "name": "Open-loop voltage gain",
+        "value": "35",
+        "unit": "V/mV",
+        "condition": "VS = 15 V; VO = 1 V to 11 V; RL ≥ 10 kΩ, connected to (V–); TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            443.4,
+            554.5,
+            454.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            443.4,
+            554.5,
+            454.9
+          ],
+          "row_sha256": "025fc63880fba1c82f67c5cc2f18dd7f9c4a36b88fc8a85915faa0e25439c9f3",
+          "quote": "Open-loop voltage gain | V; RL ≥ 10 kΩ, connected to (V–) | 35 | V/mV"
+        }
+      },
+      {
+        "name": "Gain bandwidth product",
+        "value": "1.2",
+        "unit": "MHz",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            466.5,
+            554.5,
+            478.0
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            466.5,
+            554.5,
+            478.0
+          ],
+          "row_sha256": "e9e6f2141f3e122fd1a07ebe5972cfd65d8081cf906bd4396d2b5bc4581c4644",
+          "quote": "Gain bandwidth product | 1.2 | MHz"
+        }
+      },
+      {
+        "name": "Slew rate",
+        "value": "0.5",
+        "unit": "V/µs",
+        "condition": "G = +1; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            478.0,
+            554.5,
+            489.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            478.0,
+            554.5,
+            489.6
+          ],
+          "row_sha256": "4c048c967ba48b82a4417e089ffe1ba7cff131e5c7137ecea380a61170cb8844",
+          "quote": "Slew rate | 0.5 | V/µs"
+        }
+      },
+      {
+        "name": "Phase margin",
+        "value": "56",
+        "unit": "°",
+        "condition": "G = +1; RL = 10kΩ; CL = 20 pF; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            489.6,
+            554.5,
+            501.1
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            489.6,
+            554.5,
+            501.1
+          ],
+          "row_sha256": "f61c57b84400831c4dbd302c37feefcd3692b0dcc622e159365c4e8751a419ff",
+          "quote": "Phase margin | 20 pF | 56 | °"
+        }
+      },
+      {
+        "name": "Overload recovery time",
+        "value": "10",
+        "unit": "µs",
+        "condition": "VIN × gain > VS; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            501.1,
+            554.5,
+            512.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            501.1,
+            554.5,
+            512.7
+          ],
+          "row_sha256": "e6f5093030e57570316be8f957e2f10c60b1cfcf6d96cb472381774b98ac9bb8",
+          "quote": "Overload recovery time | 10 | µs"
+        }
+      },
+      {
+        "name": "Settling time",
+        "value": "4",
+        "unit": "µs",
+        "condition": "To 0.1%; VS = 5 V; 2-V step; G = +1; CL = 100 pF; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            512.7,
+            554.5,
+            524.2
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            512.7,
+            554.5,
+            524.2
+          ],
+          "row_sha256": "49cc33ba7aa55b9a0ca223d69fa4dcd12f9c9320ae9ec88a80b9fe8e3d9c1928",
+          "quote": "Settling time | , G = +1, CL = 100 pF | 4 | µs"
+        }
+      },
+      {
+        "name": "Total harmonic distortion + noise",
+        "value": "0.001",
+        "unit": "%",
+        "condition": "G = +1; f = 1 kHz; VO = 3.53 VRMS; VS = 36 V; RL = 100k; IOUT ≤ ±50 µA; BW = 80 kHz; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            524.2,
+            554.5,
+            535.8
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            524.2,
+            554.5,
+            535.8
+          ],
+          "row_sha256": "158bb84c9efc1219c9815dfbd155143a9f1bdddbe79f2e7cdcb419eb7fbcc060",
+          "quote": "Total harmonic distortion + noise | 3.53 VRMS, VS = 36 V, RL = 100k, IOUT ≤ ±50 | 0.001 | %"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (positive)",
+        "value": "1.35",
+        "unit": "V",
+        "condition": "IOUT = 50 µA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            547.3,
+            554.5,
+            558.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            547.3,
+            554.5,
+            558.9
+          ],
+          "row_sha256": "af36ffcdf25b4580d8d18c49787437bec51c572ec84109f658333962b873eada",
+          "quote": "Voltage output swing from rail | 1.35 | 1.42 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (positive)",
+        "value": "1.42",
+        "unit": "V",
+        "condition": "IOUT = 50 µA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            547.3,
+            554.5,
+            558.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            547.3,
+            554.5,
+            558.9
+          ],
+          "row_sha256": "af36ffcdf25b4580d8d18c49787437bec51c572ec84109f658333962b873eada",
+          "quote": "Voltage output swing from rail | 1.35 | 1.42 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (positive)",
+        "value": "1.4",
+        "unit": "V",
+        "condition": "IOUT = 1 mA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            558.9,
+            554.5,
+            570.4
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            558.9,
+            554.5,
+            570.4
+          ],
+          "row_sha256": "1292aca3a49f8ef2b617ebe0ab551cb02987569f47531871b3bf51ceb1de93af",
+          "quote": "Voltage output swing from rail | 1.4 | 1.48 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (positive)",
+        "value": "1.48",
+        "unit": "V",
+        "condition": "IOUT = 1 mA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            558.9,
+            554.5,
+            570.4
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            558.9,
+            554.5,
+            570.4
+          ],
+          "row_sha256": "1292aca3a49f8ef2b617ebe0ab551cb02987569f47531871b3bf51ceb1de93af",
+          "quote": "Voltage output swing from rail | 1.4 | 1.48 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (positive)",
+        "value": "1.5",
+        "unit": "V",
+        "condition": "IOUT = 5 mA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 10,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            555.3,
+            554.1,
+            566.8
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 10,
+          "bbox": [
+            56.7,
+            555.3,
+            554.1,
+            566.8
+          ],
+          "row_sha256": "784c1392082815438cd52182ed2696aaad3696eec6cf3103dc0d28d3c8b4576d",
+          "quote": "VO Voltage output swing from rail | ≥ 2 kΩ | 1.5 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (positive)",
+        "value": "1.61",
+        "unit": "V",
+        "condition": "IOUT = 5 mA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            570.4,
+            554.5,
+            582.0
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            570.4,
+            554.5,
+            582.0
+          ],
+          "row_sha256": "72c4d23561006c374ce6ed370b8eedb6aa7568aeec78c96bec8a40da7e704eaf",
+          "quote": "Voltage output swing from rail | 1.5 | 1.61 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (negative)",
+        "value": "100",
+        "unit": "mV",
+        "condition": "IOUT = 50 µA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            582.0,
+            554.5,
+            593.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            582.0,
+            554.5,
+            593.5
+          ],
+          "row_sha256": "cf8bd5a91449a4daea5b1a87126a8905def1dfe952df021418aabcc75f1ada55",
+          "quote": "Voltage output swing from rail | 100 | 150 | mV"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (negative)",
+        "value": "150",
+        "unit": "mV",
+        "condition": "IOUT = 50 µA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            582.0,
+            554.5,
+            593.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            582.0,
+            554.5,
+            593.5
+          ],
+          "row_sha256": "cf8bd5a91449a4daea5b1a87126a8905def1dfe952df021418aabcc75f1ada55",
+          "quote": "Voltage output swing from rail | 100 | 150 | mV"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (negative)",
+        "value": "0.75",
+        "unit": "V",
+        "condition": "IOUT = 1 mA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            593.5,
+            554.5,
+            605.1
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            593.5,
+            554.5,
+            605.1
+          ],
+          "row_sha256": "a4dd58b8965b233deb3f437c65b6edd0f0340d011044721375afc0fdc33d8292",
+          "quote": "Voltage output swing from rail | 0.75 | 1 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (negative)",
+        "value": "1",
+        "unit": "V",
+        "condition": "IOUT = 1 mA; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            593.5,
+            554.5,
+            605.1
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            593.5,
+            554.5,
+            605.1
+          ],
+          "row_sha256": "a4dd58b8965b233deb3f437c65b6edd0f0340d011044721375afc0fdc33d8292",
+          "quote": "Voltage output swing from rail | 0.75 | 1 | V"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (negative)",
+        "value": "5",
+        "unit": "mV",
+        "condition": "VS = 5 V; RL ≤ 10 kΩ connected to (V–); TA = –40°C to +85°C; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            605.1,
+            554.5,
+            616.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            605.1,
+            554.5,
+            616.6
+          ],
+          "row_sha256": "f5a699297e0a7596da8825701db29b10352ff0f43c635f2c7d67f559b2e15e42",
+          "quote": "Voltage output swing from rail | VS = 5 V, RL ≤ 10 kΩ connected to (V–) | 5 | 20 | mV"
+        }
+      },
+      {
+        "name": "Voltage output swing from rail (negative)",
+        "value": "20",
+        "unit": "mV",
+        "condition": "VS = 5 V; RL ≤ 10 kΩ connected to (V–); TA = –40°C to +85°C; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            605.1,
+            554.5,
+            616.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            605.1,
+            554.5,
+            616.6
+          ],
+          "row_sha256": "f5a699297e0a7596da8825701db29b10352ff0f43c635f2c7d67f559b2e15e42",
+          "quote": "Voltage output swing from rail | VS = 5 V, RL ≤ 10 kΩ connected to (V–) | 5 | 20 | mV"
+        }
+      },
+      {
+        "name": "Output current (source)",
+        "value": "-20",
+        "unit": "mA",
+        "condition": "VS = 15 V; VO = V–; VID = 1 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            616.6,
+            554.5,
+            628.2
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            616.6,
+            554.5,
+            628.2
+          ],
+          "row_sha256": "be677e53209baa3b3d820450942b4d01f52cdd0674acf6a48064ea18e0eb4782",
+          "quote": "Output current | Source(1) | -20 | -30 | mA"
+        }
+      },
+      {
+        "name": "Output current (source)",
+        "value": "-30",
+        "unit": "mA",
+        "condition": "VS = 15 V; VO = V–; VID = 1 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            616.6,
+            554.5,
+            628.2
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            616.6,
+            554.5,
+            628.2
+          ],
+          "row_sha256": "be677e53209baa3b3d820450942b4d01f52cdd0674acf6a48064ea18e0eb4782",
+          "quote": "Output current | Source(1) | -20 | -30 | mA"
+        }
+      },
+      {
+        "name": "Output current (source)",
+        "value": "-10",
+        "unit": "mA",
+        "condition": "VS = 15 V; VO = V–; VID = 1 V; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            628.2,
+            554.5,
+            639.7
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            628.2,
+            554.5,
+            639.7
+          ],
+          "row_sha256": "026eedd2f045ff712babefb76b0262f03ef925d8d4c9470a5be79a69b0068223",
+          "quote": "Output current | Source(1) | -10 | mA"
+        }
+      },
+      {
+        "name": "Output current (sink)",
+        "value": "10",
+        "unit": "mA",
+        "condition": "VS = 15 V; VO = V+; VID = –1 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            639.7,
+            554.5,
+            651.3
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            639.7,
+            554.5,
+            651.3
+          ],
+          "row_sha256": "9c2f62fe7d4c4308d2e4310685fd1b13ddccf32e2cb127f6efb0c59e90995c6a",
+          "quote": "Output current | Sink(1) | 10 | 20 | mA"
+        }
+      },
+      {
+        "name": "Output current (sink)",
+        "value": "20",
+        "unit": "mA",
+        "condition": "VS = 15 V; VO = V+; VID = –1 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            639.7,
+            554.5,
+            651.3
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            639.7,
+            554.5,
+            651.3
+          ],
+          "row_sha256": "9c2f62fe7d4c4308d2e4310685fd1b13ddccf32e2cb127f6efb0c59e90995c6a",
+          "quote": "Output current | Sink(1) | 10 | 20 | mA"
+        }
+      },
+      {
+        "name": "Output current (sink)",
+        "value": "5",
+        "unit": "mA",
+        "condition": "VS = 15 V; VO = V+; VID = –1 V; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            651.3,
+            554.5,
+            662.8
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            651.3,
+            554.5,
+            662.8
+          ],
+          "row_sha256": "5c50ad91c32ade37a131655b8cea93848b055b5390f92c83dbfb7b0ef048166e",
+          "quote": "Output current | Sink(1) | 5 | mA"
+        }
+      },
+      {
+        "name": "Short-circuit current",
+        "value": "±40",
+        "unit": "mA",
+        "condition": "VS = 20 V; (V+) = 10 V; (V–) = –10 V; VO = 0 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            674.4,
+            554.5,
+            685.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            674.4,
+            554.5,
+            685.9
+          ],
+          "row_sha256": "6d75dc7437bb36d00a2cbd9c35b302544f879b0d5540838dcf93d1ccd31d8b51",
+          "quote": "Short-circuit current | = –10 V, VO = 0 V | ±40 | ±60 | mA"
+        }
+      },
+      {
+        "name": "Short-circuit current",
+        "value": "±60",
+        "unit": "mA",
+        "condition": "VS = 20 V; (V+) = 10 V; (V–) = –10 V; VO = 0 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            674.4,
+            554.5,
+            685.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            674.4,
+            554.5,
+            685.9
+          ],
+          "row_sha256": "6d75dc7437bb36d00a2cbd9c35b302544f879b0d5540838dcf93d1ccd31d8b51",
+          "quote": "Short-circuit current | = –10 V, VO = 0 V | ±40 | ±60 | mA"
+        }
+      },
+      {
+        "name": "Capacitive load drive",
+        "value": "100",
+        "unit": "pF",
+        "condition": "VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            685.9,
+            554.5,
+            697.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            685.9,
+            554.5,
+            697.5
+          ],
+          "row_sha256": "be4096ed5d085ae80e25b8a9b91e52fd25f138904aa449f5cdbaf1450be1af44",
+          "quote": "Capacitive load drive | 100 | pF"
+        }
+      },
+      {
+        "name": "Open-loop output resistance",
+        "value": "300",
+        "unit": "Ω",
+        "condition": "f = 1 MHz; IO = 0 A; VS = 5 V – 36 V; TA = 25°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            697.5,
+            554.5,
+            709.0
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            697.5,
+            554.5,
+            709.0
+          ],
+          "row_sha256": "044141c7edd4605d52b8dbe6472ee09dc846e19d2a4155b6b8f6e4dbed7d9b52",
+          "quote": "Open-loop output resistance | 300 | Ω"
+        }
+      },
+      {
+        "name": "Quiescent current per amplifier",
+        "value": "300",
+        "unit": "µA",
+        "condition": "VS = 5 V; IO = 0 A; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 7,
+          "method": "spec_row",
+          "bbox": [
+            57.1,
+            134.5,
+            555.3,
+            144.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            57.1,
+            134.5,
+            555.3,
+            144.5
+          ],
+          "row_sha256": "3ce0bc45af3e070e1148936afe3d2111e6a89e11fb5bb6f2f66361eb7294da56",
+          "quote": "Quiescent current per amplifier | VS = 5 V; IO = 0 A | 300 | 460 | µA"
+        }
+      },
+      {
+        "name": "Quiescent current per amplifier",
+        "value": "460",
+        "unit": "µA",
+        "condition": "VS = 5 V; IO = 0 A; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 7,
+          "method": "spec_row",
+          "bbox": [
+            57.1,
+            134.5,
+            555.3,
+            144.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            57.1,
+            134.5,
+            555.3,
+            144.5
+          ],
+          "row_sha256": "3ce0bc45af3e070e1148936afe3d2111e6a89e11fb5bb6f2f66361eb7294da56",
+          "quote": "Quiescent current per amplifier | VS = 5 V; IO = 0 A | 300 | 460 | µA"
+        }
+      },
+      {
+        "name": "Quiescent current per amplifier",
+        "value": "800",
+        "unit": "µA",
+        "condition": "VS = 36 V; IO = 0 A; TA = –40°C to +85°C; VCM = VOUT = VS / 2; RL = 10k connected to VS / 2",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 7,
+          "method": "spec_row",
+          "bbox": [
+            57.1,
+            146.0,
+            555.3,
+            156.0
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            57.1,
+            146.0,
+            555.3,
+            156.0
+          ],
+          "row_sha256": "f22c9a4426e846c36a40f1a16a7e36a08f36fba51f424637e009b07152c62ef0",
+          "quote": "Quiescent current per amplifier | VS = 36 V; IO = 0 A | 800 | µA"
+        }
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "Supply voltage",
+        "value": "±20 or 40",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            136.4,
+            553.6,
+            160.1
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "±20 or 40"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            136.4,
+            553.6,
+            160.1
+          ],
+          "quote": "Supply voltage, VS = ([V+] – [V–]) | LM358B, LM358BA, LM2904B, LM2904BA | ±20 or 40 | V",
+          "row_sha256": "5f180f3bd7c7a39acbafe2338db2a56885a89d54156a281007d4f3e81296de27"
+        }
+      },
+      {
+        "name": "Differential input voltage",
+        "value": "-32 to 32",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            207.2,
+            553.6,
+            249.9
+          ]
+        },
+        "range": {
+          "min": "-32",
+          "max": "32"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            207.2,
+            553.6,
+            249.9
+          ],
+          "quote": "Differential input voltage, VID (2) | LM358B, LM358BA, LM2904B, LM2904BA,LM158, LM258, LM358, LM158A, LM258A, LM358A, LM2904V | -32 | 32 | V",
+          "row_sha256": "3bbe2b7487ee79fc7b2c52b35a77cf7016332d0fe72f18211fdfaa7ad4fcac9a"
+        }
+      },
+      {
+        "name": "Input voltage",
+        "value": "-0.3 to 40",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            263.9,
+            553.6,
+            287.4
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "40"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            263.9,
+            553.6,
+            287.4
+          ],
+          "quote": "Input voltage, VI | LM358B, LM358BA, LM2904B, LM2904BA | -0.3 | 40 | V",
+          "row_sha256": "5cb15350a34dddc941badadd86880c97f93a6707a775a458ba77416a5b50d28e"
+        }
+      },
+      {
+        "name": "Operating ambient temperature",
+        "value": "-40 to 85",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            386.0,
+            553.6,
+            399.9
+          ]
+        },
+        "range": {
+          "min": "-40",
+          "max": "85"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            386.0,
+            553.6,
+            399.9
+          ],
+          "quote": "Operating ambient temperature, TA | LM358B, LM358BA | -40 | 85 | °C",
+          "row_sha256": "08b7f6ed4ff9a494af2cdf732ea8e2db62372eef8b4eeb9b08d1bb0c10c628c3"
+        }
+      },
+      {
+        "name": "Operating virtual-junction temperature",
+        "value": "150",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            437.4,
+            553.6,
+            451.4
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "150"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            437.4,
+            553.6,
+            451.4
+          ],
+          "quote": "Operating virtual-junction temperature, TJ | 150 | °C",
+          "row_sha256": "a3d98a0fffecbbfa176002250283413da9a5447385a4366339b4d36c686bb38b"
+        }
+      },
+      {
+        "name": "Storage temperature",
+        "value": "-65 to 150",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            451.4,
+            553.6,
+            465.4
+          ]
+        },
+        "range": {
+          "min": "-65",
+          "max": "150"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            451.4,
+            553.6,
+            465.4
+          ],
+          "quote": "Storage temperature, Tstg | -65 | 150 | °C",
+          "row_sha256": "7f4b07bf1ae37a67257f06dada0d86d38cc6db1f66cabce3a86d71cfa47bf4dc"
+        }
+      }
+    ],
+    "thermal": [
+      {
+        "name": "RθJA",
+        "value": "124.7",
+        "unit": "°C/W",
+        "condition": "D (SOIC) 8 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "181.4",
+        "unit": "°C/W",
+        "condition": "DGK (VSSOP) 8 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "80.9",
+        "unit": "°C/W",
+        "condition": "P (PDIP) 8 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "116.9",
+        "unit": "°C/W",
+        "condition": "PS (SO) 8 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "171.7",
+        "unit": "°C/W",
+        "condition": "PW (TSSOP) 8 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "164.3",
+        "unit": "°C/W",
+        "condition": "DDF (SOT-23) 8 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "84.0",
+        "unit": "°C/W",
+        "condition": "FK (LCCC) 20 PINS"
+      },
+      {
+        "name": "RθJA",
+        "value": "112.4",
+        "unit": "°C/W",
+        "condition": "JG (CDIP) 8 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "66.9",
+        "unit": "°C/W",
+        "condition": "D (SOIC) 8 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "69.4",
+        "unit": "°C/W",
+        "condition": "DGK (VSSOP) 8 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "70.4",
+        "unit": "°C/W",
+        "condition": "P (PDIP) 8 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "62.5",
+        "unit": "°C/W",
+        "condition": "PS (SO) 8 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "68.8",
+        "unit": "°C/W",
+        "condition": "PW (TSSOP) 8 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "98.1",
+        "unit": "°C/W",
+        "condition": "DDF (SOT-23) 8 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "56.9",
+        "unit": "°C/W",
+        "condition": "FK (LCCC) 20 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "63.6",
+        "unit": "°C/W",
+        "condition": "JG (CDIP) 8 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "67.9",
+        "unit": "°C/W",
+        "condition": "D (SOIC) 8 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "102.9",
+        "unit": "°C/W",
+        "condition": "DGK (VSSOP) 8 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "57.4",
+        "unit": "°C/W",
+        "condition": "P (PDIP) 8 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "68.6",
+        "unit": "°C/W",
+        "condition": "PS (SO) 8 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "99.2",
+        "unit": "°C/W",
+        "condition": "PW (TSSOP) 8 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "82.1",
+        "unit": "°C/W",
+        "condition": "DDF (SOT-23) 8 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "57.5",
+        "unit": "°C/W",
+        "condition": "FK (LCCC) 20 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "100.3",
+        "unit": "°C/W",
+        "condition": "JG (CDIP) 8 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "19.2",
+        "unit": "°C/W",
+        "condition": "D (SOIC) 8 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "11.8",
+        "unit": "°C/W",
+        "condition": "DGK (VSSOP) 8 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "40",
+        "unit": "°C/W",
+        "condition": "P (PDIP) 8 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "21.9",
+        "unit": "°C/W",
+        "condition": "PS (SO) 8 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "11.5",
+        "unit": "°C/W",
+        "condition": "PW (TSSOP) 8 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "11.4",
+        "unit": "°C/W",
+        "condition": "DDF (SOT-23) 8 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "51.7",
+        "unit": "°C/W",
+        "condition": "FK (LCCC) 20 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "35.7",
+        "unit": "°C/W",
+        "condition": "JG (CDIP) 8 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "67.2",
+        "unit": "°C/W",
+        "condition": "D (SOIC) 8 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "101.2",
+        "unit": "°C/W",
+        "condition": "DGK (VSSOP) 8 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "56.9",
+        "unit": "°C/W",
+        "condition": "P (PDIP) 8 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "67.6",
+        "unit": "°C/W",
+        "condition": "PS (SO) 8 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "97.9",
+        "unit": "°C/W",
+        "condition": "PW (TSSOP) 8 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "81.7",
+        "unit": "°C/W",
+        "condition": "DDF (SOT-23) 8 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "57.1",
+        "unit": "°C/W",
+        "condition": "FK (LCCC) 20 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "93.3",
+        "unit": "°C/W",
+        "condition": "JG (CDIP) 8 PINS"
+      },
+      {
+        "name": "RθJC(bot)",
+        "value": "10.6",
+        "unit": "°C/W",
+        "condition": "FK (LCCC) 20 PINS"
+      },
+      {
+        "name": "RθJC(bot)",
+        "value": "22.3",
+        "unit": "°C/W",
+        "condition": "JG (CDIP) 8 PINS"
+      }
+    ],
+    "esd": [
+      {
+        "name": "HBM",
+        "value": "±2000",
+        "unit": "V"
+      },
+      {
+        "name": "CDM",
+        "value": "±1500",
+        "unit": "V"
+      }
+    ],
+    "package": {
+      "type": "SOIC (D)",
+      "pins": 8,
+      "dimensions": "4.9mm x 6mm"
+    },
+    "temperature": {
+      "operating": "-40°C to 85°C",
+      "storage": "-65°C to 150°C"
+    },
+    "scope": "device"
+  },
+  "features": [
+    "Wide supply range of 3V to 36V",
+    "Quiescent current: 300µA/ch",
+    "Unity-gain bandwidth of 1.2MHz",
+    "Common-mode input voltage range includes ground",
+    "3mV input offset voltage maximum at 25°C",
+    "Internal RF and EMI filter",
+    "High ESD (2kV, HBM)"
+  ],
+  "applications": [
+    "Merchant network and server power supply units",
+    "Multi-function printers",
+    "Power supplies and mobile chargers",
+    "Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor",
+    "Desktop PC and motherboard",
+    "Indoor and outdoor air conditioners",
+    "Washers, dryers, and refrigerators",
+    "AC inverters, string inverters, central inverters, and voltage frequency drives",
+    "Uninterruptible power supplies",
+    "Electronic point-of-sale systems"
+  ],
+  "pin_configuration": [
+    {
+      "pin": "1",
+      "name": "OUT1",
+      "description": "Output",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "2",
+      "name": "IN1–",
+      "description": "Negative input",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "3",
+      "name": "IN1+",
+      "description": "Positive input",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "4",
+      "name": "V–",
+      "description": "Negative (lowest) supply or ground (for single- supply operation) NC 1, 3, 4, 6, 8, 9, 11, 13, 14, 16, 18, 19 — — No internal connection",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "5",
+      "name": "IN2+",
+      "description": "Positive input",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "6",
+      "name": "IN2–",
+      "description": "Negative input",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "7",
+      "name": "OUT2",
+      "description": "Output",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "8",
+      "name": "V+",
+      "description": "Positive (highest) supply",
+      "source": {
+        "page": 3,
+        "method": "deterministic"
+      }
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "LM358B",
+      "package": "SOIC (D)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358BA",
+      "package": "SOIC (D)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358B",
+      "package": "TSSOP (PW)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358BA",
+      "package": "TSSOP (PW)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358B",
+      "package": "VSSOP (DGK)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358BA",
+      "package": "VSSOP (DGK)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358B",
+      "package": "SOT-23 (DDF)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358BA",
+      "package": "SOT-23 (DDF)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358",
+      "package": "SOIC (D)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "SOIC (D)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358",
+      "package": "TSSOP (PW)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "TSSOP (PW)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358",
+      "package": "VSSOP (DGK)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "VSSOP (DGK)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358",
+      "package": "SOT-23 (DDF)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "SOT-23 (DDF)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Large T&R"
+    },
+    {
+      "mpn": "LM358",
+      "package": "PDIP (P)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "PDIP (P)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    },
+    {
+      "mpn": "LM358",
+      "package": "SO (PS)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "SO (PS)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    },
+    {
+      "mpn": "LM358",
+      "package": "CDIP (JG)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "CDIP (JG)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    },
+    {
+      "mpn": "LM358",
+      "package": "LCCC (FK)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    },
+    {
+      "mpn": "LM358A",
+      "package": "LCCC (FK)",
+      "marking": "",
+      "moq": 0,
+      "packaging": "Tube"
+    }
+  ],
+  "alternatives": [
+    {
+      "mpn": "LM2904",
+      "manufacturer": "Texas Instruments",
+      "reason": "Equivalent dual op amp with similar specifications"
+    },
+    {
+      "mpn": "LM258",
+      "manufacturer": "Texas Instruments",
+      "reason": "Pin-compatible alternative with slightly different electrical characteristics"
+    },
+    {
+      "mpn": "LM158",
+      "manufacturer": "Texas Instruments",
+      "reason": "Legacy version with broader temperature range"
+    }
+  ],
+  "seo": {
+    "title_en": "LM358 Dual Op Amp, 3V-36V, 1.2MHz Bandwidth",
+    "title_zh": "LM358 双运放，3V-36V供电，1.2MHz带宽",
+    "meta_description_en": "The LM358 is a dual operational amplifier with 3V to 36V supply range, 1.2MHz unity-gain bandwidth, and 300µA quiescent current. Ideal for power supplies, motor control, and industrial applications.",
+    "meta_description_zh": "LM358 是一款双运放，工作电压3V至36V，单位增益带宽1.2MHz，静态电流300µA。适用于电源、电机控制及工业应用。",
+    "keywords": [
+      "LM358",
+      "dual op amp",
+      "operational amplifier",
+      "3V to 36V",
+      "1.2MHz bandwidth",
+      "low quiescent current",
+      "motor control",
+      "power supply"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+    "parse_timestamp": "2026-11-03T20:26:06+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "LM358",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "deterministic_extract": {
+      "pins": {
+        "skipped": "model_pins_complete",
+        "kept": 8,
+        "det_pins": 8,
+        "ordered": "numeric_asc"
+      },
+      "thermal": {
+        "from": 42,
+        "to": 42,
+        "method": "deterministic"
+      },
+      "esd": {
+        "from": 2,
+        "to": 2,
+        "method": "deterministic"
+      },
+      "model_unverified": {
+        "stamped": 0
+      }
+    },
+    "core_validation": "pass",
+    "pipeline_stage": {
+      "pipeline": "v2-five-stage",
+      "stage": "llm",
+      "code_commit": "e23751b",
+      "stage_version": "1",
+      "extractor_version": "extract_pdf_text/v1",
+      "slice_schema_version": 1,
+      "idem_key": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2:llm:1:27906954ae9dd0c005b147b56d6614844ac39152aca6911ee224fe8de0f47658:qwen-flash:a88e6e80318e323411f197af3325452572d96a1db832707e30365af2316333d9",
+      "prompt_sha256": "27906954ae9dd0c005b147b56d6614844ac39152aca6911ee224fe8de0f47658",
+      "model": "qwen-flash",
+      "prompt_version": "v3",
+      "attempts": 1,
+      "accepted_on_attempt": 1,
+      "status": "ok",
+      "ms": 90612,
+      "recorded_at": "2026-11-03T20:26:06+08:00"
+    },
+    "formal_container_integrity": "pass",
+    "ac_data_state": "not_withheld",
+    "normalize": {
+      "datasheet_url": {
+        "action": "kept",
+        "url": "https://www.ti.com/lit/ds/symlink/lm358.pdf"
+      },
+      "doc_type": {
+        "changed": true,
+        "from": null,
+        "to": "datasheet"
+      },
+      "ac_quarantine": {
+        "schema": "ac-quarantine/v2",
+        "n_quarantined": 0,
+        "n_restored": 0,
+        "restored": [],
+        "quarantined": [],
+        "formal_container_integrity": "pass",
+        "ac_data_state": "not_withheld"
+      },
+      "row_sources": {
+        "added": 51,
+        "rows": 51
+      },
+      "absolute_max_roles": {
+        "checked": 6,
+        "upgraded": 6,
+        "replaced": 0,
+        "unmatched": []
+      },
+      "row_anchors": {
+        "pages": [
+          1,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          40
+        ],
+        "candidates": 268,
+        "anchored": 55,
+        "ambiguous": 1,
+        "same_page": 1,
+        "ambiguous_rows": [
+          "Input offset voltage drift"
+        ],
+        "rows": 57
+      },
+      "verification": {
+        "stamped": 0
+      },
+      "category_path": {
+        "category_path": [
+          "Integrated Circuits (ICs)",
+          "Amplifiers"
+        ],
+        "changed": true
+      },
+      "pdf": "data\\pdfs\\LM358__lm358.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 8,
+        "sha256": "86bab1b0b9808bb2d991d087dc78749bc301409c6b97044cf90b82f268a58374"
+      },
+      "thermal": {
+        "sha256": "9c9c52641ccf00c486c72817a96926eda6a52c5b5564d1fe6f995b76d2253ecf"
+      },
+      "esd": {
+        "sha256": "b6b3e390000d3f4859694a3f586e84c600c3646a10b49963bd513a7786c3c3d0"
+      },
+      "vcmi_vid": {
+        "count": 2,
+        "sha256": "1c757c0fd1e59128349e49a094e3a530fc84df448a0db581152df59001397cd1"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点；有 unresolved_ac_rows 时记 pass_with_quarantine（数据被隔离，不是没有数据）"
+  },
+  "pin_scope": "device"
+}

@@ -1,0 +1,4041 @@
+{
+  "basic_info": {
+    "mpn": "ADS42JB49SEK",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Data Converters",
+    "description": "The ADS42JB49 is a dual-channel, 14-bit, 250-MSPS analog-to-digital converter with JESD204B serial interface. It features high linearity, differential full-scale input of 2 VPP and 2.5 VPP, aperture jitter of 85 fS rms, channel isolation of 100 dB, and power dissipation of 850 mW per channel. Designed for communication, radar, and test systems.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/ads42jb49.pdf",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号未逐条列入订货表，但与 4 条同族订货号同族（ADS42JB49IRGCR、ADS42JB49IRGCRA、ADS42JB49IRGCT）→ 判为同一族器件的不同写法"
+    ],
+    "datasheet_url_source": "mpn_rule_override",
+    "doc_type": "datasheet",
+    "doc_revision": {
+      "doc_number": "SLAS900",
+      "revision": "F",
+      "doc_id": "SLAS900F",
+      "issued": "OCTOBER 2012",
+      "revised": "DECEMBER 2014",
+      "page": 1
+    },
+    "category_path": [
+      "Integrated Circuits (ICs)",
+      "Data Acquisition",
+      "ADCs"
+    ],
+    "category_leaf": "ADCs"
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "SNR",
+        "value": "73.4 to 75",
+        "unit": "dBFS",
+        "condition": "fIN = 10 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "73.4",
+          "max": "75"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SNR",
+        "value": "73.2 to 74.7",
+        "unit": "dBFS",
+        "condition": "fIN = 70 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "73.2",
+          "max": "74.7"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SNR",
+        "value": "69.5 to 72.7 to 74",
+        "unit": "dBFS",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "SNR",
+        "value": "72.2 to 73.4",
+        "unit": "dBFS",
+        "condition": "fIN = 230 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 10,
+          "bbox": [
+            54.1,
+            160.5,
+            557.7,
+            213.3
+          ],
+          "row_sha256": "2a64752a1222b49e76c23f0ed52322add7fbe4ddc832b07f1125da1c2fcc0971",
+          "quote": "Signal-to-noise ratio | fIN = 10 MHz / fIN = 70 MHz / fIN = 170 MHz / fIN = 230 MHz | dBFS",
+          "rows": [
+            "0791aa845f551dc416f5327c459ebfe0991e457ff3597ff7b446ed12546f077c",
+            "0e3cd9b17f7efc3edfe8655eec25628e6429d15a8dae2e65db1a090e54505c3c",
+            "83ae010322e2e473becbed7bad8badee46bcfe673bb95d74446cd6ab85590ec3",
+            "f55a4ca0697f941ac51e197b3096b4f3d319a848db153a35f5d90824654dfee6"
+          ]
+        },
+        "unverified_range_candidate": {
+          "min": "72.2",
+          "max": "73.4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SINAD",
+        "value": "73.3 to 74.8",
+        "unit": "dBFS",
+        "condition": "fIN = 10 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 10,
+          "quote": "2.2 73.4 dBFS fIN = 10 MHz 73.3 74.8 dBFS fIN = 70 MHz 73.1 74.5 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 68.5 72.7 73.8 dBFS fIN = 230 MHz 71.8 72.6 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "73.3",
+          "max": "74.8"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SINAD",
+        "value": "73.1 to 74.5",
+        "unit": "dBFS",
+        "condition": "fIN = 70 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "72.6 74 dBFS fIN = 10 MHz 73.9 75.7 dBFS fIN = 70 MHz 73.7 75.3 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 69.6 73.2 74.5 dBFS fIN = 230 MHz 72.2 73.1 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "73.1",
+          "max": "74.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SINAD",
+        "value": "68.5 to 72.7 to 73.8",
+        "unit": "dBFS",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 10
+        },
+        "source": {
+          "page": 10,
+          "quote": "2.2 73.4 dBFS fIN = 10 MHz 73.3 74.8 dBFS fIN = 70 MHz 73.1 74.5 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 68.5 72.7 73.8 dBFS fIN = 230 MHz 71.8 72.6 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "SINAD",
+        "value": "71.8 to 72.6",
+        "unit": "dBFS",
+        "condition": "fIN = 230 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 10,
+          "quote": "2.2 73.4 dBFS fIN = 10 MHz 73.3 74.8 dBFS fIN = 70 MHz 73.1 74.5 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 68.5 72.7 73.8 dBFS fIN = 230 MHz 71.8 72.6 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "71.8",
+          "max": "72.6"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SFDR",
+        "value": "95 to 90",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 81 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "95",
+          "max": "90"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SFDR",
+        "value": "91 to 88",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 81 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "91",
+          "max": "88"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SFDR",
+        "value": "79 to 93 to 89",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 10
+        },
+        "source": {
+          "page": 10,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 79 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "SFDR",
+        "value": "84 to 82",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 81 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "84",
+          "max": "82"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THD",
+        "value": "92 to 88",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "92",
+          "max": "88"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THD",
+        "value": "89 to 86",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "89",
+          "max": "86"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THD",
+        "value": "76 to 90 to 86",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "THD",
+        "value": "82 to 80",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "82",
+          "max": "80"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD2",
+        "value": "95",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 9,
+          "bbox": [
+            54.1,
+            371.6,
+            557.8,
+            384.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            371.6,
+            557.8,
+            384.9
+          ],
+          "row_sha256": "9aec3addc7c014ddf24c3cc183cd5c570361bb757c927d8fa2185cfd6d282453",
+          "quote": "2nd-order harmonic distortion | fIN = 10 MHz | 95 | dBc"
+        }
+      },
+      {
+        "name": "HD2",
+        "value": "91 to 88",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "91",
+          "max": "88"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD2",
+        "value": "79 to 93 to 94",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "HD2",
+        "value": "84 to 82",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "84",
+          "max": "82"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD3",
+        "value": "95 to 90",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "95",
+          "max": "90"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD3",
+        "value": "96 to 93",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "96",
+          "max": "93"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD3",
+        "value": "79 to 94 to 89",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "HD3",
+        "value": "86 to 84",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "86",
+          "max": "84"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Worst spur",
+        "value": "102",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 9,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            477.2,
+            557.8,
+            490.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            477.2,
+            557.8,
+            490.5
+          ],
+          "row_sha256": "f9680ea7b98c7cbb9250f6f1a43434ebd1917b38fd4ce6df2013513ac808d5a6",
+          "quote": "Worst spur (other than second and third harmonics) | fIN = 10 MHz | 102 | dBc"
+        }
+      },
+      {
+        "name": "Worst spur",
+        "value": "103",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 9,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            490.5,
+            557.8,
+            503.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            490.5,
+            557.8,
+            503.6
+          ],
+          "row_sha256": "3533012763e1e56ecee0bb6bc554bb6cc8fb2a38dc9069e0621417ab1fa25ea1",
+          "quote": "Worst spur (other than second and third harmonics) | fIN = 70 MHz | 103 | dBc"
+        }
+      },
+      {
+        "name": "Worst spur",
+        "value": "87 to 101 to 95",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 10
+        },
+        "source": {
+          "page": 10,
+          "quote": "170 MHz 79 94 89 dBc fIN = 230 MHz 86 84 dBc fIN = 10 MHz 102 102 dBc Worst spur fIN = 70 MHz 103 103 dBc (other than second and third fIN = 170 MHz 87 101 95 dBc harmonics) fIN = 230 M",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Worst spur",
+        "value": "99 to 93",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "170 MHz 81 94 89 dBc fIN = 230 MHz 86 84 dBc fIN = 10 MHz 102 102 dBc Worst spur fIN = 70 MHz 103 103 dBc (other than second and third fIN = 170 MHz 87 100 95 dBc harmonics) fIN = 230 M",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "99",
+          "max": "93"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "IMD",
+        "value": "97 to 95",
+        "unit": "dBFS",
+        "condition": "f1 = 46 MHz, f2 = 50 MHz, each tone at –7 dBFS; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "97",
+          "max": "95"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "IMD",
+        "value": "90 to 89",
+        "unit": "dBFS",
+        "condition": "f1 = 185 MHz, f2 = 190 MHz, each tone at –7 dBFS; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "90",
+          "max": "89"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Crosstalk",
+        "value": "100",
+        "unit": "dB",
+        "condition": "20-MHz, full-scale signal on channel under observation; 170-MHz, full-scale signal on other channel; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 9,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            574.4,
+            557.8,
+            614.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            574.4,
+            557.8,
+            614.6
+          ],
+          "row_sha256": "e66c07dd6017dfdd9aa71eaf275b6f6b59a7b90eb582ba633d31922e551f62ae",
+          "quote": "Crosstalk | 20-MHz, full-scale signal on channel under observation; 170-MHz, full-scale signal on other channel | 100 | dB"
+        }
+      },
+      {
+        "name": "Clock Input overload recovery",
+        "value": "1 to 1",
+        "unit": "",
+        "condition": "Recovery to within 1% (of full-scale) for 6-dB overload with sine-wave input; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            614.6,
+            557.8,
+            645.9
+          ],
+          "row_sha256": "9a8fa2518a0d0c722489fcf38b00b1cb782a292865f9844c4c82ec3c7757145a",
+          "quote": "Input overload recovery | Recovery to within 1% (of full- scale) for 6-dB overload with sine- wave input | 1 | Clockcycle"
+        },
+        "unverified_range_candidate": {
+          "min": "1",
+          "max": "1"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "PSRR",
+        "value": "> 40 to > 40",
+        "unit": "dB",
+        "condition": "For 50-mVPP signal on AVDD supply, up to 10 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            645.9,
+            557.8,
+            668.1
+          ],
+          "row_sha256": "f7ec0be43af8b1c4f984f22330c53579229b3b75776c437d378a0876c6a28334",
+          "quote": "AC power-supply rejection ratio | For 50-mVPP signal on AVDD supply, up to 10 MHz | > 40 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "> 40",
+          "max": "> 40"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "ENOB",
+        "value": "11.8 to 12",
+        "unit": "LSBs",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 10,
+          "quote": "SRR AC power-supply rejection ratio > 40 > 40 dB supply, up to 10 MHz ENOB Effective number of bits fIN = 170 MHz 11.8 12 LSBs DNL Differential nonlinearity fIN = 170 MHz ±0.15 ±0.15 L",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "11.8",
+          "max": "12"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "DNL",
+        "value": "0.15",
+        "unit": "LSBs",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 10,
+          "bbox": [
+            54.1,
+            681.2,
+            557.7,
+            694.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 10,
+          "bbox": [
+            54.1,
+            681.2,
+            557.7,
+            694.4
+          ],
+          "row_sha256": "d67812f0d24a97210fdbb68a1a6e426b6d12ba059e9267877a4123276ce9c7e7",
+          "quote": "Differential nonlinearity | fIN = 170 MHz | ±0.15 | LSBs"
+        }
+      },
+      {
+        "name": "INL",
+        "value": "±0.75 to ±3 to ±0.9",
+        "unit": "LSBs",
+        "condition": "fIN = 170 MHz; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "SNR",
+        "value": "74 to 75.9",
+        "unit": "dBFS",
+        "condition": "fIN = 10 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "74",
+          "max": "75.9"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SNR",
+        "value": "73.8 to 75.6",
+        "unit": "dBFS",
+        "condition": "fIN = 70 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "73.8",
+          "max": "75.6"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SNR",
+        "value": "70.8 to 73.3 to 74.7",
+        "unit": "dBFS",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "SNR",
+        "value": "72.6 to 74",
+        "unit": "dBFS",
+        "condition": "fIN = 230 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            160.5,
+            557.8,
+            213.3
+          ],
+          "row_sha256": "3cc61c2f8799a5cb8f6d3ac392f26141c6242b4303303b32d491d79bf5e81482",
+          "quote": "Signal-to-noise ratio | fIN = 10 MHz / fIN = 70 MHz / fIN = 170 MHz / fIN = 230 MHz | dBFS",
+          "rows": [
+            "2b6f736b1802a13ab707b51f13ce252c0b87dc1a0acf56390c594dc45ac35fd7",
+            "8bfdf59c0b3dd2158ea9542bde65bf1a132891bcd410bcba9b6cbeb5effc75a9",
+            "da0f6dcfa7eab739b6aac7daddd7b5071d84b5f3eb81fb7767d02d2ab7c3eb04",
+            "db665acc361363b8460b127ffb811a4abb585c50e752faf75fd494f09187cc0a"
+          ]
+        },
+        "unverified_range_candidate": {
+          "min": "72.6",
+          "max": "74"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SINAD",
+        "value": "73.9 to 75.7",
+        "unit": "dBFS",
+        "condition": "fIN = 10 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "72.6 74 dBFS fIN = 10 MHz 73.9 75.7 dBFS fIN = 70 MHz 73.7 75.3 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 69.6 73.2 74.5 dBFS fIN = 230 MHz 72.2 73.1 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "73.9",
+          "max": "75.7"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SINAD",
+        "value": "73.7 to 75.3",
+        "unit": "dBFS",
+        "condition": "fIN = 70 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "72.6 74 dBFS fIN = 10 MHz 73.9 75.7 dBFS fIN = 70 MHz 73.7 75.3 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 69.6 73.2 74.5 dBFS fIN = 230 MHz 72.2 73.1 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "73.7",
+          "max": "75.3"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SINAD",
+        "value": "69.6 to 73.2 to 74.5",
+        "unit": "dBFS",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 9
+        },
+        "source": {
+          "page": 9,
+          "quote": "72.6 74 dBFS fIN = 10 MHz 73.9 75.7 dBFS fIN = 70 MHz 73.7 75.3 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 69.6 73.2 74.5 dBFS fIN = 230 MHz 72.2 73.1 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "SINAD",
+        "value": "72.2 to 73.1",
+        "unit": "dBFS",
+        "condition": "fIN = 230 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "72.6 74 dBFS fIN = 10 MHz 73.9 75.7 dBFS fIN = 70 MHz 73.7 75.3 dBFS SINAD Signal-to-noise and distortion ratio fIN = 170 MHz 69.6 73.2 74.5 dBFS fIN = 230 MHz 72.2 73.1 dBFS fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "72.2",
+          "max": "73.1"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SFDR",
+        "value": "95 to 90",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 81 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "95",
+          "max": "90"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SFDR",
+        "value": "91 to 88",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 81 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "91",
+          "max": "88"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "SFDR",
+        "value": "81 to 93 to 89",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 9
+        },
+        "source": {
+          "page": 9,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 81 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "SFDR",
+        "value": "84 to 82",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "= 10 MHz 95 90 dBc Spurious-free dynamic range fIN = 70 MHz 91 88 dBc SFDR (including second and third fIN = 170 MHz 81 93 89 dBc harmonic distortion) fIN = 230 MHz 84 82 dBc fIN = 10",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "84",
+          "max": "82"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THD",
+        "value": "92 to 88",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "92",
+          "max": "88"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THD",
+        "value": "89 to 86",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "89",
+          "max": "86"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THD",
+        "value": "78 to 91 to 86",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "THD",
+        "value": "82 to 80",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "82",
+          "max": "80"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD2",
+        "value": "95",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2.5-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 9,
+          "bbox": [
+            54.1,
+            371.6,
+            557.8,
+            384.9
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            371.6,
+            557.8,
+            384.9
+          ],
+          "row_sha256": "9aec3addc7c014ddf24c3cc183cd5c570361bb757c927d8fa2185cfd6d282453",
+          "quote": "2nd-order harmonic distortion | fIN = 10 MHz | 95 | dBc"
+        }
+      },
+      {
+        "name": "HD2",
+        "value": "91 to 88",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "91",
+          "max": "88"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD2",
+        "value": "81 to 93 to 94",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "HD2",
+        "value": "84 to 82",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "84",
+          "max": "82"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD3",
+        "value": "95 to 90",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "95",
+          "max": "90"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD3",
+        "value": "96 to 93",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "96",
+          "max": "93"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "HD3",
+        "value": "81 to 94 to 89",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "HD3",
+        "value": "86 to 84",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "86",
+          "max": "84"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Worst spur",
+        "value": "102",
+        "unit": "dBc",
+        "condition": "fIN = 10 MHz; 2.5-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 9,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            477.2,
+            557.8,
+            490.5
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            477.2,
+            557.8,
+            490.5
+          ],
+          "row_sha256": "f9680ea7b98c7cbb9250f6f1a43434ebd1917b38fd4ce6df2013513ac808d5a6",
+          "quote": "Worst spur (other than second and third harmonics) | fIN = 10 MHz | 102 | dBc"
+        }
+      },
+      {
+        "name": "Worst spur",
+        "value": "103",
+        "unit": "dBc",
+        "condition": "fIN = 70 MHz; 2.5-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 9,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            490.5,
+            557.8,
+            503.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            490.5,
+            557.8,
+            503.6
+          ],
+          "row_sha256": "3533012763e1e56ecee0bb6bc554bb6cc8fb2a38dc9069e0621417ab1fa25ea1",
+          "quote": "Worst spur (other than second and third harmonics) | fIN = 70 MHz | 103 | dBc"
+        }
+      },
+      {
+        "name": "Worst spur",
+        "value": "87 to 100 to 95",
+        "unit": "dBc",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 9
+        },
+        "source": {
+          "page": 9,
+          "quote": "170 MHz 81 94 89 dBc fIN = 230 MHz 86 84 dBc fIN = 10 MHz 102 102 dBc Worst spur fIN = 70 MHz 103 103 dBc (other than second and third fIN = 170 MHz 87 100 95 dBc harmonics) fIN = 230 M",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Worst spur",
+        "value": "99 to 93",
+        "unit": "dBc",
+        "condition": "fIN = 230 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "170 MHz 81 94 89 dBc fIN = 230 MHz 86 84 dBc fIN = 10 MHz 102 102 dBc Worst spur fIN = 70 MHz 103 103 dBc (other than second and third fIN = 170 MHz 87 100 95 dBc harmonics) fIN = 230 M",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "99",
+          "max": "93"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "IMD",
+        "value": "97 to 95",
+        "unit": "dBFS",
+        "condition": "f1 = 46 MHz, f2 = 50 MHz, each tone at –7 dBFS; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "97",
+          "max": "95"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "IMD",
+        "value": "90 to 89",
+        "unit": "dBFS",
+        "condition": "f1 = 185 MHz, f2 = 190 MHz, each tone at –7 dBFS; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "unverified_range_candidate": {
+          "min": "90",
+          "max": "89"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Crosstalk",
+        "value": "100",
+        "unit": "dB",
+        "condition": "20-MHz, full-scale signal on channel under observation; 170-MHz, full-scale signal on other channel; 2.5-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 9,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            574.4,
+            557.8,
+            614.6
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            574.4,
+            557.8,
+            614.6
+          ],
+          "row_sha256": "e66c07dd6017dfdd9aa71eaf275b6f6b59a7b90eb582ba633d31922e551f62ae",
+          "quote": "Crosstalk | 20-MHz, full-scale signal on channel under observation; 170-MHz, full-scale signal on other channel | 100 | dB"
+        }
+      },
+      {
+        "name": "Clock Input overload recovery",
+        "value": "1 to 1",
+        "unit": "",
+        "condition": "Recovery to within 1% (of full-scale) for 6-dB overload with sine-wave input; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            614.6,
+            557.8,
+            645.9
+          ],
+          "row_sha256": "9a8fa2518a0d0c722489fcf38b00b1cb782a292865f9844c4c82ec3c7757145a",
+          "quote": "Input overload recovery | Recovery to within 1% (of full- scale) for 6-dB overload with sine- wave input | 1 | Clockcycle"
+        },
+        "unverified_range_candidate": {
+          "min": "1",
+          "max": "1"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "PSRR",
+        "value": "> 40 to > 40",
+        "unit": "dB",
+        "condition": "For 50-mVPP signal on AVDD supply, up to 10 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            645.9,
+            557.8,
+            668.1
+          ],
+          "row_sha256": "f7ec0be43af8b1c4f984f22330c53579229b3b75776c437d378a0876c6a28334",
+          "quote": "AC power-supply rejection ratio | For 50-mVPP signal on AVDD supply, up to 10 MHz | > 40 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "> 40",
+          "max": "> 40"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "ENOB",
+        "value": "11.9 to 12.1",
+        "unit": "LSBs",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 9,
+          "quote": "SRR AC power-supply rejection ratio > 40 > 40 dB supply, up to 10 MHz ENOB Effective number of bits fIN = 170 MHz 11.9 12.1 LSBs DNL Differential nonlinearity fIN = 170 MHz ±0.6 ±0.6 L",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "11.9",
+          "max": "12.1"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "DNL",
+        "value": "0.6",
+        "unit": "LSBs",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 9,
+          "bbox": [
+            54.1,
+            681.2,
+            557.8,
+            694.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 9,
+          "bbox": [
+            54.1,
+            681.2,
+            557.8,
+            694.4
+          ],
+          "row_sha256": "35a2c364affa1a34e05ef962ee7e49e5ec5758a979900b1e449b9045ffcfc7f6",
+          "quote": "Differential nonlinearity | fIN = 170 MHz | ±0.6 | LSBs"
+        }
+      },
+      {
+        "name": "INL",
+        "value": "±3 to ±8 to ±3.5",
+        "unit": "LSBs",
+        "condition": "fIN = 170 MHz; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "VID",
+        "value": "2",
+        "unit": "VPP",
+        "condition": "Default after reset; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 11,
+          "bbox": [
+            54.1,
+            158.4,
+            557.9,
+            170.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            158.4,
+            557.9,
+            170.6
+          ],
+          "row_sha256": "7773d7abb2bdcfbe12a965537d2c4a0cb038caa2d1495b393a3ace8b2af334ce",
+          "quote": "Differential input voltage range | Default (after reset) | 2 | VPP"
+        }
+      },
+      {
+        "name": "VID",
+        "value": "2.5",
+        "unit": "VPP",
+        "condition": "Register programmable; 2.5-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 11,
+          "bbox": [
+            54.1,
+            170.6,
+            557.9,
+            182.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            170.6,
+            557.9,
+            182.9
+          ],
+          "row_sha256": "2fff5afca7a2123f720161ba05c23d0aa09d04de57e241826bae450b60caa95d",
+          "quote": "Differential input voltage range | Register programmed(1) | 2.5 | VPP"
+        }
+      },
+      {
+        "name": "VICR",
+        "value": "1.9",
+        "unit": "V",
+        "condition": "Input common-mode voltage; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 8
+        },
+        "source": {
+          "page": 8,
+          "quote": "VID Differential input voltage range Register programmable(2) 2.5 VPP VICR Input common-mode voltage VCM ± 0.025 V Maximum analog input frequency with 2.5-VPP input amplitude 250 MHz M",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Maximum analog input frequency",
+        "value": "250",
+        "unit": "MHz",
+        "condition": "With 2.5-VPP input amplitude; 2.5-VPP FULL-SCALE",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "roc_row",
+          "bbox": [
+            57.0,
+            234.2,
+            540.6,
+            246.2
+          ],
+          "matched_by": "name+value(roc_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            57.0,
+            234.2,
+            540.6,
+            246.2
+          ],
+          "row_sha256": "fb30ad0c632e8be8a6cf1acd82ddeb5e7803ec7765046113b5e665948dcefbee",
+          "quote": "VICR Maximum analog input frequency with 2.5-VPP input amplitude | 250 | MHz"
+        }
+      },
+      {
+        "name": "Maximum analog input frequency",
+        "value": "400",
+        "unit": "MHz",
+        "condition": "With 2-VPP input amplitude; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "roc_row",
+          "bbox": [
+            57.0,
+            247.4,
+            540.6,
+            259.4
+          ],
+          "matched_by": "name+value(roc_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            57.0,
+            247.4,
+            540.6,
+            259.4
+          ],
+          "row_sha256": "fd1259283b4b414f03b4fbae46d7973f15b09f9033c4c14f75862a23b4259dff",
+          "quote": "VICR Maximum analog input frequency with 2-VPP input amplitude | 400 | MHz"
+        }
+      },
+      {
+        "name": "Input clock sample rate",
+        "value": "60",
+        "unit": "MSPS",
+        "condition": "10x mode; 2-VPP FULL-SCALE; MIN",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            272.6,
+            557.8,
+            285.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            54.1,
+            272.6,
+            557.8,
+            285.9
+          ],
+          "row_sha256": "dd8603283590257d56ceb192a04b393abeaa901b26756c8ce98e6e7af6ed5178",
+          "quote": "VICR | 10x mode | 60 | 250 | MSPS"
+        }
+      },
+      {
+        "name": "Input clock sample rate",
+        "value": "250",
+        "unit": "MSPS",
+        "condition": "10x mode; 2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            272.6,
+            557.8,
+            285.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            54.1,
+            272.6,
+            557.8,
+            285.9
+          ],
+          "row_sha256": "dd8603283590257d56ceb192a04b393abeaa901b26756c8ce98e6e7af6ed5178",
+          "quote": "VICR | 10x mode | 60 | 250 | MSPS"
+        }
+      },
+      {
+        "name": "Input clock sample rate",
+        "value": "40",
+        "unit": "MSPS",
+        "condition": "20x mode; 2-VPP FULL-SCALE; MIN",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            285.9,
+            557.8,
+            299.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            54.1,
+            285.9,
+            557.8,
+            299.1
+          ],
+          "row_sha256": "6dafb17e7db7193f8a8c52eac377e1638b1f44646e5a585b854b669ed45fbba6",
+          "quote": "VICR | 20x mode | 40 | 156.25 | MSPS"
+        }
+      },
+      {
+        "name": "Input clock sample rate",
+        "value": "156.25",
+        "unit": "MSPS",
+        "condition": "20x mode; 2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            285.9,
+            557.8,
+            299.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            54.1,
+            285.9,
+            557.8,
+            299.1
+          ],
+          "row_sha256": "6dafb17e7db7193f8a8c52eac377e1638b1f44646e5a585b854b669ed45fbba6",
+          "quote": "VICR | 20x mode | 40 | 156.25 | MSPS"
+        }
+      },
+      {
+        "name": "Input clock amplitude differential",
+        "value": "0.3 to 1.5",
+        "unit": "VPP",
+        "condition": "Sine wave, ac-coupled; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "quote": "ply voltage 1.7 1.8 1.9 V ANALOG INPUTS Default after reset 2 VPP VID Differential input voltage range Register programmable(2) 2.5 VPP VICR Input common-mode voltage VCM ± 0.025 V Maximum ana",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "0.3",
+          "max": "1.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Input clock amplitude differential",
+        "value": "1.6",
+        "unit": "VPP",
+        "condition": "LVPECL, ac-coupled; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "roc_row",
+          "bbox": [
+            57.0,
+            313.4,
+            539.0,
+            326.5
+          ],
+          "matched_by": "name+value(roc_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            57.0,
+            313.4,
+            539.0,
+            326.5
+          ],
+          "row_sha256": "19df16953c6b285a59bfe3556969a6566d727226d0464e66bf4fee97851d424f",
+          "quote": "CLOCK Input clock amplitude differential | 1.6"
+        }
+      },
+      {
+        "name": "Input clock amplitude differential",
+        "value": "0.7",
+        "unit": "VPP",
+        "condition": "LVDS, ac-coupled; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 8
+        },
+        "source": {
+          "page": 8,
+          "quote": "ply voltage 1.7 1.8 1.9 V ANALOG INPUTS Default after reset 2 VPP VID Differential input voltage range Register programmable(2) 2.5 VPP VICR Input common-mode voltage VCM ± 0.025 V Maximum ana",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Input clock duty cycle",
+        "value": "35%",
+        "unit": "",
+        "condition": "2-VPP FULL-SCALE",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            351.9,
+            557.8,
+            365.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            54.1,
+            351.9,
+            557.8,
+            365.1
+          ],
+          "row_sha256": "05b4fa84777f3ff55ced81267ebcb441e388aba12d4f43b0224c5cc30466944f",
+          "quote": "VICR | 35% | 65%"
+        }
+      },
+      {
+        "name": "Input clock duty cycle",
+        "value": "50%",
+        "unit": "",
+        "condition": "2-VPP FULL-SCALE",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only",
+          "page": 2
+        },
+        "source": {
+          "page": 2,
+          "quote": "-20 0 0 25 50 75 100 125 Amplitude (dB) Frequency(MHz) FFT for 170MHz Input Signal Fs = 250Msps Fin= 170MHz Ain =-1dBFS HD2 = 90dBc HD3 = 89dBc Non HD2,3 = 100dBc CLKINP, M CLKIN INAP,",
+          "method": "label_value_colocation"
+        }
+      },
+      {
+        "name": "Input clock duty cycle",
+        "value": "65%",
+        "unit": "",
+        "condition": "2-VPP FULL-SCALE",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            351.9,
+            557.8,
+            365.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            54.1,
+            351.9,
+            557.8,
+            365.1
+          ],
+          "row_sha256": "05b4fa84777f3ff55ced81267ebcb441e388aba12d4f43b0224c5cc30466944f",
+          "quote": "VICR | 35% | 65%"
+        }
+      },
+      {
+        "name": "CLOAD",
+        "value": "3.3",
+        "unit": "pF",
+        "condition": "Maximum external load capacitance from each output pin to DRGND; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "roc_row",
+          "bbox": [
+            57.0,
+            379.4,
+            537.0,
+            391.4
+          ],
+          "matched_by": "name+value(roc_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            57.0,
+            379.4,
+            537.0,
+            391.4
+          ],
+          "row_sha256": "c3372f48d1050030c0918d8d17f20b0579de90d9d83ec4115d92eba1d1aa44fd",
+          "quote": "CLOAD Maximum external load capacitance from each output pin to DRGND | 3.3 | pF"
+        }
+      },
+      {
+        "name": "RLOAD",
+        "value": "+50",
+        "unit": "Ω",
+        "condition": "Single-ended load resistance; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "roc_row",
+          "bbox": [
+            57.0,
+            392.6,
+            535.4,
+            404.6
+          ],
+          "matched_by": "name+value(roc_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            57.0,
+            392.6,
+            535.4,
+            404.6
+          ],
+          "row_sha256": "37e00f568f06e3197087a93f8b25f376fb0defe70d7f1fb159bf9b2f6fa34392",
+          "quote": "RLOAD Single-ended load resistance | +50 | Ω"
+        }
+      },
+      {
+        "name": "Analog input bandwidth",
+        "value": "900",
+        "unit": "MHz",
+        "condition": "With 50-Ω source impedance, and 50-Ω termination; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            207.3,
+            557.9,
+            227.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            207.3,
+            557.9,
+            227.4
+          ],
+          "row_sha256": "96cd5db2932265f980438834a0936a851e425faa533147e76ad06651cdc5deea",
+          "quote": "Analog input bandwidth | With 50-Ω source impedance, and 50-Ω termination | 900 | MHz"
+        }
+      },
+      {
+        "name": "VCM",
+        "value": "1.9",
+        "unit": "V",
+        "condition": "Common-mode output voltage; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 11,
+          "bbox": [
+            54.1,
+            227.4,
+            557.9,
+            239.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            227.4,
+            557.9,
+            239.6
+          ],
+          "row_sha256": "538771a89c962eb8c3e4aeefbe99c99e88acde830ae23fb8062989908f00b478",
+          "quote": "Common-mode output voltage | 1.9 | V"
+        }
+      },
+      {
+        "name": "VCM output current capability",
+        "value": "10",
+        "unit": "mA",
+        "condition": "2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            239.6,
+            557.9,
+            251.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            239.6,
+            557.9,
+            251.9
+          ],
+          "row_sha256": "c633cf579c9e255a5711a77ae60ced42939c7cb327ddac48bd2b7b68ed7d70f8",
+          "quote": "VCM output current capability | 10 | mA"
+        }
+      },
+      {
+        "name": "Offset error",
+        "value": "-20",
+        "unit": "mV",
+        "condition": "DC ACCURACY; 2-VPP FULL-SCALE; MIN",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            264.1,
+            557.9,
+            276.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            264.1,
+            557.9,
+            276.3
+          ],
+          "row_sha256": "741b7b0d882b2340ddecce11d9a84cc3ed3817121d536ae26a01e98efa1b44ac",
+          "quote": "Offset error | -20 | 20 | mV"
+        }
+      },
+      {
+        "name": "Offset error",
+        "value": "20",
+        "unit": "mV",
+        "condition": "DC ACCURACY; 2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            264.1,
+            557.9,
+            276.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            264.1,
+            557.9,
+            276.3
+          ],
+          "row_sha256": "741b7b0d882b2340ddecce11d9a84cc3ed3817121d536ae26a01e98efa1b44ac",
+          "quote": "Offset error | -20 | 20 | mV"
+        }
+      },
+      {
+        "name": "EGREF",
+        "value": "±2",
+        "unit": "%FS",
+        "condition": "Gain error as a result of internal reference inaccuracy alone; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            276.3,
+            557.9,
+            304.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            276.3,
+            557.9,
+            304.5
+          ],
+          "row_sha256": "314dded013938d3cd6cf59e6380eaa3c70213a95e2e5ea25d46db95b7232c24b",
+          "quote": "Gain error as a result of internal reference inaccuracy alone | ±2 | %FS"
+        }
+      },
+      {
+        "name": "EGCHAN",
+        "value": "-5 to 5",
+        "unit": "%FS",
+        "condition": "Gain error of channel alone; 2-VPP FULL-SCALE",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 11,
+          "quote": "error as a result of EGREF internal reference inaccuracy ±2 %FS alone EGCHAN Gain error of channel alone -5 %FS Temperature coefficient of 0.01 Δ%/°C EGCHAN POWER SUPPLY IAVDD Analog sup",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "-5",
+          "max": "5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Temperature coefficient of EGCHAN",
+        "value": "0.01",
+        "unit": "Δ%/°C",
+        "condition": "2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            316.6,
+            557.9,
+            336.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            316.6,
+            557.9,
+            336.9
+          ],
+          "row_sha256": "a82e725032c14dbf17ebd294d56a765026e5eacc2b990a20f6cf5483325feece",
+          "quote": "Temperature coefficient of EGCHAN | 0.01 | Δ%/°C"
+        }
+      },
+      {
+        "name": "IAVDD",
+        "value": "128",
+        "unit": "mA",
+        "condition": "Analog supply current; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            349.1,
+            557.9,
+            361.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            349.1,
+            557.9,
+            361.2
+          ],
+          "row_sha256": "f34f92cae93eb8ec64c0c3ba9aa8ec670561c68792135a6df3ca4cffccbe7689",
+          "quote": "Analog supply current | 128 | 160 | mA"
+        }
+      },
+      {
+        "name": "IAVDD",
+        "value": "160",
+        "unit": "mA",
+        "condition": "Analog supply current; 2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            349.1,
+            557.9,
+            361.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            349.1,
+            557.9,
+            361.2
+          ],
+          "row_sha256": "f34f92cae93eb8ec64c0c3ba9aa8ec670561c68792135a6df3ca4cffccbe7689",
+          "quote": "Analog supply current | 128 | 160 | mA"
+        }
+      },
+      {
+        "name": "IAVDD3V",
+        "value": "290",
+        "unit": "mA",
+        "condition": "Analog buffer supply current; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            361.2,
+            557.9,
+            373.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            361.2,
+            557.9,
+            373.5
+          ],
+          "row_sha256": "6e09ed74b55f9b58cd9e19a6dc60dbe00d442a17ae62449302cacfc9f31d8936",
+          "quote": "Analog buffer supply current | 290 | 330 | mA"
+        }
+      },
+      {
+        "name": "IAVDD3V",
+        "value": "330",
+        "unit": "mA",
+        "condition": "Analog buffer supply current; 2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            361.2,
+            557.9,
+            373.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            361.2,
+            557.9,
+            373.5
+          ],
+          "row_sha256": "6e09ed74b55f9b58cd9e19a6dc60dbe00d442a17ae62449302cacfc9f31d8936",
+          "quote": "Analog buffer supply current | 290 | 330 | mA"
+        }
+      },
+      {
+        "name": "IDRVDD",
+        "value": "228",
+        "unit": "mA",
+        "condition": "Digital supply current; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            373.5,
+            557.9,
+            385.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            373.5,
+            557.9,
+            385.6
+          ],
+          "row_sha256": "62a51cbfec7db254b27ced03b67fa14fb0ec7afc4c362b854dade9afef46bc61",
+          "quote": "Digital supply current | 228 | 252 | mA"
+        }
+      },
+      {
+        "name": "IDRVDD",
+        "value": "252",
+        "unit": "mA",
+        "condition": "Digital supply current; 2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            373.5,
+            557.9,
+            385.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            373.5,
+            557.9,
+            385.6
+          ],
+          "row_sha256": "62a51cbfec7db254b27ced03b67fa14fb0ec7afc4c362b854dade9afef46bc61",
+          "quote": "Digital supply current | 228 | 252 | mA"
+        }
+      },
+      {
+        "name": "IOVDD",
+        "value": "60",
+        "unit": "mA",
+        "condition": "Output buffer supply current; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            385.6,
+            557.9,
+            405.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            385.6,
+            557.9,
+            405.9
+          ],
+          "row_sha256": "5ff8e8251d7352bb53b2a922c4824c153adf7c400162b48be2bb4a226bc8d271",
+          "quote": "Output buffer supply current | 50-Ω external termination from pin to IOVDD, fIN = 2.5 MHz | 60 | 100 | mA"
+        }
+      },
+      {
+        "name": "IOVDD",
+        "value": "100",
+        "unit": "mA",
+        "condition": "Output buffer supply current; 2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            385.6,
+            557.9,
+            405.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            385.6,
+            557.9,
+            405.9
+          ],
+          "row_sha256": "5ff8e8251d7352bb53b2a922c4824c153adf7c400162b48be2bb4a226bc8d271",
+          "quote": "Output buffer supply current | 50-Ω external termination from pin to IOVDD, fIN = 2.5 MHz | 60 | 100 | mA"
+        }
+      },
+      {
+        "name": "Analog power",
+        "value": "231",
+        "unit": "mW",
+        "condition": "fIN = 2.5 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            405.9,
+            557.9,
+            418.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            405.9,
+            557.9,
+            418.1
+          ],
+          "row_sha256": "9c09ed23369646a53840988bf3e098be77260b15b2905122c2081e02e0be6ece",
+          "quote": "Analog power | 231 | mW"
+        }
+      },
+      {
+        "name": "Analog buffer power",
+        "value": "957",
+        "unit": "mW",
+        "condition": "fIN = 2.5 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            418.1,
+            557.9,
+            430.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            418.1,
+            557.9,
+            430.2
+          ],
+          "row_sha256": "cdbe713676d9725b8d235b8360d281c49b153d1606338c03630593d3d0106c52",
+          "quote": "Analog buffer power | 957 | mW"
+        }
+      },
+      {
+        "name": "Digital power",
+        "value": "410",
+        "unit": "mW",
+        "condition": "fIN = 2.5 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            430.2,
+            557.9,
+            442.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            430.2,
+            557.9,
+            442.5
+          ],
+          "row_sha256": "26f4c24c2d8e04a501498b9434243398cf6c767c4ec0ac7af08b143a6a4bd580",
+          "quote": "Digital power | 410 | mW"
+        }
+      },
+      {
+        "name": "Power consumption by output buffer",
+        "value": "109",
+        "unit": "mW",
+        "condition": "fIN = 2.5 MHz; 2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            442.5,
+            557.9,
+            462.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            442.5,
+            557.9,
+            462.6
+          ],
+          "row_sha256": "5638c5b732e61ae0d5a4f34601a1a568ecb6bac540164e1df1f1093fce69de6d",
+          "quote": "Power consumption by output buffer | 50-Ω external termination from pin to IOVDD, fIN = 2.5 MHz | 109 | mW"
+        }
+      },
+      {
+        "name": "Total power",
+        "value": "1.7",
+        "unit": "W",
+        "condition": "2-VPP FULL-SCALE; TYP",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            462.6,
+            557.9,
+            474.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            462.6,
+            557.9,
+            474.9
+          ],
+          "row_sha256": "f57ce7e6567271b4d18e928a2098be7a64519d3ea1cd51d1b4bcdae4f0f90917",
+          "quote": "Total power | 1.7 | 1.96 | W"
+        }
+      },
+      {
+        "name": "Total power",
+        "value": "1.96",
+        "unit": "W",
+        "condition": "2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            462.6,
+            557.9,
+            474.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            462.6,
+            557.9,
+            474.9
+          ],
+          "row_sha256": "f57ce7e6567271b4d18e928a2098be7a64519d3ea1cd51d1b4bcdae4f0f90917",
+          "quote": "Total power | 1.7 | 1.96 | W"
+        }
+      },
+      {
+        "name": "Global power-down",
+        "value": "160",
+        "unit": "mW",
+        "condition": "2-VPP FULL-SCALE; MAX",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 11,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            474.9,
+            557.9,
+            487.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 11,
+          "bbox": [
+            54.1,
+            474.9,
+            557.9,
+            487.1
+          ],
+          "row_sha256": "5e44729fc472a87a39d689696eacaac0b14969d827b9a7486b503585cdae4e33",
+          "quote": "Global power-down | 160 | mW"
+        }
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "AVDD3V",
+        "value": "-0.3 to 3.6",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            138.2,
+            557.9,
+            151.4
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "3.6"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            138.2,
+            557.9,
+            151.4
+          ],
+          "quote": "Supply voltage | AVDD3V | -0.3 | 3.6 | V",
+          "row_sha256": "11641ca5b5d29f3ed588fea08e124b888bb7c502b3033e2e98bd614aef5092b8"
+        }
+      },
+      {
+        "name": "AVDD",
+        "value": "-0.3 to 2.1",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            151.4,
+            557.9,
+            164.6
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "2.1"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            151.4,
+            557.9,
+            164.6
+          ],
+          "quote": "Supply voltage | AVDD | -0.3 | 2.1 | V",
+          "row_sha256": "0df75558ca4c58688e8b7257f620cf6c00591ffb1c9aae32f9c113801e5fb6cd"
+        }
+      },
+      {
+        "name": "DRVDD",
+        "value": "-0.3 to 2.1",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            164.6,
+            557.9,
+            177.8
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "2.1"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            164.6,
+            557.9,
+            177.8
+          ],
+          "quote": "Supply voltage | DRVDD | -0.3 | 2.1 | V",
+          "row_sha256": "a9931f8767559122fc50f0009f8ea501fafa990d7afbfd7928321b05e19c8b1c"
+        }
+      },
+      {
+        "name": "IOVDD",
+        "value": "-0.3 to 2.1",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            177.8,
+            557.9,
+            190.9
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "2.1"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            177.8,
+            557.9,
+            190.9
+          ],
+          "quote": "Supply voltage | IOVDD | -0.3 | 2.1 | V",
+          "row_sha256": "de2885680796b2ce25c91e7b461e1bfd74d3437a7d54eb4e62703937562aa795"
+        }
+      },
+      {
+        "name": "Voltage between AGND and DGND",
+        "value": "-0.3 to 0.3",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            190.9,
+            557.9,
+            204.1
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "0.3"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            190.9,
+            557.9,
+            204.1
+          ],
+          "quote": "Voltage between AGND and | DGND | -0.3 | 0.3 | V",
+          "row_sha256": "dadda0ba77f905ca9b1864b1aa3030765ed4423cdc2826d19f0ad0dbf5efeb87"
+        }
+      },
+      {
+        "name": "INAP, INBP, INAM, INBM",
+        "value": "-0.3 to 3",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            204.1,
+            557.9,
+            217.4
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "3"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            204.1,
+            557.9,
+            217.4
+          ],
+          "quote": "Voltage applied to input pins | INAP, INBP, INAM, INBM | -0.3 | 3 | V",
+          "row_sha256": "ff11c4a1f3023f41ff20afbc52ae5623688a554818198c661e145c547dd7924e"
+        }
+      },
+      {
+        "name": "CLKINP, CLKINM",
+        "value": "-0.3 to minimum (2.1, AVDD + 0.3)",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            217.4,
+            557.9,
+            230.6
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "minimum (2.1, AVDD + 0.3)"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            217.4,
+            557.9,
+            230.6
+          ],
+          "quote": "Voltage applied to input pins | CLKINP, CLKINM | -0.3 | minimum (2.1, AVDD + 0.3) | V",
+          "row_sha256": "185004135d93635aa1df8fc8bd66b93f50d6aa35fd13c09016c0e7de6ffee65a"
+        }
+      },
+      {
+        "name": "SYNC~P, SYNC~M",
+        "value": "-0.3 to minimum (2.1, AVDD + 0.3)",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            230.6,
+            557.9,
+            243.8
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "minimum (2.1, AVDD + 0.3)"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            230.6,
+            557.9,
+            243.8
+          ],
+          "quote": "Voltage applied to input pins | SYNC~P, SYNC~M | -0.3 | minimum (2.1, AVDD + 0.3) | V",
+          "row_sha256": "7bc8416be8429083a0fd98c297f155dc39e09e2b63380bf1fe0078e1ac6bcac1"
+        }
+      },
+      {
+        "name": "SYSREFP, SYSREFM",
+        "value": "-0.3 to minimum (2.1, AVDD + 0.3)",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            243.8,
+            557.9,
+            256.9
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "minimum (2.1, AVDD + 0.3)"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            243.8,
+            557.9,
+            256.9
+          ],
+          "quote": "Voltage applied to input pins | SYSREFP, SYSREFM | -0.3 | minimum (2.1, AVDD + 0.3) | V",
+          "row_sha256": "188d3340a903e846cc05e0b8c1a41fb49a59580a9f9e929f6fc78fbec7f25071"
+        }
+      },
+      {
+        "name": "SCLK, SEN, SDATA, RESET, PDN_GBL, CTRL1, CTRL2, STBY, MODE",
+        "value": "-0.3 to 3.9",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            256.9,
+            557.9,
+            279.1
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "3.9"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            256.9,
+            557.9,
+            279.1
+          ],
+          "quote": "Voltage applied to input pins | SCLK, SEN, SDATA, RESET, PDN_GBL, CTRL1, CTRL2, STBY, MODE | -0.3 | 3.9 | V",
+          "row_sha256": "bf57a845d7a2440da828081089e0a693bf199ba81d075a1687e8ea1444d2529e"
+        }
+      },
+      {
+        "name": "Operating free-air, TA",
+        "value": "-40 to +85",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            279.1,
+            557.9,
+            292.4
+          ],
+          "note": "列角色回验覆盖：原值 '-40 to 85' → '-40 to +85'"
+        },
+        "range": {
+          "min": "-40",
+          "max": "+85"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            279.1,
+            557.9,
+            292.4
+          ],
+          "quote": "Temperature | Operating free-air, TA | -40 | +85 | °C",
+          "row_sha256": "dec2e9851a705f6ed1300fc109bb2cf986a03482f8920263fdf66bdcd33b1064"
+        }
+      },
+      {
+        "name": "Operating junction, TJ",
+        "value": "+125",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 7,
+          "bbox": [
+            54.1,
+            292.4,
+            557.9,
+            305.6
+          ],
+          "note": "列角色回验覆盖：原值 '125' → '+125'"
+        },
+        "range": {
+          "min": "",
+          "max": "+125"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            292.4,
+            557.9,
+            305.6
+          ],
+          "quote": "Temperature | Operating junction, TJ | +125 | °C",
+          "row_sha256": "0fefab0120718d39f677b00288f1b681633d5705b9f4a5f84917e8ad23cceb81"
+        }
+      },
+      {
+        "name": "Storage, Tstg",
+        "value": "-65 to 150",
+        "unit": "°C",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 7,
+          "bbox": [
+            54.1,
+            305.6,
+            557.9,
+            318.8
+          ],
+          "row_sha256": "6a80cb7d45bae8efe5d201c0c67337f72c3f33c5ba57245530ffe2bf1e39e9be",
+          "quote": "Temperature | Storage, Tstg | -65 | +150 | °C"
+        },
+        "unverified_range_candidate": {
+          "min": "-65",
+          "max": "150"
+        },
+        "range_origin": "column_roles_unverified"
+      }
+    ],
+    "thermal": [
+      {
+        "name": "RθJA",
+        "value": "22.9",
+        "unit": "°C/W",
+        "condition": "RGC (QFN) 64 PINS"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "7.1",
+        "unit": "°C/W",
+        "condition": "RGC (QFN) 64 PINS"
+      },
+      {
+        "name": "RθJB",
+        "value": "2.5",
+        "unit": "°C/W",
+        "condition": "RGC (QFN) 64 PINS"
+      },
+      {
+        "name": "ψJT",
+        "value": "0.1",
+        "unit": "°C/W",
+        "condition": "RGC (QFN) 64 PINS"
+      },
+      {
+        "name": "ψJB",
+        "value": "2.5",
+        "unit": "°C/W",
+        "condition": "RGC (QFN) 64 PINS"
+      },
+      {
+        "name": "RθJC(bot)",
+        "value": "0.2",
+        "unit": "°C/W",
+        "condition": "RGC (QFN) 64 PINS"
+      }
+    ],
+    "esd": [
+      {
+        "name": "HBM",
+        "value": "±2000",
+        "unit": "V"
+      }
+    ],
+    "package": {
+      "type": "VQFN-64",
+      "pins": 64,
+      "dimensions": "9 mm x 9 mm"
+    },
+    "temperature": {
+      "operating": "-40°C to +85°C",
+      "storage": "-65°C to 150°C"
+    },
+    "scope": "device",
+    "ac_performance": [
+      {
+        "symbol": "SNR",
+        "parameter": "SNR Signal-to-noise ratio",
+        "conditions": "fIN = 70 MHz; 73.8",
+        "min": "73.8",
+        "typ": "",
+        "max": "",
+        "unit": "75.6",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 9,
+        "row_idx": 3,
+        "bbox": [
+          54.1,
+          173.6,
+          557.8,
+          186.9
+        ],
+        "row_sha256": "4a283ac1d1ed836a605aeeb3d11115cd12115344a3ef8e39ef7c4ee7707b77a6",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 9,
+          "bbox": [
+            54.1,
+            173.6,
+            557.8,
+            186.9
+          ]
+        }
+      },
+      {
+        "symbol": "SNR",
+        "parameter": "SNR Signal-to-noise ratio",
+        "conditions": "fIN = 170 MHz; 70.8",
+        "min": "73.3",
+        "typ": "",
+        "max": "",
+        "unit": "74.7",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 9,
+        "row_idx": 4,
+        "bbox": [
+          54.1,
+          186.9,
+          557.8,
+          200.1
+        ],
+        "row_sha256": "dc6d9dd96d2853b03423348990792d45ff6b015f3bc17c9b42f726281f6519ee",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 9,
+          "bbox": [
+            54.1,
+            186.9,
+            557.8,
+            200.1
+          ]
+        }
+      },
+      {
+        "symbol": "SFDR",
+        "parameter": "Spurious-free dynamic range SFDR (including second and third harmonic distortion)",
+        "conditions": "fIN = 70 MHz; 91",
+        "min": "91",
+        "typ": "",
+        "max": "",
+        "unit": "88",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 9,
+        "row_idx": 11,
+        "bbox": [
+          54.1,
+          279.3,
+          557.8,
+          292.5
+        ],
+        "row_sha256": "d1a2fe1f2f4dddf96320e02bce2f4d89688fe24e3e20bf82e3bef613feffa01a",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 9,
+          "bbox": [
+            54.1,
+            279.3,
+            557.8,
+            292.5
+          ]
+        }
+      },
+      {
+        "symbol": "SFDR",
+        "parameter": "Spurious-free dynamic range SFDR (including second and third harmonic distortion)",
+        "conditions": "fIN = 170 MHz; 81",
+        "min": "93",
+        "typ": "",
+        "max": "",
+        "unit": "89",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 9,
+        "row_idx": 12,
+        "bbox": [
+          54.1,
+          292.5,
+          557.8,
+          305.6
+        ],
+        "row_sha256": "cf36853cdf969c3d35f93b39d54bca9ff2aa409211087142724e6c213c07b5e3",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 9,
+          "bbox": [
+            54.1,
+            292.5,
+            557.8,
+            305.6
+          ]
+        }
+      },
+      {
+        "symbol": "SNR",
+        "parameter": "SNR Signal-to-noise ratio",
+        "conditions": "fIN = 70 MHz; 73.2",
+        "min": "73.2",
+        "typ": "",
+        "max": "",
+        "unit": "74.7",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 10,
+        "row_idx": 3,
+        "bbox": [
+          54.1,
+          173.6,
+          557.7,
+          186.9
+        ],
+        "row_sha256": "6d975ab1357768b2a22a460900e25567c2a36e4c3a06bf78de70e7622be272e7",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 10,
+          "bbox": [
+            54.1,
+            173.6,
+            557.7,
+            186.9
+          ]
+        }
+      },
+      {
+        "symbol": "SNR",
+        "parameter": "SNR Signal-to-noise ratio",
+        "conditions": "fIN = 170 MHz; 69.5",
+        "min": "72.7",
+        "typ": "",
+        "max": "",
+        "unit": "74",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 10,
+        "row_idx": 4,
+        "bbox": [
+          54.1,
+          186.9,
+          557.7,
+          200.1
+        ],
+        "row_sha256": "0f84969a7463d6f6aa681711e5e1be26d791dbe68ef295ba63ba63ec61ca4ba2",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 10,
+          "bbox": [
+            54.1,
+            186.9,
+            557.7,
+            200.1
+          ]
+        }
+      },
+      {
+        "symbol": "SFDR",
+        "parameter": "Spurious-free dynamic range SFDR (including second and third harmonic distortion)",
+        "conditions": "fIN = 70 MHz; 91",
+        "min": "91",
+        "typ": "",
+        "max": "",
+        "unit": "88",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 10,
+        "row_idx": 11,
+        "bbox": [
+          54.1,
+          279.3,
+          557.7,
+          292.5
+        ],
+        "row_sha256": "cb51b78a278c460526037b7f13b75844dd0c80138b73ce2db07291fc6d19bb68",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 10,
+          "bbox": [
+            54.1,
+            279.3,
+            557.7,
+            292.5
+          ]
+        }
+      },
+      {
+        "symbol": "SFDR",
+        "parameter": "Spurious-free dynamic range SFDR (including second and third harmonic distortion)",
+        "conditions": "fIN = 170 MHz; 79",
+        "min": "93",
+        "typ": "",
+        "max": "",
+        "unit": "89",
+        "value_shape": "L",
+        "mode": "",
+        "table": "AC Specifications (continued)",
+        "page": 10,
+        "row_idx": 12,
+        "bbox": [
+          54.1,
+          292.5,
+          557.7,
+          305.6
+        ],
+        "row_sha256": "c4a1839325805c3b104960050db0c0d6d83baba8ce68eb6eb10c8903c925a4fe",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "ac_row_anchor_v2",
+          "page": 10,
+          "bbox": [
+            54.1,
+            292.5,
+            557.7,
+            305.6
+          ]
+        }
+      }
+    ]
+  },
+  "features": [
+    "Dual-Channel ADCs",
+    "14-Bit Resolution",
+    "Maximum Clock Rate: 250 MSPS",
+    "JESD204B Serial Interface (Subclass 0, 1, 2 Compliant)",
+    "Up to 3.125 Gbps Data Rate",
+    "Two and Four Lanes Support",
+    "Analog Input Buffer with High-Impedance Input",
+    "Differential Full-Scale Input: 2 VPP and 2.5 VPP",
+    "Flexible Input Clock Buffer: Divide-by-1, -2, and -4",
+    "Aperture Jitter: 85 fS rms",
+    "Internal Dither",
+    "Channel Isolation: 100 dB",
+    "Power Dissipation: 850 mW/Ch"
+  ],
+  "applications": [
+    "Communication and Cable Infrastructure",
+    "Multi-Carrier, Multimode Cellular Receivers",
+    "Radar and Smart Antenna Arrays",
+    "Broadband Wireless",
+    "Test and Measurement Systems",
+    "Software-Defined and Diversity Radios",
+    "Microwave and Dual-Channel I/Q Receivers",
+    "Repeaters",
+    "Power Amplifier Linearization"
+  ],
+  "pin_configuration": [
+    {
+      "pin": "1",
+      "name": "DGND",
+      "description": "Digitalground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "2",
+      "name": "DRVDD",
+      "description": "Digital 1 .8 -V power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "3",
+      "name": "DGND",
+      "description": "Digitalground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "4",
+      "name": "MODE",
+      "description": "Connectto GND",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "5",
+      "name": "STBY",
+      "description": "Standby Active high with an internal 150 -kΩ pull -down resistor . .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "6",
+      "name": "PDN GBL_",
+      "description": "Global power down Active high with an internal 150 -kΩ pull -down resistor . .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "7",
+      "name": "DRVDD",
+      "description": "Digital 1 .8 -V power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "8",
+      "name": "SYNC~M",
+      "description": "Synchronizationinputfor JESD204Bport",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "9",
+      "name": "SYNC~P",
+      "description": "Synchronizationinputfor JESD204Bport",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "10",
+      "name": "CTRL2",
+      "description": "Power-down control with an internal 150 -kΩ pull -down resistor",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "11",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "12",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "13",
+      "name": "INBP",
+      "description": "Differentialanaloginputforchannel B",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "14",
+      "name": "INBM",
+      "description": "Differentialanaloginputforchannel B",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "15",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "16",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "17",
+      "name": "AVDD3V",
+      "description": "3 .3 -V analog supply for analog buffer",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "18",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "19",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "20",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "21",
+      "name": "VCM",
+      "description": "1 .9 -V common-mode output voltage for analog inputs",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "22",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "23",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "24",
+      "name": "CLKINM",
+      "description": "Differential AD Cclockinput",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "25",
+      "name": "CLKINP",
+      "description": "Differential AD Cclockinput",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "26",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "27",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "28",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "29",
+      "name": "SYSREFP",
+      "description": "External SYSRE Finput(subclass1)",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "30",
+      "name": "SYSREFM",
+      "description": "External SYSRE Finput(subclass1)",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "31",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "32",
+      "name": "AVDD3V",
+      "description": "3 .3 -V analog supply for analog buffer",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "33",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "34",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "35",
+      "name": "INAM",
+      "description": "Differentialanaloginputforchannel A",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "36",
+      "name": "INAP",
+      "description": "Differentialanaloginputforchannel A",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "37",
+      "name": "AGND",
+      "description": "Analogground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "38",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "39",
+      "name": "CTRL1",
+      "description": "Power-down control with an internal 150 -kΩ pull -down resistor",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "40",
+      "name": "AVDD",
+      "description": "1 .8 -V analog power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "41",
+      "name": "SEN",
+      "description": "Serial interface enable This pin has an internal 150 -kΩ pull -up resistor . .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "42",
+      "name": "SDATA",
+      "description": "Serial interface data input This pin has an internal 150 -kΩ pull -down resistor . .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "43",
+      "name": "SCLK",
+      "description": "Serial interface clock input This pin has an internal 150 -kΩ pull -down resistor . .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "44",
+      "name": "RESET",
+      "description": "Hardware reset; active high This pin has an internal 150 -kΩ pull -down resistor . .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "45",
+      "name": "SDOUT",
+      "description": "Serialinterfacedataoutput",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "46",
+      "name": "DGND",
+      "description": "Digitalground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "47",
+      "name": "DRVDD",
+      "description": "Digital 1 .8 -V power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "48",
+      "name": "DGND",
+      "description": "Digitalground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "49",
+      "name": "DRVDD",
+      "description": "Digital 1 .8 -V power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "50",
+      "name": "DGND",
+      "description": "Digitalground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "51",
+      "name": "DA1P/M",
+      "description": "JESD204Bserialdataoutputforchannel A lane1 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "52",
+      "name": "DA1P/M",
+      "description": "JESD204Bserialdataoutputforchannel A lane1 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "53",
+      "name": "DA0P/M",
+      "description": "JESD204Bserialdataoutputforchannel A lane0 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "54",
+      "name": "DA0P/M",
+      "description": "JESD204Bserialdataoutputforchannel A lane0 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "55",
+      "name": "IOVDD",
+      "description": "Digital 1 .8 -V power supply for the JESD204B transmitter",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "56",
+      "name": "DB0P/M",
+      "description": "JESD204Bserialdataoutputforchannel B lane0 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "57",
+      "name": "DB0P/M",
+      "description": "JESD204Bserialdataoutputforchannel B lane0 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "58",
+      "name": "DB1P/M",
+      "description": "JESD204Bserialdataoutputforchannel B lane1 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "59",
+      "name": "DB1P/M",
+      "description": "JESD204Bserialdataoutputforchannel B lane1 ,",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "60",
+      "name": "DRVDD",
+      "description": "Digital 1 .8 -V power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "61",
+      "name": "OVRA",
+      "description": "Overrangeindicationchannel Ain CMO Soutputformat .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "62",
+      "name": "OVRB",
+      "description": "Overrangeindicationchannel Bin CMO Soutputformat .",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "63",
+      "name": "DGND",
+      "description": "Digitalground",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    },
+    {
+      "pin": "64",
+      "name": "DRVDD",
+      "description": "Digital 1 .8 -V power supply",
+      "source": {
+        "page": 6,
+        "method": "deterministic"
+      }
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "ADS42JB49IRGCR",
+      "package": "VQFN (RGC) | 64",
+      "marking": "AZ42JB49",
+      "moq": 2000,
+      "packaging": "LARGE T&R"
+    },
+    {
+      "mpn": "ADS42JB49IRGCR.A",
+      "package": "VQFN (RGC) | 64",
+      "marking": "AZ42JB49",
+      "moq": 2000,
+      "packaging": "LARGE T&R"
+    },
+    {
+      "mpn": "ADS42JB49IRGCT",
+      "package": "VQFN (RGC) | 64",
+      "marking": "AZ42JB49",
+      "moq": 250,
+      "packaging": "SMALL T&R"
+    },
+    {
+      "mpn": "ADS42JB49IRGCT.A",
+      "package": "VQFN (RGC) | 64",
+      "marking": "AZ42JB49",
+      "moq": 250,
+      "packaging": "SMALL T&R"
+    }
+  ],
+  "alternatives": [
+    {
+      "mpn": "ADS42JB69",
+      "manufacturer": "Texas Instruments",
+      "reason": "16-bit version of same device family"
+    },
+    {
+      "mpn": "ADS42LB49",
+      "manufacturer": "Texas Instruments",
+      "reason": "Lower sampling rate alternative (160 MSPS)"
+    }
+  ],
+  "seo": {
+    "title_en": "ADS42JB49 14-Bit 250MSPS ADC JESD204B VQFN-64",
+    "title_zh": "ADS42JB49 14位 250MSPS 模数转换器 JESD204B VQFN-64",
+    "meta_description_en": "ADS42JB49 14-bit, 250-MSPS dual-channel ADC with JESD204B interface. Features 850mW/ch power dissipation, 100dB channel isolation, and 85fs aperture jitter. Ideal for communications and radar systems.",
+    "meta_description_zh": "ADS42JB49 14位双通道模数转换器，采样率250MSPS，支持JESD204B接口。功耗850mW/通道，通道隔离度100dB，孔径抖动85fs，适用于通信与雷达系统。",
+    "keywords": [
+      "ADS42JB49",
+      "14-bit ADC",
+      "250MSPS",
+      "JESD204B",
+      "VQFN-64",
+      "analog-to-digital converter",
+      "dual-channel ADC",
+      "high-speed ADC"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0",
+    "parse_timestamp": "2026-11-03T20:09:40+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "ADS42JB49SEK",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "deterministic_extract": {
+      "thermal": {
+        "from": 6,
+        "to": 6,
+        "method": "deterministic"
+      },
+      "esd": {
+        "from": 1,
+        "to": 1,
+        "method": "deterministic"
+      },
+      "role_split": 18,
+      "role_split_rows": 112,
+      "role_labeled": 12,
+      "temperature": {
+        "changed": false,
+        "operating": "-40°C to +85°C"
+      },
+      "model_unverified": {
+        "stamped": 0
+      },
+      "pins": {
+        "skipped": "model_pins_complete",
+        "kept": 64,
+        "det_pins": 64,
+        "ordered": "numeric_asc"
+      }
+    },
+    "core_validation": "pass",
+    "pipeline_stage": {
+      "pipeline": "v2-five-stage",
+      "stage": "llm",
+      "code_commit": "e23751b",
+      "stage_version": "1",
+      "extractor_version": "extract_pdf_text/v1",
+      "slice_schema_version": 1,
+      "idem_key": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0:llm:1:4631691d0e9ff9c287d992cd0b38b53939e16eec0254fca31e14829f3cf1960e:qwen-flash:a88e6e80318e323411f197af3325452572d96a1db832707e30365af2316333d9",
+      "prompt_sha256": "4631691d0e9ff9c287d992cd0b38b53939e16eec0254fca31e14829f3cf1960e",
+      "model": "qwen-flash",
+      "prompt_version": "v3",
+      "attempts": 1,
+      "accepted_on_attempt": 1,
+      "status": "ok",
+      "ms": 211400,
+      "recorded_at": "2026-11-03T20:09:40+08:00"
+    },
+    "formal_container_integrity": "pass",
+    "ac_data_state": "not_withheld",
+    "normalize": {
+      "datasheet_url": {
+        "action": "overridden",
+        "from": "ads42jb49.pdf",
+        "to": "https://www.ti.com/lit/ds/symlink/ads42jb49.pdf",
+        "source": "mpn_rule_override"
+      },
+      "doc_type": {
+        "changed": true,
+        "from": null,
+        "to": "datasheet"
+      },
+      "temperature": {
+        "changed": false,
+        "operating": "-40°C to +85°C"
+      },
+      "doc_revision": {
+        "changed": true,
+        "from": null,
+        "to": {
+          "doc_number": "SLAS900",
+          "revision": "F",
+          "doc_id": "SLAS900F",
+          "issued": "OCTOBER 2012",
+          "revised": "DECEMBER 2014",
+          "page": 1
+        }
+      },
+      "ac_performance": {
+        "changed": true,
+        "rows": 8,
+        "before": 0,
+        "method": "deterministic"
+      },
+      "ac_quarantine": {
+        "schema": "ac-quarantine/v2",
+        "n_quarantined": 0,
+        "n_restored": 0,
+        "restored": [],
+        "quarantined": [],
+        "formal_container_integrity": "pass",
+        "ac_data_state": "not_withheld"
+      },
+      "row_sources": {
+        "added": 69,
+        "rows": 112
+      },
+      "absolute_max_roles": {
+        "checked": 13,
+        "upgraded": 12,
+        "replaced": 2,
+        "unmatched": [
+          "Storage, Tstg"
+        ]
+      },
+      "row_anchors": {
+        "pages": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          36,
+          37,
+          39
+        ],
+        "candidates": 209,
+        "anchored": 64,
+        "ambiguous": 0,
+        "same_page": 27,
+        "ambiguous_rows": [],
+        "rows": 125
+      },
+      "ranges_normalized": 49,
+      "verification": {
+        "stamped": 0
+      },
+      "category_path": {
+        "category_path": [
+          "Integrated Circuits (ICs)",
+          "Data Acquisition",
+          "ADCs"
+        ],
+        "changed": true
+      },
+      "pdf": "data\\pdfs\\ADS42JB49SEK__ads42jb49.pdf"
+    },
+    "core_sha256": {
+      "pins": {
+        "count": 64,
+        "sha256": "74eb8d426c87b6de9aeaac7934e62dc99ae47d072fd4e686a5648a9718af2c77"
+      },
+      "thermal": {
+        "sha256": "5c317f5c78893276cb615bafbd7cdb92043c7a638b466eb466b150d9da07bb0d"
+      },
+      "esd": {
+        "sha256": "793c0e2a2ceb79ecc4b913699dd91e5d9ccc35b45c482ddd48a5bb16d94e579f"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点；有 unresolved_ac_rows 时记 pass_with_quarantine（数据被隔离，不是没有数据）"
+  },
+  "pin_scope": "device"
+}

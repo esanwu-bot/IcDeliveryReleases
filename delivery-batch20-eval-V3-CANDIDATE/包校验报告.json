@@ -1,0 +1,348 @@
+{
+  "selfcheck": {
+    "schema": "bundle-selfcheck/v1",
+    "script": "qc/bundle_selfcheck.py（不复用打包器的哈希函数）",
+    "scope": "成员哈希 / 每条记录的锚定列与 i18n / 随包 PDF 哈希 / ZIP CRC / 交付说明与 manifest 一致性 / 事实表与风险队列行数",
+    "passed": true,
+    "n_items": 56,
+    "n_failed": 0,
+    "items": [
+      {
+        "item": "members.sha256",
+        "expected": 50,
+        "actual": 50,
+        "ok": true
+      },
+      {
+        "item": "record[ADS1675REF].row_anchor",
+        "expected": "73/91",
+        "actual": "73/91",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1675REF].paragraph_anchor",
+        "expected": "7/91",
+        "actual": "7/91",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1675REF].container_verified",
+        "expected": "0/91",
+        "actual": "0/91",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1675REF].coord_anchor",
+        "expected": "80/91",
+        "actual": "80/91",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1675REF].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1675REF].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[ADS1675REF].pdf_sha256",
+        "expected": "c2625223925339cdcde7f987c3f7277f624bb1bc544d15d4b9d9535aa841d30d",
+        "actual": "c2625223925339cdcde7f987c3f7277f624bb1bc544d15d4b9d9535aa841d30d",
+        "ok": true
+      },
+      {
+        "item": "record[ADS42JB49SEK].row_anchor",
+        "expected": "83/140",
+        "actual": "83/140",
+        "ok": true
+      },
+      {
+        "item": "record[ADS42JB49SEK].paragraph_anchor",
+        "expected": "0/140",
+        "actual": "0/140",
+        "ok": true
+      },
+      {
+        "item": "record[ADS42JB49SEK].container_verified",
+        "expected": "0/140",
+        "actual": "0/140",
+        "ok": true
+      },
+      {
+        "item": "record[ADS42JB49SEK].coord_anchor",
+        "expected": "83/140",
+        "actual": "83/140",
+        "ok": true
+      },
+      {
+        "item": "record[ADS42JB49SEK].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[ADS42JB49SEK].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[ADS42JB49SEK].pdf_sha256",
+        "expected": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0",
+        "actual": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].row_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].paragraph_anchor",
+        "expected": "0/148",
+        "actual": "0/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].container_verified",
+        "expected": "2/148",
+        "actual": "2/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].coord_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].pdf_sha256",
+        "expected": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "actual": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].row_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].paragraph_anchor",
+        "expected": "0/148",
+        "actual": "0/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].container_verified",
+        "expected": "2/148",
+        "actual": "2/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].coord_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].pdf_sha256",
+        "expected": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "actual": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].row_anchor",
+        "expected": "55/62",
+        "actual": "55/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].paragraph_anchor",
+        "expected": "0/62",
+        "actual": "0/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].container_verified",
+        "expected": "6/62",
+        "actual": "6/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].coord_anchor",
+        "expected": "55/62",
+        "actual": "55/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].pdf_sha256",
+        "expected": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+        "actual": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].row_anchor",
+        "expected": "99/101",
+        "actual": "99/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].paragraph_anchor",
+        "expected": "1/101",
+        "actual": "1/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].container_verified",
+        "expected": "1/101",
+        "actual": "1/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].coord_anchor",
+        "expected": "100/101",
+        "actual": "100/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].pdf_sha256",
+        "expected": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+        "actual": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].row_anchor",
+        "expected": "116/158",
+        "actual": "116/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].paragraph_anchor",
+        "expected": "0/158",
+        "actual": "0/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].container_verified",
+        "expected": "0/158",
+        "actual": "0/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].coord_anchor",
+        "expected": "116/158",
+        "actual": "116/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].pdf_sha256",
+        "expected": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+        "actual": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+        "ok": true
+      },
+      {
+        "item": "zip.sha256",
+        "expected": "a3752d1fff933fdf2c22849fdeed8671ec3a590d3f62253cd58ef0d72804c6bf",
+        "actual": "a3752d1fff933fdf2c22849fdeed8671ec3a590d3f62253cd58ef0d72804c6bf",
+        "ok": true
+      },
+      {
+        "item": "zip.crc",
+        "expected": "ok",
+        "actual": "ok",
+        "ok": true
+      },
+      {
+        "item": "delivery_note.consistency",
+        "expected": "逐型号与 manifest 一致且含本包实测表",
+        "actual": "一致",
+        "ok": true
+      },
+      {
+        "item": "docs.zip_size",
+        "expected": "文档中 ZIP 字节数与实际文件一致",
+        "actual": "一致",
+        "ok": true
+      },
+      {
+        "item": "facts_summary.facts_audit_rows",
+        "expected": 848,
+        "actual": 848,
+        "ok": true
+      },
+      {
+        "item": "facts_summary.risk_queue_rows",
+        "expected": 362,
+        "actual": 362,
+        "ok": true
+      }
+    ]
+  }
+}

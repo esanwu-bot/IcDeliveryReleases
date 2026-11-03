@@ -1,0 +1,105 @@
+{
+  "mpn": "NE555",
+  "generated_at": "2026-11-03T22:37:54+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "NE555 Timer IC, 8-Pin, 5-15V, 200mA Output",
+    "title_zh": "NE555 定时器芯片，8引脚，5-15V，200mA 输出",
+    "meta_description_en": "The NE555 is a precision timing IC for monostable and astable operation. Supports timing from microseconds to hours, adjustable duty cycle, and 200mA output drive. Ideal for pulse shaping, frequency division, and industrial controls.",
+    "meta_description_zh": "NE555 是一款精密定时集成电路，支持单稳态和多稳态工作模式。可实现微秒至小时级定时，可调占空比，输出驱动能力达200mA，适用于脉冲整形、频率分频及工业控制。",
+    "keywords": [
+      "NE555",
+      "timer IC",
+      "555 timer",
+      "monostable",
+      "astable",
+      "oscillator",
+      "timing circuit",
+      "TTL compatible",
+      "200mA output"
+    ],
+    "data_subject": "NE555",
+    "attribution": "device"
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 1,
+  "shared_by_applications": {
+    "app-industrial-automation.png": [
+      "Pulse-shaping circuits",
+      "Missing-pulse detectors",
+      "Pulse-width modulators",
+      "Pulse-position modulators"
+    ]
+  },
+  "distinct_images": [
+    "app-industrial-automation.png"
+  ],
+  "distinct_image_count": 1,
+  "images": [
+    {
+      "application": "Pulse-shaping circuits",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ne555-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "NE555 Pulse-shaping circuits application — Industrial Automation illustration",
+      "title": "NE555 used in Pulse-shaping circuits (Industrial Automation)",
+      "caption": "Pulse-shaping circuits — a typical industrial automation application of NE555.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Missing-pulse detectors",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ne555-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "NE555 Missing-pulse detectors application — Industrial Automation illustration",
+      "title": "NE555 used in Missing-pulse detectors (Industrial Automation)",
+      "caption": "Missing-pulse detectors — a typical industrial automation application of NE555.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Pulse-width modulators",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ne555-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "NE555 Pulse-width modulators application — Industrial Automation illustration",
+      "title": "NE555 used in Pulse-width modulators (Industrial Automation)",
+      "caption": "Pulse-width modulators — a typical industrial automation application of NE555.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Pulse-position modulators",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ne555-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "NE555 Pulse-position modulators application — Industrial Automation illustration",
+      "title": "NE555 used in Pulse-position modulators (Industrial Automation)",
+      "caption": "Pulse-position modulators — a typical industrial automation application of NE555.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "NE555",
+    "attribution": "device",
+    "subject_note": ""
+  }
+}

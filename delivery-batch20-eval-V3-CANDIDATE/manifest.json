@@ -1,0 +1,812 @@
+{
+  "schema_version": "acceptance-delivery/v1",
+  "generated_at": "2026-11-03T22:42:41+08:00",
+  "packager_sha256": "fd051b43239ed88afae6f9ebda172bea9ea6506bb9eb5e2d9ac7fb2783125d58",
+  "source_root": "staging_batch20_v3",
+  "output_root": "delivery-batch20-eval-V3-CANDIDATE",
+  "mode": "existing_artifacts_repackage_only",
+  "status": "review_candidate",
+  "release_status": "not_approved",
+  "mpn_count": 7,
+  "shard": "part-0001-of-0001.zip",
+  "records": [
+    {
+      "requested_mpn": "ADS1675REF",
+      "safe_name": "ADS1675REF",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "PACKAGING_PASSED",
+      "facts_verdict": "partial",
+      "facts_note": "",
+      "facts_rows": 91,
+      "row_anchor": "73/91",
+      "paragraph_anchor": "7/91",
+      "container_verified": "0/91",
+      "coord_anchor": "80/91",
+      "anchor_gate": "blocked",
+      "document_subject": "ADS1675REF",
+      "data_subject": "ADS1675REF",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "c2625223925339cdcde7f987c3f7277f624bb1bc544d15d4b9d9535aa841d30d",
+      "pdf_sha256_packaged": "c2625223925339cdcde7f987c3f7277f624bb1bc544d15d4b9d9535aa841d30d",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "ADS42JB49SEK",
+      "safe_name": "ADS42JB49SEK",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "PACKAGING_PASSED",
+      "facts_verdict": "partial",
+      "facts_note": "",
+      "facts_rows": 140,
+      "row_anchor": "83/140",
+      "paragraph_anchor": "0/140",
+      "container_verified": "0/140",
+      "coord_anchor": "83/140",
+      "anchor_gate": "blocked",
+      "document_subject": "ADS42JB49SEK",
+      "data_subject": "ADS42JB49SEK",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0",
+      "pdf_sha256_packaged": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "CDC6CE025000ADLET",
+      "safe_name": "CDC6CE025000ADLET",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "PACKAGING_PASSED",
+      "facts_verdict": "partial",
+      "facts_note": "",
+      "facts_rows": 148,
+      "row_anchor": "120/148",
+      "paragraph_anchor": "0/148",
+      "container_verified": "2/148",
+      "coord_anchor": "120/148",
+      "anchor_gate": "blocked",
+      "document_subject": "CDC6CE025000ADLET",
+      "data_subject": "CDC6CE025000ADLET",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_sha256_packaged": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "CDC6CE025000ADLFR",
+      "safe_name": "CDC6CE025000ADLFR",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "PACKAGING_PASSED",
+      "facts_verdict": "partial",
+      "facts_note": "",
+      "facts_rows": 148,
+      "row_anchor": "120/148",
+      "paragraph_anchor": "0/148",
+      "container_verified": "2/148",
+      "coord_anchor": "120/148",
+      "anchor_gate": "blocked",
+      "document_subject": "CDC6CE025000ADLFR",
+      "data_subject": "CDC6CE025000ADLFR",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_sha256_packaged": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "LM317",
+      "safe_name": "LM317",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "PACKAGING_PASSED",
+      "facts_verdict": "partial_pass",
+      "facts_note": "core fields pass (no MISMATCH); 6 sub-item(s) below the required anchor grade -> anchor_gate=blocked",
+      "facts_rows": 62,
+      "row_anchor": "55/62",
+      "paragraph_anchor": "0/62",
+      "container_verified": "6/62",
+      "coord_anchor": "55/62",
+      "anchor_gate": "blocked",
+      "document_subject": "LM317",
+      "data_subject": "LM317",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+      "pdf_sha256_packaged": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "LM358",
+      "safe_name": "LM358",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "PACKAGING_PASSED",
+      "facts_verdict": "partial_pass",
+      "facts_note": "core fields pass (no MISMATCH); 1 sub-item(s) below the required anchor grade -> anchor_gate=blocked",
+      "facts_rows": 101,
+      "row_anchor": "99/101",
+      "paragraph_anchor": "1/101",
+      "container_verified": "1/101",
+      "coord_anchor": "100/101",
+      "anchor_gate": "blocked",
+      "document_subject": "LM358",
+      "data_subject": "LM358",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "pdf_sha256_packaged": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "NE555",
+      "safe_name": "NE555",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "PACKAGING_PASSED",
+      "facts_verdict": "partial_pass",
+      "facts_note": "core fields pass (no MISMATCH); 41 sub-item(s) below the required anchor grade -> anchor_gate=blocked",
+      "facts_rows": 158,
+      "row_anchor": "116/158",
+      "paragraph_anchor": "0/158",
+      "container_verified": "0/158",
+      "coord_anchor": "116/158",
+      "anchor_gate": "blocked",
+      "document_subject": "NE555",
+      "data_subject": "NE555",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+      "pdf_sha256_packaged": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    }
+  ],
+  "members": [
+    {
+      "member": "ADS1675REF/ADS1675REF.json",
+      "key": "json",
+      "size": 77477,
+      "sha256": "95bd732bd67b2de2419a96cfb7999a79b54a6ccca4b9e23847c893ba09944c8a",
+      "source": "parsed/ADS1675REF.json"
+    },
+    {
+      "member": "ADS1675REF/ADS1675REF.html",
+      "key": "html",
+      "size": 41103,
+      "sha256": "08039fb46b7db8b9702db4c0b95aaebb388dcc1e4cd8601649ec1d92983648ba",
+      "source": "txt/ADS1675REF.txt"
+    },
+    {
+      "member": "ADS1675REF/ADS1675REF.symbols.html",
+      "key": "symbol",
+      "size": 55194,
+      "sha256": "19656410f83bc309e2b2287a9ae21eace6df83b606490e4bcafcaed835134819",
+      "source": "symbols/ADS1675REF.html"
+    },
+    {
+      "member": "ADS1675REF/ADS1675REF.pdf",
+      "key": "pdf",
+      "size": 789303,
+      "sha256": "c2625223925339cdcde7f987c3f7277f624bb1bc544d15d4b9d9535aa841d30d",
+      "source": "pdfs/ADS1675REF.pdf"
+    },
+    {
+      "member": "ADS1675REF/ADS1675REF.seo.json",
+      "key": "seo",
+      "size": 4099,
+      "sha256": "75d1018c1a9622294ed9951e1a7bb97c555f31ee6fd57fcb1198a04c536c03f7",
+      "source": "seo/ADS1675REF.seo.json"
+    },
+    {
+      "member": "ADS1675REF/ADS1675REF.i18n.json",
+      "key": "i18n",
+      "size": 367,
+      "sha256": "363a213768bd8837a71a51729e9e613db61ebd3884731aad94fb5812d7727eb7",
+      "source": "txt/ADS1675REF.i18n.json"
+    },
+    {
+      "member": "ADS42JB49SEK/ADS42JB49SEK.json",
+      "key": "json",
+      "size": 113065,
+      "sha256": "6cac6631fcb1b5015e45fcf5b316497c59b7714453d261753da909a236d1aaa9",
+      "source": "parsed/ADS42JB49SEK.json"
+    },
+    {
+      "member": "ADS42JB49SEK/ADS42JB49SEK.html",
+      "key": "html",
+      "size": 65777,
+      "sha256": "fcbabbe9d431d97b253e8fae9db2c0dc9782b51a2cb6e24b832e34b9ec332fb5",
+      "source": "txt/ADS42JB49SEK.txt"
+    },
+    {
+      "member": "ADS42JB49SEK/ADS42JB49SEK.symbols.html",
+      "key": "symbol",
+      "size": 43324,
+      "sha256": "3d976da0fe72d03b7d364693c51ccf592d6283f46dab82470a2cf62d2c3c946e",
+      "source": "symbols/ADS42JB49SEK.html"
+    },
+    {
+      "member": "ADS42JB49SEK/ADS42JB49SEK.pdf",
+      "key": "pdf",
+      "size": 5512073,
+      "sha256": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0",
+      "source": "pdfs/ADS42JB49SEK.pdf"
+    },
+    {
+      "member": "ADS42JB49SEK/ADS42JB49SEK.seo.json",
+      "key": "seo",
+      "size": 4403,
+      "sha256": "8064731ebd8243fa9a9dbdf8aa8dcbe137ba093be5e19b3690428414503aded3",
+      "source": "seo/ADS42JB49SEK.seo.json"
+    },
+    {
+      "member": "ADS42JB49SEK/ADS42JB49SEK.i18n.json",
+      "key": "i18n",
+      "size": 369,
+      "sha256": "b40ef4a3e077e4fa1fb2ada762ce067cff7f156bcd8f7dce0f877bea57b6f7c0",
+      "source": "txt/ADS42JB49SEK.i18n.json"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.json",
+      "key": "json",
+      "size": 98720,
+      "sha256": "ca6cdbb25844de4f5d8552de76b797cbbdd3b88a7447a6b461c43c1cebff85cb",
+      "source": "parsed/CDC6CE025000ADLET.json"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.html",
+      "key": "html",
+      "size": 46630,
+      "sha256": "db2349108852ec65c5ef88a305875d99f40f10f8b5909a716b074ed57f25c015",
+      "source": "txt/CDC6CE025000ADLET.txt"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.symbols.html",
+      "key": "symbol",
+      "size": 7113,
+      "sha256": "0b15756f00db71507fe8e529318933ccac093511782ddf5df8b2dab0e15de195",
+      "source": "symbols/CDC6CE025000ADLET.html"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.pdf",
+      "key": "pdf",
+      "size": 4579646,
+      "sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "source": "pdfs/CDC6CE025000ADLET.pdf"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.seo.json",
+      "key": "seo",
+      "size": 4478,
+      "sha256": "c5a830e21fb19bf9afe392ad6cc40204e1379c61a909ba7a6d1a362529278674",
+      "source": "seo/CDC6CE025000ADLET.seo.json"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.i18n.json",
+      "key": "i18n",
+      "size": 374,
+      "sha256": "87b84b0990cdb585a90b672bf987df7a027502f011573cd51f3245bf2971dbbc",
+      "source": "txt/CDC6CE025000ADLET.i18n.json"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.json",
+      "key": "json",
+      "size": 99934,
+      "sha256": "a702f846543ef1498d55073cff8839963a02f6f6d5e55a503f57f98e3005ee3b",
+      "source": "parsed/CDC6CE025000ADLFR.json"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.html",
+      "key": "html",
+      "size": 47729,
+      "sha256": "b54f2f59809c4163dad13a70d8825b31367dac8a0d6360b8bb5d585133569b49",
+      "source": "txt/CDC6CE025000ADLFR.txt"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.symbols.html",
+      "key": "symbol",
+      "size": 7113,
+      "sha256": "696b363a0494ca8c803b0f39f7ff3a548fe0e7411e7f2e29fa9e8ce0d20841b1",
+      "source": "symbols/CDC6CE025000ADLFR.html"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.pdf",
+      "key": "pdf",
+      "size": 4579646,
+      "sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "source": "pdfs/CDC6CE025000ADLFR.pdf"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.seo.json",
+      "key": "seo",
+      "size": 4440,
+      "sha256": "b157bf82a6faecc6ed5c6cc4464caeffacee158cf2c1bdc22bb86c08f44e957e",
+      "source": "seo/CDC6CE025000ADLFR.seo.json"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.i18n.json",
+      "key": "i18n",
+      "size": 374,
+      "sha256": "1e9b5e25184f196034aa903edfef1731c712fa8225d22c1bbf1322cb2a68ebdd",
+      "source": "txt/CDC6CE025000ADLFR.i18n.json"
+    },
+    {
+      "member": "LM317/LM317.json",
+      "key": "json",
+      "size": 35170,
+      "sha256": "ac1f6687b03eff1fdb17d35d6d0c91e02c925d7ffff6655f24b5c138530d37b7",
+      "source": "parsed/LM317.json"
+    },
+    {
+      "member": "LM317/LM317.html",
+      "key": "html",
+      "size": 30885,
+      "sha256": "bd1e491265b66dbdf775eb29847f7be315fbeda260847cd0afb8d73bbfef814c",
+      "source": "txt/LM317.txt"
+    },
+    {
+      "member": "LM317/LM317.symbols.html",
+      "key": "symbol",
+      "size": 6339,
+      "sha256": "41cd94cb556b467a8a96b607a9788fa343750fa384d5525969b2961abbe73c2e",
+      "source": "symbols/LM317.html"
+    },
+    {
+      "member": "LM317/LM317.pdf",
+      "key": "pdf",
+      "size": 2578150,
+      "sha256": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+      "source": "pdfs/LM317.pdf"
+    },
+    {
+      "member": "LM317/LM317.seo.json",
+      "key": "seo",
+      "size": 4137,
+      "sha256": "80f49727ff460f2c3ac40061c77846b53957dfb96dde5ab94aef83d6029ece92",
+      "source": "seo/LM317.seo.json"
+    },
+    {
+      "member": "LM317/LM317.i18n.json",
+      "key": "i18n",
+      "size": 362,
+      "sha256": "fffd121b68edaf1aedd0379857e5bfe9c405361bab512449f08c8894d7ea5e71",
+      "source": "txt/LM317.i18n.json"
+    },
+    {
+      "member": "LM358/LM358.json",
+      "key": "json",
+      "size": 66536,
+      "sha256": "7c1ce0dcf0067315e64e5ec8381de6d7c9bc8292d8fd15059d1c484d89210181",
+      "source": "parsed/LM358.json"
+    },
+    {
+      "member": "LM358/LM358.html",
+      "key": "html",
+      "size": 43318,
+      "sha256": "95e3e25d60fdfb49cda79a077078fb7c139a80b9e58e2da88a70e22fa37b8f23",
+      "source": "txt/LM358.txt"
+    },
+    {
+      "member": "LM358/LM358.symbols.html",
+      "key": "symbol",
+      "size": 10795,
+      "sha256": "4dfe302ff2cbf089f9a5f8a67f5d604bdbbf7930cbc1c0cc981e6098f3cd0cfe",
+      "source": "symbols/LM358.html"
+    },
+    {
+      "member": "LM358/LM358.pdf",
+      "key": "pdf",
+      "size": 4150801,
+      "sha256": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "source": "pdfs/LM358.pdf"
+    },
+    {
+      "member": "LM358/LM358.seo.json",
+      "key": "seo",
+      "size": 4582,
+      "sha256": "30ae955481c747d5be5583822c8a9f877ec5beb25112652dbb7e0130372382f2",
+      "source": "seo/LM358.seo.json"
+    },
+    {
+      "member": "LM358/LM358.i18n.json",
+      "key": "i18n",
+      "size": 362,
+      "sha256": "33fdbca7684414149358d14c29e71a78e010b8622b12309abaf0e5652d13fccb",
+      "source": "txt/LM358.i18n.json"
+    },
+    {
+      "member": "NE555/NE555.json",
+      "key": "json",
+      "size": 108261,
+      "sha256": "d531df8c293505a937cba4ccdbc85bfd60496ff7c33963a053281b4fc1d4fd5b",
+      "source": "parsed/NE555.json"
+    },
+    {
+      "member": "NE555/NE555.html",
+      "key": "html",
+      "size": 47578,
+      "sha256": "82d7c455145134a99f5ae6b10eb1645ffaa53fd169ce1c219facad805466f33c",
+      "source": "txt/NE555.txt"
+    },
+    {
+      "member": "NE555/NE555.symbols.html",
+      "key": "symbol",
+      "size": 10879,
+      "sha256": "07b9637ec5760f9eac0e5443322506b52b26e8fe684eac1d3435108d8a19068e",
+      "source": "symbols/NE555.html"
+    },
+    {
+      "member": "NE555/NE555.pdf",
+      "key": "pdf",
+      "size": 2258813,
+      "sha256": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+      "source": "pdfs/NE555.pdf"
+    },
+    {
+      "member": "NE555/NE555.seo.json",
+      "key": "seo",
+      "size": 4187,
+      "sha256": "b20cbed90c1811ed3ed7cf9a8e458b16737048143b22f87b66eb957d31b4bbec",
+      "source": "seo/NE555.seo.json"
+    },
+    {
+      "member": "NE555/NE555.i18n.json",
+      "key": "i18n",
+      "size": 362,
+      "sha256": "b2e573e8ff579181f5fe4172f94f029bb5fa4a450fdfd245a53eefe4cebe5e5f",
+      "source": "txt/NE555.i18n.json"
+    },
+    {
+      "member": "facts_audit.csv",
+      "key": "supporting_document",
+      "size": 314686,
+      "sha256": "9ba7920e5097c722d4fba6cfb11a5866e70be421f3f88cae68ce28569705f09d",
+      "source": "facts_audit.csv"
+    },
+    {
+      "member": "facts_audit.json",
+      "key": "supporting_document",
+      "size": 18779,
+      "sha256": "f0da7397d9fc4300627b18afbb994189e97588547d2f248cc85296c49e535f8f",
+      "source": "facts_audit.json"
+    },
+    {
+      "member": "risk_queue.csv",
+      "key": "supporting_document",
+      "size": 59916,
+      "sha256": "1405e77459c7fb168558a25d17a0b7a75a5c411442d01d46a7cfd0737fbdc68d",
+      "source": "risk_queue.csv"
+    },
+    {
+      "member": "G1_SERVER_RERUN_20261103.md",
+      "key": "attachment",
+      "size": 4042,
+      "sha256": "bdd343577eb500c6d4e356bc6e5827a4e82de0453d5a428cddb6d8b6c91d7390",
+      "source": "G1_SERVER_RERUN_20261103.md"
+    },
+    {
+      "member": "D4_PIN_VERIFY_20261103.md",
+      "key": "attachment",
+      "size": 3222,
+      "sha256": "17031d0461b670e2db64d7a4fc0a3214e5fcdf85843b2239daf6cddb56e3a1b7",
+      "source": "D4_PIN_VERIFY_20261103.md"
+    },
+    {
+      "member": "D3_UG_VERIFY_20261103.md",
+      "key": "attachment",
+      "size": 3516,
+      "sha256": "f98439a1c48b422f0cd1e9710081183062abe8dae98cc80c23073f70657376eb",
+      "source": "D3_UG_VERIFY_20261103.md"
+    },
+    {
+      "member": "skipped.csv",
+      "key": "skipped",
+      "size": 454,
+      "sha256": "0d49cd0edbdd1a6c65ec121e3945d652380057fc9551affa9226510db39237c6",
+      "source": "skipped_v3.csv"
+    },
+    {
+      "member": "交付说明.md",
+      "key": "delivery_note",
+      "size": 10981,
+      "sha256": "42fffd7a4cbe47199c7958dc22a22049e1cd51bc973ef9d6b93f68ca94650c43",
+      "source": "<generated by delivery_bundle.render_delivery_note>"
+    }
+  ],
+  "attachments": [
+    "G1_SERVER_RERUN_20261103.md",
+    "D4_PIN_VERIFY_20261103.md",
+    "D3_UG_VERIFY_20261103.md"
+  ],
+  "skipped_count": 1,
+  "skipped_reasons": {
+    "PARSE_EMPTY_ALL_CONTAINERS": 1
+  },
+  "facts_summary": {
+    "source": "facts_audit.json + facts_audit.csv + risk_queue.csv",
+    "facts_rows_total": 848,
+    "facts_audit_rows": 848,
+    "risk_queue_rows": 362,
+    "n_mpns": 7,
+    "anchor_gate_blocked": 7
+  },
+  "validation_scope": "Allowlist, source hashes, ZIP paths and CRC only; not engineering acceptance",
+  "release_ladder": [
+    "PACKAGING_PASSED",
+    "DATA_VALIDATED",
+    "IDENTITY_APPROVED",
+    "CONTENT_APPROVED",
+    "RELEASE_APPROVED"
+  ],
+  "pdf_policy": "源PDF原件随包；pdf_hash_match=false 判 BLOCKED"
+}
