@@ -1,0 +1,102 @@
+{
+  "mpn": "ADS1675REF",
+  "generated_at": "2026-11-03T10:46:09+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "ADS1675 4MSPS 24-Bit ADC with Dual-Path Filter, TI",
+    "title_zh": "ADS1675 4MSPS 24位ADC双路径滤波器，德州仪器",
+    "meta_description_en": "ADS1675: 4MSPS, 24-bit ADC with 103dB dynamic range at 4MSPS. Dual-path filter, Low-Latency/Wide-Bandwidth, CMOS/LVDS interface. Industrial temp range, TQFP-64 package.",
+    "meta_description_zh": "ADS1675：4MSPS 24位ADC，4MSPS下103dB动态范围。双路径滤波器，低延迟/宽带，CMOS/LVDS接口。工业温度范围，TQFP-64封装。",
+    "keywords": [
+      "ADS1675",
+      "ADC",
+      "analog-to-digital converter",
+      "24-bit",
+      "dual-path filter",
+      "TQFP-64"
+    ],
+    "data_subject": "ADS1675REF",
+    "attribution": "device"
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 1,
+  "shared_by_applications": {
+    "app-test-measurement.png": [
+      "Automated Test Equipment",
+      "Scientific Instrumentation",
+      "Test and Measurement"
+    ]
+  },
+  "distinct_images": [
+    "app-medical-electronics.png",
+    "app-test-measurement.png"
+  ],
+  "distinct_image_count": 2,
+  "images": [
+    {
+      "application": "Automated Test Equipment",
+      "category": "Test & Measurement",
+      "image": "app-test-measurement.png",
+      "filename": "ads1675ref-test-measurement.png",
+      "asset": "/upload/img/app-test-measurement.png",
+      "alt": "ADS1675REF Automated Test Equipment application — Test & Measurement illustration",
+      "title": "ADS1675REF used in Automated Test Equipment (Test & Measurement)",
+      "caption": "Automated Test Equipment — a typical test & measurement application of ADS1675REF.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Medical Imaging",
+      "category": "Medical Electronics",
+      "image": "app-medical-electronics.png",
+      "filename": "ads1675ref-medical-electronics.png",
+      "asset": "/upload/img/app-medical-electronics.png",
+      "alt": "ADS1675REF Medical Imaging application — Medical Electronics illustration",
+      "title": "ADS1675REF used in Medical Imaging (Medical Electronics)",
+      "caption": "Medical Imaging — a typical medical electronics application of ADS1675REF.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Scientific Instrumentation",
+      "category": "Test & Measurement",
+      "image": "app-test-measurement.png",
+      "filename": "ads1675ref-test-measurement.png",
+      "asset": "/upload/img/app-test-measurement.png",
+      "alt": "ADS1675REF Scientific Instrumentation application — Test & Measurement illustration",
+      "title": "ADS1675REF used in Scientific Instrumentation (Test & Measurement)",
+      "caption": "Scientific Instrumentation — a typical test & measurement application of ADS1675REF.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Test and Measurement",
+      "category": "Test & Measurement",
+      "image": "app-test-measurement.png",
+      "filename": "ads1675ref-test-measurement.png",
+      "asset": "/upload/img/app-test-measurement.png",
+      "alt": "ADS1675REF Test and Measurement application — Test & Measurement illustration",
+      "title": "ADS1675REF used in Test and Measurement (Test & Measurement)",
+      "caption": "Test and Measurement — a typical test & measurement application of ADS1675REF.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "ADS1675REF",
+    "attribution": "device",
+    "subject_note": ""
+  }
+}

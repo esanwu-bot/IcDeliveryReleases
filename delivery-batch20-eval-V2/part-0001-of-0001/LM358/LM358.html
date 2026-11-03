@@ -1,0 +1,1028 @@
+<div class="pd-wrap">
+<header class="pd-hero">
+	<div class="pd-hero-inner">
+		<nav class="pd-crumb" aria-label="category" style="font-size:.82em;letter-spacing:.02em;opacity:.72;margin:0 0 8px;line-height:1.5;">
+			Integrated Circuits (ICs) › Amplifiers - Operational
+		</nav>
+		<h1 class="pd-hero-title">
+			LM358 Dual Op-Amp, 3V-36V Supply, 1.2MHz Bandwidth
+		</h1>
+		<p class="pd-hero-desc">
+			The LM358 is a dual operational amplifier with a wide supply range of 3V to 36V, low quiescent current of 300µA per channel, and unity-gain bandwidth of 1.2MHz.
+		</p>
+	</div>
+</header>
+<section class="pd-sec" id="product-introduction">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			LM358 Overview
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			LM358 features input offset voltage up to 3mV (max), common-mode input range including ground, and high ESD protection (2kV HBM). Suitable for industrial, consumer, and power applications.
+		</p>
+		<p>
+			Key capabilities include wide supply range of 3V to 36V (B, BA versions); quiescent current: 300µA/ch (B, BA versions); unity-gain bandwidth of 1.2MHz (B, BA versions).
+		</p>
+		<p>
+			It is used in Merchant network and server power supply units, Multi-function printers, Power supplies and mobile chargers, Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor.
+		</p>
+		<p>
+			LM358 is supplied in the SOIC-8 package with 8 pins, an operating range of -40°C to 85°C, and 4 documented orderable options.
+		</p>
+		<p>
+			The values on this page come from the Texas Instruments datasheet (<a href="https://www.ti.com/lit/ds/symlink/lm358.pdf" rel="nofollow">source PDF</a>).
+		</p>
+		<div class="pd-expert-insight">
+			<h3>
+				Technical Insight
+			</h3>
+			<p>
+				<strong>What should be checked when designing with LM358?</strong>
+			</p>
+			<ul>
+				<li>
+					<strong>Respect the Absolute Maximum Rails:</strong> Absolute maximum ratings limit Supply voltage to ±20 or 40 V; Differential input voltage to -32 to 32 V. Design the supply sequence and transients inside these limits before selecting surrounding components.
+				</li>
+				<li>
+					<strong>Budget the Thermal Headroom:</strong> Operating temperature is -40°C to 85°C, storage -65°C to 150°C. Derating, self-heating and airflow must be verified at the worst-case ambient of the enclosure.
+				</li>
+				<li>
+					<strong>Lock the Package and Pinout Early:</strong> The SOIC-8 (8 pins), 4.9mm x 6mm defines the footprint, thermal path and pin assignment; confirm it against the current revision before layout.
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="key-benefits">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			K
+		</div>
+		<h2 class="pd-sec-title">
+			Key Benefits
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-grid2">
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Wide supply range of 3V to 36V (B, BA versions)
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Quiescent current
+				</div>
+				<p class="pd-card-desc">
+					300µA/ch (B, BA versions).
+				</p>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Unity-gain bandwidth of 1.2MHz (B, BA versions)
+				</div>
+			</div>
+			<div class="pd-card">
+				<div class="pd-card-title">
+					<span class="pd-pin"></span>Common-mode input voltage range includes ground, enabling direct sensing near ground
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="specifications">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			S
+		</div>
+		<h2 class="pd-sec-title">
+			Electrical Specifications
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<em class="pd-verify-note" style="display:block;border-left:3px solid #c98a00;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">3 of 32 entries below are marked unverified (†) — the value was kept as extracted, but it came from the language model rather than deterministic parsing, or its test condition / column roles could not be matched back to a datasheet row. Confirm against the original datasheet before design use.</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Value
+					</th>
+					<th>
+						Conditions and Context
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Input offset voltage
+					</td>
+					<td>
+						±0.3 mV
+					</td>
+					<td>
+						VS = 5 V – 36 V, TA = 25°C, VCM = VOUT = VS / 2, RL = 10k connected to VS / 2
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input offset voltage drift
+					</td>
+					<td>
+						±3.5 µV/°C †
+					</td>
+					<td>
+						TA = -40°C to +85°C
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Power supply rejection ratio
+					</td>
+					<td>
+						±2 µV/V
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Common-mode rejection ratio
+					</td>
+					<td>
+						20 µV/V
+					</td>
+					<td>
+						(V–) ≤ VCM ≤ (V+) – 1.5 V, VS = 3 V to 36 V
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Common-mode voltage range
+					</td>
+					<td>
+						(V–) †
+					</td>
+					<td>
+						VS = 3 V to 36 V
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input bias current
+					</td>
+					<td>
+						-10
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input offset current
+					</td>
+					<td>
+						0.5
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input offset current drift
+					</td>
+					<td>
+						10 pA/℃
+					</td>
+					<td>
+						TA = –40°C to +85°C
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input voltage noise
+					</td>
+					<td>
+						3 µVPP
+					</td>
+					<td>
+						f = 0.1 to 10 Hz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input voltage noise density
+					</td>
+					<td>
+						40 nV/√/Hz
+					</td>
+					<td>
+						f = 1 kHz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Differential input impedance
+					</td>
+					<td>
+						<span title="This parameter label and its value appear on the same page, but the row/column correspondence has not been established — confirm manually against the source PDF." style="border-bottom:1px dotted #c98a00;cursor:help;">10 || 0.1 MΩ|| pF †</span>
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Common-mode input impedance
+					</td>
+					<td>
+						4 || 1.5 GΩ|| pF
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Open-loop voltage gain
+					</td>
+					<td>
+						70 V/mV
+					</td>
+					<td>
+						VS = 15 V; VO = 1 V to 11 V; RL ≥ 10 kΩ, connected to (V–)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Gain bandwidth product
+					</td>
+					<td>
+						1.2 MHz
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Slew rate
+					</td>
+					<td>
+						0.5 V/µs
+					</td>
+					<td>
+						G = +1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phase margin
+					</td>
+					<td>
+						56 °
+					</td>
+					<td>
+						G = +1, RL = 10kΩ, CL = 20 pF
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Overload recovery time
+					</td>
+					<td>
+						10 µs
+					</td>
+					<td>
+						VIN × gain &gt; VS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Settling time
+					</td>
+					<td>
+						4 µs
+					</td>
+					<td>
+						To 0.1%, VS = 5 V, 2-V step, G = +1, CL = 100 pF
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Total harmonic distortion + noise
+					</td>
+					<td>
+						0.001 %
+					</td>
+					<td>
+						G = +1, f = 1 kHz, VO = 3.53 VRMS, VS = 36 V, RL = 100k, IOUT ≤ ±50 µA, BW = 80 kHz
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output voltage swing from rail (positive)
+					</td>
+					<td>
+						1.35 V
+					</td>
+					<td>
+						IOUT = 50 µA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output voltage swing from rail (positive)
+					</td>
+					<td>
+						1.4 V
+					</td>
+					<td>
+						IOUT = 1 mA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output voltage swing from rail (positive)
+					</td>
+					<td>
+						1.5 V
+					</td>
+					<td>
+						IOUT = 5 mA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output voltage swing from rail (negative)
+					</td>
+					<td>
+						100 mV
+					</td>
+					<td>
+						IOUT = 50 µA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output voltage swing from rail (negative)
+					</td>
+					<td>
+						0.75 V
+					</td>
+					<td>
+						IOUT = 1 mA
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output voltage swing from rail (negative)
+					</td>
+					<td>
+						5 mV
+					</td>
+					<td>
+						VS = 5 V, RL ≤ 10 kΩ connected to (V–), TA = –40°C to +85°C
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output current (source)
+					</td>
+					<td>
+						-20 mA
+					</td>
+					<td>
+						VS = 15 V; VO = V–; VID = 1 V
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Output current (sink)
+					</td>
+					<td>
+						10 mA
+					</td>
+					<td>
+						VS = 15 V; VO = V+; VID = –1 V
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Short-circuit current
+					</td>
+					<td>
+						±40 mA
+					</td>
+					<td>
+						VS = 20 V, (V+) = 10 V, (V–) = –10 V, VO = 0 V
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Capacitive load drive
+					</td>
+					<td>
+						100 pF
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Open-loop output resistance
+					</td>
+					<td>
+						300 Ω
+					</td>
+					<td>
+						f = 1 MHz, IO = 0 A
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Quiescent current per amplifier
+					</td>
+					<td>
+						300 µA
+					</td>
+					<td>
+						VS = 5 V; IO = 0 A, TA = –40°C to +85°C
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Quiescent current per amplifier
+					</td>
+					<td>
+						800 µA
+					</td>
+					<td>
+						VS = 36 V; IO = 0 A
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			7 entries above carry no extracted test condition — the value is only valid under the conditions of the corresponding table in the source document; confirm them there before design use.
+		</p>
+		<p>
+			<strong>Absolute maximum ratings</strong> — never operate at or beyond these limits.
+		</p>
+		<p>
+			<em class="pd-verify-note" style="display:block;border-left:3px solid #c98a00;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">1 of 7 absolute-maximum entries are marked unverified (†).</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Limit
+					</th>
+					<th>
+						Notes
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Supply voltage
+					</td>
+					<td>
+						±20 or 40 V
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Differential input voltage
+					</td>
+					<td>
+						-32 to 32 V
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Input voltage
+					</td>
+					<td>
+						-0.3 to 40 V
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Duration of output short circuit
+					</td>
+					<td>
+						Unlimited s †
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Operating ambient temperature
+					</td>
+					<td>
+						-40 to 85 °C
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Operating virtual-junction temperature
+					</td>
+					<td>
+						150 °C
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Storage temperature
+					</td>
+					<td>
+						-65 to 150 °C
+					</td>
+					<td>
+						Absolute maximum rating.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.05em;">
+			Thermal resistance
+		</h3>
+		<p>
+			<em class="pd-verify-ok" style="display:block;border-left:3px solid #1f7a3f;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">All 5 entries below are anchored to the source PDF — each value was replayed against a specific table row or text entry (page + bounding box + reproducible fingerprint). Anchoring proves the value is bound to that row; it does not by itself prove that column roles (MIN/TYP/MAX), test conditions or footnotes have been reviewed.</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Value
+					</th>
+					<th>
+						Conditions and Context
+					</th>
+				</tr>
+				<tr>
+					<td>
+						RθJA
+					</td>
+					<td>
+						124.7 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RθJC(top)
+					</td>
+					<td>
+						66.9 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RθJB
+					</td>
+					<td>
+						67.9 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ψJT
+					</td>
+					<td>
+						19.2 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ψJB
+					</td>
+					<td>
+						67.2 °C/W
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			5 entries above carry no extracted test condition — the value is only valid under the conditions of the corresponding table in the source document; confirm them there before design use.
+		</p>
+		<h3 class="pd-sub-title" style="margin:18px 0 8px;font-size:1.05em;">
+			ESD ratings
+		</h3>
+		<p>
+			<em class="pd-verify-ok" style="display:block;border-left:3px solid #1f7a3f;padding:2px 0 2px 8px;font-style:normal;font-size:.92em;opacity:.85;">All 2 entries below are anchored to the source PDF — each value was replayed against a specific table row or text entry (page + bounding box + reproducible fingerprint). Anchoring proves the value is bound to that row; it does not by itself prove that column roles (MIN/TYP/MAX), test conditions or footnotes have been reviewed.</em>
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:26%;" /><col style="width:32%;" /><col style="width:42%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Parameter
+					</th>
+					<th>
+						Value
+					</th>
+					<th>
+						Conditions and Context
+					</th>
+				</tr>
+				<tr>
+					<td>
+						HBM
+					</td>
+					<td>
+						±2000 V
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr>
+					<td>
+						CDM
+					</td>
+					<td>
+						±1500 V
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			2 entries above carry no extracted test condition — the value is only valid under the conditions of the corresponding table in the source document; confirm them there before design use.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="package">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Package
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>LM358</strong> uses the <strong>SOIC-8</strong> package with 8 pins.
+		</p>
+		<p>
+			The device is specified with body dimensions of 4.9mm x 6mm, an operating temperature range of -40°C to 85°C, and a storage range of -65°C to 150°C. Confirm the mechanical drawing in the current datasheet revision before release to production.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="pinout">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			P
+		</div>
+		<h2 class="pd-sec-title">
+			Pinout
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			The SOIC-8 pin assignment groups 8 unique pin functions across 8 terminals.
+		</p>
+		<ul class="pd-list">
+			<li>
+				<strong>1 - OUT1:</strong> Output
+			</li>
+			<li>
+				<strong>2 - IN1–:</strong> Negative input
+			</li>
+			<li>
+				<strong>3 - IN1+:</strong> Positive input
+			</li>
+			<li>
+				<strong>4 - V–:</strong> Negative (lowest) supply or ground (for single-supply operation)
+			</li>
+			<li>
+				<strong>5 - IN2+:</strong> Positive input
+			</li>
+			<li>
+				<strong>6 - IN2–:</strong> Negative input
+			</li>
+			<li>
+				<strong>7 - OUT2:</strong> Output
+			</li>
+			<li>
+				<strong>8 - V+:</strong> Positive (highest) supply
+			</li>
+		</ul>
+	</div>
+</section>
+<section class="pd-sec" id="equivalent">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			E
+		</div>
+		<h2 class="pd-sec-title">
+			Orderable and Design Alternatives
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p class="pd-note pd-compat-note">
+			<strong>Order-code check:</strong> These entries are documented in the Texas Instruments ordering information for LM358, but none is an automatic substitute. Recheck the complete order code, package, temperature range, packing, marking, lifecycle and current manufacturer documentation before a design or purchasing change.
+		</p>
+		<table class="pd-table" style="width:100%;min-width:0;table-layout:fixed;overflow-wrap:break-word;word-break:normal;">
+			<colgroup><col style="width:32%;" /><col style="width:14%;" /><col style="width:24%;" /><col style="width:30%;" /></colgroup>
+			<tbody>
+				<tr>
+					<th>
+						Orderable Option
+					</th>
+					<th>
+						Order-Code Difference
+					</th>
+					<th>
+						Packing or Package
+					</th>
+					<th>
+						Selection Check
+					</th>
+				</tr>
+				<tr>
+					<td>
+						LM358
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						SOIC-8
+					</td>
+					<td>
+						Verify marking on the current datasheet.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LM358B
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						SOIC-8
+					</td>
+					<td>
+						Verify marking on the current datasheet.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LM358A
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						SOIC-8
+					</td>
+					<td>
+						Verify marking on the current datasheet.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LM358BA
+					</td>
+					<td>
+						Documented orderable
+					</td>
+					<td>
+						SOIC-8
+					</td>
+					<td>
+						Verify marking on the current datasheet.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<section class="pd-sec" id="manufacturer-information">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			M
+		</div>
+		<h2 class="pd-sec-title">
+			Manufacturer
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<p>
+			<strong>Texas Instruments</strong> manufactures LM358 as a Amplifiers - Operational.
+		</p>
+		<p>
+			The controlling technical record is the manufacturer datasheet, available at <a href="https://www.ti.com/lit/ds/symlink/lm358.pdf" rel="nofollow">this link</a>. Confirm the latest revision, lifecycle status, electrical limits, pin assignment and package drawing before release.
+		</p>
+	</div>
+</section>
+<section class="pd-sec" id="application">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			A
+		</div>
+		<h2 class="pd-sec-title">
+			Applications
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-appgrid">
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-power-management.png" width="64" height="64" alt="LM358 Merchant network and server power supply units application — Power Management illustration" title="LM358 used in Merchant network and server power supply units (Power M…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Merchant network and server power supply units
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Merchant network and server power supply units can use LM358 after the supply rails, operating temperature (-40°C to 85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="LM358 Multi-function printers application — Industrial Automation illustration" title="LM358 used in Multi-function printers (Industrial Automation)" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Multi-function printers
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Multi-function printers can use LM358 after the supply rails, operating temperature (-40°C to 85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-power-management.png" width="64" height="64" alt="LM358 Power supplies and mobile chargers application — Power Management illustration" title="LM358 used in Power supplies and mobile chargers (Power Management)" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Power supplies and mobile chargers
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Power supplies and mobile chargers can use LM358 after the supply rails, operating temperature (-40°C to 85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+			<div class="pd-app" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;">
+				<div class="pd-app-ico" style="flex:0 0 auto;">
+					<img src="/upload/img/app-industrial-automation.png" width="64" height="64" alt="LM358 Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor…" title="LM358 used in Motor control: AC induction, brushed DC, brushless DC,…" loading="lazy" decoding="async" />
+				</div>
+				<div class="pd-app-body" style="min-width:0;flex:1 1 260px;">
+					<div class="pd-app-title">
+						Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor
+					</div>
+					<div class="pd-app-example">
+						<strong>Typical case:</strong> A design for Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor can use LM358 after the supply rails, operating temperature (-40°C to 85°C), interface timing and package thermal path are verified for the target system.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="faq">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			Q
+		</div>
+		<h2 class="pd-sec-title">
+			Frequently Asked Questions
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-faq-list">
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What distinguishes LM358 from the other orderables?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							LM358 is the option documented on this page in the SOIC-8 package. Related order codes listed by the manufacturer include LM358B, LM358A, LM358BA; each differs in packing, temperature grade or package option.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					Which electrical limits matter most for LM358?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							The headline specifications are Input offset voltage = ±0.3 mV, Input offset voltage drift = ±3.5 µV/°C, Power supply rejection ratio = ±2 µV/V, and Common-mode rejection ratio = 20 µV/V. Always read them together with the stated test conditions.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What must be checked before laying out LM358?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Use the current SOIC-8 drawing and pin assignment (8 pins), keep the operating range (-40°C to 85°C) inside the enclosure budget, and verify the supply rails against the absolute maximum ratings.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pd-faq-item">
+				<h3 class="pd-faq-q">
+					What is LM358 typically used for?
+				</h3>
+				<div class="pd-faq-a">
+					<div>
+						<p>
+							Typical applications include Merchant network and server power supply units, Multi-function printers, Power supplies and mobile chargers, and Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pd-sec" id="disclaimer">
+	<div class="pd-sec-head">
+		<div class="pd-badge">
+			D
+		</div>
+		<h2 class="pd-sec-title">
+			Important Notice
+		</h2>
+	</div>
+	<div class="pd-sec-body">
+		<div class="pd-alert">
+			<p>
+				<strong>Engineering use:</strong> Technical values on this page are tied to the Texas Instruments datasheet for LM358 (parsed 2026-11-02). Verify rails, temperature limits, timing, pinout and package in the final system.
+			</p>
+			<p>
+				<strong>Order-code control:</strong> Other orderables and evaluation boards are comparison paths only. Verify the complete model, package, temperature range, packing, marking and lifecycle before substitution or purchase.
+			</p>
+		</div>
+	</div>
+</section>
+</div>
+<div class="sr-only">
+	LM358 overview with benefits, technical insight, electrical specifications, SOIC-8 details, pinout, applications, orderable alternatives and FAQs.
+</div>

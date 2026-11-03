@@ -1,0 +1,104 @@
+{
+  "mpn": "CDC6CE025000ADLET",
+  "generated_at": "2026-11-03T10:46:11+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "CDC6CE025000ADLET Oscillator 25MHz 1.8V-3.3V LVCMOS BAW",
+    "title_zh": "CDC6CE025000ADLET 晶振 25MHz 1.8V-3.3V LVCMOS BAW 小型封装",
+    "meta_description_en": "Texas Instruments CDC6CE025000ADLET is a low-power, LVCMOS output BAW oscillator with 25MHz frequency, 1.8V-3.3V supply, and ±25ppm stability. Ideal for IoT, wearables, and industrial applications.",
+    "meta_description_zh": "德州仪器 CDC6CE025000ADLET 是一款低功耗 LVCMOS 输出 BAW 晶振，频率 25MHz，供电 1.8V-3.3V，稳定性 ±25ppm，适用于物联网、可穿戴设备及工业领域。",
+    "keywords": [
+      "CDC6CE025000ADLET",
+      "BAW oscillator",
+      "LVCMOS",
+      "25MHz",
+      "low power",
+      "small package",
+      "TI oscillator",
+      "clock source"
+    ],
+    "data_subject": "CDC6CE025000ADLET",
+    "attribution": "device"
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 1,
+  "shared_by_applications": {
+    "app-communications-networking.png": [
+      "Ethernet, SAS, SATA, USB, WIFI",
+      "Wireless Communication"
+    ]
+  },
+  "distinct_images": [
+    "app-communications-networking.png",
+    "app-data-center.png",
+    "app-industrial-automation.png"
+  ],
+  "distinct_image_count": 3,
+  "images": [
+    {
+      "application": "Crystal oscillator replacement",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "cdc6ce025000adlet-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "CDC6CE025000ADLET Crystal oscillator replacement application — Industrial Automation illustration",
+      "title": "CDC6CE025000ADLET used in Crystal oscillator replacement (Industrial…",
+      "caption": "Crystal oscillator replacement — a typical industrial automation application of CDC6CE025000ADLET.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Data centers, Server, Storage",
+      "category": "Data Center",
+      "image": "app-data-center.png",
+      "filename": "cdc6ce025000adlet-data-center.png",
+      "asset": "/upload/img/app-data-center.png",
+      "alt": "CDC6CE025000ADLET Data centers, Server, Storage application — Data Center illustration",
+      "title": "CDC6CE025000ADLET used in Data centers, Server, Storage (Data Center)",
+      "caption": "Data centers, Server, Storage — a typical data center application of CDC6CE025000ADLET.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Ethernet, SAS, SATA, USB, WIFI",
+      "category": "Communications & Networking",
+      "image": "app-communications-networking.png",
+      "filename": "cdc6ce025000adlet-communications-networking.png",
+      "asset": "/upload/img/app-communications-networking.png",
+      "alt": "CDC6CE025000ADLET Ethernet, SAS, SATA, USB, WIFI application — Communications & Networking illustration",
+      "title": "CDC6CE025000ADLET used in Ethernet, SAS, SATA, USB, WIFI (Communicati…",
+      "caption": "Ethernet, SAS, SATA, USB, WIFI — a typical communications & networking application of CDC6CE025000ADLET.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Wireless Communication",
+      "category": "Communications & Networking",
+      "image": "app-communications-networking.png",
+      "filename": "cdc6ce025000adlet-communications-networking.png",
+      "asset": "/upload/img/app-communications-networking.png",
+      "alt": "CDC6CE025000ADLET Wireless Communication application — Communications & Networking illustration",
+      "title": "CDC6CE025000ADLET used in Wireless Communication (Communications & Ne…",
+      "caption": "Wireless Communication — a typical communications & networking application of CDC6CE025000ADLET.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "CDC6CE025000ADLET",
+    "attribution": "device",
+    "subject_note": ""
+  }
+}

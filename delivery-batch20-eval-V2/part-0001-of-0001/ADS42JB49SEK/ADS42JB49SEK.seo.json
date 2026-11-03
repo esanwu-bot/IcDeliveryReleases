@@ -1,0 +1,103 @@
+{
+  "mpn": "ADS42JB49SEK",
+  "generated_at": "2026-11-03T10:46:10+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "ADS42JB49 14-Bit 250-MSPS Dual-Channel ADC with JESD204B Interface",
+    "title_zh": "ADS42JB49 14位250 MSPS双通道ADC，支持JESD204B接口",
+    "meta_description_en": "ADS42JB49 is a dual-channel 14-bit 250-MSPS ADC with JESD204B interface, featuring 2 VPP/2.5 VPP input, 85 fS rms aperture jitter, 100 dB channel isolation, and 850 mW/Ch power dissipation. Ideal for communication and radar systems.",
+    "meta_description_zh": "ADS42JB49是双通道14位250 MSPS ADC，支持JESD204B接口，具备2 VPP/2.5 VPP输入、85 fS均方根孔径抖动、100 dB通道隔离和850 mW/通道功耗，适用于通信和雷达系统。",
+    "keywords": [
+      "ADS42JB49",
+      "14-bit ADC",
+      "250 MSPS",
+      "JESD204B",
+      "dual-channel",
+      "analog-to-digital converter",
+      "VQFN-64"
+    ],
+    "data_subject": "ADS42JB49SEK",
+    "attribution": "device"
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 1,
+  "shared_by_applications": {
+    "app-industrial-automation.png": [
+      "Multi-Carrier, Multimode Cellular Receivers",
+      "Broadband Wireless"
+    ]
+  },
+  "distinct_images": [
+    "app-aerospace-defense.png",
+    "app-communications-networking.png",
+    "app-industrial-automation.png"
+  ],
+  "distinct_image_count": 3,
+  "images": [
+    {
+      "application": "Communication and Cable Infrastructure",
+      "category": "Communications & Networking",
+      "image": "app-communications-networking.png",
+      "filename": "ads42jb49sek-communications-networking.png",
+      "asset": "/upload/img/app-communications-networking.png",
+      "alt": "ADS42JB49SEK Communication and Cable Infrastructure application — Communications & Networking illustration",
+      "title": "ADS42JB49SEK used in Communication and Cable Infrastructure (Communic…",
+      "caption": "Communication and Cable Infrastructure — a typical communications & networking application of ADS42JB49SEK.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Multi-Carrier, Multimode Cellular Receivers",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ads42jb49sek-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "ADS42JB49SEK Multi-Carrier, Multimode Cellular Receivers application — Industrial Automation illustration",
+      "title": "ADS42JB49SEK used in Multi-Carrier, Multimode Cellular Receivers (Ind…",
+      "caption": "Multi-Carrier, Multimode Cellular Receivers — a typical industrial automation application of ADS42JB49SEK.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Radar and Smart Antenna Arrays",
+      "category": "Aerospace & Defense",
+      "image": "app-aerospace-defense.png",
+      "filename": "ads42jb49sek-aerospace-defense.png",
+      "asset": "/upload/img/app-aerospace-defense.png",
+      "alt": "ADS42JB49SEK Radar and Smart Antenna Arrays application — Aerospace & Defense illustration",
+      "title": "ADS42JB49SEK used in Radar and Smart Antenna Arrays (Aerospace & Defe…",
+      "caption": "Radar and Smart Antenna Arrays — a typical aerospace & defense application of ADS42JB49SEK.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Broadband Wireless",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "ads42jb49sek-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "ADS42JB49SEK Broadband Wireless application — Industrial Automation illustration",
+      "title": "ADS42JB49SEK used in Broadband Wireless (Industrial Automation)",
+      "caption": "Broadband Wireless — a typical industrial automation application of ADS42JB49SEK.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "ADS42JB49SEK",
+    "attribution": "device",
+    "subject_note": ""
+  }
+}
