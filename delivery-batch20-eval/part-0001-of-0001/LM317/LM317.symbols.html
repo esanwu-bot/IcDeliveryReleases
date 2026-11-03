@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="zh-CN" data-em-page="symbols"><head><meta charset="utf-8">
+<title>LM317 三视图</title>
+<style>
+body{margin:0;padding:24px;background:#f4f6f8;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:#222}
+.grid{display:flex;gap:16px;flex-wrap:wrap;max-width:1080px;margin:0 auto}
+.card{flex:1 1 300px;background:#fff;border:1px solid #e3e7ec;border-radius:8px;padding:12px 12px 6px;text-align:center}
+.cap{font-size:13px;color:#5b6673;margin:2px 0 10px}
+.note{font-size:12px;color:#8a939c;margin-top:6px}
+h1{font-size:17px;margin:0 0 16px;text-align:center}
+</style></head><body>
+<h1>LM317 · SOT-3（共享封装图） · 3 脚</h1>
+<div class="grid">
+<div class="card"><div class="cap">原理图符号 · 由 pin_configuration 生成</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 128" width="352" height="128" style="max-width:100%;height:auto" role="img" aria-label="LM317 schematic symbol">
+<rect width="352" height="128" fill="#ffffff"/>
+<rect x="42" y="26" width="268" height="76" rx="2" fill="#fdfbd4" stroke="#8b1a1a" stroke-width="2.4"/>
+<line x1="8" y1="45.0" x2="42" y2="45.0" stroke="#c0392b" stroke-width="2"/>
+<circle cx="8" cy="45.0" r="3.6" fill="#c0392b"/>
+<text x="25.0" y="37.8" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.6" fill="#c0392b">1</text>
+<text x="52" y="50.1" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14.5" fill="#1f6f5c">ADJUST</text>
+<line x1="8" y1="83.0" x2="42" y2="83.0" stroke="#c0392b" stroke-width="2"/>
+<circle cx="8" cy="83.0" r="3.6" fill="#c0392b"/>
+<text x="25.0" y="75.8" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.6" fill="#c0392b">2</text>
+<text x="52" y="88.1" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14.5" fill="#1f6f5c">OUTPUT</text>
+<line x1="310" y1="45.0" x2="344" y2="45.0" stroke="#c0392b" stroke-width="2"/>
+<circle cx="310" cy="45.0" r="3.6" fill="#c0392b"/>
+<text x="327.0" y="37.8" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.6" fill="#c0392b">3</text>
+<text x="300" y="50.1" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14.5" fill="#1f6f5c">INPUT</text>
+</svg></div>
+<div class="card"><div class="cap">封装 · 按封装类型 + 脚数生成</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 94" width="248" height="94" style="max-width:100%;height:auto" role="img" aria-label="SOT-3 footprint (dual)">
+<rect width="248" height="94" fill="#ffffff"/>
+<rect x="8" y="8" width="232" height="78" fill="none" stroke="#e91e8c" stroke-width="1.6"/>
+<rect x="78" y="14" width="92" height="66" rx="3" fill="#fafafa" stroke="#d9dde2" stroke-width="1"/>
+<rect x="20" y="26" width="44" height="14" rx="2.5" fill="#c0392b"/>
+<text x="42.0" y="36.2" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9.0" fill="#ffffff">1</text>
+<rect x="20" y="53" width="44" height="14" rx="2.5" fill="#c0392b"/>
+<text x="42.0" y="63.2" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9.0" fill="#ffffff">2</text>
+<rect x="184" y="26" width="44" height="14" rx="2.5" fill="#c0392b"/>
+<text x="206.0" y="36.2" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9.0" fill="#ffffff">3</text>
+<circle cx="91" cy="28" r="4.5" fill="#e91e8c"/>
+<text x="124.0" y="80" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#8a8a8a">SOT-3</text>
+</svg></div>
+<div class="card"><div class="cap">3D 模型 · 示意（按封装类型程序化绘制）</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 262" width="340" height="262" style="max-width:100%;height:auto" role="img" aria-label="SOT-3 3D model">
+<rect width="340" height="262" fill="#ffffff"/>
+<defs>
+<linearGradient id="b3d" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#3a3a3a"/><stop offset="0.35" stop-color="#1b1b1b"/><stop offset="1" stop-color="#050505"/></linearGradient>
+<linearGradient id="lead" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe9dc"/><stop offset="0.5" stop-color="#d8d0bf"/><stop offset="1" stop-color="#b3a992"/></linearGradient>
+<radialGradient id="shd"><stop offset="0" stop-color="#000" stop-opacity="0.16"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="170.0" cy="215.0" rx="75" ry="16" fill="url(#shd)"/>
+<rect x="98.0" y="120.0" width="30" height="9.0" rx="2" fill="url(#lead)" stroke="#a99f88" stroke-width="0.6"/>
+<path d="M97.0,129.0 h6 v6 h-6 z" fill="#c4bba6" stroke="#a99f88" stroke-width="0.6"/>
+<rect x="212.0" y="120.0" width="30" height="9.0" rx="2" fill="url(#lead)" stroke="#a99f88" stroke-width="0.6"/>
+<path d="M239.0,129.0 h6 v6 h-6 z" fill="#c4bba6" stroke="#a99f88" stroke-width="0.6"/>
+<rect x="98.0" y="141.0" width="30" height="9.0" rx="2" fill="url(#lead)" stroke="#a99f88" stroke-width="0.6"/>
+<path d="M97.0,150.0 h6 v6 h-6 z" fill="#c4bba6" stroke="#a99f88" stroke-width="0.6"/>
+<rect x="212.0" y="141.0" width="30" height="9.0" rx="2" fill="url(#lead)" stroke="#a99f88" stroke-width="0.6"/>
+<path d="M239.0,150.0 h6 v6 h-6 z" fill="#c4bba6" stroke="#a99f88" stroke-width="0.6"/>
+<polygon points="131.0,69.0 209.0,69.0 218.0,201.0 122.0,201.0" fill="url(#b3d)" stroke="#0a0a0a" stroke-width="9" stroke-linejoin="round"/>
+<polygon points="134.0,73.0 126.0,198.0 134.0,198.0 141.0,73.0" fill="#ffffff" opacity="0.07"/>
+<polygon points="131.0,69.0 144.0,56.0 222.0,56.0 209.0,69.0" fill="#4f4f4f"/>
+<ellipse cx="153.0" cy="63.0" rx="8.5" ry="3.6" fill="#8d8476"/>
+<ellipse cx="153.0" cy="61.8" rx="5.8" ry="2.2" fill="#6b6357"/>
+<text x="170.0" y="254" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8a8a8a">SOT-3 · 3D 示意</text>
+</svg></div>
+</div>
+<section class="em-boundary" data-em-boundary="engineering-model" style="max-width:1080px;margin:16px auto 0;background:#fff;border:1px solid #e3e7ec;border-radius:8px;padding:12px 16px"><h2 style="font-size:13px;margin:0 0 8px;color:#5b6673;text-align:left">工程模型边界</h2><ul style="margin:0;padding-left:18px;font-size:12px;color:#5b6673;line-height:1.8;text-align:left"><li>封装轮廓按共享模板 SOT-3 绘制（内容哈希 5b737d1a）；模板为共享轮廓，不含球阵坐标。</li><li>3D 模型与球阵几何未生成：无可信来源（机械 CAD（STEP/IBIS）或原厂球阵图），不猜测。页面中的 3D 图为按封装类型绘制的示意，不是模型，也不含球阵坐标。</li></ul></section>
+<p class="note" style="text-align:center;max-width:1080px;margin:16px auto 0">全部由解析出的 JSON 程序化生成（SVG 矢量），不是 PDF 切图，也不是 AI 生图。同型号永远一致，可换主题、可缓存。　封装与 3D 取自共享封装图库（SOT-3），全站同封装型号共用一张。</p>
+</body></html>

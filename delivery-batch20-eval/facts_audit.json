@@ -1,0 +1,407 @@
+{
+  "schema": "facts-audit/v4",
+  "derivation": "qc/fact_acceptance.py::_derive —— 结论只由证据字段推导，输出字段只由结论发放（_emit_fields）；row_sha256 非空 <=> verified_row，bbox 非空 <=> 坐标级结论。",
+  "note": "逐行回打原厂 PDF。verified_row=坐标 + 行指纹（row_sha256）能从 PDF 重算且数值一致（最强）；verified_paragraph=坐标 + 正文条目指纹（paragraph_sha256），表格之外的参数只能到这一级；verified_value=有坐标但该行没有可重放的指纹；verified=容器级确定性复现（按参数名+数值，无行坐标）；value_on_label_page=数值与参数名同页但行/列对应未证（弱证据，进风险队列，页面打带说明的 †）；value_in_pdf=只在别处出现（归属未证）；partial/not_found=需人工；unchecked=无可回打数值。注意：facts_verdict=pass 只表示「没有编造的数值」，不表示「参数全对」——核心工程参数要 reach verified_row 才谈得上已验证。",
+  "grade_note": "V7 起 `data_anchor` 废止，改为四个互不冒充的计数：row_anchor（坐标+可重放行指纹）/ paragraph_anchor（坐标+正文条目指纹）/ container_verified（名字+数值可复现但无坐标）/ weak（弱证据）。达标门槛按载体分流：表格参数须 row_anchor，正文参数须 paragraph_anchor（qc/fact_acceptance.py::REQUIREMENT）。anchor_gate=blocked 表示存在未达门槛的行，此时 release_state 不得进入 DATA_VALIDATED。",
+  "sha_scheme": "row=表格行指纹（page|表标题|左上坐标|符号|min|typ|max|unit）；band=行带指纹（page|名称格归一化文本|数值格归一化文本）；paragraph=正文条目指纹（page|归一化行文本）。归一化 = 破折号统一 + 空白折叠 + 小写，详见包内 README。",
+  "coord_verified": 479,
+  "total_rows": 548,
+  "anchor_gate": "blocked",
+  "mpns": {
+    "ADS1675REF": {
+      "pdf_sha256": "c2625223925339cdcde7f987c3f7277f624bb1bc544d15d4b9d9535aa841d30d",
+      "n_rows": 58,
+      "counts": {
+        "verified_row": 53,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 4,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 53,
+      "pdf": "data\\pdfs\\ADS1675REF__ads1675.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 53,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 1,
+        "no_value": 4
+      },
+      "grades_denominator": 54,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 53,
+          "total": 53
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 1
+        }
+      },
+      "blocked": [
+        "Signal-to-noise ratio (SNR) (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "ADS42JB49SEK": {
+      "pdf_sha256": "914f6302ea4be7d280cc5eeedc5cc5531f4533a28f2fccba6fcc312bcd6ab4c0",
+      "n_rows": 77,
+      "counts": {
+        "verified_row": 48,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 11,
+        "value_in_pdf": 18,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "partial",
+      "coord": 48,
+      "pdf": "data\\pdfs\\ADS42JB49SEK__ads42jb49.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 48,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 29,
+        "no_value": 0
+      },
+      "grades_denominator": 77,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 48,
+          "total": 66
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 11
+        }
+      },
+      "blocked": [
+        "SNR (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "SINAD (have=weak, need=paragraph_anchor)",
+        "SINAD (have=weak, need=paragraph_anchor)",
+        "SINAD (have=weak, need=paragraph_anchor)",
+        "SINAD (have=weak, need=paragraph_anchor)",
+        "SFDR (have=weak, need=paragraph_anchor)",
+        "SFDR (have=weak, need=paragraph_anchor)",
+        "SFDR (have=weak, need=paragraph_anchor)",
+        "SFDR (have=weak, need=paragraph_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "HD2 (have=weak, need=row_anchor)",
+        "HD2 (have=weak, need=row_anchor)",
+        "HD2 (have=weak, need=row_anchor)",
+        "HD3 (have=weak, need=row_anchor)",
+        "HD3 (have=weak, need=row_anchor)",
+        "HD3 (have=weak, need=row_anchor)",
+        "HD3 (have=weak, need=row_anchor)",
+        "Worst spur (have=weak, need=paragraph_anchor)",
+        "Worst spur (have=weak, need=paragraph_anchor)",
+        "IMD (have=weak, need=row_anchor)",
+        "IMD (have=weak, need=row_anchor)",
+        "EGREF (have=weak, need=row_anchor)",
+        "EGCHAN (have=weak, need=paragraph_anchor)",
+        "Operating junction, TJ (have=weak, need=row_anchor)"
+      ]
+    },
+    "CDC6CE025000ADLET": {
+      "pdf_sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "n_rows": 91,
+      "counts": {
+        "verified_row": 81,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 2,
+        "value_on_label_page": 1,
+        "value_in_pdf": 7,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "partial",
+      "coord": 81,
+      "pdf": "data\\pdfs\\CDC6CE025000ADLET__cdc6c.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 81,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 2,
+        "weak": 8,
+        "no_value": 0
+      },
+      "grades_denominator": 91,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 71,
+          "total": 80
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 10,
+          "total": 11
+        }
+      },
+      "blocked": [
+        "tR/tF (have=weak, need=paragraph_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "HBM (have=container_verified, need=row_anchor)",
+        "CDM (have=container_verified, need=row_anchor)"
+      ]
+    },
+    "CDC6CE025000ADLFR": {
+      "pdf_sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "n_rows": 90,
+      "counts": {
+        "verified_row": 80,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 2,
+        "value_on_label_page": 1,
+        "value_in_pdf": 7,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "partial",
+      "coord": 80,
+      "pdf": "data\\pdfs\\CDC6CE025000ADLFR__cdc6c.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 80,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 2,
+        "weak": 8,
+        "no_value": 0
+      },
+      "grades_denominator": 90,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 70,
+          "total": 79
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 10,
+          "total": 11
+        }
+      },
+      "blocked": [
+        "tR/tF (have=weak, need=paragraph_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "HBM (have=container_verified, need=row_anchor)",
+        "CDM (have=container_verified, need=row_anchor)"
+      ]
+    },
+    "CDC6CE025000ADLYR": {
+      "pdf_sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "n_rows": 91,
+      "counts": {
+        "verified_row": 81,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 2,
+        "value_on_label_page": 1,
+        "value_in_pdf": 7,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0
+      },
+      "verdict": "partial",
+      "coord": 81,
+      "pdf": "data\\pdfs\\CDC6CE025000ADLYR__cdc6c.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 81,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 2,
+        "weak": 8,
+        "no_value": 0
+      },
+      "grades_denominator": 91,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 71,
+          "total": 80
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 10,
+          "total": 11
+        }
+      },
+      "blocked": [
+        "tR/tF (have=weak, need=paragraph_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "FT (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "RJ (have=weak, need=row_anchor)",
+        "HBM (have=container_verified, need=row_anchor)",
+        "CDM (have=container_verified, need=row_anchor)"
+      ]
+    },
+    "LM317": {
+      "pdf_sha256": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+      "n_rows": 27,
+      "counts": {
+        "verified_row": 26,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 26,
+      "pdf": "data\\pdfs\\LM317__lm317.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 26,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 1
+      },
+      "grades_denominator": 26,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 26,
+          "total": 26
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "LM358": {
+      "pdf_sha256": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "n_rows": 46,
+      "counts": {
+        "verified_row": 42,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 1,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 43,
+      "pdf": "data\\pdfs\\LM358__lm358.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 42,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 1,
+        "weak": 0,
+        "no_value": 2
+      },
+      "grades_denominator": 44,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 41,
+          "total": 42
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 2
+        }
+      },
+      "blocked": [
+        "HBM (have=container_verified, need=row_anchor)"
+      ]
+    },
+    "NE555": {
+      "pdf_sha256": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+      "n_rows": 68,
+      "counts": {
+        "verified_row": 67,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0
+      },
+      "verdict": "pass",
+      "coord": 67,
+      "pdf": "data\\pdfs\\NE555__ne555.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 67,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 1
+      },
+      "grades_denominator": 67,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 67,
+          "total": 67
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    }
+  }
+}

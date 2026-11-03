@@ -1,0 +1,2245 @@
+{
+  "basic_info": {
+    "mpn": "NE555",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Timers",
+    "description": "The NE555 is a precision timing circuit capable of producing accurate time delays or oscillation. It operates from 5V to 15V supply, supports monostable and astable modes with adjustable duty cycle, and features TTL-compatible output capable of sinking or sourcing up to 200mA. Suitable for pulse shaping, frequency division, and industrial control applications.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/ne555.pdf",
+    "datasheet_url_source": "mpn_rule",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号不在订货表逐字列出，但是 `NE555D` 的包装/等级变体写法（订货表共 44 条）→ 同一颗芯片"
+    ],
+    "doc_type": "datasheet",
+    "doc_revision": {
+      "doc_number": "SLFS022",
+      "revision": "K",
+      "doc_id": "SLFS022K",
+      "issued": "SEPTEMBER 1973",
+      "revised": "MARCH 2026",
+      "page": 1
+    }
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "THRES voltage level",
+        "value": "8.8 to 11.2",
+        "unit": "V",
+        "condition": "VCC = 15V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            373.9,
+            555.3,
+            387.9
+          ],
+          "row_sha256": "2413ac7262ef66b60edaeefe7d3643c0b74617a34b908af5863b17dbbb89a177",
+          "quote": "THRES voltage level | VCC = 15V | 8.8 | 10 | 11.2 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "8.8",
+          "max": "11.2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THRES voltage level",
+        "value": "9.4 to 10.6",
+        "unit": "V",
+        "condition": "VCC = 15V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            387.9,
+            555.3,
+            401.9
+          ],
+          "row_sha256": "dffd01f9c6b289540a6e6325f9041c27c7a10914e3f9df184ef9bcb0ace8a505",
+          "quote": "THRES voltage level | VCC = 15V | 9.4 | 10 | 10.6 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "9.4",
+          "max": "10.6"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THRES voltage level",
+        "value": "2.4 to 4.2",
+        "unit": "V",
+        "condition": "VCC = 5V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            401.9,
+            555.3,
+            415.8
+          ],
+          "row_sha256": "be556ee245f8ed03d84c094eb5c50d20a1b6f91e71ce39f32d89b7bed08557a6",
+          "quote": "THRES voltage level | VCC = 5V | 2.4 | 3.3 | 4.2 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.4",
+          "max": "4.2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THRES voltage level",
+        "value": "2.7 to 4",
+        "unit": "V",
+        "condition": "VCC = 5V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            415.8,
+            555.3,
+            429.8
+          ],
+          "row_sha256": "a25f80c89a7aaf55114d6ed63c01ae645904e5fd392e33eb3099e61871d74105",
+          "quote": "THRES voltage level | VCC = 5V | 2.7 | 3.3 | 4 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.7",
+          "max": "4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "THRES current",
+        "value": "30 to 250",
+        "unit": "nA",
+        "condition": "",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            429.8,
+            555.3,
+            443.7
+          ],
+          "row_sha256": "03088ead74ff48b96ed9909e71829cf6d53fc008e499ce31d658906fa1c872a9",
+          "quote": "THRES current(1) | 30 | 250 | nA"
+        },
+        "unverified_range_candidate": {
+          "min": "30",
+          "max": "250"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "TRIG voltage level",
+        "value": "4.5 to 5.6",
+        "unit": "V",
+        "condition": "VCC = 15V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            443.7,
+            555.3,
+            457.7
+          ],
+          "row_sha256": "138181dee94b94440e1c0c5723cc15825f1743b8ec8045b415ce13e420176fe9",
+          "quote": "TRIG voltage level | VCC = 15V | 4.5 | 5 | 5.6 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "4.5",
+          "max": "5.6"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "TRIG voltage level",
+        "value": "4.8 to 5.2",
+        "unit": "V",
+        "condition": "VCC = 15V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            457.7,
+            555.3,
+            471.6
+          ],
+          "row_sha256": "91b106d4d040763d6122cf862c0e65374d8a2ab52c27a4817b3749584a117684",
+          "quote": "TRIG voltage level | VCC = 15V | 4.8 | 5 | 5.2 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "4.8",
+          "max": "5.2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "TRIG voltage level",
+        "value": "3 to 6",
+        "unit": "V",
+        "condition": "VCC = 15V, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            471.6,
+            555.3,
+            485.6
+          ],
+          "row_sha256": "e9568a9d33845a13369015db40e87191319ff1ea244c606012efc2689f5565ed",
+          "quote": "TRIG voltage level | VCC = 15V, TA = –55°C to +125°C | 3 | 6 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "3",
+          "max": "6"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "TRIG voltage level",
+        "value": "1.1 to 2.2",
+        "unit": "V",
+        "condition": "VCC = 5V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            485.6,
+            555.3,
+            499.5
+          ],
+          "row_sha256": "b0fa34ea581a90ab5a9935dff913bbfbc74de09b37348d39afddb8bceac8272d",
+          "quote": "TRIG voltage level | VCC = 5V | 1.1 | 1.67 | 2.2 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "1.1",
+          "max": "2.2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "TRIG voltage level",
+        "value": "1.45 to 1.9",
+        "unit": "V",
+        "condition": "VCC = 5V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            499.5,
+            555.3,
+            513.5
+          ],
+          "row_sha256": "60c35d41335c67a3ff57426ec5fc185762f3ed4afef2494355a8dd5ba120ad84",
+          "quote": "TRIG voltage level | VCC = 5V | 1.45 | 1.67 | 1.9 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "1.45",
+          "max": "1.9"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "TRIG voltage level",
+        "value": "1.9",
+        "unit": "V",
+        "condition": "VCC = 5V, TA = –55°C to +125°C, SE555; typ",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 5,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            513.5,
+            555.3,
+            527.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            513.5,
+            555.3,
+            527.4
+          ],
+          "row_sha256": "1c185e74b59da720494c54c49b5b8cf2ef7299627d91c611e6c71deb62879111",
+          "quote": "TRIG voltage level | VCC = 5V, TA = –55°C to +125°C | 1.9 | V"
+        }
+      },
+      {
+        "name": "TRIG current",
+        "value": "0.5 to 2",
+        "unit": "μA",
+        "condition": "TRIG at 0V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            527.4,
+            555.3,
+            541.4
+          ],
+          "row_sha256": "5fc3ba238aa27e0a1142a18d57d45add18fd33587ae2db2ab29a07d403ec5528",
+          "quote": "TRIG current | TRIG at 0V | 0.5 | 2 | μA"
+        },
+        "unverified_range_candidate": {
+          "min": "0.5",
+          "max": "2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "TRIG current",
+        "value": "0.5 to 0.9",
+        "unit": "μA",
+        "condition": "TRIG at 0V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            541.4,
+            555.3,
+            555.3
+          ],
+          "row_sha256": "38ee38c6ff506e1d430012e51868bac0ee2d52a889b4d9af159bc0ce5fd7ca3c",
+          "quote": "TRIG current | TRIG at 0V | 0.5 | 0.9"
+        },
+        "unverified_range_candidate": {
+          "min": "0.5",
+          "max": "0.9"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "RESET voltage level",
+        "value": "0.3 to 1",
+        "unit": "V",
+        "condition": "",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            555.3,
+            555.3,
+            569.2
+          ],
+          "row_sha256": "911635bbf9ff2f052782a61bb4c668a10f478130b5470ee8753dc29cdd1eacc7",
+          "quote": "RESET voltage level | 0.3 | 0.7 | 1 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.3",
+          "max": "1"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "RESET voltage level",
+        "value": "1.1",
+        "unit": "V",
+        "condition": "TA = –55°C to +125°C, SE555; typ",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 5,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            569.2,
+            555.3,
+            583.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            569.2,
+            555.3,
+            583.2
+          ],
+          "row_sha256": "c877b46d8ff68182b1cfb12581246db602c5298588990fffb4d3ec31de06d1da",
+          "quote": "RESET voltage level | TA = –55°C to +125°C | 1.1 | V"
+        }
+      },
+      {
+        "name": "RESET current",
+        "value": "0.1 to 0.4",
+        "unit": "mA",
+        "condition": "RESET at VCC",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            583.2,
+            555.3,
+            597.2
+          ],
+          "row_sha256": "96376272c5093780f6be55ddbc93ee49a16eed2bcadd7c64428ae674e406f2dc",
+          "quote": "RESET current | RESET at VCC | 0.1 | 0.4 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "0.1",
+          "max": "0.4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "RESET current",
+        "value": "-0.4 to -1.5",
+        "unit": "mA",
+        "condition": "RESET at 0V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            597.2,
+            555.3,
+            611.1
+          ],
+          "row_sha256": "a5ed62a90f84e03796a9d947f36df2e900e0ab82a6ecf788cd917563f4e2e2d4",
+          "quote": "RESET current | RESET at 0V | -0.4 | -1.5 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "-0.4",
+          "max": "-1.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "RESET current",
+        "value": "-0.4 to -1",
+        "unit": "mA",
+        "condition": "RESET at 0V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            611.1,
+            555.3,
+            625.0
+          ],
+          "row_sha256": "ad87cfc944d870e48e6c385839323bd467f58ebd3c7bee8a5bca1746add91b89",
+          "quote": "RESET current | RESET at 0V | -0.4 | -1 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "-0.4",
+          "max": "-1"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "DISCH switch off-state current",
+        "value": "20 to 100",
+        "unit": "nA",
+        "condition": "",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            625.0,
+            555.3,
+            639.0
+          ],
+          "row_sha256": "b333dd09867ddc4f224822e450d1f1ca2c2d1d6ec1add37f3a207375dff16ba8",
+          "quote": "DISCH switch off-state current | 20 | 100 | nA"
+        },
+        "unverified_range_candidate": {
+          "min": "20",
+          "max": "100"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "DISCH switch on-state voltage",
+        "value": "0.15 to 0.4",
+        "unit": "V",
+        "condition": "VCC = 5V, IO = 8mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 5,
+          "bbox": [
+            56.7,
+            639.0,
+            555.3,
+            653.0
+          ],
+          "row_sha256": "16b52c5d7f64df602bb80f022126239eb742467dc901fa96693d5432e4104d41",
+          "quote": "DISCH switch on-state voltage | VCC = 5V, IO = 8mA | 0.15 | 0.4 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.15",
+          "max": "0.4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "CONT voltage (open circuit)",
+        "value": "9 to 11",
+        "unit": "V",
+        "condition": "VCC = 15V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            117.0,
+            552.7,
+            131.1
+          ],
+          "row_sha256": "471d19bcbbcadc1a2c8f2b97bf80899f2808a57dae714252399d0264c626f71e",
+          "quote": "CONT voltage (open circuit) | VCC = 15V | 9 | 10 | 11 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "9",
+          "max": "11"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "CONT voltage (open circuit)",
+        "value": "9.6 to 10.4",
+        "unit": "V",
+        "condition": "VCC = 15V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            145.0,
+            552.7,
+            159.0
+          ],
+          "row_sha256": "999d3cd484602ab5b5b6fe532ea9acbc9e1f20e769d2cca7929c7d4af03cd400",
+          "quote": "CONT voltage (open circuit) | VCC = 15V, TA = –55°C to +125°C | 9.6 | 10.4 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "9.6",
+          "max": "10.4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "CONT voltage (open circuit)",
+        "value": "9.6 to 10.4",
+        "unit": "V",
+        "condition": "VCC = 15V, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            145.0,
+            552.7,
+            159.0
+          ],
+          "row_sha256": "999d3cd484602ab5b5b6fe532ea9acbc9e1f20e769d2cca7929c7d4af03cd400",
+          "quote": "CONT voltage (open circuit) | VCC = 15V, TA = –55°C to +125°C | 9.6 | 10.4 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "9.6",
+          "max": "10.4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "CONT voltage (open circuit)",
+        "value": "2.6 to 4",
+        "unit": "V",
+        "condition": "VCC = 5V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            159.0,
+            552.7,
+            172.9
+          ],
+          "row_sha256": "c713fbc97abf041bbdcbbd51f5085df5caac07a65a971d59cbd3b24f69e4f428",
+          "quote": "CONT voltage (open circuit) | VCC = 5V | 2.6 | 3.3 | 4 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.6",
+          "max": "4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "CONT voltage (open circuit)",
+        "value": "2.9 to 3.8",
+        "unit": "V",
+        "condition": "VCC = 5V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            186.9,
+            552.7,
+            200.8
+          ],
+          "row_sha256": "a0fa099716c1b4817af61aa8801056a8172122aed0aef0818ac5bbb882f2b85a",
+          "quote": "CONT voltage (open circuit) | VCC = 5V, TA = –55°C to +125°C | 2.9 | 3.8 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.9",
+          "max": "3.8"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "CONT voltage (open circuit)",
+        "value": "2.9 to 3.8",
+        "unit": "V",
+        "condition": "VCC = 5V, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            186.9,
+            552.7,
+            200.8
+          ],
+          "row_sha256": "a0fa099716c1b4817af61aa8801056a8172122aed0aef0818ac5bbb882f2b85a",
+          "quote": "CONT voltage (open circuit) | VCC = 5V, TA = –55°C to +125°C | 2.9 | 3.8 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.9",
+          "max": "3.8"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.1 to 0.25",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 10mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            200.8,
+            552.7,
+            214.8
+          ],
+          "row_sha256": "b4ce63ba007095b34f1fe20f5f30eb08b2744ba1e7af8e31dca930a4ed2dcfd5",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 10mA | 0.1 | 0.25 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.1",
+          "max": "0.25"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.1 to 0.15",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 10mA, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            214.8,
+            552.7,
+            228.7
+          ],
+          "row_sha256": "793132fb61be3eaff2ffc7e4a3c21999e86ac551ddbce256cc9d96729da95d2c",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 10mA | 0.1 | 0.15 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.1",
+          "max": "0.15"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.2",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 10mA, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            228.7,
+            552.7,
+            252.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            228.7,
+            552.7,
+            252.3
+          ],
+          "row_sha256": "fcefa2cc4bd1e7a79acd117cd465e2d9d2520dac72dbb893073fb2fd6f19d9f6",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 10mA, TA = –55°C to +125°C | 0.2 | V"
+        }
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.4 to 0.75",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 50mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            252.3,
+            552.7,
+            266.2
+          ],
+          "row_sha256": "9463bc32c429328c52b6bd94bda3401ce372ebf166ee12abbc32830d4d146a8b",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 50mA | 0.4 | 0.75 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.4",
+          "max": "0.75"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.4 to 0.5",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 50mA, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            266.2,
+            552.7,
+            280.2
+          ],
+          "row_sha256": "2955a5dd043293dccdae562f602442d10739534f0267f8d37fa243dae2e0d02e",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 50mA | 0.4 | 0.5 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.4",
+          "max": "0.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "1",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 50mA, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            280.2,
+            552.7,
+            303.7
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            280.2,
+            552.7,
+            303.7
+          ],
+          "row_sha256": "aa1aa4a23aaec9bfd49ad5a3d646ea8bd1a587dddc5ab58d20bdf7ad658dff73",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 50mA, TA = –55°C to +125°C | 1 | V"
+        }
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "2 to 2.5",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 100mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            303.7,
+            552.7,
+            317.7
+          ],
+          "row_sha256": "ad0e3404b375d9eaa202b18164578c6cd7056d0fdd0bc46fbb05cc203e48d428",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 100mA | 2 | 2.5 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2",
+          "max": "2.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "2 to 2.2",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 100mA, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            317.7,
+            552.7,
+            331.6
+          ],
+          "row_sha256": "4b490215f7076b54cf102ebab876454769aecc2efa154d1291a3951e5066af9c",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 100mA | 2 | 2.2 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2",
+          "max": "2.2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "2.5",
+        "unit": "V",
+        "condition": "VCC = 15V, IOL = 200mA",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            355.2,
+            552.7,
+            369.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            355.2,
+            552.7,
+            369.1
+          ],
+          "row_sha256": "b8107d4cc9fb39e49fe15b0e71753dfe88111f8f092edfdefcf3dd84190db34f",
+          "quote": "Low-level output voltage | VCC = 15V, IOL = 200mA | 2.5 | V"
+        }
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.35",
+        "unit": "V",
+        "condition": "VCC = 5V, IOL = 3.5mA, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            369.1,
+            552.7,
+            392.7
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            369.1,
+            552.7,
+            392.7
+          ],
+          "row_sha256": "aa0a74add35f53e892268cbcb566509eef3e58ca2b18f4bce069f3e8eef76c46",
+          "quote": "Low-level output voltage | VCC = 5V, IOL = 3.5mA, TA = –55°C to +125°C | 0.35 | V"
+        }
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.1 to 0.35",
+        "unit": "V",
+        "condition": "VCC = 5V, IOL = 5mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            392.7,
+            552.7,
+            406.6
+          ],
+          "row_sha256": "f5e10b20aa38b890fec707999551bde4c13c0faf1a977662629adc51966fbbd2",
+          "quote": "Low-level output voltage | VCC = 5V, IOL = 5mA | 0.1 | 0.35 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.1",
+          "max": "0.35"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.1 to 0.2",
+        "unit": "V",
+        "condition": "VCC = 5V, IOL = 5mA, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            406.6,
+            552.7,
+            420.6
+          ],
+          "row_sha256": "9d9ee3c777a469431fb7462172804b00b341492bae9f003860d52aae3c53c4a7",
+          "quote": "Low-level output voltage | VCC = 5V, IOL = 5mA | 0.1 | 0.2 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.1",
+          "max": "0.2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Low-level output voltage",
+        "value": "0.15 to 0.4",
+        "unit": "V",
+        "condition": "VCC = 5V, IOL = 8mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            444.1,
+            552.7,
+            458.1
+          ],
+          "row_sha256": "5627cd210342d53a27dbedf8bb360c333bfe1bb80331e9c871770bfd687e25bf",
+          "quote": "Low-level output voltage | VCC = 5V, IOL = 8mA | 0.15 | 0.4 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.15",
+          "max": "0.4"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "High-level output voltage",
+        "value": "12.75 to 13.3",
+        "unit": "V",
+        "condition": "VCC = 15V, IOH = –100mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            472.0,
+            552.7,
+            486.0
+          ],
+          "row_sha256": "7717f3e82e7a8c7a420d798918e5729d4b3cd410ceae18211d221994dca93d2a",
+          "quote": "High-level output voltage | VCC = 15V, IOH = –100mA | 12.75 | 13.3 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "12.75",
+          "max": "13.3"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "High-level output voltage",
+        "value": "13 to 13.3",
+        "unit": "V",
+        "condition": "VCC = 15V, IOH = –100mA, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            486.0,
+            552.7,
+            499.9
+          ],
+          "row_sha256": "4a4b13c3870f17cec8b257a6a1f1cd41172772487e94b5ed4897c3405c9e51cc",
+          "quote": "High-level output voltage | VCC = 15V, IOH = –100mA | 13 | 13.3 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "13",
+          "max": "13.3"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "High-level output voltage",
+        "value": "12",
+        "unit": "V",
+        "condition": "VCC = 15V, IOH = –100mA, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            499.9,
+            552.7,
+            523.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            499.9,
+            552.7,
+            523.5
+          ],
+          "row_sha256": "8ebd61c62d935ab32c27a77b49d6bd9f51ca1d01f35ee45d0968b45df5e274bc",
+          "quote": "High-level output voltage | VCC = 15V, IOH = –100mA, TA = –55°C to +125°C | 12 | V"
+        }
+      },
+      {
+        "name": "High-level output voltage",
+        "value": "12.5",
+        "unit": "V",
+        "condition": "VCC = 15V, IOH = –200mA",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            523.5,
+            552.7,
+            537.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            523.5,
+            552.7,
+            537.4
+          ],
+          "row_sha256": "a2fb2291ad08348f47bda742a7b1618f376405bd7a6831a7f4247f44fb79f0f1",
+          "quote": "High-level output voltage | VCC = 15V, IOH = –200mA | 12.5 | V"
+        }
+      },
+      {
+        "name": "High-level output voltage",
+        "value": "2.75 to 3.3",
+        "unit": "V",
+        "condition": "VCC = 5V, IOH = –100mA, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            537.4,
+            552.7,
+            551.4
+          ],
+          "row_sha256": "ab6cec12b1440476adfe7a5430a0afd5a85b8d129f449a85931415516431de2e",
+          "quote": "High-level output voltage | VCC = 5V, IOH = –100mA | 2.75 | 3.3 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.75",
+          "max": "3.3"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "High-level output voltage",
+        "value": "3 to 3.3",
+        "unit": "V",
+        "condition": "VCC = 5V, IOH = –100mA, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            551.4,
+            552.7,
+            565.3
+          ],
+          "row_sha256": "4c1f00c9d5fea4d750db3e586b2940271781150921b319e66e51d5a46c261f28",
+          "quote": "High-level output voltage | VCC = 5V, IOH = –100mA | 3 | 3.3 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "3",
+          "max": "3.3"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "High-level output voltage",
+        "value": "2",
+        "unit": "V",
+        "condition": "VCC = 5V, IOH = –100mA, TA = –55°C to +125°C, SE555",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 6,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            565.3,
+            552.7,
+            588.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            565.3,
+            552.7,
+            588.9
+          ],
+          "row_sha256": "6aa3f05e60693b6b37d054dc4f9b4aa2784076dccc1a539bbd4c7abad809eacc",
+          "quote": "High-level output voltage | VCC = 5V, IOH = –100mA, TA = –55°C to +125°C | 2 | V"
+        }
+      },
+      {
+        "name": "Supply current",
+        "value": "10 to 15",
+        "unit": "mA",
+        "condition": "Output low, no load, VCC = 15V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            588.9,
+            552.7,
+            602.8
+          ],
+          "row_sha256": "e95b11e49c2e71fe2a70ed44fbcdb71aaf09f53701c0e331d5352803ced0d5f1",
+          "quote": "Supply current | Output low, no load, VCC = 15V | 10 | 15 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "10",
+          "max": "15"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Supply current",
+        "value": "10 to 12",
+        "unit": "mA",
+        "condition": "Output low, no load, VCC = 15V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            602.8,
+            552.7,
+            616.8
+          ],
+          "row_sha256": "5688d92e6d31b790290af9832670ffa7346bd4c32e6adef2279a4647b6c970cf",
+          "quote": "Supply current | Output low, no load, VCC = 15V | 10 | 12 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "10",
+          "max": "12"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Supply current",
+        "value": "3 to 6",
+        "unit": "mA",
+        "condition": "Output low, no load, VCC = 5V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            616.8,
+            552.7,
+            630.7
+          ],
+          "row_sha256": "3431d1421cafed5f5a4384bf8073e3aed129c796fe9d3857c52d89a81073c9f3",
+          "quote": "Supply current | Output low, no load, VCC = 5V | 3 | 6 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "3",
+          "max": "6"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Supply current",
+        "value": "3 to 5",
+        "unit": "mA",
+        "condition": "Output low, no load, VCC = 5V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            630.7,
+            552.7,
+            644.7
+          ],
+          "row_sha256": "b5e0968df006414048d4e58aa8b2f5303a289c8d019aff18728803a704c8bbb3",
+          "quote": "Supply current | Output low, no load, VCC = 5V | 3 | 5 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "3",
+          "max": "5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Supply current",
+        "value": "9 to 13",
+        "unit": "mA",
+        "condition": "Output high, no load, VCC = 15V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            644.7,
+            552.7,
+            658.6
+          ],
+          "row_sha256": "07dcb74a7ae452128f663b584167e628b9689402253d85e54e37930f0b0b9daf",
+          "quote": "Supply current | Output high, no load, VCC = 15V | 9 | 13 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "9",
+          "max": "13"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Supply current",
+        "value": "9 to 10",
+        "unit": "mA",
+        "condition": "Output high, no load, VCC = 15V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            658.6,
+            552.7,
+            672.6
+          ],
+          "row_sha256": "1ef6f2d081ce51873760406305a04ba857e8d27b9b1fada41282e62b5ed42d59",
+          "quote": "Supply current | Output high, no load, VCC = 15V | 9 | 10 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "9",
+          "max": "10"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Supply current",
+        "value": "2 to 5",
+        "unit": "mA",
+        "condition": "Output high, no load, VCC = 5V, NA555, NE555, SA555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            672.6,
+            552.7,
+            686.5
+          ],
+          "row_sha256": "f9b1468596aa2cb4092d135db4b1ac999059340837b73e26790c9434733b9c3b",
+          "quote": "Supply current | Output high, no load, VCC = 5V | 2 | 5 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "2",
+          "max": "5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Supply current",
+        "value": "2 to 4",
+        "unit": "mA",
+        "condition": "Output high, no load, VCC = 5V, SE555",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            686.5,
+            552.7,
+            700.5
+          ],
+          "row_sha256": "f0627fb4c6c614d2e90c9d88bcc9b5956ed2e0d0be26ee792f720af9c64af2de",
+          "quote": "Supply current | Output high, no load, VCC = 5V | 2 | 4 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "2",
+          "max": "4"
+        },
+        "range_origin": "column_roles_unverified"
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "VCC",
+        "value": "18",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 4,
+          "bbox": [
+            56.7,
+            139.4,
+            553.9,
+            153.5
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "18"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            139.4,
+            553.9,
+            153.5
+          ],
+          "quote": "VCC | 18 | V",
+          "row_sha256": "70af0eae88ba9e8fbae869fcabaaf6e0c9ef61ec065effe16ec2a425103877ec"
+        }
+      },
+      {
+        "name": "VI",
+        "value": "VCC",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 4,
+          "bbox": [
+            56.7,
+            153.5,
+            553.9,
+            167.4
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "VCC"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            153.5,
+            553.9,
+            167.4
+          ],
+          "quote": "VI | CONT, RESET, THRES, TRIG | VCC | V",
+          "row_sha256": "3b0859b0f61d008c5167d4cf1cfcfbd63fadd9e3bd2b5dd4e337bf187f232b60"
+        }
+      },
+      {
+        "name": "IO",
+        "value": "±225",
+        "unit": "mA",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name",
+          "page": 4,
+          "bbox": [
+            56.7,
+            167.4,
+            553.9,
+            181.4
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "±225"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            167.4,
+            553.9,
+            181.4
+          ],
+          "quote": "IO | ±225 | mA",
+          "row_sha256": "bd43c182d9bfeda6fc0ab96a70c2a58ec85d4ca535a39ca005b3f628d40a10f2"
+        }
+      },
+      {
+        "name": "TJ",
+        "value": "150",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "param_name_shortest",
+          "page": 4,
+          "bbox": [
+            56.7,
+            181.4,
+            553.9,
+            195.3
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "150"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            181.4,
+            553.9,
+            195.3
+          ],
+          "quote": "TJ | 150 | °C",
+          "row_sha256": "5faf465b5ce5eb4a6331b3248dc2af949f4218df82cca464c2329f8e575f7045"
+        }
+      },
+      {
+        "name": "Case temperature",
+        "value": "260",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            195.3,
+            553.9,
+            209.3
+          ]
+        },
+        "range": {
+          "min": "",
+          "max": "260"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            195.3,
+            553.9,
+            209.3
+          ],
+          "quote": "TJ | FK package | 260 | °C",
+          "row_sha256": "fd503f9ccf7214ae87f4daf225707fbaf2d4667d2991eb24101705024ef4c1ab"
+        }
+      },
+      {
+        "name": "Tstg",
+        "value": "-65 to 150",
+        "unit": "°C",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 4,
+          "bbox": [
+            56.7,
+            223.2,
+            553.9,
+            237.2
+          ]
+        },
+        "range": {
+          "min": "-65",
+          "max": "150"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 4,
+          "bbox": [
+            56.7,
+            223.2,
+            553.9,
+            237.2
+          ],
+          "quote": "Tstg | -65 | 150 | °C",
+          "row_sha256": "4cf4d999ed0ef3ad489e25505589f43833fedfeae9ec8f6fb84df1f781f2b133"
+        }
+      }
+    ],
+    "thermal": [
+      {
+        "name": "RθJA",
+        "value": "125.4",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "64.9",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJB",
+        "value": "73.2",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJT",
+        "value": "14.3",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJB",
+        "value": "72.1",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(bot)",
+        "value": "14.2",
+        "unit": "°C/W"
+      }
+    ],
+    "esd": [
+      {
+        "name": "HBM",
+        "value": "±500",
+        "unit": "V"
+      },
+      {
+        "name": "CDM",
+        "value": "±1500",
+        "unit": "V"
+      }
+    ],
+    "package": {
+      "type": "SOIC, PDIP, TSSOP",
+      "pins": 8,
+      "dimensions": ""
+    },
+    "temperature": {
+      "operating": "-40°C to 105°C",
+      "storage": "-65°C to 150°C"
+    },
+    "scope": "device"
+  },
+  "features": [
+    "Timing from microseconds to hours",
+    "Astable or monostable operation",
+    "Adjustable duty cycle",
+    "TTL-compatible output can sink or source up to 200mA"
+  ],
+  "applications": [
+    "Pulse-shaping circuits",
+    "Missing-pulse detectors",
+    "Pulse-width modulators",
+    "Pulse-position modulators",
+    "Sequential timers",
+    "Pulse generators",
+    "Frequency dividers",
+    "Industrial controls"
+  ],
+  "pin_configuration": [
+    {
+      "pin": 1,
+      "name": "GND",
+      "description": "Ground"
+    },
+    {
+      "pin": 2,
+      "name": "TRIG",
+      "description": "Start of timing input. TRIG < ½ CONT sets output high and discharge open"
+    },
+    {
+      "pin": 3,
+      "name": "OUT",
+      "description": "High current timer output signal"
+    },
+    {
+      "pin": 4,
+      "name": "RESET",
+      "description": "Active low reset input forces output and discharge low"
+    },
+    {
+      "pin": 5,
+      "name": "CONT",
+      "description": "Controls comparator thresholds, Outputs 2/3 × VCC, allows bypass capacitor connection"
+    },
+    {
+      "pin": 6,
+      "name": "THRES",
+      "description": "End of timing input. THRES > CONT sets output low and discharge low"
+    },
+    {
+      "pin": 7,
+      "name": "DISCH",
+      "description": "Open collector output to discharge timing capacitor"
+    },
+    {
+      "pin": 8,
+      "name": "VCC",
+      "description": "Input supply voltage, 4.5V to 16V. SE555 maximum is 18V"
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "JM38510/10901BPA",
+      "package": "CDIP (JG)",
+      "marking": "JM38510/10901BPA",
+      "moq": 0,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "JM38510/10901BPA.A",
+      "package": "CDIP (JG)",
+      "marking": "JM38510/10901BPA",
+      "moq": 0,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NA555D",
+      "package": "SOIC (D)",
+      "marking": "NA555",
+      "moq": 0,
+      "packaging": ""
+    },
+    {
+      "mpn": "NA555DR",
+      "package": "SOIC (D)",
+      "marking": "NA555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "NA555DR.A",
+      "package": "SOIC (D)",
+      "marking": "NA555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "NA555P",
+      "package": "PDIP (P)",
+      "marking": "NA555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NA555P.A",
+      "package": "PDIP (P)",
+      "marking": "NA555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NA555PE4",
+      "package": "PDIP (P)",
+      "marking": "NA555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NA555PE4.A",
+      "package": "PDIP (P)",
+      "marking": "NA555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NE555D",
+      "package": "SOIC (D)",
+      "marking": "NE555",
+      "moq": 0,
+      "packaging": ""
+    },
+    {
+      "mpn": "NE555DR",
+      "package": "SOIC (D)",
+      "marking": "NE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "NE555DR.A",
+      "package": "SOIC (D)",
+      "marking": "NE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "NE555DR1G4",
+      "package": "SOIC (D)",
+      "marking": "NE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "NE555DR1G4.A",
+      "package": "SOIC (D)",
+      "marking": "NE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "NE555DRG4",
+      "package": "SOIC (D)",
+      "marking": "NE555",
+      "moq": 0,
+      "packaging": ""
+    },
+    {
+      "mpn": "NE555P",
+      "package": "PDIP (P)",
+      "marking": "NE555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NE555P.A",
+      "package": "PDIP (P)",
+      "marking": "NE555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NE555PE4",
+      "package": "PDIP (P)",
+      "marking": "NE555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NE555PE4.A",
+      "package": "PDIP (P)",
+      "marking": "NE555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "NE555PS",
+      "package": "SO (PS)",
+      "marking": "N555",
+      "moq": 80,
+      "packaging": "80 | TUBE"
+    },
+    {
+      "mpn": "NE555PS.A",
+      "package": "SO (PS)",
+      "marking": "N555",
+      "moq": 80,
+      "packaging": "80 | TUBE"
+    },
+    {
+      "mpn": "NE555PSR",
+      "package": "SO (PS)",
+      "marking": "N555",
+      "moq": 2000,
+      "packaging": "2000 | LARGE T&R"
+    },
+    {
+      "mpn": "NE555PSR.A",
+      "package": "SO (PS)",
+      "marking": "N555",
+      "moq": 2000,
+      "packaging": "2000 | LARGE T&R"
+    },
+    {
+      "mpn": "NE555PW",
+      "package": "TSSOP (PW)",
+      "marking": "N555",
+      "moq": 0,
+      "packaging": ""
+    },
+    {
+      "mpn": "NE555PWR",
+      "package": "TSSOP (PW)",
+      "marking": "N555",
+      "moq": 2000,
+      "packaging": "2000 | LARGE T&R"
+    },
+    {
+      "mpn": "NE555PWR.A",
+      "package": "TSSOP (PW)",
+      "marking": "N555",
+      "moq": 2000,
+      "packaging": "2000 | LARGE T&R"
+    },
+    {
+      "mpn": "SA555D",
+      "package": "SOIC (D)",
+      "marking": "SA555",
+      "moq": 0,
+      "packaging": ""
+    },
+    {
+      "mpn": "SA555DR",
+      "package": "SOIC (D)",
+      "marking": "SA555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "SA555DR.A",
+      "package": "SOIC (D)",
+      "marking": "SA555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "SA555DRG4",
+      "package": "SOIC (D)",
+      "marking": "SA555",
+      "moq": 0,
+      "packaging": ""
+    },
+    {
+      "mpn": "SA555P",
+      "package": "PDIP (P)",
+      "marking": "SA555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "SA555P.A",
+      "package": "PDIP (P)",
+      "marking": "SA555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "SE555DR",
+      "package": "SOIC (D)",
+      "marking": "SE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "SE555DR.A",
+      "package": "SOIC (D)",
+      "marking": "SE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "SE555DRG4",
+      "package": "SOIC (D)",
+      "marking": "SE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "SE555DRG4.A",
+      "package": "SOIC (D)",
+      "marking": "SE555",
+      "moq": 2500,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "SE555FKB",
+      "package": "LCCC (FK)",
+      "marking": "SE555FKB",
+      "moq": 55,
+      "packaging": "55 | TUBE"
+    },
+    {
+      "mpn": "SE555FKB.A",
+      "package": "LCCC (FK)",
+      "marking": "SE555FKB",
+      "moq": 55,
+      "packaging": "55 | TUBE"
+    },
+    {
+      "mpn": "SE555JG",
+      "package": "CDIP (JG)",
+      "marking": "SE555JG",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "SE555JG.A",
+      "package": "CDIP (JG)",
+      "marking": "SE555JG",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "SE555JGB",
+      "package": "CDIP (JG)",
+      "marking": "SE555JGB",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "SE555JGB.A",
+      "package": "CDIP (JG)",
+      "marking": "SE555JGB",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "SE555P",
+      "package": "PDIP (P)",
+      "marking": "SE555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "SE555P.A",
+      "package": "PDIP (P)",
+      "marking": "SE555P",
+      "moq": 50,
+      "packaging": "50 | TUBE"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "NE555 Precision Timer IC, 5V-15V, 8-Pin SOIC/PDIP",
+    "title_zh": "NE555 精密定时器IC，5V-15V，8引脚SOIC/PDIP",
+    "meta_description_en": "NE555 precision timer IC with adjustable duty cycle, TTL-compatible output (200mA), and timing from microseconds to hours. Ideal for pulse shaping, frequency division, and industrial controls. Available in SOIC, PDIP, and TSSOP packages.",
+    "meta_description_zh": "NE555精密定时器IC，支持可调占空比，TTL兼容输出（200mA），定时范围从微秒到小时。适用于脉冲整形、频率分频和工业控制。提供SOIC、PDIP和TSSOP封装。",
+    "keywords": [
+      "NE555",
+      "precision timer",
+      "555 timer",
+      "monostable",
+      "astable",
+      "TTL output",
+      "8-pin",
+      "SOIC",
+      "PDIP"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+    "parse_timestamp": "2026-11-02T20:52:25+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "NE555",
+    "deterministic_extract": {
+      "thermal": {
+        "from": 30,
+        "to": 6,
+        "method": "deterministic"
+      },
+      "esd": {
+        "from": 2,
+        "to": 2,
+        "method": "deterministic"
+      },
+      "temperature": {
+        "changed": true,
+        "from": "0°C to 70°C",
+        "to": "-40°C to 105°C",
+        "page": 4,
+        "method": "deterministic"
+      },
+      "model_unverified": {
+        "stamped": 60
+      }
+    },
+    "selected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      19,
+      20,
+      21,
+      22
+    ],
+    "core_validation": "pass",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "core_sha256": {
+      "pins": {
+        "count": 8,
+        "sha256": "3c6c1de542c411fe0cc7c9770aa0f2f04866c0a6d375d1edf90119ac4f3f081d"
+      },
+      "thermal": {
+        "sha256": "e0a3e4d811061fc0f686b103f6ffca9073c1adf003ae0e3d288cee0837e31139"
+      },
+      "esd": {
+        "sha256": "fd72005ab86ed0a8520379b27f7400e9e71de648da7d505adade85f367fcc78c"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "formal_container_integrity": "pass",
+    "ac_data_state": "not_withheld",
+    "normalize": {
+      "datasheet_url": {
+        "action": "kept",
+        "url": "https://www.ti.com/lit/ds/symlink/ne555.pdf"
+      },
+      "doc_type": {
+        "changed": true,
+        "from": null,
+        "to": "datasheet"
+      },
+      "temperature": {
+        "changed": false,
+        "operating": "-40°C to 105°C"
+      },
+      "doc_revision": {
+        "changed": true,
+        "from": null,
+        "to": {
+          "doc_number": "SLFS022",
+          "revision": "K",
+          "doc_id": "SLFS022K",
+          "issued": "SEPTEMBER 1973",
+          "revised": "MARCH 2026",
+          "page": 1
+        }
+      },
+      "ac_quarantine": {
+        "schema": "ac-quarantine/v2",
+        "n_quarantined": 0,
+        "n_restored": 0,
+        "restored": [],
+        "quarantined": [],
+        "formal_container_integrity": "pass",
+        "ac_data_state": "not_withheld"
+      },
+      "row_sources": {
+        "added": 54,
+        "rows": 54
+      },
+      "absolute_max_roles": {
+        "checked": 6,
+        "upgraded": 6,
+        "replaced": 0,
+        "unmatched": []
+      },
+      "row_anchors": {
+        "pages": [
+          4,
+          5,
+          6,
+          7,
+          13,
+          21,
+          22
+        ],
+        "candidates": 128,
+        "anchored": 60,
+        "ambiguous": 0,
+        "same_page": 0,
+        "ambiguous_rows": [],
+        "rows": 60
+      },
+      "ranges_normalized": 45,
+      "verification": {
+        "stamped": 0
+      },
+      "pdf": "data\\pdfs\\NE555__ne555.pdf"
+    },
+    "core_validation_at_parse": [
+      "basic_info.datasheet_url 为空（溯源链断开，不得出包）"
+    ],
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点；有 unresolved_ac_rows 时记 pass_with_quarantine（数据被隔离，不是没有数据）"
+  },
+  "pin_scope": "device"
+}

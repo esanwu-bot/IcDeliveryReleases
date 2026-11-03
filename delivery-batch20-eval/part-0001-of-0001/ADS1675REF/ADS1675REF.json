@@ -1,0 +1,2334 @@
+{
+  "basic_info": {
+    "mpn": "ADS1675REF",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Data Converters",
+    "description": "The ADS1675 is a high-speed, high-precision 24-bit analog-to-digital converter with 103dB dynamic range at 4MSPS and 111dB at 125kSPS. It features a dual-path programmable digital filter with selectable Low-Latency or Wide-Bandwidth paths, operates from 5V analog and 3V digital supplies, and supports both CMOS and LVDS serial interfaces. Designed for automated test equipment, medical imaging, and scientific instrumentation.",
+    "datasheet_url": "https://www.ti.com/product/ADS1675",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号未逐条列入订货表，但与 6 条同族订货号同族（ADS1675IPAG、ADS1675IPAGA、ADS1675IPAGG4）→ 判为同一族器件的不同写法"
+    ],
+    "datasheet_url_source": "prefilled",
+    "doc_revision": {
+      "doc_number": "SBAS416",
+      "revision": "D",
+      "doc_id": "SBAS416D",
+      "issued": "DECEMBER 2008",
+      "revised": "AUGUST 2010",
+      "page": 1
+    },
+    "category_path": [
+      "Integrated Circuits (ICs)",
+      "Data Acquisition",
+      "ADCs"
+    ],
+    "category_leaf": "ADCs"
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Full-scale input voltage",
+        "value": "±VREF",
+        "unit": "V",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Common-mode input voltage",
+        "value": "2.5",
+        "unit": "V",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            160.9,
+            557.8,
+            173.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            160.9,
+            557.8,
+            173.1
+          ],
+          "row_sha256": "1c340c1cabc3287651cee9d126a0ff8e71218151876bc25f86e36f90767e3880",
+          "quote": "Common-mode input voltage | VCM = (AINP + AINN)/2 | 2.5 | V"
+        }
+      },
+      {
+        "name": "Dynamic range",
+        "value": "100 to 103",
+        "unit": "dB",
+        "condition": "Inputs shorted together, Low-Latency path, fDATA = 4MSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            197.4,
+            557.8,
+            217.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            197.4,
+            557.8,
+            217.6
+          ],
+          "row_sha256": "0d0b0e2596a25ce3cdcc2b7a39c6fcdd0e084ca6901a9cb1f926d4647591533b",
+          "quote": "Dynamic range | Inputs shorted together, Low-Latency path, fDATA = 4MSPS | 100 | 103 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "100",
+          "max": "103"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Dynamic range",
+        "value": "100.5 to 103.5",
+        "unit": "dB",
+        "condition": "Inputs shorted together, Low-Latency path, fDATA = 2MSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            217.6,
+            557.8,
+            237.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            217.6,
+            557.8,
+            237.9
+          ],
+          "row_sha256": "3d78a4b1f4d1992afcfa4f761e715f6ccf7f8ceaea17224fc35a2fa652440084",
+          "quote": "Dynamic range | Inputs shorted together, Low-Latency path, fDATA =2MSPS | 100.5 | 103.5 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "100.5",
+          "max": "103.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Dynamic range",
+        "value": "108 to 111",
+        "unit": "dB",
+        "condition": "Inputs shorted together, Low-Latency path, fDATA = 125kSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            237.9,
+            557.8,
+            258.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            237.9,
+            557.8,
+            258.1
+          ],
+          "row_sha256": "4e086fb858fa38a574da97545c651ff31f8205775631afb3d34f80b0961fc7ad",
+          "quote": "Dynamic range | Inputs shorted together, Low-Latency path, fDATA = 125kSPS | 108 | 111 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "108",
+          "max": "111"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Signal-to-noise ratio (SNR)",
+        "value": "92 to 97",
+        "unit": "dB",
+        "condition": "fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "param_group",
+          "page": 3,
+          "bbox": [
+            54.1,
+            258.1,
+            557.8,
+            318.6
+          ],
+          "matched_by": "name+value(param_group)",
+          "note": "同一参数的 3 个子行合起来才覆盖全部数值（spec_row）；列角色未主张 —— 范围可能由多个 TYP 值拼成"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            258.1,
+            557.8,
+            318.6
+          ],
+          "row_sha256": "2e45b218bb7a7c633848c8edce20176ef570ae17f5c3cb28513b5a0bb8e2f6ae",
+          "quote": "Signal-to-noise ratio (SNR) | fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS / fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 2MSPS / fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS | dB",
+          "rows": [
+            "0276c55134593ed93c4cb7a1d664a2cb75773e32abbac79204c92d42b8d4fc71",
+            "ad8b1c770110849950b6bdaa76a65d17480713892332fc615513e54fb37c0d51",
+            "d3ed446432cfb3c2e2e2114bc7ccd761e10e3b4180b3fc21d2b070a5efbf9d2b"
+          ]
+        },
+        "unverified_range_candidate": {
+          "min": "92",
+          "max": "97"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Signal-to-noise ratio (SNR)",
+        "value": "97 to 107",
+        "unit": "dB",
+        "condition": "fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 2MSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "param_group",
+          "page": 3,
+          "bbox": [
+            54.1,
+            258.1,
+            557.8,
+            318.6
+          ],
+          "matched_by": "name+value(param_group)",
+          "note": "同一参数的 3 个子行合起来才覆盖全部数值（spec_row）；列角色未主张 —— 范围可能由多个 TYP 值拼成"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            258.1,
+            557.8,
+            318.6
+          ],
+          "row_sha256": "2e45b218bb7a7c633848c8edce20176ef570ae17f5c3cb28513b5a0bb8e2f6ae",
+          "quote": "Signal-to-noise ratio (SNR) | fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS / fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 2MSPS / fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS | dB",
+          "rows": [
+            "0276c55134593ed93c4cb7a1d664a2cb75773e32abbac79204c92d42b8d4fc71",
+            "ad8b1c770110849950b6bdaa76a65d17480713892332fc615513e54fb37c0d51",
+            "d3ed446432cfb3c2e2e2114bc7ccd761e10e3b4180b3fc21d2b070a5efbf9d2b"
+          ]
+        },
+        "unverified_range_candidate": {
+          "min": "97",
+          "max": "107"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Signal-to-noise ratio (SNR)",
+        "value": "107 to 120",
+        "unit": "dB",
+        "condition": "fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS",
+        "verification": {
+          "status": "label_value_same_page",
+          "reason": "same_page_only"
+        },
+        "source": {
+          "page": 3,
+          "quote": "0.5dBFS, 92 Wide-Bandwidth path, fDATA = 4MSPS fIN = 10kHz, -0.5dBFS, Signal-to-noise ratio (SNR) 97 dB Wide-Bandwidth path, fDATA = 2MSPS fIN = 1kHz, -0.5dBFS, 107 Wide-Bandwidth path, fDATA = 1",
+          "method": "label_value_colocation"
+        },
+        "unverified_range_candidate": {
+          "min": "107",
+          "max": "120"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Total harmonic distortion (THD)",
+        "value": "-103 to -103",
+        "unit": "dB",
+        "condition": "fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            318.6,
+            557.8,
+            338.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            318.6,
+            557.8,
+            338.9
+          ],
+          "row_sha256": "6bcef393ae1ab5784021670788427af79b0996224c18a6fddf420682129e1c7b",
+          "quote": "Total harmonic distortion (THD) | fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS | -103 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "-103",
+          "max": "-103"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Total harmonic distortion (THD)",
+        "value": "-103 to -107",
+        "unit": "dB",
+        "condition": "fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 2MSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "param_group",
+          "page": 3,
+          "bbox": [
+            54.1,
+            318.6,
+            557.8,
+            379.2
+          ],
+          "matched_by": "name+value(param_group)",
+          "note": "同一参数的 3 个子行合起来才覆盖全部数值（spec_row）；列角色未主张 —— 范围可能由多个 TYP 值拼成"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            318.6,
+            557.8,
+            379.2
+          ],
+          "row_sha256": "86295ee99a4df70f6680b83d48aa7bf91d78fcb6e11332d046da52b82c5d86ba",
+          "quote": "Total harmonic distortion (THD) | fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS / fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 2MSPS / fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS | dB",
+          "rows": [
+            "47733a8be16c64ae0cc8637ec78c1b6f5204b720d215d09d53a39ba8ee04f87d",
+            "6bcef393ae1ab5784021670788427af79b0996224c18a6fddf420682129e1c7b",
+            "dfcae512e9454674c028eda35fdc8cbebd0b57dae4cabe50cbfa3a39901016d3"
+          ]
+        },
+        "unverified_range_candidate": {
+          "min": "-103",
+          "max": "-107"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Total harmonic distortion (THD)",
+        "value": "-107 to -107",
+        "unit": "dB",
+        "condition": "fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            359.1,
+            557.8,
+            379.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            359.1,
+            557.8,
+            379.2
+          ],
+          "row_sha256": "47733a8be16c64ae0cc8637ec78c1b6f5204b720d215d09d53a39ba8ee04f87d",
+          "quote": "Total harmonic distortion (THD) | fIN = 1kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 125kSPS | -107 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "-107",
+          "max": "-107"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Spurious-free dynamic range (SFDR)",
+        "value": "120 to 120",
+        "unit": "dB",
+        "condition": "fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS, signal harmonics excluded",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            399.5,
+            557.8,
+            419.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            399.5,
+            557.8,
+            419.6
+          ],
+          "row_sha256": "2b0192b8a5b1e37dbab8f94a9d4afbc16335673f6eba86f617dea5a7464bdbe7",
+          "quote": "Spurious-free dynamic range (SFDR) | fIN = 10kHz, –0.5dBFS, Wide-Bandwidth path, fDATA = 4MSPS, signal harmonics excluded | 120 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "120",
+          "max": "120"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Resolution",
+        "value": "24",
+        "unit": "Bits",
+        "condition": "Low-speed mode (DRATE = 000 to 011)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            431.9,
+            557.8,
+            444.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            431.9,
+            557.8,
+            444.1
+          ],
+          "row_sha256": "7348337c436b41916b4c12ea22a258e2f2b40dcfcb8deb253e7fa7776085e499",
+          "quote": "Resolution | Low-speed mode (DRATE = 000 to 011) | 24 | Bits"
+        }
+      },
+      {
+        "name": "Resolution",
+        "value": "23",
+        "unit": "Bits",
+        "condition": "High-speed mode (DRATE = 100, 101)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            444.1,
+            557.8,
+            456.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            444.1,
+            557.8,
+            456.2
+          ],
+          "row_sha256": "193174fa83fd5fae42bdeedcb3dd1fe965defbad19d14588d88327ab92201477",
+          "quote": "Resolution | High-speed mode (DRATE = 100, 101) | 23 | Bits"
+        }
+      },
+      {
+        "name": "Differential nonlinearity",
+        "value": "24",
+        "unit": "Bits",
+        "condition": "Low-speed mode (DRATE = 000 to 011) (monotonic)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            456.2,
+            557.8,
+            476.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            456.2,
+            557.8,
+            476.5
+          ],
+          "row_sha256": "bb64aa00be6e71f5a7fe4a37e5fcd0b03880fd1797264efd3400f7e4180ee2c0",
+          "quote": "Differential nonlinearity | Low-speed mode (DRATE = 000 to 011) | 24 (monotonic) | Bits"
+        }
+      },
+      {
+        "name": "Differential nonlinearity",
+        "value": "23",
+        "unit": "Bits",
+        "condition": "High-speed mode (DRATE = 100, 101) (monotonic)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            476.5,
+            557.8,
+            496.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            476.5,
+            557.8,
+            496.6
+          ],
+          "row_sha256": "311315f004a2700a9ea285d56606c358b203ff2428fd261fbbc115be23e3a1a5",
+          "quote": "Differential nonlinearity | High-speed mode (DRATE = 100, 101) | 23 (monotonic) | Bits"
+        }
+      },
+      {
+        "name": "Integral nonlinearity",
+        "value": "3 to 15",
+        "unit": "ppm of FSR",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            496.6,
+            557.8,
+            508.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            496.6,
+            557.8,
+            508.9
+          ],
+          "row_sha256": "5c59c2d03d3c5cb0b14a094e69e2adb6b127c18860c58e79dc74ee0d7e0803ad",
+          "quote": "Integral nonlinearity | 3 | 15 | ppmofFSR"
+        },
+        "unverified_range_candidate": {
+          "min": "3",
+          "max": "15"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Offset error",
+        "value": "-5 to 5",
+        "unit": "mV",
+        "condition": "TA = +25°C",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            508.9,
+            557.8,
+            521.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            508.9,
+            557.8,
+            521.1
+          ],
+          "row_sha256": "9aa7a2d6e00deaa076d01ea1a8a1f970df0794294a775151e7d87b20a5557162",
+          "quote": "Offset error | TA = +25°C | -5 | 5 | mV"
+        },
+        "unverified_range_candidate": {
+          "min": "-5",
+          "max": "5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Offset error drift",
+        "value": "4",
+        "unit": "mV/°C",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            521.1,
+            557.8,
+            533.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            521.1,
+            557.8,
+            533.2
+          ],
+          "row_sha256": "856a24b68ffa4360b27bcf2f4c8296c875ed7bded799c639726b1bd58321d0fe",
+          "quote": "Offset error drift | 4 | mV/°C"
+        }
+      },
+      {
+        "name": "Gain error",
+        "value": "1",
+        "unit": "%",
+        "condition": "TA = +25°C",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            533.2,
+            557.8,
+            545.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            533.2,
+            557.8,
+            545.4
+          ],
+          "row_sha256": "06b3f3bd2cfc7e6d77a39b960dc12ba08f7fc5993163050587c85bb945f7edc0",
+          "quote": "Gain error | TA = +25°C | 1 | %"
+        }
+      },
+      {
+        "name": "Gain error drift",
+        "value": "4",
+        "unit": "ppm/°C",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            545.4,
+            557.8,
+            557.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            545.4,
+            557.8,
+            557.6
+          ],
+          "row_sha256": "8e15f476dfdb37420caa8590c56a755360e01feb8c29f6c50b936ddfc6d69662",
+          "quote": "Gain error drift | 4 | ppm/°C"
+        }
+      },
+      {
+        "name": "Noise",
+        "value": "not_specified",
+        "unit": "",
+        "condition": "See Noise Performance table (Table 1)",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Common-mode rejection",
+        "value": "71",
+        "unit": "dB",
+        "condition": "At dc",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            569.9,
+            557.8,
+            582.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            569.9,
+            557.8,
+            582.1
+          ],
+          "row_sha256": "5fe66fd98fdd04fda3f48690b2a62fd8238c03ccb059c49c870ceb67d3c2389c",
+          "quote": "Common-mode rejection | At dc | 71 | dB"
+        }
+      },
+      {
+        "name": "Passband",
+        "value": "0 to 0.424fDATA",
+        "unit": "Hz",
+        "condition": "DIGITAL FILTER CHARACTERISTICS (WIDE-BANDWIDTH PATH)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 3,
+          "bbox": [
+            54.1,
+            594.2,
+            557.8,
+            606.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            594.2,
+            557.8,
+            606.4
+          ],
+          "row_sha256": "5e65f7a402d41cb0a27c6aa428ac4c940f981fa93182900f392dd43cc5072438",
+          "quote": "Passband | 0 | 0.424fDATA | Hz"
+        },
+        "unverified_range_candidate": {
+          "min": "0",
+          "max": "0.424fDATA"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Passband ripple",
+        "value": "±0.00002",
+        "unit": "dB",
+        "condition": "DIGITAL FILTER CHARACTERISTICS (WIDE-BANDWIDTH PATH)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            606.4,
+            557.8,
+            618.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            606.4,
+            557.8,
+            618.6
+          ],
+          "row_sha256": "55cd9357bba125629028540948d99f26af1760dc1c4bde7925dae4600f2a8bb5",
+          "quote": "Passband ripple | ±0.00002dB | dB"
+        }
+      },
+      {
+        "name": "–0.1dB attenuation",
+        "value": "0.432fDATA",
+        "unit": "Hz",
+        "condition": "DIGITAL FILTER CHARACTERISTICS (WIDE-BANDWIDTH PATH)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            618.6,
+            557.8,
+            630.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            618.6,
+            557.8,
+            630.9
+          ],
+          "row_sha256": "b877ccbe6c9aa75c8dc009f3a47250a80f94da38d9ca3c81ee34abe8c61af3df",
+          "quote": "Passband transition | –0.1dB attenuation | 0.432fDATA | Hz"
+        }
+      },
+      {
+        "name": "Passband transition",
+        "value": "0.488fDATA",
+        "unit": "Hz",
+        "condition": "DIGITAL FILTER CHARACTERISTICS (WIDE-BANDWIDTH PATH)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            630.9,
+            557.8,
+            643.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            630.9,
+            557.8,
+            643.1
+          ],
+          "row_sha256": "ca007cebd4a3f999bb54e81717a1ce6228f0a98921ec09e1beefb9f46f49e264",
+          "quote": "Passband transition | –3dB attenuation | 0.488fDATA | Hz"
+        }
+      },
+      {
+        "name": "Stop band",
+        "value": "0.576fDATA to fCLK – 0.576fDATA",
+        "unit": "Hz",
+        "condition": "DIGITAL FILTER CHARACTERISTICS (WIDE-BANDWIDTH PATH)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            643.1,
+            557.8,
+            655.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            643.1,
+            557.8,
+            655.2
+          ],
+          "row_sha256": "017b92efba0a365e5894c84b58955c6d543db6d296bbd818814966421a9adcfa",
+          "quote": "Stop band | 0.576fDATA | fCLK | fCLK - 0.576fDATA | Hz"
+        }
+      },
+      {
+        "name": "Stop band attenuation",
+        "value": "86",
+        "unit": "dB",
+        "condition": "DIGITAL FILTER CHARACTERISTICS (WIDE-BANDWIDTH PATH)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            655.2,
+            557.8,
+            667.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            655.2,
+            557.8,
+            667.4
+          ],
+          "row_sha256": "a1b7c9818a0bd444088fc0d11df709d43c2e3a1a62fa9a86c251f4642aecd6c5",
+          "quote": "Stop band attenuation | 86 | dB"
+        }
+      },
+      {
+        "name": "Group delay",
+        "value": "28",
+        "unit": "tDRDY",
+        "condition": "DIGITAL FILTER CHARACTERISTICS (WIDE-BANDWIDTH PATH)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 3,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            667.4,
+            557.8,
+            679.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 3,
+          "bbox": [
+            54.1,
+            667.4,
+            557.8,
+            679.6
+          ],
+          "row_sha256": "f6c8910c061bc35affbb0b0b2d9efee2ffa6eb01db9adf87f5f6775c292acd99",
+          "quote": "Group delay | 28 | tDRDY"
+        }
+      },
+      {
+        "name": "Settling time",
+        "value": "not_specified",
+        "unit": "",
+        "condition": "See the Wide-Bandwidth Filter section",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Reference input voltage (VREF)",
+        "value": "2.75 to 3.5",
+        "unit": "V",
+        "condition": "VREF = (VREFP – VREFN)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            184.1,
+            557.7,
+            196.3
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            184.1,
+            557.7,
+            196.3
+          ],
+          "row_sha256": "0bd95c28f5a228de53b4f4a43dab7be21e088d132e1b17ceb5407b7f33e1b12b",
+          "quote": "Reference input voltage (VREF) | VREF = (VREFP – VREFN) | 2.75 | 3.0 | 3.5 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.75",
+          "max": "3.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "VREFP",
+        "value": "2.75 to 3.5",
+        "unit": "V",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            184.1,
+            557.7,
+            196.3
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            184.1,
+            557.7,
+            196.3
+          ],
+          "row_sha256": "0bd95c28f5a228de53b4f4a43dab7be21e088d132e1b17ceb5407b7f33e1b12b",
+          "quote": "Reference input voltage (VREF) | VREF = (VREFP – VREFN) | 2.75 | 3.0 | 3.5 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.75",
+          "max": "3.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "VREFN",
+        "value": "Short to AGND",
+        "unit": "V",
+        "condition": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "VIH",
+        "value": "0.7AVDD to AVDD",
+        "unit": "V",
+        "condition": "CLOCK (CLK)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            232.9,
+            557.7,
+            245.1
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            232.9,
+            557.7,
+            245.1
+          ],
+          "row_sha256": "6a54169f040b9c9fb60928c48598400c03773e33f9733f9112fe539f8da32df3",
+          "quote": "VIH | 0.7AVDD | AVDD | V"
+        }
+      },
+      {
+        "name": "VIL",
+        "value": "AGND to 0.3AVDD",
+        "unit": "V",
+        "condition": "CLOCK (CLK)",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            245.1,
+            557.7,
+            257.3
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            245.1,
+            557.7,
+            257.3
+          ],
+          "row_sha256": "c74754d07e7c1fed9f5d2dcc4ea939cb24fd4ff35d421adf9ce6b09360f4f316",
+          "quote": "VIL | AGND | 0.3AVDD | V"
+        }
+      },
+      {
+        "name": "VIH",
+        "value": "0.7DVDD to DVDD",
+        "unit": "V",
+        "condition": "DIGITAL INPUTS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            232.9,
+            557.7,
+            245.1
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            232.9,
+            557.7,
+            245.1
+          ],
+          "row_sha256": "6a54169f040b9c9fb60928c48598400c03773e33f9733f9112fe539f8da32df3",
+          "quote": "VIH | 0.7AVDD | AVDD | V"
+        }
+      },
+      {
+        "name": "VIL",
+        "value": "DGND to 0.3DVDD",
+        "unit": "V",
+        "condition": "DIGITAL INPUTS",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            245.1,
+            557.7,
+            257.3
+          ],
+          "matched_by": "name+value(spec_row)+tie_identical"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            245.1,
+            557.7,
+            257.3
+          ],
+          "row_sha256": "c74754d07e7c1fed9f5d2dcc4ea939cb24fd4ff35d421adf9ce6b09360f4f316",
+          "quote": "VIL | AGND | 0.3AVDD | V"
+        }
+      },
+      {
+        "name": "Input leakage",
+        "value": "±10",
+        "unit": "mA",
+        "condition": "DGND < VIN < DVDD",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 4,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            293.9,
+            557.7,
+            306.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            293.9,
+            557.7,
+            306.1
+          ],
+          "row_sha256": "c98fd3dc22cb6e46cb2ce7040a387ac6f8dc3e2af08804bebb2786d93a24c4de",
+          "quote": "Input leakage | DGND < VIN < DVDD | ±10 | mA"
+        }
+      },
+      {
+        "name": "VOH",
+        "value": "0.8DVDD",
+        "unit": "V",
+        "condition": "IOH = –2mA",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            318.2,
+            557.7,
+            330.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            318.2,
+            557.7,
+            330.5
+          ],
+          "row_sha256": "7e1d28cd9bcfd68749dd3541831243c90991c2bc2ded5cb93550ea8a64d13181",
+          "quote": "VOH | IOH = –2mA | 0.8DVDD | V"
+        }
+      },
+      {
+        "name": "VOL",
+        "value": "0.2DVDD",
+        "unit": "V",
+        "condition": "IOL = 2mA",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            330.5,
+            557.7,
+            342.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            330.5,
+            557.7,
+            342.6
+          ],
+          "row_sha256": "24a731759f1ef19052539b60de2f1d07883acaaa592c97bd1a779776656a1400",
+          "quote": "VOL | IOL = 2mA | 0.2DVDD | V"
+        }
+      },
+      {
+        "name": "|VOD(SS)|",
+        "value": "340",
+        "unit": "mV",
+        "condition": "Steady-state differential output voltage magnitude",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            354.9,
+            557.7,
+            367.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            354.9,
+            557.7,
+            367.1
+          ],
+          "row_sha256": "5bcbbaac43390bb8b4d59b0fbf11d8e082cf1789456f88929d759a308df5c81f",
+          "quote": "|VOD(SS)| | Steady-state differential output voltage magnitude | 340 | mV"
+        }
+      },
+      {
+        "name": "Δ|VOD(SS)|",
+        "value": "±50",
+        "unit": "mV",
+        "condition": "Change in steady-state differential output voltage magnitude between logic states",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            367.1,
+            557.7,
+            387.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            367.1,
+            557.7,
+            387.2
+          ],
+          "row_sha256": "ac7dd45f02d0d5cfda0664914055aa5bde39bafd7dfdc91e8e727869cb4f6972",
+          "quote": "Δ|VOD(SS)| | Change in steady-state differential output voltage magnitude between logic states | ±50 | mV"
+        }
+      },
+      {
+        "name": "VOC(SS)",
+        "value": "1.2",
+        "unit": "V",
+        "condition": "Steady-state common-mode voltage output",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            387.2,
+            557.7,
+            399.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            387.2,
+            557.7,
+            399.5
+          ],
+          "row_sha256": "35f9da9d4b340d6bdf1a1795da01513ede89bcf1260944ca46ceb0e2578c679b",
+          "quote": "VOC(SS) | Steady-state common-mode voltage output | 1.2 | V"
+        }
+      },
+      {
+        "name": "Δ|VOC(SS)|",
+        "value": "±50",
+        "unit": "mV",
+        "condition": "Change in steady-state common-mode output voltage between logic states",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            399.5,
+            557.7,
+            419.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            399.5,
+            557.7,
+            419.6
+          ],
+          "row_sha256": "0f3716aaad0e149dddafc6cad28cbb268388eb1fc1773678867b41c5cf12b89c",
+          "quote": "Δ|VOC(SS)| | Change in steady-state common-mode output voltage between logic states | ±50 | mV"
+        }
+      },
+      {
+        "name": "VOC(pp)",
+        "value": "50 to 150",
+        "unit": "mV",
+        "condition": "Peak-to-peak change in common-mode output voltage",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            419.6,
+            557.7,
+            439.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            419.6,
+            557.7,
+            439.9
+          ],
+          "row_sha256": "dcce325f8a73b5be17afbf33a2a49bddb11b38751fd75ec9ab199fc760ec5cca",
+          "quote": "VOC(pp) | Peak-to-peak change in common-mode output voltage | 50 | 150 | mV"
+        },
+        "unverified_range_candidate": {
+          "min": "50",
+          "max": "150"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Short-circuit output current (IOS)",
+        "value": "3",
+        "unit": "mA",
+        "condition": "VOY or VOZ = 0V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 4,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            439.9,
+            557.7,
+            452.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            439.9,
+            557.7,
+            452.1
+          ],
+          "row_sha256": "dcf139fbcb700f4e45a1cbac14b39f2a33fae8e49880bd0b739a6eba6859a71f",
+          "quote": "Short-circuit output current (IOS) | VOY or VOZ = 0V | 3 | mA"
+        }
+      },
+      {
+        "name": "Short-circuit output current (IOS)",
+        "value": "3",
+        "unit": "mA",
+        "condition": "VOD = 0V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 4,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            452.1,
+            557.7,
+            464.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            452.1,
+            557.7,
+            464.2
+          ],
+          "row_sha256": "bd1234a62658ae82bb062deebdd761d79d85a05372be4f94191f823d6f5ad8de",
+          "quote": "Short-circuit output current (IOS) | VOD = 0V | 3 | mA"
+        }
+      },
+      {
+        "name": "High-impedance output current (IOZ)",
+        "value": "±5",
+        "unit": "mA",
+        "condition": "VO = 0V or +DVDD",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 4,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            464.2,
+            557.7,
+            476.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            464.2,
+            557.7,
+            476.5
+          ],
+          "row_sha256": "b914c88225a0e4dcdce6f46cad61a74e9ccb3be83f5501d196d57c239caba076",
+          "quote": "High-impedance output current (IOZ) | VO = 0V or +DVDD | ±5 | mA"
+        }
+      },
+      {
+        "name": "Load",
+        "value": "5",
+        "unit": "pF",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 4,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            476.5,
+            557.7,
+            488.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            476.5,
+            557.7,
+            488.6
+          ],
+          "row_sha256": "5c3740f9fea111834dab51bd5252869bf3d711cdd71b0746c3bc75b4e5ff4046",
+          "quote": "Load | 5 | pF"
+        }
+      },
+      {
+        "name": "AVDD",
+        "value": "4.75 to 5.25",
+        "unit": "V",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            500.9,
+            557.7,
+            513.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            500.9,
+            557.7,
+            513.1
+          ],
+          "row_sha256": "cc8d011e8a057a0c357b46cf4137228dde4c70e742692193c34e59308cc4607e",
+          "quote": "AVDD | 4.75 | 5.0 | 5.25 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "4.75",
+          "max": "5.25"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "DVDD",
+        "value": "2.85 to 3.15",
+        "unit": "V",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            513.1,
+            557.7,
+            525.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            513.1,
+            557.7,
+            525.2
+          ],
+          "row_sha256": "c84f83c23d609e1271d1c09cf9844b70879bf0280ed6f1b1507d7f10954bc6f0",
+          "quote": "DVDD | 2.85 | 3.0 | 3.15 | V"
+        },
+        "unverified_range_candidate": {
+          "min": "2.85",
+          "max": "3.15"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "AVDD current",
+        "value": "70 to 74",
+        "unit": "mA",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            525.2,
+            557.7,
+            537.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            525.2,
+            557.7,
+            537.4
+          ],
+          "row_sha256": "c0685b12ac35b3c2b80053e3d34fc02e52cbe8d852e568a49b52ddba9166964e",
+          "quote": "AVDD current | 70 | 74 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "70",
+          "max": "74"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "DVDD current",
+        "value": "53 to 59",
+        "unit": "mA",
+        "condition": "CMOS outputs, DVDD = 3V, DRATE = 011",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            537.4,
+            557.7,
+            549.6
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            537.4,
+            557.7,
+            549.6
+          ],
+          "row_sha256": "3c8f675e201b4dc1eec9173756dea3d8479840a5fdb8a1c9fa73bae62f1c61a8",
+          "quote": "DVDD current | CMOS outputs, DVDD = 3V, DRATE = 011 | 53 | 59 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "53",
+          "max": "59"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "DVDD current",
+        "value": "70 to 74",
+        "unit": "mA",
+        "condition": "LVDS outputs, DVDD = 3V, DRATE = 101",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            549.6,
+            557.7,
+            561.9
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            549.6,
+            557.7,
+            561.9
+          ],
+          "row_sha256": "35a816c204f07f69674e7a1f13049c53c080a49d600deffe23730bff98722e66",
+          "quote": "DVDD current | LVDS outputs, DVDD = 3V, DRATE = 101 | 70 | 74 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "70",
+          "max": "74"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Power dissipation",
+        "value": "510 to 545",
+        "unit": "mW",
+        "condition": "CMOS outputs, DRATE = 011, AVDD = 5V, DVDD = 3V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            561.9,
+            557.7,
+            582.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            561.9,
+            557.7,
+            582.1
+          ],
+          "row_sha256": "fb868188637c9eb2b8b697e8b7cdf39261fe4b24901bd9f04b5a11d52c9388e7",
+          "quote": "Power dissipation | CMOS outputs, DRATE = 011, AVDD = 5V, DVDD = 3V | 510 | 545 | mW"
+        },
+        "unverified_range_candidate": {
+          "min": "510",
+          "max": "545"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Power dissipation",
+        "value": "575 to 600",
+        "unit": "mW",
+        "condition": "LVDS outputs, DRATE = 101, AVDD = 5V, DVDD = 3V",
+        "verification": {
+          "status": "audited_row_anchored",
+          "method": "spec_row",
+          "page": 4,
+          "bbox": [
+            54.1,
+            582.1,
+            557.7,
+            602.2
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            582.1,
+            557.7,
+            602.2
+          ],
+          "row_sha256": "d19e992ac923484ddcd4761186266864e27140b40dd942c946ecbe7589a01f0a",
+          "quote": "Power dissipation | LVDS outputs, DRATE = 101, AVDD = 5V, DVDD = 3V | 575 | 600 | mW"
+        },
+        "unverified_range_candidate": {
+          "min": "575",
+          "max": "600"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Power-down",
+        "value": "5",
+        "unit": "mW",
+        "condition": "",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 4,
+          "method": "spec_row",
+          "bbox": [
+            54.1,
+            602.2,
+            557.7,
+            614.5
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 4,
+          "bbox": [
+            54.1,
+            602.2,
+            557.7,
+            614.5
+          ],
+          "row_sha256": "c3c48ccf86bf5a710a4cb1466d23b5ec4d001f8420ca008cffa93373b8262f33",
+          "quote": "Power dissipation | Power-down | 5 | mW"
+        }
+      }
+    ],
+    "package": {},
+    "scope": "device",
+    "absolute_max": []
+  },
+  "absolute_max": [
+    {
+      "name": "AVDD to AGND",
+      "value": "-0.3 to 5.5",
+      "unit": "V"
+    },
+    {
+      "name": "DVDD to DGND",
+      "value": "-0.3 to 3.6",
+      "unit": "V"
+    },
+    {
+      "name": "AGND to DGND",
+      "value": "-0.3 to 0.3",
+      "unit": "V"
+    },
+    {
+      "name": "Input current",
+      "value": "100",
+      "unit": "mA"
+    },
+    {
+      "name": "Input current",
+      "value": "10",
+      "unit": "mA"
+    },
+    {
+      "name": "Analog I/O to AGND",
+      "value": "-0.3 to AVDD +0.3",
+      "unit": "V"
+    },
+    {
+      "name": "Digital I/O to DGND",
+      "value": "-0.3 to DVDD +0.3",
+      "unit": "V"
+    },
+    {
+      "name": "Maximum junction temperature",
+      "value": "150",
+      "unit": "°C"
+    },
+    {
+      "name": "Operating temperature range",
+      "value": "-40 to 85",
+      "unit": "°C"
+    },
+    {
+      "name": "Storage temperature range",
+      "value": "-60 to 150",
+      "unit": "°C"
+    }
+  ],
+  "thermal": [],
+  "esd": [],
+  "package": {
+    "type": "TQFP-64",
+    "pins": 64,
+    "dimensions": ""
+  },
+  "temperature": {
+    "operating": "-40°C to 85°C",
+    "storage": "-60°C to 150°C"
+  },
+  "features": [
+    "AC Performance: 103dB of Dynamic Range at 4MSPS, 111dB of Dynamic Range at 125kSPS, –107dB THD",
+    "DC Accuracy: 3ppm INL, 4mV/°C Offset Drift, 4ppm/°C Gain Drift",
+    "Programmable Digital Filter with User-Selectable Path: Low-Latency (completely settles in 2.65ms), Wide-Bandwidth (1.7MHz BW with flat passband)",
+    "Flexible Read-Only Serial Interface: Standard CMOS, Serialized LVDS",
+    "Easy Conversion Control with START Pin",
+    "Out-of-Range Detection",
+    "Supply: Analog +5V, Digital +3V",
+    "Power: 575mW"
+  ],
+  "applications": [
+    "Automated Test Equipment",
+    "Medical Imaging",
+    "Scientific Instrumentation",
+    "Test and Measurement"
+  ],
+  "pin_configuration": [
+    {
+      "pin": 1,
+      "name": "AVDD",
+      "description": "Analog supply"
+    },
+    {
+      "pin": 2,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 3,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 4,
+      "name": "AINN",
+      "description": "Analog input, Negative analog input"
+    },
+    {
+      "pin": 5,
+      "name": "AINP",
+      "description": "Analog input, Positive analog input"
+    },
+    {
+      "pin": 6,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 7,
+      "name": "AVDD",
+      "description": "Analog supply"
+    },
+    {
+      "pin": 8,
+      "name": "RBIAS",
+      "description": "Analog, Analog bias setting resistor"
+    },
+    {
+      "pin": 9,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 10,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 11,
+      "name": "AVDD",
+      "description": "Analog supply"
+    },
+    {
+      "pin": 12,
+      "name": "AVDD",
+      "description": "Analog supply"
+    },
+    {
+      "pin": 13,
+      "name": "VCM",
+      "description": "Analog, Terminal for external bypass capacitor connection to internal common-mode voltage"
+    },
+    {
+      "pin": 14,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 15,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 16,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 17,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 18,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 19,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 20,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 21,
+      "name": "RSV2",
+      "description": "Reserved, Short pin to digital ground"
+    },
+    {
+      "pin": 22,
+      "name": "RSV1",
+      "description": "Reserved, Short pin to digital supply"
+    },
+    {
+      "pin": 23,
+      "name": "DVDD",
+      "description": "Digital, Digital supply"
+    },
+    {
+      "pin": 24,
+      "name": "DVDD",
+      "description": "Digital, Digital supply"
+    },
+    {
+      "pin": 25,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 26,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 27,
+      "name": "DVDD",
+      "description": "Digital, Digital supply"
+    },
+    {
+      "pin": 28,
+      "name": "PDWN",
+      "description": "Digital input, Power-down control, active low"
+    },
+    {
+      "pin": 29,
+      "name": "SCLK_SEL",
+      "description": "Digital input, Shift-clock source select. If SCLK_SEL = '0', then SCLK is internally generated. If SCLK_SEL = '1', then SCLK must be externally generated."
+    },
+    {
+      "pin": 30,
+      "name": "LVDS",
+      "description": "Digital input, Serial interface select. If LVDS = '0', then interface is LVDS-compatible. If LVDS = '1', then interface is CMOS-compatible."
+    },
+    {
+      "pin": 31,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 32,
+      "name": "LL_CONFIG",
+      "description": "Digital input, Configure Low-Latency digital filter. If LL_CONFIG = '0', then single-cycle settling is selected. If LL_CONFIG = '1', then fast-response is selected."
+    },
+    {
+      "pin": 33,
+      "name": "FPATH",
+      "description": "Digital input, Digital filter path selection. If FPATH = '0', then path is Wide-Bandwidth. If FPATH = '1', then path is Low-Latency."
+    },
+    {
+      "pin": 34,
+      "name": "DRATE[2]",
+      "description": "Digital input, Data rate selection"
+    },
+    {
+      "pin": 35,
+      "name": "DRATE[1]",
+      "description": "Digital input, Data rate selection"
+    },
+    {
+      "pin": 36,
+      "name": "DRATE[0]",
+      "description": "Digital input, Data rate selection"
+    },
+    {
+      "pin": 37,
+      "name": "START",
+      "description": "Digital input, Start convert, reset, and synchronization control input"
+    },
+    {
+      "pin": 38,
+      "name": "CS",
+      "description": "Digital input, Chip select; active low"
+    },
+    {
+      "pin": 39,
+      "name": "OTRD",
+      "description": "Digital output, Digital filter out-of-range indicator"
+    },
+    {
+      "pin": 40,
+      "name": "OTRA",
+      "description": "Digital input, Analog input out-of-range indicator"
+    },
+    {
+      "pin": 41,
+      "name": "SCLK",
+      "description": "Digital output, Negative shift clock output. If SCLK_SEL = '0', then SCLK is the complementary shift clock output. If SCLK_SEL = '1', then SCLK always output is 3-state."
+    },
+    {
+      "pin": 42,
+      "name": "SCLK",
+      "description": "Digital input/output, Positive shift clock output. If SCLK_SEL = '0', then SCLK is an output. If SCLK_SEL = '1', then SCLK is an input."
+    },
+    {
+      "pin": 43,
+      "name": "DOUT",
+      "description": "Digital output, Negative LVDS serial data output"
+    },
+    {
+      "pin": 44,
+      "name": "DOUT",
+      "description": "Digital output, Positive LVDS serial data output"
+    },
+    {
+      "pin": 45,
+      "name": "DRDY",
+      "description": "Digital output, Negative data ready output"
+    },
+    {
+      "pin": 46,
+      "name": "DRDY",
+      "description": "Digital output, Positive data ready output"
+    },
+    {
+      "pin": 47,
+      "name": "AVDD",
+      "description": "Analog supply"
+    },
+    {
+      "pin": 48,
+      "name": "DVDD",
+      "description": "Digital, Digital supply"
+    },
+    {
+      "pin": 49,
+      "name": "DVDD",
+      "description": "Digital, Digital supply"
+    },
+    {
+      "pin": 50,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 51,
+      "name": "DGND",
+      "description": "Digital, Digital ground"
+    },
+    {
+      "pin": 52,
+      "name": "DVDD",
+      "description": "Digital, Digital supply"
+    },
+    {
+      "pin": 53,
+      "name": "AVDD",
+      "description": "Analog supply"
+    },
+    {
+      "pin": 54,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 55,
+      "name": "CLK",
+      "description": "Digital input, Master clock input"
+    },
+    {
+      "pin": 56,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 57,
+      "name": "AGND",
+      "description": "Analog ground"
+    },
+    {
+      "pin": 58,
+      "name": "AVDD",
+      "description": "Analog supply"
+    },
+    {
+      "pin": 59,
+      "name": "CAP1",
+      "description": "Analog, Terminal for 1mF external bypass capacitor"
+    },
+    {
+      "pin": 60,
+      "name": "VREFN",
+      "description": "Analog, Negative reference voltage. Short to analog ground"
+    },
+    {
+      "pin": 61,
+      "name": "VREFN",
+      "description": "Analog, Negative reference voltage. Short to analog ground"
+    },
+    {
+      "pin": 62,
+      "name": "CAP2",
+      "description": "Analog, Terminal for 1mF external bypass capacitor"
+    },
+    {
+      "pin": 63,
+      "name": "VREFP",
+      "description": "Analog, Positive reference voltage"
+    },
+    {
+      "pin": 64,
+      "name": "VREFP",
+      "description": "Analog, Positive reference voltage"
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "ADS1675IPAG",
+      "package": "TQFP (PAG)",
+      "marking": "ADS1675I",
+      "moq": 0,
+      "packaging": "160 | JEDEC TRAY (10+1)"
+    },
+    {
+      "mpn": "ADS1675IPAG.A",
+      "package": "TQFP (PAG)",
+      "marking": "ADS1675I",
+      "moq": 0,
+      "packaging": "160 | JEDEC TRAY (10+1)"
+    },
+    {
+      "mpn": "ADS1675IPAGG4",
+      "package": "TQFP (PAG)",
+      "marking": "ADS1675I",
+      "moq": 0,
+      "packaging": "160 | JEDEC TRAY (10+1)"
+    },
+    {
+      "mpn": "ADS1675IPAGG4.A",
+      "package": "TQFP (PAG)",
+      "marking": "ADS1675I",
+      "moq": 0,
+      "packaging": "160 | JEDEC TRAY (10+1)"
+    },
+    {
+      "mpn": "ADS1675IPAGR",
+      "package": "TQFP (PAG)",
+      "marking": "ADS1675I",
+      "moq": 0,
+      "packaging": "1500 | LARGE T&R"
+    },
+    {
+      "mpn": "ADS1675IPAGR.A",
+      "package": "TQFP (PAG)",
+      "marking": "ADS1675I",
+      "moq": 0,
+      "packaging": "1500 | LARGE T&R"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "ADS1675 4MSPS 24-Bit ADC with Dual-Path Filter, TI",
+    "title_zh": "ADS1675 4MSPS 24位ADC双路径滤波器，德州仪器",
+    "meta_description_en": "ADS1675: 4MSPS, 24-bit ADC with 103dB dynamic range at 4MSPS. Dual-path filter, Low-Latency/Wide-Bandwidth, CMOS/LVDS interface. Industrial temp range, TQFP-64 package.",
+    "meta_description_zh": "ADS1675：4MSPS 24位ADC，4MSPS下103dB动态范围。双路径滤波器，低延迟/宽带，CMOS/LVDS接口。工业温度范围，TQFP-64封装。",
+    "keywords": [
+      "ADS1675",
+      "ADC",
+      "analog-to-digital converter",
+      "24-bit",
+      "dual-path filter",
+      "TQFP-64"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "c2625223925339cdcde7f987c3f7277f624bb1bc544d15d4b9d9535aa841d30d",
+    "parse_timestamp": "2026-11-02T20:30:53+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "ADS1675REF",
+    "deterministic_extract": {
+      "model_unverified": {
+        "stamped": 58
+      }
+    },
+    "selected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      31,
+      32,
+      33
+    ],
+    "core_validation": "pass",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "core_sha256": {
+      "pins": {
+        "count": 64,
+        "sha256": "c5f954c456465a94525262c75b619ab2e8bde019e3f6e19c34113adb85079e55"
+      },
+      "thermal": {
+        "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      },
+      "esd": {
+        "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "formal_container_integrity": "pass",
+    "ac_data_state": "not_withheld",
+    "normalize": {
+      "datasheet_url": {
+        "action": "kept",
+        "url": "https://www.ti.com/product/ADS1675"
+      },
+      "doc_revision": {
+        "changed": false,
+        "doc_revision": {
+          "doc_number": "SBAS416",
+          "revision": "D",
+          "doc_id": "SBAS416D",
+          "issued": "DECEMBER 2008",
+          "revised": "AUGUST 2010",
+          "page": 1
+        }
+      },
+      "ac_quarantine": {
+        "schema": "ac-quarantine/v2",
+        "n_quarantined": 0,
+        "n_restored": 0,
+        "restored": [],
+        "quarantined": [],
+        "formal_container_integrity": "pass",
+        "ac_data_state": "not_withheld"
+      },
+      "row_anchors": {
+        "pages": [
+          2,
+          3,
+          4,
+          8,
+          9,
+          32
+        ],
+        "candidates": 87,
+        "anchored": 53,
+        "ambiguous": 0,
+        "same_page": 1,
+        "ambiguous_rows": [],
+        "rows": 58
+      },
+      "verification": {
+        "stamped": 0
+      },
+      "category_path": {
+        "category_path": [
+          "Integrated Circuits (ICs)",
+          "Data Acquisition",
+          "ADCs"
+        ],
+        "changed": false
+      },
+      "pdf": "data\\pdfs\\ADS1675REF__ads1675.pdf"
+    },
+    "core_validation_at_parse": "pass",
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点；有 unresolved_ac_rows 时记 pass_with_quarantine（数据被隔离，不是没有数据）"
+  },
+  "pin_scope": "device"
+}

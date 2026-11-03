@@ -1,0 +1,784 @@
+{
+  "basic_info": {
+    "mpn": "LM317",
+    "manufacturer": "Texas Instruments",
+    "category": "Integrated Circuits (ICs)",
+    "subcategory": "Voltage Regulators",
+    "description": "The LM317 is a three-pin adjustable positive voltage regulator capable of supplying up to 1.5A over an output voltage range of 1.25V to 37V. It features low line and load regulation, internal current limiting, thermal overload protection, and safe-area compensation. Suitable for applications requiring precision voltage regulation in power supplies, printers, servo drives, and industrial systems.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm317.pdf",
+    "datasheet_url_source": "mpn_rule",
+    "identity": "chip",
+    "identity_state": "IDENTITY_SUPPORTED",
+    "identity_rule": "",
+    "identity_confidence": "medium",
+    "identity_evidence": [
+      "请求料号不在订货表逐字列出，但是 `LM317DCY` 的包装/等级变体写法（订货表共 15 条）→ 同一颗芯片"
+    ],
+    "doc_type": "datasheet",
+    "doc_revision": {
+      "doc_number": "SLVS044",
+      "revision": "Z",
+      "doc_id": "SLVS044Z",
+      "issued": "SEPTEMBER 1997",
+      "revised": "APRIL 2025",
+      "page": 1
+    }
+  },
+  "specs": {
+    "electrical": [
+      {
+        "name": "Reference voltage",
+        "value": "1.25",
+        "unit": "V",
+        "condition": "TJ = 25°C",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            136.8,
+            553.7,
+            174.4
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            136.8,
+            553.7,
+            174.4
+          ],
+          "row_sha256": "d641bd400f4ce434660c35aaa0eebf559457fe84bd7aa38d3970400ba1521a52",
+          "quote": "Reference voltage | 3V ≤ (VIN − VOUT) ≤ 10mA ≤ IOUT ≤ 1500mA, | 1.2 | 1.25 1.25 | 1.3 | V"
+        }
+      },
+      {
+        "name": "Line regulation",
+        "value": "0.01 to 0.04",
+        "unit": "%/V",
+        "condition": "3V ≤ (VIN − VOUT) ≤ 40V, TJ = 25°C",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            174.4,
+            553.7,
+            211.9
+          ],
+          "row_sha256": "bb1f1654ce0e9b2a236dfef48e48deccfed80134f7dad0faaa180f6ab87ec5dd",
+          "quote": "Line regulation(2) | 3V ≤ (VIN − VOUT) ≤ | 0.01 0.02 | 0.04 0.07 | %/V"
+        },
+        "unverified_range_candidate": {
+          "min": "0.01",
+          "max": "0.04"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Load regulation",
+        "value": "0.1 to 0.5",
+        "unit": "%VO",
+        "condition": "10mA ≤ IOUT ≤ IMAX, TJ = 25°C",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            225.9,
+            553.7,
+            254.7
+          ],
+          "row_sha256": "fd261a38236dd855292fd0c71bec4658588c0b8bc81fd4a2999cb1dec410999d",
+          "quote": "Load regulation | Legacy chip | 0.1 | 0.5 | %VO"
+        },
+        "unverified_range_candidate": {
+          "min": "0.1",
+          "max": "0.5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Thermal regulation",
+        "value": "0.04 to 0.07",
+        "unit": "%/W",
+        "condition": "20ms pulse",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            325.3,
+            553.7,
+            339.3
+          ],
+          "row_sha256": "ad4026120f995f92ae3dbbfd6d61d06184a74f0cff5114000d163095694a036b",
+          "quote": "Thermal regulation | 20ms pulse | 0.04 | 0.07 | %/W"
+        },
+        "unverified_range_candidate": {
+          "min": "0.04",
+          "max": "0.07"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Adjustment pin current",
+        "value": "50 to 100",
+        "unit": "μA",
+        "condition": "Over full operating temperature range",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            339.3,
+            553.7,
+            353.2
+          ],
+          "row_sha256": "91778d8cdda78366e03fc2a730a616a029bace515c24c64a3ee41a67cbcca633",
+          "quote": "Adjustment pin current | Over full operating | 50 | 100 | μA"
+        },
+        "unverified_range_candidate": {
+          "min": "50",
+          "max": "100"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Adjustment pin current change",
+        "value": "0.2 to 5",
+        "unit": "μA",
+        "condition": "10mA ≤ IOUT ≤ IMAX, 3V ≤ (VIN − VOUT) ≤ 40V, over full operating temperature range",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            353.2,
+            553.7,
+            376.8
+          ],
+          "row_sha256": "bf6f47b68f1a9d3cfd4eba37422f6a60403fd25e0258010abcea8b860293712f",
+          "quote": "Adjustment pin current change | 10mA ≤ IOUT ≤ IMAX 3V ≤ (VIN − VOUT) ≤ | 0.2 | 5 | μA"
+        },
+        "unverified_range_candidate": {
+          "min": "0.2",
+          "max": "5"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Temperature stability",
+        "value": "1",
+        "unit": "%VO",
+        "condition": "Over full operating temperature range",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            376.8,
+            553.7,
+            404.7
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            376.8,
+            553.7,
+            404.7
+          ],
+          "row_sha256": "05f5ee5d7c08b69d0a6e6b228fb9a4828c4770fab73fbf1456164c17cb8ce070",
+          "quote": "Temperature stability | New chip | 0.7 1% | %VO"
+        }
+      },
+      {
+        "name": "Minimum load current",
+        "value": "3.5 to 10",
+        "unit": "mA",
+        "condition": "(VIN − VOUT) = 40V, over full operating temperature range",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            404.7,
+            553.7,
+            428.2
+          ],
+          "row_sha256": "dd2939ec98af17d5bea85b117a4476ccd9cdfdbc2158c06d925555d2b6703fef",
+          "quote": "Minimum load current | (VIN − VOUT) = 40V | 3.5 | 10 | mA"
+        },
+        "unverified_range_candidate": {
+          "min": "3.5",
+          "max": "10"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Current limit",
+        "value": "1.5 to 2.2",
+        "unit": "A",
+        "condition": "(VIN − VOUT) ≤ 15V, PD < PMAX",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            428.2,
+            553.7,
+            456.1
+          ],
+          "row_sha256": "629d27a314d1fbd9ecb561a8810c42bac95f5948d0907089f029ed0fddf6a91f",
+          "quote": "Current limit | (VIN − VOUT) = 40V | 1.5 0.15 | 2.2 0.4 | A"
+        },
+        "unverified_range_candidate": {
+          "min": "1.5",
+          "max": "2.2"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "RMS output noise, % of VOUT",
+        "value": "0.003",
+        "unit": "%",
+        "condition": "10Hz ≤ f ≤ 10kHz",
+        "verification": {
+          "status": "audited_row_anchored",
+          "page": 8,
+          "method": "spec_row",
+          "bbox": [
+            56.7,
+            456.1,
+            553.7,
+            470.1
+          ],
+          "matched_by": "name+value(spec_row)"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            456.1,
+            553.7,
+            470.1
+          ],
+          "row_sha256": "74dd1778d338ba0d8dac4a441029ddd00a139304bc5b60880acee048b7ea5909",
+          "quote": "RMS output noise, % of VOUT | 10Hz ≤ f ≤ 10kHz | 0.003 | %"
+        }
+      },
+      {
+        "name": "Ripple rejection ratio",
+        "value": "66 to 80",
+        "unit": "dB",
+        "condition": "VOUT = 10V, f = 120Hz, CADJ = 10μF, over full operating temperature range",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 8,
+          "bbox": [
+            56.7,
+            470.1,
+            553.7,
+            545.1
+          ],
+          "row_sha256": "721f2f7f40f666496e4a7df7704efb2efe82740dc5038faf43661b380709060c",
+          "quote": "Ripple rejection ratio | New chip | 62 66 | 57 64 65 80 | dB"
+        },
+        "unverified_range_candidate": {
+          "min": "66",
+          "max": "80"
+        },
+        "range_origin": "column_roles_unverified"
+      }
+    ],
+    "absolute_max": [
+      {
+        "name": "Power dissipation",
+        "value": "Internally limited",
+        "unit": "",
+        "verification": {
+          "status": "model_unverified",
+          "reason": "模型抽取；未经过确定性抽取或逐格核验（见页面 † 说明）"
+        }
+      },
+      {
+        "name": "Input-output voltage differential",
+        "value": "-0.3 to 40",
+        "unit": "V",
+        "verification": {
+          "status": "audited_deterministic",
+          "method": "spec_row_v2",
+          "matched_by": "value_exact",
+          "page": 6,
+          "bbox": [
+            56.7,
+            157.5,
+            553.8,
+            171.4
+          ]
+        },
+        "range": {
+          "min": "-0.3",
+          "max": "40"
+        },
+        "range_origin": "column_roles_verified",
+        "source": {
+          "page": 6,
+          "bbox": [
+            56.7,
+            157.5,
+            553.8,
+            171.4
+          ],
+          "quote": "Input-output voltage differential | Input-output voltage differential | -0.3 | 40 | V",
+          "row_sha256": "781cf829fd062bb60321fd9b4020d74ebf7631534e29b6743ceb14543058ab2b"
+        }
+      },
+      {
+        "name": "Storage temperature",
+        "value": "-65 to 150",
+        "unit": "°C",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            58.9,
+            173.5,
+            536.6,
+            183.6
+          ],
+          "row_sha256": "4efa24e8d64bac4d215508f390f314931082a09f477bda66898533109bf6764b",
+          "quote": "Storage temperature, Tstg | -65 | 150 | °C"
+        },
+        "unverified_range_candidate": {
+          "min": "-65",
+          "max": "150"
+        },
+        "range_origin": "column_roles_unverified"
+      },
+      {
+        "name": "Operating virtual junction temperature",
+        "value": "-65 to 150",
+        "unit": "°C",
+        "verification": {
+          "status": "unresolved",
+          "reason": "column_roles_not_verified"
+        },
+        "source": {
+          "page": 6,
+          "bbox": [
+            58.9,
+            187.4,
+            536.6,
+            197.5
+          ],
+          "row_sha256": "748fb690ed1372ab905c83e6dfadf963c6a8c37beb51d48d08cedc34f0037394",
+          "quote": "Operating virtual junction temperature, TJ (legacy chip) | -65 | 150 | °C"
+        },
+        "unverified_range_candidate": {
+          "min": "-65",
+          "max": "150"
+        },
+        "range_origin": "column_roles_unverified"
+      }
+    ],
+    "thermal": [
+      {
+        "name": "RθJC(top)",
+        "value": "43.2",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJB",
+        "value": "16.9",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJT",
+        "value": "3.6",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJB",
+        "value": "16.8",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(bot)",
+        "value": "0.1",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(top)",
+        "value": "39.3",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJB",
+        "value": "8.4",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJT",
+        "value": "1.8",
+        "unit": "°C/W"
+      },
+      {
+        "name": "ψJB",
+        "value": "8.3",
+        "unit": "°C/W"
+      },
+      {
+        "name": "RθJC(bot)",
+        "value": "0.9",
+        "unit": "°C/W"
+      }
+    ],
+    "esd": [
+      {
+        "name": "HBM",
+        "value": "±2500",
+        "unit": "V"
+      },
+      {
+        "name": "CDM",
+        "value": "±1000",
+        "unit": "V"
+      }
+    ],
+    "package": {
+      "type": "SOT-223 (DCY), TO-263 (KTT), TO-220 (KCS, KCT)",
+      "pins": 3,
+      "dimensions": "6.5mm x 7mm (DCY), 10.16mm x 15.24mm (KTT), 10.16mm x 4.55mm (KCS/KCT)"
+    },
+    "temperature": {
+      "operating": "0°C to 125°C",
+      "storage": "-65°C to 150°C"
+    },
+    "scope": "device"
+  },
+  "features": [
+    "Output voltage range: 1.25V to 37V",
+    "Output current: 1.5A",
+    "Line regulation: 0.01%/V (typ)",
+    "Load regulation: 0.1% (typ)",
+    "Internal short-circuit current limiting",
+    "Thermal overload protection",
+    "Output safe-area compensation (new chip)",
+    "PSRR: 80dB at 120Hz for CADJ = 10μF (new chip)",
+    "Available in 4-pin SOT-223 (DCY), 3-pin TO-263 (KTT), and 3-pin TO-220 (KCS, KCT) packages"
+  ],
+  "applications": [
+    "Multifunction printers",
+    "AC drive power stage modules",
+    "Electricity meters",
+    "Servo drive control modules",
+    "Merchant network and server PSU"
+  ],
+  "pin_configuration": [
+    {
+      "pin": 1,
+      "name": "ADJUST",
+      "description": "Output voltage adjustment pin. Connect to a resistor divider to set VOUT."
+    },
+    {
+      "pin": 2,
+      "name": "OUTPUT",
+      "description": "Output voltage pin for the regulator."
+    },
+    {
+      "pin": 3,
+      "name": "INPUT",
+      "description": "Input voltage pin for the regulator."
+    }
+  ],
+  "ordering_info": [
+    {
+      "mpn": "LM317DCY",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "80 | TUBE"
+    },
+    {
+      "mpn": "LM317DCY.A",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "80 | TUBE"
+    },
+    {
+      "mpn": "LM317DCY.B",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "80 | TUBE"
+    },
+    {
+      "mpn": "LM317DCYG3",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "80 | TUBE"
+    },
+    {
+      "mpn": "LM317DCYR",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "LM317DCYR.A",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "LM317DCYR.B",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "LM317DCYRG3",
+      "package": "SOT-223 (DCY) | 4",
+      "marking": "L3",
+      "moq": 0,
+      "packaging": "2500 | LARGE T&R"
+    },
+    {
+      "mpn": "LM317KCS",
+      "package": "TO-220 (KCS) | 3",
+      "marking": "LM317",
+      "moq": 0,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "LM317KCS.A",
+      "package": "TO-220 (KCS) | 3",
+      "marking": "LM317",
+      "moq": 0,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "LM317KCSE3",
+      "package": "TO-220 (KCS) | 3",
+      "marking": "LM317",
+      "moq": 0,
+      "packaging": "50 | TUBE"
+    },
+    {
+      "mpn": "LM317KTTR",
+      "package": "DDPAK/TO-263 (KTT) | 3",
+      "marking": "LM317",
+      "moq": 0,
+      "packaging": "500 | LARGE T&R"
+    },
+    {
+      "mpn": "LM317KTTR.A",
+      "package": "DDPAK/TO-263 (KTT) | 3",
+      "marking": "LM317",
+      "moq": 0,
+      "packaging": "500 | LARGE T&R"
+    },
+    {
+      "mpn": "LM317KTTR.B",
+      "package": "DDPAK/TO-263 (KTT) | 3",
+      "marking": "LM317",
+      "moq": 0,
+      "packaging": "500 | LARGE T&R"
+    },
+    {
+      "mpn": "LM317KTTRG3",
+      "package": "DDPAK/TO-263 (KTT) | 3",
+      "marking": "LM317",
+      "moq": 0,
+      "packaging": "500 | LARGE T&R"
+    }
+  ],
+  "alternatives": [],
+  "seo": {
+    "title_en": "LM317 Adjustable Voltage Regulator 1.5A, 1.25V-37V, TI",
+    "title_zh": "LM317 可调电压稳压器 1.5A，1.25V-37V，德州仪器",
+    "meta_description_en": "The LM317 is a 3-pin adjustable positive voltage regulator with 1.5A output current, 1.25V-37V output range, and low line/load regulation. Ideal for power supplies, printers, and industrial applications.",
+    "meta_description_zh": "LM317 是一款3引脚可调正电压稳压器，输出电流1.5A，输出电压范围1.25V-37V，线性/负载调整率低。适用于电源、打印机和工业应用。",
+    "keywords": [
+      "LM317",
+      "adjustable voltage regulator",
+      "1.5A regulator",
+      "1.25V-37V",
+      "Texas Instruments",
+      "TO-220",
+      "SOT-223",
+      "voltage regulator IC"
+    ]
+  },
+  "metadata": {
+    "pdf_hash": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+    "parse_timestamp": "2026-11-02T20:48:07+08:00",
+    "model_version": "qwen-flash",
+    "confidence": 0.95,
+    "prompt_version": "v3",
+    "requested_mpn": "LM317",
+    "deterministic_extract": {
+      "thermal": {
+        "from": 6,
+        "to": 10,
+        "method": "deterministic"
+      },
+      "esd": {
+        "from": 2,
+        "to": 2,
+        "method": "deterministic"
+      },
+      "model_unverified": {
+        "stamped": 15
+      }
+    },
+    "selected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14,
+      15,
+      28,
+      29,
+      30
+    ],
+    "core_validation": "pass",
+    "scope_contract_version": "1.0",
+    "scope_contract_findings": [],
+    "core_sha256": {
+      "pins": {
+        "count": 3,
+        "sha256": "eac4592dec23a4dc203e57e8bca110d8a3732c9233ea92c5aee5f76d64a9e339"
+      },
+      "thermal": {
+        "sha256": "51d594b273ef80ae246becd06f5ae80d3d9231adc463ff746d0b78cb01446000"
+      },
+      "esd": {
+        "sha256": "8c50398b5749baa8456b4742a711bb5d46d306f7179adbc73c7a46fd68ea319e"
+      },
+      "vcmi_vid": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "method": "qc/deterministic_extract.py::core_digest"
+    },
+    "formal_container_integrity": "pass",
+    "ac_data_state": "not_withheld",
+    "normalize": {
+      "datasheet_url": {
+        "action": "kept",
+        "url": "https://www.ti.com/lit/ds/symlink/lm317.pdf"
+      },
+      "doc_type": {
+        "changed": true,
+        "from": null,
+        "to": "datasheet"
+      },
+      "doc_revision": {
+        "changed": true,
+        "from": null,
+        "to": {
+          "doc_number": "SLVS044",
+          "revision": "Z",
+          "doc_id": "SLVS044Z",
+          "issued": "SEPTEMBER 1997",
+          "revised": "APRIL 2025",
+          "page": 1
+        }
+      },
+      "ac_quarantine": {
+        "schema": "ac-quarantine/v2",
+        "n_quarantined": 0,
+        "n_restored": 0,
+        "restored": [],
+        "quarantined": [],
+        "formal_container_integrity": "pass",
+        "ac_data_state": "not_withheld"
+      },
+      "row_sources": {
+        "added": 11,
+        "rows": 11
+      },
+      "absolute_max_roles": {
+        "checked": 4,
+        "upgraded": 1,
+        "replaced": 0,
+        "unmatched": [
+          "Power dissipation",
+          "Storage temperature",
+          "Operating virtual junction temperature"
+        ]
+      },
+      "row_anchors": {
+        "pages": [
+          6,
+          8
+        ],
+        "candidates": 18,
+        "anchored": 14,
+        "ambiguous": 0,
+        "same_page": 0,
+        "ambiguous_rows": [],
+        "rows": 15
+      },
+      "ranges_normalized": 10,
+      "verification": {
+        "stamped": 0
+      },
+      "pdf": "data\\pdfs\\LM317__lm317.pdf"
+    },
+    "core_validation_at_parse": [
+      "basic_info.datasheet_url 为空（溯源链断开，不得出包）"
+    ],
+    "core_validation_note": "qc/stage_release.py 用当前口径重算；check_core=通用结构，check_acceptance=型号级验收点；有 unresolved_ac_rows 时记 pass_with_quarantine（数据被隔离，不是没有数据）"
+  },
+  "pin_scope": "device"
+}
