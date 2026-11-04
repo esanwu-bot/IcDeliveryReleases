@@ -1,0 +1,59 @@
+{
+  "schema": "content-signoff/v1",
+  "batch": "delivery-batch20-eval-V3-RELEASE",
+  "signed_at": "2026-11-04",
+  "signoff_by": "wuxiaoxian",
+  "scope": "batch20 V3 正式发布候选（7 件中剔除 2 件后剩 5 件）",
+  "policy": "机器维度（gate / anchor_gate）与人工维度（content_signoff）并列记录。content_approved=true 允许 release_state 跨过 DATA_VALIDATED 这一机器档位，但不跨身份门禁。跨级必须留痕：manifest 的 content_signoff_note 与 README 速览均写明豁免理由。",
+  "excluded": {
+    "ADS42JB49SEK": "人工复核确认原厂 PDF 第 6 页把 DA0P/M 写在一起（脚号 54、53），模型抽取忠于原文；但差分对未拆分、物理引脚无法接线（D4 判 failed 正确），且电气维度 43% 未验证 —— 维持 Rejected 退回。",
+    "ADS1675REF": "D4 引脚硬闸判 failed（DOUT/DRDY/SCLK 重名，非电源/参考族可重复名），引脚集不可用于接线 —— 从 V3 发布候选中剔除。"
+  },
+  "mpns": {
+    "LM317": {
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 6,
+      "waiver": "热阻 R\u03b8JA 等 6 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值已与 PDF 热阻表逐行对齐（V1-3 按封装列展开，34 行），由人工专家强签放行"
+    },
+    "LM358": {
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 1,
+      "waiver": "ESD HBM 1 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值与 PDF 一致，由人工专家强签放行"
+    },
+    "CDC6CE025000ADLET": {
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 28,
+      "waiver": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账），由人工专家强签放行"
+    },
+    "CDC6CE025000ADLFR": {
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 28,
+      "waiver": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账），由人工专家强签放行"
+    },
+    "NE555": {
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 41,
+      "waiver": "THRES/TRIG 电压电平等 41 条仅有弱证据、无行坐标（have=weak, need=paragraph_anchor）；引脚硬闸 unverified（count_unverified，封装表 8 脚与 FK=20 混列），由人工专家强签放行"
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "generated_at": "2026-11-04T10:11:01+08:00",
+  "packaging_validation": "pass",
+  "engineering_validation": "not_approved",
+  "i18n_coverage": "measured",
+  "i18n_content_review": "not_reviewed",
+  "mpn_count": 5,
+  "model_directories": [
+    "CDC6CE025000ADLET",
+    "CDC6CE025000ADLFR",
+    "LM317",
+    "LM358",
+    "NE555"
+  ],
+  "model_artifact_count": 30,
+  "zip_member_count": 38,
+  "zip_crc": "pass",
+  "source_hashes_unchanged": true,
+  "zip_sha256": "c97ea8f7b09f599447fefae8a9a11d804ad5d7c6ae46f0b5f473d5f1dfa36b3b",
+  "zip_size": 16451679,
+  "hash_rule": "文本物料 sha256(CRLF→LF normalized)；PDF 与 ZIP 按原始字节 sha256，二进制不做归一（归一一次哈希就变了，复核方用 sha256sum 永远对不上）",
+  "verified_members": [
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.html",
+      "sha256": "6a428f0e651d767c17cc25defdd137a3dca8686c3890d7e6a747e8f3e3c29f23"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.i18n.json",
+      "sha256": "87b84b0990cdb585a90b672bf987df7a027502f011573cd51f3245bf2971dbbc"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.json",
+      "sha256": "c6ccfa9b28509054510a899f44650c45e362e275594ce9775e6061199d2c7501"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.pdf",
+      "sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.seo.json",
+      "sha256": "2d42859f547cbd0acffbd2bf85ae7358a531370000c4a45e65dce34e09b7eaa0"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.symbols.html",
+      "sha256": "0b15756f00db71507fe8e529318933ccac093511782ddf5df8b2dab0e15de195"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.html",
+      "sha256": "8e5a420c0195fca83a10baa4bfdebb91bd1303e6e5a8bdf8e09db81dfac78234"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.i18n.json",
+      "sha256": "1e9b5e25184f196034aa903edfef1731c712fa8225d22c1bbf1322cb2a68ebdd"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.json",
+      "sha256": "254c87adc827bef8be26647a46c93b3a4375a734e31eaf010feb0da28c36659a"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.pdf",
+      "sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.seo.json",
+      "sha256": "3adea4752dac76ebb42f70ef36a040fbcf193fd7cc036f871dca711e423a2ba9"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.symbols.html",
+      "sha256": "696b363a0494ca8c803b0f39f7ff3a548fe0e7411e7f2e29fa9e8ce0d20841b1"
+    },
+    {
+      "member": "facts_audit.csv",
+      "sha256": "0dc080f45ae7a4513d51b3c547091e6c98899fe565f81c29874dd7cf476a6c92"
+    },
+    {
+      "member": "facts_audit.json",
+      "sha256": "21b9c44a7fc2905e7b36951bf03577b8e33cd5573d2291148677342bdcb885a9"
+    },
+    {
+      "member": "LM317/LM317.html",
+      "sha256": "73b2ba9b2c33842bb0dbdc7de175db0a3a0a90ae52ef69434f512ebdb710b54f"
+    },
+    {
+      "member": "LM317/LM317.i18n.json",
+      "sha256": "fffd121b68edaf1aedd0379857e5bfe9c405361bab512449f08c8894d7ea5e71"
+    },
+    {
+      "member": "LM317/LM317.json",
+      "sha256": "43ce8d250123a6123d82b8d06ca5063321cfd461eaee511a347a9e0b5363b30b"
+    },
+    {
+      "member": "LM317/LM317.pdf",
+      "sha256": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3"
+    },
+    {
+      "member": "LM317/LM317.seo.json",
+      "sha256": "4d7ac958b89679f8c8e596d271b260669009630673b4c8afc9ee861fe66d5360"
+    },
+    {
+      "member": "LM317/LM317.symbols.html",
+      "sha256": "41cd94cb556b467a8a96b607a9788fa343750fa384d5525969b2961abbe73c2e"
+    },
+    {
+      "member": "LM358/LM358.html",
+      "sha256": "dbb6a49c47b70e221f4601656bd6c08ab42632c98e6ae222a31fc9a314dee0e5"
+    },
+    {
+      "member": "LM358/LM358.i18n.json",
+      "sha256": "33fdbca7684414149358d14c29e71a78e010b8622b12309abaf0e5652d13fccb"
+    },
+    {
+      "member": "LM358/LM358.json",
+      "sha256": "bb27fb1e9b2e6a5fb2428242b84844f57fe96b14164fc1e7701d42aa887ccfb2"
+    },
+    {
+      "member": "LM358/LM358.pdf",
+      "sha256": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2"
+    },
+    {
+      "member": "LM358/LM358.seo.json",
+      "sha256": "23585badd4ccd197e4b035654c004432f2974e260cdd2d99dd294485f21cb96e"
+    },
+    {
+      "member": "LM358/LM358.symbols.html",
+      "sha256": "4dfe302ff2cbf089f9a5f8a67f5d604bdbbf7930cbc1c0cc981e6098f3cd0cfe"
+    },
+    {
+      "member": "manifest.csv",
+      "sha256": "e5691ddf668ec09db26ba72074e77f45341478d702af15d529f89274f8e78d63"
+    },
+    {
+      "member": "manifest.json",
+      "sha256": "8525291fbe882fefedd0111c384e87461d2f65df236ff827cb26be31bf557157"
+    },
+    {
+      "member": "NE555/NE555.html",
+      "sha256": "6857496904bb87cc46ae40a7ebf24da3faf56f3ede7c700030556affd9817b4b"
+    },
+    {
+      "member": "NE555/NE555.i18n.json",
+      "sha256": "b2e573e8ff579181f5fe4172f94f029bb5fa4a450fdfd245a53eefe4cebe5e5f"
+    },
+    {
+      "member": "NE555/NE555.json",
+      "sha256": "93df8ae75cec5dca2337f012b3d1163f79df9747acb11fde6db9b62dd846d10e"
+    },
+    {
+      "member": "NE555/NE555.pdf",
+      "sha256": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6"
+    },
+    {
+      "member": "NE555/NE555.seo.json",
+      "sha256": "fc3ac664cfeaec0685df5ba363a6c4c0b1a1ef45a37e49c92969eded9696fa21"
+    },
+    {
+      "member": "NE555/NE555.symbols.html",
+      "sha256": "07b9637ec5760f9eac0e5443322506b52b26e8fe684eac1d3435108d8a19068e"
+    },
+    {
+      "member": "README.md",
+      "sha256": "97c799e4a7068682f264f69ed1be02d8c1b3cf9c15c8037587bdfb427254423d"
+    },
+    {
+      "member": "risk_queue.csv",
+      "sha256": "bd0429d82d0aad0fe1e5ab0ebe4e98f53e361f9ed880f4725487e6afa76b2a30"
+    },
+    {
+      "member": "signoff.json",
+      "sha256": "40ca5f11b194ac8c98bd037343f696f9ad1f06acdce62dcf25ae25335e01928f"
+    },
+    {
+      "member": "交付说明.md",
+      "sha256": "6c72199ec0f79dfd48fe65ec6491d7c752f600094cddc4945e6a2bdfda3ce2c6"
+    }
+  ],
+  "selfcheck": {
+    "schema": "bundle-selfcheck/v1",
+    "script": "qc/bundle_selfcheck.py（不复用打包器的哈希函数）",
+    "scope": "成员哈希 / 每条记录的锚定列与 i18n / 随包 PDF 哈希 / ZIP CRC / 交付说明与 manifest 一致性 / 事实表与风险队列行数",
+    "passed": true,
+    "n_items": 42,
+    "n_failed": 0,
+    "items": [
+      {
+        "item": "members.sha256",
+        "expected": 35,
+        "actual": 35,
+        "ok": true
+      },
+      {
+        "item": "record[LM317].row_anchor",
+        "expected": "55/62",
+        "actual": "55/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].paragraph_anchor",
+        "expected": "0/62",
+        "actual": "0/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].container_verified",
+        "expected": "6/62",
+        "actual": "6/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].coord_anchor",
+        "expected": "55/62",
+        "actual": "55/62",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[LM317].pdf_sha256",
+        "expected": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+        "actual": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].row_anchor",
+        "expected": "99/101",
+        "actual": "99/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].paragraph_anchor",
+        "expected": "1/101",
+        "actual": "1/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].container_verified",
+        "expected": "1/101",
+        "actual": "1/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].coord_anchor",
+        "expected": "100/101",
+        "actual": "100/101",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[LM358].pdf_sha256",
+        "expected": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+        "actual": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].row_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].paragraph_anchor",
+        "expected": "0/148",
+        "actual": "0/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].container_verified",
+        "expected": "2/148",
+        "actual": "2/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].coord_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLET].pdf_sha256",
+        "expected": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "actual": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].row_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].paragraph_anchor",
+        "expected": "0/148",
+        "actual": "0/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].container_verified",
+        "expected": "2/148",
+        "actual": "2/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].coord_anchor",
+        "expected": "120/148",
+        "actual": "120/148",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[CDC6CE025000ADLFR].pdf_sha256",
+        "expected": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "actual": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].row_anchor",
+        "expected": "116/158",
+        "actual": "116/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].paragraph_anchor",
+        "expected": "0/158",
+        "actual": "0/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].container_verified",
+        "expected": "0/158",
+        "actual": "0/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].coord_anchor",
+        "expected": "116/158",
+        "actual": "116/158",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].anchor_gate",
+        "expected": "blocked",
+        "actual": "blocked",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].i18n",
+        "expected": "false/0.0",
+        "actual": "false/0.0",
+        "ok": true
+      },
+      {
+        "item": "record[NE555].pdf_sha256",
+        "expected": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+        "actual": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+        "ok": true
+      },
+      {
+        "item": "zip.sha256",
+        "expected": "c97ea8f7b09f599447fefae8a9a11d804ad5d7c6ae46f0b5f473d5f1dfa36b3b",
+        "actual": "c97ea8f7b09f599447fefae8a9a11d804ad5d7c6ae46f0b5f473d5f1dfa36b3b",
+        "ok": true
+      },
+      {
+        "item": "zip.crc",
+        "expected": "ok",
+        "actual": "ok",
+        "ok": true
+      },
+      {
+        "item": "delivery_note.consistency",
+        "expected": "逐型号与 manifest 一致且含本包实测表",
+        "actual": "一致",
+        "ok": true
+      },
+      {
+        "item": "docs.zip_size",
+        "expected": "文档中 ZIP 字节数与实际文件一致",
+        "actual": "一致",
+        "ok": true
+      },
+      {
+        "item": "facts_summary.facts_audit_rows",
+        "expected": 617,
+        "actual": 617,
+        "ok": true
+      },
+      {
+        "item": "facts_summary.risk_queue_rows",
+        "expected": 259,
+        "actual": 259,
+        "ok": true
+      }
+    ]
+  },
+  "self_check": "pass",
+  "self_check_items": "members / records(锚定列+i18n+PDF哈希) / zip / 校验报告 四组，均由 qc/bundle_selfcheck.py 从包内文件独立重算；逐项见 `selfcheck.items`"
+}
