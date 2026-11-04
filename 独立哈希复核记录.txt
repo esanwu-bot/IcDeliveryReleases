@@ -1,0 +1,103 @@
+独立哈希复核记录（哈希闭链版）
+================================================================
+生成时间（本机）  : 2026-11-04 12:10:57 +0800
+生成方式          : 在发布仓库根目录执行 bash qc/hash_chain.sh
+复核对象          : delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip
+
+本记录要回答的问题
+----------------------------------------------------------------
+上一版 V3.1 在打包过程中被重出过多次，中间某一版的《包校验报告.json》
+记的是 51f4c6bb…，而最终包是另一个哈希。那是反复修订留下的中间产物，
+不是数据被改动 —— 但把中间包当证据展示，本身就不该发生。
+
+本记录改为：**最终包定稿后**再算一次哈希，并把 ZIP、报告、记录放进
+同一个提交。下方所有数值均取自定稿后的字节，任何一项不符即视为篡改。
+
+一、最终包身份
+----------------------------------------------------------------
+$ stat -c %s "delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip"
+16460487
+
+ZIP 文件名 : part-0001-of-0001.zip
+
+$ sha256sum "delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip"
+7a8b9bed874796cd6113e9031dd83bff0c49036914e0e99216ca280e011590be *delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip
+
+
+二、解压后成员的 Raw SHA-256（原始字节，不做任何归一）
+----------------------------------------------------------------
+$ unzip -o -q "delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip" -d .hashcheck_tmp
+
+$ sha256sum ".hashcheck_tmp/facts_audit.json" ".hashcheck_tmp/risk_queue.csv"
+c20e1420e603721d5aca537aa9fd880e9ffdcfe32009f0d4a058935a7aaf080a *.hashcheck_tmp/facts_audit.json
+f85ba0161ca88349638a761ca281631e97d905482429b1b9aaec1eebfbbaa6a6 *.hashcheck_tmp/risk_queue.csv
+
+说明一：这里**不做 CRLF→LF 归一**。ZIP 成员按原始字节落盘，
+        所以复核方用 unzip + sha256sum 拿到的就是上面这两个值。
+说明二：sha256sum 输出里，哈希与文件名之间有一个模式标记字符（星号 '*' 表示
+        二进制模式，空格表示文本模式）；它不是哈希的一部分。
+        哈希本身始终是行首那 64 位十六进制串，跨平台一致。
+
+三、与签核文件对账
+----------------------------------------------------------------
+$ python - <<'EOF'   # 逐成员算 raw sha256，并与 signoff.final.json::binding 比对
+facts_audit.json   解压实测 c20e1420e603721d5aca537aa9fd880e9ffdcfe32009f0d4a058935a7aaf080a
+                   签核记录 c20e1420e603721d5aca537aa9fd880e9ffdcfe32009f0d4a058935a7aaf080a   -> 一致
+                   结论     PASS
+risk_queue.csv     解压实测 f85ba0161ca88349638a761ca281631e97d905482429b1b9aaec1eebfbbaa6a6
+                   签核记录 f85ba0161ca88349638a761ca281631e97d905482429b1b9aaec1eebfbbaa6a6   -> 一致
+                   结论     PASS
+
+总判定：PASS —— ZIP 内两个成员的原始字节与签核记录逐字节一致
+
+四、实际执行的命令清单（可逐条重跑）
+----------------------------------------------------------------
+  cd <发布仓库根目录>
+  stat -c %s delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip
+  sha256sum delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip
+  unzip -o -q delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip -d /tmp/x
+  sha256sum /tmp/x/facts_audit.json /tmp/x/risk_queue.csv
+  python -c "import json;print(json.load(open('delivery-batch20-eval-V3-RELEASE-V3.1/signoff.final.json'))['binding'])"
+
+五、关于「最终提交 SHA」—— 为什么本文件里没有它
+----------------------------------------------------------------
+git 的提交号 = sha1( tree + parent + author + message )，而 tree 里含
+本文件的 blob 哈希。让一个文件写出「包含它自身的那个提交」的哈希，等于
+求解一个固定点：改文件→改 blob→改 tree→改提交号→文件又要改。这不是
+工程上麻烦，是在数学上不成立。任何声称做到了的，那个值一定是伪造的。
+
+所以这一环改由**提交消息**承担（提交消息不参与自身的自指困境）：
+  提交消息  → 声明本文件的 SHA-256 与本 ZIP 的 SHA-256
+  本文件    → 声明本 ZIP 的 SHA-256 与两个成员的 raw SHA-256
+  ZIP       → 成员原始字节
+
+提交 SHA 由复核方当场用 git 打印（见下一节第 1 条），并与
+  git ls-tree <提交> -- "独立哈希复核记录.txt"
+给出的 blob 哈希交叉验证：能同时对上，就证明「这份记录确实属于那个提交」，
+这比文件自己写一个提交号强得多 —— 自写的号码无从证伪。
+
+六、复核方验证命令（五条，全部通过即闭链）
+----------------------------------------------------------------
+  # 1) 取到提交号与提交消息（消息里应有两个 sha256）
+  git log -1 --format='%H%n%B'
+
+  # 2) 本文件的 blob 哈希必须与 1) 中 git ls-tree 的结果一致
+  git ls-tree HEAD -- "独立哈希复核记录.txt"
+
+  # 3) ZIP 的 SHA-256 必须同时等于：本节 1) 消息里的值、
+  #    本记录第一节的值、《包校验报告.json》的 zip_sha256
+  sha256sum delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip
+  python -c "import json;print(json.load(open('delivery-batch20-eval-V3-RELEASE-V3.1/包校验报告.json'))['zip_sha256'])"
+
+  # 4) 两个成员的 raw SHA-256 必须等于本记录第二节的值
+  unzip -o -q delivery-batch20-eval-V3-RELEASE-V3.1/part-0001-of-0001.zip -d /tmp/x && sha256sum /tmp/x/facts_audit.json /tmp/x/risk_queue.csv
+
+  # 5) 包内自检结果：直接读报告，不需要本项目的源码
+  python -c "import json;d=json.load(open('delivery-batch20-eval-V3-RELEASE-V3.1/包校验报告.json'));print(d['selfcheck']['n_items'],'项 /',d['selfcheck']['n_failed'],'失败 |',d['self_check'])"
+  # 期望：42 项 / 0 失败 | pass
+
+  注：重建自检需主仓库的 qc/bundle_selfcheck.py 与 qc/signoff_v2.py，发布仓库不带源码。
+  本记录不要求复核方跑它们 —— 结论已在报告里，且第 3、4 条已独立验证了哈希本身。
+
+================================================================
+本记录只陈述可被上述命令复现的事实；不复述任何结论性判断。
