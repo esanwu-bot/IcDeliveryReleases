@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T11:46:22+08:00",
+  "generated_at": "2026-11-04T11:56:36+08:00",
   "packaging_validation": "pass",
   "engineering_validation": "not_approved",
   "i18n_coverage": "measured",
@@ -13,11 +13,11 @@
     "NE555"
   ],
   "model_artifact_count": 30,
-  "zip_member_count": 38,
+  "zip_member_count": 39,
   "zip_crc": "pass",
   "source_hashes_unchanged": true,
-  "zip_sha256": "51f4c6bb02f036ef0667701345e825c98263596ed12513b634ea48ecd3086037",
-  "zip_size": 16460437,
+  "zip_sha256": "4aa1306f3aa2b4634c9ebd567caa9f9a0dbe20612549861b4341b63e38a4717f",
+  "zip_size": 16462368,
   "hash_rule": "文本物料 sha256(CRLF→LF normalized)；PDF 与 ZIP 按原始字节 sha256，二进制不做归一（归一一次哈希就变了，复核方用 sha256sum 永远对不上）",
   "verified_members": [
     {
@@ -130,7 +130,7 @@
     },
     {
       "member": "manifest.json",
-      "sha256": "588c4f5450cc868e4f87f21237d1aa5c0de7bc5a79b77cc68c37d0f10ec00696"
+      "sha256": "58009da09e29ab5f98b8846a800ec6729b9f8fd0e0c50c6a0c5ad0428d6e1bd8"
     },
     {
       "member": "NE555/NE555.html",
@@ -158,7 +158,7 @@
     },
     {
       "member": "README.md",
-      "sha256": "5d8b861eba2df7e7a4c1a0ea261c928926430d9aaddcd59276d0b556bc7732e3"
+      "sha256": "c30afa5ad833c37a6f1d99fed51fa778856231f1cefbbe985919d180001cb20e"
     },
     {
       "member": "risk_queue.csv",
@@ -170,7 +170,11 @@
     },
     {
       "member": "交付说明.md",
-      "sha256": "f06ec819dfddf6aa39943aa2e0bc05dd0b564eef1f9e4858123fe5d9daa0dddc"
+      "sha256": "4e0947b8894c73ca7e40638eb3f1e07988ebe78417fbabc117765e6a65451faf"
+    },
+    {
+      "member": "独立哈希复核记录.txt",
+      "sha256": "4db5fb44d2de33dde97f270da1f89310590fb2321de0507e1739d5a70accf5b1"
     }
   ],
   "selfcheck": {
@@ -183,8 +187,8 @@
     "items": [
       {
         "item": "members.sha256",
-        "expected": 35,
-        "actual": 35,
+        "expected": 36,
+        "actual": 36,
         "ok": true
       },
       {
@@ -399,8 +403,8 @@
       },
       {
         "item": "zip.sha256",
-        "expected": "51f4c6bb02f036ef0667701345e825c98263596ed12513b634ea48ecd3086037",
-        "actual": "51f4c6bb02f036ef0667701345e825c98263596ed12513b634ea48ecd3086037",
+        "expected": "4aa1306f3aa2b4634c9ebd567caa9f9a0dbe20612549861b4341b63e38a4717f",
+        "actual": "4aa1306f3aa2b4634c9ebd567caa9f9a0dbe20612549861b4341b63e38a4717f",
         "ok": true
       },
       {

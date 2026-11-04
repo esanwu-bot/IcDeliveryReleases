@@ -1,0 +1,43 @@
+独立哈希复核记录
+========================================================================
+生成时间   : 2026-11-04T11:56:04+08:00
+复核方法   : 全新 git clone → 解压 ZIP → 对解压出的文件算原始字节 SHA-256
+取证 clone  : E:/workspace/IcPdfParser/data/_delivery_releases
+发布仓库 URL : https://github.com/esanwu-bot/IcDeliveryReleases
+clone commit: c879edf1152a8699da7dec99582985b73a9bcd9a
+包名       : delivery-batch20-eval-V3-RELEASE-V3.1
+ZIP        : part-0001-of-0001.zip（本记录加入包内之前的那一版）
+
+口径声明
+------------------------------------------------------------------------
+· 本记录只核 **raw（原始字节）** —— 解压出来的就是原始字节，与 sha256sum 同口径。
+· 本记录**不**记录 ZIP 自身的 SHA-256：本文件会被打进 ZIP，写进去即自指。
+  ZIP 的哈希见 包校验报告.json::zip_sha256 与 signoff.final.json::package_sha256，
+  由复核方在包外重算。
+· facts_audit.json / risk_queue.csv 是验收根的输入，加附件重新打包不会改动
+  它们的字节，故本结论对最终 ZIP 同样成立；复核方解压最终 ZIP 重跑会得到同一组值。
+· 本记录生成于其被加入包内**之前**：加入本附件会使 ZIP 与提交号前进一次，
+  但那一次提交不触碰被核的两个成员。此处记录的是取证时点的 clone commit，
+  不是最终发布提交 —— 后者无法写进被它包含的文件里（同一条自指约束）。
+
+ZIP 成员数 : 38（本记录尚未计入；最终包多 1 个成员，即本文件）
+
+成员                  解压实测 sha256（raw）                                                  signoff.final 记的    结论
+------------------------------------------------------------------------
+facts_audit.json    c20e1420e603721d5aca537aa9fd880e9ffdcfe32009f0d4a058935a7aaf080a  c20e1420e603721d…   一致
+                    （归一 normalized 口径，非本记录核对项）                                        21b9c44a7fc2905e…
+risk_queue.csv      f85ba0161ca88349638a761ca281631e97d905482429b1b9aaec1eebfbbaa6a6  f85ba0161ca88349…   一致
+                    （归一 normalized 口径，非本记录核对项）                                        bd0429d82d0aad0f…
+
+========================================================================
+结论：PASS —— 从 clone 取出的 ZIP 内两个成员，其原始字节 SHA-256
+      与 signoff.final.json::binding 记录的 raw 值逐字节一致。
+      链式绑定（signoff → facts/risk → ZIP → 包校验报告）无断点。
+
+复核方可自行重跑（不使用本包任何脚本结果，仅用 git 与 sha256sum）：
+  git clone <repo> && cd <repo>
+  git checkout c879edf1152a8699da7dec99582985b73a9bcd9a   # 本记录取证的那次提交
+  cd delivery-batch20-eval-V3-RELEASE-V3.1
+  unzip -o part-0001-of-0001.zip -d /tmp/x
+  sha256sum /tmp/x/facts_audit.json /tmp/x/risk_queue.csv
+  python -c "import json;print(json.load(open('signoff.final.json'))['binding'])"

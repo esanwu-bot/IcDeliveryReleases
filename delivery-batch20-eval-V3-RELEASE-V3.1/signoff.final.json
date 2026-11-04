@@ -19,7 +19,7 @@
       "raw": "ZIP 成员原始字节的 sha256（sha256sum 可直接复核）",
       "normalized": "字节流 CRLF→LF 归一后的 sha256（与 包校验报告.json 同口径）"
     },
-    "package_sha256": "51f4c6bb02f036ef0667701345e825c98263596ed12513b634ea48ecd3086037",
+    "package_sha256": "4aa1306f3aa2b4634c9ebd567caa9f9a0dbe20612549861b4341b63e38a4717f",
     "note": "链式绑定（无环）：signoff → facts_audit/risk_queue 的哈希；manifest.members → signoff 的哈希；ZIP → 全部；包校验报告.json（ZIP 外）→ ZIP 的哈希。任何一环被改动，下游哈希对不上，可用 `verify` 子命令一键复核。两份哈希口径并存不是笔误：raw 供 sha256sum 直核，normalized 供 包校验报告 对账，`verify` 会分别校验两者。（本副本在 ZIP 之外，故自指字段有值。）"
   },
   "mpns": {
@@ -390,8 +390,8 @@
       "blocked_items": 41
     }
   },
-  "package_sha256": "51f4c6bb02f036ef0667701345e825c98263596ed12513b634ea48ecd3086037",
+  "package_sha256": "4aa1306f3aa2b4634c9ebd567caa9f9a0dbe20612549861b4341b63e38a4717f",
   "package_zip": "part-0001-of-0001.zip",
-  "package_bytes": 16460437,
-  "finalized_at": "2026-11-04T11:46:32+08:00"
+  "package_bytes": 16462368,
+  "finalized_at": "2026-11-04T11:56:42+08:00"
 }
