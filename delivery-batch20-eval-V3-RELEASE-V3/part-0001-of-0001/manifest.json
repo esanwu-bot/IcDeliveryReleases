@@ -1,0 +1,700 @@
+{
+  "schema_version": "acceptance-delivery/v1",
+  "generated_at": "2026-11-04T11:21:14+08:00",
+  "packager_sha256": "26d16a7a132cc20ee59797d6dcce2511f65901f98c773a8162a5f2ddb582cd7d",
+  "source_root": "staging_batch20_v3_release_v3",
+  "output_root": "delivery-batch20-eval-V3-RELEASE-V3",
+  "mode": "existing_artifacts_repackage_only",
+  "status": "review_candidate",
+  "release_status": "not_approved",
+  "mpn_count": 5,
+  "shard": "part-0001-of-0001.zip",
+  "records": [
+    {
+      "requested_mpn": "LM317",
+      "safe_name": "LM317",
+      "gate": "BLOCKED",
+      "gate_reasons": "pin_validation=unverified",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "CONTENT_APPROVED",
+      "content_signoff": "APPROVED (with warnings)",
+      "content_signoff_by": "wuxiaoxian",
+      "content_signoff_note": "热阻 RθJA 等 6 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值已与 PDF 热阻表逐行对齐（V1-3 按封装列展开，34 行）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）",
+      "facts_verdict": "partial_pass",
+      "facts_note": "core fields pass (no MISMATCH); 6 sub-item(s) below the required anchor grade -> anchor_gate=blocked",
+      "facts_rows": 62,
+      "pin_validation": {
+        "status": "unverified",
+        "reason": "count_unverified",
+        "actual_count": 3,
+        "det_count": 3,
+        "model_count": 3,
+        "expected_count": null,
+        "expected_counts": {
+          "DCY": 4,
+          "KCS": 3,
+          "KCT": 3,
+          "KTT": 3
+        },
+        "dup_names": []
+      },
+      "row_anchor": "55/62",
+      "paragraph_anchor": "0/62",
+      "container_verified": "6/62",
+      "coord_anchor": "55/62",
+      "anchor_gate": "blocked",
+      "document_subject": "LM317",
+      "data_subject": "LM317",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+      "pdf_sha256_packaged": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "LM358",
+      "safe_name": "LM358",
+      "gate": "BLOCKED",
+      "gate_reasons": "pin_validation=unverified",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "CONTENT_APPROVED",
+      "content_signoff": "APPROVED (with warnings)",
+      "content_signoff_by": "wuxiaoxian",
+      "content_signoff_note": "ESD HBM 1 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值与 PDF 一致；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）",
+      "facts_verdict": "partial_pass",
+      "facts_note": "core fields pass (no MISMATCH); 1 sub-item(s) below the required anchor grade -> anchor_gate=blocked",
+      "facts_rows": 101,
+      "pin_validation": {
+        "status": "unverified",
+        "reason": "count_unverified",
+        "actual_count": 8,
+        "det_count": 8,
+        "model_count": 8,
+        "expected_count": null,
+        "expected_counts": {
+          "D": 8,
+          "DGK": 8,
+          "P": 8,
+          "PS": 8,
+          "PW": 8,
+          "DDF": 8,
+          "FK": 20,
+          "JG": 8
+        },
+        "dup_names": []
+      },
+      "row_anchor": "99/101",
+      "paragraph_anchor": "1/101",
+      "container_verified": "1/101",
+      "coord_anchor": "100/101",
+      "anchor_gate": "blocked",
+      "document_subject": "LM358",
+      "data_subject": "LM358",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "pdf_sha256_packaged": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "CDC6CE025000ADLET",
+      "safe_name": "CDC6CE025000ADLET",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "CONTENT_APPROVED",
+      "content_signoff": "APPROVED (with warnings)",
+      "content_signoff_by": "wuxiaoxian",
+      "content_signoff_note": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）",
+      "facts_verdict": "partial",
+      "facts_note": "",
+      "facts_rows": 148,
+      "pin_validation": {
+        "status": "passed",
+        "reason": "all_checks_passed",
+        "actual_count": 4,
+        "det_count": 2,
+        "model_count": 4,
+        "expected_count": 4,
+        "expected_counts": {},
+        "dup_names": []
+      },
+      "row_anchor": "120/148",
+      "paragraph_anchor": "0/148",
+      "container_verified": "2/148",
+      "coord_anchor": "120/148",
+      "anchor_gate": "blocked",
+      "document_subject": "CDC6CE025000ADLET",
+      "data_subject": "CDC6CE025000ADLET",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_sha256_packaged": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "CDC6CE025000ADLFR",
+      "safe_name": "CDC6CE025000ADLFR",
+      "gate": "CLEAN",
+      "gate_reasons": "",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "CONTENT_APPROVED",
+      "content_signoff": "APPROVED (with warnings)",
+      "content_signoff_by": "wuxiaoxian",
+      "content_signoff_note": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）",
+      "facts_verdict": "partial",
+      "facts_note": "",
+      "facts_rows": 148,
+      "pin_validation": {
+        "status": "passed",
+        "reason": "all_checks_passed",
+        "actual_count": 4,
+        "det_count": 2,
+        "model_count": 4,
+        "expected_count": 4,
+        "expected_counts": {},
+        "dup_names": []
+      },
+      "row_anchor": "120/148",
+      "paragraph_anchor": "0/148",
+      "container_verified": "2/148",
+      "coord_anchor": "120/148",
+      "anchor_gate": "blocked",
+      "document_subject": "CDC6CE025000ADLFR",
+      "data_subject": "CDC6CE025000ADLFR",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_sha256_packaged": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    },
+    {
+      "requested_mpn": "NE555",
+      "safe_name": "NE555",
+      "gate": "BLOCKED",
+      "gate_reasons": "pin_validation=unverified",
+      "formal_container_integrity": "pass",
+      "ac_data_state": "not_withheld",
+      "container_state_source": "metadata",
+      "container_state_match": true,
+      "release_state": "CONTENT_APPROVED",
+      "content_signoff": "APPROVED (with warnings)",
+      "content_signoff_by": "wuxiaoxian",
+      "content_signoff_note": "THRES/TRIG 电压电平等 41 条仅有弱证据、无行坐标（have=weak, need=paragraph_anchor）；引脚硬闸 unverified（count_unverified，封装表 8 脚与 FK=20 混列）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）",
+      "facts_verdict": "partial_pass",
+      "facts_note": "core fields pass (no MISMATCH); 41 sub-item(s) below the required anchor grade -> anchor_gate=blocked",
+      "facts_rows": 158,
+      "pin_validation": {
+        "status": "unverified",
+        "reason": "count_unverified",
+        "actual_count": 8,
+        "det_count": 1,
+        "model_count": 8,
+        "expected_count": null,
+        "expected_counts": {
+          "D": 8,
+          "FK": 20,
+          "JG": 8,
+          "P": 8,
+          "PS": 8,
+          "PW": 8
+        },
+        "dup_names": []
+      },
+      "row_anchor": "116/158",
+      "paragraph_anchor": "0/158",
+      "container_verified": "0/158",
+      "coord_anchor": "116/158",
+      "anchor_gate": "blocked",
+      "document_subject": "NE555",
+      "data_subject": "NE555",
+      "document_scope": "",
+      "subject_match": true,
+      "i18n_complete": "false",
+      "i18n_coverage": "0.0",
+      "pin_desc_exempt": "true",
+      "brand": "Texas Instruments",
+      "identity": "chip",
+      "identity_state": "IDENTITY_SUPPORTED",
+      "scope": "device",
+      "pdf_sha256_recorded": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+      "pdf_sha256_packaged": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+      "pdf_hash_match": true,
+      "pdf_included": true,
+      "status": "review_candidate",
+      "release_status": "not_approved",
+      "artifacts": "6/8",
+      "present": [
+        "json",
+        "html",
+        "symbol",
+        "pdf",
+        "seo",
+        "i18n"
+      ],
+      "missing": [
+        "alt_json",
+        "alt_html"
+      ],
+      "html_languages": [
+        "en"
+      ],
+      "missing_html_languages": [
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "json_language_blocks": [],
+      "engineering_validation": "not_approved"
+    }
+  ],
+  "members": [
+    {
+      "member": "LM317/LM317.json",
+      "key": "json",
+      "size": 51310,
+      "sha256": "43ce8d250123a6123d82b8d06ca5063321cfd461eaee511a347a9e0b5363b30b",
+      "source": "parsed/LM317.json"
+    },
+    {
+      "member": "LM317/LM317.html",
+      "key": "html",
+      "size": 29953,
+      "sha256": "73b2ba9b2c33842bb0dbdc7de175db0a3a0a90ae52ef69434f512ebdb710b54f",
+      "source": "txt/LM317.txt"
+    },
+    {
+      "member": "LM317/LM317.symbols.html",
+      "key": "symbol",
+      "size": 6339,
+      "sha256": "41cd94cb556b467a8a96b607a9788fa343750fa384d5525969b2961abbe73c2e",
+      "source": "symbols/LM317.html"
+    },
+    {
+      "member": "LM317/LM317.pdf",
+      "key": "pdf",
+      "size": 2578150,
+      "sha256": "1646fb2e4f8cf8c2cbd93aaf22edad368571619ad062476deca8ee29f95c65d3",
+      "source": "pdfs/LM317.pdf"
+    },
+    {
+      "member": "LM317/LM317.seo.json",
+      "key": "seo",
+      "size": 4137,
+      "sha256": "4d7ac958b89679f8c8e596d271b260669009630673b4c8afc9ee861fe66d5360",
+      "source": "seo/LM317.seo.json"
+    },
+    {
+      "member": "LM317/LM317.i18n.json",
+      "key": "i18n",
+      "size": 362,
+      "sha256": "fffd121b68edaf1aedd0379857e5bfe9c405361bab512449f08c8894d7ea5e71",
+      "source": "txt/LM317.i18n.json"
+    },
+    {
+      "member": "LM358/LM358.json",
+      "key": "json",
+      "size": 89784,
+      "sha256": "bb27fb1e9b2e6a5fb2428242b84844f57fe96b14164fc1e7701d42aa887ccfb2",
+      "source": "parsed/LM358.json"
+    },
+    {
+      "member": "LM358/LM358.html",
+      "key": "html",
+      "size": 43075,
+      "sha256": "dbb6a49c47b70e221f4601656bd6c08ab42632c98e6ae222a31fc9a314dee0e5",
+      "source": "txt/LM358.txt"
+    },
+    {
+      "member": "LM358/LM358.symbols.html",
+      "key": "symbol",
+      "size": 10795,
+      "sha256": "4dfe302ff2cbf089f9a5f8a67f5d604bdbbf7930cbc1c0cc981e6098f3cd0cfe",
+      "source": "symbols/LM358.html"
+    },
+    {
+      "member": "LM358/LM358.pdf",
+      "key": "pdf",
+      "size": 4150801,
+      "sha256": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "source": "pdfs/LM358.pdf"
+    },
+    {
+      "member": "LM358/LM358.seo.json",
+      "key": "seo",
+      "size": 4582,
+      "sha256": "23585badd4ccd197e4b035654c004432f2974e260cdd2d99dd294485f21cb96e",
+      "source": "seo/LM358.seo.json"
+    },
+    {
+      "member": "LM358/LM358.i18n.json",
+      "key": "i18n",
+      "size": 362,
+      "sha256": "33fdbca7684414149358d14c29e71a78e010b8622b12309abaf0e5652d13fccb",
+      "source": "txt/LM358.i18n.json"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.json",
+      "key": "json",
+      "size": 124716,
+      "sha256": "c6ccfa9b28509054510a899f44650c45e362e275594ce9775e6061199d2c7501",
+      "source": "parsed/CDC6CE025000ADLET.json"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.html",
+      "key": "html",
+      "size": 42977,
+      "sha256": "6a428f0e651d767c17cc25defdd137a3dca8686c3890d7e6a747e8f3e3c29f23",
+      "source": "txt/CDC6CE025000ADLET.txt"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.symbols.html",
+      "key": "symbol",
+      "size": 7113,
+      "sha256": "0b15756f00db71507fe8e529318933ccac093511782ddf5df8b2dab0e15de195",
+      "source": "symbols/CDC6CE025000ADLET.html"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.pdf",
+      "key": "pdf",
+      "size": 4579646,
+      "sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "source": "pdfs/CDC6CE025000ADLET.pdf"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.seo.json",
+      "key": "seo",
+      "size": 4478,
+      "sha256": "2d42859f547cbd0acffbd2bf85ae7358a531370000c4a45e65dce34e09b7eaa0",
+      "source": "seo/CDC6CE025000ADLET.seo.json"
+    },
+    {
+      "member": "CDC6CE025000ADLET/CDC6CE025000ADLET.i18n.json",
+      "key": "i18n",
+      "size": 374,
+      "sha256": "87b84b0990cdb585a90b672bf987df7a027502f011573cd51f3245bf2971dbbc",
+      "source": "txt/CDC6CE025000ADLET.i18n.json"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.json",
+      "key": "json",
+      "size": 125930,
+      "sha256": "254c87adc827bef8be26647a46c93b3a4375a734e31eaf010feb0da28c36659a",
+      "source": "parsed/CDC6CE025000ADLFR.json"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.html",
+      "key": "html",
+      "size": 44076,
+      "sha256": "8e5a420c0195fca83a10baa4bfdebb91bd1303e6e5a8bdf8e09db81dfac78234",
+      "source": "txt/CDC6CE025000ADLFR.txt"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.symbols.html",
+      "key": "symbol",
+      "size": 7113,
+      "sha256": "696b363a0494ca8c803b0f39f7ff3a548fe0e7411e7f2e29fa9e8ce0d20841b1",
+      "source": "symbols/CDC6CE025000ADLFR.html"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.pdf",
+      "key": "pdf",
+      "size": 4579646,
+      "sha256": "6756ca5f8426140c34ca9a98a2ad9a4105c492337e073c96ed619c0368e16404",
+      "source": "pdfs/CDC6CE025000ADLFR.pdf"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.seo.json",
+      "key": "seo",
+      "size": 4440,
+      "sha256": "3adea4752dac76ebb42f70ef36a040fbcf193fd7cc036f871dca711e423a2ba9",
+      "source": "seo/CDC6CE025000ADLFR.seo.json"
+    },
+    {
+      "member": "CDC6CE025000ADLFR/CDC6CE025000ADLFR.i18n.json",
+      "key": "i18n",
+      "size": 374,
+      "sha256": "1e9b5e25184f196034aa903edfef1731c712fa8225d22c1bbf1322cb2a68ebdd",
+      "source": "txt/CDC6CE025000ADLFR.i18n.json"
+    },
+    {
+      "member": "NE555/NE555.json",
+      "key": "json",
+      "size": 135338,
+      "sha256": "93df8ae75cec5dca2337f012b3d1163f79df9747acb11fde6db9b62dd846d10e",
+      "source": "parsed/NE555.json"
+    },
+    {
+      "member": "NE555/NE555.html",
+      "key": "html",
+      "size": 56753,
+      "sha256": "6857496904bb87cc46ae40a7ebf24da3faf56f3ede7c700030556affd9817b4b",
+      "source": "txt/NE555.txt"
+    },
+    {
+      "member": "NE555/NE555.symbols.html",
+      "key": "symbol",
+      "size": 10879,
+      "sha256": "07b9637ec5760f9eac0e5443322506b52b26e8fe684eac1d3435108d8a19068e",
+      "source": "symbols/NE555.html"
+    },
+    {
+      "member": "NE555/NE555.pdf",
+      "key": "pdf",
+      "size": 2258813,
+      "sha256": "a3756e59fd06d0ba736edf9ffe71d99d2aae33fb7e49fedc86165a241179f4a6",
+      "source": "pdfs/NE555.pdf"
+    },
+    {
+      "member": "NE555/NE555.seo.json",
+      "key": "seo",
+      "size": 4187,
+      "sha256": "fc3ac664cfeaec0685df5ba363a6c4c0b1a1ef45a37e49c92969eded9696fa21",
+      "source": "seo/NE555.seo.json"
+    },
+    {
+      "member": "NE555/NE555.i18n.json",
+      "key": "i18n",
+      "size": 362,
+      "sha256": "b2e573e8ff579181f5fe4172f94f029bb5fa4a450fdfd245a53eefe4cebe5e5f",
+      "source": "txt/NE555.i18n.json"
+    },
+    {
+      "member": "facts_audit.csv",
+      "key": "supporting_document",
+      "size": 233418,
+      "sha256": "0dc080f45ae7a4513d51b3c547091e6c98899fe565f81c29874dd7cf476a6c92",
+      "source": "facts_audit.csv"
+    },
+    {
+      "member": "facts_audit.json",
+      "key": "supporting_document",
+      "size": 13067,
+      "sha256": "21b9c44a7fc2905e7b36951bf03577b8e33cd5573d2291148677342bdcb885a9",
+      "source": "facts_audit.json"
+    },
+    {
+      "member": "risk_queue.csv",
+      "key": "supporting_document",
+      "size": 42295,
+      "sha256": "bd0429d82d0aad0fe1e5ab0ebe4e98f53e361f9ed880f4725487e6afa76b2a30",
+      "source": "risk_queue.csv"
+    },
+    {
+      "member": "signoff.json",
+      "key": "signoff",
+      "size": 15971,
+      "sha256": "e38d68337d7d57d07483cbcaea19c218d4dc2dc0bff6c10439cff6d98a3ce5b9",
+      "source": "signoff.json"
+    },
+    {
+      "member": "交付说明.md",
+      "key": "delivery_note",
+      "size": 16736,
+      "sha256": "fbd57e4215f7c330a6d03a1254155aa29b25284e4903443cb88183f6c048b41f",
+      "source": "<generated by delivery_bundle.render_delivery_note>"
+    }
+  ],
+  "attachments": [],
+  "skipped_count": 0,
+  "skipped_reasons": {},
+  "facts_summary": {
+    "source": "facts_audit.json + facts_audit.csv + risk_queue.csv",
+    "facts_rows_total": 617,
+    "facts_audit_rows": 617,
+    "risk_queue_rows": 259,
+    "n_mpns": 5,
+    "anchor_gate_blocked": 5
+  },
+  "content_signoff_summary": {
+    "counts": {
+      "APPROVED (with warnings)": 5
+    },
+    "signers": [
+      "wuxiaoxian"
+    ],
+    "waived": [
+      {
+        "mpn": "LM317",
+        "note": "热阻 RθJA 等 6 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值已与 PDF 热阻表逐行对齐（V1-3 按封装列展开，34 行）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）"
+      },
+      {
+        "mpn": "LM358",
+        "note": "ESD HBM 1 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值与 PDF 一致；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）"
+      },
+      {
+        "mpn": "CDC6CE025000ADLET",
+        "note": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）"
+      },
+      {
+        "mpn": "CDC6CE025000ADLFR",
+        "note": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）"
+      },
+      {
+        "mpn": "NE555",
+        "note": "THRES/TRIG 电压电平等 41 条仅有弱证据、无行坐标（have=weak, need=paragraph_anchor）；引脚硬闸 unverified（count_unverified，封装表 8 脚与 FK=20 混列）；机器审计未获坐标证据（anchor_gate=blocked），由人工专家强签放行（签署日期 2026-11-04）"
+      }
+    ],
+    "policy": "机器维度（gate / anchor_gate）与人工维度（content_signoff）并列记录；content_signoff=APPROVED (with warnings) 的读法是「机器审计未获坐标证据，由人工专家强签放行」，不等于机器已验过。"
+  },
+  "validation_scope": "Allowlist, source hashes, ZIP paths and CRC only; not engineering acceptance",
+  "release_ladder": [
+    "PACKAGING_PASSED",
+    "DATA_VALIDATED",
+    "IDENTITY_APPROVED",
+    "CONTENT_APPROVED",
+    "RELEASE_APPROVED"
+  ],
+  "pdf_policy": "源PDF原件随包；pdf_hash_match=false 判 BLOCKED",
+  "pin_usage_notice": "`pin_validation=unverified`、或仅作总数对账的 `passed`，其引脚数据**仅供预览**，绝对不可用于自动接线、封装选型或逆向工程；需要接线级可用性时，必须逐脚对照原厂 PDF 并由人工签核。",
+  "gate_semantics": "`gate` 判物料硬伤与身份（溯源链/引脚硬闸/PDF 一致性/core_validation/identity_state），四态 BLOCKED|UNRESOLVED|PATCHED|CLEAN；`anchor_gate` 判每条事实是否达到其载体要求的证据等级（行坐标/段落锚/容器级）。二者不可互推：`gate=CLEAN` 不代表 `anchor_gate=pass`。"
+}

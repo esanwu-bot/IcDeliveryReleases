@@ -1,0 +1,13 @@
+{
+  "schema": "i18n-coverage/v1",
+  "mpn": "NE555",
+  "languages": {
+    "en": {
+      "i18n_complete": true,
+      "i18n_coverage": null,
+      "fallback_events": 0
+    }
+  },
+  "pin_desc_exempt": true,
+  "pin_desc_exempt_reason": "pin_configuration descriptions are kept in the source language (IEEE device-datasheet convention); not an untranslated residue"
+}

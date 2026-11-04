@@ -1,0 +1,107 @@
+{
+  "mpn": "LM358",
+  "generated_at": "2026-11-04T08:40:30+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "LM358 Dual Op Amp, 3V-36V, 1.2MHz Bandwidth",
+    "title_zh": "LM358 双运放，3V-36V供电，1.2MHz带宽",
+    "meta_description_en": "The LM358 is a dual operational amplifier with 3V to 36V supply range, 1.2MHz unity-gain bandwidth, and 300µA quiescent current. Ideal for power supplies, motor control, and industrial applications.",
+    "meta_description_zh": "LM358 是一款双运放，工作电压3V至36V，单位增益带宽1.2MHz，静态电流300µA。适用于电源、电机控制及工业应用。",
+    "keywords": [
+      "LM358",
+      "dual op amp",
+      "operational amplifier",
+      "3V to 36V",
+      "1.2MHz bandwidth",
+      "low quiescent current",
+      "motor control",
+      "power supply"
+    ],
+    "data_subject": "LM358",
+    "attribution": "device"
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 2,
+  "shared_by_applications": {
+    "app-power-management.png": [
+      "Merchant network and server power supply units",
+      "Power supplies and mobile chargers"
+    ],
+    "app-industrial-automation.png": [
+      "Multi-function printers",
+      "Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor"
+    ]
+  },
+  "distinct_images": [
+    "app-industrial-automation.png",
+    "app-power-management.png"
+  ],
+  "distinct_image_count": 2,
+  "images": [
+    {
+      "application": "Merchant network and server power supply units",
+      "category": "Power Management",
+      "image": "app-power-management.png",
+      "filename": "lm358-power-management.png",
+      "asset": "/upload/img/app-power-management.png",
+      "alt": "LM358 Merchant network and server power supply units application — Power Management illustration",
+      "title": "LM358 used in Merchant network and server power supply units (Power M…",
+      "caption": "Merchant network and server power supply units — a typical power management application of LM358.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Multi-function printers",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "lm358-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "LM358 Multi-function printers application — Industrial Automation illustration",
+      "title": "LM358 used in Multi-function printers (Industrial Automation)",
+      "caption": "Multi-function printers — a typical industrial automation application of LM358.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Power supplies and mobile chargers",
+      "category": "Power Management",
+      "image": "app-power-management.png",
+      "filename": "lm358-power-management.png",
+      "asset": "/upload/img/app-power-management.png",
+      "alt": "LM358 Power supplies and mobile chargers application — Power Management illustration",
+      "title": "LM358 used in Power supplies and mobile chargers (Power Management)",
+      "caption": "Power supplies and mobile chargers — a typical power management application of LM358.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "lm358-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "LM358 Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor…",
+      "title": "LM358 used in Motor control: AC induction, brushed DC, brushless DC,…",
+      "caption": "Motor control: AC induction, brushed DC, brushless DC, high-voltage, low-voltage, permanent magnet, and stepper motor — a typical industrial automation application of LM358.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "LM358",
+    "attribution": "device",
+    "subject_note": ""
+  }
+}
