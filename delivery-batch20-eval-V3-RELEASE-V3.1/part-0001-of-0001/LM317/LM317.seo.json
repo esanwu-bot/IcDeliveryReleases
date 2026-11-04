@@ -1,0 +1,104 @@
+{
+  "mpn": "LM317",
+  "generated_at": "2026-11-04T08:38:38+08:00",
+  "table": {
+    "source": "E:\\workspace\\IcPdfParser\\uploads\\应用领域图片命名表.xlsx",
+    "imported_at": "2026-10-23T08:31:15+08:00",
+    "categories": 16
+  },
+  "page": {
+    "title_en": "LM317 Adjustable Voltage Regulator 1.5A 1.25V-37V",
+    "title_zh": "LM317 可调电压稳压器 1.5A 1.25V-37V",
+    "meta_description_en": "The LM317 is a 3-pin adjustable positive voltage regulator with 1.5A output current and adjustable output from 1.25V to 37V. Features include low line/load regulation, thermal protection, and multiple package options.",
+    "meta_description_zh": "LM317 是一款三引脚可调正电压稳压器，输出电流达1.5A，输出电压范围1.25V至37V。具备低线性/负载调整率、热过载保护及多种封装选项。",
+    "keywords": [
+      "LM317",
+      "adjustable voltage regulator",
+      "1.5A regulator",
+      "1.25V to 37V",
+      "SOT-223",
+      "TO-263",
+      "TO-220",
+      "voltage regulator IC"
+    ],
+    "data_subject": "LM317",
+    "attribution": "device"
+  },
+  "shared_category_icon": true,
+  "shared_icon_count": 1,
+  "shared_by_applications": {
+    "app-industrial-automation.png": [
+      "Multifunction printers",
+      "AC drive power stage modules",
+      "Electricity meters",
+      "Servo drive control modules"
+    ]
+  },
+  "distinct_images": [
+    "app-industrial-automation.png"
+  ],
+  "distinct_image_count": 1,
+  "images": [
+    {
+      "application": "Multifunction printers",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "lm317-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "LM317 Multifunction printers application — Industrial Automation illustration",
+      "title": "LM317 used in Multifunction printers (Industrial Automation)",
+      "caption": "Multifunction printers — a typical industrial automation application of LM317.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "AC drive power stage modules",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "lm317-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "LM317 AC drive power stage modules application — Industrial Automation illustration",
+      "title": "LM317 used in AC drive power stage modules (Industrial Automation)",
+      "caption": "AC drive power stage modules — a typical industrial automation application of LM317.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Electricity meters",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "lm317-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "LM317 Electricity meters application — Industrial Automation illustration",
+      "title": "LM317 used in Electricity meters (Industrial Automation)",
+      "caption": "Electricity meters — a typical industrial automation application of LM317.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    },
+    {
+      "application": "Servo drive control modules",
+      "category": "Industrial Automation",
+      "image": "app-industrial-automation.png",
+      "filename": "lm317-industrial-automation.png",
+      "asset": "/upload/img/app-industrial-automation.png",
+      "alt": "LM317 Servo drive control modules application — Industrial Automation illustration",
+      "title": "LM317 used in Servo drive control modules (Industrial Automation)",
+      "caption": "Servo drive control modules — a typical industrial automation application of LM317.",
+      "width": 64,
+      "height": 64,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  ],
+  "subject": {
+    "data_subject": "LM317",
+    "attribution": "device",
+    "subject_note": ""
+  }
+}
