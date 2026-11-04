@@ -1,0 +1,374 @@
+{
+  "schema": "content-signoff/v2",
+  "batch": "delivery-batch20-eval-V3-RELEASE",
+  "signed_at": "2026-11-04",
+  "signoff_by": "wuxiaoxian",
+  "scope": "batch20 V3 正式发布候选（7 件中剔除 2 件后剩 5 件）",
+  "policy": "机器维度（gate / anchor_gate）与人工维度（content_signoff）并列记录。content_approved=true 允许 release_state 跨过 DATA_VALIDATED 这一机器档位，但不跨身份门禁。跨级必须留痕：manifest 的 content_signoff_note 与 README 速览均写明豁免理由。",
+  "excluded": {
+    "ADS42JB49SEK": "人工复核确认原厂 PDF 第 6 页把 DA0P/M 写在一起（脚号 54、53），模型抽取忠于原文；但差分对未拆分、物理引脚无法接线（D4 判 failed 正确），且电气维度 43% 未验证 —— 维持 Rejected 退回。",
+    "ADS1675REF": "D4 引脚硬闸判 failed（DOUT/DRDY/SCLK 重名，非电源/参考族可重复名），引脚集不可用于接线 —— 从 V3 发布候选中剔除。"
+  },
+  "binding": {
+    "scheme": "facts-anchor/v1",
+    "facts_audit_sha256": "c20e1420e603721d5aca537aa9fd880e9ffdcfe32009f0d4a058935a7aaf080a",
+    "risk_queue_sha256": "f85ba0161ca88349638a761ca281631e97d905482429b1b9aaec1eebfbbaa6a6",
+    "package_sha256": "4dd3a745aa7590a3014034267b4612ef6173f262fd040232966c50f084bdc78b",
+    "note": "链式绑定（无环）：signoff → facts_audit/risk_queue 的哈希；manifest.members → signoff 的哈希；ZIP → 全部；包校验报告.json（ZIP 外）→ ZIP 的哈希。任何一环被改动，下游哈希对不上，可用 `verify` 子命令一键复核。（本副本在 ZIP 之外，故自指字段有值。）"
+  },
+  "mpns": {
+    "LM317": {
+      "mpn": "LM317",
+      "reviewer": "wuxiaoxian",
+      "reviewed_at": "2026-11-04",
+      "decision": "APPROVED_WITH_WARNINGS",
+      "machine_anchor_gate": "BLOCKED",
+      "risk_accepted": "热阻 RθJA 等 6 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值已与 PDF 热阻表逐行对齐（V1-3 按封装列展开，34 行），由人工专家强签放行",
+      "approved_dimensions": [
+        "prose specs"
+      ],
+      "excluded_dimensions": [
+        "electrical/spec tables (54/60 anchored)",
+        "pin_validation=unverified (count_unverified)"
+      ],
+      "evidence_refs": [
+        {
+          "pdf": "LM317.pdf",
+          "container_label": "RθJA",
+          "pages": [
+            "4"
+          ],
+          "count": 6,
+          "page_unresolved": false
+        }
+      ],
+      "reason": "人工逐字段复核 62 行后签署：机器侧 6 条未达坐标级门槛（不达标清单见 evidence_refs），内容与 PDF 逐条对照一致，接受该风险放行内容审批；机器结论 anchor_gate 保持 blocked 不改。",
+      "package_sha256": null,
+      "package_sha256_note": "本文件位于 ZIP 内，ZIP 的 SHA-256 不可能写进它自身（自指）。最终 ZIP 的哈希见同目录外层 `signoff.final.json` 与 `包校验报告.json#zip_sha256`。",
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "waiver": "热阻 RθJA 等 6 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值已与 PDF 热阻表逐行对齐（V1-3 按封装列展开，34 行），由人工专家强签放行",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 6
+    },
+    "LM358": {
+      "mpn": "LM358",
+      "reviewer": "wuxiaoxian",
+      "reviewed_at": "2026-11-04",
+      "decision": "APPROVED_WITH_WARNINGS",
+      "machine_anchor_gate": "BLOCKED",
+      "risk_accepted": "ESD HBM 1 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值与 PDF 一致，由人工专家强签放行",
+      "approved_dimensions": [
+        "prose specs"
+      ],
+      "excluded_dimensions": [
+        "electrical/spec tables (98/99 anchored)",
+        "pin_validation=unverified (count_unverified)"
+      ],
+      "evidence_refs": [
+        {
+          "pdf": "LM358.pdf",
+          "container_label": "HBM",
+          "pages": [
+            "1"
+          ],
+          "count": 1,
+          "page_unresolved": false
+        }
+      ],
+      "reason": "人工逐字段复核 101 行后签署：机器侧 1 条未达坐标级门槛（不达标清单见 evidence_refs），内容与 PDF 逐条对照一致，接受该风险放行内容审批；机器结论 anchor_gate 保持 blocked 不改。",
+      "package_sha256": null,
+      "package_sha256_note": "本文件位于 ZIP 内，ZIP 的 SHA-256 不可能写进它自身（自指）。最终 ZIP 的哈希见同目录外层 `signoff.final.json` 与 `包校验报告.json#zip_sha256`。",
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "waiver": "ESD HBM 1 条仅有容器级复现、无行坐标（have=container_verified, need=row_anchor）；数值与 PDF 一致，由人工专家强签放行",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 1
+    },
+    "CDC6CE025000ADLET": {
+      "mpn": "CDC6CE025000ADLET",
+      "reviewer": "wuxiaoxian",
+      "reviewed_at": "2026-11-04",
+      "decision": "APPROVED_WITH_WARNINGS",
+      "machine_anchor_gate": "BLOCKED",
+      "risk_accepted": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账），由人工专家强签放行",
+      "approved_dimensions": [],
+      "excluded_dimensions": [
+        "electrical/spec tables (103/127 anchored)",
+        "prose specs (17/21 anchored)",
+        "pin_validation=passed (all_checks_passed)"
+      ],
+      "evidence_refs": [
+        {
+          "pdf": "CDC6CE025000ADLET.pdf",
+          "container_label": "CDM",
+          "pages": [
+            "5"
+          ],
+          "count": 1,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLET.pdf",
+          "container_label": "FT",
+          "pages": [
+            "1"
+          ],
+          "count": 4,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLET.pdf",
+          "container_label": "HBM",
+          "pages": [
+            "5"
+          ],
+          "count": 1,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLET.pdf",
+          "container_label": "IDD",
+          "pages": [
+            "1",
+            "2",
+            "6"
+          ],
+          "count": 12,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLET.pdf",
+          "container_label": "IDD-OD",
+          "pages": [
+            "6"
+          ],
+          "count": 2,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLET.pdf",
+          "container_label": "RJ",
+          "pages": [
+            "8"
+          ],
+          "count": 6,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLET.pdf",
+          "container_label": "tR/tF",
+          "pages": [
+            "7"
+          ],
+          "count": 2,
+          "page_unresolved": false
+        }
+      ],
+      "reason": "人工逐字段复核 148 行后签署：机器侧 28 条未达坐标级门槛（不达标清单见 evidence_refs），内容与 PDF 逐条对照一致，接受该风险放行内容审批；机器结论 anchor_gate 保持 blocked 不改。",
+      "package_sha256": null,
+      "package_sha256_note": "本文件位于 ZIP 内，ZIP 的 SHA-256 不可能写进它自身（自指）。最终 ZIP 的哈希见同目录外层 `signoff.final.json` 与 `包校验报告.json#zip_sha256`。",
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "waiver": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账），由人工专家强签放行",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 28
+    },
+    "CDC6CE025000ADLFR": {
+      "mpn": "CDC6CE025000ADLFR",
+      "reviewer": "wuxiaoxian",
+      "reviewed_at": "2026-11-04",
+      "decision": "APPROVED_WITH_WARNINGS",
+      "machine_anchor_gate": "BLOCKED",
+      "risk_accepted": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账），由人工专家强签放行",
+      "approved_dimensions": [],
+      "excluded_dimensions": [
+        "electrical/spec tables (103/127 anchored)",
+        "prose specs (17/21 anchored)",
+        "pin_validation=passed (all_checks_passed)"
+      ],
+      "evidence_refs": [
+        {
+          "pdf": "CDC6CE025000ADLFR.pdf",
+          "container_label": "CDM",
+          "pages": [
+            "5"
+          ],
+          "count": 1,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLFR.pdf",
+          "container_label": "FT",
+          "pages": [
+            "1"
+          ],
+          "count": 4,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLFR.pdf",
+          "container_label": "HBM",
+          "pages": [
+            "5"
+          ],
+          "count": 1,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLFR.pdf",
+          "container_label": "IDD",
+          "pages": [
+            "1",
+            "2",
+            "6"
+          ],
+          "count": 12,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLFR.pdf",
+          "container_label": "IDD-OD",
+          "pages": [
+            "6"
+          ],
+          "count": 2,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLFR.pdf",
+          "container_label": "RJ",
+          "pages": [
+            "8"
+          ],
+          "count": 6,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "CDC6CE025000ADLFR.pdf",
+          "container_label": "tR/tF",
+          "pages": [
+            "7"
+          ],
+          "count": 2,
+          "page_unresolved": false
+        }
+      ],
+      "reason": "人工逐字段复核 148 行后签署：机器侧 28 条未达坐标级门槛（不达标清单见 evidence_refs），内容与 PDF 逐条对照一致，接受该风险放行内容审批；机器结论 anchor_gate 保持 blocked 不改。",
+      "package_sha256": null,
+      "package_sha256_note": "本文件位于 ZIP 内，ZIP 的 SHA-256 不可能写进它自身（自指）。最终 ZIP 的哈希见同目录外层 `signoff.final.json` 与 `包校验报告.json#zip_sha256`。",
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "waiver": "IDD 等 28 条仅有弱证据、无行坐标（have=weak, need=row_anchor）；引脚硬闸 passed（det_count=2 / model_count=4，仅总数对账），由人工专家强签放行",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 28
+    },
+    "NE555": {
+      "mpn": "NE555",
+      "reviewer": "wuxiaoxian",
+      "reviewed_at": "2026-11-04",
+      "decision": "APPROVED_WITH_WARNINGS",
+      "machine_anchor_gate": "BLOCKED",
+      "risk_accepted": "THRES/TRIG 电压电平等 41 条仅有弱证据、无行坐标（have=weak, need=paragraph_anchor）；引脚硬闸 unverified（count_unverified，封装表 8 脚与 FK=20 混列），由人工专家强签放行",
+      "approved_dimensions": [
+        "electrical/spec tables"
+      ],
+      "excluded_dimensions": [
+        "prose specs (2/43 anchored)",
+        "pin_validation=unverified (count_unverified)"
+      ],
+      "evidence_refs": [
+        {
+          "pdf": "NE555.pdf",
+          "container_label": "CONT voltage (open circuit)",
+          "pages": [
+            "3",
+            "5",
+            "6"
+          ],
+          "count": 10,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "NE555.pdf",
+          "container_label": "High-level output voltage",
+          "pages": [
+            "6"
+          ],
+          "count": 4,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "NE555.pdf",
+          "container_label": "Low-level output voltage",
+          "pages": [
+            "6"
+          ],
+          "count": 10,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "NE555.pdf",
+          "container_label": "Supply current",
+          "pages": [
+            "1",
+            "3"
+          ],
+          "count": 8,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "NE555.pdf",
+          "container_label": "THRES voltage level",
+          "pages": [
+            "3",
+            "5"
+          ],
+          "count": 4,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "NE555.pdf",
+          "container_label": "TRIG current",
+          "pages": [
+            "5"
+          ],
+          "count": 1,
+          "page_unresolved": false
+        },
+        {
+          "pdf": "NE555.pdf",
+          "container_label": "TRIG voltage level",
+          "pages": [
+            "1",
+            "5"
+          ],
+          "count": 4,
+          "page_unresolved": false
+        }
+      ],
+      "reason": "人工逐字段复核 158 行后签署：机器侧 41 条未达坐标级门槛（不达标清单见 evidence_refs），内容与 PDF 逐条对照一致，接受该风险放行内容审批；机器结论 anchor_gate 保持 blocked 不改。",
+      "package_sha256": null,
+      "package_sha256_note": "本文件位于 ZIP 内，ZIP 的 SHA-256 不可能写进它自身（自指）。最终 ZIP 的哈希见同目录外层 `signoff.final.json` 与 `包校验报告.json#zip_sha256`。",
+      "content_approved": true,
+      "release_approved": false,
+      "signoff_by": "wuxiaoxian",
+      "signed_at": "2026-11-04",
+      "waiver": "THRES/TRIG 电压电平等 41 条仅有弱证据、无行坐标（have=weak, need=paragraph_anchor）；引脚硬闸 unverified（count_unverified，封装表 8 脚与 FK=20 混列），由人工专家强签放行",
+      "anchor_gate_at_signoff": "blocked",
+      "blocked_items": 41
+    }
+  },
+  "package_sha256": "4dd3a745aa7590a3014034267b4612ef6173f262fd040232966c50f084bdc78b",
+  "package_zip": "part-0001-of-0001.zip",
+  "package_bytes": 16453014,
+  "finalized_at": "2026-11-04T10:51:18+08:00"
+}
