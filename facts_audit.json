@@ -1,0 +1,5006 @@
+{
+  "schema": "facts-audit/v4",
+  "derivation": "qc/fact_acceptance.py::_derive —— 结论只由证据字段推导，输出字段只由结论发放（_emit_fields）；row_sha256 非空 <=> verified_row，bbox 非空 <=> 坐标级结论。",
+  "note": "逐行回打原厂 PDF。verified_row=坐标 + 行指纹（row_sha256）能从 PDF 重算且数值一致（最强）；verified_paragraph=坐标 + 正文条目指纹（paragraph_sha256），表格之外的参数只能到这一级；verified_value=有坐标但该行没有可重放的指纹；verified=容器级确定性复现（按参数名+数值，无行坐标）；value_on_label_page=数值与参数名同页但行/列对应未证（弱证据，进风险队列，页面打带说明的 †）；value_in_pdf=只在别处出现（归属未证）；partial/not_found=需人工；unchecked=无可回打数值。注意：facts_verdict=pass 只表示「没有编造的数值」，不表示「参数全对」——核心工程参数要 reach verified_row 才谈得上已验证。",
+  "grade_note": "V7 起 `data_anchor` 废止，改为四个互不冒充的计数：row_anchor（坐标+可重放行指纹）/ paragraph_anchor（坐标+正文条目指纹）/ container_verified（名字+数值可复现但无坐标）/ weak（弱证据）。达标门槛按载体分流：表格参数须 row_anchor，正文参数须 paragraph_anchor（qc/fact_acceptance.py::REQUIREMENT）。anchor_gate=blocked 表示存在未达门槛的行，此时 release_state 不得进入 DATA_VALIDATED。",
+  "sha_scheme": "row=表格行指纹（page|表标题|左上坐标|符号|min|typ|max|unit）；band=行带指纹（page|名称格归一化文本|数值格归一化文本）；paragraph=正文条目指纹（page|归一化行文本）。归一化 = 破折号统一 + 空白折叠 + 小写，详见包内 README。",
+  "coord_verified": 5273,
+  "total_rows": 6246,
+  "anchor_gate": "blocked",
+  "mpns": {
+    "74AC11800DW": {
+      "pdf_sha256": "f1a8d67d545e344ebd45b5780cf5fa08395e4bd090ebccee80f47e84899b4d36",
+      "n_rows": 24,
+      "counts": {
+        "verified_row": 17,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 6,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 18,
+      "pdf": "/app/data/_build100_91/pdfsrc/74AC11800DW.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 17,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 0
+      },
+      "grades_denominator": 24,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 13,
+          "total": 20
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 4,
+          "total": 4
+        }
+      },
+      "blocked": [
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "Storage temperature range (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "74ACT11011N": {
+      "pdf_sha256": "3f462284a23d71512537a9730fcbc765f7718deb96ea44af5a699c60e5759f08",
+      "n_rows": 32,
+      "counts": {
+        "verified_row": 11,
+        "verified_paragraph": 8,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 13,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 19,
+      "pdf": "/app/data/_build100_91/pdfsrc/74ACT11011N.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 11,
+        "paragraph_anchor": 8,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 13,
+        "no_value": 0
+      },
+      "grades_denominator": 32,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 11,
+          "total": 32
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "IOH (have=weak, need=row_anchor)",
+        "IOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "IOL (have=weak, need=row_anchor)",
+        "IOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "II (have=weak, need=row_anchor)",
+        "Supply voltage range, VCC (have=paragraph_anchor, need=row_anchor)",
+        "Input voltage range, VI (have=paragraph_anchor, need=row_anchor)",
+        "Output voltage range, VO (have=paragraph_anchor, need=row_anchor)",
+        "Input clamp current, IIK (have=paragraph_anchor, need=row_anchor)",
+        "Output clamp current, IOK (have=paragraph_anchor, need=row_anchor)",
+        "Continuous output current, IO (have=paragraph_anchor, need=row_anchor)",
+        "Continuous current through VCC or GND (have=paragraph_anchor, need=row_anchor)",
+        "Storage temperature range (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "74ACT11020DR": {
+      "pdf_sha256": "94a4b7f990473366ec46c637fa5aa971f746bea438e3a57416f975a7a6f660c9",
+      "n_rows": 28,
+      "counts": {
+        "verified_row": 11,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 4,
+        "value_in_pdf": 9,
+        "partial": 3,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 12,
+      "pdf": "/app/data/_build100_91/pdfsrc/74ACT11020DR.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 11,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 16,
+        "no_value": 0
+      },
+      "grades_denominator": 28,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 11,
+          "total": 28
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "II (have=weak, need=row_anchor)",
+        "Input voltage range, VI (have=weak, need=row_anchor)",
+        "Output voltage range, VO (have=weak, need=row_anchor)",
+        "Input clamp current, IIK (have=weak, need=row_anchor)",
+        "Output clamp current, IOK (have=weak, need=row_anchor)",
+        "Continuous output current, IO (have=weak, need=row_anchor)",
+        "Continuous current through VCC or GND (have=weak, need=row_anchor)",
+        "Storage temperature range (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "74ACT11132D": {
+      "pdf_sha256": "f922216a38443b3461a2c6f9ec7d9a504349c1c3283a978c2de61e2eb58b0d49",
+      "n_rows": 30,
+      "counts": {
+        "verified_row": 17,
+        "verified_paragraph": 3,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 8,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 20,
+      "pdf": "/app/data/_build100_91/pdfsrc/74ACT11132D.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 17,
+        "paragraph_anchor": 3,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 10,
+        "no_value": 0
+      },
+      "grades_denominator": 30,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 15,
+          "total": 26
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 4
+        }
+      },
+      "blocked": [
+        "VT− (have=weak, need=row_anchor)",
+        "VT− (have=weak, need=row_anchor)",
+        "VHys (have=weak, need=paragraph_anchor)",
+        "VHys (have=weak, need=paragraph_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "Output clamp current, IOK (have=paragraph_anchor, need=row_anchor)",
+        "Continuous output current, IO (have=paragraph_anchor, need=row_anchor)",
+        "Storage temperature range (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "74AVC4T245DGVRE4": {
+      "pdf_sha256": "6d7f0ba1f575afe1b7e05d689a4fd91b1382683cdbe6a53731ac6c2f13db062c",
+      "n_rows": 60,
+      "counts": {
+        "verified_row": 41,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 14,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 41,
+      "pdf": "/app/data/_build100_91/pdfsrc/74AVC4T245DGVRE4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 41,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 19,
+        "no_value": 0
+      },
+      "grades_denominator": 60,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 37,
+          "total": 51
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 4,
+          "total": 9
+        }
+      },
+      "blocked": [
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCB (have=weak, need=paragraph_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)"
+      ]
+    },
+    "74AVC4T245RGYRG4": {
+      "pdf_sha256": "6d7f0ba1f575afe1b7e05d689a4fd91b1382683cdbe6a53731ac6c2f13db062c",
+      "n_rows": 60,
+      "counts": {
+        "verified_row": 41,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 14,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 41,
+      "pdf": "/app/data/_build100_91/pdfsrc/74AVC4T245RGYRG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 41,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 19,
+        "no_value": 0
+      },
+      "grades_denominator": 60,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 37,
+          "total": 51
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 4,
+          "total": 9
+        }
+      },
+      "blocked": [
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCB (have=weak, need=paragraph_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)"
+      ]
+    },
+    "74AVC4T245RSVR-NT": {
+      "pdf_sha256": "6d7f0ba1f575afe1b7e05d689a4fd91b1382683cdbe6a53731ac6c2f13db062c",
+      "n_rows": 60,
+      "counts": {
+        "verified_row": 41,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 14,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 41,
+      "pdf": "/app/data/_build100_91/pdfsrc/74AVC4T245RSVR-NT.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 41,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 19,
+        "no_value": 0
+      },
+      "grades_denominator": 60,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 37,
+          "total": 51
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 4,
+          "total": 9
+        }
+      },
+      "blocked": [
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCB (have=weak, need=paragraph_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)"
+      ]
+    },
+    "74AVC4T245RSVRG4": {
+      "pdf_sha256": "6d7f0ba1f575afe1b7e05d689a4fd91b1382683cdbe6a53731ac6c2f13db062c",
+      "n_rows": 60,
+      "counts": {
+        "verified_row": 41,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 14,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 41,
+      "pdf": "/app/data/_build100_91/pdfsrc/74AVC4T245RSVRG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 41,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 19,
+        "no_value": 0
+      },
+      "grades_denominator": 60,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 37,
+          "total": 51
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 4,
+          "total": 9
+        }
+      },
+      "blocked": [
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "Ioff (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCA (have=weak, need=paragraph_anchor)",
+        "ICCB (have=weak, need=paragraph_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)",
+        "VO (have=weak, need=row_anchor)"
+      ]
+    },
+    "74FCT162245CTPVCT": {
+      "pdf_sha256": "97a5f451ce60a1a0b67702fc9d3514e9dab955c1cf1cf096726e735f3a64f6c7",
+      "n_rows": 49,
+      "counts": {
+        "verified_row": 33,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 6,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 40,
+      "pdf": "/app/data/_build100_91/pdfsrc/74FCT162245CTPVCT.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 33,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 3
+      },
+      "grades_denominator": 46,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 30,
+          "total": 43
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 3,
+          "total": 3
+        }
+      },
+      "blocked": [
+        "VOL (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Ambient Temperature with Power Applied (have=paragraph_anchor, need=row_anchor)",
+        "DC Input Voltage (have=paragraph_anchor, need=row_anchor)",
+        "DC Output Voltage (have=paragraph_anchor, need=row_anchor)",
+        "DC Output Current (Maximum Sink Current/Pin) (have=paragraph_anchor, need=row_anchor)",
+        "Power Dissipation (have=paragraph_anchor, need=row_anchor)",
+        "Static Discharge Voltage (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "74FCT16244CTPVCTG4": {
+      "pdf_sha256": "718c5ef091ce8b60c83da6cbf13bb3ebaea1d41af0a891f831aa553f3924c4bc",
+      "n_rows": 80,
+      "counts": {
+        "verified_row": 50,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 6,
+        "value_in_pdf": 14,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 57,
+      "pdf": "/app/data/_build100_91/pdfsrc/74FCT16244CTPVCTG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 50,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 20,
+        "no_value": 3
+      },
+      "grades_denominator": 77,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 43,
+          "total": 64
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 13
+        }
+      },
+      "blocked": [
+        "VOH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "VOL (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "IC (have=weak, need=row_anchor)",
+        "tPHL (have=weak, need=paragraph_anchor)",
+        "tPZL (have=weak, need=paragraph_anchor)",
+        "tPLZ (have=weak, need=paragraph_anchor)",
+        "tPHL (have=weak, need=paragraph_anchor)",
+        "tPZL (have=weak, need=paragraph_anchor)",
+        "tPLZ (have=weak, need=paragraph_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Ambient Temperature with Power Applied (have=paragraph_anchor, need=row_anchor)",
+        "DC Input Voltage (have=paragraph_anchor, need=row_anchor)",
+        "DC Output Voltage (have=paragraph_anchor, need=row_anchor)",
+        "DC Output Current (Maximum Sink Current/Pin) (have=paragraph_anchor, need=row_anchor)",
+        "Power Dissipation (have=paragraph_anchor, need=row_anchor)",
+        "Static Discharge Voltage (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "RθJB (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADC07D1520CIYB_NOPB": {
+      "pdf_sha256": "01ebd2eb70c3d1897af70d7b9405aaa26be2e657bce50da184b360683988ffe2",
+      "n_rows": 91,
+      "counts": {
+        "verified_row": 54,
+        "verified_paragraph": 6,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 23,
+        "value_in_pdf": 8,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 60,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC07D1520CIYB_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 54,
+        "paragraph_anchor": 6,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 31,
+        "no_value": 0
+      },
+      "grades_denominator": 91,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 35,
+          "total": 49
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 25,
+          "total": 42
+        }
+      },
+      "blocked": [
+        "C.E.R. (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "3rd Harm (have=weak, need=paragraph_anchor)",
+        "Out of Range Output Code (have=weak, need=paragraph_anchor)",
+        "Out of Range Output Code (have=weak, need=paragraph_anchor)",
+        "fCLK (max) (have=weak, need=paragraph_anchor)",
+        "fCLK (min) (have=weak, need=paragraph_anchor)",
+        "fCLK (min) (have=weak, need=paragraph_anchor)",
+        "Input Clock Duty Cycle (have=weak, need=paragraph_anchor)",
+        "Input Clock Duty Cycle (have=weak, need=paragraph_anchor)",
+        "Input Clock Duty Cycle (have=weak, need=paragraph_anchor)",
+        "DCLK Duty Cycle (have=weak, need=paragraph_anchor)",
+        "DCLK Duty Cycle (have=weak, need=paragraph_anchor)",
+        "DCLK Duty Cycle (have=weak, need=paragraph_anchor)",
+        "Pipeline Delay (Latency) in 1:2 Demux Mode (have=weak, need=paragraph_anchor)",
+        "Pipeline Delay (Latency) in 1:2 Demux Mode (have=weak, need=paragraph_anchor)",
+        "Pipeline Delay (Latency) in 1:2 Demux Mode (have=weak, need=paragraph_anchor)",
+        "Pipeline Delay (Latency) in 1:2 Demux Mode (have=weak, need=paragraph_anchor)",
+        "Pipeline Delay (Latency) in Non-Demux Mode (have=weak, need=paragraph_anchor)",
+        "tWU (have=weak, need=row_anchor)",
+        "Supply Difference (have=weak, need=row_anchor)",
+        "Voltage on Any Input Pin (Except VIN+, VIN- ) (have=weak, need=row_anchor)",
+        "Voltage on VIN+, VIN- (Maintaining Common Mode) (have=weak, need=row_anchor)",
+        "Ground Difference (have=weak, need=row_anchor)",
+        "Storage Temperature (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC (have=weak, need=row_anchor)",
+        "RθJC (Top of Package) (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADC07D1520RB_NOPB": {
+      "pdf_sha256": "01ebd2eb70c3d1897af70d7b9405aaa26be2e657bce50da184b360683988ffe2",
+      "n_rows": 82,
+      "counts": {
+        "verified_row": 49,
+        "verified_paragraph": 6,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 19,
+        "value_in_pdf": 8,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 55,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC07D1520RB_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 49,
+        "paragraph_anchor": 6,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 27,
+        "no_value": 0
+      },
+      "grades_denominator": 82,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 32,
+          "total": 47
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 23,
+          "total": 35
+        }
+      },
+      "blocked": [
+        "C.E.R. (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "THD (have=weak, need=row_anchor)",
+        "3rd Harm (have=weak, need=paragraph_anchor)",
+        "Out of Range Output Code (have=weak, need=paragraph_anchor)",
+        "Out of Range Output Code (have=weak, need=paragraph_anchor)",
+        "fCLK (max) (have=weak, need=paragraph_anchor)",
+        "fCLK (min) (have=weak, need=paragraph_anchor)",
+        "fCLK (min) (have=weak, need=paragraph_anchor)",
+        "Input Clock Duty Cycle (have=weak, need=paragraph_anchor)",
+        "Input Clock Duty Cycle (have=weak, need=paragraph_anchor)",
+        "DCLK Duty Cycle (have=weak, need=paragraph_anchor)",
+        "DCLK Duty Cycle (have=weak, need=paragraph_anchor)",
+        "Pipeline Delay (Latency) in 1:2 Demux Mode (have=weak, need=paragraph_anchor)",
+        "Pipeline Delay (Latency) in 1:2 Demux Mode (have=weak, need=paragraph_anchor)",
+        "tWU (have=weak, need=row_anchor)",
+        "Supply Difference (have=weak, need=row_anchor)",
+        "Voltage on Any Input Pin (Except VIN+, VIN-) (have=weak, need=row_anchor)",
+        "Voltage on VIN+, VIN- (Maintaining Common Mode) (have=weak, need=row_anchor)",
+        "Ground Difference (have=weak, need=row_anchor)",
+        "Storage Temperature (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC (Top of Package) (have=weak, need=row_anchor)",
+        "RθJC (Thermal Pad) (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADC1061CIWM": {
+      "pdf_sha256": "aaa3447f12f6379d98bcc90ed1ea6eb78220a4cbd5f2e421e989dc64df82d606",
+      "n_rows": 49,
+      "counts": {
+        "verified_row": 19,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 14,
+        "value_in_pdf": 1,
+        "partial": 5,
+        "unchecked": 2,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 26,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC1061CIWM.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 19,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 21,
+        "no_value": 2
+      },
+      "grades_denominator": 47,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 7,
+          "total": 18
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 15,
+          "total": 29
+        }
+      },
+      "blocked": [
+        "Integral Linearity Error (have=weak, need=paragraph_anchor)",
+        "Offset Error (have=weak, need=paragraph_anchor)",
+        "Fullscale Error (have=weak, need=paragraph_anchor)",
+        "RREF (have=weak, need=paragraph_anchor)",
+        "VREF(a) Input Voltage (have=weak, need=paragraph_anchor)",
+        "VREF(b) Input Voltage (have=weak, need=paragraph_anchor)",
+        "VIN Input Voltage (have=weak, need=paragraph_anchor)",
+        "VIN Input Voltage (have=weak, need=paragraph_anchor)",
+        "Analog Input Leakage Current (have=weak, need=row_anchor)",
+        "Power Supply Sensitivity (have=weak, need=paragraph_anchor)",
+        "IIN(0) Logical ‘‘0’’ Input Current (have=weak, need=row_anchor)",
+        "VOUT(1) Logical ‘‘1’’ Output Voltage (have=weak, need=paragraph_anchor)",
+        "IOUT TRI-STATE Output Current (have=weak, need=row_anchor)",
+        "DICC DVCC Supply Current (have=weak, need=paragraph_anchor)",
+        "tINTH Delay from Rising Edge of RD to Rising Edge of INT (have=weak, need=paragraph_anchor)",
+        "tID Delay from INT to Output Valid (have=weak, need=paragraph_anchor)",
+        "tP Delay from End of Conversion to Next Conversion (have=weak, need=paragraph_anchor)",
+        "Supply Voltage (Va e AVCC e DVCC) (have=weak, need=row_anchor)",
+        "Voltage at any Input or Output (have=weak, need=row_anchor)",
+        "Junction Temperature, TJ (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature Range (have=weak, need=row_anchor)",
+        "RθJA (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADC12DL1500ACF": {
+      "pdf_sha256": "376af83d14f0dbe030be01be8a7cf3fc26718c61b1ccc150ef67278d715644f7",
+      "n_rows": 157,
+      "counts": {
+        "verified_row": 142,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 7,
+        "value_in_pdf": 7,
+        "partial": 1,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 142,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC12DL1500ACF.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 142,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 15,
+        "no_value": 0
+      },
+      "grades_denominator": 157,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 135,
+          "total": 143
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 14
+        }
+      },
+      "blocked": [
+        "DNL (have=weak, need=row_anchor)",
+        "INL (have=weak, need=row_anchor)",
+        "CER (have=weak, need=row_anchor)",
+        "NF (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "SNR (have=weak, need=row_anchor)",
+        "SFDR (have=weak, need=paragraph_anchor)",
+        "SFDR (have=weak, need=paragraph_anchor)",
+        "FS/2 (have=weak, need=paragraph_anchor)",
+        "tAD (have=weak, need=row_anchor)",
+        "tAD(MAX) (have=weak, need=row_anchor)",
+        "tAD(STEP) (have=weak, need=paragraph_anchor)",
+        "tOSAB (have=weak, need=paragraph_anchor)",
+        "tLAT(DIG) (have=weak, need=paragraph_anchor)",
+        "tLAT(STB) (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "ADC12DL2500ACF": {
+      "pdf_sha256": "376af83d14f0dbe030be01be8a7cf3fc26718c61b1ccc150ef67278d715644f7",
+      "n_rows": 242,
+      "counts": {
+        "verified_row": 232,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 6,
+        "value_in_pdf": 2,
+        "partial": 1,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 233,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC12DL2500ACF.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 232,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 9,
+        "no_value": 0
+      },
+      "grades_denominator": 242,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 218,
+          "total": 221
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 15,
+          "total": 21
+        }
+      },
+      "blocked": [
+        "DNL (have=weak, need=row_anchor)",
+        "INL (have=weak, need=row_anchor)",
+        "Offset drift (have=weak, need=paragraph_anchor)",
+        "Code error rate (have=weak, need=row_anchor)",
+        "Drift of invalid SYSREF capture region over temperature, positive number indicates a shift toward MSB of SYSREF_POS register (have=weak, need=paragraph_anchor)",
+        "Sampling (aperture) delay from CLK± rising edge (dual channel mode) or rising and falling edge (single channel mode) to sampling instant (have=weak, need=paragraph_anchor)",
+        "Maximum tAD Adjust programmable delay, not including clock inversion (TAD_INV = 0) (have=weak, need=paragraph_anchor)",
+        "Aperture delay step size (have=weak, need=paragraph_anchor)",
+        "Latency from SYNCSE assertion or deassertion to DB0± (LSB) changing from normal data to strobe output or strobe output to normal data, digital latency only (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "ADC32RF80IRMPR": {
+      "pdf_sha256": "8e26d38516a4f8b3db1c4ec88eb5a46a4d87c3178d1810b1c96a1d3ce4e2a279",
+      "n_rows": 84,
+      "counts": {
+        "verified_row": 73,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 8,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 73,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC32RF80IRMPR.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 73,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 11,
+        "no_value": 0
+      },
+      "grades_denominator": 84,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 64,
+          "total": 67
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 9,
+          "total": 17
+        }
+      },
+      "blocked": [
+        "POWER CONSUMPTION (have=weak, need=paragraph_anchor)",
+        "POWER CONSUMPTION (have=weak, need=paragraph_anchor)",
+        "POWER CONSUMPTION (have=weak, need=paragraph_anchor)",
+        "POWER CONSUMPTION (have=weak, need=paragraph_anchor)",
+        "POWER CONSUMPTION (have=weak, need=paragraph_anchor)",
+        "Aperture delay matching between two devices at the same temperature and supply voltage (have=weak, need=paragraph_anchor)",
+        "Latency (have=weak, need=paragraph_anchor)",
+        "tH_SYSREF (have=weak, need=paragraph_anchor)",
+        "Ci (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "Co (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADC32RF80IRMPT": {
+      "pdf_sha256": "8e26d38516a4f8b3db1c4ec88eb5a46a4d87c3178d1810b1c96a1d3ce4e2a279",
+      "n_rows": 69,
+      "counts": {
+        "verified_row": 55,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 13,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 56,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC32RF80IRMPT.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 55,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 13,
+        "no_value": 0
+      },
+      "grades_denominator": 69,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 46,
+          "total": 47
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 10,
+          "total": 22
+        }
+      },
+      "blocked": [
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Input capacitance (have=weak, need=paragraph_anchor)",
+        "High-level output voltage (have=weak, need=row_anchor)",
+        "Single-ended output impedance (have=weak, need=paragraph_anchor)",
+        "Output capacitance (have=weak, need=paragraph_anchor)",
+        "Aperture delay matching between two devices at the same temperature and supply voltage (have=weak, need=paragraph_anchor)",
+        "Fast overrange latency (have=weak, need=paragraph_anchor)",
+        "SYSREF hold time (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "ADC32RF80IRRHR": {
+      "pdf_sha256": "8e26d38516a4f8b3db1c4ec88eb5a46a4d87c3178d1810b1c96a1d3ce4e2a279",
+      "n_rows": 66,
+      "counts": {
+        "verified_row": 55,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 11,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 55,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC32RF80IRRHR.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 55,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 11,
+        "no_value": 0
+      },
+      "grades_denominator": 66,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 46,
+          "total": 47
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 9,
+          "total": 19
+        }
+      },
+      "blocked": [
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Input capacitance (have=weak, need=paragraph_anchor)",
+        "High-level output voltage (have=weak, need=row_anchor)",
+        "Single-ended output impedance (have=weak, need=paragraph_anchor)",
+        "Output capacitance (have=weak, need=paragraph_anchor)",
+        "Aperture delay matching between two devices at the same temperature and supply voltage (have=weak, need=paragraph_anchor)",
+        "Latency (have=weak, need=paragraph_anchor)",
+        "Fast overrange latency (have=weak, need=paragraph_anchor)",
+        "SYSREF hold time (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "ADC32RF83IRMPT": {
+      "pdf_sha256": "8e26d38516a4f8b3db1c4ec88eb5a46a4d87c3178d1810b1c96a1d3ce4e2a279",
+      "n_rows": 81,
+      "counts": {
+        "verified_row": 73,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 73,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC32RF83IRMPT.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 73,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 8,
+        "no_value": 0
+      },
+      "grades_denominator": 81,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 64,
+          "total": 67
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 9,
+          "total": 14
+        }
+      },
+      "blocked": [
+        "POWER CONSUMPTION (have=weak, need=paragraph_anchor)",
+        "POWER CONSUMPTION (have=weak, need=paragraph_anchor)",
+        "Aperture delay matching between two devices at the same temperature and supply voltage (have=weak, need=paragraph_anchor)",
+        "Latency (have=weak, need=paragraph_anchor)",
+        "tH_SYSREF (have=weak, need=paragraph_anchor)",
+        "Ci (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "Co (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADC32RF83IRRHR": {
+      "pdf_sha256": "8e26d38516a4f8b3db1c4ec88eb5a46a4d87c3178d1810b1c96a1d3ce4e2a279",
+      "n_rows": 65,
+      "counts": {
+        "verified_row": 53,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 11,
+        "value_in_pdf": 1,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 53,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC32RF83IRRHR.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 53,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 12,
+        "no_value": 0
+      },
+      "grades_denominator": 65,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 45,
+          "total": 47
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 8,
+          "total": 18
+        }
+      },
+      "blocked": [
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Power consumption (have=weak, need=paragraph_anchor)",
+        "Input capacitance (have=weak, need=paragraph_anchor)",
+        "High-level output voltage (have=weak, need=row_anchor)",
+        "Single-ended output impedance (have=weak, need=paragraph_anchor)",
+        "Output capacitance (have=weak, need=paragraph_anchor)",
+        "Aperture delay matching between two channels on the same device (have=weak, need=row_anchor)",
+        "Aperture delay matching between two devices at the same temperature and supply voltage (have=weak, need=paragraph_anchor)",
+        "Latency (have=weak, need=paragraph_anchor)",
+        "Fast overrange latency (have=weak, need=paragraph_anchor)",
+        "SYSREF hold time (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "ADC700JH": {
+      "pdf_sha256": "c8fdaed4f353a13f26511b5af2f154b8f1d348dc2e988bd9572dfdd9ffe53e79",
+      "n_rows": 79,
+      "counts": {
+        "verified_row": 27,
+        "verified_paragraph": 19,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 33,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 46,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADC700JH.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 27,
+        "paragraph_anchor": 19,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 33,
+        "no_value": 0
+      },
+      "grades_denominator": 79,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 26,
+          "total": 35
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 11,
+          "total": 44
+        }
+      },
+      "blocked": [
+        "Analog Input Voltage Range - Bipolar (have=weak, need=paragraph_anchor)",
+        "Analog Input Voltage Range - Unipolar (have=weak, need=paragraph_anchor)",
+        "Input VIH (have=weak, need=paragraph_anchor)",
+        "Input VIH (have=weak, need=paragraph_anchor)",
+        "Input VIL (have=weak, need=paragraph_anchor)",
+        "Input VIL (have=weak, need=paragraph_anchor)",
+        "Input IIH (have=weak, need=paragraph_anchor)",
+        "Output VOL (have=weak, need=paragraph_anchor)",
+        "Output VOH (have=weak, need=paragraph_anchor)",
+        "Output ILEAKAGE (have=weak, need=paragraph_anchor)",
+        "Power Supply Sensitivity VDD (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - JH (13-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - KH (14-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - AH (13-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - AH (13-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - BH (14-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - BH (14-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - RH (13-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - RH (13-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - SH (14-bit) (have=weak, need=paragraph_anchor)",
+        "No Missing Codes Temperature Range - SH (14-bit) (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage Range +VCC (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage Range +VCC (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage Range –VCC (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage Range –VCC (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage Range VDD (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage Range VDD (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage Range VDD (have=weak, need=paragraph_anchor)",
+        "Supply Current +VCC (have=weak, need=paragraph_anchor)",
+        "Supply Current –VCC (have=weak, need=paragraph_anchor)",
+        "Supply Current –VCC (have=weak, need=paragraph_anchor)",
+        "Supply Current VDD (have=weak, need=paragraph_anchor)",
+        "Supply Current VDD (have=weak, need=paragraph_anchor)",
+        "+VDD to Digital Common (have=paragraph_anchor, need=row_anchor)",
+        "+VCC to Analog Common (have=paragraph_anchor, need=row_anchor)",
+        "–VCC to Analog Common (have=paragraph_anchor, need=row_anchor)",
+        "Digital Common to Analog Common (have=paragraph_anchor, need=row_anchor)",
+        "Digital Inputs to Digital Common (have=paragraph_anchor, need=row_anchor)",
+        "Analog Inputs (have=paragraph_anchor, need=row_anchor)",
+        "Power Dissipation (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Lead Temperature (soldering, 10s) (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "ADS1286U": {
+      "pdf_sha256": "4c831bf49f11e6a57d51cbd11475f25c36403b42fe7272e70d31bfbdcc44c0e5",
+      "n_rows": 75,
+      "counts": {
+        "verified_row": 54,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 6,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 3,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 61,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS1286U.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 54,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 12,
+        "no_value": 2
+      },
+      "grades_denominator": 73,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 40,
+          "total": 56
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 14,
+          "total": 17
+        }
+      },
+      "blocked": [
+        "VIH (have=weak, need=row_anchor)",
+        "VOH (have=weak, need=row_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "+VCC (have=paragraph_anchor, need=row_anchor)",
+        "Analog Input (have=paragraph_anchor, need=row_anchor)",
+        "Logic Input (have=paragraph_anchor, need=row_anchor)",
+        "Case Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "External Reference Voltage (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "RθJC(bot) (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS1286UB_2K5": {
+      "pdf_sha256": "4c831bf49f11e6a57d51cbd11475f25c36403b42fe7272e70d31bfbdcc44c0e5",
+      "n_rows": 73,
+      "counts": {
+        "verified_row": 50,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 4,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 2,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 57,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS1286UB_2K5.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 50,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 15,
+        "no_value": 1
+      },
+      "grades_denominator": 72,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 38,
+          "total": 51
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 12,
+          "total": 21
+        }
+      },
+      "blocked": [
+        "Logic Levels: VIH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "+VCC (have=paragraph_anchor, need=row_anchor)",
+        "Analog Input (have=paragraph_anchor, need=row_anchor)",
+        "Logic Input (have=paragraph_anchor, need=row_anchor)",
+        "Case Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "External Reference Voltage (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS1286UC_2K5": {
+      "pdf_sha256": "4c831bf49f11e6a57d51cbd11475f25c36403b42fe7272e70d31bfbdcc44c0e5",
+      "n_rows": 76,
+      "counts": {
+        "verified_row": 57,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 4,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 64,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS1286UC_2K5.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 57,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 10,
+        "no_value": 2
+      },
+      "grades_denominator": 74,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 43,
+          "total": 57
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 14,
+          "total": 17
+        }
+      },
+      "blocked": [
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "+VCC (have=paragraph_anchor, need=row_anchor)",
+        "Analog Input (have=paragraph_anchor, need=row_anchor)",
+        "Logic Input (have=paragraph_anchor, need=row_anchor)",
+        "Case Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "External Reference Voltage (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "RθJB (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS1286UG4": {
+      "pdf_sha256": "4c831bf49f11e6a57d51cbd11475f25c36403b42fe7272e70d31bfbdcc44c0e5",
+      "n_rows": 69,
+      "counts": {
+        "verified_row": 50,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 1,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 57,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS1286UG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 50,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 11,
+        "no_value": 1
+      },
+      "grades_denominator": 68,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 37,
+          "total": 46
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 13,
+          "total": 22
+        }
+      },
+      "blocked": [
+        "Logic Levels: VIH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "+VCC (have=paragraph_anchor, need=row_anchor)",
+        "Analog Input (have=paragraph_anchor, need=row_anchor)",
+        "Logic Input (have=paragraph_anchor, need=row_anchor)",
+        "Case Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "External Reference Voltage (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS1286UK": {
+      "pdf_sha256": "4c831bf49f11e6a57d51cbd11475f25c36403b42fe7272e70d31bfbdcc44c0e5",
+      "n_rows": 73,
+      "counts": {
+        "verified_row": 49,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 10,
+        "value_in_pdf": 4,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 2,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 56,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS1286UK.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 49,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 16,
+        "no_value": 1
+      },
+      "grades_denominator": 72,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 34,
+          "total": 47
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 15,
+          "total": 25
+        }
+      },
+      "blocked": [
+        "Logic Levels: VIH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Down Current (have=weak, need=paragraph_anchor)",
+        "+VCC (have=paragraph_anchor, need=row_anchor)",
+        "Analog Input (have=paragraph_anchor, need=row_anchor)",
+        "Logic Input (have=paragraph_anchor, need=row_anchor)",
+        "Case Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "External Reference Voltage (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS1286U_2K5G4": {
+      "pdf_sha256": "4c831bf49f11e6a57d51cbd11475f25c36403b42fe7272e70d31bfbdcc44c0e5",
+      "n_rows": 73,
+      "counts": {
+        "verified_row": 50,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 4,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 2,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 57,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS1286U_2K5G4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 50,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 15,
+        "no_value": 1
+      },
+      "grades_denominator": 72,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 36,
+          "total": 49
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 14,
+          "total": 23
+        }
+      },
+      "blocked": [
+        "Logic Levels: VIH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VIL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOH (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Logic Levels: VOL (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "Power Supply Voltage (have=weak, need=paragraph_anchor)",
+        "+VCC (have=paragraph_anchor, need=row_anchor)",
+        "Analog Input (have=paragraph_anchor, need=row_anchor)",
+        "Logic Input (have=paragraph_anchor, need=row_anchor)",
+        "Case Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "External Reference Voltage (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS58J64IRMPR": {
+      "pdf_sha256": "8d835da5897d98a455d70e4e3de66251e0c69ccdba18a833e493dc65ac20c8d1",
+      "n_rows": 48,
+      "counts": {
+        "verified_row": 48,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 48,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS58J64IRMPR.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 48,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 48,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 43,
+          "total": 43
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 5,
+          "total": 5
+        }
+      },
+      "blocked": []
+    },
+    "ADS58J64IRMPT": {
+      "pdf_sha256": "8d835da5897d98a455d70e4e3de66251e0c69ccdba18a833e493dc65ac20c8d1",
+      "n_rows": 54,
+      "counts": {
+        "verified_row": 54,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 54,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS58J64IRMPT.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 54,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 54,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 49,
+          "total": 49
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 5,
+          "total": 5
+        }
+      },
+      "blocked": []
+    },
+    "ADS58J64IRRHR": {
+      "pdf_sha256": "8d835da5897d98a455d70e4e3de66251e0c69ccdba18a833e493dc65ac20c8d1",
+      "n_rows": 54,
+      "counts": {
+        "verified_row": 54,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 54,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS58J64IRRHR.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 54,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 54,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 49,
+          "total": 49
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 5,
+          "total": 5
+        }
+      },
+      "blocked": []
+    },
+    "ADS58J64IRRHT": {
+      "pdf_sha256": "8d835da5897d98a455d70e4e3de66251e0c69ccdba18a833e493dc65ac20c8d1",
+      "n_rows": 66,
+      "counts": {
+        "verified_row": 66,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 66,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS58J64IRRHT.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 66,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 66,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 59,
+          "total": 59
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 7
+        }
+      },
+      "blocked": []
+    },
+    "ADS7815UE4": {
+      "pdf_sha256": "2fdcdc88eb6e399a89d0fe6272487b5d3b5cdaf98901e0eb3fa41fc1a78712f1",
+      "n_rows": 64,
+      "counts": {
+        "verified_row": 36,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 10,
+        "value_in_pdf": 7,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 43,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS7815UE4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 36,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 18,
+        "no_value": 3
+      },
+      "grades_denominator": 61,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 34,
+          "total": 42
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 9,
+          "total": 19
+        }
+      },
+      "blocked": [
+        "Analog Input Voltage Range (have=weak, need=row_anchor)",
+        "Digital Input Logic Level VIL (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level VIL (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level VIH (have=weak, need=paragraph_anchor)",
+        "Digital Input Leakage Current IIL (have=weak, need=paragraph_anchor)",
+        "Digital Input Leakage Current IIH (have=weak, need=paragraph_anchor)",
+        "Digital Output VOL (have=weak, need=paragraph_anchor)",
+        "Digital Output VOH (have=weak, need=paragraph_anchor)",
+        "Positive Power Supply Voltage (+VS) (have=weak, need=row_anchor)",
+        "Positive Power Supply Voltage (+VS) (have=weak, need=row_anchor)",
+        "Negative Power Supply Voltage (–VS) (have=weak, need=row_anchor)",
+        "Negative Power Supply Voltage (–VS) (have=weak, need=row_anchor)",
+        "Positive Supply Current (+IS) (have=weak, need=row_anchor)",
+        "REF Pin Voltage (have=weak, need=paragraph_anchor)",
+        "Positive Supply Voltage (+VS) (have=weak, need=paragraph_anchor)",
+        "Negative Supply Voltage (–VS) (have=weak, need=paragraph_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS7818P": {
+      "pdf_sha256": "c3ac896eae6f9f1596ea090338a3cdd7438ec07bb4d5f206362e55953a1a1b2e",
+      "n_rows": 69,
+      "counts": {
+        "verified_row": 48,
+        "verified_paragraph": 11,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 6,
+        "value_in_pdf": 1,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 59,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS7818P.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 48,
+        "paragraph_anchor": 11,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 8,
+        "no_value": 2
+      },
+      "grades_denominator": 67,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 45,
+          "total": 55
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 6,
+          "total": 12
+        }
+      },
+      "blocked": [
+        "Gain Error (have=weak, need=paragraph_anchor)",
+        "Reference Output Voltage (have=weak, need=paragraph_anchor)",
+        "Reference Output Voltage (have=weak, need=paragraph_anchor)",
+        "Reference Drift (have=weak, need=paragraph_anchor)",
+        "Reference Input Range (have=weak, need=paragraph_anchor)",
+        "Reference Input Range (have=weak, need=paragraph_anchor)",
+        "+VCC to GND (have=paragraph_anchor, need=row_anchor)",
+        "Analog Inputs to GND (have=paragraph_anchor, need=row_anchor)",
+        "Digital Inputs to GND (have=paragraph_anchor, need=row_anchor)",
+        "Power Dissipation (have=paragraph_anchor, need=row_anchor)",
+        "Maximum Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Operating Temperature Range (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature Range (have=paragraph_anchor, need=row_anchor)",
+        "Lead Temperature (soldering, 10s) (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS7820P": {
+      "pdf_sha256": "fb3db7ffd2c60c51cf737d52bf664ffa89027752eca55d251813164bf37bdfd6",
+      "n_rows": 71,
+      "counts": {
+        "verified_row": 39,
+        "verified_paragraph": 14,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 11,
+        "value_in_pdf": 4,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 53,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS7820P.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 39,
+        "paragraph_anchor": 14,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 16,
+        "no_value": 2
+      },
+      "grades_denominator": 69,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 29,
+          "total": 41
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 19,
+          "total": 28
+        }
+      },
+      "blocked": [
+        "Full Scale Error (have=weak, need=paragraph_anchor)",
+        "Full Scale Error (External Ref) (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level (VIL) (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level (VIL) (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level (VIH) (have=weak, need=paragraph_anchor)",
+        "Digital Output VOL (have=weak, need=paragraph_anchor)",
+        "Digital Output VOH (have=weak, need=paragraph_anchor)",
+        "VDIG Supply Current (have=weak, need=paragraph_anchor)",
+        "VANA Supply Current (have=weak, need=paragraph_anchor)",
+        "Analog Input Voltage (VIN) (have=paragraph_anchor, need=row_anchor)",
+        "Reference Input Voltage (REF) (have=weak, need=row_anchor)",
+        "Reference Buffer Capacitor (CAP) (have=weak, need=row_anchor)",
+        "Ground Voltage Difference (DGND, AGND1, AGND2) (have=weak, need=row_anchor)",
+        "Digital Input Voltage (have=paragraph_anchor, need=row_anchor)",
+        "Maximum Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Internal Power Dissipation (have=paragraph_anchor, need=row_anchor)",
+        "Lead Temperature (Soldering, 10s) (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "ADS7820PB": {
+      "pdf_sha256": "fb3db7ffd2c60c51cf737d52bf664ffa89027752eca55d251813164bf37bdfd6",
+      "n_rows": 71,
+      "counts": {
+        "verified_row": 36,
+        "verified_paragraph": 20,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 56,
+      "pdf": "/app/data/_build100_91/pdfsrc/ADS7820PB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 36,
+        "paragraph_anchor": 20,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 13,
+        "no_value": 2
+      },
+      "grades_denominator": 69,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 26,
+          "total": 41
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 19,
+          "total": 28
+        }
+      },
+      "blocked": [
+        "Full Scale Error (have=weak, need=paragraph_anchor)",
+        "Full Scale Error (External Ref) (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level (VIL) (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level (VIL) (have=weak, need=paragraph_anchor)",
+        "Digital Input Logic Level (VIH) (have=weak, need=paragraph_anchor)",
+        "Digital Output VOL (have=weak, need=paragraph_anchor)",
+        "Digital Output VOH (have=weak, need=paragraph_anchor)",
+        "VDIG Supply Current (have=weak, need=paragraph_anchor)",
+        "VANA Supply Current (have=weak, need=paragraph_anchor)",
+        "Analog Inputs: VIN (have=paragraph_anchor, need=row_anchor)",
+        "REF (have=paragraph_anchor, need=row_anchor)",
+        "CAP (have=paragraph_anchor, need=row_anchor)",
+        "Ground Voltage Differences: DGND, AGND1, AGND2 (have=paragraph_anchor, need=row_anchor)",
+        "VANA (have=paragraph_anchor, need=row_anchor)",
+        "VDIG to VANA (have=paragraph_anchor, need=row_anchor)",
+        "VDIG (have=paragraph_anchor, need=row_anchor)",
+        "Digital Inputs (have=paragraph_anchor, need=row_anchor)",
+        "Maximum Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Internal Power Dissipation (have=paragraph_anchor, need=row_anchor)",
+        "Lead Temperature (soldering, 10s) (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "AFE7950": {
+      "pdf_sha256": "f32d2fe27e6947bfef990da9125ef158594bd7c6863a6dffd5319b745aa893b5",
+      "n_rows": 70,
+      "counts": {
+        "verified_row": 65,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 65,
+      "pdf": "/app/data/_build100_91/pdfsrc/AFE7950.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 65,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 5,
+        "no_value": 0
+      },
+      "grades_denominator": 70,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 65,
+          "total": 70
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "fRFout (have=weak, need=row_anchor)",
+        "fRFout (have=weak, need=row_anchor)",
+        "fRFout (have=weak, need=row_anchor)",
+        "fRFout (have=weak, need=row_anchor)",
+        "fRFout (have=weak, need=row_anchor)"
+      ]
+    },
+    "BOOSTXL-DRV8320H": {
+      "pdf_sha256": "1f0e4231093b6bc299f814b345c3aa51d705a9518b296b138b90d2649735f484",
+      "n_rows": 267,
+      "counts": {
+        "verified_row": 264,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 264,
+      "pdf": "/app/data/_build100_91/pdfsrc/BOOSTXL-DRV8320H.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 264,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 3
+      },
+      "grades_denominator": 264,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 264,
+          "total": 264
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "BQ2201PN": {
+      "pdf_sha256": "cb978f6fb60ab438ca4bd0f459248185aea98dc8ff4afe08b11a4a7ce1f128ba",
+      "n_rows": 40,
+      "counts": {
+        "verified_row": 33,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 37,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ2201PN.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 33,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 2,
+        "no_value": 1
+      },
+      "grades_denominator": 39,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 31,
+          "total": 37
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 2
+        }
+      },
+      "blocked": [
+        "DC voltage applied on VCC relative to VSS (have=weak, need=row_anchor)",
+        "DC voltage applied on any pin excluding VCC relative to VSS (have=paragraph_anchor, need=row_anchor)",
+        "Operating temperature (have=weak, need=row_anchor)",
+        "Operating temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage temperature (have=paragraph_anchor, need=row_anchor)",
+        "Temperature under bias (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "BQ2201PNG4": {
+      "pdf_sha256": "cb978f6fb60ab438ca4bd0f459248185aea98dc8ff4afe08b11a4a7ce1f128ba",
+      "n_rows": 39,
+      "counts": {
+        "verified_row": 33,
+        "verified_paragraph": 3,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 36,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ2201PNG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 33,
+        "paragraph_anchor": 3,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 2,
+        "no_value": 1
+      },
+      "grades_denominator": 38,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 31,
+          "total": 36
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 2
+        }
+      },
+      "blocked": [
+        "DC voltage applied on VCC relative to VSS (have=weak, need=row_anchor)",
+        "DC voltage applied on any pin excluding VCC relative to VSS (have=paragraph_anchor, need=row_anchor)",
+        "Operating temperature (have=weak, need=row_anchor)",
+        "Storage temperature (have=paragraph_anchor, need=row_anchor)",
+        "Temperature under bias (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "BQ2201SN": {
+      "pdf_sha256": "cb978f6fb60ab438ca4bd0f459248185aea98dc8ff4afe08b11a4a7ce1f128ba",
+      "n_rows": 39,
+      "counts": {
+        "verified_row": 34,
+        "verified_paragraph": 3,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 37,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ2201SN-NG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 34,
+        "paragraph_anchor": 3,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 1,
+        "no_value": 1
+      },
+      "grades_denominator": 38,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 32,
+          "total": 36
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 2
+        }
+      },
+      "blocked": [
+        "DC voltage applied on VCC relative to VSS (have=weak, need=row_anchor)",
+        "DC voltage applied on any pin excluding VCC relative to VSS (have=paragraph_anchor, need=row_anchor)",
+        "Storage temperature (have=paragraph_anchor, need=row_anchor)",
+        "Temperature under bias (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "BQ2201SN-NG4": {
+      "pdf_sha256": "cb978f6fb60ab438ca4bd0f459248185aea98dc8ff4afe08b11a4a7ce1f128ba",
+      "n_rows": 41,
+      "counts": {
+        "verified_row": 34,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 38,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ2201SN-NG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 34,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 2,
+        "no_value": 1
+      },
+      "grades_denominator": 40,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 32,
+          "total": 38
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 2
+        }
+      },
+      "blocked": [
+        "DC voltage applied on VCC relative to VSS (have=weak, need=row_anchor)",
+        "DC voltage applied on any pin excluding VCC relative to VSS (have=paragraph_anchor, need=row_anchor)",
+        "Operating temperature (have=weak, need=row_anchor)",
+        "Operating temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage temperature (have=paragraph_anchor, need=row_anchor)",
+        "Temperature under bias (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "BQ2201SNG4": {
+      "pdf_sha256": "cb978f6fb60ab438ca4bd0f459248185aea98dc8ff4afe08b11a4a7ce1f128ba",
+      "n_rows": 35,
+      "counts": {
+        "verified_row": 29,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 1,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 30,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ2201SNG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 29,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 4,
+        "no_value": 1
+      },
+      "grades_denominator": 34,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 28,
+          "total": 33
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 1,
+          "total": 1
+        }
+      },
+      "blocked": [
+        "VCC (have=paragraph_anchor, need=row_anchor)",
+        "VT (have=weak, need=row_anchor)",
+        "TOPR (have=weak, need=row_anchor)",
+        "TSTG (have=weak, need=row_anchor)",
+        "TBIAS (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ24261MYFFR": {
+      "pdf_sha256": "33ff77f310a996518492cf6f57e27a616ab69d3f70606ceb31b7352dd832a8c7",
+      "n_rows": 251,
+      "counts": {
+        "verified_row": 235,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 12,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 235,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ24261MYFFR.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 235,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 14,
+        "no_value": 2
+      },
+      "grades_denominator": 249,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 229,
+          "total": 234
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 6,
+          "total": 15
+        }
+      },
+      "blocked": [
+        "VSYSREG(LO) (have=weak, need=row_anchor)",
+        "VSYSREG(LO) (have=weak, need=row_anchor)",
+        "VSYSREG(HI) (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "VBATUVLO (have=weak, need=row_anchor)",
+        "VBOVP_HYS (have=weak, need=paragraph_anchor)",
+        "RDSON_Q1 (have=weak, need=paragraph_anchor)",
+        "IN (have=weak, need=row_anchor)",
+        "BOOT (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ24261MYFFT": {
+      "pdf_sha256": "33ff77f310a996518492cf6f57e27a616ab69d3f70606ceb31b7352dd832a8c7",
+      "n_rows": 229,
+      "counts": {
+        "verified_row": 208,
+        "verified_paragraph": 2,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 14,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 210,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ24261MYFFT.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 208,
+        "paragraph_anchor": 2,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 16,
+        "no_value": 3
+      },
+      "grades_denominator": 226,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 201,
+          "total": 208
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 9,
+          "total": 18
+        }
+      },
+      "blocked": [
+        "VSYSREG(LO) (have=weak, need=row_anchor)",
+        "VSYSREG(LO) (have=weak, need=row_anchor)",
+        "VSYSREG(HI) (have=weak, need=paragraph_anchor)",
+        "VBATREG (have=weak, need=paragraph_anchor)",
+        "VBATREG (have=weak, need=row_anchor)",
+        "VBATREG (have=weak, need=row_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "tDGL(CD) (have=weak, need=paragraph_anchor)",
+        "VBATUVLO (have=weak, need=row_anchor)",
+        "IN (have=weak, need=row_anchor)",
+        "BOOT (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ24261RGET": {
+      "pdf_sha256": "33ff77f310a996518492cf6f57e27a616ab69d3f70606ceb31b7352dd832a8c7",
+      "n_rows": 219,
+      "counts": {
+        "verified_row": 202,
+        "verified_paragraph": 2,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 10,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 204,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ24261RGET.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 202,
+        "paragraph_anchor": 2,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 12,
+        "no_value": 3
+      },
+      "grades_denominator": 216,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 197,
+          "total": 205
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 6,
+          "total": 11
+        }
+      },
+      "blocked": [
+        "System Regulation Voltage (have=weak, need=row_anchor)",
+        "System Regulation Voltage (have=paragraph_anchor, need=row_anchor)",
+        "System Regulation Voltage (have=weak, need=row_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Battery Undervoltage Lockout Threshold (have=weak, need=row_anchor)",
+        "Minimum Duty Cycle (have=weak, need=paragraph_anchor)",
+        "I2C Reset Timeout (have=weak, need=row_anchor)",
+        "BAT Terminal Voltage (have=weak, need=row_anchor)",
+        "BOOT to SW Terminal Voltage (have=weak, need=row_anchor)",
+        "Junction Temperature (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ24261YFFT": {
+      "pdf_sha256": "33ff77f310a996518492cf6f57e27a616ab69d3f70606ceb31b7352dd832a8c7",
+      "n_rows": 243,
+      "counts": {
+        "verified_row": 221,
+        "verified_paragraph": 2,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 15,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 223,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ24261YFFT.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 221,
+        "paragraph_anchor": 2,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 17,
+        "no_value": 3
+      },
+      "grades_denominator": 240,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 216,
+          "total": 223
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 17
+        }
+      },
+      "blocked": [
+        "VSYSREG(LO) (have=weak, need=row_anchor)",
+        "VSYSREG(LO) (have=weak, need=row_anchor)",
+        "VSYSREG(HI) (have=weak, need=paragraph_anchor)",
+        "VBATREG (have=weak, need=paragraph_anchor)",
+        "VBATREG (have=weak, need=row_anchor)",
+        "VBATREG (have=weak, need=row_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "IINLIM (have=weak, need=paragraph_anchor)",
+        "tDGL(CD) (have=weak, need=paragraph_anchor)",
+        "VBATUVLO (have=weak, need=row_anchor)",
+        "RDSON_Q1 (have=weak, need=paragraph_anchor)",
+        "IN (have=weak, need=row_anchor)",
+        "BOOT (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ24262RGER": {
+      "pdf_sha256": "33ff77f310a996518492cf6f57e27a616ab69d3f70606ceb31b7352dd832a8c7",
+      "n_rows": 222,
+      "counts": {
+        "verified_row": 206,
+        "verified_paragraph": 2,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 3,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 208,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ24262RGER.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 206,
+        "paragraph_anchor": 2,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 11,
+        "no_value": 3
+      },
+      "grades_denominator": 219,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 201,
+          "total": 208
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 6,
+          "total": 11
+        }
+      },
+      "blocked": [
+        "System Regulation Voltage (have=weak, need=row_anchor)",
+        "System Regulation Voltage (have=paragraph_anchor, need=row_anchor)",
+        "System Regulation Voltage (have=weak, need=row_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Input Current Limiting Threshold (have=weak, need=paragraph_anchor)",
+        "Battery Undervoltage Lockout Threshold (have=weak, need=row_anchor)",
+        "Minimum Duty Cycle (have=weak, need=paragraph_anchor)",
+        "I2C Reset Timeout (have=weak, need=row_anchor)",
+        "BAT Terminal Voltage (have=weak, need=row_anchor)",
+        "BOOT to SW Terminal Voltage (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ24262YFFR": {
+      "pdf_sha256": "33ff77f310a996518492cf6f57e27a616ab69d3f70606ceb31b7352dd832a8c7",
+      "n_rows": 96,
+      "counts": {
+        "verified_row": 80,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 15,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 81,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ24262YFFR.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 80,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 15,
+        "no_value": 0
+      },
+      "grades_denominator": 96,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 79,
+          "total": 93
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 3
+        }
+      },
+      "blocked": [
+        "Minimum Duty Cycle (have=weak, need=paragraph_anchor)",
+        "BOOT Terminal Voltage (have=weak, need=row_anchor)",
+        "PMID Terminal Voltage (have=weak, need=row_anchor)",
+        "BAT Terminal Voltage (have=weak, need=row_anchor)",
+        "DRV Terminal Voltage (have=weak, need=row_anchor)",
+        "SYS Terminal Voltage (have=weak, need=row_anchor)",
+        "BGATE Terminal Voltage (have=weak, need=row_anchor)",
+        "CD Terminal Voltage (have=weak, need=row_anchor)",
+        "INT Terminal Voltage (have=weak, need=row_anchor)",
+        "PSEL Terminal Voltage (have=weak, need=row_anchor)",
+        "SDA Terminal Voltage (have=weak, need=row_anchor)",
+        "SCL Terminal Voltage (have=weak, need=row_anchor)",
+        "STAT Terminal Voltage (have=weak, need=row_anchor)",
+        "TS Terminal Voltage (have=weak, need=row_anchor)",
+        "BOOT to SW Voltage (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ24450EVM-691": {
+      "pdf_sha256": "ff07fb86b672ee82c5cb4f0033ead55b2ea9e536d592fc3347cfe27007c20c31",
+      "n_rows": 4,
+      "counts": {
+        "verified_row": 4,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 4,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ24450EVM-691.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 4,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 4,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 4,
+          "total": 4
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "BQ3285LDSS": {
+      "pdf_sha256": "1642ef82e4616b2531d607d91a5bf007ccf7efdbdf877b910ae85c6eb57cf646",
+      "n_rows": 19,
+      "counts": {
+        "verified_row": 10,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 6,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 11,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ3285LDSS.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 10,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 2
+      },
+      "grades_denominator": 17,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 10,
+          "total": 16
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 1,
+          "total": 1
+        }
+      },
+      "blocked": [
+        "DC voltage applied on VCC relative to VSS (have=weak, need=row_anchor)",
+        "DC voltage applied on any pin excluding VCC relative to VSS (have=weak, need=row_anchor)",
+        "Operating temperature (have=weak, need=row_anchor)",
+        "Storage temperature (have=weak, need=row_anchor)",
+        "Temperature under bias (have=weak, need=row_anchor)",
+        "Soldering temperature (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ3285LFSS-A1": {
+      "pdf_sha256": "5b45a58081b1933eb3621cee6f472ab88e7d372a1d3b94f6d6a9c0dad55d5211",
+      "n_rows": 24,
+      "counts": {
+        "verified_row": 16,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 2,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 17,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ3285LFSS-A1.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 16,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 5,
+        "no_value": 2
+      },
+      "grades_denominator": 22,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 16,
+          "total": 21
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 1,
+          "total": 1
+        }
+      },
+      "blocked": [
+        "DC voltage applied on VCC relative to VSS (have=weak, need=row_anchor)",
+        "DC voltage applied on any pin excluding VCC relative to VSS (have=weak, need=row_anchor)",
+        "Operating temperature (have=weak, need=row_anchor)",
+        "Storage temperature (have=weak, need=row_anchor)",
+        "Temperature under bias (have=weak, need=row_anchor)"
+      ]
+    },
+    "BQ48SH-28X6NSH": {
+      "pdf_sha256": "c478a56d94fe22dbf3823406ee2a69e39c4b09a06ea678399fffdc771014abdc",
+      "n_rows": 20,
+      "counts": {
+        "verified_row": 17,
+        "verified_paragraph": 3,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 20,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ48SH-28X6NSH.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 17,
+        "paragraph_anchor": 3,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 20,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 1,
+          "total": 3
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 17,
+          "total": 17
+        }
+      },
+      "blocked": [
+        "Operating temperature range, TJ (have=paragraph_anchor, need=row_anchor)",
+        "Storage temperature range, Tstg (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "BQ76PL455EVM": {
+      "pdf_sha256": "eceeb8645bd55d290e6dfd2e4ffdc52f77befd9f4c5fc225d600a2fbb447cca9",
+      "n_rows": 5,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 4,
+      "pdf": "/app/data/_build100_91/pdfsrc/BQ76PL455EVM.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 1,
+        "no_value": 0
+      },
+      "grades_denominator": 5,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 0
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 4,
+          "total": 5
+        }
+      },
+      "blocked": [
+        "Operating voltage range (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "CD4021BQDRQ1": {
+      "pdf_sha256": "63b7742c209a8fc757784b5ec53a04946c1916c38f1ec22329f124c7e8e1dce2",
+      "n_rows": 59,
+      "counts": {
+        "verified_row": 28,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 22,
+        "value_in_pdf": 1,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 35,
+      "pdf": "/app/data/_build100_91/pdfsrc/CD4021BQDRQ1.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 28,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 24,
+        "no_value": 0
+      },
+      "grades_denominator": 59,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 19,
+          "total": 25
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 12,
+          "total": 34
+        }
+      },
+      "blocked": [
+        "Quiescent device current (have=weak, need=paragraph_anchor)",
+        "Quiescent device current (have=weak, need=paragraph_anchor)",
+        "Quiescent device current (have=weak, need=paragraph_anchor)",
+        "Quiescent device current (have=weak, need=paragraph_anchor)",
+        "Quiescent device current (have=weak, need=paragraph_anchor)",
+        "Quiescent device current (have=weak, need=paragraph_anchor)",
+        "Output low (sink) current (have=weak, need=paragraph_anchor)",
+        "Output high (source) current (have=weak, need=paragraph_anchor)",
+        "Output high (source) current (have=weak, need=paragraph_anchor)",
+        "Output voltage: high level (have=weak, need=paragraph_anchor)",
+        "Output voltage: high level (have=weak, need=paragraph_anchor)",
+        "Input low voltage (have=weak, need=paragraph_anchor)",
+        "Input low voltage (have=weak, need=paragraph_anchor)",
+        "Input low voltage (have=weak, need=paragraph_anchor)",
+        "Input high voltage (have=weak, need=paragraph_anchor)",
+        "Input high voltage (have=weak, need=paragraph_anchor)",
+        "Input high voltage (have=weak, need=paragraph_anchor)",
+        "Input current (have=weak, need=paragraph_anchor)",
+        "Input current (have=weak, need=paragraph_anchor)",
+        "Transition time (have=weak, need=paragraph_anchor)",
+        "Minimum setup time (have=weak, need=paragraph_anchor)",
+        "Minimum setup time (have=weak, need=paragraph_anchor)",
+        "DC supply voltage range (have=paragraph_anchor, need=row_anchor)",
+        "Input voltage range (have=paragraph_anchor, need=row_anchor)",
+        "Power dissipation per package (have=weak, need=row_anchor)",
+        "Operating temperature range (have=paragraph_anchor, need=row_anchor)",
+        "Storage temperature range (have=paragraph_anchor, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)"
+      ]
+    },
+    "DAC39RF10ACK": {
+      "pdf_sha256": "905f73b0fd737c24eaf82fcf2677d1bb0e6da82a43aa9c6003372949534d0791",
+      "n_rows": 145,
+      "counts": {
+        "verified_row": 117,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 22,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 4,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 118,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC39RF10ACK.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 117,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 23,
+        "no_value": 4
+      },
+      "grades_denominator": 141,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 117,
+          "total": 127
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 1,
+          "total": 14
+        }
+      },
+      "blocked": [
+        "SERDES bit rate (have=weak, need=row_anchor)",
+        "DAC clock period (have=weak, need=paragraph_anchor)",
+        "Serdes RX analog propagation delay (have=weak, need=row_anchor)",
+        "Input clock rising edge cross-over to output sample cross-over (have=weak, need=row_anchor)",
+        "TXENABLE rising edge to data output of DAC (have=weak, need=row_anchor)",
+        "TXENABLE rising edge to data output of DAC (have=weak, need=row_anchor)",
+        "TXENABLE falling edge to DAC output muted (have=weak, need=row_anchor)",
+        "TXENABLE falling edge to DAC output muted (have=weak, need=row_anchor)",
+        "Required TXENABLE pulse width (have=weak, need=row_anchor)",
+        "Required TXENABLE pulse width (have=weak, need=row_anchor)",
+        "serial clock frequency temp sensor (have=weak, need=paragraph_anchor)",
+        "serial clock period (have=weak, need=paragraph_anchor)",
+        "serial clock pulse width high (have=weak, need=paragraph_anchor)",
+        "serial clock pulse width low (have=weak, need=paragraph_anchor)",
+        "SDO output delay (have=weak, need=paragraph_anchor)",
+        "FRCLK period (have=weak, need=paragraph_anchor)",
+        "FRCLK pulse width high (have=weak, need=paragraph_anchor)",
+        "FRCLK pulse width low (have=weak, need=paragraph_anchor)",
+        "FRDI setup time (have=weak, need=paragraph_anchor)",
+        "FRDI hold time (have=weak, need=paragraph_anchor)",
+        "FRCS setup time (have=weak, need=paragraph_anchor)",
+        "FRCS hold time (have=weak, need=paragraph_anchor)",
+        "DC Voltage to GND [0:15]SRX-/+ (have=weak, need=row_anchor)"
+      ]
+    },
+    "DAC39RF10ACLNSP": {
+      "pdf_sha256": "c159e86ffada90d8b1294052906c474013564d54eeaad4ffd5f66a8c3f0245f7",
+      "n_rows": 160,
+      "counts": {
+        "verified_row": 128,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 27,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 4,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 128,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC39RF10ACLNSP.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 128,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 28,
+        "no_value": 4
+      },
+      "grades_denominator": 156,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 128,
+          "total": 147
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 9
+        }
+      },
+      "blocked": [
+        "SERDES bit rate (have=weak, need=row_anchor)",
+        "Serdes RX analog propagation delay (have=weak, need=row_anchor)",
+        "Input clock rising edge cross-over to output sample cross-over (have=weak, need=row_anchor)",
+        "TXENABLE rising edge to data output of DAC (have=weak, need=row_anchor)",
+        "TXENABLE rising edge to data output of DAC (have=weak, need=row_anchor)",
+        "TXENABLE falling edge to DAC output muted (have=weak, need=row_anchor)",
+        "TXENABLE falling edge to DAC output muted (have=weak, need=row_anchor)",
+        "Required TXENABLE pulse width (have=weak, need=row_anchor)",
+        "Required TXENABLE pulse width (have=weak, need=row_anchor)",
+        "serial clock frequency temp sensor (have=weak, need=paragraph_anchor)",
+        "serial clock period (have=weak, need=paragraph_anchor)",
+        "SDO output delay (have=weak, need=paragraph_anchor)",
+        "RESET setup to serial clock (have=weak, need=paragraph_anchor)",
+        "RESET hold to serial clock (have=weak, need=paragraph_anchor)",
+        "FRCLK pulse width high (have=weak, need=paragraph_anchor)",
+        "FRCLK pulse width low (have=weak, need=paragraph_anchor)",
+        "FRDI hold time (have=weak, need=paragraph_anchor)",
+        "FRCS hold time (have=weak, need=paragraph_anchor)",
+        "Supply voltage range (have=weak, need=row_anchor)",
+        "Supply voltage range (have=weak, need=row_anchor)",
+        "Supply voltage range (have=weak, need=row_anchor)",
+        "Supply voltage range (have=weak, need=row_anchor)",
+        "Supply voltage range (have=weak, need=row_anchor)",
+        "Voltage applied to input pins (have=weak, need=row_anchor)",
+        "Voltage applied to input pins (have=weak, need=row_anchor)",
+        "Voltage applied to input pins (have=weak, need=row_anchor)",
+        "Voltage at output pins (have=weak, need=row_anchor)",
+        "Voltage at output pins (have=weak, need=row_anchor)"
+      ]
+    },
+    "DAC39RF12ACL": {
+      "pdf_sha256": "c9b6f4286cce8e6dda36a9fa165ee63410af6fc264d9648d129a29386d36ceaf",
+      "n_rows": 135,
+      "counts": {
+        "verified_row": 125,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 6,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 4,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 125,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC39RF12ACL.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 125,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 4
+      },
+      "grades_denominator": 131,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 123,
+          "total": 125
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 6
+        }
+      },
+      "blocked": [
+        "Width of invalid SYSREF capture region (have=weak, need=paragraph_anchor)",
+        "Delay of SYSREF_POS LSB (have=weak, need=paragraph_anchor)",
+        "SYSREF duty cycle (asserted) (have=weak, need=paragraph_anchor)",
+        "Minimum RESET pulse width (have=weak, need=paragraph_anchor)",
+        "DC Voltage to GND on [0:15]SRX-/+ (have=weak, need=row_anchor)",
+        "DC Voltage to GND on [0:15]SRX-/+ (have=weak, need=row_anchor)"
+      ]
+    },
+    "DAC39RFS10ACL": {
+      "pdf_sha256": "905f73b0fd737c24eaf82fcf2677d1bb0e6da82a43aa9c6003372949534d0791",
+      "n_rows": 143,
+      "counts": {
+        "verified_row": 116,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 21,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 4,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 117,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC39RFS10ACL.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 116,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 22,
+        "no_value": 4
+      },
+      "grades_denominator": 139,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 116,
+          "total": 125
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 1,
+          "total": 14
+        }
+      },
+      "blocked": [
+        "SERDES bit rate (have=weak, need=row_anchor)",
+        "DAC clock period (have=weak, need=paragraph_anchor)",
+        "Serdes RX analog propagation delay (have=weak, need=row_anchor)",
+        "Input clock rising edge cross-over to output sample cross-over (have=weak, need=row_anchor)",
+        "TXENABLE rising edge to data output of DAC (have=weak, need=row_anchor)",
+        "TXENABLE rising edge to data output of DAC (have=weak, need=row_anchor)",
+        "TXENABLE falling edge to DAC output muted (have=weak, need=row_anchor)",
+        "TXENABLE falling edge to DAC output muted (have=weak, need=row_anchor)",
+        "Required TXENABLE pulse width (have=weak, need=row_anchor)",
+        "Required TXENABLE pulse width (have=weak, need=row_anchor)",
+        "serial clock frequency temp sensor (have=weak, need=paragraph_anchor)",
+        "serial clock period (have=weak, need=paragraph_anchor)",
+        "serial clock pulse width high (have=weak, need=paragraph_anchor)",
+        "serial clock pulse width low (have=weak, need=paragraph_anchor)",
+        "SDO output delay (have=weak, need=paragraph_anchor)",
+        "FRCLK period (have=weak, need=paragraph_anchor)",
+        "FRCLK pulse width high (have=weak, need=paragraph_anchor)",
+        "FRCLK pulse width low (have=weak, need=paragraph_anchor)",
+        "FRDI setup time (have=weak, need=paragraph_anchor)",
+        "FRDI hold time (have=weak, need=paragraph_anchor)",
+        "FRCS setup time (have=weak, need=paragraph_anchor)",
+        "FRCS hold time (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "DAC39RFS12ACK": {
+      "pdf_sha256": "c9b6f4286cce8e6dda36a9fa165ee63410af6fc264d9648d129a29386d36ceaf",
+      "n_rows": 137,
+      "counts": {
+        "verified_row": 129,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 4,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 4,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 129,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC39RFS12ACK.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 129,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 4,
+        "no_value": 4
+      },
+      "grades_denominator": 133,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 127,
+          "total": 127
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 6
+        }
+      },
+      "blocked": [
+        "Width of invalid SYSREF capture region (have=weak, need=paragraph_anchor)",
+        "Delay of SYSREF_POS LSB (have=weak, need=paragraph_anchor)",
+        "SYSREF duty cycle (asserted) (have=weak, need=paragraph_anchor)",
+        "Minimum RESET pulse width (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "DAC725JP": {
+      "pdf_sha256": "7c2523ead14d246f8384035bf8f4f842108d7f65d81204bbdb3259b6cccd7a73",
+      "n_rows": 45,
+      "counts": {
+        "verified_row": 26,
+        "verified_paragraph": 12,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 4,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 38,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC725JP.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 26,
+        "paragraph_anchor": 12,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 3,
+        "no_value": 4
+      },
+      "grades_denominator": 41,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 4,
+          "total": 14
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 24,
+          "total": 27
+        }
+      },
+      "blocked": [
+        "At Bipolar Zero: KP (have=weak, need=paragraph_anchor)",
+        "Voltage: –VCC (have=weak, need=paragraph_anchor)",
+        "Current (No load, ±15V supplies): –VCC (have=weak, need=paragraph_anchor)",
+        "VDD to COMMON (have=paragraph_anchor, need=row_anchor)",
+        "+VCC to COMMON (have=paragraph_anchor, need=row_anchor)",
+        "-VCC to COMMON (have=paragraph_anchor, need=row_anchor)",
+        "Digital Data Inputs to COMMON (have=paragraph_anchor, need=row_anchor)",
+        "DC Current any Input (have=paragraph_anchor, need=row_anchor)",
+        "External Voltage Applied to RF (have=paragraph_anchor, need=row_anchor)",
+        "External Voltage Applied to D/A Output (have=paragraph_anchor, need=row_anchor)",
+        "Power Dissipation (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Lead Temperature (soldering, 10s) (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "DAC7541AJUG4": {
+      "pdf_sha256": "8e30138b9b43e25c3c9e265c5f84789555f65201eda19f4ae8eb972b2936a4ee",
+      "n_rows": 64,
+      "counts": {
+        "verified_row": 34,
+        "verified_paragraph": 10,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 14,
+        "value_in_pdf": 5,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 44,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC7541AJUG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 34,
+        "paragraph_anchor": 10,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 20,
+        "no_value": 0
+      },
+      "grades_denominator": 64,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 4,
+          "total": 12
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 40,
+          "total": 52
+        }
+      },
+      "blocked": [
+        "Digital-to-Analog Glitch Impulse (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Gain Temperature Coefficient (have=weak, need=paragraph_anchor)",
+        "Input Resistance (Pin 17 to GND) (have=weak, need=row_anchor)",
+        "Input Resistance (Pin 17 to GND) (have=weak, need=row_anchor)",
+        "IDD (have=weak, need=row_anchor)",
+        "IDD (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "DAC7541AKPG4": {
+      "pdf_sha256": "8e30138b9b43e25c3c9e265c5f84789555f65201eda19f4ae8eb972b2936a4ee",
+      "n_rows": 41,
+      "counts": {
+        "verified_row": 17,
+        "verified_paragraph": 10,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 2,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 27,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC7541AKPG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 17,
+        "paragraph_anchor": 10,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 14,
+        "no_value": 0
+      },
+      "grades_denominator": 41,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 2,
+          "total": 8
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 25,
+          "total": 33
+        }
+      },
+      "blocked": [
+        "Digital-to-Analog Glitch Impulse (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Gain Temperature Coefficient (have=weak, need=paragraph_anchor)",
+        "Reference Input Resistance (Pin 17 to GND) (have=weak, need=row_anchor)",
+        "IDD (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "DAC7541AKU_1K": {
+      "pdf_sha256": "8e30138b9b43e25c3c9e265c5f84789555f65201eda19f4ae8eb972b2936a4ee",
+      "n_rows": 40,
+      "counts": {
+        "verified_row": 14,
+        "verified_paragraph": 10,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 4,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 3,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 24,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC7541AKU_1K.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 14,
+        "paragraph_anchor": 10,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 16,
+        "no_value": 0
+      },
+      "grades_denominator": 40,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 2,
+          "total": 10
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 22,
+          "total": 30
+        }
+      },
+      "blocked": [
+        "Digital-to-Analog Glitch Impulse (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Gain Temperature Coefficient (have=weak, need=paragraph_anchor)",
+        "Input Resistance (Pin 17 to GND) (have=weak, need=row_anchor)",
+        "IDD (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "DAC7541AKU_1KG4": {
+      "pdf_sha256": "8e30138b9b43e25c3c9e265c5f84789555f65201eda19f4ae8eb972b2936a4ee",
+      "n_rows": 41,
+      "counts": {
+        "verified_row": 14,
+        "verified_paragraph": 10,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 9,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 5,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 24,
+      "pdf": "/app/data/_build100_91/pdfsrc/DAC7541AKU_1KG4.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 14,
+        "paragraph_anchor": 10,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 17,
+        "no_value": 0
+      },
+      "grades_denominator": 41,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 2,
+          "total": 11
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 22,
+          "total": 30
+        }
+      },
+      "blocked": [
+        "Digital-to-Analog Glitch Impulse (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Current Settling Time (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 1 (Pin 1) (have=weak, need=paragraph_anchor)",
+        "Output Capacitance COUT 2 (Pin 2) (have=weak, need=paragraph_anchor)",
+        "Gain Temperature Coefficient (have=weak, need=paragraph_anchor)",
+        "Input Resistance (Pin 17 to GND) (have=weak, need=row_anchor)",
+        "IDD (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "RθJB (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "DRV10963JMDSNT": {
+      "pdf_sha256": "92eb17b696f2bf009a27850b4b6b32545c3656d2bd4b1b4c02681869eb0a3265",
+      "n_rows": 56,
+      "counts": {
+        "verified_row": 56,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 56,
+      "pdf": "/app/data/_build100_91/pdfsrc/DRV10963JMDSNT.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 56,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 56,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 56,
+          "total": 56
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "DRV10963JUDSNR": {
+      "pdf_sha256": "92eb17b696f2bf009a27850b4b6b32545c3656d2bd4b1b4c02681869eb0a3265",
+      "n_rows": 44,
+      "counts": {
+        "verified_row": 44,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 44,
+      "pdf": "/app/data/_build100_91/pdfsrc/DRV10963JUDSNR.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 44,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 44,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 44,
+          "total": 44
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "DRV10963JUDSNT": {
+      "pdf_sha256": "92eb17b696f2bf009a27850b4b6b32545c3656d2bd4b1b4c02681869eb0a3265",
+      "n_rows": 50,
+      "counts": {
+        "verified_row": 50,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 50,
+      "pdf": "/app/data/_build100_91/pdfsrc/DRV10963JUDSNT.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 50,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 50,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 50,
+          "total": 50
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "DRV10963PDSNR": {
+      "pdf_sha256": "92eb17b696f2bf009a27850b4b6b32545c3656d2bd4b1b4c02681869eb0a3265",
+      "n_rows": 44,
+      "counts": {
+        "verified_row": 44,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 44,
+      "pdf": "/app/data/_build100_91/pdfsrc/DRV10963PDSNR.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 44,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 44,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 44,
+          "total": 44
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "DRV10963PDSNT": {
+      "pdf_sha256": "92eb17b696f2bf009a27850b4b6b32545c3656d2bd4b1b4c02681869eb0a3265",
+      "n_rows": 42,
+      "counts": {
+        "verified_row": 42,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 42,
+      "pdf": "/app/data/_build100_91/pdfsrc/DRV10963PDSNT.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 42,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 42,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 42,
+          "total": 42
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "DS14C89AM": {
+      "pdf_sha256": "b06349404eff2b3104b4b735d9222d0e06a5b20ceac6f417a93dc21e8fa3e63d",
+      "n_rows": 39,
+      "counts": {
+        "verified_row": 30,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 34,
+      "pdf": "/app/data/_build100_91/pdfsrc/DS14C89AM.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 30,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 5,
+        "no_value": 0
+      },
+      "grades_denominator": 39,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 23,
+          "total": 32
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 7
+        }
+      },
+      "blocked": [
+        "VCC (have=weak, need=row_anchor)",
+        "Input Voltage (have=paragraph_anchor, need=row_anchor)",
+        "Receiver Output Voltage (have=weak, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Continuous Power Dissipation @ +25˚C (have=weak, need=row_anchor)",
+        "Continuous Power Dissipation @ +25˚C (have=weak, need=row_anchor)",
+        "Lead Temp. (Soldering 4 seconds) (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temp. Range (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "DS14C89AMX": {
+      "pdf_sha256": "b06349404eff2b3104b4b735d9222d0e06a5b20ceac6f417a93dc21e8fa3e63d",
+      "n_rows": 38,
+      "counts": {
+        "verified_row": 30,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 34,
+      "pdf": "/app/data/_build100_91/pdfsrc/DS14C89AMX.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 30,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 4,
+        "no_value": 0
+      },
+      "grades_denominator": 38,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 23,
+          "total": 31
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 7
+        }
+      },
+      "blocked": [
+        "VCC (have=weak, need=row_anchor)",
+        "Input Voltage (have=paragraph_anchor, need=row_anchor)",
+        "Receiver Output Voltage (have=weak, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Continuous Power Dissipation @ +25°C (have=weak, need=row_anchor)",
+        "Lead Temp. (Soldering 4 seconds) (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temp. Range (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "DS14C89AMX_NOPB": {
+      "pdf_sha256": "b06349404eff2b3104b4b735d9222d0e06a5b20ceac6f417a93dc21e8fa3e63d",
+      "n_rows": 40,
+      "counts": {
+        "verified_row": 30,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 3,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 34,
+      "pdf": "/app/data/_build100_91/pdfsrc/DS14C89AMX_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 30,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 0
+      },
+      "grades_denominator": 40,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 23,
+          "total": 33
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 7
+        }
+      },
+      "blocked": [
+        "VCC (have=weak, need=row_anchor)",
+        "Input Voltage (have=paragraph_anchor, need=row_anchor)",
+        "Receiver Output Voltage (have=weak, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Continuous Power Dissipation @ +25°C (have=weak, need=row_anchor)",
+        "Continuous Power Dissipation @ +25°C (have=weak, need=row_anchor)",
+        "Lead Temp. (Soldering 4 seconds) (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temp. Range (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "DS14C89AM_NOPB": {
+      "pdf_sha256": "b06349404eff2b3104b4b735d9222d0e06a5b20ceac6f417a93dc21e8fa3e63d",
+      "n_rows": 38,
+      "counts": {
+        "verified_row": 30,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 34,
+      "pdf": "/app/data/_build100_91/pdfsrc/DS14C89AM_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 30,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 4,
+        "no_value": 0
+      },
+      "grades_denominator": 38,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 23,
+          "total": 31
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 7,
+          "total": 7
+        }
+      },
+      "blocked": [
+        "VCC (have=weak, need=row_anchor)",
+        "Input Voltage (have=paragraph_anchor, need=row_anchor)",
+        "Receiver Output Voltage (have=weak, need=row_anchor)",
+        "Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Continuous Power Dissipation @ +25°C (have=weak, need=row_anchor)",
+        "Lead Temp. (Soldering 4 seconds) (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temp. Range (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "EKB-UCOS3-EVM": {
+      "pdf_sha256": "dbae2232c134f540ea09678afdc2d029809d35cdbbb921753ecfeb793a64c4fe",
+      "n_rows": 39,
+      "counts": {
+        "verified_row": 1,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 27,
+        "value_in_pdf": 10,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 1,
+      "pdf": "/app/data/_build100_91/pdfsrc/EKB-UCOS3-EVM.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 1,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 38,
+        "no_value": 0
+      },
+      "grades_denominator": 39,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 1,
+          "total": 39
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "VDD Supply Voltage (have=weak, need=row_anchor)",
+        "VDDC Supply Voltage (have=weak, need=row_anchor)",
+        "VDD3ON Power Consumption (have=weak, need=row_anchor)",
+        "GPIO Input Leakage Current (have=weak, need=row_anchor)",
+        "Input Voltage for a GPIO Configured as an Analog Input (have=weak, need=row_anchor)",
+        "Maximum Input Voltage on a Non-Power Pin When Unpowered (have=weak, need=row_anchor)",
+        "System Clock Frequency (have=weak, need=row_anchor)",
+        "PLL Output Frequency (have=weak, need=row_anchor)",
+        "Main Oscillator Frequency (have=weak, need=row_anchor)",
+        "PIOSC Clock Frequency (have=weak, need=row_anchor)",
+        "JTAG Clock Frequency (have=weak, need=row_anchor)",
+        "USB Clock Frequency (have=weak, need=row_anchor)",
+        "Ethernet MAC Clock Frequency (have=weak, need=row_anchor)",
+        "ADC Sample Rate (have=weak, need=row_anchor)",
+        "SSI Master Clock Frequency (have=weak, need=row_anchor)",
+        "I2C Clock Frequency (have=weak, need=row_anchor)",
+        "I2S Master Clock Frequency (have=weak, need=row_anchor)",
+        "PWM Timer Frequency (have=weak, need=row_anchor)",
+        "Sleep Mode Current Consumption (have=weak, need=row_anchor)",
+        "Deep-Sleep Mode Current Consumption (have=weak, need=row_anchor)",
+        "Power-On Reset Rise Time (have=weak, need=row_anchor)",
+        "Reset Pulse Width (have=weak, need=row_anchor)",
+        "VDD Supply Voltage (have=weak, need=row_anchor)",
+        "VDDC Supply Voltage (have=weak, need=row_anchor)",
+        "Operating Temperature Range (have=weak, need=row_anchor)",
+        "Storage Temperature Range (have=weak, need=row_anchor)",
+        "Maximum Junction Temperature (have=weak, need=row_anchor)",
+        "Maximum Input Voltage on Non-Power Pins (have=weak, need=row_anchor)",
+        "Maximum Current into Any Pin (have=weak, need=row_anchor)",
+        "Maximum Current into VDD/VDDC Pins (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "RθJC(bot) (have=weak, need=row_anchor)",
+        "ψJT (have=weak, need=row_anchor)",
+        "ψJB (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "LM3208TLEV": {
+      "pdf_sha256": "1308b47961974dfd0e210dee07e729f323d96a10dacbd29975963b5216eba7f7",
+      "n_rows": 12,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 6,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 6,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 6,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM3208TLEV.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 6,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 0
+      },
+      "grades_denominator": 12,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 7
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 5,
+          "total": 5
+        }
+      },
+      "blocked": [
+        "VIN (have=paragraph_anchor, need=row_anchor)",
+        "VIN (have=weak, need=row_anchor)",
+        "VDD (have=weak, need=row_anchor)",
+        "VCON (have=weak, need=row_anchor)",
+        "VOUT (have=weak, need=row_anchor)",
+        "TJ (have=weak, need=row_anchor)",
+        "Tstg (have=weak, need=row_anchor)"
+      ]
+    },
+    "LM3352-3.0EVAL": {
+      "pdf_sha256": "a1f6508e26d9138e2b46b1a12889ac6ef884a7373ef03ec278100f9e7a798193",
+      "n_rows": 26,
+      "counts": {
+        "verified_row": 16,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 20,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM3352-3.0EVAL.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 16,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 0
+      },
+      "grades_denominator": 26,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 16,
+          "total": 26
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "Efficiency (have=weak, need=row_anchor)",
+        "VOUT Pin (have=paragraph_anchor, need=row_anchor)",
+        "All Other Pins (have=paragraph_anchor, need=row_anchor)",
+        "Power Dissipation (TA = 25˚C) (have=weak, need=row_anchor)",
+        "TJMAX (have=paragraph_anchor, need=row_anchor)",
+        "θJA (have=weak, need=row_anchor)",
+        "Storage Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Lead Temperature (Soldering, 5 sec.) (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "LM358": {
+      "pdf_sha256": "8277dff7b89138c63b3582d37f378065a1dea3cae5ed1e2926ddc2779eb7e3a2",
+      "n_rows": 98,
+      "counts": {
+        "verified_row": 96,
+        "verified_paragraph": 1,
+        "verified_value": 0,
+        "verified": 1,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 97,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM358.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 96,
+        "paragraph_anchor": 1,
+        "coord_no_fingerprint": 0,
+        "container_verified": 1,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 98,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 95,
+          "total": 96
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 2
+        }
+      },
+      "blocked": [
+        "HBM (have=container_verified, need=row_anchor)"
+      ]
+    },
+    "LM3658SDEV_NOPB": {
+      "pdf_sha256": "04d58cfc39370f247b9df9fca9f886189b613386d06c6027d4f2197de75e44b6",
+      "n_rows": 123,
+      "counts": {
+        "verified_row": 119,
+        "verified_paragraph": 3,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 122,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM3658SDEV_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 119,
+        "paragraph_anchor": 3,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 1
+      },
+      "grades_denominator": 122,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 119,
+          "total": 122
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "CHG_IN, USBpwr (VCC) (have=paragraph_anchor, need=row_anchor)",
+        "All other pins except GND (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature Range (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "LM3671TL-1.8EV": {
+      "pdf_sha256": "dc705cdb8bdb75a60f82ef0d02e43929376de2bf98cc8cd3e318cf30b4b4047c",
+      "n_rows": 20,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 4,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 8,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 5,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 4,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM3671TL-1.8EV.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 4,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 16,
+        "no_value": 0
+      },
+      "grades_denominator": 20,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 15
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 3,
+          "total": 5
+        }
+      },
+      "blocked": [
+        "Output Voltage (have=weak, need=paragraph_anchor)",
+        "Quiescent Current (Typical) (have=weak, need=row_anchor)",
+        "Switching Frequency (have=weak, need=row_anchor)",
+        "Enable Threshold (Low) (have=weak, need=row_anchor)",
+        "Enable Threshold (High) (have=weak, need=row_anchor)",
+        "Output Voltage Accuracy (have=weak, need=row_anchor)",
+        "Load Regulation (have=weak, need=row_anchor)",
+        "Line Regulation (have=weak, need=row_anchor)",
+        "Ripple Voltage (have=weak, need=paragraph_anchor)",
+        "Input Voltage (have=weak, need=row_anchor)",
+        "Operating Junction Temperature (have=paragraph_anchor, need=row_anchor)",
+        "Storage Temperature (have=weak, need=row_anchor)",
+        "Maximum Continuous Output Current (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "RθJC(top) (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "LM3676SD-ADJEV": {
+      "pdf_sha256": "1860b64ea15a983f10a092d9ec0230a7bb8f897a4a971293e6db4f54008728df",
+      "n_rows": 12,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 6,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 4,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 6,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM3676SD-ADJEV.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 6,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 6,
+        "no_value": 0
+      },
+      "grades_denominator": 12,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 7
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 4,
+          "total": 5
+        }
+      },
+      "blocked": [
+        "Switching Frequency (have=weak, need=paragraph_anchor)",
+        "EN pin threshold (high) (have=weak, need=row_anchor)",
+        "EN pin threshold (low) (have=paragraph_anchor, need=row_anchor)",
+        "MODE pin threshold (high) (have=weak, need=row_anchor)",
+        "MODE pin threshold (low) (have=paragraph_anchor, need=row_anchor)",
+        "VIN max (have=weak, need=row_anchor)",
+        "TJ max (have=weak, need=row_anchor)",
+        "Tstg (have=weak, need=row_anchor)"
+      ]
+    },
+    "LM3677LE-1.8EV": {
+      "pdf_sha256": "72804c1a96cca0fb2e1bb1b9b1639d0b48da9a715150f4418083ff826fee999d",
+      "n_rows": 6,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 5,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 5,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM3677LE-1.8EV.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 5,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 1,
+        "no_value": 0
+      },
+      "grades_denominator": 6,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 0
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 5,
+          "total": 6
+        }
+      },
+      "blocked": [
+        "Output Current (have=weak, need=paragraph_anchor)"
+      ]
+    },
+    "LM3677TL-1.8EV": {
+      "pdf_sha256": "72804c1a96cca0fb2e1bb1b9b1639d0b48da9a715150f4418083ff826fee999d",
+      "n_rows": 11,
+      "counts": {
+        "verified_row": 1,
+        "verified_paragraph": 3,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 5,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 4,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM3677TL-1.8EV.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 1,
+        "paragraph_anchor": 3,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 7,
+        "no_value": 0
+      },
+      "grades_denominator": 11,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 1,
+          "total": 10
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 1,
+          "total": 1
+        }
+      },
+      "blocked": [
+        "VIN (have=paragraph_anchor, need=row_anchor)",
+        "TA (have=weak, need=row_anchor)",
+        "TJ (have=weak, need=row_anchor)",
+        "VFB (have=paragraph_anchor, need=row_anchor)",
+        "TJ (have=weak, need=row_anchor)",
+        "Tstg (have=weak, need=row_anchor)",
+        "RθJA (have=weak, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)",
+        "CDM (have=weak, need=row_anchor)"
+      ]
+    },
+    "LM5064EVK_NOPB": {
+      "pdf_sha256": "794b07510cedbcd15172bdc4799075e18653c78d6ec11f495f76c4a4a1be0242",
+      "n_rows": 15,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 11,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 2,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 11,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM5064EVK_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 11,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 4,
+        "no_value": 0
+      },
+      "grades_denominator": 15,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 15
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "Input Voltage Range (have=paragraph_anchor, need=row_anchor)",
+        "Programmable Current Limit (have=paragraph_anchor, need=row_anchor)",
+        "Q1 Power Limit (have=paragraph_anchor, need=row_anchor)",
+        "UVLO Falling Threshold (have=paragraph_anchor, need=row_anchor)",
+        "UVLO Rising Threshold (have=paragraph_anchor, need=row_anchor)",
+        "OVLO Falling Threshold (have=paragraph_anchor, need=row_anchor)",
+        "OVLO Rising Threshold (have=paragraph_anchor, need=row_anchor)",
+        "Insertion Delay (have=paragraph_anchor, need=row_anchor)",
+        "Fault Time-out Period (have=paragraph_anchor, need=row_anchor)",
+        "Restart Time (have=paragraph_anchor, need=row_anchor)",
+        "Operating Input Voltage Range (have=paragraph_anchor, need=row_anchor)",
+        "Maximum Output Current (have=weak, need=row_anchor)",
+        "Maximum Power Dissipation (have=weak, need=row_anchor)",
+        "Storage Temperature Range (have=weak, need=row_anchor)",
+        "Junction Temperature Range (have=weak, need=row_anchor)"
+      ]
+    },
+    "LM5066EVK_NOPB": {
+      "pdf_sha256": "83d0a5e566d7b8f1b06ce48fad946f12c234679d2056c83342a2b5e203fe4131",
+      "n_rows": 12,
+      "counts": {
+        "verified_row": 0,
+        "verified_paragraph": 11,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 11,
+      "pdf": "/app/data/_build100_91/pdfsrc/LM5066EVK_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 0,
+        "paragraph_anchor": 11,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 1,
+        "no_value": 0
+      },
+      "grades_denominator": 12,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 12
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "Input Voltage Range (have=paragraph_anchor, need=row_anchor)",
+        "Programmable Current Limit (have=paragraph_anchor, need=row_anchor)",
+        "Q1 Power Limit (have=paragraph_anchor, need=row_anchor)",
+        "UVLO Rising Threshold (have=paragraph_anchor, need=row_anchor)",
+        "UVLO Falling Threshold (have=paragraph_anchor, need=row_anchor)",
+        "OVLO Rising Threshold (have=weak, need=row_anchor)",
+        "OVLO Falling Threshold (have=paragraph_anchor, need=row_anchor)",
+        "PGD Rising Threshold (have=paragraph_anchor, need=row_anchor)",
+        "PGD Falling Threshold (have=paragraph_anchor, need=row_anchor)",
+        "Insertion Delay (have=paragraph_anchor, need=row_anchor)",
+        "Fault Time-out Period (have=paragraph_anchor, need=row_anchor)",
+        "Restart Time (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "LMR14206XMKDEMO_NOPB": {
+      "pdf_sha256": "d7a2ee010ea437c15fb9e1f6c92894c8ab760c80ed140d4cb4959b25e97f2b63",
+      "n_rows": 31,
+      "counts": {
+        "verified_row": 25,
+        "verified_paragraph": 3,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 1,
+        "partial": 0,
+        "unchecked": 1,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 28,
+      "pdf": "/app/data/_build100_91/pdfsrc/LMR14206XMKDEMO_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 25,
+        "paragraph_anchor": 3,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 2,
+        "no_value": 1
+      },
+      "grades_denominator": 30,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 25,
+          "total": 30
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "VIN (have=paragraph_anchor, need=row_anchor)",
+        "SHDN (have=weak, need=row_anchor)",
+        "SW Voltage (have=paragraph_anchor, need=row_anchor)",
+        "FB Voltage (have=paragraph_anchor, need=row_anchor)",
+        "HBM (have=weak, need=row_anchor)"
+      ]
+    },
+    "LMZ10504DEMO_NOPB": {
+      "pdf_sha256": "e4e922fee66ed6c21c968543170d3d2e35a515681e48ff72b68cd11cd19a082d",
+      "n_rows": 13,
+      "counts": {
+        "verified_row": 3,
+        "verified_paragraph": 7,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 1,
+        "value_in_pdf": 2,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 10,
+      "pdf": "/app/data/_build100_91/pdfsrc/LMZ10504DEMO_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 3,
+        "paragraph_anchor": 7,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 3,
+        "no_value": 0
+      },
+      "grades_denominator": 13,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 2,
+          "total": 6
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 6,
+          "total": 7
+        }
+      },
+      "blocked": [
+        "VIN (have=paragraph_anchor, need=row_anchor)",
+        "VOUT (have=weak, need=row_anchor)",
+        "IOUT (have=weak, need=paragraph_anchor)",
+        "VIN to GND (have=paragraph_anchor, need=row_anchor)",
+        "EN, FB, SS to GND (have=weak, need=row_anchor)"
+      ]
+    },
+    "LMZ14203DEMO_NOPB": {
+      "pdf_sha256": "d243a1b19bffb0b6e8afc862c7f6e11af30ee7ae975c5976da3169fec89b729e",
+      "n_rows": 9,
+      "counts": {
+        "verified_row": 2,
+        "verified_paragraph": 2,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 3,
+        "value_in_pdf": 1,
+        "partial": 1,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "partial",
+      "coord": 4,
+      "pdf": "/app/data/_build100_91/pdfsrc/LMZ14203DEMO_NOPB.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 2,
+        "paragraph_anchor": 2,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 5,
+        "no_value": 0
+      },
+      "grades_denominator": 9,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 0,
+          "total": 5
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 4
+        }
+      },
+      "blocked": [
+        "VIN (have=weak, need=row_anchor)",
+        "VOUT (have=weak, need=paragraph_anchor)",
+        "IOUT (have=weak, need=paragraph_anchor)",
+        "EN Input Voltage (have=weak, need=row_anchor)",
+        "Operating Temperature Range (Tj) (have=weak, need=row_anchor)",
+        "VIN, RON to GND (have=paragraph_anchor, need=row_anchor)",
+        "EN, FB, SS to GND (have=paragraph_anchor, need=row_anchor)"
+      ]
+    },
+    "TPS2391EVM": {
+      "pdf_sha256": "2d9e8ce68e4412cc254e24171d06a32ba6e0939a95da308d91fe1fcb8817c6db",
+      "n_rows": 8,
+      "counts": {
+        "verified_row": 8,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 0,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 8,
+      "pdf": "/app/data/_build100_91/pdfsrc/TPS2391EVM.pdf",
+      "anchor_gate": "pass",
+      "grades": {
+        "row_anchor": 8,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 0,
+        "no_value": 0
+      },
+      "grades_denominator": 8,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 8,
+          "total": 8
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": []
+    },
+    "TPS65130EVM-063": {
+      "pdf_sha256": "36489d04e51431ea265ea8fa9024d8144f602a68d678887f5560c08e92d660f9",
+      "n_rows": 10,
+      "counts": {
+        "verified_row": 3,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 5,
+        "value_in_pdf": 0,
+        "partial": 1,
+        "unchecked": 0,
+        "not_found": 1,
+        "column_collapse": 0
+      },
+      "verdict": "fail",
+      "coord": 3,
+      "pdf": "/app/data/_build100_91/pdfsrc/TPS65130EVM-063.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 3,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 7,
+        "no_value": 0
+      },
+      "grades_denominator": 10,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 1,
+          "total": 4
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 2,
+          "total": 6
+        }
+      },
+      "blocked": [
+        "VPOS Output Current (have=weak, need=paragraph_anchor)",
+        "VPOS Output Current (have=weak, need=paragraph_anchor)",
+        "VNEG Output Current (have=weak, need=paragraph_anchor)",
+        "VPOS Output Current (have=weak, need=paragraph_anchor)",
+        "Input Voltage (have=weak, need=row_anchor)",
+        "Operating Temperature Range (have=weak, need=row_anchor)",
+        "Storage Temperature Range (have=weak, need=row_anchor)"
+      ]
+    },
+    "TPS65131EVM-063": {
+      "pdf_sha256": "fe085695ebff795d0c4be3c11169c2b3f0728b98a752da67f67d2856d74eb24f",
+      "n_rows": 5,
+      "counts": {
+        "verified_row": 3,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 2,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 3,
+      "pdf": "/app/data/_build100_91/pdfsrc/TPS65131EVM-063.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 3,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 2,
+        "no_value": 0
+      },
+      "grades_denominator": 5,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 3,
+          "total": 5
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 0,
+          "total": 0
+        }
+      },
+      "blocked": [
+        "VPOS Output Current (have=weak, need=row_anchor)",
+        "VNEG Output Current (have=weak, need=row_anchor)"
+      ]
+    },
+    "TUSB9261DEMO": {
+      "pdf_sha256": "2aa001b50d3c9789e4da00d2ac0cc1c8d12cac91459613deed5478c5b9f30005",
+      "n_rows": 48,
+      "counts": {
+        "verified_row": 38,
+        "verified_paragraph": 0,
+        "verified_value": 0,
+        "verified": 0,
+        "value_on_label_page": 10,
+        "value_in_pdf": 0,
+        "partial": 0,
+        "unchecked": 0,
+        "not_found": 0,
+        "column_collapse": 0
+      },
+      "verdict": "pass",
+      "coord": 38,
+      "pdf": "/app/data/_build100_91/pdfsrc/TUSB9261DEMO.pdf",
+      "anchor_gate": "blocked",
+      "grades": {
+        "row_anchor": 38,
+        "paragraph_anchor": 0,
+        "coord_no_fingerprint": 0,
+        "container_verified": 0,
+        "weak": 10,
+        "no_value": 0
+      },
+      "grades_denominator": 48,
+      "by_kind": {
+        "table": {
+          "required": "row_anchor",
+          "ok": 32,
+          "total": 32
+        },
+        "prose": {
+          "required": "paragraph_anchor",
+          "ok": 6,
+          "total": 16
+        }
+      },
+      "blocked": [
+        "Oscillation frequency (have=weak, need=paragraph_anchor)",
+        "Frequency stability (have=weak, need=paragraph_anchor)",
+        "Typical active current (VDD11) (have=weak, need=paragraph_anchor)",
+        "Typical suspend current (VDD11) (have=weak, need=paragraph_anchor)",
+        "Typical active current (VDD33) (have=weak, need=paragraph_anchor)",
+        "Typical suspend current (VDD33) (have=weak, need=paragraph_anchor)",
+        "Typical active current (VDD11) (have=weak, need=paragraph_anchor)",
+        "Typical suspend current (VDD11) (have=weak, need=paragraph_anchor)",
+        "Typical active current (VDD33) (have=weak, need=paragraph_anchor)",
+        "Typical suspend current (VDD33) (have=weak, need=paragraph_anchor)"
+      ]
+    }
+  }
+}
